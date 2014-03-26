@@ -33,63 +33,63 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button7 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label10 = new System.Windows.Forms.Label();
             this.tothourLabel = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.paymentLabel = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.roomNumLabel = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.ParticiLabel = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.idLabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.endtimeLabel = new System.Windows.Forms.Label();
             this.starttimeLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.label11 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.property = new System.Windows.Forms.TabPage();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
+            this.property = new System.Windows.Forms.TabPage();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -98,16 +98,16 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
-            this.property.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
+            this.property.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -155,12 +155,28 @@
             this.groupBox2.Controls.Add(this.button7);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(260, 12);
+            this.groupBox2.Location = new System.Drawing.Point(207, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(260, 84);
+            this.groupBox2.Size = new System.Drawing.Size(313, 84);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(162, 36);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(56, 38);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 2;
             // 
             // label1
             // 
@@ -170,13 +186,6 @@
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Search:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(56, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
             // 
             // groupBox3
             // 
@@ -189,14 +198,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
             // 
-            // button7
+            // label3
             // 
-            this.button7.Location = new System.Drawing.Point(162, 36);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(103, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Hello, Tambal Gadol";
             // 
             // label2
             // 
@@ -207,15 +216,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "label2";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Hello, Tambal Gadol";
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.hScrollBar1);
@@ -225,9 +225,9 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.monthCalendar1);
-            this.groupBox1.Location = new System.Drawing.Point(260, 110);
+            this.groupBox1.Location = new System.Drawing.Point(207, 119);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(682, 317);
+            this.groupBox1.Size = new System.Drawing.Size(735, 317);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Class schedule";
@@ -275,15 +275,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(158, 166);
             this.tableLayoutPanel1.TabIndex = 20;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 127);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 13);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "Total time:";
-            // 
             // tothourLabel
             // 
             this.tothourLabel.AutoSize = true;
@@ -291,15 +282,6 @@
             this.tothourLabel.Name = "tothourLabel";
             this.tothourLabel.Size = new System.Drawing.Size(0, 13);
             this.tothourLabel.TabIndex = 26;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 103);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 13);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "Payment:";
             // 
             // paymentLabel
             // 
@@ -309,15 +291,6 @@
             this.paymentLabel.Size = new System.Drawing.Size(0, 13);
             this.paymentLabel.TabIndex = 25;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 80);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 13);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Room #:";
-            // 
             // roomNumLabel
             // 
             this.roomNumLabel.AutoSize = true;
@@ -326,15 +299,6 @@
             this.roomNumLabel.Size = new System.Drawing.Size(0, 13);
             this.roomNumLabel.TabIndex = 24;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 59);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 13);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Num of participants:";
-            // 
             // ParticiLabel
             // 
             this.ParticiLabel.AutoSize = true;
@@ -342,15 +306,6 @@
             this.ParticiLabel.Name = "ParticiLabel";
             this.ParticiLabel.Size = new System.Drawing.Size(0, 13);
             this.ParticiLabel.TabIndex = 23;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 19);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 13);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Class name:";
             // 
             // nameLabel
             // 
@@ -376,6 +331,60 @@
             this.idLabel.Name = "idLabel";
             this.idLabel.Size = new System.Drawing.Size(0, 13);
             this.idLabel.TabIndex = 28;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 13);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Class name:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 36);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(67, 13);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Guide name:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 59);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(101, 13);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Num of participants:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 80);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(48, 13);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Room #:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 103);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(51, 13);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Payment:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(3, 127);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 13);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Total time:";
             // 
             // endtimeLabel
             // 
@@ -418,15 +427,6 @@
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 12;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 36);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(67, 13);
-            this.label11.TabIndex = 29;
-            this.label11.Text = "Guide name:";
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -436,10 +436,10 @@
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.property);
-            this.tabControl1.Location = new System.Drawing.Point(9, 110);
+            this.tabControl1.Location = new System.Drawing.Point(12, 119);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(245, 299);
+            this.tabControl1.Size = new System.Drawing.Size(162, 317);
             this.tabControl1.TabIndex = 15;
             // 
             // tabPage1
@@ -450,7 +450,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(237, 273);
+            this.tabPage1.Size = new System.Drawing.Size(154, 291);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Manager";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -465,36 +465,6 @@
             this.tabPage2.Size = new System.Drawing.Size(237, 273);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Guide";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage3.Controls.Add(this.flowLayoutPanel3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(237, 273);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Trainer";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage4.Controls.Add(this.flowLayoutPanel4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(237, 273);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Receptionist";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage5.Controls.Add(this.flowLayoutPanel5);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(237, 273);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Student";
             // 
             // flowLayoutPanel2
             // 
@@ -537,6 +507,16 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage3.Controls.Add(this.flowLayoutPanel3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(237, 273);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Trainer";
+            // 
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.BackColor = System.Drawing.SystemColors.Control;
@@ -578,6 +558,16 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage4.Controls.Add(this.flowLayoutPanel4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(237, 273);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Receptionist";
+            // 
             // flowLayoutPanel4
             // 
             this.flowLayoutPanel4.BackColor = System.Drawing.SystemColors.Control;
@@ -617,6 +607,16 @@
             this.button13.Text = "Delete";
             this.button13.UseVisualStyleBackColor = true;
             // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage5.Controls.Add(this.flowLayoutPanel5);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(237, 273);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Student";
+            // 
             // flowLayoutPanel5
             // 
             this.flowLayoutPanel5.BackColor = System.Drawing.SystemColors.Control;
@@ -655,37 +655,6 @@
             this.button16.TabIndex = 2;
             this.button16.Text = "Delete";
             this.button16.UseVisualStyleBackColor = true;
-            // 
-            // property
-            // 
-            this.property.BackColor = System.Drawing.SystemColors.Control;
-            this.property.Controls.Add(this.button18);
-            this.property.Controls.Add(this.button17);
-            this.property.Location = new System.Drawing.Point(4, 22);
-            this.property.Name = "property";
-            this.property.Size = new System.Drawing.Size(237, 273);
-            this.property.TabIndex = 5;
-            this.property.Text = "Property";
-            // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(81, 81);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(75, 23);
-            this.button17.TabIndex = 0;
-            this.button17.Text = "button17";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
-            // 
-            // button18
-            // 
-            this.button18.Location = new System.Drawing.Point(81, 128);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 23);
-            this.button18.TabIndex = 1;
-            this.button18.Text = "Appliace";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // tabPage6
             // 
@@ -738,6 +707,37 @@
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
+            // property
+            // 
+            this.property.BackColor = System.Drawing.SystemColors.Control;
+            this.property.Controls.Add(this.button18);
+            this.property.Controls.Add(this.button17);
+            this.property.Location = new System.Drawing.Point(4, 22);
+            this.property.Name = "property";
+            this.property.Size = new System.Drawing.Size(237, 273);
+            this.property.TabIndex = 5;
+            this.property.Text = "Property";
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(81, 128);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(75, 23);
+            this.button18.TabIndex = 1;
+            this.button18.Text = "Appliace";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(81, 81);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(75, 23);
+            this.button17.TabIndex = 0;
+            this.button17.Text = "button17";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -761,16 +761,16 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
             this.flowLayoutPanel4.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
             this.flowLayoutPanel5.ResumeLayout(false);
-            this.property.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.flowLayoutPanel6.ResumeLayout(false);
+            this.property.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
