@@ -116,11 +116,11 @@
       <DependentUpon>FormRemoveTrainer.cs</DependentUpon>
     </Compile>
     <Compile Include="Guide.cs" />
-    <Compile Include="ManagerMenu.cs">
+    <Compile Include="ManagerMenutemp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManagerMenu.Designer.cs">
-      <DependentUpon>ManagerMenu.cs</DependentUpon>
+    <Compile Include="ManagerMenutemp.Designer.cs">
+      <DependentUpon>ManagerMenutemp.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="ManuApplince.cs">
@@ -188,8 +188,8 @@
     <EmbeddedResource Include="FormRemoveTrainer.resx">
       <DependentUpon>FormRemoveTrainer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManagerMenu.resx">
-      <DependentUpon>ManagerMenu.cs</DependentUpon>
+    <EmbeddedResource Include="ManagerMenutemp.resx">
+      <DependentUpon>ManagerMenutemp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManuApplince.resx">
       <DependentUpon>ManuApplince.cs</DependentUpon>

@@ -10,9 +10,9 @@ using MySql.Data.MySqlClient;
 
 namespace newGym
 {
-    public partial class ManagerMenu : Form
+    public partial class ManagerMenuTemp : Form
     {
-        public ManagerMenu()
+        public ManagerMenuTemp()
         {
             InitializeComponent();
         }

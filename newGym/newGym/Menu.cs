@@ -9,13 +9,13 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class Menu : Form
+    public partial class ManagerMenu : Form
     {
          private int count = 0;
         DateTime[] arr;
         DataTable dtmp;
         DataTable dt;
-        public Menu()
+        public ManagerMenu()
         {
             dt = new DataTable();
             InitializeComponent();

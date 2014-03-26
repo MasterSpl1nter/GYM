@@ -1,6 +1,6 @@
 ﻿namespace newGym
 {
-    partial class ManagerMenu
+    partial class ManagerMenuTemp
     {
         /// <summary>
         /// Required designer variable.
@@ -361,7 +361,7 @@
             this.editbyId_button.UseVisualStyleBackColor = true;
             this.editbyId_button.Click += new System.EventHandler(this.editbyId_button_Click);
             // 
-            // ManagerMenu
+            // ManagerMenuTemp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -370,7 +370,7 @@
             this.Controls.Add(this.DeleteManagerPanel);
             this.Controls.Add(this.ManagerActions);
             this.Controls.Add(this.addMangerPanel);
-            this.Name = "ManagerMenu";
+            this.Name = "ManagerMenuTemp";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.ManagerMenu_Load);
             this.addMangerPanel.ResumeLayout(false);
