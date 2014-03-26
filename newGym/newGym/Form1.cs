@@ -152,7 +152,7 @@ namespace newGym
 
         private void ResetTexts()
         {
-            foreach (Control c in this.Controls)
+            foreach (Control c in panel1.Controls)
             {
 
                 if (c is TextBox)
