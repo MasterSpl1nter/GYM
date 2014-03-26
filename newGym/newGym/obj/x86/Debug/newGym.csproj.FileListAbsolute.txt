@@ -23,3 +23,5 @@ C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\
 C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.Form2.resources
 C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.Form3.resources
 C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.ManuApplince.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.exe
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.pdb
