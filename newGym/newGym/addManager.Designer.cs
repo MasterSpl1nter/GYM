@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.MangerSalaryPerHour = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.idLabel = new System.Windows.Forms.Label();
+            this.salaeyPerHourLabel = new System.Windows.Forms.Label();
+            this.passwordLabel = new System.Windows.Forms.Label();
             this.AddManagerUser = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.userNameLabel = new System.Windows.Forms.Label();
             this.password = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.EmailLabel = new System.Windows.Forms.Label();
             this.userName = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lastNameLabel = new System.Windows.Forms.Label();
             this.managerEmail = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.firstNameLabel = new System.Windows.Forms.Label();
             this.managerLastName = new System.Windows.Forms.TextBox();
             this.managerId = new System.Windows.Forms.TextBox();
             this.managerFirstName = new System.Windows.Forms.TextBox();
@@ -55,33 +55,33 @@
             this.MangerSalaryPerHour.Size = new System.Drawing.Size(100, 20);
             this.MangerSalaryPerHour.TabIndex = 37;
             // 
-            // label1
+            // idLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label1.Location = new System.Drawing.Point(82, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 13);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "Id:";
+            this.idLabel.AutoSize = true;
+            this.idLabel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.idLabel.Location = new System.Drawing.Point(82, 42);
+            this.idLabel.Name = "idLabel";
+            this.idLabel.Size = new System.Drawing.Size(21, 13);
+            this.idLabel.TabIndex = 27;
+            this.idLabel.Text = "Id:";
             // 
-            // label7
+            // salaeyPerHourLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(54, 146);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 13);
-            this.label7.TabIndex = 41;
-            this.label7.Text = "payment:";
+            this.salaeyPerHourLabel.AutoSize = true;
+            this.salaeyPerHourLabel.Location = new System.Drawing.Point(54, 146);
+            this.salaeyPerHourLabel.Name = "salaeyPerHourLabel";
+            this.salaeyPerHourLabel.Size = new System.Drawing.Size(50, 13);
+            this.salaeyPerHourLabel.TabIndex = 41;
+            this.salaeyPerHourLabel.Text = "payment:";
             // 
-            // label2
+            // passwordLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 198);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "Password:";
+            this.passwordLabel.AutoSize = true;
+            this.passwordLabel.Location = new System.Drawing.Point(50, 198);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(56, 13);
+            this.passwordLabel.TabIndex = 28;
+            this.passwordLabel.Text = "Password:";
             // 
             // AddManagerUser
             // 
@@ -97,14 +97,14 @@
             this.AddManagerUser.UseVisualStyleBackColor = false;
             this.AddManagerUser.Click += new System.EventHandler(this.AddManagerUser_Click_1);
             // 
-            // label3
+            // userNameLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 172);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 13);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "User name:";
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.Location = new System.Drawing.Point(46, 172);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(61, 13);
+            this.userNameLabel.TabIndex = 29;
+            this.userNameLabel.Text = "User name:";
             // 
             // password
             // 
@@ -113,14 +113,14 @@
             this.password.Size = new System.Drawing.Size(100, 20);
             this.password.TabIndex = 39;
             // 
-            // label4
+            // EmailLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(69, 120);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "Email:";
+            this.EmailLabel.AutoSize = true;
+            this.EmailLabel.Location = new System.Drawing.Point(69, 120);
+            this.EmailLabel.Name = "EmailLabel";
+            this.EmailLabel.Size = new System.Drawing.Size(35, 13);
+            this.EmailLabel.TabIndex = 30;
+            this.EmailLabel.Text = "Email:";
             // 
             // userName
             // 
@@ -129,14 +129,14 @@
             this.userName.Size = new System.Drawing.Size(100, 20);
             this.userName.TabIndex = 38;
             // 
-            // label5
+            // lastNameLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 95);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 13);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "Last name:";
+            this.lastNameLabel.AutoSize = true;
+            this.lastNameLabel.Location = new System.Drawing.Point(46, 95);
+            this.lastNameLabel.Name = "lastNameLabel";
+            this.lastNameLabel.Size = new System.Drawing.Size(59, 13);
+            this.lastNameLabel.TabIndex = 31;
+            this.lastNameLabel.Text = "Last name:";
             // 
             // managerEmail
             // 
@@ -145,14 +145,14 @@
             this.managerEmail.Size = new System.Drawing.Size(100, 20);
             this.managerEmail.TabIndex = 36;
             // 
-            // label6
+            // firstNameLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(46, 68);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 13);
-            this.label6.TabIndex = 32;
-            this.label6.Text = "First name:";
+            this.firstNameLabel.AutoSize = true;
+            this.firstNameLabel.Location = new System.Drawing.Point(46, 68);
+            this.firstNameLabel.Name = "firstNameLabel";
+            this.firstNameLabel.Size = new System.Drawing.Size(58, 13);
+            this.firstNameLabel.TabIndex = 32;
+            this.firstNameLabel.Text = "First name:";
             // 
             // managerLastName
             // 
@@ -224,17 +224,17 @@
             this.Controls.Add(this.update_manger_button);
             this.Controls.Add(this.IdComboBox);
             this.Controls.Add(this.MangerSalaryPerHour);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.idLabel);
+            this.Controls.Add(this.salaeyPerHourLabel);
+            this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.AddManagerUser);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.userNameLabel);
             this.Controls.Add(this.password);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.EmailLabel);
             this.Controls.Add(this.userName);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lastNameLabel);
             this.Controls.Add(this.managerEmail);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.firstNameLabel);
             this.Controls.Add(this.managerLastName);
             this.Controls.Add(this.managerId);
             this.Controls.Add(this.managerFirstName);
@@ -248,17 +248,17 @@
         #endregion
 
         private System.Windows.Forms.TextBox MangerSalaryPerHour;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label idLabel;
+        private System.Windows.Forms.Label salaeyPerHourLabel;
+        private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.Button AddManagerUser;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label userNameLabel;
         private System.Windows.Forms.TextBox password;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label EmailLabel;
         private System.Windows.Forms.TextBox userName;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lastNameLabel;
         private System.Windows.Forms.TextBox managerEmail;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label firstNameLabel;
         private System.Windows.Forms.TextBox managerLastName;
         private System.Windows.Forms.TextBox managerId;
         private System.Windows.Forms.TextBox managerFirstName;
