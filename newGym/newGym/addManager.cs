@@ -69,7 +69,7 @@ namespace newGym
             }
             if (!(Regex.IsMatch(MangerSalaryPerHour.Text, "^(([1-9]?)[0-9]{1,})$")))
             {
-                this.salaeyPerHourLabel.ForeColor = System.Drawing.Color.Red;
+                this.salaryPerHourLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(MangerSalaryPerHour);
             }
             if (!(Regex.IsMatch(userName.Text, "^[a-z0-9_-]{3,15}$")))
