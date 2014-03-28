@@ -43,36 +43,50 @@ namespace newGym
         private void AddManagerUser_Click_1(object sender, EventArgs e)
         {
             List<TextBox> err = new List<TextBox>();
-            
-            if(!(Regex.IsMatch(managerId.Text,"^[0-9]{9}$")) )/*&& managerId.Text.Length==9 */
+            resetLabelColor(this.Controls);
+            if(!(Regex.IsMatch(managerId.Text,"^[0-9]{9}$"))|| Manager.isIdExist(Convert.ToInt32(managerId.Text)) == false)/*&& managerId.Text.Length==9 */
             {
-                MessageBox.Show("the id invalid");
-                err.Add(managerId);
+                    MessageBox.Show("the id invalid");
+                    this.idLabel.ForeColor = System.Drawing.Color.Red;
+                    err.Add(managerId);
             }
-            if (!(Regex.IsMatch(managerFirstName.Text, "[a-zA-Z]{1,}")))
+            if (!(Regex.IsMatch(managerFirstName.Text, "^[a-zA-Z]{1,}$")))
             {
-                MessageBox.Show("the username or lastname invalid");
+                
+                this.firstNameLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(managerFirstName);
             }
-            if (!(Regex.IsMatch(managerLastName.Text, "[a-zA-Z]{1,}")))
+            if (!(Regex.IsMatch(managerLastName.Text, "^[a-zA-Z]{1,}$")))
             {
-                MessageBox.Show("lastname invalid");
+                this.lastNameLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(managerLastName);
             }
 
             if (!Regex.IsMatch(managerEmail.Text, "^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,4})$"))
             {
-                MessageBox.Show("email is invalid");
+                this.EmailLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(managerEmail);
             }
-            if (!(Regex.IsMatch(MangerSalaryPerHour.Text, "([1-9]?)[0-9]{1,}")))
+            if (!(Regex.IsMatch(MangerSalaryPerHour.Text, "^(([1-9]?)[0-9]{1,})$")))
             {
-                MessageBox.Show("payment invalid");
+                this.salaeyPerHourLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(MangerSalaryPerHour);
             }
+            if (!(Regex.IsMatch(userName.Text, "^[a-z0-9_-]{3,15}$")))
+            {
+                
+                this.userNameLabel.ForeColor = System.Drawing.Color.Red;
+                err.Add(userName);
+            }
+            if (!(Regex.IsMatch(password.Text, "^((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})")))
+            {
 
+                this.passwordLabel.ForeColor = System.Drawing.Color.Red;
+                err.Add(password);
+            }
             if (err.Count > 0)
             {
+                MessageBox.Show("Phere are some problems in the details\nfix the details in the red fields!");
                 foreach (TextBox t in err)
                 {
                     t.Text = "";
@@ -80,15 +94,9 @@ namespace newGym
             }
             else
             {
-                if (Manager.isIdExist(Convert.ToInt32(managerId.Text)) == false && err.Count < 1)
-                {
                     Manager m = new Manager(Convert.ToInt32(managerId.Text), managerFirstName.Text, managerLastName.Text, managerEmail.Text, 4, userName.Text, password.Text, Convert.ToInt32(MangerSalaryPerHour.Text));
                     m.addUser();
-                    MessageBox.Show("add a new manager success!");
-                }
-                else
-                    MessageBox.Show("the Id already exist!\n please try again!");
-                //this.addMangerPanel.Visible = false;
+                    MessageBox.Show("add a new manager success!");      
             }
         }
         static void ClearTextBoxes(Control.ControlCollection controls)
@@ -129,6 +137,16 @@ namespace newGym
             this.userName.Text = "";
             this.password.Text = "";
              */
+        }
+        static void resetLabelColor(Control.ControlCollection controls)
+        {
+            // Cycle through the controls.
+            foreach (Control control in controls)
+            {
+                Label l = (control as Label);
+                if (l != null)
+                    l.ForeColor = SystemColors.ControlText; ;
+            }
         }
     }
 }
