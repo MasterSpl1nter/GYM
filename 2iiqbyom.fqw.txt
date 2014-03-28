@@ -1,0 +1,42 @@
+﻿Merge branch 'master' of https://github.com/MasterSpl1nter/GYM
+
+Conflicts:
+	newGym/newGym/addManager.Designer.cs
+	newGym/newGym/bin/Debug/he-IL/newGym.resources.dll
+	newGym/newGym/bin/Debug/newGym.exe
+	newGym/newGym/bin/Debug/newGym.pdb
+	newGym/newGym/obj/x86/Debug/he-IL/newGym.resources.dll
+	newGym/newGym/obj/x86/Debug/newGym.csproj.GenerateResource.Cache
+	newGym/newGym/obj/x86/Debug/newGym.exe
+	newGym/newGym/obj/x86/Debug/newGym.pdb
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 1 and 2 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#   (use "git commit" to conclude merge)
+#
+# Changes to be committed:
+#
+#	modified:   newGym/newGym.suo
+#	modified:   newGym/newGym/Manager.cs
+#	modified:   newGym/newGym/addManager.Designer.cs
+#	modified:   newGym/newGym/addManager.cs
+#	modified:   newGym/newGym/bin/Debug/newGym.vshost.exe
+#	modified:   newGym/newGym/newGym.csproj
+#	modified:   newGym/newGym/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   newGym/newGym/obj/x86/Debug/newGym.csproj.FileListAbsolute.txt
+#	modified:   newGym/newGym/obj/x86/Debug/newGym.csprojResolveAssemblyReference.cache
+#	deleted:    newGym/newGym/test.cs
+#
+
