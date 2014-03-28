@@ -189,7 +189,7 @@
             // 
             this.email_verification.AutoSize = true;
             this.email_verification.ForeColor = System.Drawing.Color.Red;
-            this.email_verification.Location = new System.Drawing.Point(251, 140);
+            this.email_verification.Location = new System.Drawing.Point(59, 301);
             this.email_verification.Name = "email_verification";
             this.email_verification.Size = new System.Drawing.Size(0, 13);
             this.email_verification.TabIndex = 16;
@@ -215,7 +215,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(244, 323);
+            this.ClientSize = new System.Drawing.Size(232, 323);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.salar_txt);
             this.Controls.Add(this.email_verification);
