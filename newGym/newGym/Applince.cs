@@ -46,7 +46,7 @@ namespace newGym
             //Ap.manufactur = manufactur;
             //Ap.room = room;
             DbConnection newConn = new DbConnection("gym", "root", "csharp");
-            string query = "INSERT INTO `gym`.`appliance` (`id`, `name`, `manufacturer`, `room`, `adddate`) VALUES ('" + Convert.ToInt32(id) + "', '" + name + "', '" + manufactur + "', '" + room + "', '" + dt.ToShortDateString() + "' );";
+            string query = "INSERT INTO `gym`.`appliance` (`id`, `name`, `manufacturer`, `room`, `adddate`) VALUES ('" + Convert.ToInt32(id) + "', '" + name + "', '" + manufactur + "', '" + room + "', '" + dt.ToString("yyyy,MM,dd") + "' );";
             newConn.writeToDb(query);
            
 
