@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddSecretary));
-            this.Title = new System.Windows.Forms.Label();
             this.id_label = new System.Windows.Forms.Label();
             this.name_label = new System.Windows.Forms.Label();
             this.lastname_label = new System.Windows.Forms.Label();
@@ -46,12 +45,6 @@
             this.verify_label = new System.Windows.Forms.Label();
             this.verify_textBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // Title
-            // 
-            resources.ApplyResources(this.Title, "Title");
-            this.Title.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Title.Name = "Title";
             // 
             // id_label
             // 
@@ -163,7 +156,6 @@
             this.Controls.Add(this.name_label);
             this.Controls.Add(this.username_label);
             this.Controls.Add(this.id_label);
-            this.Controls.Add(this.Title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AddSecretary";
             this.Load += new System.EventHandler(this.AddSecretary_Load);
@@ -174,7 +166,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Title;
         private System.Windows.Forms.Label id_label;
         private System.Windows.Forms.Label name_label;
         private System.Windows.Forms.Label lastname_label;

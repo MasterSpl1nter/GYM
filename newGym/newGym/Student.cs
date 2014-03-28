@@ -8,10 +8,10 @@ namespace newGym
 {
     class Student:Person
     {
-        DateTime birthday;
-        DateTime startDate;
-        DateTime endDate;
-        DateTime medcert;
+        //DateTime birthday;
+        //DateTime startDate;
+        //DateTime endDate;
+        //DateTime medcert;
 
         public static int Delete(string id)
         {

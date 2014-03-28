@@ -38,7 +38,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -190,7 +189,6 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Location = new System.Drawing.Point(546, 12);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(396, 84);
@@ -203,18 +201,10 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 13);
+            this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Hello, Tambal Gadol";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 36);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "label2";
+            this.label3.Text = "Hello, ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // groupBox1
             // 
@@ -563,7 +553,7 @@
             this.tabPage4.Controls.Add(this.flowLayoutPanel4);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(237, 273);
+            this.tabPage4.Size = new System.Drawing.Size(154, 291);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Receptionist";
             // 
@@ -612,7 +602,7 @@
             this.tabPage5.Controls.Add(this.flowLayoutPanel5);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(237, 273);
+            this.tabPage5.Size = new System.Drawing.Size(154, 291);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Student";
             // 
@@ -624,14 +614,14 @@
             this.flowLayoutPanel5.Controls.Add(this.button16);
             this.flowLayoutPanel5.Location = new System.Drawing.Point(16, 12);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(199, 215);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(126, 257);
             this.flowLayoutPanel5.TabIndex = 2;
             // 
             // button14
             // 
             this.button14.Location = new System.Drawing.Point(3, 3);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(181, 90);
+            this.button14.Size = new System.Drawing.Size(123, 35);
             this.button14.TabIndex = 0;
             this.button14.Text = "Add";
             this.button14.UseVisualStyleBackColor = true;
@@ -639,18 +629,18 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(3, 99);
+            this.button15.Location = new System.Drawing.Point(3, 44);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(181, 90);
+            this.button15.Size = new System.Drawing.Size(123, 35);
             this.button15.TabIndex = 1;
             this.button15.Text = "Edit";
             this.button15.UseVisualStyleBackColor = true;
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(3, 195);
+            this.button16.Location = new System.Drawing.Point(3, 85);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(181, 90);
+            this.button16.Size = new System.Drawing.Size(123, 35);
             this.button16.TabIndex = 2;
             this.button16.Text = "Delete";
             this.button16.UseVisualStyleBackColor = true;
@@ -661,7 +651,7 @@
             this.tabPage6.Controls.Add(this.flowLayoutPanel6);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(237, 273);
+            this.tabPage6.Size = new System.Drawing.Size(154, 291);
             this.tabPage6.TabIndex = 6;
             this.tabPage6.Text = "Class";
             // 
@@ -671,7 +661,7 @@
             this.flowLayoutPanel6.Controls.Add(this.button19);
             this.flowLayoutPanel6.Controls.Add(this.button20);
             this.flowLayoutPanel6.Controls.Add(this.button21);
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(57, 12);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(16, 9);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Size = new System.Drawing.Size(121, 99);
             this.flowLayoutPanel6.TabIndex = 2;
@@ -713,27 +703,27 @@
             this.property.Controls.Add(this.button17);
             this.property.Location = new System.Drawing.Point(4, 22);
             this.property.Name = "property";
-            this.property.Size = new System.Drawing.Size(237, 273);
+            this.property.Size = new System.Drawing.Size(154, 291);
             this.property.TabIndex = 5;
             this.property.Text = "Property";
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(81, 128);
+            this.button18.Location = new System.Drawing.Point(37, 56);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 23);
+            this.button18.Size = new System.Drawing.Size(75, 44);
             this.button18.TabIndex = 1;
-            this.button18.Text = "Appliace";
+            this.button18.Text = "Appliace menu";
             this.button18.UseVisualStyleBackColor = true;
             this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(81, 81);
+            this.button17.Location = new System.Drawing.Point(37, 27);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(75, 23);
             this.button17.TabIndex = 0;
-            this.button17.Text = "button17";
+            this.button17.Text = "Add Room";
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
@@ -786,7 +776,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.HScrollBar hScrollBar1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;

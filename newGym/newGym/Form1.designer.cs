@@ -159,6 +159,7 @@
             this.salaryText.Size = new System.Drawing.Size(100, 20);
             this.salaryText.TabIndex = 15;
             this.salaryText.Tag = "label7";
+            //this.salaryText.TextChanged += new System.EventHandler(this.salaryText_TextChanged);
             this.salaryText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.salaryText_KeyPress);
             // 
             // label7

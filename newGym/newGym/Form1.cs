@@ -209,7 +209,5 @@ namespace newGym
             return true;
         }
 
-
-
     }
 }

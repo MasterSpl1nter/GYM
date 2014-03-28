@@ -50,7 +50,7 @@
             // 
             // MangerSalaryPerHour
             // 
-            this.MangerSalaryPerHour.Location = new System.Drawing.Point(104, 143);
+            this.MangerSalaryPerHour.Location = new System.Drawing.Point(82, 152);
             this.MangerSalaryPerHour.Name = "MangerSalaryPerHour";
             this.MangerSalaryPerHour.Size = new System.Drawing.Size(100, 20);
             this.MangerSalaryPerHour.TabIndex = 37;
@@ -59,7 +59,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label1.Location = new System.Drawing.Point(82, 42);
+            this.label1.Location = new System.Drawing.Point(60, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(21, 13);
             this.label1.TabIndex = 27;
@@ -68,7 +68,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(54, 146);
+            this.label7.Location = new System.Drawing.Point(32, 155);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(50, 13);
             this.label7.TabIndex = 41;
@@ -77,7 +77,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 198);
+            this.label2.Location = new System.Drawing.Point(28, 207);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 28;
@@ -89,7 +89,7 @@
             this.AddManagerUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.AddManagerUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddManagerUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AddManagerUser.Location = new System.Drawing.Point(100, 227);
+            this.AddManagerUser.Location = new System.Drawing.Point(78, 236);
             this.AddManagerUser.Name = "AddManagerUser";
             this.AddManagerUser.Size = new System.Drawing.Size(104, 23);
             this.AddManagerUser.TabIndex = 40;
@@ -100,7 +100,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 172);
+            this.label3.Location = new System.Drawing.Point(24, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 29;
@@ -108,7 +108,7 @@
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(104, 195);
+            this.password.Location = new System.Drawing.Point(82, 204);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(100, 20);
             this.password.TabIndex = 39;
@@ -116,7 +116,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(69, 120);
+            this.label4.Location = new System.Drawing.Point(47, 129);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 30;
@@ -124,7 +124,7 @@
             // 
             // userName
             // 
-            this.userName.Location = new System.Drawing.Point(104, 169);
+            this.userName.Location = new System.Drawing.Point(82, 178);
             this.userName.Name = "userName";
             this.userName.Size = new System.Drawing.Size(100, 20);
             this.userName.TabIndex = 38;
@@ -132,7 +132,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 95);
+            this.label5.Location = new System.Drawing.Point(24, 104);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 13);
             this.label5.TabIndex = 31;
@@ -140,7 +140,7 @@
             // 
             // managerEmail
             // 
-            this.managerEmail.Location = new System.Drawing.Point(104, 117);
+            this.managerEmail.Location = new System.Drawing.Point(82, 126);
             this.managerEmail.Name = "managerEmail";
             this.managerEmail.Size = new System.Drawing.Size(100, 20);
             this.managerEmail.TabIndex = 36;
@@ -148,7 +148,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(46, 68);
+            this.label6.Location = new System.Drawing.Point(24, 77);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 13);
             this.label6.TabIndex = 32;
@@ -156,21 +156,21 @@
             // 
             // managerLastName
             // 
-            this.managerLastName.Location = new System.Drawing.Point(104, 91);
+            this.managerLastName.Location = new System.Drawing.Point(82, 100);
             this.managerLastName.Name = "managerLastName";
             this.managerLastName.Size = new System.Drawing.Size(100, 20);
             this.managerLastName.TabIndex = 35;
             // 
             // managerId
             // 
-            this.managerId.Location = new System.Drawing.Point(104, 39);
+            this.managerId.Location = new System.Drawing.Point(82, 48);
             this.managerId.Name = "managerId";
             this.managerId.Size = new System.Drawing.Size(100, 20);
             this.managerId.TabIndex = 33;
             // 
             // managerFirstName
             // 
-            this.managerFirstName.Location = new System.Drawing.Point(104, 65);
+            this.managerFirstName.Location = new System.Drawing.Point(82, 74);
             this.managerFirstName.Name = "managerFirstName";
             this.managerFirstName.Size = new System.Drawing.Size(100, 20);
             this.managerFirstName.TabIndex = 34;
@@ -178,7 +178,7 @@
             // IdComboBox
             // 
             this.IdComboBox.FormattingEnabled = true;
-            this.IdComboBox.Location = new System.Drawing.Point(104, 39);
+            this.IdComboBox.Location = new System.Drawing.Point(82, 48);
             this.IdComboBox.Name = "IdComboBox";
             this.IdComboBox.Size = new System.Drawing.Size(100, 21);
             this.IdComboBox.TabIndex = 42;
@@ -191,7 +191,7 @@
             this.exit_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.exit_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit_update.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exit_update.Location = new System.Drawing.Point(188, 227);
+            this.exit_update.Location = new System.Drawing.Point(166, 236);
             this.exit_update.Name = "exit_update";
             this.exit_update.Size = new System.Drawing.Size(39, 23);
             this.exit_update.TabIndex = 44;
@@ -206,7 +206,7 @@
             this.update_manger_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.update_manger_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.update_manger_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.update_manger_button.Location = new System.Drawing.Point(85, 227);
+            this.update_manger_button.Location = new System.Drawing.Point(63, 236);
             this.update_manger_button.Name = "update_manger_button";
             this.update_manger_button.Size = new System.Drawing.Size(104, 23);
             this.update_manger_button.TabIndex = 43;
@@ -219,7 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 331);
+            this.ClientSize = new System.Drawing.Size(232, 323);
             this.Controls.Add(this.exit_update);
             this.Controls.Add(this.update_manger_button);
             this.Controls.Add(this.IdComboBox);

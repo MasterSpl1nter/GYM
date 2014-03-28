@@ -41,7 +41,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.save_butten = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.clear_all_button = new System.Windows.Forms.Button();
             this.email_verification = new System.Windows.Forms.Label();
             this.lable8 = new System.Windows.Forms.Label();
@@ -50,7 +49,7 @@
             // 
             // id_txt
             // 
-            this.id_txt.Location = new System.Drawing.Point(251, 82);
+            this.id_txt.Location = new System.Drawing.Point(110, 39);
             this.id_txt.Name = "id_txt";
             this.id_txt.Size = new System.Drawing.Size(100, 20);
             this.id_txt.TabIndex = 1;
@@ -59,35 +58,35 @@
             // 
             // firstname_txt
             // 
-            this.firstname_txt.Location = new System.Drawing.Point(251, 108);
+            this.firstname_txt.Location = new System.Drawing.Point(110, 65);
             this.firstname_txt.Name = "firstname_txt";
             this.firstname_txt.Size = new System.Drawing.Size(100, 20);
             this.firstname_txt.TabIndex = 2;
             // 
             // lastname_txt
             // 
-            this.lastname_txt.Location = new System.Drawing.Point(251, 134);
+            this.lastname_txt.Location = new System.Drawing.Point(110, 91);
             this.lastname_txt.Name = "lastname_txt";
             this.lastname_txt.Size = new System.Drawing.Size(100, 20);
             this.lastname_txt.TabIndex = 3;
             // 
             // email_txt
             // 
-            this.email_txt.Location = new System.Drawing.Point(251, 160);
+            this.email_txt.Location = new System.Drawing.Point(110, 117);
             this.email_txt.Name = "email_txt";
             this.email_txt.Size = new System.Drawing.Size(100, 20);
             this.email_txt.TabIndex = 4;
             // 
             // username_txt
             // 
-            this.username_txt.Location = new System.Drawing.Point(251, 186);
+            this.username_txt.Location = new System.Drawing.Point(110, 143);
             this.username_txt.Name = "username_txt";
             this.username_txt.Size = new System.Drawing.Size(100, 20);
             this.username_txt.TabIndex = 5;
             // 
             // password_txt
             // 
-            this.password_txt.Location = new System.Drawing.Point(251, 212);
+            this.password_txt.Location = new System.Drawing.Point(110, 169);
             this.password_txt.Name = "password_txt";
             this.password_txt.Size = new System.Drawing.Size(100, 20);
             this.password_txt.TabIndex = 6;
@@ -95,7 +94,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(156, 88);
+            this.label1.Location = new System.Drawing.Point(15, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 1;
@@ -104,7 +103,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(156, 115);
+            this.label2.Location = new System.Drawing.Point(15, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 1;
@@ -113,7 +112,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(156, 141);
+            this.label3.Location = new System.Drawing.Point(15, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 1;
@@ -122,7 +121,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(156, 167);
+            this.label4.Location = new System.Drawing.Point(15, 124);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 1;
@@ -131,7 +130,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(156, 193);
+            this.label5.Location = new System.Drawing.Point(15, 150);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 1;
@@ -140,7 +139,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(156, 219);
+            this.label6.Location = new System.Drawing.Point(15, 176);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 13);
             this.label6.TabIndex = 1;
@@ -148,7 +147,7 @@
             // 
             // save_butten
             // 
-            this.save_butten.Location = new System.Drawing.Point(159, 281);
+            this.save_butten.Location = new System.Drawing.Point(18, 238);
             this.save_butten.Name = "save_butten";
             this.save_butten.Size = new System.Drawing.Size(75, 23);
             this.save_butten.TabIndex = 8;
@@ -156,18 +155,9 @@
             this.save_butten.UseVisualStyleBackColor = true;
             this.save_butten.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(217, 46);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 13);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Add Trainer";
-            // 
             // clear_all_button
             // 
-            this.clear_all_button.Location = new System.Drawing.Point(275, 281);
+            this.clear_all_button.Location = new System.Drawing.Point(134, 238);
             this.clear_all_button.Name = "clear_all_button";
             this.clear_all_button.Size = new System.Drawing.Size(75, 23);
             this.clear_all_button.TabIndex = 8;
@@ -187,7 +177,7 @@
             // lable8
             // 
             this.lable8.AutoSize = true;
-            this.lable8.Location = new System.Drawing.Point(156, 245);
+            this.lable8.Location = new System.Drawing.Point(15, 202);
             this.lable8.Name = "lable8";
             this.lable8.Size = new System.Drawing.Size(81, 13);
             this.lable8.TabIndex = 11;
@@ -195,7 +185,7 @@
             // 
             // salar_txt
             // 
-            this.salar_txt.Location = new System.Drawing.Point(251, 238);
+            this.salar_txt.Location = new System.Drawing.Point(110, 195);
             this.salar_txt.Name = "salar_txt";
             this.salar_txt.Size = new System.Drawing.Size(100, 20);
             this.salar_txt.TabIndex = 7;
@@ -205,12 +195,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 375);
+            this.ClientSize = new System.Drawing.Size(232, 295);
             this.Controls.Add(this.salar_txt);
             this.Controls.Add(this.lable8);
             this.Controls.Add(this.email_verification);
             this.Controls.Add(this.clear_all_button);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.save_butten);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -246,7 +235,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button save_butten;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button clear_all_button;
         private System.Windows.Forms.Label email_verification;
         private System.Windows.Forms.Label lable8;

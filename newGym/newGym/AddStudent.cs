@@ -21,9 +21,9 @@ namespace newGym
         string password; // get from this form
         int permission=0;
         DateTime now = DateTime .Now;
-        DateTime startDate;
-        DateTime EndDate;
-        DateTime medCert;
+        //DateTime startDate;
+       // DateTime EndDate;
+        //DateTime medCert;
        
         public AddStudent()
         {
@@ -304,6 +304,11 @@ namespace newGym
         }
 
         private void verPassWorod_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_pass_TextChanged(object sender, EventArgs e)
         {
 
         }
