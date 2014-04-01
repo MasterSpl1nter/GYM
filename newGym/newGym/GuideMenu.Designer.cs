@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.button13 = new System.Windows.Forms.Button();
@@ -64,6 +65,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.loggedLabel = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dateLabel = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox5.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -148,9 +151,9 @@
             // hScrollBar1
             // 
             this.hScrollBar1.LargeChange = 50;
-            this.hScrollBar1.Location = new System.Drawing.Point(16, 187);
+            this.hScrollBar1.Location = new System.Drawing.Point(20, 183);
             this.hScrollBar1.Name = "hScrollBar1";
-            this.hScrollBar1.Size = new System.Drawing.Size(159, 17);
+            this.hScrollBar1.Size = new System.Drawing.Size(158, 17);
             this.hScrollBar1.SmallChange = 50;
             this.hScrollBar1.TabIndex = 21;
             this.hScrollBar1.Visible = false;
@@ -174,22 +177,22 @@
             this.tableLayoutPanel1.Controls.Add(this.nameLabel, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label15, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.idLabel, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(19, 34);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 25);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.80851F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.19149F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(158, 123);
             this.tableLayoutPanel1.TabIndex = 20;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 103);
+            this.label10.Location = new System.Drawing.Point(3, 100);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 13);
             this.label10.TabIndex = 22;
@@ -198,7 +201,7 @@
             // tothourLabel
             // 
             this.tothourLabel.AutoSize = true;
-            this.tothourLabel.Location = new System.Drawing.Point(110, 103);
+            this.tothourLabel.Location = new System.Drawing.Point(110, 100);
             this.tothourLabel.Name = "tothourLabel";
             this.tothourLabel.Size = new System.Drawing.Size(0, 13);
             this.tothourLabel.TabIndex = 26;
@@ -206,7 +209,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 84);
+            this.label9.Location = new System.Drawing.Point(3, 80);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(51, 13);
             this.label9.TabIndex = 21;
@@ -215,7 +218,7 @@
             // paymentLabel
             // 
             this.paymentLabel.AutoSize = true;
-            this.paymentLabel.Location = new System.Drawing.Point(110, 84);
+            this.paymentLabel.Location = new System.Drawing.Point(110, 80);
             this.paymentLabel.Name = "paymentLabel";
             this.paymentLabel.Size = new System.Drawing.Size(0, 13);
             this.paymentLabel.TabIndex = 25;
@@ -223,7 +226,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 63);
+            this.label8.Location = new System.Drawing.Point(3, 60);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(48, 13);
             this.label8.TabIndex = 20;
@@ -232,7 +235,7 @@
             // roomNumLabel
             // 
             this.roomNumLabel.AutoSize = true;
-            this.roomNumLabel.Location = new System.Drawing.Point(110, 63);
+            this.roomNumLabel.Location = new System.Drawing.Point(110, 60);
             this.roomNumLabel.Name = "roomNumLabel";
             this.roomNumLabel.Size = new System.Drawing.Size(0, 13);
             this.roomNumLabel.TabIndex = 24;
@@ -240,7 +243,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 42);
+            this.label7.Location = new System.Drawing.Point(3, 40);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(101, 13);
             this.label7.TabIndex = 19;
@@ -249,7 +252,7 @@
             // ParticiLabel
             // 
             this.ParticiLabel.AutoSize = true;
-            this.ParticiLabel.Location = new System.Drawing.Point(110, 42);
+            this.ParticiLabel.Location = new System.Drawing.Point(110, 40);
             this.ParticiLabel.Name = "ParticiLabel";
             this.ParticiLabel.Size = new System.Drawing.Size(0, 13);
             this.ParticiLabel.TabIndex = 23;
@@ -422,6 +425,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.dateLabel);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.loggedLabel);
             this.groupBox3.Location = new System.Drawing.Point(20, 12);
@@ -430,6 +434,19 @@
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Information";
+            // 
+            // dateLabel
+            // 
+            this.dateLabel.AutoSize = true;
+            this.dateLabel.Location = new System.Drawing.Point(346, 23);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(0, 13);
+            this.dateLabel.TabIndex = 17;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // GuideMenu
             // 
@@ -495,5 +512,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label loggedLabel;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label dateLabel;
+        private System.Windows.Forms.Timer timer1;
     }
 }

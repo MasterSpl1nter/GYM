@@ -22,6 +22,7 @@ namespace newGym
             this.guide = guide;
             dt = new DataTable();
             InitializeComponent();
+            timer1.Start();
             loggedLabel.Text = guide.UserName;
             MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.guideid=22");
             arr = new DateTime[dt.Rows.Count];
@@ -173,6 +174,11 @@ namespace newGym
         private void GuideMenu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            dateLabel.Text = DateTime.Now.ToString();
         }
 
     }
