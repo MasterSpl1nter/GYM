@@ -77,3 +77,4 @@ C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.csproj.Gen
 C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\he-IL\newGym.resources.dll
 \\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideMenu.resources
 \\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Login.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideSearch.resources

@@ -122,6 +122,12 @@
     <Compile Include="GuideMenu.Designer.cs">
       <DependentUpon>GuideMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuideSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideSearch.Designer.cs">
+      <DependentUpon>GuideSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GuideMenu.resx">
       <DependentUpon>GuideMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideSearch.resx">
+      <DependentUpon>GuideSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

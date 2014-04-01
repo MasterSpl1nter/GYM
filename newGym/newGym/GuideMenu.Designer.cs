@@ -53,10 +53,19 @@
             this.starttimeLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.StudSearch = new System.Windows.Forms.TextBox();
+            this.GuideSearch = new System.Windows.Forms.TextBox();
+            this.radioID = new System.Windows.Forms.RadioButton();
+            this.radioName = new System.Windows.Forms.RadioButton();
             this.groupBox5.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox5
@@ -309,21 +318,107 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "From:";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioName);
+            this.groupBox2.Controls.Add(this.radioID);
+            this.groupBox2.Controls.Add(this.GuideSearch);
+            this.groupBox2.Controls.Add(this.StudSearch);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Location = new System.Drawing.Point(175, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(301, 127);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Search";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(195, 81);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 34);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Search";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 37);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Student:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(16, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Guide:";
+            // 
+            // StudSearch
+            // 
+            this.StudSearch.Location = new System.Drawing.Point(70, 34);
+            this.StudSearch.Name = "StudSearch";
+            this.StudSearch.Size = new System.Drawing.Size(100, 20);
+            this.StudSearch.TabIndex = 4;
+            // 
+            // GuideSearch
+            // 
+            this.GuideSearch.Location = new System.Drawing.Point(70, 78);
+            this.GuideSearch.Name = "GuideSearch";
+            this.GuideSearch.Size = new System.Drawing.Size(100, 20);
+            this.GuideSearch.TabIndex = 5;
+            // 
+            // radioID
+            // 
+            this.radioID.AutoSize = true;
+            this.radioID.Checked = true;
+            this.radioID.Location = new System.Drawing.Point(204, 30);
+            this.radioID.Name = "radioID";
+            this.radioID.Size = new System.Drawing.Size(51, 17);
+            this.radioID.TabIndex = 6;
+            this.radioID.TabStop = true;
+            this.radioID.Text = "By ID";
+            this.radioID.UseVisualStyleBackColor = true;
+            // 
+            // radioName
+            // 
+            this.radioName.AutoSize = true;
+            this.radioName.Location = new System.Drawing.Point(204, 54);
+            this.radioName.Name = "radioName";
+            this.radioName.Size = new System.Drawing.Size(66, 17);
+            this.radioName.TabIndex = 7;
+            this.radioName.TabStop = true;
+            this.radioName.Text = "By name";
+            this.radioName.UseVisualStyleBackColor = true;
+            this.radioName.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
             // GuideMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(499, 383);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox5);
             this.Name = "GuideMenu";
             this.Text = "GuideMenu";
+            this.Load += new System.EventHandler(this.GuideMenu_Load);
             this.groupBox5.ResumeLayout(false);
             this.flowLayoutPanel5.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -355,5 +450,13 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.HScrollBar hScrollBar1;
         private System.Windows.Forms.Label idLabel;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox GuideSearch;
+        private System.Windows.Forms.TextBox StudSearch;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton radioName;
+        private System.Windows.Forms.RadioButton radioID;
     }
 }

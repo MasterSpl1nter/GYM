@@ -35,5 +35,33 @@ namespace newGym
         {
             return MySQL.Delete("guide", "id="+id);
         }
+        public static int SearchID(DataTable dt,string search)
+        {
+            int retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email FROM guide where id LIKE " + search);
+            if (retval == 0)
+                return 0;
+            return retval;
+        }
+        public static int SearchName(DataTable dt, string search)
+        {
+            int retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email FROM guide where firstname LIKE " + "'%" + search.Split(' ')[0] + "%' and lastname LIKE '%" + search.Split(' ')[1] + "%'" );
+            if (retval == 0)
+                return 0;
+            return retval;
+        }
+        public static int SearchStudID(DataTable dt, string search)
+        {
+            int retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email,birthday,startdate,enddate,medcert FROM student where id LIKE " + search);
+            if (retval == 0)
+                return 0;
+            return retval;
+        }
+        public static int SearchStudName(DataTable dt, string search)
+        {
+            int retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email,birthday,startdate,enddate,medcert FROM student where firstname LIKE " + "'%" + search.Split(' ')[0] + "%' and lastname LIKE '%" + search.Split(' ')[1] + "%'");
+            if (retval == 0)
+                return 0;
+            return retval;
+        }
     }
 }

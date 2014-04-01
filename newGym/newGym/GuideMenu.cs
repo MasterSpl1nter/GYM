@@ -118,5 +118,58 @@ namespace newGym
             ac.ShowDialog();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (StudSearch.Text.Length > 0 && GuideSearch.Text.Length > 0)
+            {
+                MessageBox.Show("Only one search field can be filled.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
+            }
+            DataTable dt=new DataTable();
+            if (GuideSearch.Text.Length>0){
+             if (radioID.Checked)
+                {
+                Guide.SearchID(dt, GuideSearch.Text);
+                //MessageBox.Show(dt.Rows[0]["id"].ToString());
+                GuideSearch gs = new GuideSearch(dt);
+                gs.ShowDialog();
+            }
+            else
+            {
+                Guide.SearchName(dt, GuideSearch.Text);
+                //MessageBox.Show(dt.Rows[0]["id"].ToString());
+                GuideSearch gs = new GuideSearch(dt);
+                gs.ShowDialog();
+            }
+            }
+            else if (StudSearch.Text.Length > 0)
+            {
+                if (radioID.Checked)
+                {
+                    Guide.SearchStudID(dt, StudSearch.Text);
+                    //MessageBox.Show(dt.Rows[0]["id"].ToString());
+                    GuideSearch gs = new GuideSearch(dt);
+                    gs.ShowDialog();
+                }
+                else
+                {
+                    Guide.SearchStudName(dt, StudSearch.Text);
+                    //MessageBox.Show(dt.Rows[0]["id"].ToString());
+                    GuideSearch gs = new GuideSearch(dt);
+                    gs.ShowDialog();
+                }
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GuideMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
