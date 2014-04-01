@@ -21,7 +21,7 @@ namespace newGym
             textBox2.MaxLength = 20;
             textBox2.PasswordChar = '*';
             comboBox2.SelectedIndex = 0;
-            MessageBox.Show("Working Menus: Manager without password, Guide with password");
+            MessageBox.Show("Working Menus: \n1. Manager without password\n2. Guide with password");
         }
 
 
