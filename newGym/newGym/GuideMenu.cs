@@ -16,10 +16,13 @@ namespace newGym
         DateTime[] arr;
         DataTable dtmp;
         DataTable dt;
-        public GuideMenu()
+        Guide guide;
+        public GuideMenu(Guide guide)
         {
+            this.guide = guide;
             dt = new DataTable();
             InitializeComponent();
+            loggedLabel.Text = guide.UserName;
             MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.guideid=22");
             arr = new DateTime[dt.Rows.Count];
             for (int i = 0; i < dt.Rows.Count; i++)
@@ -125,18 +128,19 @@ namespace newGym
                 MessageBox.Show("Only one search field can be filled.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
             }
+            //fix error spaces in name search
             DataTable dt=new DataTable();
             if (GuideSearch.Text.Length>0){
              if (radioID.Checked)
                 {
-                Guide.SearchID(dt, GuideSearch.Text);
+                guide.SearchID(dt, GuideSearch.Text);
                 //MessageBox.Show(dt.Rows[0]["id"].ToString());
                 GuideSearch gs = new GuideSearch(dt);
                 gs.ShowDialog();
             }
             else
             {
-                Guide.SearchName(dt, GuideSearch.Text);
+                guide.SearchName(dt, GuideSearch.Text);
                 //MessageBox.Show(dt.Rows[0]["id"].ToString());
                 GuideSearch gs = new GuideSearch(dt);
                 gs.ShowDialog();
@@ -146,14 +150,14 @@ namespace newGym
             {
                 if (radioID.Checked)
                 {
-                    Guide.SearchStudID(dt, StudSearch.Text);
+                    guide.SearchStudID(dt, StudSearch.Text);
                     //MessageBox.Show(dt.Rows[0]["id"].ToString());
                     GuideSearch gs = new GuideSearch(dt);
                     gs.ShowDialog();
                 }
                 else
                 {
-                    Guide.SearchStudName(dt, StudSearch.Text);
+                    guide.SearchStudName(dt, StudSearch.Text);
                     //MessageBox.Show(dt.Rows[0]["id"].ToString());
                     GuideSearch gs = new GuideSearch(dt);
                     gs.ShowDialog();

@@ -61,17 +61,21 @@
             this.GuideSearch = new System.Windows.Forms.TextBox();
             this.radioID = new System.Windows.Forms.RadioButton();
             this.radioName = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.loggedLabel = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox5.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.flowLayoutPanel5);
-            this.groupBox5.Location = new System.Drawing.Point(12, 12);
+            this.groupBox5.Location = new System.Drawing.Point(20, 68);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(147, 127);
             this.groupBox5.TabIndex = 11;
@@ -134,7 +138,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.monthCalendar1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 151);
+            this.groupBox1.Location = new System.Drawing.Point(20, 207);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(464, 218);
             this.groupBox1.TabIndex = 13;
@@ -327,7 +331,7 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Location = new System.Drawing.Point(175, 12);
+            this.groupBox2.Location = new System.Drawing.Point(183, 68);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(301, 127);
             this.groupBox2.TabIndex = 14;
@@ -395,16 +399,44 @@
             this.radioName.Name = "radioName";
             this.radioName.Size = new System.Drawing.Size(66, 17);
             this.radioName.TabIndex = 7;
-            this.radioName.TabStop = true;
             this.radioName.Text = "By name";
             this.radioName.UseVisualStyleBackColor = true;
             this.radioName.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 23);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Logged in as:";
+            // 
+            // loggedLabel
+            // 
+            this.loggedLabel.AutoSize = true;
+            this.loggedLabel.Location = new System.Drawing.Point(83, 23);
+            this.loggedLabel.Name = "loggedLabel";
+            this.loggedLabel.Size = new System.Drawing.Size(0, 13);
+            this.loggedLabel.TabIndex = 16;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.loggedLabel);
+            this.groupBox3.Location = new System.Drawing.Point(20, 12);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(464, 50);
+            this.groupBox3.TabIndex = 17;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Information";
             // 
             // GuideMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(499, 383);
+            this.ClientSize = new System.Drawing.Size(505, 436);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox5);
@@ -419,6 +451,8 @@
             this.tableLayoutPanel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -458,5 +492,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RadioButton radioName;
         private System.Windows.Forms.RadioButton radioID;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label loggedLabel;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

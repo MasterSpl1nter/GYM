@@ -166,6 +166,7 @@
     </Compile>
     <Compile Include="Secretary.cs" />
     <Compile Include="Student.cs" />
+    <Compile Include="Threads.cs" />
     <EmbeddedResource Include="addManager.resx">
       <DependentUpon>addManager.cs</DependentUpon>
     </EmbeddedResource>
