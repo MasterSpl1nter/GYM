@@ -47,7 +47,8 @@ namespace newGym
                     }
                     break;
                 case 4:
-
+                    ManagerMenu ma = new ManagerMenu();
+                    ma.ShowDialog();
                     break;
             }
             if (retval == 1)
