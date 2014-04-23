@@ -60,6 +60,13 @@
       <DependentUpon>AddStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Applince.cs" />
+    <Compile Include="Trainer.cs" />
+    <Compile Include="TrainerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainerMenu.Designer.cs">
+      <DependentUpon>TrainerMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="DbConnection.cs" />
     <Compile Include="fAddClass.cs">
       <SubType>Form</SubType>
@@ -177,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainerMenu.resx">
+      <DependentUpon>TrainerMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fAddClass.he-IL.resx">
       <DependentUpon>fAddClass.cs</DependentUpon>

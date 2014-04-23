@@ -21,7 +21,7 @@ namespace newGym
             textBox2.MaxLength = 20;
             textBox2.PasswordChar = '*';
             comboBox2.SelectedIndex = 0;
-            MessageBox.Show("Working Menus: \n1. Manager without password\n2. Guide with password");
+            MessageBox.Show("Working Menus: \n1. Manager without password\n2. Guide with password\n3. Trainer with password");
         }
 
 
@@ -36,6 +36,13 @@ namespace newGym
                 case 1:
                     break;
                 case 2:
+                    if (Trainer.CheckLogin(dt, textBox1.Text, textBox2.Text))
+                    {
+                        retval = 0;
+                        Trainer trainer = new Trainer(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
+                        TrainerMenu gm = new TrainerMenu(trainer);
+                        gm.ShowDialog();
+                    }
                     break;
                 case 3:
                     if (Guide.CheckLogin(dt, textBox1.Text, textBox2.Text))
@@ -78,6 +85,11 @@ namespace newGym
             //Application.Run(new Menu(1));
             //Application.Run(new Form2());
 
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

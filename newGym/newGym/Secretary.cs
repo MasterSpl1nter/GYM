@@ -37,7 +37,7 @@ namespace newGym
         }
         public static int Add(string insert)
         {
-            return MySQL.Insert("worker", "id,firstname,lastname,email,username,password,permission,salaryperhour", insert);
+            return MySQL.Insert("worker", "id,firstname,lastname,email,username,password,permission,salaryPerHour", insert);
         }
         public static int Delete(string id)
         {
