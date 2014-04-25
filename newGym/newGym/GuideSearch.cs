@@ -11,10 +11,19 @@ namespace newGym
 {
     public partial class GuideSearch : Form
     {
+        DataTable dt;
         public GuideSearch(DataTable dt)
         {
+            this.dt = dt;
             InitializeComponent();
             dataGridView1.DataSource = dt;
+            dataGridView1.CellClick+=dataGridView1_CellClick;
+        }
+        private void dataGridView1_CellClick(object sender,
+    DataGridViewCellEventArgs e)
+        {
+                MessageBox.Show(dt.Rows[e.RowIndex]["id"].ToString());
+
         }
     }
 }
