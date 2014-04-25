@@ -24,7 +24,7 @@ namespace newGym
             InitializeComponent();
             timer1.Start();
             loggedLabel.Text = guide.UserName;
-            MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.guideid=22");
+            MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.guideid=" + guide.Id);
             arr = new DateTime[dt.Rows.Count];
             for (int i = 0; i < dt.Rows.Count; i++)
             {
@@ -112,7 +112,7 @@ namespace newGym
 
         private void button13_Click(object sender, EventArgs e)
         {
-            fAddClass ac = new fAddClass();
+            fAddClass ac = new fAddClass(guide.Id);
             ac.ShowDialog();
         }
 

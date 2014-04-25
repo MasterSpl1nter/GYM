@@ -45,6 +45,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.gidLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -91,6 +92,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
@@ -98,6 +100,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.Name = "comboBox2";
@@ -149,10 +152,16 @@
             this.dateTimePicker2.TabStop = false;
             this.dateTimePicker2.UseWaitCursor = true;
             // 
+            // gidLabel
+            // 
+            resources.ApplyResources(this.gidLabel, "gidLabel");
+            this.gidLabel.Name = "gidLabel";
+            // 
             // fAddClass
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.gidLabel);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label7);
@@ -194,5 +203,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label gidLabel;
     }
 }

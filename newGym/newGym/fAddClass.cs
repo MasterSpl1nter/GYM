@@ -13,52 +13,61 @@ namespace newGym
 {
     public partial class fAddClass : Form
     {
+        private int id = -1;
         public fAddClass()
         {
             InitializeComponent();
             LoadRoomId();
             LoadGuideId();
         }
-
+        public fAddClass(int id)
+        {
+            this.id = id;
+            InitializeComponent();
+            gidLabel.Visible = true;
+            comboBox2.Visible = false;
+            LoadRoomId();
+            LoadGuideId();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-         //   DataTable dt = new DataTable();
+            //   DataTable dt = new DataTable();
 
             try
             {
                 int num;
                 bool result = Int32.TryParse(textBox1.Text, out num);
-                
+
                 if (result)
                 {
-                    
-                 //   string starttime = dateTimePicker1.Value.ToString("HH:mm:ss");
 
-                  //  string endtime = dateTimePicker2.Value.ToString("HH:mm:ss");
+                    //   string starttime = dateTimePicker1.Value.ToString("HH:mm:ss");
 
-                  //  string startdate = dateTimePicker1.Value.ToString("yyyy-MM-dd");
-                  //  string enddate = dateTimePicker2.Value.ToString("yyyy-MM-dd");
-                    
+                    //  string endtime = dateTimePicker2.Value.ToString("HH:mm:ss");
+
+                    //  string startdate = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+                    //  string enddate = dateTimePicker2.Value.ToString("yyyy-MM-dd");
+
                     string Start = dateTimePicker1.Value.ToString("yyyy-MM-dd HH:mm:ss");
                     string End = dateTimePicker2.Value.ToString("yyyy-MM-dd HH:mm:ss");
 
-                  //  MessageBox.Show((dateTimePicker1.Value.Date.ToLongDateString()-dateTimePicker2.Value.Date.ToLongDateString()).ToString());
+                    //  MessageBox.Show((dateTimePicker1.Value.Date.ToLongDateString()-dateTimePicker2.Value.Date.ToLongDateString()).ToString());
                     int MonthDiff = dateTimePicker1.Value.Month - dateTimePicker2.Value.Month;
-                    int TimeDiff =  dateTimePicker2.Value.Hour - dateTimePicker1.Value.Hour;
-                    int YearDiff =  dateTimePicker1.Value.Year - dateTimePicker2.Value.Year;
+                    int TimeDiff = dateTimePicker2.Value.Hour - dateTimePicker1.Value.Hour;
+                    int YearDiff = dateTimePicker1.Value.Year - dateTimePicker2.Value.Year;
 
-                 //   if (TimeDiff <= 0)
-                  //      MessageBox.Show("משך החוג קצר מדי");
-                 //   else
-                         if (TimeDiff > 6 || MonthDiff > 0 || YearDiff > 0)
-                             MessageBox.Show("משך החוג ארוך מדי");
+                    //   if (TimeDiff <= 0)
+                    //      MessageBox.Show("משך החוג קצר מדי");
+                    //   else
+                    if (TimeDiff > 6 || MonthDiff > 0 || YearDiff > 0)
+                        MessageBox.Show("משך החוג ארוך מדי");
 
                     if (textBox1.Text == "" || textBox2.Text == "")
                         MessageBox.Show("לא מולאו כל הפרטים");
-                    
+
                     else
                     {
-                        if (SaveData(int.Parse(textBox1.Text), textBox2.Text, int.Parse(comboBox1.Text), int.Parse(comboBox2.Text)) 
+                        if (SaveData(int.Parse(textBox1.Text), textBox2.Text, int.Parse(comboBox1.Text), int.Parse(comboBox2.Text))
                             && (SaveDate(int.Parse(textBox1.Text), Start, End)))
                         {
                             MessageBox.Show("הפרטים נוספו בהצלחה");
@@ -77,7 +86,7 @@ namespace newGym
                 throw new Exception(ex.Message);
             }
         }
-        
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -121,8 +130,8 @@ namespace newGym
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           // var customerId = Convert.ToInt32(comboBox1.Text);
-           // LoadInfoById(customerId);
+            // var customerId = Convert.ToInt32(comboBox1.Text);
+            // LoadInfoById(customerId);
         }
 
 
@@ -142,7 +151,7 @@ namespace newGym
                         while (reader.Read())
                         {
                             comboBox1.Items.Add(reader.GetString("Id"));
-                          
+
                         }
                     }
                 }
@@ -188,19 +197,26 @@ namespace newGym
         //Load GuideID to a combobox
         private void LoadGuideId()
         {
-            var connectionString = @"server=localhost;userid=root;password=csharp;database=gym";
-            using (var connection = new MySqlConnection(connectionString))
+            if (id != -1)
             {
-                connection.Open();
-                var query = "SELECT Id FROM guide";
-                using (var command = new MySqlCommand(query, connection))
+                gidLabel.Text = id.ToString();
+            }
+            else
+            {
+                var connectionString = @"server=localhost;userid=root;password=csharp;database=gym";
+                using (var connection = new MySqlConnection(connectionString))
                 {
-                    using (var reader = command.ExecuteReader())
+                    connection.Open();
+                    var query = "SELECT Id FROM guide";
+                    using (var command = new MySqlCommand(query, connection))
                     {
-                        //Iterate through the rows and add it to the combobox's items
-                        while (reader.Read())
+                        using (var reader = command.ExecuteReader())
                         {
-                            comboBox2.Items.Add(reader.GetString("Id"));
+                            //Iterate through the rows and add it to the combobox's items
+                            while (reader.Read())
+                            {
+                                comboBox2.Items.Add(reader.GetString("Id"));
+                            }
                         }
                     }
                 }
@@ -224,7 +240,7 @@ namespace newGym
                         cmd.Parameters.AddWithValue("?ClassId", ClassId);
                         cmd.Parameters.AddWithValue("?Start", Start);
                         cmd.Parameters.AddWithValue("?End", End);
-                        
+
                         cmd.ExecuteNonQuery();
                     }
                     connection.Close();
@@ -273,7 +289,7 @@ namespace newGym
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-        
+
             return true;
         }
 
@@ -304,14 +320,14 @@ namespace newGym
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
 
 
 
-        
 
-       
+
+
     }
 }
