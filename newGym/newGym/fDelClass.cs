@@ -19,14 +19,6 @@ namespace newGym
             LoadActivityId();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
 
         //Load Activity ID to a combobox
         private void LoadActivityId()

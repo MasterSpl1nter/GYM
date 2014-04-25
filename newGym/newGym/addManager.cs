@@ -116,15 +116,7 @@ namespace newGym
             }
         }
         
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void update_manger_button_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void exit_update_Click(object sender, EventArgs e)
         {

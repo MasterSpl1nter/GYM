@@ -68,20 +68,6 @@ namespace newGym
             {
                 MessageBox.Show(ex.Message);
             }
-
-            
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
-        private void FormRemoveTrainer_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

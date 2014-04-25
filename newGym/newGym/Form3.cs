@@ -31,22 +31,10 @@ namespace newGym
                 this.Hide();
                 ManuApplince MP = new ManuApplince();
                 MP.ShowDialog();
- 
-          
             }
             else
                 MessageBox.Show("Please fill all fileds","ERROR");
-
-        
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

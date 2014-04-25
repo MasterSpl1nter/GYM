@@ -63,7 +63,6 @@
             this.id_box.Name = "id_box";
             this.id_box.Size = new System.Drawing.Size(100, 20);
             this.id_box.TabIndex = 1;
-            this.id_box.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.id_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.id_box_KeyPress);
             // 
             // id_label
@@ -75,7 +74,6 @@
             this.id_label.Size = new System.Drawing.Size(23, 14);
             this.id_label.TabIndex = 1;
             this.id_label.Text = "ID:";
-            this.id_label.Click += new System.EventHandler(this.label1_Click);
             // 
             // firstName_label
             // 
@@ -86,7 +84,6 @@
             this.firstName_label.Size = new System.Drawing.Size(68, 14);
             this.firstName_label.TabIndex = 3;
             this.firstName_label.Text = "First Name:";
-            this.firstName_label.Click += new System.EventHandler(this.label3_Click);
             // 
             // lastName_label
             // 
@@ -97,7 +94,6 @@
             this.lastName_label.Size = new System.Drawing.Size(67, 14);
             this.lastName_label.TabIndex = 5;
             this.lastName_label.Text = "Last name:";
-            this.lastName_label.Click += new System.EventHandler(this.label4_Click);
             // 
             // birth_label
             // 
@@ -108,7 +104,6 @@
             this.birth_label.Size = new System.Drawing.Size(65, 14);
             this.birth_label.TabIndex = 8;
             this.birth_label.Text = "Birth date:";
-            this.birth_label.Click += new System.EventHandler(this.label6_Click);
             // 
             // start_date_label
             // 
@@ -119,7 +114,6 @@
             this.start_date_label.Size = new System.Drawing.Size(89, 14);
             this.start_date_label.TabIndex = 9;
             this.start_date_label.Text = "Start Contract:";
-            this.start_date_label.Click += new System.EventHandler(this.label7_Click);
             // 
             // end_date_label
             // 
@@ -165,7 +159,6 @@
             this.mail_label.Size = new System.Drawing.Size(38, 14);
             this.mail_label.TabIndex = 18;
             this.mail_label.Text = "Email:";
-            this.mail_label.Click += new System.EventHandler(this.label2_Click);
             // 
             // birth_date
             // 
@@ -176,7 +169,6 @@
             this.birth_date.Name = "birth_date";
             this.birth_date.Size = new System.Drawing.Size(130, 22);
             this.birth_date.TabIndex = 5;
-            this.birth_date.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // end_date
             // 
@@ -187,7 +179,6 @@
             this.end_date.Name = "end_date";
             this.end_date.Size = new System.Drawing.Size(130, 22);
             this.end_date.TabIndex = 7;
-            this.end_date.ValueChanged += new System.EventHandler(this.end_date_ValueChanged);
             // 
             // med_cart_date
             // 
@@ -218,7 +209,6 @@
             this.firstname_box.Name = "firstname_box";
             this.firstname_box.Size = new System.Drawing.Size(100, 20);
             this.firstname_box.TabIndex = 2;
-            this.firstname_box.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lastname_box
             // 
@@ -229,7 +219,6 @@
             this.lastname_box.Name = "lastname_box";
             this.lastname_box.Size = new System.Drawing.Size(100, 20);
             this.lastname_box.TabIndex = 3;
-            this.lastname_box.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // email_box
             // 
@@ -240,7 +229,6 @@
             this.email_box.Name = "email_box";
             this.email_box.Size = new System.Drawing.Size(100, 20);
             this.email_box.TabIndex = 4;
-            this.email_box.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tb_repeatPass
             // 
@@ -259,7 +247,6 @@
             this.tb_pass.Name = "tb_pass";
             this.tb_pass.Size = new System.Drawing.Size(100, 22);
             this.tb_pass.TabIndex = 10;
-            this.tb_pass.TextChanged += new System.EventHandler(this.tb_pass_TextChanged);
             // 
             // tb_username
             // 
@@ -269,7 +256,6 @@
             this.tb_username.Name = "tb_username";
             this.tb_username.Size = new System.Drawing.Size(100, 22);
             this.tb_username.TabIndex = 9;
-            this.tb_username.TextChanged += new System.EventHandler(this.tb_username_TextChanged);
             // 
             // verPassWorod_label
             // 
@@ -281,7 +267,6 @@
             this.verPassWorod_label.Size = new System.Drawing.Size(85, 14);
             this.verPassWorod_label.TabIndex = 26;
             this.verPassWorod_label.Text = "Ver password:";
-            this.verPassWorod_label.Click += new System.EventHandler(this.verPassWorod_label_Click);
             // 
             // passWord_label
             // 
@@ -339,7 +324,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AddStudent";
             this.Text = "Add New Student";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

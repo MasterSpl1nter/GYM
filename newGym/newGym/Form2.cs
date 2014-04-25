@@ -24,21 +24,6 @@ namespace newGym
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             int id,room; 
@@ -49,7 +34,6 @@ namespace newGym
 
             try
             {
-               
                 bool result = Int32.TryParse(textBox1.Text, out id);
                 bool result2 = Int32.TryParse(textBox4.Text, out room);
                 if (result && result2)
@@ -71,30 +55,17 @@ namespace newGym
                             MP.ShowDialog();
                         }
                     }
-
                 } 
                 else
                 {
                     MessageBox.Show("The data waren't successfully accepted","ERROR");
-                
-                
-                
                 }
-
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
-
-
         }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
 

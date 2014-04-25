@@ -11,6 +11,12 @@ namespace newGym
     public class Guide : Person
     {
         private int salary;
+
+        public Guide():base() {
+            this.salary=0;
+        }
+
+
         public Guide(int id,string firstName,string lastName,string email,int permission,string userName,string password,int salary) : base(id, firstName, lastName, email, permission, userName, password)
         {
             this.salary = salary;

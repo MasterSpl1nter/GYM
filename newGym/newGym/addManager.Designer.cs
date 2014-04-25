@@ -183,7 +183,6 @@
                 this.IdComboBox.Size = new System.Drawing.Size(100, 21);
                 this.IdComboBox.TabIndex = 42;
                 this.IdComboBox.Visible = false;
-                this.IdComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
                 // 
                 // exit_update
                 // 
@@ -213,7 +212,6 @@
                 this.update_manger_button.Text = "עדכן";
                 this.update_manger_button.UseVisualStyleBackColor = false;
                 this.update_manger_button.Visible = false;
-                this.update_manger_button.Click += new System.EventHandler(this.update_manger_button_Click);
                 // 
                 // addManager
                 // 

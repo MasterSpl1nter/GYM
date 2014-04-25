@@ -154,14 +154,10 @@ namespace newGym
         {
             foreach (Control c in panel1.Controls)
             {
-
                 if (c is TextBox)
                 {
-
                     c.ResetText();
-
                 }
-
             }
         }
 

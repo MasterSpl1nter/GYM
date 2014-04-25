@@ -128,7 +128,6 @@
             this.id_txt.Name = "id_txt";
             this.id_txt.Size = new System.Drawing.Size(100, 20);
             this.id_txt.TabIndex = 1;
-            this.id_txt.TextChanged += new System.EventHandler(this.id_txt_TextChanged);
             this.id_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.id_txt_KeyPress);
             // 
             // firstname_txt
@@ -200,7 +199,6 @@
             this.salar_txt.Name = "salar_txt";
             this.salar_txt.Size = new System.Drawing.Size(100, 20);
             this.salar_txt.TabIndex = 7;
-            this.salar_txt.TextChanged += new System.EventHandler(this.salar_txt_TextChanged);
             // 
             // label2
             // 

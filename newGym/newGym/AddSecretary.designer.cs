@@ -50,38 +50,32 @@
             // 
             resources.ApplyResources(this.id_label, "id_label");
             this.id_label.Name = "id_label";
-            this.id_label.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // name_label
             // 
             resources.ApplyResources(this.name_label, "name_label");
             this.name_label.Name = "name_label";
-            this.name_label.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // lastname_label
             // 
             resources.ApplyResources(this.lastname_label, "lastname_label");
             this.lastname_label.Name = "lastname_label";
-            this.lastname_label.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // email_label
             // 
             resources.ApplyResources(this.email_label, "email_label");
             this.email_label.Name = "email_label";
-            this.email_label.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // id_textBox
             // 
             resources.ApplyResources(this.id_textBox, "id_textBox");
             this.id_textBox.Name = "id_textBox";
-            this.id_textBox.TextChanged += new System.EventHandler(this.id_textBox_TextChanged);
             this.id_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.id_textBox_KeyPress);
             // 
             // firstname_textBox
             // 
             resources.ApplyResources(this.firstname_textBox, "firstname_textBox");
             this.firstname_textBox.Name = "firstname_textBox";
-            this.firstname_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.firstname_textBox_KeyPress);
             // 
             // email_textBox
             // 
@@ -106,31 +100,26 @@
             // 
             resources.ApplyResources(this.username_label, "username_label");
             this.username_label.Name = "username_label";
-            this.username_label.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // password_label
             // 
             resources.ApplyResources(this.password_label, "password_label");
             this.password_label.Name = "password_label";
-            this.password_label.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // username_textBox
             // 
             resources.ApplyResources(this.username_textBox, "username_textBox");
             this.username_textBox.Name = "username_textBox";
-            this.username_textBox.TextChanged += new System.EventHandler(this.id_textBox_TextChanged);
             // 
             // password_textBox
             // 
             resources.ApplyResources(this.password_textBox, "password_textBox");
             this.password_textBox.Name = "password_textBox";
-            this.password_textBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // verify_label
             // 
             resources.ApplyResources(this.verify_label, "verify_label");
             this.verify_label.Name = "verify_label";
-            this.verify_label.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // verify_textBox
             // 
@@ -158,7 +147,6 @@
             this.Controls.Add(this.id_label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AddSecretary";
-            this.Load += new System.EventHandler(this.AddSecretary_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

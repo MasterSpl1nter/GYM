@@ -404,7 +404,6 @@
             this.radioName.TabIndex = 7;
             this.radioName.Text = "By name";
             this.radioName.UseVisualStyleBackColor = true;
-            this.radioName.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // label6
             // 
@@ -459,7 +458,6 @@
             this.Controls.Add(this.groupBox5);
             this.Name = "GuideMenu";
             this.Text = "GuideMenu";
-            this.Load += new System.EventHandler(this.GuideMenu_Load);
             this.groupBox5.ResumeLayout(false);
             this.flowLayoutPanel5.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

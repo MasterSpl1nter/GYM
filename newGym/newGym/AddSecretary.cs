@@ -38,35 +38,7 @@ namespace newGym
             verify_label.ForeColor = Color.Black;
         }
 
-        private void AddSecretary_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void id_text_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void id_textBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void next_button_Click(object sender, EventArgs e)
         {
@@ -167,20 +139,7 @@ namespace newGym
             
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void id_textBox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -188,10 +147,6 @@ namespace newGym
             e.Handled = !Char.IsDigit(e.KeyChar) && e.KeyChar != Delete;
         }
 
-        private void firstname_textBox_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-
-        }
+       
     }
 }

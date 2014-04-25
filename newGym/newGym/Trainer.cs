@@ -11,6 +11,10 @@ namespace newGym
     public class Trainer : Person
     {
         private int salary;
+        public Trainer():base() {
+            this.salary = 0;
+        }
+
         public Trainer(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary)
             : base(id, firstName, lastName, email, permission, userName, password)
         {
