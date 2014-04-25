@@ -43,7 +43,17 @@ namespace newGym
         }
         public int SearchName(DataTable dt, string search)
         {
-            int retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email FROM guide where firstname LIKE " + "'%" + search.Split(' ')[0] + "%' and lastname LIKE '%" + search.Split(' ')[1] + "%'" );
+            int retval;
+            if (search.Contains(" "))
+            {
+                retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email FROM guide where firstname LIKE " + "'%" + search.Split(' ')[0] + "%' and lastname LIKE '%" + search.Split(' ')[1] + "%'");
+            }
+            else
+            {
+                retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email FROM guide where firstname LIKE " + "'%" + search + "%'");
+
+            }
+
             if (retval == 0)
                 return 0;
             return retval;

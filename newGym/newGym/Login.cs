@@ -58,7 +58,10 @@ namespace newGym
                     ma.ShowDialog();
                     break;
             }
-            if (retval == 1)
+            if (retval == 0)
+            {
+            }
+            else if (retval == 1)
             {
                 textBox1.ResetText();
                 textBox2.ResetText();
