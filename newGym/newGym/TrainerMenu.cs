@@ -58,26 +58,26 @@ namespace newGym
                     dtmp.Rows.Add(dr.ItemArray);
                 }
             }
-            if (dtmp.Rows.Count==1){
-            Updateitems(0);
-            hScrollBar1.Visible = false;
-            }
-            if (dtmp.Rows.Count > 1)
-            {
-                Updateitems(0);
-                hScrollBar1.Visible = true;
-            }
-            else if(dtmp.Rows.Count == 0)
-            {
-                idLabel.Text = "";
-                nameLabel.Text = "";
-                ParticiLabel.Text = "";
-                roomNumLabel.Text = "";
-                starttimeLabel.Text = "";
-                endtimeLabel.Text = "";
-                tothourLabel.Text = "";
-                hScrollBar1.Visible = false;
-            }
+            //if (dtmp.Rows.Count==1){
+            //Updateitems(0);
+            //hScrollBar1.Visible = false;
+            //}
+            //if (dtmp.Rows.Count > 1)
+            //{
+            //    Updateitems(0);
+            //    hScrollBar1.Visible = true;
+            //}
+            //else if(dtmp.Rows.Count == 0)
+            //{
+            //    idLabel.Text = "";
+            //    nameLabel.Text = "";
+            //    ParticiLabel.Text = "";
+            //    roomNumLabel.Text = "";
+            //    starttimeLabel.Text = "";
+            //    endtimeLabel.Text = "";
+            //    tothourLabel.Text = "";
+            //    hScrollBar1.Visible = false;
+            //}
                 /*
             comboBox1.DataSource = dt;
             comboBox1.DisplayMember = "id";
@@ -90,25 +90,25 @@ namespace newGym
             tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dt.Rows[i]["endtime"]) - Convert.ToDateTime(dt.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
    //   */  }
 
-        private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-               // MessageBox.Show(count.ToString());
-            hScrollBar1.LargeChange = 99;
-                int i = count % dtmp.Rows.Count;
-                Updateitems(i);
-                count++;
-        }
-        private void Updateitems(int i)
-        {
-            idLabel.Text = dtmp.Rows[i]["id"].ToString();
-            int studentsnum = MySQL.count("SELECT COUNT(studentid) FROM studentclass where classid=" + idLabel.Text);
-            nameLabel.Text = dtmp.Rows[i]["name"].ToString();
-            ParticiLabel.Text = studentsnum.ToString();
-            roomNumLabel.Text = dtmp.Rows[i]["room"].ToString();
-            starttimeLabel.Text = dtmp.Rows[i]["starttime"].ToString().Split(' ')[1];
-            endtimeLabel.Text = dtmp.Rows[i]["endtime"].ToString().Split(' ')[1];
-            tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dtmp.Rows[i]["endtime"]) - Convert.ToDateTime(dtmp.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
-        }
+        //private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        //{
+        //       // MessageBox.Show(count.ToString());
+        //    hScrollBar1.LargeChange = 99;
+        //        int i = count % dtmp.Rows.Count;
+        //        Updateitems(i);
+        //        count++;
+        //}
+        //private void Updateitems(int i)
+        //{
+        //    idLabel.Text = dtmp.Rows[i]["id"].ToString();
+        //    int studentsnum = MySQL.count("SELECT COUNT(studentid) FROM studentclass where classid=" + idLabel.Text);
+        //    nameLabel.Text = dtmp.Rows[i]["name"].ToString();
+        //    ParticiLabel.Text = studentsnum.ToString();
+        //    roomNumLabel.Text = dtmp.Rows[i]["room"].ToString();
+        //    starttimeLabel.Text = dtmp.Rows[i]["starttime"].ToString().Split(' ')[1];
+        //    endtimeLabel.Text = dtmp.Rows[i]["endtime"].ToString().Split(' ')[1];
+        //    tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dtmp.Rows[i]["endtime"]) - Convert.ToDateTime(dtmp.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
+        //}
 
         private void button13_Click(object sender, EventArgs e)
         {
