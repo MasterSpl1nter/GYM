@@ -143,3 +143,5 @@ C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideMenu.
 C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideSearch.resources
 C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Login.resources
 C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.deleteManager.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.deleteManager.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.TrainerSearch.resources

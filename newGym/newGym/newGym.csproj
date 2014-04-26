@@ -60,6 +60,12 @@
       <DependentUpon>AddStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Applince.cs" />
+    <Compile Include="TrainerSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainerSearch.Designer.cs">
+      <DependentUpon>TrainerSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="deleteManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainerSearch.resx">
+      <DependentUpon>TrainerSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="deleteManager.resx">
       <DependentUpon>deleteManager.cs</DependentUpon>

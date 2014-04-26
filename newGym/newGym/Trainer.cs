@@ -55,7 +55,18 @@ namespace newGym
         }
         public int SearchStudID(DataTable dt, string search)
         {
-            int retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email,birthday,startdate,enddate,medcert FROM student where id LIKE " + search);
+            //int retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email,birthday,startdate,enddate,medcert FROM student where id LIKE " + search);
+
+            int retval;
+            if (search.Contains(" "))
+            {
+                retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email FROM trainer where firstname LIKE " + "'%" + search.Split(' ')[0] + "%' and lastname LIKE '%" + search.Split(' ')[1] + "%'");
+            }
+            else
+            {
+                retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email FROM trainer where firstname LIKE " + "'%" + search + "%'");
+
+            }
             if (retval == 0)
                 return 0;
             return retval;

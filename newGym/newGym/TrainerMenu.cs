@@ -24,7 +24,7 @@ namespace newGym
             InitializeComponent();
             timer1.Start();
             loggedLabel.Text = trainer.UserName;
-            MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.guideid=22");
+            MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.trainerid=22");
             arr = new DateTime[dt.Rows.Count];
             for (int i = 0; i < dt.Rows.Count; i++)
             {
@@ -124,27 +124,28 @@ namespace newGym
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (StudSearch.Text.Length > 0 && GuideSearch.Text.Length > 0)
+            if (StudSearch.Text.Length > 0 && TrainerSearch.Text.Length > 0)
             {
                 MessageBox.Show("Only one search field can be filled.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
             }
-            //fix error spaces in name search
+            //fix error spaces in name searchgs
             DataTable dt=new DataTable();
-            if (GuideSearch.Text.Length>0){
+            if (TrainerSearch.Text.Length > 0)
+            {
              if (radioID.Checked)
                 {
-                 trainer.SearchID(dt, GuideSearch.Text);
+                    trainer.SearchID(dt, TrainerSearch.Text);
                 //MessageBox.Show(dt.Rows[0]["id"].ToString());
-                GuideSearch gs = new GuideSearch(dt);
-                gs.ShowDialog();
+                    TrainerSearch ts = new TrainerSearch(dt);
+                ts.ShowDialog();
             }
             else
             {
-                trainer.SearchName(dt, GuideSearch.Text);
+                trainer.SearchName(dt, TrainerSearch.Text);
                 //MessageBox.Show(dt.Rows[0]["id"].ToString());
-                GuideSearch gs = new GuideSearch(dt);
-                gs.ShowDialog();
+                TrainerSearch ts = new TrainerSearch(dt);
+                ts.ShowDialog();
             }
             }
             else if (StudSearch.Text.Length > 0)
@@ -153,15 +154,15 @@ namespace newGym
                 {
                     trainer.SearchStudID(dt, StudSearch.Text);
                     //MessageBox.Show(dt.Rows[0]["id"].ToString());
-                    GuideSearch gs = new GuideSearch(dt);
-                    gs.ShowDialog();
+                    TrainerSearch ts = new TrainerSearch(dt);
+                    ts.ShowDialog();
                 }
                 else
                 {
                     trainer.SearchStudName(dt, StudSearch.Text);
                     //MessageBox.Show(dt.Rows[0]["id"].ToString());
-                    GuideSearch gs = new GuideSearch(dt);
-                    gs.ShowDialog();
+                    TrainerSearch ts = new TrainerSearch(dt);
+                    ts.ShowDialog();
                 }
             }
         }
@@ -187,6 +188,11 @@ namespace newGym
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void viewbutton_Click(object sender, EventArgs e)
         {
 
         }

@@ -40,8 +40,8 @@ namespace newGym
                     {
                         retval = 0;
                         Trainer trainer = new Trainer(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
-                        TrainerMenu gm = new TrainerMenu(trainer);
-                        gm.ShowDialog();
+                        TrainerMenu tm = new TrainerMenu(trainer);
+                        tm.ShowDialog();
                     }
                     break;
                 case 3:
