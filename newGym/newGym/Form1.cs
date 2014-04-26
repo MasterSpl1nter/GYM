@@ -54,8 +54,18 @@ namespace newGym
 
         private void AddGuideButton_Click(object sender, EventArgs e)
         {
+            int[] a;
+            try
+            {
+                a = Person.ZeroID(Convert.ToInt32(idText.Text));
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("ID can't be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            int[] a=Person.ZeroID(Convert.ToInt32(idText.Text));
+                return;
+            }
+
             idText.Text = "";
             for (int i = 0; i < 9; i++)
             {
