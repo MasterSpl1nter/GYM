@@ -138,3 +138,8 @@ C:\Users\Nick\Documents\GitHub\GYM\newGym\newGym\bin\Debug\newGym.exe
 C:\Users\Nick\Documents\GitHub\GYM\newGym\newGym\bin\Debug\newGym.pdb
 C:\Users\Nick\Documents\GitHub\GYM\newGym\newGym\bin\Debug\he-IL\newGym.resources.dll
 C:\Users\Nick\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\he-IL\newGym.resources.dll
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.TrainerMenu.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideMenu.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideSearch.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Login.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.deleteManager.resources

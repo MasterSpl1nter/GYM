@@ -18,7 +18,7 @@ namespace newGym
             }
             else if (type == "Manager" || privilege == 1)
             {
-                return new Manager();
+               // return new Manager();
             }
             else if (type == "Student" || privilege == 1)
             {
