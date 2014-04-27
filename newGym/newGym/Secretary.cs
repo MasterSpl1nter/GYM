@@ -20,17 +20,25 @@ namespace newGym
         {
             this.salaryPerHour = salaryPerHour;
         }
-        public int SalaryPerHour { get { return salaryPerHour; } set { salaryPerHour = value; } 
-        }
-        public static bool CheckLogin(string user, string pass)
+        protected override bool CheckLogin(DataTable dt, string user, string pass)
         {
-            DataTable dt = new DataTable();
             if (MySQL.Query(dt, "SELECT username,password FROM worker where username='" 
                 + user + "'" + " and password='" + pass + "'") == 0)
                 if (dt.Rows.Count == 1)
                     return true;
             return false;
+         }
+
+        protected override void makeInstance(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary)
+        {
+            // TO CODE
+            // 1 - call consructor
+            // 2 - call secretary menu
+            throw new NotImplementedException();
         }
+
+        public int SalaryPerHour { get { return salaryPerHour; } set { salaryPerHour = value; } }
+        
         public static int Update(string insert, string where)
         {
             return MySQL.Update("worker", insert, "id=" + where);
