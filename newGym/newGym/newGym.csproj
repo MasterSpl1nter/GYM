@@ -60,6 +60,10 @@
       <DependentUpon>AddStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Applince.cs" />
+    <Compile Include="DeleteStudent.cs" />
+    <Compile Include="DelSecretary.cs" />
+    <Compile Include="EditSecretary.cs" />
+    <Compile Include="EditStudentBySecrtary.cs" />
     <Compile Include="SingleUser.cs" />
     <Compile Include="TrainerSearch.cs">
       <SubType>Form</SubType>
@@ -198,6 +202,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteStudent.resx">
+      <DependentUpon>DeleteStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelSecretary.resx">
+      <DependentUpon>DelSecretary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSecretary.resx">
+      <DependentUpon>EditSecretary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStudentBySecrtary.resx">
+      <DependentUpon>EditStudentBySecrtary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrainerSearch.resx">
       <DependentUpon>TrainerSearch.cs</DependentUpon>
