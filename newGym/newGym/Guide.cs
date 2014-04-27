@@ -21,13 +21,23 @@ namespace newGym
         {
             this.salary = salary;
         }
-        public static bool CheckLogin(DataTable dt,string user,string pass)
+        protected override bool CheckLogin(DataTable dt,string user,string pass)
         {
             if (MySQL.Query(dt,"SELECT * FROM guide where username='" + user + "'" + " and password='" + pass + "'") == 0)
                 if (dt.Rows.Count == 1)
                     return true;
             return false;
         }
+
+        protected override void makeInstance(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary)
+        {
+               //call the constr TMP-DP
+           
+            Guide guide = new Guide(id, firstName, lastName, email, permission, userName, password, salary);
+            GuideMenu gm = new GuideMenu(guide);
+            gm.ShowDialog();
+        }
+
         public static int Update(string insert,string where)
         {
             return MySQL.Update("guide", insert, "id=" + where);

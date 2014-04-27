@@ -20,7 +20,15 @@ namespace newGym
         {
             this.salary = salary;
         }
-        public static bool CheckLogin(DataTable dt, string user, string pass)
+        
+        protected override void makeInstance(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary)
+        {
+           Trainer trainer = new Trainer(id, firstName, lastName, email, permission, userName, password, salary);       //call the constr TMP-DP
+           TrainerMenu tm = new TrainerMenu(trainer);
+           tm.ShowDialog();
+        }
+        
+        protected override bool CheckLogin(DataTable dt, string user, string pass)
         {
             if (MySQL.Query(dt, "SELECT * FROM trainer where username='" + user + "'" + " and password='" + pass + "'") == 0)
                 if (dt.Rows.Count == 1)

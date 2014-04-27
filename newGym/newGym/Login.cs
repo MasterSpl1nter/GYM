@@ -13,6 +13,9 @@ namespace newGym
 {
     public partial class Login : Form
     {
+
+       
+
         public Login()
         {
             InitializeComponent();
@@ -21,7 +24,7 @@ namespace newGym
             textBox2.MaxLength = 20;
             textBox2.PasswordChar = '*';
             comboBox2.SelectedIndex = 0;
-            MessageBox.Show("Working Menus: \n1. Manager without password\n2. Guide with password\n3. Trainer with password");
+            MessageBox.Show("Working Menus: \n1. Guide with password\n2. Trainer with password");
         }
 
 
@@ -29,6 +32,7 @@ namespace newGym
         {
             DataTable dt = new DataTable();
             int retval = 1;
+
             switch (comboBox2.SelectedIndex)
             {
                 case 0:
@@ -36,45 +40,48 @@ namespace newGym
                 case 1:
                     break;
                 case 2:
-                    if (Trainer.CheckLogin(dt, textBox1.Text, textBox2.Text))
-                    {
-                        retval = 0;
-                        Trainer trainer = new Trainer(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
-                        TrainerMenu tm = new TrainerMenu(trainer);
-                        tm.ShowDialog();
-                    }
+                    var tool2 = Factory_DP.PersonFactory("Trainer");
+                    if (tool2.Template(dt, textBox1.Text, textBox2.Text))
+                    {   retval = 0;  }
                     break;
                 case 3:
-                    if (Guide.CheckLogin(dt, textBox1.Text, textBox2.Text))
-                    {
-                        retval = 0;
-                        Guide guide = new Guide(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
-                        GuideMenu gm = new GuideMenu(guide);
-                        gm.ShowDialog();
-                    }
+                    var tool3 = Factory_DP.PersonFactory("Guide");
+                     if ( tool3.Template(dt, textBox1.Text, textBox2.Text ))
+
+                     { retval = 0;}
+                      
                     break;
-                case 4:
-                   if (Manager.CheckLogin(dt, textBox1.Text, textBox2.Text))
-                    {
-                        retval = 0;
+                    
+               // case 4:     // not working look at Factory_DP RETURN
+                    //var tool4 = Factory_DP.PersonFactory("Manager");
+                     //  if ( tool4.Template(dt, textBox1.Text, textBox2.Text) )
+                      //    retval = 0;
+                    
+                 //------------------------------------------------------//    
 
                         //checking if the singelton works
-                        
+                        /*
                         Manager m = Manager.Instance();
                         Manager s = Manager.Instance();
                         m.setManager(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
                         s.setManager(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
                         MessageBox.Show("m=" + m.GetHashCode() + " s=" + s.GetHashCode());
-                        
-                        
+                        */
+                        /*
                        // Manager manager = new Manager(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
                         Manager.Instance().setManager(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
                         ManagerMenu ma = new ManagerMenu();
                         ma.ShowDialog(); 
-                    }
+                    
+          
                     /*ManagerMenu ma = new ManagerMenu();
                     ma.ShowDialog();*/
-                    break;
+
+                    //------------------------------------------------------//
+
+
+                  //  break;
+                    
             }
             if (retval == 0)
             {

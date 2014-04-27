@@ -106,12 +106,22 @@ namespace newGym
             }
             return false;
         }
-        public static bool CheckLogin(DataTable dt, string user, string pass)
+        protected override bool CheckLogin(DataTable dt, string user, string pass)
         {
             if (MySQL.Query(dt, "SELECT * FROM manager where username='" + user + "'" + " and password='" + pass + "'") == 0)
                 if (dt.Rows.Count == 1)
                     return true;
             return false;
+        }
+
+        
+        protected override void makeInstance(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary)
+        {
+               //call the constr TMP-DP
+            //retval = 0;
+            Manager.Instance().setManager(id, firstName, lastName, email, permission, userName, password, salary);
+            ManagerMenu ma = new ManagerMenu();
+            ma.ShowDialog();
         }
     }
 
