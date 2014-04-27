@@ -214,5 +214,29 @@ namespace newGym
             d.ShowDialog();
         }
 
+        private void button12_Click(object sender, EventArgs e)
+        {
+            EditSecretary es = new EditSecretary();
+            es.ShowDialog();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            DelSecretary ds = new DelSecretary();
+            ds.ShowDialog();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            EditStudentBySecrtary es = new EditStudentBySecrtary();
+            es.ShowDialog();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            DeleteStudent ds = new DeleteStudent();
+            ds.ShowDialog();
+        }
+
     }
     }
