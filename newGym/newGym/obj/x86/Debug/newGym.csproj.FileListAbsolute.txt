@@ -1,0 +1,172 @@
+c:\users\user\documents\visual studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.Properties.Resources.resources
+c:\users\user\documents\visual studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2010\Projects\newGym\newGym\bin\Debug\newGym.exe
+c:\users\user\documents\visual studio 2010\Projects\newGym\newGym\bin\Debug\newGym.pdb
+c:\users\user\documents\visual studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.exe
+c:\users\user\documents\visual studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.pdb
+c:\users\user\documents\visual studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.ManagerMenu.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.Menu.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.GuideForm.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.addManager.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.AddSecretary.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.AddSecretary.he-IL.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\bin\Debug\he-IL\newGym.resources.dll
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\he-IL\newGym.resources.dll
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.AddStudent.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.RoomAddition.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.FormAddTrainer.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.FormEditTrainer.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.FormRemoveTrainer.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.fAddClass.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.fDelClass.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.fAddClass.he-IL.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.Form2.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.Form3.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\newGym\newGym\obj\x86\Debug\newGym.ManuApplince.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.exe
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.pdb
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.exe
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.pdb
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\bin\Debug\newGym.exe
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\bin\Debug\newGym.pdb
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\bin\Debug\he-IL\newGym.resources.dll
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.addManager.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.AddSecretary.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.AddStudent.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.fAddClass.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.fDelClass.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideForm.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Form2.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Form3.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.FormAddTrainer.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.FormEditTrainer.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.FormRemoveTrainer.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.ManagerMenu.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.ManuApplince.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Properties.Resources.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.RoomAddition.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.AddSecretary.he-IL.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.fAddClass.he-IL.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.csproj.GenerateResource.Cache
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\he-IL\newGym.resources.dll
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.ManagerMenuTemp.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\bin\Debug\newGym.exe
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\bin\Debug\newGym.pdb
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\bin\Debug\he-IL\newGym.resources.dll
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.addManager.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.AddSecretary.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.AddStudent.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.fAddClass.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.fDelClass.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideForm.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Form2.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Form3.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.FormAddTrainer.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.FormEditTrainer.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.FormRemoveTrainer.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.ManagerMenuTemp.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.ManuApplince.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.ManagerMenu.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Properties.Resources.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.RoomAddition.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.AddSecretary.he-IL.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.fAddClass.he-IL.resources
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.csproj.GenerateResource.Cache
+C:\Users\user\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\he-IL\newGym.resources.dll
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideMenu.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Login.resources
+\\vmware-host\Shared Folders\Desktop\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideSearch.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.exe
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.pdb
+D:\Documents\GitHub\GYM\newGym\newGym\bin\Debug\newGym.exe
+D:\Documents\GitHub\GYM\newGym\newGym\bin\Debug\newGym.pdb
+D:\Documents\GitHub\GYM\newGym\newGym\bin\Debug\he-IL\newGym.resources.dll
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.addManager.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.AddSecretary.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.AddStudent.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.fAddClass.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.fDelClass.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideForm.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Form2.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Form3.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.FormAddTrainer.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.FormEditTrainer.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.FormRemoveTrainer.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideMenu.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideSearch.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Login.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.ManagerMenuTemp.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.ManuApplince.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.ManagerMenu.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Properties.Resources.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.RoomAddition.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.AddSecretary.he-IL.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.fAddClass.he-IL.resources
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.csproj.GenerateResource.Cache
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\he-IL\newGym.resources.dll
+D:\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.TrainerMenu.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.exe
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.pdb
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\bin\Debug\newGym.exe
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\bin\Debug\newGym.pdb
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\bin\Debug\he-IL\newGym.resources.dll
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.csprojResolveAssemblyReference.cache
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.addManager.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.AddSecretary.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.AddStudent.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.TrainerMenu.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.fAddClass.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.fDelClass.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.GuideForm.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.Form2.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.Form3.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.FormAddTrainer.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.FormEditTrainer.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.FormRemoveTrainer.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.GuideMenu.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.GuideSearch.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.Login.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.ManagerMenuTemp.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.ManuApplince.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.ManagerMenu.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.Properties.Resources.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.RoomAddition.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.AddSecretary.he-IL.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.fAddClass.he-IL.resources
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.csproj.GenerateResource.Cache
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\he-IL\newGym.resources.dll
+C:\Users\michael\Desktop\GYM-master\newGym\newGym\obj\x86\Debug\newGym.fEditClass.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.exe
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.pdb
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\bin\Debug\newGym.exe
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\bin\Debug\newGym.pdb
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\bin\Debug\he-IL\newGym.resources.dll
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.csprojResolveAssemblyReference.cache
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.addManager.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.AddSecretary.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.AddStudent.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.fEditClass.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.TrainerMenu.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.fAddClass.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.fDelClass.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideForm.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Form2.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Form3.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.FormAddTrainer.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.FormEditTrainer.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.FormRemoveTrainer.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideMenu.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.GuideSearch.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Login.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.ManagerMenuTemp.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.ManuApplince.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.ManagerMenu.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.Properties.Resources.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.RoomAddition.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.AddSecretary.he-IL.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.fAddClass.he-IL.resources
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\newGym.csproj.GenerateResource.Cache
+C:\Users\michael\Documents\GitHub\GYM\newGym\newGym\obj\x86\Debug\he-IL\newGym.resources.dll
