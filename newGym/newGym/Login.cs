@@ -13,6 +13,12 @@ namespace newGym
 {
     public partial class Login : Form
     {
+<<<<<<< HEAD
+=======
+
+       
+
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         public Login()
         {
             InitializeComponent();
@@ -21,7 +27,11 @@ namespace newGym
             textBox2.MaxLength = 20;
             textBox2.PasswordChar = '*';
             comboBox2.SelectedIndex = 0;
+<<<<<<< HEAD
             MessageBox.Show("Working Menus: \n1. Manager without password\n2. Guide with password\n3. Trainer with password");
+=======
+            MessageBox.Show("Working Menus: \n1. Guide with password\n2. Trainer with password\n3. Manager with password");
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         }
 
 
@@ -29,6 +39,10 @@ namespace newGym
         {
             DataTable dt = new DataTable();
             int retval = 1;
+<<<<<<< HEAD
+=======
+
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             switch (comboBox2.SelectedIndex)
             {
                 case 0:
@@ -36,6 +50,7 @@ namespace newGym
                 case 1:
                     break;
                 case 2:
+<<<<<<< HEAD
                     if (Trainer.CheckLogin(dt, textBox1.Text, textBox2.Text))
                     {
                         retval = 0;
@@ -59,6 +74,41 @@ namespace newGym
                     break;
             }
             if (retval == 1)
+=======
+                    var tool2 = Factory_DP.PersonFactory("Trainer");
+                    if (tool2.Template(dt, textBox1.Text, textBox2.Text))
+                    {   retval = 0;  }
+
+                    break;
+                case 3:
+                    var tool3 = Factory_DP.PersonFactory("Guide");
+                     if ( tool3.Template(dt, textBox1.Text, textBox2.Text ))
+
+                     { retval = 0;}
+                      
+                    break;
+                    
+                case 4:     // not working look at Factory_DP RETURN
+                    Person p = Factory_DP.PersonFactory("Manager");
+                    //p.Template(dt, textBox1.Text, textBox2.Text);
+                    if (p.Template(dt, textBox1.Text, textBox2.Text))
+                    {
+                        
+                       ((Manager)p).setManager(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
+                        SingleUser.Instance.set_user(p);
+                        ManagerMenu ma = new ManagerMenu(((Manager)p));
+                        ma.ShowDialog();
+                        retval = 0;
+                    }
+
+                   break;
+                    
+            }
+            if (retval == 0)
+            {
+            }
+            else if (retval == 1)
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             {
                 textBox1.ResetText();
                 textBox2.ResetText();
@@ -79,6 +129,10 @@ namespace newGym
                 else label3.Text = "ERROR: #" + retval;
             }
         }
+<<<<<<< HEAD
+=======
+        /*
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         public static void ThreadProc1()
         {
             Application.Run(new ManagerMenu());
@@ -87,7 +141,11 @@ namespace newGym
 
 
         }
+<<<<<<< HEAD
 
+=======
+        */
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 

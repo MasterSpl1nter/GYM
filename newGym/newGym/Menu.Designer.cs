@@ -37,7 +37,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.label3 = new System.Windows.Forms.Label();
+=======
+            this.helloLabel = new System.Windows.Forms.Label();
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -148,6 +152,10 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
+=======
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // groupBox2
             // 
@@ -188,7 +196,11 @@
             // 
             // groupBox3
             // 
+<<<<<<< HEAD
             this.groupBox3.Controls.Add(this.label3);
+=======
+            this.groupBox3.Controls.Add(this.helloLabel);
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             this.groupBox3.Location = new System.Drawing.Point(546, 12);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(396, 84);
@@ -196,6 +208,7 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
             // 
+<<<<<<< HEAD
             // label3
             // 
             this.label3.AutoSize = true;
@@ -205,6 +218,17 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Hello, ";
             this.label3.Click += new System.EventHandler(this.label3_Click);
+=======
+            // helloLabel
+            // 
+            this.helloLabel.AutoSize = true;
+            this.helloLabel.Location = new System.Drawing.Point(6, 16);
+            this.helloLabel.Name = "helloLabel";
+            this.helloLabel.Size = new System.Drawing.Size(37, 13);
+            this.helloLabel.TabIndex = 1;
+            this.helloLabel.Text = "Hello, ";
+            this.helloLabel.Click += new System.EventHandler(this.label3_Click);
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // groupBox1
             // 
@@ -586,6 +610,10 @@
             this.button12.TabIndex = 1;
             this.button12.Text = "Edit";
             this.button12.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
+=======
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // button13
             // 
@@ -595,6 +623,10 @@
             this.button13.TabIndex = 2;
             this.button13.Text = "Delete";
             this.button13.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
+=======
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // tabPage5
             // 
@@ -635,6 +667,10 @@
             this.button15.TabIndex = 1;
             this.button15.Text = "Edit";
             this.button15.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
+=======
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // button16
             // 
@@ -644,6 +680,10 @@
             this.button16.TabIndex = 2;
             this.button16.Text = "Delete";
             this.button16.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
+=======
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // tabPage6
             // 
@@ -775,7 +815,11 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox3;
+<<<<<<< HEAD
         private System.Windows.Forms.Label label3;
+=======
+        private System.Windows.Forms.Label helloLabel;
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.HScrollBar hScrollBar1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;

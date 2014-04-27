@@ -31,6 +31,7 @@ namespace newGym
                 this.Hide();
                 ManuApplince MP = new ManuApplince();
                 MP.ShowDialog();
+<<<<<<< HEAD
  
           
             }
@@ -48,5 +49,12 @@ namespace newGym
         {
 
         }
+=======
+            }
+            else
+                MessageBox.Show("Please fill all fileds","ERROR");
+        }
+
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
     }
 }

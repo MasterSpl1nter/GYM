@@ -41,7 +41,10 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(166, 21);
             this.comboBox1.TabIndex = 1;
+<<<<<<< HEAD
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // delete_butten
             // 
@@ -83,7 +86,10 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "FormRemoveTrainer";
             this.Text = "FormRemoveTrainer";
+<<<<<<< HEAD
             this.Load += new System.EventHandler(this.FormRemoveTrainer_Load);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             this.ResumeLayout(false);
             this.PerformLayout();
 

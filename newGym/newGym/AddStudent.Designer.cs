@@ -63,7 +63,10 @@
             this.id_box.Name = "id_box";
             this.id_box.Size = new System.Drawing.Size(100, 20);
             this.id_box.TabIndex = 1;
+<<<<<<< HEAD
             this.id_box.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             this.id_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.id_box_KeyPress);
             // 
             // id_label
@@ -75,7 +78,10 @@
             this.id_label.Size = new System.Drawing.Size(23, 14);
             this.id_label.TabIndex = 1;
             this.id_label.Text = "ID:";
+<<<<<<< HEAD
             this.id_label.Click += new System.EventHandler(this.label1_Click);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // firstName_label
             // 
@@ -86,7 +92,10 @@
             this.firstName_label.Size = new System.Drawing.Size(68, 14);
             this.firstName_label.TabIndex = 3;
             this.firstName_label.Text = "First Name:";
+<<<<<<< HEAD
             this.firstName_label.Click += new System.EventHandler(this.label3_Click);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // lastName_label
             // 
@@ -97,7 +106,10 @@
             this.lastName_label.Size = new System.Drawing.Size(67, 14);
             this.lastName_label.TabIndex = 5;
             this.lastName_label.Text = "Last name:";
+<<<<<<< HEAD
             this.lastName_label.Click += new System.EventHandler(this.label4_Click);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // birth_label
             // 
@@ -108,7 +120,10 @@
             this.birth_label.Size = new System.Drawing.Size(65, 14);
             this.birth_label.TabIndex = 8;
             this.birth_label.Text = "Birth date:";
+<<<<<<< HEAD
             this.birth_label.Click += new System.EventHandler(this.label6_Click);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // start_date_label
             // 
@@ -119,7 +134,10 @@
             this.start_date_label.Size = new System.Drawing.Size(89, 14);
             this.start_date_label.TabIndex = 9;
             this.start_date_label.Text = "Start Contract:";
+<<<<<<< HEAD
             this.start_date_label.Click += new System.EventHandler(this.label7_Click);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // end_date_label
             // 
@@ -165,7 +183,10 @@
             this.mail_label.Size = new System.Drawing.Size(38, 14);
             this.mail_label.TabIndex = 18;
             this.mail_label.Text = "Email:";
+<<<<<<< HEAD
             this.mail_label.Click += new System.EventHandler(this.label2_Click);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // birth_date
             // 
@@ -176,7 +197,10 @@
             this.birth_date.Name = "birth_date";
             this.birth_date.Size = new System.Drawing.Size(130, 22);
             this.birth_date.TabIndex = 5;
+<<<<<<< HEAD
             this.birth_date.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // end_date
             // 
@@ -187,7 +211,10 @@
             this.end_date.Name = "end_date";
             this.end_date.Size = new System.Drawing.Size(130, 22);
             this.end_date.TabIndex = 7;
+<<<<<<< HEAD
             this.end_date.ValueChanged += new System.EventHandler(this.end_date_ValueChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // med_cart_date
             // 
@@ -218,7 +245,10 @@
             this.firstname_box.Name = "firstname_box";
             this.firstname_box.Size = new System.Drawing.Size(100, 20);
             this.firstname_box.TabIndex = 2;
+<<<<<<< HEAD
             this.firstname_box.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // lastname_box
             // 
@@ -229,7 +259,10 @@
             this.lastname_box.Name = "lastname_box";
             this.lastname_box.Size = new System.Drawing.Size(100, 20);
             this.lastname_box.TabIndex = 3;
+<<<<<<< HEAD
             this.lastname_box.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // email_box
             // 
@@ -240,7 +273,10 @@
             this.email_box.Name = "email_box";
             this.email_box.Size = new System.Drawing.Size(100, 20);
             this.email_box.TabIndex = 4;
+<<<<<<< HEAD
             this.email_box.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // tb_repeatPass
             // 
@@ -259,7 +295,10 @@
             this.tb_pass.Name = "tb_pass";
             this.tb_pass.Size = new System.Drawing.Size(100, 22);
             this.tb_pass.TabIndex = 10;
+<<<<<<< HEAD
             this.tb_pass.TextChanged += new System.EventHandler(this.tb_pass_TextChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // tb_username
             // 
@@ -269,7 +308,10 @@
             this.tb_username.Name = "tb_username";
             this.tb_username.Size = new System.Drawing.Size(100, 22);
             this.tb_username.TabIndex = 9;
+<<<<<<< HEAD
             this.tb_username.TextChanged += new System.EventHandler(this.tb_username_TextChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // verPassWorod_label
             // 
@@ -281,7 +323,10 @@
             this.verPassWorod_label.Size = new System.Drawing.Size(85, 14);
             this.verPassWorod_label.TabIndex = 26;
             this.verPassWorod_label.Text = "Ver password:";
+<<<<<<< HEAD
             this.verPassWorod_label.Click += new System.EventHandler(this.verPassWorod_label_Click);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // passWord_label
             // 
@@ -339,7 +384,10 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AddStudent";
             this.Text = "Add New Student";
+<<<<<<< HEAD
             this.Load += new System.EventHandler(this.Form2_Load);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             this.ResumeLayout(false);
             this.PerformLayout();
 

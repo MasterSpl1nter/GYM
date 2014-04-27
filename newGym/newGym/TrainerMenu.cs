@@ -24,7 +24,11 @@ namespace newGym
             InitializeComponent();
             timer1.Start();
             loggedLabel.Text = trainer.UserName;
+<<<<<<< HEAD
             MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.guideid=22");
+=======
+            MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.trainerid=22");
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             arr = new DateTime[dt.Rows.Count];
             for (int i = 0; i < dt.Rows.Count; i++)
             {
@@ -58,6 +62,7 @@ namespace newGym
                     dtmp.Rows.Add(dr.ItemArray);
                 }
             }
+<<<<<<< HEAD
             if (dtmp.Rows.Count==1){
             Updateitems(0);
             hScrollBar1.Visible = false;
@@ -78,6 +83,28 @@ namespace newGym
                 tothourLabel.Text = "";
                 hScrollBar1.Visible = false;
             }
+=======
+            //if (dtmp.Rows.Count==1){
+            //Updateitems(0);
+            //hScrollBar1.Visible = false;
+            //}
+            //if (dtmp.Rows.Count > 1)
+            //{
+            //    Updateitems(0);
+            //    hScrollBar1.Visible = true;
+            //}
+            //else if(dtmp.Rows.Count == 0)
+            //{
+            //    idLabel.Text = "";
+            //    nameLabel.Text = "";
+            //    ParticiLabel.Text = "";
+            //    roomNumLabel.Text = "";
+            //    starttimeLabel.Text = "";
+            //    endtimeLabel.Text = "";
+            //    tothourLabel.Text = "";
+            //    hScrollBar1.Visible = false;
+            //}
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
                 /*
             comboBox1.DataSource = dt;
             comboBox1.DisplayMember = "id";
@@ -90,6 +117,7 @@ namespace newGym
             tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dt.Rows[i]["endtime"]) - Convert.ToDateTime(dt.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
    //   */  }
 
+<<<<<<< HEAD
         private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
                // MessageBox.Show(count.ToString());
@@ -109,6 +137,27 @@ namespace newGym
             endtimeLabel.Text = dtmp.Rows[i]["endtime"].ToString().Split(' ')[1];
             tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dtmp.Rows[i]["endtime"]) - Convert.ToDateTime(dtmp.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
         }
+=======
+        //private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        //{
+        //       // MessageBox.Show(count.ToString());
+        //    hScrollBar1.LargeChange = 99;
+        //        int i = count % dtmp.Rows.Count;
+        //        Updateitems(i);
+        //        count++;
+        //}
+        //private void Updateitems(int i)
+        //{
+        //    idLabel.Text = dtmp.Rows[i]["id"].ToString();
+        //    int studentsnum = MySQL.count("SELECT COUNT(studentid) FROM studentclass where classid=" + idLabel.Text);
+        //    nameLabel.Text = dtmp.Rows[i]["name"].ToString();
+        //    ParticiLabel.Text = studentsnum.ToString();
+        //    roomNumLabel.Text = dtmp.Rows[i]["room"].ToString();
+        //    starttimeLabel.Text = dtmp.Rows[i]["starttime"].ToString().Split(' ')[1];
+        //    endtimeLabel.Text = dtmp.Rows[i]["endtime"].ToString().Split(' ')[1];
+        //    tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dtmp.Rows[i]["endtime"]) - Convert.ToDateTime(dtmp.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
+        //}
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
 
         private void button13_Click(object sender, EventArgs e)
         {
@@ -124,11 +173,16 @@ namespace newGym
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (StudSearch.Text.Length > 0 && GuideSearch.Text.Length > 0)
+=======
+            if (StudSearch.Text.Length > 0 && TrainerSearch.Text.Length > 0)
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             {
                 MessageBox.Show("Only one search field can be filled.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
             }
+<<<<<<< HEAD
             //fix error spaces in name search
             DataTable dt=new DataTable();
             if (GuideSearch.Text.Length>0){
@@ -145,6 +199,25 @@ namespace newGym
                 //MessageBox.Show(dt.Rows[0]["id"].ToString());
                 GuideSearch gs = new GuideSearch(dt);
                 gs.ShowDialog();
+=======
+            //fix error spaces in name searchgs
+            DataTable dt=new DataTable();
+            if (TrainerSearch.Text.Length > 0)
+            {
+             if (radioID.Checked)
+                {
+                    trainer.SearchID(dt, TrainerSearch.Text);
+                //MessageBox.Show(dt.Rows[0]["id"].ToString());
+                    TrainerSearch ts = new TrainerSearch(dt);
+                ts.ShowDialog();
+            }
+            else
+            {
+                trainer.SearchName(dt, TrainerSearch.Text);
+                //MessageBox.Show(dt.Rows[0]["id"].ToString());
+                TrainerSearch ts = new TrainerSearch(dt);
+                ts.ShowDialog();
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             }
             }
             else if (StudSearch.Text.Length > 0)
@@ -153,15 +226,25 @@ namespace newGym
                 {
                     trainer.SearchStudID(dt, StudSearch.Text);
                     //MessageBox.Show(dt.Rows[0]["id"].ToString());
+<<<<<<< HEAD
                     GuideSearch gs = new GuideSearch(dt);
                     gs.ShowDialog();
+=======
+                    TrainerSearch ts = new TrainerSearch(dt);
+                    ts.ShowDialog();
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
                 }
                 else
                 {
                     trainer.SearchStudName(dt, StudSearch.Text);
                     //MessageBox.Show(dt.Rows[0]["id"].ToString());
+<<<<<<< HEAD
                     GuideSearch gs = new GuideSearch(dt);
                     gs.ShowDialog();
+=======
+                    TrainerSearch ts = new TrainerSearch(dt);
+                    ts.ShowDialog();
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
                 }
             }
         }
@@ -191,5 +274,13 @@ namespace newGym
 
         }
 
+<<<<<<< HEAD
+=======
+        private void viewbutton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
     }
 }

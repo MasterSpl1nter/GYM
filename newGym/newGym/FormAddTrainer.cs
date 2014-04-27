@@ -103,9 +103,13 @@ namespace newGym
             salar_txt.Text = string.Empty;
         }
 
+<<<<<<< HEAD
         private void salar_txt_TextChanged(object sender, EventArgs e)
         {
 
         }
+=======
+        
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
     }
 }

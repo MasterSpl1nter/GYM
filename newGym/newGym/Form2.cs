@@ -24,6 +24,7 @@ namespace newGym
 
         }
 
+<<<<<<< HEAD
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -39,6 +40,8 @@ namespace newGym
 
         }
 
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         private void button1_Click(object sender, EventArgs e)
         {
             int id,room; 
@@ -49,7 +52,10 @@ namespace newGym
 
             try
             {
+<<<<<<< HEAD
                
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
                 bool result = Int32.TryParse(textBox1.Text, out id);
                 bool result2 = Int32.TryParse(textBox4.Text, out room);
                 if (result && result2)
@@ -71,21 +77,29 @@ namespace newGym
                             MP.ShowDialog();
                         }
                     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
                 } 
                 else
                 {
                     MessageBox.Show("The data waren't successfully accepted","ERROR");
+<<<<<<< HEAD
                 
                 
                 
                 }
 
+=======
+                }
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
+<<<<<<< HEAD
 
 
         }
@@ -95,6 +109,9 @@ namespace newGym
 
         }
 
+=======
+        }
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
     }
 }
 

@@ -25,7 +25,10 @@ namespace newGym
             email_txt.MaxLength = 40;
             username_txt.MaxLength = 15;
             password_txt.MaxLength = 15;
+<<<<<<< HEAD
 
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         }
 
         void Fillcombo()
@@ -69,10 +72,14 @@ namespace newGym
             MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
             MySqlDataReader myReader;
 
+<<<<<<< HEAD
 
 
 
 
+=======
+            
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             try
             {
                 conDataBase.Open();
@@ -151,10 +158,13 @@ namespace newGym
             }
         }
 
+<<<<<<< HEAD
         private void id_txt_TextChanged(object sender, EventArgs e)
         {
 
         }
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
 
         private void clear_all_button_Click(object sender, EventArgs e)
         {
@@ -167,6 +177,7 @@ namespace newGym
             email_verification.Text = string.Empty;
             salar_txt.Text = string.Empty;
         }
+<<<<<<< HEAD
 
         private void salar_txt_TextChanged(object sender, EventArgs e)
         {
@@ -174,5 +185,7 @@ namespace newGym
         }
 
 
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
     }
 }

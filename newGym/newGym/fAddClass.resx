@@ -141,7 +141,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>15</value>
+=======
+    <value>16</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -168,7 +172,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>14</value>
+=======
+    <value>15</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -195,7 +203,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>13</value>
+=======
+    <value>14</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -222,7 +234,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>12</value>
+=======
+    <value>13</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 32</value>
@@ -243,7 +259,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>11</value>
+=======
+    <value>12</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 61</value>
@@ -264,7 +284,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>10</value>
+=======
+    <value>11</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -291,7 +315,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>9</value>
+=======
+    <value>10</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 92</value>
@@ -312,7 +340,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>8</value>
+=======
+    <value>9</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 123</value>
@@ -333,7 +365,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>7</value>
+=======
+    <value>8</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>290, 93</value>
@@ -354,7 +390,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>6</value>
+=======
+    <value>7</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -381,7 +421,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>5</value>
+=======
+    <value>6</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="dateTimePicker1.CalendarFont" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 8.25pt, style=Bold</value>
@@ -411,7 +455,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>4</value>
+=======
+    <value>5</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -438,7 +486,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>3</value>
+=======
+    <value>4</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -465,7 +517,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>2</value>
+=======
+    <value>3</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
     <value>154, 217</value>
@@ -489,7 +545,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
     <value>1</value>
+=======
+    <value>2</value>
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
   </data>
   <data name="dateTimePicker2.CalendarFont" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 8.25pt, style=Bold</value>
@@ -519,6 +579,36 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dateTimePicker2.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
+=======
+    <value>1</value>
+  </data>
+  <data name="gidLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gidLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 126</value>
+  </data>
+  <data name="gidLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="gidLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="gidLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;gidLabel.Name" xml:space="preserve">
+    <value>gidLabel</value>
+  </data>
+  <data name="&gt;&gt;gidLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gidLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gidLabel.ZOrder" xml:space="preserve">
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

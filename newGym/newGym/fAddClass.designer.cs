@@ -45,6 +45,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+<<<<<<< HEAD
+=======
+            this.gidLabel = new System.Windows.Forms.Label();
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             this.SuspendLayout();
             // 
             // button1
@@ -58,31 +62,46 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
+<<<<<<< HEAD
             this.label1.Click += new System.EventHandler(this.label1_Click);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
+<<<<<<< HEAD
             this.label2.Click += new System.EventHandler(this.label2_Click);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
+<<<<<<< HEAD
             this.label3.Click += new System.EventHandler(this.label3_Click);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // textBox1
             // 
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
+<<<<<<< HEAD
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // textBox2
             // 
             resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.Name = "textBox2";
+<<<<<<< HEAD
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // label5
             // 
@@ -91,6 +110,10 @@
             // 
             // comboBox1
             // 
+<<<<<<< HEAD
+=======
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             this.comboBox1.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
@@ -98,22 +121,35 @@
             // 
             // comboBox2
             // 
+<<<<<<< HEAD
             this.comboBox2.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+=======
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox2, "comboBox2");
+            this.comboBox2.Name = "comboBox2";
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // textBox3
             // 
             resources.ApplyResources(this.textBox3, "textBox3");
             this.textBox3.Name = "textBox3";
+<<<<<<< HEAD
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged_1);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
+<<<<<<< HEAD
             this.label4.Click += new System.EventHandler(this.label4_Click);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // dateTimePicker1
             // 
@@ -127,7 +163,10 @@
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
+<<<<<<< HEAD
             this.label6.Click += new System.EventHandler(this.label6_Click);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // label7
             // 
@@ -139,7 +178,10 @@
             resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.button2.Click += new System.EventHandler(this.button2_Click);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // dateTimePicker2
             // 
@@ -149,10 +191,22 @@
             this.dateTimePicker2.TabStop = false;
             this.dateTimePicker2.UseWaitCursor = true;
             // 
+<<<<<<< HEAD
+=======
+            // gidLabel
+            // 
+            resources.ApplyResources(this.gidLabel, "gidLabel");
+            this.gidLabel.Name = "gidLabel";
+            // 
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // fAddClass
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
+=======
+            this.Controls.Add(this.gidLabel);
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label7);
@@ -170,7 +224,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "fAddClass";
+<<<<<<< HEAD
             this.Load += new System.EventHandler(this.fAddActivity_Load);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +251,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.Label gidLabel;
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
     }
 }

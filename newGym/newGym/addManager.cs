@@ -29,9 +29,15 @@ namespace newGym
                 this.exit_update.Visible = true;
                 this.update_manger_button.Visible = true;
                 this.AddManagerUser.Visible = false;
+<<<<<<< HEAD
                DataTable dt = new DataTable();
                 string query = "SELECT * FROM gym.manager;";
                 DbConnection newConn= new DbConnection("gym","root","csharp");
+=======
+                DataTable dt = new DataTable();
+                string query = "SELECT * FROM gym.manager;";
+                DbConnection newConn = new DbConnection("gym", "root", "csharp");
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
                 newConn.Selectdt(query, dt);
                 foreach (DataRow r in dt.Rows)
                 {
@@ -42,6 +48,7 @@ namespace newGym
 
         private void AddManagerUser_Click_1(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             List<TextBox> err = new List<TextBox>();
             resetLabelColor(this.Controls);
             if(!(Regex.IsMatch(managerId.Text,"^[0-9]{9}$"))|| Manager.isIdExist(Convert.ToInt32(managerId.Text)) == false)/*&& managerId.Text.Length==9 */
@@ -87,6 +94,25 @@ namespace newGym
             if (err.Count > 0)
             {
                 MessageBox.Show("Phere are some problems in the details\nfix the details in the red fields!");
+=======
+
+            List<TextBox> err = new List<TextBox>();
+            resetLabelColor(this.Controls);
+
+            if (!(Regex.IsMatch(managerId.Text, "^[0-9]{9}$")) ||Manager.isIdExist(Convert.ToInt32(managerId.Text)) == true)//&& managerId.Text.Length==9 
+            {
+                this.idLabel.ForeColor = System.Drawing.Color.Red;
+                err.Add(managerId);
+                
+            }
+            
+
+
+            checkFields(err);
+            if (err.Count > 0)
+            {
+                MessageBox.Show("there are some problems in the details\nfix the details in the red fields!");
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
                 foreach (TextBox t in err)
                 {
                     t.Text = "";
@@ -94,9 +120,15 @@ namespace newGym
             }
             else
             {
+<<<<<<< HEAD
                     Manager m = new Manager(Convert.ToInt32(managerId.Text), managerFirstName.Text, managerLastName.Text, managerEmail.Text, 4, userName.Text, password.Text, Convert.ToInt32(MangerSalaryPerHour.Text));
                     m.addUser();
                     MessageBox.Show("add a new manager success!");      
+=======
+                Manager m = new Manager(Convert.ToInt32(managerId.Text), managerFirstName.Text, managerLastName.Text, managerEmail.Text, 4, userName.Text, password.Text, Convert.ToInt32(MangerSalaryPerHour.Text));
+                m.addUser();
+                MessageBox.Show("add a new manager success!");
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             }
         }
         static void ClearTextBoxes(Control.ControlCollection controls)
@@ -115,17 +147,73 @@ namespace newGym
                 }
             }
         }
+<<<<<<< HEAD
         
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+=======
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
 
         }
 
         private void update_manger_button_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
         }
 
+=======
+           
+        }
+        public void checkFields(List<TextBox> err)
+        {
+
+            resetLabelColor(this.Controls);
+            if (!(Regex.IsMatch(managerFirstName.Text, "^[a-zA-Z]{1,}$")))
+            {
+
+                this.firstNameLabel.ForeColor = System.Drawing.Color.Red;
+                err.Add(managerFirstName);
+            }
+            if (!(Regex.IsMatch(managerLastName.Text, "^[a-zA-Z]{1,}$")))
+            {
+                this.lastNameLabel.ForeColor = System.Drawing.Color.Red;
+                err.Add(managerLastName);
+            }
+
+            if (!Regex.IsMatch(managerEmail.Text, "^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,4})$"))
+            {
+                this.EmailLabel.ForeColor = System.Drawing.Color.Red;
+                err.Add(managerEmail);
+            }
+            if (!(Regex.IsMatch(MangerSalaryPerHour.Text, "^(([1-9]?)[0-9]{1,})$")))
+            {
+                this.salaryPerHourLabel.ForeColor = System.Drawing.Color.Red;
+                err.Add(MangerSalaryPerHour);
+            }
+            if (!(Regex.IsMatch(userName.Text, "^[a-z0-9_-]{3,15}$")))
+            {
+
+                this.userNameLabel.ForeColor = System.Drawing.Color.Red;
+                err.Add(userName);
+            }
+            /*
+            if (!(Regex.IsMatch(password.Text, "^((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})")))
+            {
+
+                this.passwordLabel.ForeColor = System.Drawing.Color.Red;
+                err.Add(password);
+            }*/
+        }
+
+
+
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         private void exit_update_Click(object sender, EventArgs e)
         {
             ClearTextBoxes(this.Controls);
@@ -148,5 +236,50 @@ namespace newGym
                     l.ForeColor = SystemColors.ControlText; ;
             }
         }
+<<<<<<< HEAD
+=======
+
+        private void IdComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selectedIndex = IdComboBox.SelectedIndex;
+            Object selectedItem = IdComboBox.SelectedItem;
+
+            MessageBox.Show("Selected Item Text: " + selectedItem.ToString() + "\n" +
+                            "Index: " + selectedIndex.ToString());
+            DataTable dt = new DataTable();
+            string query = "SELECT * FROM gym.manager where id ='" + Convert.ToInt32(selectedItem.ToString()) + "';";
+            DbConnection newConn = new DbConnection("gym", "root", "csharp");
+            newConn.Selectdt(query, dt);
+
+
+            this.managerFirstName.Text = dt.Rows[0]["firstname"].ToString();
+            this.managerLastName.Text = dt.Rows[0]["lastname"].ToString();
+            this.managerEmail.Text = dt.Rows[0]["email"].ToString();
+            this.MangerSalaryPerHour.Text = dt.Rows[0]["salaryperhour"].ToString();
+            this.userName.Text = dt.Rows[0]["username"].ToString();
+            this.password.Text = dt.Rows[0]["password"].ToString();
+        }
+
+        private void update_manger_button_Click_1(object sender, EventArgs e)
+        {
+            List<TextBox> err = new List<TextBox>();
+            resetLabelColor(this.Controls);
+            checkFields(err);
+            if (err.Count > 0)
+            {
+                MessageBox.Show("there are some problems in the details\nfix the details in the red fields!");
+                foreach (TextBox t in err)
+                {
+                    t.Text = "";
+                }
+            }
+            else
+            {
+                Manager m = new Manager(Convert.ToInt32(IdComboBox.SelectedItem.ToString()), managerFirstName.Text, managerLastName.Text, managerEmail.Text, 7, userName.Text, password.Text, Convert.ToInt32(MangerSalaryPerHour.Text));
+                m.updateUser();
+                MessageBox.Show(" update manager success!");
+            }
+        }
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
     }
 }

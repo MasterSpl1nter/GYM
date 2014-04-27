@@ -24,7 +24,11 @@ namespace newGym
             InitializeComponent();
             timer1.Start();
             loggedLabel.Text = guide.UserName;
+<<<<<<< HEAD
             MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.guideid=22");
+=======
+            MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.guideid=" + guide.Id);
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             arr = new DateTime[dt.Rows.Count];
             for (int i = 0; i < dt.Rows.Count; i++)
             {
@@ -112,7 +116,11 @@ namespace newGym
 
         private void button13_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             fAddClass ac = new fAddClass();
+=======
+            fAddClass ac = new fAddClass(guide.Id);
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             ac.ShowDialog();
         }
 
@@ -166,6 +174,7 @@ namespace newGym
             }
         }
 
+<<<<<<< HEAD
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -176,6 +185,8 @@ namespace newGym
 
         }
 
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         private void timer1_Tick(object sender, EventArgs e)
         {
             dateLabel.Text = DateTime.Now.ToString();

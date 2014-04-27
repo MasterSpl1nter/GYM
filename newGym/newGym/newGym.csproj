@@ -66,6 +66,44 @@
     <Compile Include="fEditClass.Designer.cs">
       <DependentUpon>fEditClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteStudent.Designer.cs">
+      <DependentUpon>DeleteStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelSecretary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelSecretary.Designer.cs">
+      <DependentUpon>DelSecretary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSecretary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSecretary.Designer.cs">
+      <DependentUpon>EditSecretary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStudentBySecrtary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStudentBySecrtary.Designer.cs">
+      <DependentUpon>EditStudentBySecrtary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleUser.cs" />
+    <Compile Include="TrainerSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainerSearch.Designer.cs">
+      <DependentUpon>TrainerSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteManager.Designer.cs">
+      <DependentUpon>deleteManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Factory_DP.cs" />
     <Compile Include="Trainer.cs" />
     <Compile Include="TrainerMenu.cs">
       <SubType>Form</SubType>
@@ -91,6 +129,11 @@
     </Compile>
     <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GuideForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForm.designer.cs">
+      <DependentUpon>GuideForm.cs</DependentUpon>
     </Compile>
     <Compile Include="addManager.cs">
       <SubType>Form</SubType>
@@ -193,6 +236,23 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fEditClass.resx">
       <DependentUpon>fEditClass.cs</DependentUpon>
+    <EmbeddedResource Include="DeleteStudent.resx">
+      <DependentUpon>DeleteStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelSecretary.resx">
+      <DependentUpon>DelSecretary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSecretary.resx">
+      <DependentUpon>EditSecretary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStudentBySecrtary.resx">
+      <DependentUpon>EditStudentBySecrtary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainerSearch.resx">
+      <DependentUpon>TrainerSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteManager.resx">
+      <DependentUpon>deleteManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrainerMenu.resx">
       <DependentUpon>TrainerMenu.cs</DependentUpon>
@@ -208,6 +268,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="GuideForm.resx">
+      <DependentUpon>GuideForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -255,6 +317,7 @@
     <EmbeddedResource Include="RoomAddition.resx">
       <DependentUpon>RoomAddition.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

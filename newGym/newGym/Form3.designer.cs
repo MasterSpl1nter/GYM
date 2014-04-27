@@ -58,7 +58,10 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 2;
+<<<<<<< HEAD
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // Form3
             // 
@@ -70,7 +73,10 @@
             this.Controls.Add(this.button1);
             this.Name = "Form3";
             this.Text = "Form3";
+<<<<<<< HEAD
             this.Load += new System.EventHandler(this.Form3_Load);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             this.ResumeLayout(false);
             this.PerformLayout();
 

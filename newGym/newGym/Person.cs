@@ -39,6 +39,35 @@ namespace newGym
             this.password = password;
         }
 
+<<<<<<< HEAD
+=======
+        public bool Template(DataTable dt, string user, string pass)
+        {
+            bool check = CheckLogin(dt, user, pass);
+
+            if (check)
+            {
+
+                   int id = Convert.ToInt32(dt.Rows[0]["id"]);
+                   string firstName = dt.Rows[0]["firstname"].ToString();
+                   string lastName = dt.Rows[0]["lastname"].ToString();
+                   string email = dt.Rows[0]["email"].ToString();
+                   int permission = Convert.ToInt32(dt.Rows[0]["permission"]);
+                   string userName = dt.Rows[0]["username"].ToString();
+                   string password = dt.Rows[0]["password"].ToString();
+                   int salary = Convert.ToInt32(dt.Rows[0]["salaryperhour"]);
+
+                makeInstance(id, firstName, lastName, email, permission, userName, password, salary);
+                return true;
+            }
+
+            else return false;
+        }
+        
+        protected abstract bool CheckLogin(DataTable dt, string user, string pass);          //Template DP
+        protected abstract void makeInstance(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary);
+
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         public int Id{ get { return id; } set { id = value; }  }
         public string FirstName{ get { return firstName; } set { firstName = value; }  }
         //get/set func for last name

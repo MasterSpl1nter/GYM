@@ -68,6 +68,7 @@ namespace newGym
             {
                 MessageBox.Show(ex.Message);
             }
+<<<<<<< HEAD
 
             
         }
@@ -82,6 +83,8 @@ namespace newGym
         private void FormRemoveTrainer_Load(object sender, EventArgs e)
         {
 
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         }
     }
 }

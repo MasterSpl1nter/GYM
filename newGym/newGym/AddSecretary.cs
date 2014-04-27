@@ -25,9 +25,14 @@ namespace newGym
         public AddSecretary()
         {
             InitializeComponent();
+<<<<<<< HEAD
             
         }
 
+=======
+        }
+        //reset all label to the default color
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         private void ResetColors()
         {
             name_label.ForeColor = Color.Black;
@@ -38,6 +43,7 @@ namespace newGym
             verify_label.ForeColor = Color.Black;
         }
 
+<<<<<<< HEAD
         private void AddSecretary_Load(object sender, EventArgs e)
         {
 
@@ -68,6 +74,8 @@ namespace newGym
 
         }
 
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         private void next_button_Click(object sender, EventArgs e)
         {
             bool err = false;
@@ -130,6 +138,10 @@ namespace newGym
                 err = false;
                 password_label.ForeColor = Color.Black;
             }
+<<<<<<< HEAD
+=======
+            //if password is equal like the verify password
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             if (password_textBox.Text != verify_textBox.Text)
             {
                 MessageBox.Show("Password not much, Please try again!", "ERROR", MessageBoxButtons.OK);
@@ -158,6 +170,7 @@ namespace newGym
                 username = username_textBox.Text;
                 password = password_textBox.Text;
 
+<<<<<<< HEAD
                 string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},{7}", id, firstname, lastname, email,
                     username, password, perm, salary);
                 MySQL.Insert("worker", "id,firstname,lastname,email,username,password,permission,salaryperhour", insert);
@@ -182,16 +195,50 @@ namespace newGym
 
         }
 
+=======
+                try
+                {
+                    string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},{7}", id, firstname, lastname, email,
+                        username, password, perm, salary);
+                    int retval = Secretary.Add(insert);
+
+                    if (retval == 0)
+                    {
+                        MessageBox.Show("GDetails have been added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (retval == 1062)
+                    {
+                        MessageBox.Show("Secretary with this ID or Username already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("ERROR #" + retval);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }      
+        }
+        //Verifies typing numbers only
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         private void id_textBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             const char Delete = (char)8;
             e.Handled = !Char.IsDigit(e.KeyChar) && e.KeyChar != Delete;
         }
 
+<<<<<<< HEAD
         private void firstname_textBox_KeyPress(object sender, KeyPressEventArgs e)
         {
 
 
+=======
+        private void AddSecretary_Load(object sender, EventArgs e)
+        {
+
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         }
     }
 }

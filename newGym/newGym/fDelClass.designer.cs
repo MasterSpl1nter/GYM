@@ -36,13 +36,20 @@
             // 
             // comboBox1
             // 
+<<<<<<< HEAD
+=======
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.comboBox1.Location = new System.Drawing.Point(71, 55);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 0;
+<<<<<<< HEAD
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // label1
             // 
@@ -52,7 +59,10 @@
             this.label1.Size = new System.Drawing.Size(16, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Id";
+<<<<<<< HEAD
             this.label1.Click += new System.EventHandler(this.label1_Click);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // button1
             // 

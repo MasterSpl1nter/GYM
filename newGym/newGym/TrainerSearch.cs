@@ -9,16 +9,10 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class GuideSearch : Form
+    public partial class TrainerSearch : Form
     {
-<<<<<<< HEAD
-        public GuideSearch(DataTable dt)
-        {
-            InitializeComponent();
-            dataGridView1.DataSource = dt;
-=======
         DataTable dt;
-        public GuideSearch(DataTable dt)
+        public TrainerSearch(DataTable dt)
         {
             this.dt = dt;
             InitializeComponent();
@@ -30,7 +24,6 @@ namespace newGym
         {
                 MessageBox.Show(dt.Rows[e.RowIndex]["id"].ToString());
 
->>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         }
     }
 }

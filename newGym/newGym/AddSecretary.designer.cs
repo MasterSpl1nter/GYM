@@ -50,38 +50,56 @@
             // 
             resources.ApplyResources(this.id_label, "id_label");
             this.id_label.Name = "id_label";
+<<<<<<< HEAD
             this.id_label.Click += new System.EventHandler(this.label1_Click_1);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // name_label
             // 
             resources.ApplyResources(this.name_label, "name_label");
             this.name_label.Name = "name_label";
+<<<<<<< HEAD
             this.name_label.Click += new System.EventHandler(this.label1_Click_1);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // lastname_label
             // 
             resources.ApplyResources(this.lastname_label, "lastname_label");
             this.lastname_label.Name = "lastname_label";
+<<<<<<< HEAD
             this.lastname_label.Click += new System.EventHandler(this.label1_Click_1);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // email_label
             // 
             resources.ApplyResources(this.email_label, "email_label");
             this.email_label.Name = "email_label";
+<<<<<<< HEAD
             this.email_label.Click += new System.EventHandler(this.label1_Click_1);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // id_textBox
             // 
             resources.ApplyResources(this.id_textBox, "id_textBox");
             this.id_textBox.Name = "id_textBox";
+<<<<<<< HEAD
             this.id_textBox.TextChanged += new System.EventHandler(this.id_textBox_TextChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             this.id_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.id_textBox_KeyPress);
             // 
             // firstname_textBox
             // 
             resources.ApplyResources(this.firstname_textBox, "firstname_textBox");
             this.firstname_textBox.Name = "firstname_textBox";
+<<<<<<< HEAD
             this.firstname_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.firstname_textBox_KeyPress);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // email_textBox
             // 
@@ -95,9 +113,15 @@
             // 
             // enter_button
             // 
+<<<<<<< HEAD
             this.enter_button.BackColor = System.Drawing.SystemColors.Highlight;
             resources.ApplyResources(this.enter_button, "enter_button");
             this.enter_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
+=======
+            this.enter_button.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.enter_button, "enter_button");
+            this.enter_button.ForeColor = System.Drawing.SystemColors.ControlText;
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             this.enter_button.Name = "enter_button";
             this.enter_button.UseVisualStyleBackColor = false;
             this.enter_button.Click += new System.EventHandler(this.next_button_Click);
@@ -106,31 +130,46 @@
             // 
             resources.ApplyResources(this.username_label, "username_label");
             this.username_label.Name = "username_label";
+<<<<<<< HEAD
             this.username_label.Click += new System.EventHandler(this.label1_Click_1);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // password_label
             // 
             resources.ApplyResources(this.password_label, "password_label");
             this.password_label.Name = "password_label";
+<<<<<<< HEAD
             this.password_label.Click += new System.EventHandler(this.label1_Click_1);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // username_textBox
             // 
             resources.ApplyResources(this.username_textBox, "username_textBox");
             this.username_textBox.Name = "username_textBox";
+<<<<<<< HEAD
             this.username_textBox.TextChanged += new System.EventHandler(this.id_textBox_TextChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // password_textBox
             // 
             resources.ApplyResources(this.password_textBox, "password_textBox");
             this.password_textBox.Name = "password_textBox";
+<<<<<<< HEAD
             this.password_textBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // verify_label
             // 
             resources.ApplyResources(this.verify_label, "verify_label");
             this.verify_label.Name = "verify_label";
+<<<<<<< HEAD
             this.verify_label.Click += new System.EventHandler(this.label1_Click_1);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // verify_textBox
             // 

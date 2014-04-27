@@ -15,7 +15,11 @@ namespace newGym
         DateTime[] arr;
         DataTable dtmp;
         DataTable dt;
+<<<<<<< HEAD
         public ManagerMenu()
+=======
+        public ManagerMenu(Manager m)
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         {
             dt = new DataTable();
             InitializeComponent();
@@ -34,6 +38,10 @@ namespace newGym
                       int index = i;
                       dic.Add(key, index);
                   }*/
+<<<<<<< HEAD
+=======
+            helloLabel.Text = "Hello," + m.FirstName + " " + m.LastName;
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
@@ -193,8 +201,11 @@ namespace newGym
         private void button20_Click(object sender, EventArgs e)
         {
             /// Class EDIT ...///
+<<<<<<< HEAD
             fEditClass EditClass = new fEditClass();
             EditClass.ShowDialog();
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
         }
 
         private void button21_Click(object sender, EventArgs e)
@@ -209,5 +220,38 @@ namespace newGym
 
         }
 
+<<<<<<< HEAD
+=======
+        private void button3_Click(object sender, EventArgs e)
+        {
+            deleteManager d = new deleteManager();
+            d.ShowDialog();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            EditSecretary es = new EditSecretary();
+            es.ShowDialog();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            DelSecretary ds = new DelSecretary();
+            ds.ShowDialog();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            EditStudentBySecrtary es = new EditStudentBySecrtary();
+            es.ShowDialog();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            DeleteStudent ds = new DeleteStudent();
+            ds.ShowDialog();
+        }
+
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
     }
     }

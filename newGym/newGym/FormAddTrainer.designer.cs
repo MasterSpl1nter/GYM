@@ -189,7 +189,10 @@
             this.salar_txt.Name = "salar_txt";
             this.salar_txt.Size = new System.Drawing.Size(100, 20);
             this.salar_txt.TabIndex = 7;
+<<<<<<< HEAD
             this.salar_txt.TextChanged += new System.EventHandler(this.salar_txt_TextChanged);
+=======
+>>>>>>> a6eb957d5db8d287d68f66cfe03d18c8bba9d372
             // 
             // FormAddTrainer
             // 
