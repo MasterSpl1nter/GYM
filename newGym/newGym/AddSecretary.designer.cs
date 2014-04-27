@@ -89,9 +89,9 @@
             // 
             // enter_button
             // 
-            this.enter_button.BackColor = System.Drawing.SystemColors.Highlight;
+            this.enter_button.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.enter_button, "enter_button");
-            this.enter_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.enter_button.ForeColor = System.Drawing.SystemColors.ControlText;
             this.enter_button.Name = "enter_button";
             this.enter_button.UseVisualStyleBackColor = false;
             this.enter_button.Click += new System.EventHandler(this.next_button_Click);
@@ -147,6 +147,7 @@
             this.Controls.Add(this.id_label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AddSecretary";
+            this.Load += new System.EventHandler(this.AddSecretary_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
