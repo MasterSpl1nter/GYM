@@ -55,9 +55,8 @@ namespace newGym
             DbConnection newConn = new DbConnection("gym", "root", "csharp");
             string query = "INSERT INTO `gym`.`manager` (`id`, `firstname`, `lastname`, `email`, `username`, `password`, `permission`,`salaryperhour`) VALUES ('" + Convert.ToInt32(this.Id) + "', '" + this.FirstName + "', '" + this.LastName + "', '" + this.Email + "', '" + this.UserName + "', '" + this.Password + "', '7' " + ",'" + this.salaryPerHour + "' );";
             newConn.writeToDb(query);
-
-
         }
+
         public void updateUser()
         {
             DbConnection newConn = new DbConnection("gym", "root", "csharp");

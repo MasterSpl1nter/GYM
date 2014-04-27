@@ -60,6 +60,7 @@
       <DependentUpon>AddStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Applince.cs" />
+    <Compile Include="SingleUser.cs" />
     <Compile Include="TrainerSearch.cs">
       <SubType>Form</SubType>
     </Compile>

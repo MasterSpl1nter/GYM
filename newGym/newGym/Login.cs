@@ -43,6 +43,7 @@ namespace newGym
                     var tool2 = Factory_DP.PersonFactory("Trainer");
                     if (tool2.Template(dt, textBox1.Text, textBox2.Text))
                     {   retval = 0;  }
+
                     break;
                 case 3:
                     var tool3 = Factory_DP.PersonFactory("Guide");
@@ -52,10 +53,10 @@ namespace newGym
                       
                     break;
                     
-               // case 4:     // not working look at Factory_DP RETURN
-                    //var tool4 = Factory_DP.PersonFactory("Manager");
-                     //  if ( tool4.Template(dt, textBox1.Text, textBox2.Text) )
-                      //    retval = 0;
+                case 4:     // not working look at Factory_DP RETURN
+                    var tool4 = Factory_DP.PersonFactory("Manager");
+                    if ( tool4.Template(dt, textBox1.Text, textBox2.Text) )
+                        retval = 0;
                     
                  //------------------------------------------------------//    
 
@@ -80,7 +81,7 @@ namespace newGym
                     //------------------------------------------------------//
 
 
-                  //  break;
+                   break;
                     
             }
             if (retval == 0)
