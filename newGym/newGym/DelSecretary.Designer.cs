@@ -53,7 +53,7 @@
             this.id_comboBox1.Name = "id_comboBox1";
             this.id_comboBox1.Size = new System.Drawing.Size(171, 21);
             this.id_comboBox1.TabIndex = 13;
-            this.id_comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            //this.id_comboBox1.SelectedIndexChanged += new System.EventHandler(this.id_comboBox1_SelectedIndexChanged);
             // 
             // id_label
             // 

@@ -44,5 +44,6 @@ namespace newGym
             MessageBox.Show("Secretary have been deleted succefully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+
     }
 }

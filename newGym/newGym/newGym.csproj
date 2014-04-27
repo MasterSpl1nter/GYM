@@ -60,10 +60,30 @@
       <DependentUpon>AddStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Applince.cs" />
-    <Compile Include="DeleteStudent.cs" />
-    <Compile Include="DelSecretary.cs" />
-    <Compile Include="EditSecretary.cs" />
-    <Compile Include="EditStudentBySecrtary.cs" />
+    <Compile Include="DeleteStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteStudent.Designer.cs">
+      <DependentUpon>DeleteStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelSecretary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelSecretary.Designer.cs">
+      <DependentUpon>DelSecretary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSecretary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSecretary.Designer.cs">
+      <DependentUpon>EditSecretary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStudentBySecrtary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStudentBySecrtary.Designer.cs">
+      <DependentUpon>EditStudentBySecrtary.cs</DependentUpon>
+    </Compile>
     <Compile Include="SingleUser.cs" />
     <Compile Include="TrainerSearch.cs">
       <SubType>Form</SubType>
