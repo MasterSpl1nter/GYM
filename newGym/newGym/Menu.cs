@@ -194,6 +194,8 @@ namespace newGym
         private void button20_Click(object sender, EventArgs e)
         {
             /// Class EDIT ...///
+            fEditClass editClass = new fEditClass();
+            editClass.ShowDialog();
         }
 
         private void button21_Click(object sender, EventArgs e)

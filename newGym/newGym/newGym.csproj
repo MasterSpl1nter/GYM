@@ -84,6 +84,10 @@
     <Compile Include="EditStudentBySecrtary.Designer.cs">
       <DependentUpon>EditStudentBySecrtary.cs</DependentUpon>
     </Compile>
+    <Compile Include="fEditClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEditClass.Designer.cs" />
     <Compile Include="SingleUser.cs" />
     <Compile Include="TrainerSearch.cs">
       <SubType>Form</SubType>
@@ -235,6 +239,7 @@
     <EmbeddedResource Include="EditStudentBySecrtary.resx">
       <DependentUpon>EditStudentBySecrtary.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fEditClass.resx" />
     <EmbeddedResource Include="TrainerSearch.resx">
       <DependentUpon>TrainerSearch.cs</DependentUpon>
     </EmbeddedResource>
