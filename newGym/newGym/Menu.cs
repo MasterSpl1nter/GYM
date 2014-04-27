@@ -15,7 +15,7 @@ namespace newGym
         DateTime[] arr;
         DataTable dtmp;
         DataTable dt;
-        public ManagerMenu()
+        public ManagerMenu(Manager m)
         {
             dt = new DataTable();
             InitializeComponent();
@@ -34,6 +34,7 @@ namespace newGym
                       int index = i;
                       dic.Add(key, index);
                   }*/
+            helloLabel.Text = "Hello," + m.FirstName + " " + m.LastName;
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)

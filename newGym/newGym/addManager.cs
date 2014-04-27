@@ -45,16 +45,20 @@ namespace newGym
 
             List<TextBox> err = new List<TextBox>();
             resetLabelColor(this.Controls);
-            if (!(Regex.IsMatch(managerId.Text, "^[0-9]{9}$")) || Manager.isIdExist(Convert.ToInt32(managerId.Text)) == false)/*&& managerId.Text.Length==9 */
+
+            if (!(Regex.IsMatch(managerId.Text, "^[0-9]{9}$")) ||Manager.isIdExist(Convert.ToInt32(managerId.Text)) == true)//&& managerId.Text.Length==9 
             {
-                MessageBox.Show("the id invalid");
                 this.idLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(managerId);
+                
             }
+            
+
+
             checkFields(err);
             if (err.Count > 0)
             {
-                MessageBox.Show("Phere are some problems in the details\nfix the details in the red fields!");
+                MessageBox.Show("there are some problems in the details\nfix the details in the red fields!");
                 foreach (TextBox t in err)
                 {
                     t.Text = "";
@@ -93,22 +97,7 @@ namespace newGym
 
         private void update_manger_button_Click(object sender, EventArgs e)
         {
-            List<TextBox> err = new List<TextBox>();
-            checkFields(err);
-            if (err.Count > 0)
-            {
-                MessageBox.Show("there are some problems in the details\nfix the details in the red fields!");
-                foreach (TextBox t in err)
-                {
-                    t.Text = "";
-                }
-            }
-            else
-            {
-                Manager m = new Manager(Convert.ToInt32(IdComboBox.SelectedItem.ToString()), managerFirstName.Text, managerLastName.Text, managerEmail.Text, 7, userName.Text, password.Text, Convert.ToInt32(MangerSalaryPerHour.Text));
-                m.updateUser();
-                MessageBox.Show(" update manager success!");
-            }
+           
         }
         public void checkFields(List<TextBox> err)
         {
@@ -195,6 +184,27 @@ namespace newGym
             this.MangerSalaryPerHour.Text = dt.Rows[0]["salaryperhour"].ToString();
             this.userName.Text = dt.Rows[0]["username"].ToString();
             this.password.Text = dt.Rows[0]["password"].ToString();
+        }
+
+        private void update_manger_button_Click_1(object sender, EventArgs e)
+        {
+            List<TextBox> err = new List<TextBox>();
+            resetLabelColor(this.Controls);
+            checkFields(err);
+            if (err.Count > 0)
+            {
+                MessageBox.Show("there are some problems in the details\nfix the details in the red fields!");
+                foreach (TextBox t in err)
+                {
+                    t.Text = "";
+                }
+            }
+            else
+            {
+                Manager m = new Manager(Convert.ToInt32(IdComboBox.SelectedItem.ToString()), managerFirstName.Text, managerLastName.Text, managerEmail.Text, 7, userName.Text, password.Text, Convert.ToInt32(MangerSalaryPerHour.Text));
+                m.updateUser();
+                MessageBox.Show(" update manager success!");
+            }
         }
     }
 }

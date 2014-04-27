@@ -24,7 +24,7 @@ namespace newGym
             textBox2.MaxLength = 20;
             textBox2.PasswordChar = '*';
             comboBox2.SelectedIndex = 0;
-            MessageBox.Show("Working Menus: \n1. Guide with password\n2. Trainer with password");
+            MessageBox.Show("Working Menus: \n1. Guide with password\n2. Trainer with password\n3. Manager with password");
         }
 
 
@@ -54,32 +54,17 @@ namespace newGym
                     break;
                     
                 case 4:     // not working look at Factory_DP RETURN
-                    var tool4 = Factory_DP.PersonFactory("Manager");
-                    if ( tool4.Template(dt, textBox1.Text, textBox2.Text) )
+                    Person p = Factory_DP.PersonFactory("Manager");
+                    //p.Template(dt, textBox1.Text, textBox2.Text);
+                    if (p.Template(dt, textBox1.Text, textBox2.Text))
+                    {
+                        
+                       ((Manager)p).setManager(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
+                        SingleUser.Instance.set_user(p);
+                        ManagerMenu ma = new ManagerMenu(((Manager)p));
+                        ma.ShowDialog();
                         retval = 0;
-                    
-                 //------------------------------------------------------//    
-
-                        //checking if the singelton works
-                        /*
-                        Manager m = Manager.Instance();
-                        Manager s = Manager.Instance();
-                        m.setManager(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
-                        s.setManager(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
-                        MessageBox.Show("m=" + m.GetHashCode() + " s=" + s.GetHashCode());
-                        */
-                        /*
-                       // Manager manager = new Manager(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
-                        Manager.Instance().setManager(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
-                        ManagerMenu ma = new ManagerMenu();
-                        ma.ShowDialog(); 
-                    
-          
-                    /*ManagerMenu ma = new ManagerMenu();
-                    ma.ShowDialog();*/
-
-                    //------------------------------------------------------//
-
+                    }
 
                    break;
                     
@@ -108,6 +93,7 @@ namespace newGym
                 else label3.Text = "ERROR: #" + retval;
             }
         }
+        /*
         public static void ThreadProc1()
         {
             Application.Run(new ManagerMenu());
@@ -116,7 +102,7 @@ namespace newGym
 
 
         }
-
+        */
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 

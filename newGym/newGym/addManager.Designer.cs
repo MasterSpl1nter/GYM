@@ -213,6 +213,7 @@
             this.update_manger_button.Text = "עדכן";
             this.update_manger_button.UseVisualStyleBackColor = false;
             this.update_manger_button.Visible = false;
+            this.update_manger_button.Click += new System.EventHandler(this.update_manger_button_Click_1);
             // 
             // addManager
             // 

@@ -12,12 +12,11 @@ using System.Text.RegularExpressions;
 namespace newGym
 {
 
-    class Manager : Person
+    public class Manager : Person
     {
-        private static Manager manager;
         private int salaryPerHour;
         //con't
-        private Manager()
+        public Manager()
             : base()
         {
             salaryPerHour = 0;
@@ -39,14 +38,7 @@ namespace newGym
             this.Password = password;
             this.salaryPerHour = salaryPerHour;
         }
-        public static Manager Instance()
-        {
-            if (manager == null)
-            {
-                manager = new Manager();
-            }
-            return manager;
-        }
+        
         //set and get
         public int SalaryPerHour { get { return salaryPerHour; } set { salaryPerHour = value; } }
         //add user
@@ -116,11 +108,9 @@ namespace newGym
         
         protected override void makeInstance(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary)
         {
-               //call the constr TMP-DP
-            //retval = 0;
-            Manager.Instance().setManager(id, firstName, lastName, email, permission, userName, password, salary);
-            ManagerMenu ma = new ManagerMenu();
-            ma.ShowDialog();
+             
+            //ManagerMenu ma = new ManagerMenu();
+            //ma.ShowDialog();
         }
     }
 

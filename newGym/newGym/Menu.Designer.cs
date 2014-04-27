@@ -37,7 +37,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.helloLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -189,7 +189,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.helloLabel);
             this.groupBox3.Location = new System.Drawing.Point(546, 12);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(396, 84);
@@ -197,15 +197,15 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
             // 
-            // label3
+            // helloLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Hello, ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.helloLabel.AutoSize = true;
+            this.helloLabel.Location = new System.Drawing.Point(6, 16);
+            this.helloLabel.Name = "helloLabel";
+            this.helloLabel.Size = new System.Drawing.Size(37, 13);
+            this.helloLabel.TabIndex = 1;
+            this.helloLabel.Text = "Hello, ";
+            this.helloLabel.Click += new System.EventHandler(this.label3_Click);
             // 
             // groupBox1
             // 
@@ -776,7 +776,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label helloLabel;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.HScrollBar hScrollBar1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
