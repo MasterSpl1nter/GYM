@@ -92,8 +92,7 @@ namespace newGym
                     Person p = Factory_DP.PersonFactory("Manager");
                     //p.Template(dt, textBox1.Text, textBox2.Text);
                     if (p.Template(dt, textBox1.Text, textBox2.Text))
-                    {
-                        
+                    {     
                        ((Manager)p).setManager(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
                         SingleUser.Instance.set_user(p);
                         ManagerMenu ma = new ManagerMenu(((Manager)p));
