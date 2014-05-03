@@ -51,5 +51,10 @@ namespace newGym
         {
             return MySQL.Delete("worker", "id=" + id);
         }
+        protected override void setSalary(int salary)
+        {
+            this.salaryPerHour = salary;
+
+        }
     }
 }

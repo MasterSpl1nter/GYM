@@ -86,5 +86,10 @@ namespace newGym
                 return 0;
             return retval;
         }
+        protected override void setSalary(int salary)
+        {
+            this.salary = salary;
+
+        }
     }
 }

@@ -32,7 +32,7 @@ namespace newGym
         {
             DataTable dt = new DataTable();
             int retval = 1;
-
+            Person p;
             switch (comboBox2.SelectedIndex)
             {
                 case 0:
@@ -40,30 +40,41 @@ namespace newGym
                 case 1:
                     break;
                 case 2:
-                    var tool2 = Factory_DP.PersonFactory("Trainer");
-                    if (tool2.Template(dt, textBox1.Text, textBox2.Text))
-                    {   retval = 0;  }
+                    //to pop the singelton user - ((Trainer)SingleUser.Instance.get_user())
+                    p = Factory_DP.PersonFactory("Trainer");
+                    if (p.Template(dt, textBox1.Text, textBox2.Text))
+                    {
+                        SingleUser.Instance.set_user(p);
+                        TrainerMenu tm = new TrainerMenu((Trainer)p);
+                        tm.ShowDialog();
+                        retval = 0;
+                    }
 
                     break;
                 case 3:
-                    var tool3 = Factory_DP.PersonFactory("Guide");
-                     if ( tool3.Template(dt, textBox1.Text, textBox2.Text ))
-
-                     { retval = 0;}
+                    //to pop the singelton user - ((Guide)SingleUser.Instance.get_user())
+                     p = Factory_DP.PersonFactory("Guide");
+                     if ( p.Template(dt, textBox1.Text, textBox2.Text ))
+                     {
+                         retval = 0;
+                         SingleUser.Instance.set_user(p);
+                         GuideMenu gm = new GuideMenu((Guide)p);
+                         gm.ShowDialog();
+                     }
                       
                     break;
                     
-                case 4:     // not working look at Factory_DP RETURN
-                    Person p = Factory_DP.PersonFactory("Manager");
-                    //p.Template(dt, textBox1.Text, textBox2.Text);
+                case 4:
+                    //to pop the singelton user - ((Manager)SingleUser.Instance.get_user())
+                    p = Factory_DP.PersonFactory("Manager");//new for specific user
+                    //func template -check login and update data for Person
                     if (p.Template(dt, textBox1.Text, textBox2.Text))
                     {
-                        
-                       ((Manager)p).setManager(Convert.ToInt32(dt.Rows[0]["id"]), dt.Rows[0]["firstname"].ToString(), dt.Rows[0]["lastname"].ToString(), dt.Rows[0]["email"].ToString(), Convert.ToInt32(dt.Rows[0]["permission"]), dt.Rows[0]["username"].ToString(), dt.Rows[0]["password"].ToString(), Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
-                        SingleUser.Instance.set_user(p);
+                        retval = 0;
+                        SingleUser.Instance.set_user(p); //add user to singelton 
                         ManagerMenu ma = new ManagerMenu(((Manager)p));
                         ma.ShowDialog();
-                        retval = 0;
+                       
                     }
 
                    break;

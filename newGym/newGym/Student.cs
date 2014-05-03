@@ -26,5 +26,10 @@ namespace newGym
        {
            throw new NotImplementedException();
        }
+       protected override void setSalary(int salary)
+       {
+           
+
+       }
     }
 }

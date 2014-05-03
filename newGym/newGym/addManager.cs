@@ -13,6 +13,7 @@ namespace newGym
     public partial class addManager : Form
     {
         //private int opp;
+        
         public addManager(int opp)
         {
             InitializeComponent();
@@ -66,8 +67,11 @@ namespace newGym
             }
             else
             {
-                Manager m = new Manager(Convert.ToInt32(managerId.Text), managerFirstName.Text, managerLastName.Text, managerEmail.Text, 4, userName.Text, password.Text, Convert.ToInt32(MangerSalaryPerHour.Text));
-                m.addUser();
+               // Manager m = new Manager(Convert.ToInt32(managerId.Text), managerFirstName.Text, managerLastName.Text, managerEmail.Text, 4, userName.Text, password.Text, Convert.ToInt32(MangerSalaryPerHour.Text));
+                //m.addUser();
+                //public void addUser(int id,string firstname,string lastname,string email,string username,string password,string permission,int salaryperhour)
+                //((Manager)user.get_user()).addUser(Convert.ToInt32(managerId.Text), managerFirstName.Text, managerLastName.Text, managerEmail.Text, userName.Text, password.Text, 4,Convert.ToInt32(MangerSalaryPerHour.Text) );
+                ((Manager)SingleUser.Instance.get_user()).addUser(Convert.ToInt32(managerId.Text), managerFirstName.Text, managerLastName.Text, managerEmail.Text, userName.Text, password.Text, 4, Convert.ToInt32(MangerSalaryPerHour.Text));
                 MessageBox.Show("add a new manager success!");
             }
         }
@@ -201,8 +205,9 @@ namespace newGym
             }
             else
             {
-                Manager m = new Manager(Convert.ToInt32(IdComboBox.SelectedItem.ToString()), managerFirstName.Text, managerLastName.Text, managerEmail.Text, 7, userName.Text, password.Text, Convert.ToInt32(MangerSalaryPerHour.Text));
-                m.updateUser();
+                //Manager m = new Manager(Convert.ToInt32(IdComboBox.SelectedItem.ToString()), managerFirstName.Text, managerLastName.Text, managerEmail.Text, 7, userName.Text, password.Text, Convert.ToInt32(MangerSalaryPerHour.Text));
+                //m.updateUser();
+                ((Manager)SingleUser.Instance.get_user()).updateUser(Convert.ToInt32(IdComboBox.SelectedItem.ToString()), managerFirstName.Text, managerLastName.Text, managerEmail.Text, userName.Text, password.Text, 4, Convert.ToInt32(MangerSalaryPerHour.Text));
                 MessageBox.Show(" update manager success!");
             }
         }

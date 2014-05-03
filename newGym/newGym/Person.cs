@@ -41,11 +41,12 @@ namespace newGym
 
         public bool Template(DataTable dt, string user, string pass)
         {
+            //chek if the user and pass exist
             bool check = CheckLogin(dt, user, pass);
-
+            //if bool ==true dt has the data of the user
             if (check)
             {
-
+                /*
                    int id = Convert.ToInt32(dt.Rows[0]["id"]);
                    string firstName = dt.Rows[0]["firstname"].ToString();
                    string lastName = dt.Rows[0]["lastname"].ToString();
@@ -54,13 +55,26 @@ namespace newGym
                    string userName = dt.Rows[0]["username"].ToString();
                    string password = dt.Rows[0]["password"].ToString();
                    int salary = Convert.ToInt32(dt.Rows[0]["salaryperhour"]);
+                 */
+                   this.id = Convert.ToInt32(dt.Rows[0]["id"]);
+                 
+                   this.firstName = dt.Rows[0]["firstname"].ToString();
+                   this.lastName = dt.Rows[0]["lastname"].ToString();
+                   this.email = dt.Rows[0]["email"].ToString();
+                   this.permission = Convert.ToInt32(dt.Rows[0]["permission"]);
+                   this.userName = dt.Rows[0]["username"].ToString();
+                   this.password = dt.Rows[0]["password"].ToString();
+                   setSalary(Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
 
-                makeInstance(id, firstName, lastName, email, permission, userName, password, salary);
+                //makeInstance(id, firstName, lastName, email, permission, userName, password, salary);
+                
                 return true;
             }
 
             else return false;
         }
+
+        protected abstract void setSalary(int salary); 
         
         protected abstract bool CheckLogin(DataTable dt, string user, string pass);          //Template DP
         protected abstract void makeInstance(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary);

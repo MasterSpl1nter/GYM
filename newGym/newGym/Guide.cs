@@ -33,9 +33,8 @@ namespace newGym
         {
                //call the constr TMP-DP
            
-            Guide guide = new Guide(id, firstName, lastName, email, permission, userName, password, salary);
-            GuideMenu gm = new GuideMenu(guide);
-            gm.ShowDialog();
+            //Guide guide = new Guide(id, firstName, lastName, email, permission, userName, password, salary);
+            
         }
 
         public static int Update(string insert,string where)
@@ -87,6 +86,11 @@ namespace newGym
             if (retval == 0)
                 return 0;
             return retval;
+        }
+        protected override void setSalary(int salary)
+        {
+            this.salary = salary;
+
         }
     }
 }

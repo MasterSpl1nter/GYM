@@ -45,7 +45,7 @@ namespace newGym
 
             if (Manager.isIdExist(Convert.ToInt16(managerId.Text)) == false)
             {
-                m.addUser();
+                //m.addUser();
                 MessageBox.Show("add a new manager success!");
             }
             else
