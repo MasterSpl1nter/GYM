@@ -96,6 +96,30 @@
     <Compile Include="fEditClass.Designer.cs">
       <DependentUpon>fEditClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="GButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GButton.Designer.cs">
+      <DependentUpon>GButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GForm.Designer.cs">
+      <DependentUpon>GForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GGroupBox.Designer.cs">
+      <DependentUpon>GGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GLabel.Designer.cs">
+      <DependentUpon>GLabel.cs</DependentUpon>
+    </Compile>
     <Compile Include="SingleUser.cs" />
     <Compile Include="TrainerSearch.cs">
       <SubType>Form</SubType>
@@ -253,6 +277,12 @@
     <EmbeddedResource Include="fEditClass.resx">
       <DependentUpon>fEditClass.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GButton.resx">
+      <DependentUpon>GButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GForm.resx">
+      <DependentUpon>GForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TrainerSearch.resx">
       <DependentUpon>TrainerSearch.cs</DependentUpon>
     </EmbeddedResource>
@@ -333,6 +363,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1399228908_preferences-desktop-cryptography.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

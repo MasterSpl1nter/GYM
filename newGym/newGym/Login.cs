@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace newGym
 {
-    public partial class Login : Form
+    public partial class Login : GForm
     {
 
        
