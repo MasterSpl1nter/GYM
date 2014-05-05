@@ -4,6 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Data;
 
+
+using System.ComponentModel;
+using System.Drawing;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using System.Text.RegularExpressions;
+
+
 namespace newGym
 {
     public abstract class Person
@@ -78,8 +86,6 @@ namespace newGym
         
         protected abstract bool CheckLogin(DataTable dt, string user, string pass);          //Template DP
         
-        protected abstract void makeInstance(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary);
-
         public int Id{ get { return id; } set { id = value; }  }
         public string FirstName{ get { return firstName; } set { firstName = value; }  }
         //get/set func for last name

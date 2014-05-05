@@ -122,12 +122,7 @@ namespace newGym
         }
 
         
-        protected override void makeInstance(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary)
-        {
-             
-            //ManagerMenu ma = new ManagerMenu();
-            //ma.ShowDialog();
-        }
+       
         protected override void setSalary(int salary)
         {
             this.salaryPerHour = salary;

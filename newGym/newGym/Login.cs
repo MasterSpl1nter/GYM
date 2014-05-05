@@ -78,7 +78,21 @@ namespace newGym
                     }
 
                    break;
-                    
+
+                case 5:
+                   //to pop the singelton user - ((Manager)SingleUser.Instance.get_user())
+                   p = Factory_DP.PersonFactory("Studnet");//new for specific user
+                   //func template -check login and update data for Person
+                   if (p.Template(dt, textBox1.Text, textBox2.Text))
+                   {
+                       retval = 0;
+                       SingleUser.Instance.set_user(p); //add user to singelton 
+                      // Student ma = new ManagerMenu(((Manager)p));
+                       //ma.ShowDialog();
+
+                   }
+
+                   break;
             }
             if (retval == 0)
             {

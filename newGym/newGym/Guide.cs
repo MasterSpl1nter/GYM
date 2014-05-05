@@ -29,13 +29,6 @@ namespace newGym
             return false;
         }
 
-        protected override void makeInstance(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary)
-        {
-               //call the constr TMP-DP
-           
-            //Guide guide = new Guide(id, firstName, lastName, email, permission, userName, password, salary);
-            
-        }
 
         public static int Update(string insert,string where)
         {

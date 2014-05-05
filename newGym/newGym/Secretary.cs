@@ -29,13 +29,7 @@ namespace newGym
             return false;
          }
 
-        protected override void makeInstance(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary)
-        {
-            // TO CODE
-            // 1 - call consructor
-            // 2 - call secretary menu
-            throw new NotImplementedException();
-        }
+        
 
         public int SalaryPerHour { get { return salaryPerHour; } set { salaryPerHour = value; } }
         

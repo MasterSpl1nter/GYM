@@ -21,12 +21,6 @@ namespace newGym
             this.salary = salary;
         }
         
-        protected override void makeInstance(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary)
-        {
-           Trainer trainer = new Trainer(id, firstName, lastName, email, permission, userName, password, salary);       //call the constr TMP-DP
-           TrainerMenu tm = new TrainerMenu(trainer);
-           tm.ShowDialog();
-        }
         
         protected override bool CheckLogin(DataTable dt, string user, string pass)
         {

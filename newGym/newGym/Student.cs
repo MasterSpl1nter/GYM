@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using System.Windows.Forms;
 
 namespace newGym
 {
@@ -32,13 +33,7 @@ namespace newGym
             return MySQL.Delete("student", "id=" + id);
         }
 
-       protected override bool CheckLogin(DataTable dt, string user, string pass)
-        { return false; }
-
-       protected override void makeInstance(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary)
-       {
-           throw new NotImplementedException();
-       }
+      
 
        protected override void setSalary(int salary)
        {
@@ -53,9 +48,15 @@ namespace newGym
             MySQL.Delete("studentcalss" , "studentid = "+idStudent.ToString() + "AND " + "classid = " + idClass.ToString() );
         }
 
+        protected override bool CheckLogin(DataTable dt, string user, string pass)
+        {
+            MessageBox.Show("manager Chek login");
+            //if the id exist? yes-pop the datatable of this user
+            if (MySQL.Query(dt, "SELECT * FROM student WHERE username='" + user + "'" + " and password='" + pass + "'") == 0)
+                if (dt.Rows.Count == 1)
+                    return true;
+            return false;
+        }
 
-
-       
-      
     }
 }
