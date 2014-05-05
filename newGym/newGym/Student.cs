@@ -9,8 +9,6 @@ namespace newGym
 {
     class Student:Person
     {
-        
-
         private DateTime birthday;
         private DateTime startDate;
         private DateTime endDate;
@@ -42,7 +40,20 @@ namespace newGym
            throw new NotImplementedException();
        }
 
-       public setsal
+       protected override void setSalary(int salary)
+       {
+       }
+
+        public void addStudToClass(int classId ){
+            MySQL.Insert("studentclass", "studnetid,classid" , ""+this.Id.ToString()+ " , "+classId.ToString() );
+        }
+         
+        public static void removeStudentFromClass ( int idStudent , int idClass) {
+
+            MySQL.Delete("studentcalss" , "studentid = "+idStudent.ToString() + "AND " + "classid = " + idClass.ToString() );
+        }
+
+
 
        
       

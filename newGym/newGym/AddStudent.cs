@@ -13,7 +13,15 @@ namespace newGym
 {
     public partial class AddStudent : Form
     {
-        Student stud;
+        int id;
+        string firstName;
+        string LastName;
+        string email; // add
+        string username; // get from this form
+        string password; // get from this form
+        int permission = 0;
+        DateTime now = DateTime.Now;
+
 
         public AddStudent()
         {
