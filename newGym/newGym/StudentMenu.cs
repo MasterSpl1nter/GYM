@@ -12,16 +12,12 @@ namespace newGym
 {
     public partial class StudentMenu : Form
     {
-        Student student;
 
         public StudentMenu()
         {
             InitializeComponent();
         }
    
-        
-
-
         private void StudentMenu_Load(object sender, EventArgs e)
         {
 

@@ -96,6 +96,12 @@
     <Compile Include="fEditClass.Designer.cs">
       <DependentUpon>fEditClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="SecretaryMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecretaryMenuForm.Designer.cs">
+      <DependentUpon>SecretaryMenuForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -121,6 +127,12 @@
       <DependentUpon>GLabel.cs</DependentUpon>
     </Compile>
     <Compile Include="SingleUser.cs" />
+    <Compile Include="StudentMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMenu.Designer.cs">
+      <DependentUpon>StudentMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="TrainerSearch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,11 +289,17 @@
     <EmbeddedResource Include="fEditClass.resx">
       <DependentUpon>fEditClass.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SecretaryMenuForm.resx">
+      <DependentUpon>SecretaryMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GButton.resx">
       <DependentUpon>GButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GForm.resx">
       <DependentUpon>GForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMenu.resx">
+      <DependentUpon>StudentMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrainerSearch.resx">
       <DependentUpon>TrainerSearch.cs</DependentUpon>

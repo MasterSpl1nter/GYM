@@ -14,8 +14,6 @@ namespace newGym
     public partial class Login : GForm
     {
 
-       
-
         public Login()
         {
             InitializeComponent();
@@ -36,8 +34,34 @@ namespace newGym
             switch (comboBox2.SelectedIndex)
             {
                 case 0:
+                    //to pop the singelton user - ((Manager)SingleUser.Instance.get_user())
+                    p = Factory_DP.PersonFactory("Student");//new for specific user
+                    //func template -check login and update data for Person
+                   
+                    if (p.Template(dt, textBox1.Text, textBox2.Text))
+                    
+                    {
+                        retval = 0;
+                        SingleUser.Instance.set_user(p); //add user to singelton 
+                        StudentMenu ma = new StudentMenu();
+                        ma.ShowDialog();
+                    }
+
                     break;
+
                 case 1:
+                    //to pop the singelton user - ((Manager)SingleUser.Instance.get_user())
+                    p = Factory_DP.PersonFactory("Secretary");//new for specific user
+                    //func template -check login and update data for Person
+
+                    if (p.Template(dt, textBox1.Text, textBox2.Text))
+                    {
+                        retval = 0;
+                        SingleUser.Instance.set_user(p); //add user to singelton 
+                        SecretaryMenu ma = new SecretaryMenu();
+                        ma.ShowDialog();
+                    }
+
                     break;
                 case 2:
                     //to pop the singelton user - ((Trainer)SingleUser.Instance.get_user())
@@ -79,20 +103,6 @@ namespace newGym
 
                    break;
 
-                case 5:
-                   //to pop the singelton user - ((Manager)SingleUser.Instance.get_user())
-                   p = Factory_DP.PersonFactory("Studnet");//new for specific user
-                   //func template -check login and update data for Person
-                   if (p.Template(dt, textBox1.Text, textBox2.Text))
-                   {
-                       retval = 0;
-                       SingleUser.Instance.set_user(p); //add user to singelton 
-                      // Student ma = new ManagerMenu(((Manager)p));
-                       //ma.ShowDialog();
-
-                   }
-
-                   break;
             }
             if (retval == 0)
             {

@@ -13,19 +13,19 @@ namespace newGym
         private DateTime birthday;
         private DateTime startDate;
         private DateTime endDate;
-        private DateTime medcert;
+        private DateTime medCert;
 
         public Student():base() { 
         }
 
         public Student( int id, string firstName, string lastName, string email, int permission, string userName,
-            string password ,DateTime birthday , DateTime startDate , DateTime endDate , DateTime medcert    )
+            string password ,DateTime birthday , DateTime startDate , DateTime endDate , DateTime medCert    )
             : base(id, firstName, lastName, email, permission, userName, password)
         {
             this.birthday = birthday;
             this.startDate = startDate;
             this.endDate = endDate;
-            this.medcert = medcert;
+            this.medCert = medCert;
         }
         
         public static int Delete(string id)
@@ -50,13 +50,33 @@ namespace newGym
 
         protected override bool CheckLogin(DataTable dt, string user, string pass)
         {
-            MessageBox.Show("manager Chek login");
+            MessageBox.Show("student Chek login");
             //if the id exist? yes-pop the datatable of this user
-            if (MySQL.Query(dt, "SELECT * FROM student WHERE username='" + user + "'" + " and password='" + pass + "'") == 0)
+            if (MySQL.Query(dt, "SELECT * FROM student where username='" + user + "'" + " and password='" + pass + "'") == 0)
                 if (dt.Rows.Count == 1)
                     return true;
             return false;
         }
+
+
+        public void setbday(DateTime bday)
+        {
+            this.birthday = bday;
+        }
+
+        public void setStartDate(DateTime startDate)
+        {
+            this.startDate = startDate;
+        }
+        public void setEndDate(DateTime endDate)
+        {
+            this.endDate = endDate;
+        }
+        public void setbMedCert(DateTime medCert)
+        {
+            this.medCert = medCert;
+        }
+
 
     }
 }

@@ -72,8 +72,14 @@ namespace newGym
                    this.permission = Convert.ToInt32(dt.Rows[0]["permission"]);
                    this.userName = dt.Rows[0]["username"].ToString();
                    this.password = dt.Rows[0]["password"].ToString();
-                   setSalary(Convert.ToInt32(dt.Rows[0]["salaryperhour"]));
-
+                   if (!(this is Student))// is is like instance of 
+                       setSalary(Convert.ToInt32(dt.Rows[0]["salaryperhour"]));// so if it is not student apply the set salary else
+                   else {// this is student 
+                       ((Student)this).setbday(Convert.ToDateTime(dt.Rows[0]["birthday"].ToString()));
+                       ((Student)this).setbMedCert(Convert.ToDateTime(dt.Rows[0]["medcert"].ToString()));
+                       ((Student)this).setStartDate(Convert.ToDateTime(dt.Rows[0]["startdate"].ToString()));
+                       ((Student)this).setEndDate(Convert.ToDateTime(dt.Rows[0]["enddate"].ToString()));
+                   }
                 //makeInstance(id, firstName, lastName, email, permission, userName, password, salary);
                 
                 return true;

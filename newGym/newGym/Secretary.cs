@@ -22,8 +22,7 @@ namespace newGym
         }
         protected override bool CheckLogin(DataTable dt, string user, string pass)
         {
-            if (MySQL.Query(dt, "SELECT username,password FROM worker where username='" 
-                + user + "'" + " and password='" + pass + "'") == 0)
+            if ((MySQL.Query(dt, "SELECT * FROM worker where username='" + user + "'" + " and password='" + pass + "'") == 0))
                 if (dt.Rows.Count == 1)
                     return true;
             return false;
