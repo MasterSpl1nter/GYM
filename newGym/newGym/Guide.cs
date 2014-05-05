@@ -41,6 +41,7 @@ namespace newGym
         {
             return MySQL.Update("guide", insert, "id=" + where);
         }
+
         public static int Add(string insert)
         {
             return MySQL.Insert("guide", "id,firstname,lastname,email,username,password,permission,salaryperhour", insert);

@@ -13,22 +13,13 @@ namespace newGym
 {
     public partial class AddStudent : Form
     {
-        int id;
-        string firstName;
-        string LastName;
-        string email; // add
-        string username; // get from this form
-        string password; // get from this form
-        int permission=0;
-        DateTime now = DateTime .Now;
-        //DateTime startDate;
-       // DateTime EndDate;
-        //DateTime medCert;
-       
+        Student stud;
+
         public AddStudent()
         {
             InitializeComponent();
         }
+
         private void resetColors()
         {
             // zreo all the label's colors
@@ -43,16 +34,15 @@ namespace newGym
             start_date_label.ForeColor = Color.Black;
             end_date_label.ForeColor = Color.Black;
             medcart_lable.ForeColor = Color.Black;
-            
+
         }
 
-       
         private void button1_Click(object sender, EventArgs e)
         {
-            
             DateTime startDate = DateTime.Now;
             resetColors();
-         
+
+            DateTime now = DateTime.Now;
             try
             {
                 // check id validation
@@ -69,13 +59,13 @@ namespace newGym
                     return;
                 }
                 //check name of the student
-                if (firstname_box.Text =="")
+                if (firstname_box.Text == "")
                 {
                     MessageBox.Show("Please enter First name");
                     firstName_label.ForeColor = Color.Red;
                     return;
                 }
-               
+
                 //check lastname of the student
                 if (lastname_box.Text == "")
                 {
@@ -89,15 +79,15 @@ namespace newGym
                     Regex r = new Regex(@"[\w-]+@([\w-]+\.)+[\w-]+");
                     if (!r.IsMatch(email_box.Text))
                     {
-                    MessageBox.Show("Email invalid , Press correct email ", "ERROR", MessageBoxButtons.OK);
-                    email_box.ResetText();
-                    email_box.Focus();
-                    mail_label.ForeColor = Color.Red;
-                    return;
+                        MessageBox.Show("Email invalid , Press correct email ", "ERROR", MessageBoxButtons.OK);
+                        email_box.ResetText();
+                        email_box.Focus();
+                        mail_label.ForeColor = Color.Red;
+                        return;
                     }
                 }
                 // check username
-                if (tb_username.Text== "")
+                if (tb_username.Text == "")
                 {
                     MessageBox.Show("Please enter user name ");
                     return;
@@ -131,10 +121,10 @@ namespace newGym
                 }
                 if (med_cart_date.Value.Date < start_date.Value.Date)
                 {
-                    MessageBox.Show(" Medical certificate is not valid medical certificate must be brought immediate");
+                    MessageBox.Show(" Medical certificate is not valid medical certificate must be brought immediately");
                 }
-               
-                  
+
+
                 //check valid of password
                 if (tb_pass.Text.Length < 6 && tb_repeatPass.Text.Length < 6)
                 {
@@ -153,9 +143,9 @@ namespace newGym
                     passWord_label.ForeColor = Color.Red;
                     verPassWorod_label.ForeColor = Color.Red;
                     return;
-                   
+
                 }
-                
+
                 if (id_box.Text != "" && firstname_box.Text != "" && lastname_box.Text != "" && birth_date.Value.Date.ToString("yyyy-MM-dd") != ""
                     && start_date.Value.Date.ToString("yyyy-MM-dd") != "" && end_date.Value.Date.ToString("yyyy-MM-dd") != ""
                     && med_cart_date.Value.Date.ToString("yyyy-MM-dd") != "" && email_box.Text != "")
@@ -178,17 +168,15 @@ namespace newGym
                     MessageBox.Show("Incomplete fields Please fill them before pressing the button,");
                     return;
                 }
-                }
+            }
             catch (MySqlException ex)
             {
                 MessageBox.Show("Error no: " + ex.Message);
             }
 
-
-                
         }
 
-        
+
 
         private void id_box_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -196,7 +184,7 @@ namespace newGym
             e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != Delete;
         }
 
-       
-        
+
+
     }
 }

@@ -77,6 +77,7 @@ namespace newGym
         protected abstract void setSalary(int salary); 
         
         protected abstract bool CheckLogin(DataTable dt, string user, string pass);          //Template DP
+        
         protected abstract void makeInstance(int id, string firstName, string lastName, string email, int permission, string userName, string password, int salary);
 
         public int Id{ get { return id; } set { id = value; }  }
@@ -92,7 +93,7 @@ namespace newGym
         public string Password {get { return password; }set { password = value; }}
         public int Permission { get { return permission; }set { permission = value; } }
         ///////////////////////////////////////////////////////////////////////
-               public static int[] ZeroID(int id)
+        public static int[] ZeroID(int id)
         {
             int[] arr = new int[9];
             for (int i = 8; i > -1; i--)
@@ -102,6 +103,7 @@ namespace newGym
             }
             return arr;
         }
+
         public static bool ValidateID(string idstr)
         {
             int id = Convert.ToInt32(idstr);

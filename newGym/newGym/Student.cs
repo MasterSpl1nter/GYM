@@ -9,11 +9,26 @@ namespace newGym
 {
     class Student:Person
     {
-        //DateTime birthday;
-        //DateTime startDate;
-        //DateTime endDate;
-        //DateTime medcert;
+        
 
+        private DateTime birthday;
+        private DateTime startDate;
+        private DateTime endDate;
+        private DateTime medcert;
+
+        public Student():base() { 
+        }
+
+        public Student( int id, string firstName, string lastName, string email, int permission, string userName,
+            string password ,DateTime birthday , DateTime startDate , DateTime endDate , DateTime medcert    )
+            : base(id, firstName, lastName, email, permission, userName, password)
+        {
+            this.birthday = birthday;
+            this.startDate = startDate;
+            this.endDate = endDate;
+            this.medcert = medcert;
+        }
+        
         public static int Delete(string id)
         {
             return MySQL.Delete("student", "id=" + id);
@@ -26,10 +41,10 @@ namespace newGym
        {
            throw new NotImplementedException();
        }
-       protected override void setSalary(int salary)
-       {
-           
 
-       }
+       public setsal
+
+       
+      
     }
 }
