@@ -78,6 +78,17 @@ namespace newGym
                     }
 
                    break;
+
+                case 5:
+                   p = Factory_DP.PersonFactory("Student");
+                   if (p.Template(dt, textBox1.Text, textBox2.Text))
+                   {
+                       retval = 0;
+                       SingleUser.Instance.set_user(p);
+                        StudentMenu sm = new StudentMenu();
+                      sm.ShowDialog();
+                   }
+                   break;
                     
             }
             if (retval == 0)
