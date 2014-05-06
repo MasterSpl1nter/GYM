@@ -171,5 +171,11 @@ namespace newGym
             dateLabel.Text = DateTime.Now.ToString();
         }
 
+        private void button14_Click(object sender, EventArgs e)
+        {
+            fEditClass ec = new fEditClass();
+            ec.ShowDialog();
+        }
+
     }
 }
