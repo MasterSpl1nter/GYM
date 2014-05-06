@@ -31,9 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
@@ -55,18 +52,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.StudSearch = new System.Windows.Forms.TextBox();
-            this.GuideSearch = new System.Windows.Forms.TextBox();
-            this.radioID = new System.Windows.Forms.RadioButton();
             this.radioName = new System.Windows.Forms.RadioButton();
+            this.radioID = new System.Windows.Forms.RadioButton();
+            this.GuideSearch = new System.Windows.Forms.TextBox();
+            this.StudSearch = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.loggedLabel = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dateLabel = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
             this.groupBox5.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -94,35 +94,6 @@
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             this.flowLayoutPanel5.Size = new System.Drawing.Size(111, 89);
             this.flowLayoutPanel5.TabIndex = 5;
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(3, 3);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(104, 23);
-            this.button13.TabIndex = 1;
-            this.button13.Text = "Add Class";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(3, 32);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(104, 23);
-            this.button14.TabIndex = 2;
-            this.button14.Text = "Edit Class";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(3, 61);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(104, 23);
-            this.button15.TabIndex = 3;
-            this.button15.Text = "Delete Class";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // monthCalendar1
             // 
@@ -341,47 +312,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Search";
             // 
-            // button1
+            // radioName
             // 
-            this.button1.Location = new System.Drawing.Point(195, 81);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 34);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 37);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Student:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 81);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Guide:";
-            // 
-            // StudSearch
-            // 
-            this.StudSearch.Location = new System.Drawing.Point(70, 34);
-            this.StudSearch.Name = "StudSearch";
-            this.StudSearch.Size = new System.Drawing.Size(100, 20);
-            this.StudSearch.TabIndex = 4;
-            // 
-            // GuideSearch
-            // 
-            this.GuideSearch.Location = new System.Drawing.Point(70, 78);
-            this.GuideSearch.Name = "GuideSearch";
-            this.GuideSearch.Size = new System.Drawing.Size(100, 20);
-            this.GuideSearch.TabIndex = 5;
+            this.radioName.AutoSize = true;
+            this.radioName.Location = new System.Drawing.Point(204, 54);
+            this.radioName.Name = "radioName";
+            this.radioName.Size = new System.Drawing.Size(66, 17);
+            this.radioName.TabIndex = 7;
+            this.radioName.Text = "By name";
+            this.radioName.UseVisualStyleBackColor = true;
             // 
             // radioID
             // 
@@ -395,15 +334,37 @@
             this.radioID.Text = "By ID";
             this.radioID.UseVisualStyleBackColor = true;
             // 
-            // radioName
+            // GuideSearch
             // 
-            this.radioName.AutoSize = true;
-            this.radioName.Location = new System.Drawing.Point(204, 54);
-            this.radioName.Name = "radioName";
-            this.radioName.Size = new System.Drawing.Size(66, 17);
-            this.radioName.TabIndex = 7;
-            this.radioName.Text = "By name";
-            this.radioName.UseVisualStyleBackColor = true;
+            this.GuideSearch.Location = new System.Drawing.Point(70, 78);
+            this.GuideSearch.Name = "GuideSearch";
+            this.GuideSearch.Size = new System.Drawing.Size(100, 20);
+            this.GuideSearch.TabIndex = 5;
+            // 
+            // StudSearch
+            // 
+            this.StudSearch.Location = new System.Drawing.Point(70, 34);
+            this.StudSearch.Name = "StudSearch";
+            this.StudSearch.Size = new System.Drawing.Size(100, 20);
+            this.StudSearch.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(16, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Guide:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 37);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Student:";
             // 
             // label6
             // 
@@ -446,6 +407,53 @@
             // 
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // button1
+            // 
+            this.button1.Image = global::newGym.Properties.Resources._1399410141_folder_search;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(195, 81);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 34);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "  Search";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button13
+            // 
+            this.button13.Image = global::newGym.Properties.Resources._1399410268_add;
+            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button13.Location = new System.Drawing.Point(3, 3);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(104, 23);
+            this.button13.TabIndex = 1;
+            this.button13.Text = "Add Class";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button14
+            // 
+            this.button14.Image = global::newGym.Properties.Resources._1399410331_document_edit;
+            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button14.Location = new System.Drawing.Point(3, 32);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(104, 23);
+            this.button14.TabIndex = 2;
+            this.button14.Text = "Edit Class";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            this.button15.Image = global::newGym.Properties.Resources._1399410468_dialog_close;
+            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button15.Location = new System.Drawing.Point(3, 61);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(104, 23);
+            this.button15.TabIndex = 3;
+            this.button15.Text = "Delete Class";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // GuideMenu
             // 

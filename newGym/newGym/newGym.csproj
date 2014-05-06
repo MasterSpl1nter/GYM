@@ -385,6 +385,24 @@
   <ItemGroup>
     <None Include="Resources\1399228908_preferences-desktop-cryptography.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1399410141_folder_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1399410241_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1399410268_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1399410331_document-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1399410438_Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1399410468_dialog-close.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
