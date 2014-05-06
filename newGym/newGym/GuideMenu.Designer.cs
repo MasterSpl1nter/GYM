@@ -63,10 +63,10 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dateLabel = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.button1 = new newGym.GButton();
+            this.button13 = new newGym.GButton();
+            this.button14 = new newGym.GButton();
+            this.button15 = new newGym.GButton();
             this.groupBox5.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -92,7 +92,7 @@
             this.flowLayoutPanel5.Controls.Add(this.button15);
             this.flowLayoutPanel5.Location = new System.Drawing.Point(16, 19);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(111, 89);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(125, 89);
             this.flowLayoutPanel5.TabIndex = 5;
             // 
             // monthCalendar1
@@ -410,48 +410,69 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::newGym.Properties.Resources._1399410141_folder_search;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(195, 81);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 34);
             this.button1.TabIndex = 0;
-            this.button1.Text = "  Search";
+            this.button1.Text = "   Search";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button13
             // 
+            this.button13.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button13.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Image = global::newGym.Properties.Resources._1399410268_add;
             this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button13.Location = new System.Drawing.Point(3, 3);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(104, 23);
+            this.button13.Size = new System.Drawing.Size(111, 23);
             this.button13.TabIndex = 1;
-            this.button13.Text = "Add Class";
+            this.button13.Text = "  Add Class";
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button14
             // 
+            this.button14.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button14.ForeColor = System.Drawing.Color.White;
             this.button14.Image = global::newGym.Properties.Resources._1399410331_document_edit;
             this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button14.Location = new System.Drawing.Point(3, 32);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(104, 23);
+            this.button14.Size = new System.Drawing.Size(111, 23);
             this.button14.TabIndex = 2;
-            this.button14.Text = "Edit Class";
+            this.button14.Text = "  Edit Class";
             this.button14.UseVisualStyleBackColor = true;
             // 
             // button15
             // 
-            this.button15.Image = global::newGym.Properties.Resources._1399410468_dialog_close;
+            this.button15.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button15.ForeColor = System.Drawing.Color.White;
+            this.button15.Image = global::newGym.Properties.Resources._1399410901_trash;
             this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button15.Location = new System.Drawing.Point(3, 61);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(104, 23);
+            this.button15.Size = new System.Drawing.Size(111, 23);
             this.button15.TabIndex = 3;
-            this.button15.Text = "Delete Class";
+            this.button15.Text = "  Delete Class";
+            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
@@ -484,9 +505,6 @@
 
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -512,7 +530,6 @@
         private System.Windows.Forms.TextBox StudSearch;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RadioButton radioName;
         private System.Windows.Forms.RadioButton radioID;
         private System.Windows.Forms.Label label6;
@@ -520,5 +537,9 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label dateLabel;
         private System.Windows.Forms.Timer timer1;
+        private GButton button13;
+        private GButton button14;
+        private GButton button15;
+        private GButton button1;
     }
 }
