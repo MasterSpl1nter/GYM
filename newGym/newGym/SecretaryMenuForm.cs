@@ -75,8 +75,7 @@ namespace newGym
             resetColors();
 
             DateTime now = DateTime.Now;
-            try
-            {
+
                 // check id validation
                 if (id_box.Text == "")
                 {
@@ -192,19 +191,20 @@ namespace newGym
                         LastName, email, username, password, permission, birth_date.Value.Date.ToString("yyyy-MM-dd"),
                         start_date.Value.Date.ToString("yyyy-MM-dd"), end_date.Value.Date.ToString("yyyy-MM-dd"),
                         med_cart_date.Value.Date.ToString("yyyy-MM-dd"));
-                    MySQL.Insert("student", "id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert", insert);
-                    MessageBox.Show("Details have been added successfully ");
+                    int retval=MySQL.Insert("student", "id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert", insert);
+                    if (retval == 0)
+                        MessageBox.Show("Details have been added successfully ");
+                    else if (retval == 1062)
+                       MessageBox.Show("Student with this ID or Username already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                        MessageBox.Show("ERROR #" + retval);
+                     
                 }
                 else
                 {
                     MessageBox.Show("Incomplete fields Please fill them before pressing the button,");
                     return;
                 }
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show("Error no: " + ex.Message);
-            }
 
         }
 
