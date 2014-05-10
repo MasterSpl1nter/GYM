@@ -49,6 +49,11 @@ namespace newGym
             string query = "INSERT INTO `gym`.`manager` (`id`, `firstname`, `lastname`, `email`, `username`, `password`, `permission`,`salaryperhour`) VALUES ('" + Convert.ToInt32(this.Id) + "', '" + this.FirstName + "', '" + this.LastName + "', '" + this.Email + "', '" + this.UserName + "', '" + this.Password + "', '7' " + ",'" + this.salaryPerHour + "' );";
             newConn.writeToDb(query);
         }*/
+        public int Add(string table,string insert)
+        {
+            return MySQL.Insert(table, "id,firstname,lastname,email,username,password,permission,salaryperhour", insert);
+        }
+
         public void addUser(int id,string firstname,string lastname,string email,string username,string password,int permission,int salaryperhour)
         {
             DbConnection newConn = new DbConnection("gym", "root", "csharp");

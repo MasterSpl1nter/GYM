@@ -46,6 +46,8 @@
             this.IdComboBox = new System.Windows.Forms.ComboBox();
             this.exit_update = new System.Windows.Forms.Button();
             this.update_manger_button = new System.Windows.Forms.Button();
+            this.DepartmentComboBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // MangerSalaryPerHour
@@ -215,11 +217,38 @@
             this.update_manger_button.Visible = false;
             this.update_manger_button.Click += new System.EventHandler(this.update_manger_button_Click_1);
             // 
+            // DepartmentComboBox
+            // 
+            this.DepartmentComboBox.FormattingEnabled = true;
+            this.DepartmentComboBox.Items.AddRange(new object[] {
+            "Manager",
+            "Guide",
+            "Trainer",
+            "Worker"});
+            this.DepartmentComboBox.Location = new System.Drawing.Point(82, 21);
+            this.DepartmentComboBox.Name = "DepartmentComboBox";
+            this.DepartmentComboBox.Size = new System.Drawing.Size(100, 21);
+            this.DepartmentComboBox.TabIndex = 47;
+            this.DepartmentComboBox.Visible = false;
+            this.DepartmentComboBox.SelectedIndexChanged += new System.EventHandler(this.DepartmentComboBox_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label1.Location = new System.Drawing.Point(16, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.TabIndex = 45;
+            this.label1.Text = "Depatment:";
+            // 
             // addManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(232, 323);
+            this.Controls.Add(this.DepartmentComboBox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.exit_update);
             this.Controls.Add(this.update_manger_button);
             this.Controls.Add(this.IdComboBox);
@@ -264,6 +293,8 @@
 	        private System.Windows.Forms.TextBox managerFirstName;
 	        private System.Windows.Forms.ComboBox IdComboBox;
 	        private System.Windows.Forms.Button exit_update;
-	        private System.Windows.Forms.Button update_manger_button;
+            private System.Windows.Forms.Button update_manger_button;
+            private System.Windows.Forms.ComboBox DepartmentComboBox;
+            private System.Windows.Forms.Label label1;
 	    }
 	}
