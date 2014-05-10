@@ -89,13 +89,13 @@
             // 
             this.AddManagerUser.BackColor = System.Drawing.SystemColors.HotTrack;
             this.AddManagerUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.AddManagerUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddManagerUser.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.AddManagerUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AddManagerUser.Location = new System.Drawing.Point(78, 236);
+            this.AddManagerUser.Location = new System.Drawing.Point(50, 230);
             this.AddManagerUser.Name = "AddManagerUser";
-            this.AddManagerUser.Size = new System.Drawing.Size(104, 23);
+            this.AddManagerUser.Size = new System.Drawing.Size(81, 29);
             this.AddManagerUser.TabIndex = 40;
-            this.AddManagerUser.Text = "הוסף";
+            this.AddManagerUser.Text = "ADD";
             this.AddManagerUser.UseVisualStyleBackColor = false;
             this.AddManagerUser.Click += new System.EventHandler(this.AddManagerUser_Click_1);
             // 
@@ -191,13 +191,13 @@
             // 
             this.exit_update.BackColor = System.Drawing.SystemColors.HotTrack;
             this.exit_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.exit_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit_update.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.exit_update.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exit_update.Location = new System.Drawing.Point(166, 236);
+            this.exit_update.Location = new System.Drawing.Point(137, 230);
             this.exit_update.Name = "exit_update";
-            this.exit_update.Size = new System.Drawing.Size(39, 23);
+            this.exit_update.Size = new System.Drawing.Size(73, 29);
             this.exit_update.TabIndex = 44;
-            this.exit_update.Text = "בטל";
+            this.exit_update.Text = "Clear";
             this.exit_update.UseVisualStyleBackColor = false;
             this.exit_update.Visible = false;
             this.exit_update.Click += new System.EventHandler(this.exit_update_Click);
@@ -206,13 +206,13 @@
             // 
             this.update_manger_button.BackColor = System.Drawing.SystemColors.HotTrack;
             this.update_manger_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.update_manger_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.update_manger_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.update_manger_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.update_manger_button.Location = new System.Drawing.Point(63, 236);
+            this.update_manger_button.Location = new System.Drawing.Point(32, 230);
             this.update_manger_button.Name = "update_manger_button";
-            this.update_manger_button.Size = new System.Drawing.Size(104, 23);
+            this.update_manger_button.Size = new System.Drawing.Size(104, 29);
             this.update_manger_button.TabIndex = 43;
-            this.update_manger_button.Text = "עדכן";
+            this.update_manger_button.Text = "Update";
             this.update_manger_button.UseVisualStyleBackColor = false;
             this.update_manger_button.Visible = false;
             this.update_manger_button.Click += new System.EventHandler(this.update_manger_button_Click_1);

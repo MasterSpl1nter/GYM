@@ -240,5 +240,22 @@ namespace newGym
             ds.ShowDialog();
         }
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            AddStudent asa = new AddStudent();
+            asa.ShowDialog();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            addManager addM = new addManager(0);
+            addM.ShowDialog();
+        }
+
     }
     }
