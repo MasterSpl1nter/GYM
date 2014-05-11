@@ -52,7 +52,6 @@
             this.lastname_box = new System.Windows.Forms.TextBox();
             this.firstname_box = new System.Windows.Forms.TextBox();
             this.id_box = new System.Windows.Forms.TextBox();
-            this.EditStudentPannel = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -74,6 +73,32 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.edit_by_id = new System.Windows.Forms.Label();
             this.student_search = new System.Windows.Forms.ComboBox();
+            this.EditStudnetPannel = new System.Windows.Forms.Panel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.EditStudApply = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.EditStudentCombobox = new System.Windows.Forms.ComboBox();
+            this.DeleteStudentPanel = new System.Windows.Forms.Panel();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            this.choose_id = new System.Windows.Forms.Label();
+            this.DeleteStudentCombobox = new System.Windows.Forms.ComboBox();
             this.shiftsButton = new newGym.GButton();
             this.editStudentButton = new newGym.GButton();
             this.removeStudentButton = new newGym.GButton();
@@ -81,7 +106,8 @@
             this.studentToClassButton = new newGym.GButton();
             this.addStudentButton = new newGym.GButton();
             this.AddStudentPannel.SuspendLayout();
-            this.EditStudentPannel.SuspendLayout();
+            this.EditStudnetPannel.SuspendLayout();
+            this.DeleteStudentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // AddStudentPannel
@@ -349,34 +375,6 @@
             this.id_box.Size = new System.Drawing.Size(100, 20);
             this.id_box.TabIndex = 27;
             // 
-            // EditStudentPannel
-            // 
-            this.EditStudentPannel.Controls.Add(this.textBox1);
-            this.EditStudentPannel.Controls.Add(this.label1);
-            this.EditStudentPannel.Controls.Add(this.dateTimePicker1);
-            this.EditStudentPannel.Controls.Add(this.dateTimePicker2);
-            this.EditStudentPannel.Controls.Add(this.dateTimePicker3);
-            this.EditStudentPannel.Controls.Add(this.dateTimePicker4);
-            this.EditStudentPannel.Controls.Add(this.label2);
-            this.EditStudentPannel.Controls.Add(this.button1);
-            this.EditStudentPannel.Controls.Add(this.label3);
-            this.EditStudentPannel.Controls.Add(this.label4);
-            this.EditStudentPannel.Controls.Add(this.label5);
-            this.EditStudentPannel.Controls.Add(this.label6);
-            this.EditStudentPannel.Controls.Add(this.label7);
-            this.EditStudentPannel.Controls.Add(this.label8);
-            this.EditStudentPannel.Controls.Add(this.label9);
-            this.EditStudentPannel.Controls.Add(this.textBox2);
-            this.EditStudentPannel.Controls.Add(this.textBox3);
-            this.EditStudentPannel.Controls.Add(this.textBox4);
-            this.EditStudentPannel.Controls.Add(this.textBox5);
-            this.EditStudentPannel.Controls.Add(this.edit_by_id);
-            this.EditStudentPannel.Controls.Add(this.student_search);
-            this.EditStudentPannel.Location = new System.Drawing.Point(66, 63);
-            this.EditStudentPannel.Name = "EditStudentPannel";
-            this.EditStudentPannel.Size = new System.Drawing.Size(427, 523);
-            this.EditStudentPannel.TabIndex = 50;
-            // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -460,7 +458,6 @@
             this.button1.TabIndex = 65;
             this.button1.Text = "edit";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -602,6 +599,301 @@
             this.student_search.TabIndex = 48;
             this.student_search.SelectedIndexChanged += new System.EventHandler(this.student_search_SelectedIndexChanged);
             // 
+            // EditStudnetPannel
+            // 
+            this.EditStudnetPannel.Controls.Add(this.textBox6);
+            this.EditStudnetPannel.Controls.Add(this.label10);
+            this.EditStudnetPannel.Controls.Add(this.dateTimePicker5);
+            this.EditStudnetPannel.Controls.Add(this.dateTimePicker6);
+            this.EditStudnetPannel.Controls.Add(this.dateTimePicker7);
+            this.EditStudnetPannel.Controls.Add(this.dateTimePicker8);
+            this.EditStudnetPannel.Controls.Add(this.label11);
+            this.EditStudnetPannel.Controls.Add(this.EditStudApply);
+            this.EditStudnetPannel.Controls.Add(this.label12);
+            this.EditStudnetPannel.Controls.Add(this.label13);
+            this.EditStudnetPannel.Controls.Add(this.label14);
+            this.EditStudnetPannel.Controls.Add(this.label15);
+            this.EditStudnetPannel.Controls.Add(this.label16);
+            this.EditStudnetPannel.Controls.Add(this.label17);
+            this.EditStudnetPannel.Controls.Add(this.label18);
+            this.EditStudnetPannel.Controls.Add(this.textBox7);
+            this.EditStudnetPannel.Controls.Add(this.textBox8);
+            this.EditStudnetPannel.Controls.Add(this.textBox9);
+            this.EditStudnetPannel.Controls.Add(this.textBox10);
+            this.EditStudnetPannel.Controls.Add(this.label19);
+            this.EditStudnetPannel.Controls.Add(this.EditStudentCombobox);
+            this.EditStudnetPannel.Location = new System.Drawing.Point(251, 12);
+            this.EditStudnetPannel.Name = "EditStudnetPannel";
+            this.EditStudnetPannel.Size = new System.Drawing.Size(430, 523);
+            this.EditStudnetPannel.TabIndex = 7;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(216, 212);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(134, 22);
+            this.textBox6.TabIndex = 62;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(150, 212);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 14);
+            this.label10.TabIndex = 68;
+            this.label10.Text = "User name:";
+            // 
+            // dateTimePicker5
+            // 
+            this.dateTimePicker5.CalendarFont = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker5.Location = new System.Drawing.Point(216, 287);
+            this.dateTimePicker5.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(165, 22);
+            this.dateTimePicker5.TabIndex = 58;
+            // 
+            // dateTimePicker6
+            // 
+            this.dateTimePicker6.CalendarFont = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker6.Location = new System.Drawing.Point(218, 358);
+            this.dateTimePicker6.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePicker6.Name = "dateTimePicker6";
+            this.dateTimePicker6.Size = new System.Drawing.Size(164, 22);
+            this.dateTimePicker6.TabIndex = 60;
+            // 
+            // dateTimePicker7
+            // 
+            this.dateTimePicker7.CalendarFont = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker7.Location = new System.Drawing.Point(218, 320);
+            this.dateTimePicker7.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePicker7.Name = "dateTimePicker7";
+            this.dateTimePicker7.Size = new System.Drawing.Size(164, 22);
+            this.dateTimePicker7.TabIndex = 59;
+            // 
+            // dateTimePicker8
+            // 
+            this.dateTimePicker8.CalendarFont = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker8.Location = new System.Drawing.Point(218, 254);
+            this.dateTimePicker8.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePicker8.Name = "dateTimePicker8";
+            this.dateTimePicker8.Size = new System.Drawing.Size(164, 22);
+            this.dateTimePicker8.TabIndex = 56;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(178, 176);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 14);
+            this.label11.TabIndex = 67;
+            this.label11.Text = "Email:";
+            // 
+            // EditStudApply
+            // 
+            this.EditStudApply.BackColor = System.Drawing.SystemColors.Highlight;
+            this.EditStudApply.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditStudApply.ForeColor = System.Drawing.Color.Navy;
+            this.EditStudApply.Location = new System.Drawing.Point(234, 414);
+            this.EditStudApply.Margin = new System.Windows.Forms.Padding(2);
+            this.EditStudApply.Name = "EditStudApply";
+            this.EditStudApply.Size = new System.Drawing.Size(116, 27);
+            this.EditStudApply.TabIndex = 65;
+            this.EditStudApply.Text = "edit";
+            this.EditStudApply.UseVisualStyleBackColor = false;
+            this.EditStudApply.Click += new System.EventHandler(this.EditStudApply_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(88, 363);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(136, 14);
+            this.label12.TabIndex = 66;
+            this.label12.Text = "valid medical certificate:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label13.Location = new System.Drawing.Point(138, 325);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(82, 14);
+            this.label13.TabIndex = 64;
+            this.label13.Text = "End contract:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(131, 287);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(89, 14);
+            this.label14.TabIndex = 63;
+            this.label14.Text = "Start Contract:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(152, 254);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(65, 14);
+            this.label15.TabIndex = 61;
+            this.label15.Text = "Birth date:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(148, 140);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(67, 14);
+            this.label16.TabIndex = 57;
+            this.label16.Text = "Last name:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(146, 111);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(68, 14);
+            this.label17.TabIndex = 54;
+            this.label17.Text = "First Name:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(188, 82);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(23, 14);
+            this.label18.TabIndex = 51;
+            this.label18.Text = "ID:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(218, 170);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(133, 24);
+            this.textBox7.TabIndex = 55;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(218, 132);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(133, 24);
+            this.textBox8.TabIndex = 53;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(218, 103);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(133, 23);
+            this.textBox9.TabIndex = 52;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(218, 76);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBox10.MaxLength = 9;
+            this.textBox10.Multiline = true;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(133, 22);
+            this.textBox10.TabIndex = 50;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label19.Location = new System.Drawing.Point(134, 42);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(79, 19);
+            this.label19.TabIndex = 49;
+            this.label19.Text = "Choose ID:";
+            // 
+            // EditStudentCombobox
+            // 
+            this.EditStudentCombobox.FormattingEnabled = true;
+            this.EditStudentCombobox.Location = new System.Drawing.Point(218, 43);
+            this.EditStudentCombobox.Margin = new System.Windows.Forms.Padding(2);
+            this.EditStudentCombobox.Name = "EditStudentCombobox";
+            this.EditStudentCombobox.Size = new System.Drawing.Size(133, 21);
+            this.EditStudentCombobox.TabIndex = 48;
+            this.EditStudentCombobox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // DeleteStudentPanel
+            // 
+            this.DeleteStudentPanel.Controls.Add(this.DeleteButton);
+            this.DeleteStudentPanel.Controls.Add(this.choose_id);
+            this.DeleteStudentPanel.Controls.Add(this.DeleteStudentCombobox);
+            this.DeleteStudentPanel.Location = new System.Drawing.Point(251, 12);
+            this.DeleteStudentPanel.Name = "DeleteStudentPanel";
+            this.DeleteStudentPanel.Size = new System.Drawing.Size(430, 520);
+            this.DeleteStudentPanel.TabIndex = 8;
+            // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Location = new System.Drawing.Point(159, 277);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(2);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(79, 29);
+            this.DeleteButton.TabIndex = 6;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
+            // choose_id
+            // 
+            this.choose_id.AutoSize = true;
+            this.choose_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.choose_id.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.choose_id.Location = new System.Drawing.Point(119, 215);
+            this.choose_id.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.choose_id.Name = "choose_id";
+            this.choose_id.Size = new System.Drawing.Size(76, 18);
+            this.choose_id.TabIndex = 5;
+            this.choose_id.Text = "Choose id";
+            // 
+            // DeleteStudentCombobox
+            // 
+            this.DeleteStudentCombobox.FormattingEnabled = true;
+            this.DeleteStudentCombobox.Location = new System.Drawing.Point(195, 215);
+            this.DeleteStudentCombobox.Margin = new System.Windows.Forms.Padding(2);
+            this.DeleteStudentCombobox.Name = "DeleteStudentCombobox";
+            this.DeleteStudentCombobox.Size = new System.Drawing.Size(116, 21);
+            this.DeleteStudentCombobox.TabIndex = 4;
+            // 
             // shiftsButton
             // 
             this.shiftsButton.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -616,6 +908,7 @@
             this.shiftsButton.TabIndex = 5;
             this.shiftsButton.Text = "Monthly Shifts";
             this.shiftsButton.UseVisualStyleBackColor = false;
+            this.shiftsButton.Click += new System.EventHandler(this.shiftsButton_Click);
             // 
             // editStudentButton
             // 
@@ -647,6 +940,7 @@
             this.removeStudentButton.TabIndex = 3;
             this.removeStudentButton.Text = "Remove Student ";
             this.removeStudentButton.UseVisualStyleBackColor = false;
+            this.removeStudentButton.Click += new System.EventHandler(this.removeStudentButton_Click);
             // 
             // removeStudentFromClassBotton
             // 
@@ -662,6 +956,7 @@
             this.removeStudentFromClassBotton.TabIndex = 2;
             this.removeStudentFromClassBotton.Text = "Remove Student From Class";
             this.removeStudentFromClassBotton.UseVisualStyleBackColor = false;
+            this.removeStudentFromClassBotton.Click += new System.EventHandler(this.removeStudentFromClassBotton_Click);
             // 
             // studentToClassButton
             // 
@@ -677,6 +972,7 @@
             this.studentToClassButton.TabIndex = 1;
             this.studentToClassButton.Text = "Add Student to Class";
             this.studentToClassButton.UseVisualStyleBackColor = false;
+            this.studentToClassButton.Click += new System.EventHandler(this.studentToClassButton_Click);
             // 
             // addStudentButton
             // 
@@ -699,31 +995,35 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(693, 547);
-            this.Controls.Add(this.AddStudentPannel);
             this.Controls.Add(this.shiftsButton);
             this.Controls.Add(this.editStudentButton);
             this.Controls.Add(this.removeStudentButton);
             this.Controls.Add(this.removeStudentFromClassBotton);
             this.Controls.Add(this.studentToClassButton);
             this.Controls.Add(this.addStudentButton);
+            this.Controls.Add(this.DeleteStudentPanel);
+            this.Controls.Add(this.EditStudnetPannel);
+            this.Controls.Add(this.AddStudentPannel);
             this.Name = "SecretaryMenu";
             this.Text = "SecretaryMenu";
             this.AddStudentPannel.ResumeLayout(false);
             this.AddStudentPannel.PerformLayout();
-            this.EditStudentPannel.ResumeLayout(false);
-            this.EditStudentPannel.PerformLayout();
+            this.EditStudnetPannel.ResumeLayout(false);
+            this.EditStudnetPannel.PerformLayout();
+            this.DeleteStudentPanel.ResumeLayout(false);
+            this.DeleteStudentPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private GButton addStudentButton;
-        private GButton studentToClassButton;
-        private GButton removeStudentFromClassBotton;
-        private GButton removeStudentButton;
-        private GButton editStudentButton;
-        private GButton shiftsButton;
+        private System.Windows.Forms.Button addStudentButton;
+        private System.Windows.Forms.Button studentToClassButton;
+        private System.Windows.Forms.Button removeStudentFromClassBotton;
+        private System.Windows.Forms.Button removeStudentButton;
+        private System.Windows.Forms.Button editStudentButton;
+        private System.Windows.Forms.Button shiftsButton;
         private System.Windows.Forms.Panel AddStudentPannel;
         private System.Windows.Forms.TextBox tb_repeatPass;
         private System.Windows.Forms.TextBox tb_pass;
@@ -748,7 +1048,6 @@
         private System.Windows.Forms.TextBox lastname_box;
         private System.Windows.Forms.TextBox firstname_box;
         private System.Windows.Forms.TextBox id_box;
-        private System.Windows.Forms.Panel EditStudentPannel;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -770,5 +1069,31 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label edit_by_id;
         private System.Windows.Forms.ComboBox student_search;
+        private System.Windows.Forms.Panel EditStudnetPannel;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dateTimePicker5;
+        private System.Windows.Forms.DateTimePicker dateTimePicker6;
+        private System.Windows.Forms.DateTimePicker dateTimePicker7;
+        private System.Windows.Forms.DateTimePicker dateTimePicker8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button EditStudApply;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ComboBox EditStudentCombobox;
+        private System.Windows.Forms.Panel DeleteStudentPanel;
+        private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.Label choose_id;
+        private System.Windows.Forms.ComboBox DeleteStudentCombobox;
     }
 }
