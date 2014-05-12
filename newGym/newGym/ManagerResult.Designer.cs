@@ -1,6 +1,6 @@
 ﻿namespace newGym
 {
-    partial class GuideSearch
+    partial class ManagerResult
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.searchResult = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.searchResult)).BeginInit();
+            this.dataGridResult = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridResult)).BeginInit();
             this.SuspendLayout();
             // 
-            // searchResult
+            // dataGridResult
             // 
-            this.searchResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.searchResult.Location = new System.Drawing.Point(12, 12);
-            this.searchResult.Name = "searchResult";
-            this.searchResult.Size = new System.Drawing.Size(578, 231);
-            this.searchResult.TabIndex = 0;
+            this.dataGridResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridResult.Location = new System.Drawing.Point(12, 12);
+            this.dataGridResult.Name = "dataGridResult";
+            this.dataGridResult.Size = new System.Drawing.Size(667, 211);
+            this.dataGridResult.TabIndex = 0;
             // 
-            // GuideSearch
+            // ManagerResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 255);
-            this.Controls.Add(this.searchResult);
-            this.Name = "GuideSearch";
-            this.Text = "GuideSearch";
-            ((System.ComponentModel.ISupportInitialize)(this.searchResult)).EndInit();
+            this.ClientSize = new System.Drawing.Size(691, 262);
+            this.Controls.Add(this.dataGridResult);
+            this.Name = "ManagerResult";
+            this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridResult)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView searchResult;
+        private System.Windows.Forms.DataGridView dataGridResult;
     }
 }

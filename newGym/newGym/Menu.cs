@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+
 namespace newGym
 {
     public partial class ManagerMenu : Form
@@ -17,8 +18,10 @@ namespace newGym
         DataTable dt;
         public ManagerMenu(Manager m)
         {
+            
             dt = new DataTable();
             InitializeComponent();
+            
             MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.guideid=22");
             arr = new DateTime[dt.Rows.Count];
             for (int i = 0; i < dt.Rows.Count; i++)
@@ -255,6 +258,31 @@ namespace newGym
         {
             addManager addM = new addManager(0);
             addM.ShowDialog();
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ManagerMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            new ManagerResult(this.searchTextBox.Text).ShowDialog();
         }
 
     }

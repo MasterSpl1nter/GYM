@@ -193,7 +193,27 @@ namespace newGym
             e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != Delete;
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.ClearTextBoxes(this.Controls);
+        }
 
+        public void ClearTextBoxes(Control.ControlCollection controls)
+        {
+            // Cycle through the controls.
+            foreach (Control control in controls)
+            {
+                // The textbox.
+                TextBoxBase textBox = (control as TextBoxBase);
+
+                // If there is a textbox, then clear it.
+                if (textBox != null)
+                {
+                    // Set the text to an empty string.
+                    textBox.Text = "";
+                }
+            }
+        }
 
     }
 }

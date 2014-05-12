@@ -51,6 +51,7 @@
             this.verPassWorod_label = new System.Windows.Forms.Label();
             this.passWord_label = new System.Windows.Forms.Label();
             this.userName_label = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // id_box
@@ -139,14 +140,15 @@
             // enter_button
             // 
             this.enter_button.BackColor = System.Drawing.SystemColors.Highlight;
-            this.enter_button.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enter_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.enter_button.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enter_button.ForeColor = System.Drawing.Color.Navy;
             this.enter_button.Location = new System.Drawing.Point(118, 382);
             this.enter_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.enter_button.Name = "enter_button";
-            this.enter_button.Size = new System.Drawing.Size(154, 33);
+            this.enter_button.Size = new System.Drawing.Size(80, 33);
             this.enter_button.TabIndex = 12;
-            this.enter_button.Text = "Accept";
+            this.enter_button.Text = "Add ";
             this.enter_button.UseVisualStyleBackColor = false;
             this.enter_button.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -289,12 +291,28 @@
             this.userName_label.TabIndex = 24;
             this.userName_label.Text = "User name:";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Navy;
+            this.button1.Location = new System.Drawing.Point(206, 382);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 33);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Clear";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // AddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(339, 440);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tb_repeatPass);
             this.Controls.Add(this.tb_pass);
             this.Controls.Add(this.tb_username);
@@ -354,5 +372,6 @@
         private System.Windows.Forms.Label verPassWorod_label;
         private System.Windows.Forms.Label passWord_label;
         private System.Windows.Forms.Label userName_label;
+        private System.Windows.Forms.Button button1;
     }
 }

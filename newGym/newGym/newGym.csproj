@@ -96,6 +96,12 @@
     <Compile Include="fEditClass.Designer.cs">
       <DependentUpon>fEditClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerResult.Designer.cs">
+      <DependentUpon>ManagerResult.cs</DependentUpon>
+    </Compile>
     <Compile Include="SecretaryMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -288,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fEditClass.resx">
       <DependentUpon>fEditClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerResult.resx">
+      <DependentUpon>ManagerResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SecretaryMenuForm.resx">
       <DependentUpon>SecretaryMenuForm.cs</DependentUpon>
