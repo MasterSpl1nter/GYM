@@ -61,25 +61,25 @@
             // 
             this.idLabel.AutoSize = true;
             this.idLabel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.idLabel.Location = new System.Drawing.Point(60, 51);
+            this.idLabel.Location = new System.Drawing.Point(54, 51);
             this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(21, 13);
+            this.idLabel.Size = new System.Drawing.Size(22, 13);
             this.idLabel.TabIndex = 27;
-            this.idLabel.Text = "Id:";
+            this.idLabel.Text = "ID:";
             // 
             // salaryPerHourLabel
             // 
             this.salaryPerHourLabel.AutoSize = true;
-            this.salaryPerHourLabel.Location = new System.Drawing.Point(32, 155);
+            this.salaryPerHourLabel.Location = new System.Drawing.Point(25, 155);
             this.salaryPerHourLabel.Name = "salaryPerHourLabel";
-            this.salaryPerHourLabel.Size = new System.Drawing.Size(50, 13);
+            this.salaryPerHourLabel.Size = new System.Drawing.Size(51, 13);
             this.salaryPerHourLabel.TabIndex = 41;
-            this.salaryPerHourLabel.Text = "payment:";
+            this.salaryPerHourLabel.Text = "Payment:";
             // 
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(28, 207);
+            this.passwordLabel.Location = new System.Drawing.Point(20, 207);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(56, 13);
             this.passwordLabel.TabIndex = 28;
@@ -102,7 +102,7 @@
             // userNameLabel
             // 
             this.userNameLabel.AutoSize = true;
-            this.userNameLabel.Location = new System.Drawing.Point(24, 181);
+            this.userNameLabel.Location = new System.Drawing.Point(15, 181);
             this.userNameLabel.Name = "userNameLabel";
             this.userNameLabel.Size = new System.Drawing.Size(61, 13);
             this.userNameLabel.TabIndex = 29;
@@ -118,7 +118,7 @@
             // EmailLabel
             // 
             this.EmailLabel.AutoSize = true;
-            this.EmailLabel.Location = new System.Drawing.Point(47, 129);
+            this.EmailLabel.Location = new System.Drawing.Point(41, 129);
             this.EmailLabel.Name = "EmailLabel";
             this.EmailLabel.Size = new System.Drawing.Size(35, 13);
             this.EmailLabel.TabIndex = 30;
@@ -134,7 +134,7 @@
             // lastNameLabel
             // 
             this.lastNameLabel.AutoSize = true;
-            this.lastNameLabel.Location = new System.Drawing.Point(24, 104);
+            this.lastNameLabel.Location = new System.Drawing.Point(17, 103);
             this.lastNameLabel.Name = "lastNameLabel";
             this.lastNameLabel.Size = new System.Drawing.Size(59, 13);
             this.lastNameLabel.TabIndex = 31;
@@ -150,7 +150,7 @@
             // firstNameLabel
             // 
             this.firstNameLabel.AutoSize = true;
-            this.firstNameLabel.Location = new System.Drawing.Point(24, 77);
+            this.firstNameLabel.Location = new System.Drawing.Point(18, 77);
             this.firstNameLabel.Name = "firstNameLabel";
             this.firstNameLabel.Size = new System.Drawing.Size(58, 13);
             this.firstNameLabel.TabIndex = 32;
@@ -219,6 +219,7 @@
             // 
             // DepartmentComboBox
             // 
+            this.DepartmentComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.DepartmentComboBox.FormattingEnabled = true;
             this.DepartmentComboBox.Items.AddRange(new object[] {
             "Manager",
@@ -238,9 +239,9 @@
             this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label1.Location = new System.Drawing.Point(16, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 45;
-            this.label1.Text = "Depatment:";
+            this.label1.Text = "Department:";
             // 
             // addManager
             // 
