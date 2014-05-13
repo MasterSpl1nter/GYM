@@ -213,7 +213,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(232, 323);
+            this.ClientSize = new System.Drawing.Size(247, 323);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.salar_txt);
             this.Controls.Add(this.email_verification);

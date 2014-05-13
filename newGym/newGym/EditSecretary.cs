@@ -15,7 +15,7 @@ namespace newGym
 {
     public partial class EditSecretary : Form
     {
-        string password;
+        //string password;
         int perm = 1;
         int salary = 200;
         string idOld;
@@ -67,13 +67,14 @@ namespace newGym
                 string sLastname = myReader.GetString("lastname");
                 string sEmail = myReader.GetString("email");
                 string sUsername = myReader.GetString("username");
+                string sPassword = myReader.GetString("password");
 
                 id_textBox.Text = idOld;
                 firstname_textBox.Text = sFirstname;
                 lastname_textBox.Text = sLastname;
                 email_textBox.Text = sEmail;
                 username_textBox.Text = sUsername;
-                this.password = myReader.GetString("password");
+                password_textBox.Text = sPassword;
             }
             catch (Exception ex)
             {
@@ -126,6 +127,20 @@ namespace newGym
                 email_label.ForeColor = Color.Black;
                 err = false;
             }
+            if (password_textBox.Text.Length < 6)
+            {
+                MessageBox.Show("You must choose a valid password, at least 6 characters", "ERROR", MessageBoxButtons.OK);
+                password_label.ForeColor = Color.Red;
+                password_textBox.ResetText();
+                password_textBox.Focus();
+                err = true;
+                return;
+            }
+            else
+            {
+                err = false;
+                password_label.ForeColor = Color.Black;
+            }
             //if all data is valid
             if (err == false)
             {
@@ -133,7 +148,8 @@ namespace newGym
                 {
                     string insert = String.Format("id={0},firstname='{1}',lastname='{2}',email='{3}',username='{4}',password='{5}',permission='{6}',salaryperhour={7}"
                     , id_textBox.Text, this.firstname_textBox.Text, this.lastname_textBox.Text, this.email_textBox.Text,
-                    this.username_textBox.Text, this.password, this.perm, this.salary);
+                    this.username_textBox.Text, this.password_textBox.Text
+                    , this.perm, this.salary);
                     int retval = Secretary.Update(insert, this.idOld);
                     if (retval == 0)
                     {

@@ -70,6 +70,7 @@
             // 
             resources.ApplyResources(this.id_textBox, "id_textBox");
             this.id_textBox.Name = "id_textBox";
+            this.id_textBox.TextChanged += new System.EventHandler(this.id_textBox_TextChanged);
             this.id_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.id_textBox_KeyPress);
             // 
             // firstname_textBox
@@ -115,6 +116,7 @@
             // 
             resources.ApplyResources(this.password_textBox, "password_textBox");
             this.password_textBox.Name = "password_textBox";
+            this.password_textBox.TextChanged += new System.EventHandler(this.password_textBox_TextChanged);
             // 
             // verify_label
             // 

@@ -37,10 +37,10 @@
             // 
             this.enter_button.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enter_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.enter_button.Location = new System.Drawing.Point(123, 100);
+            this.enter_button.Location = new System.Drawing.Point(130, 100);
             this.enter_button.Margin = new System.Windows.Forms.Padding(4);
             this.enter_button.Name = "enter_button";
-            this.enter_button.Size = new System.Drawing.Size(86, 37);
+            this.enter_button.Size = new System.Drawing.Size(79, 32);
             this.enter_button.TabIndex = 14;
             this.enter_button.Text = "Delete";
             this.enter_button.UseVisualStyleBackColor = true;
@@ -53,7 +53,6 @@
             this.id_comboBox1.Name = "id_comboBox1";
             this.id_comboBox1.Size = new System.Drawing.Size(171, 21);
             this.id_comboBox1.TabIndex = 13;
-            //this.id_comboBox1.SelectedIndexChanged += new System.EventHandler(this.id_comboBox1_SelectedIndexChanged);
             // 
             // id_label
             // 

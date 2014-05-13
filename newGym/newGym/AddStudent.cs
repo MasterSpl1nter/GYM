@@ -215,5 +215,10 @@ namespace newGym
             }
         }
 
+        private void id_box_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

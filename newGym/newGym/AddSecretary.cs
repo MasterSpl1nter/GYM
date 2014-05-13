@@ -164,5 +164,15 @@ namespace newGym
         {
 
         }
+
+        private void password_textBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void id_textBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

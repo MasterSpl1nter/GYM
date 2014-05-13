@@ -42,6 +42,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.id_comboBox1 = new System.Windows.Forms.ComboBox();
             this.Edit_button = new System.Windows.Forms.Button();
+            this.password_textBox = new System.Windows.Forms.TextBox();
+            this.password_label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lastname_textBox
@@ -176,7 +178,7 @@
             this.Edit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.Edit_button.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Edit_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Edit_button.Location = new System.Drawing.Point(96, 203);
+            this.Edit_button.Location = new System.Drawing.Point(94, 228);
             this.Edit_button.Name = "Edit_button";
             this.Edit_button.Size = new System.Drawing.Size(79, 31);
             this.Edit_button.TabIndex = 30;
@@ -184,11 +186,32 @@
             this.Edit_button.UseVisualStyleBackColor = false;
             this.Edit_button.Click += new System.EventHandler(this.Edit_button_Click);
             // 
+            // password_textBox
+            // 
+            this.password_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.password_textBox.Location = new System.Drawing.Point(94, 184);
+            this.password_textBox.Name = "password_textBox";
+            this.password_textBox.Size = new System.Drawing.Size(100, 20);
+            this.password_textBox.TabIndex = 31;
+            // 
+            // password_label
+            // 
+            this.password_label.AutoSize = true;
+            this.password_label.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.password_label.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.password_label.Location = new System.Drawing.Point(31, 187);
+            this.password_label.Name = "password_label";
+            this.password_label.Size = new System.Drawing.Size(57, 13);
+            this.password_label.TabIndex = 33;
+            this.password_label.Text = "password:";
+            // 
             // EditSecretary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(292, 259);
+            this.ClientSize = new System.Drawing.Size(292, 287);
+            this.Controls.Add(this.password_textBox);
+            this.Controls.Add(this.password_label);
             this.Controls.Add(this.Edit_button);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.id_comboBox1);
@@ -226,5 +249,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox id_comboBox1;
         private System.Windows.Forms.Button Edit_button;
+        private System.Windows.Forms.TextBox password_textBox;
+        private System.Windows.Forms.Label password_label;
     }
 }
