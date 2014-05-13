@@ -17,9 +17,10 @@ namespace newGym
         DataTable dtmp;
         DataTable dt;
         Guide guide;
-        public GuideMenu(Guide guide)
+        public GuideMenu()
         {
-            this.guide = guide;
+            this.guide=(Guide)SingleUser.Instance.get_user();
+            //this.guide = guide;
             dt = new DataTable();
             InitializeComponent();
             timer1.Start();
