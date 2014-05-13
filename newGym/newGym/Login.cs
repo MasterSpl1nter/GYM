@@ -82,7 +82,7 @@ namespace newGym
                      {
                          retval = 0;
                          SingleUser.Instance.set_user(p);
-                         GuideMenu gm = new GuideMenu((Guide)p);
+                         GuideMenu gm = new GuideMenu();
                          gm.ShowDialog();
                      }
                       
