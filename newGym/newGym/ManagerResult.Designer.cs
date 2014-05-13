@@ -39,6 +39,7 @@
             this.dataGridResult.Name = "dataGridResult";
             this.dataGridResult.Size = new System.Drawing.Size(667, 211);
             this.dataGridResult.TabIndex = 0;
+            this.dataGridResult.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridResult_CellContentClick);
             // 
             // ManagerResult
             // 

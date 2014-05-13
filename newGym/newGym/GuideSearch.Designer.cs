@@ -34,9 +34,13 @@
             // 
             // searchResult
             // 
+            this.searchResult.AllowUserToAddRows = false;
+            this.searchResult.AllowUserToDeleteRows = false;
             this.searchResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.searchResult.Enabled = false;
             this.searchResult.Location = new System.Drawing.Point(12, 12);
             this.searchResult.Name = "searchResult";
+            this.searchResult.ReadOnly = true;
             this.searchResult.Size = new System.Drawing.Size(578, 231);
             this.searchResult.TabIndex = 0;
             // 

@@ -35,7 +35,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button7 = new System.Windows.Forms.Button();
             this.searchTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.helloLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -158,39 +157,29 @@
             // 
             this.groupBox2.Controls.Add(this.button7);
             this.groupBox2.Controls.Add(this.searchTextBox);
-            this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(207, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(313, 84);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Search";
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(162, 36);
+            this.button7.Location = new System.Drawing.Point(174, 35);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 3;
-            this.button7.Text = "button7";
+            this.button7.Text = "search";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // searchTextBox
             // 
-            this.searchTextBox.Location = new System.Drawing.Point(56, 38);
+            this.searchTextBox.Location = new System.Drawing.Point(20, 36);
             this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.Size = new System.Drawing.Size(100, 20);
+            this.searchTextBox.Size = new System.Drawing.Size(148, 20);
             this.searchTextBox.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Search:";
             // 
             // groupBox3
             // 
@@ -833,7 +822,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TextBox searchTextBox;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label helloLabel;
         private System.Windows.Forms.GroupBox groupBox1;
