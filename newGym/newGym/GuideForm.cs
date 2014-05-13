@@ -75,7 +75,7 @@ namespace newGym
             if (ValidateInput())
             {
                 string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},{7}", idText.Text, fnameText.Text, lnameText.Text, emailText.Text, userText.Text, passText.Text, 3, salaryText.Text);
-                int retval=Guide.Add(insert);
+                int retval = ((Guide)SingleUser.Instance.get_user()).Add(insert);
                 if (retval == 0)
                 {
                     MessageBox.Show("Guide has been added.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -97,7 +97,7 @@ namespace newGym
             if (ValidateInput())
             {
                 string insert = String.Format("id={0},firstname='{1}',lastname='{2}',email='{3}',username='{4}',password='{5}',permission={6},salaryperhour={7}", dt.Rows[comboBox1.SelectedIndex]["ID"].ToString(), fnameText.Text, lnameText.Text, emailText.Text, userText.Text, passText.Text, 3, salaryText.Text);
-                int retval = Guide.Update(insert, dt.Rows[comboBox1.SelectedIndex]["ID"].ToString());
+                int retval = ((Guide)SingleUser.Instance.get_user()).Update(insert, dt.Rows[comboBox1.SelectedIndex]["ID"].ToString());
                 if (retval == 0)
                 {
                     dt = new DataTable();
@@ -113,7 +113,7 @@ namespace newGym
 
         private void DeleteGuideButton_Click(object sender, EventArgs e)
         {
-            int retval = Guide.Delete(dt.Rows[comboBox1.SelectedIndex]["ID"].ToString());
+            int retval = ((Guide)SingleUser.Instance.get_user()).Delete(dt.Rows[comboBox1.SelectedIndex]["ID"].ToString());
             if (retval == 0)
             {
                 dt = new DataTable();
