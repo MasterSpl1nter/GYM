@@ -25,12 +25,15 @@ namespace newGym
         string password; // get from this form
         int permission = 0;
         DateTime now = DateTime.Now;
-
+        
+        
+        
 
 
         public SecretaryMenu()
         {
             InitializeComponent();
+            helloLabel.Text = "Hello, " + SingleUser.Instance.get_user().FirstName + " " + SingleUser.Instance.get_user().LastName;
             AddStudentPannel.Visible = false;
             EditStudnetPannel.Visible = false;
             DeleteStudentPanel.Visible = false;
@@ -487,6 +490,41 @@ namespace newGym
             DeleteStudentCombobox.Items.Clear();
             DeleteStudentCombobox.Text = "";
             fillcombo(DeleteStudentCombobox);
+
+        }
+
+        private void SecretaryMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteStudentPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void AddStudentPannel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void helloLabel_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void EditStudnetPannel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void choose_id_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
 
         }
 

@@ -30,22 +30,25 @@ namespace newGym
         }
 
 
-        public int Update(string insert,string where)
+        public static int Update(string insert,string where)
         {
             return MySQL.Update("guide", insert, "id=" + where);
         }
 
-        public int Add(string insert)
+        public static int Add(string insert)
         {
             return MySQL.Insert("guide", "id,firstname,lastname,email,username,password,permission,salaryperhour", insert);
         }
-        public int Delete(string id)
+        public static int Delete(string id)
         {
             return MySQL.Delete("guide", "id="+id);
         }
         public int SearchID(DataTable dt,string search)
         {
-            return MySQL.Query(dt, "SELECT id,firstname,lastname,email FROM guide where id LIKE " + search);
+            int retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email FROM guide where id LIKE " + search);
+            if (retval == 0)
+                return 0;
+            return retval;
         }
         public int SearchName(DataTable dt, string search)
         {
@@ -59,17 +62,24 @@ namespace newGym
                 retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email FROM guide where firstname LIKE " + "'%" + search + "%'");
 
             }
+
+            if (retval == 0)
+                return 0;
             return retval;
         }
         public int SearchStudID(DataTable dt, string search)
         {
-            return MySQL.Query(dt, "SELECT id,firstname,lastname,email,birthday,startdate,enddate,medcert FROM student where id LIKE " + search);
-
+            int retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email,birthday,startdate,enddate,medcert FROM student where id LIKE " + search);
+            if (retval == 0)
+                return 0;
+            return retval;
         }
         public int SearchStudName(DataTable dt, string search)
         {
-            return MySQL.Query(dt, "SELECT id,firstname,lastname,email,birthday,startdate,enddate,medcert FROM student where firstname LIKE " + "'%" + search.Split(' ')[0] + "%' and lastname LIKE '%" + search.Split(' ')[1] + "%'");
-
+            int retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email,birthday,startdate,enddate,medcert FROM student where firstname LIKE " + "'%" + search.Split(' ')[0] + "%' and lastname LIKE '%" + search.Split(' ')[1] + "%'");
+            if (retval == 0)
+                return 0;
+            return retval;
         }
         protected override void setSalary(int salary)
         {

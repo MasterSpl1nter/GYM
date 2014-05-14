@@ -25,14 +25,12 @@ namespace newGym
             //MessageBox.Show("Working Menus: \n1. Guide with password\n2. Trainer with password\n3. Manager with password");
         }
 
+
         private void button2_Click(object sender, EventArgs e)
         {
-
             DataTable dt = new DataTable();
             int retval = 1;
             Person p;
-
-
             switch (comboBox2.SelectedIndex)
             {
                 case 0:

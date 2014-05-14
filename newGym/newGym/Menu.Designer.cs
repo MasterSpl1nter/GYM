@@ -747,6 +747,7 @@
             this.ManagerActions.TabIndex = 16;
             this.ManagerActions.TabStop = false;
             this.ManagerActions.Text = "Actions";
+            this.ManagerActions.Enter += new System.EventHandler(this.ManagerActions_Enter);
             // 
             // button23
             // 
@@ -784,7 +785,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Name = "ManagerMenu";
-            this.Text = "Menu";
+            this.Text = "managerMenu";
             this.Load += new System.EventHandler(this.ManagerMenu_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

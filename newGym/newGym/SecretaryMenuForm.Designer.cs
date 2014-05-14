@@ -99,15 +99,24 @@
             this.DeleteButton = new System.Windows.Forms.Button();
             this.choose_id = new System.Windows.Forms.Label();
             this.DeleteStudentCombobox = new System.Windows.Forms.ComboBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.helloLabel = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.gGroupBox1 = new newGym.GGroupBox();
+            this.addStudentButton = new newGym.GButton();
             this.shiftsButton = new newGym.GButton();
             this.editStudentButton = new newGym.GButton();
-            this.removeStudentButton = new newGym.GButton();
             this.removeStudentFromClassBotton = new newGym.GButton();
+            this.removeStudentButton = new newGym.GButton();
             this.studentToClassButton = new newGym.GButton();
-            this.addStudentButton = new newGym.GButton();
             this.AddStudentPannel.SuspendLayout();
             this.EditStudnetPannel.SuspendLayout();
             this.DeleteStudentPanel.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.gGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // AddStudentPannel
@@ -135,10 +144,11 @@
             this.AddStudentPannel.Controls.Add(this.lastname_box);
             this.AddStudentPannel.Controls.Add(this.firstname_box);
             this.AddStudentPannel.Controls.Add(this.id_box);
-            this.AddStudentPannel.Location = new System.Drawing.Point(251, 12);
+            this.AddStudentPannel.Location = new System.Drawing.Point(262, 113);
             this.AddStudentPannel.Name = "AddStudentPannel";
-            this.AddStudentPannel.Size = new System.Drawing.Size(430, 523);
+            this.AddStudentPannel.Size = new System.Drawing.Size(464, 464);
             this.AddStudentPannel.TabIndex = 6;
+            this.AddStudentPannel.Paint += new System.Windows.Forms.PaintEventHandler(this.AddStudentPannel_Paint);
             // 
             // tb_repeatPass
             // 
@@ -622,10 +632,11 @@
             this.EditStudnetPannel.Controls.Add(this.textBox10);
             this.EditStudnetPannel.Controls.Add(this.label19);
             this.EditStudnetPannel.Controls.Add(this.EditStudentCombobox);
-            this.EditStudnetPannel.Location = new System.Drawing.Point(251, 12);
+            this.EditStudnetPannel.Location = new System.Drawing.Point(262, 113);
             this.EditStudnetPannel.Name = "EditStudnetPannel";
-            this.EditStudnetPannel.Size = new System.Drawing.Size(430, 523);
+            this.EditStudnetPannel.Size = new System.Drawing.Size(461, 461);
             this.EditStudnetPannel.TabIndex = 7;
+            this.EditStudnetPannel.Paint += new System.Windows.Forms.PaintEventHandler(this.EditStudnetPannel_Paint);
             // 
             // textBox6
             // 
@@ -857,14 +868,15 @@
             this.DeleteStudentPanel.Controls.Add(this.DeleteButton);
             this.DeleteStudentPanel.Controls.Add(this.choose_id);
             this.DeleteStudentPanel.Controls.Add(this.DeleteStudentCombobox);
-            this.DeleteStudentPanel.Location = new System.Drawing.Point(251, 12);
+            this.DeleteStudentPanel.Location = new System.Drawing.Point(277, 113);
             this.DeleteStudentPanel.Name = "DeleteStudentPanel";
-            this.DeleteStudentPanel.Size = new System.Drawing.Size(430, 520);
+            this.DeleteStudentPanel.Size = new System.Drawing.Size(383, 192);
             this.DeleteStudentPanel.TabIndex = 8;
+            this.DeleteStudentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.DeleteStudentPanel_Paint);
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(159, 277);
+            this.DeleteButton.Location = new System.Drawing.Point(170, 112);
             this.DeleteButton.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(79, 29);
@@ -878,21 +890,108 @@
             this.choose_id.AutoSize = true;
             this.choose_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.choose_id.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.choose_id.Location = new System.Drawing.Point(119, 215);
+            this.choose_id.Location = new System.Drawing.Point(130, 50);
             this.choose_id.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.choose_id.Name = "choose_id";
             this.choose_id.Size = new System.Drawing.Size(76, 18);
             this.choose_id.TabIndex = 5;
             this.choose_id.Text = "Choose id";
+            this.choose_id.Click += new System.EventHandler(this.choose_id_Click);
             // 
             // DeleteStudentCombobox
             // 
             this.DeleteStudentCombobox.FormattingEnabled = true;
-            this.DeleteStudentCombobox.Location = new System.Drawing.Point(195, 215);
+            this.DeleteStudentCombobox.Location = new System.Drawing.Point(206, 50);
             this.DeleteStudentCombobox.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteStudentCombobox.Name = "DeleteStudentCombobox";
             this.DeleteStudentCombobox.Size = new System.Drawing.Size(116, 21);
             this.DeleteStudentCombobox.TabIndex = 4;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.helloLabel);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.groupBox3.Location = new System.Drawing.Point(360, 12);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(345, 84);
+            this.groupBox3.TabIndex = 9;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // helloLabel
+            // 
+            this.helloLabel.AutoSize = true;
+            this.helloLabel.Location = new System.Drawing.Point(13, 35);
+            this.helloLabel.Name = "helloLabel";
+            this.helloLabel.Size = new System.Drawing.Size(55, 17);
+            this.helloLabel.TabIndex = 1;
+            this.helloLabel.Text = "Hello, ";
+            this.helloLabel.Click += new System.EventHandler(this.helloLabel_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button7);
+            this.groupBox2.Controls.Add(this.searchTextBox);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(313, 84);
+            this.groupBox2.TabIndex = 10;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Search";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(174, 35);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "search";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // searchTextBox
+            // 
+            this.searchTextBox.Location = new System.Drawing.Point(20, 36);
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(148, 22);
+            this.searchTextBox.TabIndex = 2;
+            // 
+            // gGroupBox1
+            // 
+            this.gGroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gGroupBox1.Controls.Add(this.addStudentButton);
+            this.gGroupBox1.Controls.Add(this.shiftsButton);
+            this.gGroupBox1.Controls.Add(this.editStudentButton);
+            this.gGroupBox1.Controls.Add(this.removeStudentFromClassBotton);
+            this.gGroupBox1.Controls.Add(this.removeStudentButton);
+            this.gGroupBox1.Controls.Add(this.studentToClassButton);
+            this.gGroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.gGroupBox1.ForeColor = System.Drawing.Color.Black;
+            this.gGroupBox1.Location = new System.Drawing.Point(12, 128);
+            this.gGroupBox1.Name = "gGroupBox1";
+            this.gGroupBox1.Size = new System.Drawing.Size(223, 380);
+            this.gGroupBox1.TabIndex = 8;
+            this.gGroupBox1.TabStop = false;
+            this.gGroupBox1.Text = "Actions";
+            // 
+            // addStudentButton
+            // 
+            this.addStudentButton.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.addStudentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.addStudentButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addStudentButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.addStudentButton.ForeColor = System.Drawing.Color.White;
+            this.addStudentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addStudentButton.Location = new System.Drawing.Point(16, 35);
+            this.addStudentButton.Name = "addStudentButton";
+            this.addStudentButton.Size = new System.Drawing.Size(190, 27);
+            this.addStudentButton.TabIndex = 0;
+            this.addStudentButton.Text = "Add Student";
+            this.addStudentButton.UseVisualStyleBackColor = false;
+            this.addStudentButton.Click += new System.EventHandler(this.addStudentButton_Click);
             // 
             // shiftsButton
             // 
@@ -902,7 +1001,7 @@
             this.shiftsButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.shiftsButton.ForeColor = System.Drawing.Color.White;
             this.shiftsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.shiftsButton.Location = new System.Drawing.Point(24, 296);
+            this.shiftsButton.Location = new System.Drawing.Point(16, 315);
             this.shiftsButton.Name = "shiftsButton";
             this.shiftsButton.Size = new System.Drawing.Size(190, 27);
             this.shiftsButton.TabIndex = 5;
@@ -918,29 +1017,13 @@
             this.editStudentButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.editStudentButton.ForeColor = System.Drawing.Color.White;
             this.editStudentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.editStudentButton.Location = new System.Drawing.Point(24, 100);
+            this.editStudentButton.Location = new System.Drawing.Point(16, 93);
             this.editStudentButton.Name = "editStudentButton";
             this.editStudentButton.Size = new System.Drawing.Size(190, 27);
             this.editStudentButton.TabIndex = 4;
             this.editStudentButton.Text = "Edit Student";
             this.editStudentButton.UseVisualStyleBackColor = false;
             this.editStudentButton.Click += new System.EventHandler(this.editStudentButton_Click);
-            // 
-            // removeStudentButton
-            // 
-            this.removeStudentButton.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.removeStudentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.removeStudentButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.removeStudentButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.removeStudentButton.ForeColor = System.Drawing.Color.White;
-            this.removeStudentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.removeStudentButton.Location = new System.Drawing.Point(24, 149);
-            this.removeStudentButton.Name = "removeStudentButton";
-            this.removeStudentButton.Size = new System.Drawing.Size(190, 27);
-            this.removeStudentButton.TabIndex = 3;
-            this.removeStudentButton.Text = "Remove Student ";
-            this.removeStudentButton.UseVisualStyleBackColor = false;
-            this.removeStudentButton.Click += new System.EventHandler(this.removeStudentButton_Click);
             // 
             // removeStudentFromClassBotton
             // 
@@ -950,13 +1033,29 @@
             this.removeStudentFromClassBotton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.removeStudentFromClassBotton.ForeColor = System.Drawing.Color.White;
             this.removeStudentFromClassBotton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.removeStudentFromClassBotton.Location = new System.Drawing.Point(24, 246);
+            this.removeStudentFromClassBotton.Location = new System.Drawing.Point(16, 257);
             this.removeStudentFromClassBotton.Name = "removeStudentFromClassBotton";
             this.removeStudentFromClassBotton.Size = new System.Drawing.Size(190, 27);
             this.removeStudentFromClassBotton.TabIndex = 2;
             this.removeStudentFromClassBotton.Text = "Remove Student From Class";
             this.removeStudentFromClassBotton.UseVisualStyleBackColor = false;
             this.removeStudentFromClassBotton.Click += new System.EventHandler(this.removeStudentFromClassBotton_Click);
+            // 
+            // removeStudentButton
+            // 
+            this.removeStudentButton.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.removeStudentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.removeStudentButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.removeStudentButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.removeStudentButton.ForeColor = System.Drawing.Color.White;
+            this.removeStudentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.removeStudentButton.Location = new System.Drawing.Point(16, 150);
+            this.removeStudentButton.Name = "removeStudentButton";
+            this.removeStudentButton.Size = new System.Drawing.Size(190, 27);
+            this.removeStudentButton.TabIndex = 3;
+            this.removeStudentButton.Text = "Remove Student ";
+            this.removeStudentButton.UseVisualStyleBackColor = false;
+            this.removeStudentButton.Click += new System.EventHandler(this.removeStudentButton_Click);
             // 
             // studentToClassButton
             // 
@@ -966,7 +1065,7 @@
             this.studentToClassButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.studentToClassButton.ForeColor = System.Drawing.Color.White;
             this.studentToClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.studentToClassButton.Location = new System.Drawing.Point(24, 198);
+            this.studentToClassButton.Location = new System.Drawing.Point(16, 202);
             this.studentToClassButton.Name = "studentToClassButton";
             this.studentToClassButton.Size = new System.Drawing.Size(190, 27);
             this.studentToClassButton.TabIndex = 1;
@@ -974,56 +1073,37 @@
             this.studentToClassButton.UseVisualStyleBackColor = false;
             this.studentToClassButton.Click += new System.EventHandler(this.studentToClassButton_Click);
             // 
-            // addStudentButton
-            // 
-            this.addStudentButton.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.addStudentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.addStudentButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.addStudentButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.addStudentButton.ForeColor = System.Drawing.Color.White;
-            this.addStudentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addStudentButton.Location = new System.Drawing.Point(24, 47);
-            this.addStudentButton.Name = "addStudentButton";
-            this.addStudentButton.Size = new System.Drawing.Size(190, 27);
-            this.addStudentButton.TabIndex = 0;
-            this.addStudentButton.Text = "Add Student";
-            this.addStudentButton.UseVisualStyleBackColor = false;
-            this.addStudentButton.Click += new System.EventHandler(this.addStudentButton_Click);
-            // 
             // SecretaryMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(693, 547);
-            this.Controls.Add(this.shiftsButton);
-            this.Controls.Add(this.editStudentButton);
-            this.Controls.Add(this.removeStudentButton);
-            this.Controls.Add(this.removeStudentFromClassBotton);
-            this.Controls.Add(this.studentToClassButton);
-            this.Controls.Add(this.addStudentButton);
-            this.Controls.Add(this.DeleteStudentPanel);
+            this.ClientSize = new System.Drawing.Size(749, 595);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.EditStudnetPannel);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.AddStudentPannel);
+            this.Controls.Add(this.gGroupBox1);
+            this.Controls.Add(this.DeleteStudentPanel);
             this.Name = "SecretaryMenu";
             this.Text = "SecretaryMenu";
+            this.Load += new System.EventHandler(this.SecretaryMenu_Load);
             this.AddStudentPannel.ResumeLayout(false);
             this.AddStudentPannel.PerformLayout();
             this.EditStudnetPannel.ResumeLayout(false);
             this.EditStudnetPannel.PerformLayout();
             this.DeleteStudentPanel.ResumeLayout(false);
             this.DeleteStudentPanel.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.gGroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button addStudentButton;
-        private System.Windows.Forms.Button studentToClassButton;
-        private System.Windows.Forms.Button removeStudentFromClassBotton;
-        private System.Windows.Forms.Button removeStudentButton;
-        private System.Windows.Forms.Button editStudentButton;
-        private System.Windows.Forms.Button shiftsButton;
         private System.Windows.Forms.Panel AddStudentPannel;
         private System.Windows.Forms.TextBox tb_repeatPass;
         private System.Windows.Forms.TextBox tb_pass;
@@ -1095,5 +1175,17 @@
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Label choose_id;
         private System.Windows.Forms.ComboBox DeleteStudentCombobox;
+        private GButton addStudentButton;
+        private GButton studentToClassButton;
+        private GButton removeStudentFromClassBotton;
+        private GButton removeStudentButton;
+        private GButton editStudentButton;
+        private GButton shiftsButton;
+        private GGroupBox gGroupBox1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label helloLabel;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox searchTextBox;
     }
 }

@@ -132,12 +132,6 @@
     <Compile Include="GLabel.Designer.cs">
       <DependentUpon>GLabel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shifts.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Shifts.Designer.cs">
-      <DependentUpon>Shifts.cs</DependentUpon>
-    </Compile>
     <Compile Include="SingleUser.cs" />
     <Compile Include="StudentMenu.cs">
       <SubType>Form</SubType>
@@ -312,9 +306,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GForm.resx">
       <DependentUpon>GForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Shifts.resx">
-      <DependentUpon>Shifts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentMenu.resx">
       <DependentUpon>StudentMenu.cs</DependentUpon>
