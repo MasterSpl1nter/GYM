@@ -55,19 +55,22 @@ namespace newGym
                     int MonthDiff = dateTimePicker1.Value.Month - dateTimePicker2.Value.Month;
                     int TimeDiff = dateTimePicker2.Value.Hour - dateTimePicker1.Value.Hour;
                     int YearDiff = dateTimePicker1.Value.Year - dateTimePicker2.Value.Year;
-
+                    int DayDiff = dateTimePicker2.Value.Day - dateTimePicker1.Value.Day;
                     //   if (TimeDiff <= 0)
                     //      MessageBox.Show("משך החוג קצר מדי");
                     //   else
-                    if (TimeDiff > 6 || MonthDiff > 0 || YearDiff > 0)
+                    if (TimeDiff > 4 ||  DayDiff !=0 || MonthDiff > 0 || YearDiff > 0){
                         MessageBox.Show("משך החוג ארוך מדי");
-
+                    return;
+                    }
                     if (textBox1.Text == "" || textBox2.Text == "")
+                    {
                         MessageBox.Show("לא מולאו כל הפרטים");
-
+                        return;
+                    }
                     else
                     {
-                        if (SaveData(int.Parse(textBox1.Text), textBox2.Text, int.Parse(comboBox1.Text), int.Parse(comboBox2.Text))
+                        if (SaveData(int.Parse(textBox1.Text), textBox2.Text, int.Parse(comboBox1.Text), id != -1 ? id : int.Parse(comboBox2.Text))
                             && (SaveDate(int.Parse(textBox1.Text), Start, End)))
                         {
                             MessageBox.Show("הפרטים נוספו בהצלחה");

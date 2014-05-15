@@ -10,7 +10,7 @@ namespace newGym
 {
     public class Guide : Person
     {
-        private int salary;
+        //private int salary;
 
         public Guide():base() {
             this.salary=0;
@@ -21,6 +21,8 @@ namespace newGym
         {
             this.salary = salary;
         }
+        public int salary { get; set; }
+
         protected override bool CheckLogin(DataTable dt,string user,string pass)
         {
             if (MySQL.Query(dt,"SELECT * FROM guide where username='" + user + "'" + " and password='" + pass + "'") == 0)
@@ -84,7 +86,7 @@ namespace newGym
         protected override void setSalary(int salary)
         {
             this.salary = salary;
-
         }
+
     }
 }

@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace newGym
 {
     public partial class GuideMenu : Form
     {
         private int count = 0;
-        DateTime[] arr;
+        List<DateTime> arr;
         DataTable dtmp;
         DataTable dt;
         Guide guide;
@@ -25,13 +26,7 @@ namespace newGym
             InitializeComponent();
             timer1.Start();
             loggedLabel.Text = guide.UserName;
-            MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.guideid=" + guide.Id);
-            arr = new DateTime[dt.Rows.Count];
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                arr[i] = Convert.ToDateTime(dt.Rows[i]["starttime"]);
-            }
-            this.monthCalendar1.MonthlyBoldedDates = arr;
+            UpdateCalendar();
             /*      Dictionary<Tuple<DateTime, int>, int> dic = new Dictionary<Tuple<DateTime, int>, int>();
                   for (int i = 0; i < dt.Rows.Count; i++)
                   {
@@ -41,7 +36,19 @@ namespace newGym
                       dic.Add(key, index);
                   }*/
         }
-
+        private void UpdateCalendar()
+        {
+            MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.guideid=" + guide.Id);
+            arr = new List<DateTime>();
+            for (int i = 0,j = 0; i < dt.Rows.Count;i++)
+            {
+                if (Convert.ToDateTime(dt.Rows[i]["starttime"].ToString()).Month == DateTime.Now.Month)
+                {
+                    arr.Add(Convert.ToDateTime(dt.Rows[i]["starttime"]));
+                }
+            }
+            this.monthCalendar1.MonthlyBoldedDates = (DateTime[])arr.ToArray();
+        }
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
             dtmp = new DataTable();
@@ -77,6 +84,7 @@ namespace newGym
                 starttimeLabel.Text = "";
                 endtimeLabel.Text = "";
                 tothourLabel.Text = "";
+                paymentLabel.Text = "";
                 hScrollBar1.Visible = false;
             }
                 /*
@@ -109,18 +117,20 @@ namespace newGym
             starttimeLabel.Text = dtmp.Rows[i]["starttime"].ToString().Split(' ')[1];
             endtimeLabel.Text = dtmp.Rows[i]["endtime"].ToString().Split(' ')[1];
             tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dtmp.Rows[i]["endtime"]) - Convert.ToDateTime(dtmp.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
+            paymentLabel.Text = (guide.salary * (Convert.ToDouble(TimeSpan.Parse(tothourLabel.Text).TotalHours) + (TimeSpan.Parse(tothourLabel.Text).TotalMinutes) > 0 ? TimeSpan.Parse(tothourLabel.Text).TotalMinutes / 60: 0)).ToString("#.00$");
         }
-
         private void button13_Click(object sender, EventArgs e)
         {
             fAddClass ac = new fAddClass(guide.Id);
             ac.ShowDialog();
+            UpdateCalendar();            
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
             fDelClass ac = new fDelClass();
             ac.ShowDialog();
+            UpdateCalendar();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -176,7 +186,9 @@ namespace newGym
         {
             fEditClass ec = new fEditClass();
             ec.ShowDialog();
+            UpdateCalendar();
         }
+
 
     }
 }
