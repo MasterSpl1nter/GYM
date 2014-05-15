@@ -15,16 +15,25 @@ namespace newGym
         
         public ManagerResult(string value)
         {
-            InitializeComponent();
-            getDT(value);
-
+            
+                
+                InitializeComponent();
+                getDT(value);
+            
         }
         public void getDT(string value)
         {
-            string []arr= {"manager","guide","trainer","student","worker"};
+            string []arr= {"manager","guide","trainer","student","worker","edit"};
             int retval;
             DataTable dt1=new DataTable();
             MySQL.Query(dt1, "SELECT id,firstname,lastname,email,permission FROM gym.guide where id=0");
+            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
+            
+            btn.HeaderText = "Edit Data";
+            btn.Text = "Edit";
+            btn.Name = "EditBtn";
+            btn.UseColumnTextForButtonValue = true;
+            
             int count=0;
             for (int i = 0; i < arr.Length; i++)
             {
@@ -56,7 +65,10 @@ namespace newGym
                 
                 //continue
             }
+            
+            
             this.dataGridResult.DataSource = dt1;
+            dataGridResult.Columns.Add(btn);
 
         }
         private string GetTypeByPerm(string perm)
@@ -69,7 +81,9 @@ namespace newGym
 
         private void dataGridResult_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            MessageBox.Show(dataGridResult["id", e.RowIndex].ToString());
         }
+        
+
     }
 }

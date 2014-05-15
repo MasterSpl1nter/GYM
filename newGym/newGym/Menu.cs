@@ -282,6 +282,7 @@ namespace newGym
 
         private void button7_Click(object sender, EventArgs e)
         {
+            if (this.searchTextBox.Text.Equals("")) return;
             new ManagerResult(this.searchTextBox.Text).ShowDialog();
         }
 
