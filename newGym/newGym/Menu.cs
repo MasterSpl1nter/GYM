@@ -286,5 +286,13 @@ namespace newGym
             new ManagerResult(this.searchTextBox.Text).ShowDialog();
         }
 
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            fDelClass fd = new fDelClass(-2);
+            fd.ShowDialog();
+        }
+
+
     }
     }

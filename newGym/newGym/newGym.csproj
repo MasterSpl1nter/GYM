@@ -96,6 +96,12 @@
     <Compile Include="fEditClass.Designer.cs">
       <DependentUpon>fEditClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuideShifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideShifts.Designer.cs">
+      <DependentUpon>GuideShifts.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerResult.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -295,6 +301,9 @@
     <EmbeddedResource Include="fEditClass.resx">
       <DependentUpon>fEditClass.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GuideShifts.resx">
+      <DependentUpon>GuideShifts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerResult.resx">
       <DependentUpon>ManagerResult.cs</DependentUpon>
     </EmbeddedResource>
@@ -416,6 +425,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1399410901_trash1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1400176623_applications-engineering.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1400176769_applications-engineering.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

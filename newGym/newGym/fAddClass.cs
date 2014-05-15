@@ -68,6 +68,13 @@ namespace newGym
                         MessageBox.Show("לא מולאו כל הפרטים");
                         return;
                     }
+                    var sub = dateTimePicker1.Value - dateTimePicker2.Value;
+
+                    if (sub.TotalHours>0)
+                    {
+                        MessageBox.Show("Invalid Start/End date.");
+                        return;
+                    }
                     else
                     {
                         if (SaveData(int.Parse(textBox1.Text), textBox2.Text, int.Parse(comboBox1.Text), id != -1 ? id : int.Parse(comboBox2.Text))

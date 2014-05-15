@@ -117,7 +117,7 @@ namespace newGym
             starttimeLabel.Text = dtmp.Rows[i]["starttime"].ToString().Split(' ')[1];
             endtimeLabel.Text = dtmp.Rows[i]["endtime"].ToString().Split(' ')[1];
             tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dtmp.Rows[i]["endtime"]) - Convert.ToDateTime(dtmp.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
-            paymentLabel.Text = (guide.salary * (Convert.ToDouble(TimeSpan.Parse(tothourLabel.Text).TotalHours) + (TimeSpan.Parse(tothourLabel.Text).TotalMinutes) > 0 ? TimeSpan.Parse(tothourLabel.Text).TotalMinutes / 60: 0)).ToString("#.00$");
+            paymentLabel.Text = (guide.salary * (Convert.ToDouble(TimeSpan.Parse(tothourLabel.Text).TotalHours) + ((TimeSpan.Parse(tothourLabel.Text).TotalMinutes) > 0 ? (TimeSpan.Parse(tothourLabel.Text).TotalMinutes - TimeSpan.Parse(tothourLabel.Text).TotalHours * 60) / 60 : 0))).ToString("#.00$");
         }
         private void button13_Click(object sender, EventArgs e)
         {
@@ -187,6 +187,12 @@ namespace newGym
             fEditClass ec = new fEditClass(guide.Id);
             ec.ShowDialog();
             UpdateCalendar();
+        }
+
+        private void gButton1_Click(object sender, EventArgs e)
+        {
+            GuideShifts gsi = new GuideShifts();
+            gsi.ShowDialog();
         }
 
 

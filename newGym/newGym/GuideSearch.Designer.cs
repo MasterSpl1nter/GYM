@@ -41,14 +41,14 @@
             this.searchResult.Location = new System.Drawing.Point(12, 12);
             this.searchResult.Name = "searchResult";
             this.searchResult.ReadOnly = true;
-            this.searchResult.Size = new System.Drawing.Size(578, 231);
+            this.searchResult.Size = new System.Drawing.Size(829, 231);
             this.searchResult.TabIndex = 0;
             // 
             // GuideSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 255);
+            this.ClientSize = new System.Drawing.Size(853, 255);
             this.Controls.Add(this.searchResult);
             this.Name = "GuideSearch";
             this.Text = "GuideSearch";

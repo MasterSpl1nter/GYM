@@ -89,6 +89,7 @@
             this.button18 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.ManagerActions = new System.Windows.Forms.GroupBox();
+            this.button24 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
@@ -737,6 +738,7 @@
             // ManagerActions
             // 
             this.ManagerActions.BackColor = System.Drawing.Color.Transparent;
+            this.ManagerActions.Controls.Add(this.button24);
             this.ManagerActions.Controls.Add(this.button23);
             this.ManagerActions.Controls.Add(this.button22);
             this.ManagerActions.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
@@ -747,6 +749,18 @@
             this.ManagerActions.TabIndex = 16;
             this.ManagerActions.TabStop = false;
             this.ManagerActions.Text = "Actions";
+            // 
+            // button24
+            // 
+            this.button24.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button24.Location = new System.Drawing.Point(21, 283);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(158, 24);
+            this.button24.TabIndex = 2;
+            this.button24.Text = "Delete Class";
+            this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button23
             // 
@@ -878,5 +892,6 @@
         private System.Windows.Forms.GroupBox ManagerActions;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button24;
     }
 }
