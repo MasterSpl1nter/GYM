@@ -30,7 +30,6 @@
         {
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label1 = new System.Windows.Forms.Label();
-            this.cancelCourse_panel = new System.Windows.Forms.Panel();
             this.addCourse_panel = new System.Windows.Forms.Panel();
             this.EditDetail_panel = new System.Windows.Forms.Panel();
             this.password_box = new System.Windows.Forms.TextBox();
@@ -51,7 +50,7 @@
             this.edit_button = new System.Windows.Forms.Button();
             this.add_course = new System.Windows.Forms.Button();
             this.Cancel_course = new System.Windows.Forms.Button();
-            this.addCourse_panel.SuspendLayout();
+            this.cancelCourse_panel = new System.Windows.Forms.Panel();
             this.EditDetail_panel.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.gGroupBox1.SuspendLayout();
@@ -73,27 +72,17 @@
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 3;
             // 
-            // cancelCourse_panel
-            // 
-            this.cancelCourse_panel.Location = new System.Drawing.Point(2, 12);
-            this.cancelCourse_panel.Margin = new System.Windows.Forms.Padding(2);
-            this.cancelCourse_panel.Name = "cancelCourse_panel";
-            this.cancelCourse_panel.Size = new System.Drawing.Size(375, 439);
-            this.cancelCourse_panel.TabIndex = 6;
-            // 
             // addCourse_panel
             // 
-            this.addCourse_panel.Controls.Add(this.cancelCourse_panel);
-            this.addCourse_panel.Location = new System.Drawing.Point(3, 313);
+            this.addCourse_panel.Location = new System.Drawing.Point(320, 91);
             this.addCourse_panel.Margin = new System.Windows.Forms.Padding(2);
             this.addCourse_panel.Name = "addCourse_panel";
-            this.addCourse_panel.Size = new System.Drawing.Size(366, 437);
+            this.addCourse_panel.Size = new System.Drawing.Size(355, 431);
             this.addCourse_panel.TabIndex = 1;
             // 
             // EditDetail_panel
             // 
             this.EditDetail_panel.Controls.Add(this.password_box);
-            this.EditDetail_panel.Controls.Add(this.addCourse_panel);
             this.EditDetail_panel.Controls.Add(this.password_label);
             this.EditDetail_panel.Controls.Add(this.editDetail_button);
             this.EditDetail_panel.Controls.Add(this.username_box);
@@ -310,21 +299,30 @@
             this.Cancel_course.Text = "Cancel course";
             this.Cancel_course.UseVisualStyleBackColor = true;
             // 
+            // cancelCourse_panel
+            // 
+            this.cancelCourse_panel.Location = new System.Drawing.Point(320, 91);
+            this.cancelCourse_panel.Margin = new System.Windows.Forms.Padding(2);
+            this.cancelCourse_panel.Name = "cancelCourse_panel";
+            this.cancelCourse_panel.Size = new System.Drawing.Size(355, 431);
+            this.cancelCourse_panel.TabIndex = 9;
+            // 
             // StudentMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(722, 554);
-            this.Controls.Add(this.EditDetail_panel);
+            this.Controls.Add(this.addCourse_panel);
+            this.Controls.Add(this.cancelCourse_panel);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.gGroupBox1);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.EditDetail_panel);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StudentMenu";
             this.Text = "StudentMenu";
             this.Load += new System.EventHandler(this.StudentMenu_Load);
-            this.addCourse_panel.ResumeLayout(false);
             this.EditDetail_panel.ResumeLayout(false);
             this.EditDetail_panel.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -342,7 +340,6 @@
         private System.Windows.Forms.Button add_course;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Cancel_course;
-        private System.Windows.Forms.Panel cancelCourse_panel;
         private System.Windows.Forms.Panel addCourse_panel;
         private System.Windows.Forms.Panel EditDetail_panel;
         private GGroupBox gGroupBox1;
@@ -360,5 +357,6 @@
         private System.Windows.Forms.TextBox firstname_box;
         private System.Windows.Forms.TextBox password_box;
         private System.Windows.Forms.Label password_label;
+        private System.Windows.Forms.Panel cancelCourse_panel;
     }
 }

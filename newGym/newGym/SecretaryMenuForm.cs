@@ -33,27 +33,28 @@ namespace newGym
         public SecretaryMenu()
         {
             InitializeComponent();
-            helloLabel.Text = "Hello, " + SingleUser.Instance.get_user().FirstName + " " + SingleUser.Instance.get_user().LastName;
+            helloLabel.Text = "" + SingleUser.Instance.get_user().FirstName + " " + SingleUser.Instance.get_user().LastName;
+            makeAllInvisible();
+        }
+
+        private void makeAllInvisible(){
             AddStudentPannel.Visible = false;
             EditStudnetPannel.Visible = false;
             DeleteStudentPanel.Visible = false;
-
+            AddStudentToClassPannel.Visible = false;
+    
         }
-
 
 
         private void addStudentButton_Click(object sender, EventArgs e)
         {
-            EditStudnetPannel.Visible = false;
-            DeleteStudentPanel.Visible = false;
-
+            makeAllInvisible();
             AddStudentPannel.Visible = true;
         }
 
         private void editStudentButton_Click(object sender, EventArgs e)
         {
-            AddStudentPannel.Visible = false; 
-            DeleteStudentPanel.Visible = false;
+            makeAllInvisible();
 
             EditStudnetPannel.Visible = true;
             fillcombo(EditStudentCombobox);
@@ -61,18 +62,22 @@ namespace newGym
 
         private void removeStudentButton_Click(object sender, EventArgs e)
         {
-            AddStudentPannel.Visible = false;
-            EditStudnetPannel.Visible = false;
+            makeAllInvisible();
 
             DeleteStudentPanel.Visible = true;
-
-
+            
             fillcombo(DeleteStudentCombobox);
         }
 
         private void studentToClassButton_Click(object sender, EventArgs e)
         {
-
+            makeAllInvisible();
+            AddStudentToClassPannel.Visible = true;
+            
+            DataTable dt = new DataTable();
+            MySQL.Select(dt,"class");
+            ClassDataGrid.Columns.Clear();
+            ClassDataGrid.DataSource = dt;
         }
 
         private void removeStudentFromClassBotton_Click(object sender, EventArgs e)
@@ -475,14 +480,12 @@ namespace newGym
 
         }
 
-     
         private void id_box_KeyPress(object sender, KeyPressEventArgs e)
         {
             const char Delete = (char)8;
             e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != Delete;
         }
 
-      
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             Student.Delete(DeleteStudentCombobox.Text);
@@ -493,48 +496,8 @@ namespace newGym
 
         }
 
-        private void SecretaryMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DeleteStudentPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void AddStudentPannel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void helloLabel_Click(object sender, EventArgs e)
-        {
         
-        }
 
-        private void EditStudnetPannel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void choose_id_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-       
-     
-
-       
-         
-         
-       
 
     }
 }
