@@ -85,7 +85,9 @@ namespace newGym
 
         private void removeStudentFromClassBotton_Click(object sender, EventArgs e)
         {
+            makeAllInvisible();
             RemoveStudentFromClassPannel.Visible = true;
+            
             fillcombo(StudnetCombo);
 
             DataTable dt = new DataTable();
@@ -93,8 +95,6 @@ namespace newGym
             StudnetClassDataGrid.Columns.Clear();
             StudnetClassDataGrid.DataSource = dt;
 
-            
-            
         }
 
         private void shiftsButton_Click(object sender, EventArgs e)
@@ -479,21 +479,19 @@ namespace newGym
             const char Delete = (char)8;
             e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != Delete;
         }
-
+        
+        //handled
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             Student.Delete(DeleteStudentCombobox.Text);
             MessageBox.Show("The student deleted succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            DeleteStudentCombobox.Items.Clear();
-            DeleteStudentCombobox.Text = "";
-            fillcombo(DeleteStudentCombobox);
-
+            removeStudentButton_Click(null,null);
         }
-
 
 
         public void fillcombo(ComboBox combo)
         {
+            combo.Items.Clear();
             DataTable dt = new DataTable();
             try
             {
@@ -512,6 +510,7 @@ namespace newGym
 
         public void fillcombo2(ComboBox combo)
         {
+            combo.Items.Clear();
             DataTable dt = new DataTable();
             try
             {
@@ -528,16 +527,15 @@ namespace newGym
             }
         }
 
-       
+        //handled
         private void AddStudentToClassButton_Click(object sender, EventArgs e)
         {
             Student.addStudToClass(ClassIDComboBox.Text, StudnetIDComboBox.Text);
+            studentToClassButton_Click(null,null);
         }
-
 
         private void StudnetCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             DataTable dt = new DataTable();
             try
             {
@@ -557,13 +555,13 @@ namespace newGym
             }
         }
 
-
+        //handled
         private void RemoveStudentFromClassButton_Click(object sender, EventArgs e)
         {
             Student.removeStudentFromClass(StudnetCombo.Text, relevantClasses.Text);
+            removeStudentFromClassBotton_Click(null,null);
         }
 
-        
 
     }
 }

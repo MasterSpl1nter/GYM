@@ -22,43 +22,57 @@ namespace newGym
         //DateTime enddate;
         //DateTime medcert;
 
+        //initalization
         public StudentMenu()
         {
             InitializeComponent();
             helloLabel.Text = "Hello, " + SingleUser.Instance.get_user().FirstName + " " + SingleUser.Instance.get_user().LastName;
+            makeAllInvisible();
+            InitializeCalendar();
+        }
+
+        private void InitializeCalendar()
+        {
+            DataTable dt = new DataTable();
+            DateTime[] arr;
+            int i = 0 ;
+            try
+            {
+                //well this is a tought querry , pull from the student class all the classes that trhe student is singed up for and from those grab the name room guideid and id of the class
+                MySQL.Query(dt, "SELECT classid, starttime , endtime FROM classtime WHERE (classid) IN (SELECT classid FROM studentclass WHERE studentid = " + SingleUser.Instance.get_user().Id.ToString() + ");");
+                arr = new DateTime[dt.Rows.Count];
+                foreach (DataRow row in dt.Rows)
+                {
+              
+                   arr[i] = Convert.ToDateTime(row["starttime"].ToString());
+                   i++;
+                }
+                StudnetClassesCalendar.MonthlyBoldedDates = arr;
+            }
+            
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+        }
+
+        private void makeAllInvisible()
+        {
             EditDetail_panel.Visible = false;
             addCourse_panel.Visible = false;
             cancelCourse_panel.Visible = false;
-
-
         }
 
 
-        private void StudentMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        //edit data
         private void edit_button_Click(object sender, EventArgs e)
         {
-            addCourse_panel.Visible = false;
-            cancelCourse_panel.Visible = false;
+            makeAllInvisible();
+
             EditDetail_panel.Visible = true;
+
             //connect to the DataTable
             string id = SingleUser.Instance.get_user().Id.ToString();
             string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
@@ -88,28 +102,6 @@ namespace newGym
             {
                 MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void firstname_box_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void resetColors()
@@ -174,5 +166,91 @@ namespace newGym
 
 
         }
+
+       
+        //add course
+        private void add_course_Click(object sender, EventArgs e)
+        {
+            makeAllInvisible();
+            addCourse_panel.Visible = true;
+
+
+            DataTable dt = new DataTable();
+            MySQL.Select(dt, "class");
+            ClassDataGrid.Columns.Clear();
+            ClassDataGrid.DataSource = dt;
+
+            fillcombo2(ClassIDComboBox);
+
+        }
+
+
+        public void fillcombo2(ComboBox combo)
+        {
+            combo.Items.Clear();
+            DataTable dt = new DataTable();
+            try
+            {
+                MySQL.Select(dt, "class");
+                foreach (DataRow row in dt.Rows)
+                {
+                    combo.Items.Add(row["id"].ToString());
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void AddStudentToClassButton_Click(object sender, EventArgs e)
+        {
+
+            Student.addStudToClass( ClassIDComboBox.Text, SingleUser.Instance.get_user().Id.ToString());
+            add_course_Click(null,null);
+        }
+
+        private void Cancel_course_Click(object sender, EventArgs e)
+        {
+            makeAllInvisible();
+
+            cancelCourse_panel.Visible = true;
+
+            relevantClasses.Items.Clear();
+            DataTable dt = new DataTable();
+            try
+            {
+                //well this is a tought querry , pull from the student class all the classes that trhe student is singed up for and from those grab the name room guideid and id of the class
+                MySQL.Query(dt, "SELECT id, name , room , guideid FROM class WHERE (id) IN (SELECT classid FROM studentclass WHERE studentid = " + SingleUser.Instance.get_user().Id.ToString() + ");");
+                foreach (DataRow row in dt.Rows)
+                {
+                    relevantClasses.Items.Add(row["id"].ToString());
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            StudnetClassDataGrid.Columns.Clear();
+            StudnetClassDataGrid.DataSource = dt;
+        }
+
+        private void RemoveStudentFromClassButton_Click(object sender, EventArgs e)
+        {
+            Student.removeStudentFromClass( SingleUser.Instance.get_user().Id.ToString() , relevantClasses.Text);
+            Cancel_course_Click(null, null);
+
+
+        }
+
+        private void StudnetClassesCalendar_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+
     }
 }
