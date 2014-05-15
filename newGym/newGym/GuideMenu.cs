@@ -128,7 +128,7 @@ namespace newGym
 
         private void button15_Click(object sender, EventArgs e)
         {
-            fDelClass ac = new fDelClass();
+            fDelClass ac = new fDelClass(guide.Id);
             ac.ShowDialog();
             UpdateCalendar();
         }
@@ -184,7 +184,7 @@ namespace newGym
 
         private void button14_Click(object sender, EventArgs e)
         {
-            fEditClass ec = new fEditClass();
+            fEditClass ec = new fEditClass(guide.Id);
             ec.ShowDialog();
             UpdateCalendar();
         }

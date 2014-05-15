@@ -13,34 +13,50 @@ namespace newGym
 {
     public partial class fDelClass : Form
     {
+        private int id = -1;
         public fDelClass()
         {
             InitializeComponent();
             LoadActivityId();
         }
-
-
+        public fDelClass(int id)
+        {
+            this.id = id;
+            InitializeComponent();
+            LoadActivityId();
+        }
         //Load Activity ID to a combobox
         private void LoadActivityId()
         {
+            var query = "";
             var connectionString = @"server=localhost;userid=root;password=csharp;database=gym";
             using (var connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                var query = "SELECT Id , Name FROM class";
+                if (id == -1)
+                    query = "SELECT Id , Name FROM class";
+                else if (id == -2)
+                    query = "SELECT Id , Name,guideid FROM class";
+                else
+                    query = "SELECT Id , Name FROM class WHERE `guideid`=?Id";
 
                 using (var command = new MySqlCommand(query, connection))
                 {
-
+                    if (id != -1)
+                        command.Parameters.AddWithValue("?id", id);
                     using (var reader = command.ExecuteReader())
                     {
                         while (reader.Read())
-                        {    
-                            comboBox1.Items.Add( new TableItem(reader.GetString("Id"),reader.GetString("Name")));
+                        {
+                            if (id == -2)
+                                comboBox1.Items.Add(new TableItem(reader.GetString("Id") + " - " + reader.GetString("Name"),"GuideID " + reader.GetString("guideid")));
+                            else
+                                comboBox1.Items.Add(new TableItem(reader.GetString("Id"), reader.GetString("Name")));
+
                         }
                     }
+                    connection.Close();
                 }
-                connection.Close();
             }
         }
 
@@ -109,7 +125,7 @@ namespace newGym
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

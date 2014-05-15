@@ -13,8 +13,15 @@ namespace newGym
 {
     public partial class fEditClass : Form
     {
+        private int id = -1;
         public fEditClass()
         {
+            InitializeComponent();
+            LoadActivityId();
+        }
+        public fEditClass(int id)
+        {
+            this.id = id;
             InitializeComponent();
             LoadActivityId();
         }
@@ -26,15 +33,21 @@ namespace newGym
         //Load Activity ID to a combobox
         private void LoadActivityId()
         {
+            var query = "";
             var connectionString = @"server=localhost;userid=root;password=csharp;database=gym";
             using (var connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                var query = "SELECT Id , Name FROM class";
+                if (id == -1)
+                    query = "SELECT Id , Name FROM class";
+                else
+                    query = "SELECT Id , Name FROM class WHERE `guideid`=?Id";
+
 
                 using (var command = new MySqlCommand(query, connection))
                 {
-
+                    if (id != -1)
+                        command.Parameters.AddWithValue("?id", id);
                     using (var reader = command.ExecuteReader())
                     {
                         while (reader.Read())
@@ -46,5 +59,13 @@ namespace newGym
                 connection.Close();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+
     }
 }

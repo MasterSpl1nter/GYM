@@ -59,7 +59,7 @@ namespace newGym
                     //   if (TimeDiff <= 0)
                     //      MessageBox.Show("משך החוג קצר מדי");
                     //   else
-                    if (TimeDiff > 4 ||  DayDiff !=0 || MonthDiff > 0 || YearDiff > 0){
+                    if (TimeDiff > 4 ||  DayDiff !=0 || MonthDiff !=0 || YearDiff !=0){
                         MessageBox.Show("משך החוג ארוך מדי");
                     return;
                     }
@@ -251,6 +251,11 @@ namespace newGym
             }
 
             return true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
     }
