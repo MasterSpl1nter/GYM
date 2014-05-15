@@ -27,8 +27,6 @@ namespace newGym
         DateTime now = DateTime.Now;
         
         
-        
-
 
         public SecretaryMenu()
         {
@@ -42,6 +40,7 @@ namespace newGym
             EditStudnetPannel.Visible = false;
             DeleteStudentPanel.Visible = false;
             AddStudentToClassPannel.Visible = false;
+            RemoveStudentFromClassPannel.Visible = false;
     
         }
 
@@ -78,11 +77,24 @@ namespace newGym
             MySQL.Select(dt,"class");
             ClassDataGrid.Columns.Clear();
             ClassDataGrid.DataSource = dt;
+
+
+            fillcombo(StudnetIDComboBox);
+            fillcombo2(ClassIDComboBox);
         }
 
         private void removeStudentFromClassBotton_Click(object sender, EventArgs e)
         {
+            RemoveStudentFromClassPannel.Visible = true;
+            fillcombo(StudnetCombo);
 
+            DataTable dt = new DataTable();
+            MySQL.Select(dt,"studentclass");
+            StudnetClassDataGrid.Columns.Clear();
+            StudnetClassDataGrid.DataSource = dt;
+
+            
+            
         }
 
         private void shiftsButton_Click(object sender, EventArgs e)
@@ -295,24 +307,6 @@ namespace newGym
             }
         }
 
-        public void fillcombo(ComboBox combo)
-        {
-            DataTable dt = new DataTable();
-            try
-            {
-                MySQL.Select(dt, "student");
-                foreach (DataRow row in dt.Rows)
-                {
-                    combo.Items.Add(row["id"].ToString());
-                }
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void EditStudApply_Click(object sender, EventArgs e)
         {
             
@@ -496,8 +490,80 @@ namespace newGym
 
         }
 
-        
 
+
+        public void fillcombo(ComboBox combo)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                MySQL.Select(dt, "student");
+                foreach (DataRow row in dt.Rows)
+                {
+                    combo.Items.Add(row["id"].ToString());
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void fillcombo2(ComboBox combo)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                MySQL.Select(dt, "class");
+                foreach (DataRow row in dt.Rows)
+                {
+                    combo.Items.Add(row["id"].ToString());
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+       
+        private void AddStudentToClassButton_Click(object sender, EventArgs e)
+        {
+            Student.addStudToClass(ClassIDComboBox.Text, StudnetIDComboBox.Text);
+        }
+
+
+        private void StudnetCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            DataTable dt = new DataTable();
+            try
+            {
+                MySQL.Select(dt, "studentclass");
+                foreach (DataRow row in dt.Rows)
+                {
+                    if (row["studentid"].ToString() == StudnetCombo.Text)
+                    {
+                        relevantClasses.Items.Add(row["classid"].ToString());
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void RemoveStudentFromClassButton_Click(object sender, EventArgs e)
+        {
+            Student.removeStudentFromClass(StudnetCombo.Text, relevantClasses.Text);
+        }
+
+        
 
     }
 }

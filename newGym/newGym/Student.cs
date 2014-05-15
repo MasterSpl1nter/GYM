@@ -39,13 +39,13 @@ namespace newGym
        {
        }
 
-        public void addStudToClass(int classId ){
-            MySQL.Insert("studentclass", "studnetid,classid" , ""+this.Id.ToString()+ " , "+classId.ToString() );
+        public static void addStudToClass(string classId , string studentId ){
+            MySQL.Insert("studentclass", "studentid,classid", "'" + studentId + "','" + classId + "'" );
         }
          
-        public static void removeStudentFromClass ( int idStudent , int idClass) {
+        public static void removeStudentFromClass ( String idStudent , String idClass) {
 
-            MySQL.Delete("studentcalss" , "studentid = "+idStudent.ToString() + "AND " + "classid = " + idClass.ToString() );
+            MySQL.Delete("studentclass" , "studentid = "+idStudent + " AND " + "classid = " + idClass );
         }
 
         protected override bool CheckLogin(DataTable dt, string user, string pass)
