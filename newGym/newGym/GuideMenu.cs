@@ -18,15 +18,24 @@ namespace newGym
         DataTable dtmp;
         DataTable dt;
         Guide guide;
+        DateTime endtime;
+        Timer t;
         public GuideMenu()
         {
             this.guide=(Guide)SingleUser.Instance.get_user();
             //this.guide = guide;
             dt = new DataTable();
             InitializeComponent();
-            timer1.Start();
             loggedLabel.Text = guide.UserName;
             UpdateCalendar();
+            nextClass(dt);
+            timer1.Start();
+            t = new Timer();
+            t.Interval = 1000;
+            t.Tick += new EventHandler(t_Tick);
+            TimeSpan ts = endtime.Subtract(DateTime.Now);
+            nextClassTimer.Text = ts.ToString("d'd 'h'h 'm'm 's's to the next class.'");
+            t.Start();
             /*      Dictionary<Tuple<DateTime, int>, int> dic = new Dictionary<Tuple<DateTime, int>, int>();
                   for (int i = 0; i < dt.Rows.Count; i++)
                   {
@@ -191,9 +200,60 @@ namespace newGym
 
         private void gButton1_Click(object sender, EventArgs e)
         {
+            int classid;
+            try{
+            Int32.TryParse(idLabel.Text,out classid);
+            if (classid==0)
+                throw new FormatException();
+            }
+            catch(FormatException){
+                MessageBox.Show("Please choose class from Calendar.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
+            }
+            GuideSearch gs = new GuideSearch(classid);
+            gs.ShowDialog();
+        }
+
+        private void gButton2_Click(object sender, EventArgs e)
+        {
             GuideShifts gsi = new GuideShifts();
             gsi.ShowDialog();
         }
+        private void nextClass(DataTable dt)
+        {
+            endtime = new DateTime();
+            int j=0;
+            DateTime time = new DateTime();
+            TimeSpan min = new TimeSpan(long.MaxValue);
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                time=Convert.ToDateTime(dt.Rows[i]["starttime"]);
+                if ( time > DateTime.Now)
+                {
+                    TimeSpan tmp = time - DateTime.Now;
+                    if(tmp<min){
+                        min = tmp;
+                        j = i;
+                    }
+                }
+            }
+            endtime = Convert.ToDateTime(dt.Rows[j]["starttime"]);
+        }
+        private void t_Tick(object sender, EventArgs e)
+        {
+            TimeSpan ts = endtime.Subtract(DateTime.Now);
+            nextClassTimer.Text = ts.ToString("d'd 'h'h 'm'm 's's to the next class.'");
+            if (ts<new TimeSpan(0))
+            {
+                //MessageBox.Show("Done.");
+                t.Stop();
+                nextClass(dt);
+                t.Start();
+            }
+            
+            
+        }
+
 
 
     }

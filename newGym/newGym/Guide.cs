@@ -72,7 +72,7 @@ namespace newGym
             if (search.Contains(" "))
             retval= MySQL.Query(dt, "SELECT id,firstname,lastname,email,birthday,startdate,enddate,medcert FROM student where firstname LIKE " + "'%" + search.Split(' ')[0] + "%' and lastname LIKE '%" + search.Split(' ')[1] + "%'");
             else
-             retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email FROM student where firstname LIKE " + "'%" + search + "%'");
+                retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email,birthday,startdate,enddate,medcert FROM student where firstname LIKE " + "'%" + search + "%'");
               return retval;
         }
         protected override void setSalary(int salary)
