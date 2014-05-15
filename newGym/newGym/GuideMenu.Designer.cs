@@ -181,7 +181,7 @@
             // 
             this.nextClassTimer.AutoSize = true;
             this.nextClassTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.nextClassTimer.Location = new System.Drawing.Point(190, 210);
+            this.nextClassTimer.Location = new System.Drawing.Point(183, 210);
             this.nextClassTimer.Name = "nextClassTimer";
             this.nextClassTimer.Size = new System.Drawing.Size(0, 20);
             this.nextClassTimer.TabIndex = 24;

@@ -144,13 +144,13 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::newGym.Properties.Resources._1399228908_preferences_desktop_cryptography1;
+            this.button2.Image = global::newGym.Properties.Resources._1400193459_door_in;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(120, 217);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(86, 27);
             this.button2.TabIndex = 6;
-            this.button2.Text = " Login";
+            this.button2.Text = "   Login";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

@@ -28,14 +28,17 @@ namespace newGym
             InitializeComponent();
             loggedLabel.Text = guide.UserName;
             UpdateCalendar();
-            nextClass(dt);
-            timer1.Start();
-            t = new Timer();
-            t.Interval = 1000;
-            t.Tick += new EventHandler(t_Tick);
-            TimeSpan ts = endtime.Subtract(DateTime.Now);
-            nextClassTimer.Text = ts.ToString("d'd 'h'h 'm'm 's's to the next class.'");
-            t.Start();
+            if (dt.Rows.Count > 0)
+            {
+                nextClass(dt);
+                timer1.Start();
+                t = new Timer();
+                t.Interval = 1000;
+                t.Tick += new EventHandler(t_Tick);
+                TimeSpan ts = endtime.Subtract(DateTime.Now);
+                nextClassTimer.Text = ts.ToString("d'd 'h'h 'm'm 's's to the next class.'");
+                t.Start();
+            }
             /*      Dictionary<Tuple<DateTime, int>, int> dic = new Dictionary<Tuple<DateTime, int>, int>();
                   for (int i = 0; i < dt.Rows.Count; i++)
                   {
@@ -201,6 +204,7 @@ namespace newGym
         private void gButton1_Click(object sender, EventArgs e)
         {
             int classid;
+            int participants;
             try{
             Int32.TryParse(idLabel.Text,out classid);
             if (classid==0)
@@ -208,6 +212,17 @@ namespace newGym
             }
             catch(FormatException){
                 MessageBox.Show("Please choose class from Calendar.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
+            }
+            try
+            {
+                Int32.TryParse(ParticiLabel.Text, out participants);
+                if (participants == 0)
+                    throw new FormatException();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("There are no participats registered to that class.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             GuideSearch gs = new GuideSearch(classid);
