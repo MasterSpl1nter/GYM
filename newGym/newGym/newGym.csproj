@@ -78,6 +78,12 @@
     <Compile Include="DelSecretary.Designer.cs">
       <DependentUpon>DelSecretary.cs</DependentUpon>
     </Compile>
+    <Compile Include="editManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editManager.Designer.cs">
+      <DependentUpon>editManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditSecretary.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -291,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DelSecretary.resx">
       <DependentUpon>DelSecretary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editManager.resx">
+      <DependentUpon>editManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditSecretary.resx">
       <DependentUpon>EditSecretary.cs</DependentUpon>

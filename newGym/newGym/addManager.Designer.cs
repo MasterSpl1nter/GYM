@@ -180,7 +180,7 @@
             // IdComboBox
             // 
             this.IdComboBox.FormattingEnabled = true;
-            this.IdComboBox.Location = new System.Drawing.Point(82, 48);
+            this.IdComboBox.Location = new System.Drawing.Point(154, 48);
             this.IdComboBox.Name = "IdComboBox";
             this.IdComboBox.Size = new System.Drawing.Size(100, 21);
             this.IdComboBox.TabIndex = 42;
