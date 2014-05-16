@@ -59,13 +59,21 @@ namespace newGym
                     //   if (TimeDiff <= 0)
                     //      MessageBox.Show("משך החוג קצר מדי");
                     //   else
+
                     if (TimeDiff > 4 ||  DayDiff !=0 || MonthDiff !=0 || YearDiff !=0){
-                        MessageBox.Show("משך החוג ארוך מדי");
+                        MessageBox.Show("Class time is too long.");
                     return;
                     }
                     if (textBox1.Text == "" || textBox2.Text == "")
                     {
-                        MessageBox.Show("לא מולאו כל הפרטים");
+                        MessageBox.Show("Not all details field.");
+                        return;
+                    }
+                    if ((dateTimePicker2.Value.DayOfWeek == DayOfWeek.Saturday) ||
+                       ((dateTimePicker2.Value.DayOfWeek < DayOfWeek.Friday && dateTimePicker2.Value.DayOfWeek >= DayOfWeek.Sunday) && !(dateTimePicker2.Value.Hour < 23 && dateTimePicker2.Value.Hour > 7)) ||
+                       (dateTimePicker2.Value.DayOfWeek == DayOfWeek.Friday && !(dateTimePicker2.Value.Hour < 14 && dateTimePicker2.Value.Hour > 7)))
+                    {
+                        MessageBox.Show("Gym Opening Hours. Sunday to Thursday: 07:00am - 23:00pm. Friday: 07:00am - 14:00pm.","Error",MessageBoxButtons.OK,MessageBoxIcon.Information);
                         return;
                     }
                     var sub = dateTimePicker1.Value - dateTimePicker2.Value;

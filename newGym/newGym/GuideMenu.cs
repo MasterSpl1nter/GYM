@@ -110,14 +110,12 @@ namespace newGym
             endtimeLabel.Text = dt.Rows[i]["endtime"].ToString().Split(' ')[1];
             tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dt.Rows[i]["endtime"]) - Convert.ToDateTime(dt.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
    //   */  }
-
         private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
-               // MessageBox.Show(count.ToString());
-            hScrollBar1.LargeChange = 99;
                 int i = count % dtmp.Rows.Count;
                 Updateitems(i);
                 count++;
+            
         }
         private void Updateitems(int i)
         {

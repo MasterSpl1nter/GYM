@@ -562,6 +562,5 @@ namespace newGym
             removeStudentFromClassBotton_Click(null,null);
         }
 
-
     }
 }
