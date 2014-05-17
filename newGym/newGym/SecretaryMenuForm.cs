@@ -537,16 +537,15 @@ namespace newGym
 
             MySQL.Query(dt, "select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
             MySQL.Query(dt1, "select starttime,endtime from classtime WHERE classid=" + classid);
-            DateTime StartB = Convert.ToDateTime(dt.Rows[0]["starttime"]);
-            DateTime EndB = Convert.ToDateTime(dt.Rows[0]["endtime"]);
+            DateTime StartB = Convert.ToDateTime(dt1.Rows[0]["starttime"]);
+            DateTime EndB = Convert.ToDateTime(dt1.Rows[0]["endtime"]);
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 DateTime StartA = Convert.ToDateTime(dt.Rows[i]["starttime"]);
                 DateTime EndA = Convert.ToDateTime(dt.Rows[i]["endttime"]);
                 if (StartA < EndB && StartB < EndA)
                 {
-
-                    MessageBox.Show("unavlailable to add this course");
+                    MessageBox.Show("Student is already joined to a class that takes place at the same time.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     studentToClassButton_Click(null, null);
                     return;
                 }
