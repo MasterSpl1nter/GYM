@@ -293,6 +293,16 @@ namespace newGym
             fd.ShowDialog();
         }
 
+        private void classHandleBtn_Click(object sender, EventArgs e)
+        {
+            new ClassHandele().ShowDialog();
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            Room.addRoom();
+        }
+
 
     }
     }

@@ -66,6 +66,12 @@
       <DependentUpon>addUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Applince.cs" />
+    <Compile Include="ClassHandele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassHandele.Designer.cs">
+      <DependentUpon>ClassHandele.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeleteStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -297,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addUser.resx">
       <DependentUpon>addUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassHandele.resx">
+      <DependentUpon>ClassHandele.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteStudent.resx">
       <DependentUpon>DeleteStudent.cs</DependentUpon>

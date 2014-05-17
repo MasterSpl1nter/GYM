@@ -92,6 +92,9 @@
             this.button24 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
+            this.classHandleBtn = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -736,6 +739,9 @@
             // ManagerActions
             // 
             this.ManagerActions.BackColor = System.Drawing.Color.Transparent;
+            this.ManagerActions.Controls.Add(this.button26);
+            this.ManagerActions.Controls.Add(this.button25);
+            this.ManagerActions.Controls.Add(this.classHandleBtn);
             this.ManagerActions.Controls.Add(this.button24);
             this.ManagerActions.Controls.Add(this.button23);
             this.ManagerActions.Controls.Add(this.button22);
@@ -752,7 +758,7 @@
             // 
             this.button24.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button24.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button24.Location = new System.Drawing.Point(15, 89);
+            this.button24.Location = new System.Drawing.Point(15, 153);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(158, 24);
             this.button24.TabIndex = 2;
@@ -784,6 +790,42 @@
             this.button22.Text = "Add Worker";
             this.button22.UseVisualStyleBackColor = false;
             this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // classHandleBtn
+            // 
+            this.classHandleBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.classHandleBtn.FlatAppearance.BorderSize = 0;
+            this.classHandleBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.classHandleBtn.Location = new System.Drawing.Point(15, 89);
+            this.classHandleBtn.Name = "classHandleBtn";
+            this.classHandleBtn.Size = new System.Drawing.Size(158, 26);
+            this.classHandleBtn.TabIndex = 3;
+            this.classHandleBtn.Text = "Class Handle";
+            this.classHandleBtn.UseVisualStyleBackColor = false;
+            this.classHandleBtn.Click += new System.EventHandler(this.classHandleBtn_Click);
+            // 
+            // button25
+            // 
+            this.button25.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button25.Location = new System.Drawing.Point(15, 183);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(158, 24);
+            this.button25.TabIndex = 4;
+            this.button25.Text = "Show Shifts";
+            this.button25.UseVisualStyleBackColor = false;
+            // 
+            // button26
+            // 
+            this.button26.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button26.Location = new System.Drawing.Point(15, 123);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(158, 24);
+            this.button26.TabIndex = 5;
+            this.button26.Text = "Add Room";
+            this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // ManagerMenu
             // 
@@ -891,5 +933,8 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button classHandleBtn;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button26;
     }
 }
