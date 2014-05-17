@@ -247,7 +247,6 @@ namespace newGym
         {
 
         }
-
         private void button23_Click(object sender, EventArgs e)
         {
             AddStudent asa = new AddStudent();
@@ -301,6 +300,11 @@ namespace newGym
         private void button26_Click(object sender, EventArgs e)
         {
             Room.addRoom();
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            new ShiftHandle().ShowDialog();
         }
 
 

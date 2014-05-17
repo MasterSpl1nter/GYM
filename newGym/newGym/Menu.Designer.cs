@@ -89,12 +89,12 @@
             this.button18 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.ManagerActions = new System.Windows.Forms.GroupBox();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.classHandleBtn = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
-            this.classHandleBtn = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -754,6 +754,43 @@
             this.ManagerActions.TabStop = false;
             this.ManagerActions.Text = "Actions";
             // 
+            // button26
+            // 
+            this.button26.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button26.Location = new System.Drawing.Point(15, 123);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(158, 24);
+            this.button26.TabIndex = 5;
+            this.button26.Text = "Add Room";
+            this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
+            // button25
+            // 
+            this.button25.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button25.Location = new System.Drawing.Point(15, 183);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(158, 24);
+            this.button25.TabIndex = 4;
+            this.button25.Text = "Shifts Handle";
+            this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
+            // classHandleBtn
+            // 
+            this.classHandleBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.classHandleBtn.FlatAppearance.BorderSize = 0;
+            this.classHandleBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.classHandleBtn.Location = new System.Drawing.Point(15, 89);
+            this.classHandleBtn.Name = "classHandleBtn";
+            this.classHandleBtn.Size = new System.Drawing.Size(158, 26);
+            this.classHandleBtn.TabIndex = 3;
+            this.classHandleBtn.Text = "Class Handle";
+            this.classHandleBtn.UseVisualStyleBackColor = false;
+            this.classHandleBtn.Click += new System.EventHandler(this.classHandleBtn_Click);
+            // 
             // button24
             // 
             this.button24.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -790,42 +827,6 @@
             this.button22.Text = "Add Worker";
             this.button22.UseVisualStyleBackColor = false;
             this.button22.Click += new System.EventHandler(this.button22_Click);
-            // 
-            // classHandleBtn
-            // 
-            this.classHandleBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.classHandleBtn.FlatAppearance.BorderSize = 0;
-            this.classHandleBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.classHandleBtn.Location = new System.Drawing.Point(15, 89);
-            this.classHandleBtn.Name = "classHandleBtn";
-            this.classHandleBtn.Size = new System.Drawing.Size(158, 26);
-            this.classHandleBtn.TabIndex = 3;
-            this.classHandleBtn.Text = "Class Handle";
-            this.classHandleBtn.UseVisualStyleBackColor = false;
-            this.classHandleBtn.Click += new System.EventHandler(this.classHandleBtn_Click);
-            // 
-            // button25
-            // 
-            this.button25.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button25.Location = new System.Drawing.Point(15, 183);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(158, 24);
-            this.button25.TabIndex = 4;
-            this.button25.Text = "Show Shifts";
-            this.button25.UseVisualStyleBackColor = false;
-            // 
-            // button26
-            // 
-            this.button26.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button26.Location = new System.Drawing.Point(15, 123);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(158, 24);
-            this.button26.TabIndex = 5;
-            this.button26.Text = "Add Room";
-            this.button26.UseVisualStyleBackColor = false;
-            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // ManagerMenu
             // 
