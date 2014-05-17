@@ -52,7 +52,7 @@ namespace newGym
             checkFields(err);
             if (err.Count > 0)
             {
-                MessageBox.Show("there are some problems in the details\nfix the details in the red fields!");
+                //MessageBox.Show("there are some problems in the details\nfix the details in the red fields!");
                 foreach (TextBox t in err)
                 {
                     t.Text = "";
@@ -61,7 +61,7 @@ namespace newGym
             else
             {
                 ((Manager)SingleUser.Instance.get_user()).updateUser(Convert.ToInt32(userId.Text), managerFirstName.Text, managerLastName.Text, managerEmail.Text, userName.Text, password.Text, Convert.ToInt32(this.perm), Convert.ToInt32(MangerSalaryPerHour.Text), this.table);
-                MessageBox.Show(" update "+this.table +" success!");
+                MessageBox.Show("Update "+this.table +" succeeded!");
             }
         }
 
@@ -86,38 +86,65 @@ namespace newGym
                 }
             }
         }
-        public void checkFields(List<TextBox> err)
+        public bool checkFields(List<TextBox> err)
         {
-
+            bool error = false;
+            foreach (Control c in Controls)
+            {
+                if (c is TextBox && c.Text.Length == 0)
+                {
+                    if (c.Visible != false)
+                    {
+                        err.Add((TextBox)c);
+                        error = true;
+                    }
+                }
+            }
+            if (error)
+            {
+                MessageBox.Show("Fields cannot be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
             resetLabelColor(this.Controls);
             if (!(Regex.IsMatch(managerFirstName.Text, "^[a-zA-Z]{1,}$")))
             {
 
                 this.firstNameLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(managerFirstName);
+                MessageBox.Show("First name should contain letters only.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
             if (!(Regex.IsMatch(managerLastName.Text, "^[a-zA-Z]{1,}$")))
             {
                 this.lastNameLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(managerLastName);
+                MessageBox.Show("Last name should contain letters only.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
 
             if (!Regex.IsMatch(managerEmail.Text, "^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,4})$"))
             {
                 this.EmailLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(managerEmail);
+                MessageBox.Show("Invalid email address.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
             if (!(Regex.IsMatch(MangerSalaryPerHour.Text, "^(([1-9]?)[0-9]{1,})$")))
             {
                 this.salaryPerHourLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(MangerSalaryPerHour);
+                MessageBox.Show("Salary should contain numbers only.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
             if (!(Regex.IsMatch(userName.Text, "^[a-z0-9_-]{3,15}$")))
             {
 
                 this.userNameLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(userName);
+                MessageBox.Show("Username length must be 3-15.\nUsername must only contain letters, numbers, underscores, hyphens.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
+            return true;
         }
         static void resetLabelColor(Control.ControlCollection controls)
         {
