@@ -108,6 +108,12 @@
     <Compile Include="fEditClass.Designer.cs">
       <DependentUpon>fEditClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAddTraining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddTraining.Designer.cs">
+      <DependentUpon>FormAddTraining.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuideShifts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -324,6 +330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fEditClass.resx">
       <DependentUpon>fEditClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddTraining.resx">
+      <DependentUpon>FormAddTraining.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuideShifts.resx">
       <DependentUpon>GuideShifts.cs</DependentUpon>

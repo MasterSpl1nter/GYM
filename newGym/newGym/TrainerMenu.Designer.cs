@@ -49,9 +49,9 @@
             this.dateLabel = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.actionsBox = new System.Windows.Forms.GroupBox();
-            this.viewbutton = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.viewbutton = new System.Windows.Forms.Button();
+            this.addtraining_button = new System.Windows.Forms.Button();
             this.scheduleBox.SuspendLayout();
             this.searchBox.SuspendLayout();
             this.informationBox.SuspendLayout();
@@ -243,7 +243,7 @@
             // 
             this.actionsBox.Controls.Add(this.button4);
             this.actionsBox.Controls.Add(this.viewbutton);
-            this.actionsBox.Controls.Add(this.button3);
+            this.actionsBox.Controls.Add(this.addtraining_button);
             this.actionsBox.Location = new System.Drawing.Point(20, 69);
             this.actionsBox.Name = "actionsBox";
             this.actionsBox.Size = new System.Drawing.Size(157, 126);
@@ -251,33 +251,39 @@
             this.actionsBox.TabStop = false;
             this.actionsBox.Text = "Actions";
             // 
-            // viewbutton
-            // 
-            this.viewbutton.Location = new System.Drawing.Point(32, 26);
-            this.viewbutton.Name = "viewbutton";
-            this.viewbutton.Size = new System.Drawing.Size(91, 23);
-            this.viewbutton.TabIndex = 0;
-            this.viewbutton.Text = "View Applience";
-            this.viewbutton.UseVisualStyleBackColor = true;
-            this.viewbutton.Click += new System.EventHandler(this.viewbutton_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(32, 55);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 23);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(32, 85);
+            this.button4.Location = new System.Drawing.Point(23, 80);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(91, 23);
+            this.button4.Size = new System.Drawing.Size(106, 23);
             this.button4.TabIndex = 2;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // viewbutton
+            // 
+            this.viewbutton.Image = global::newGym.Properties.Resources._1399410141_folder_search;
+            this.viewbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.viewbutton.Location = new System.Drawing.Point(23, 21);
+            this.viewbutton.Name = "viewbutton";
+            this.viewbutton.Size = new System.Drawing.Size(106, 23);
+            this.viewbutton.TabIndex = 0;
+            this.viewbutton.Text = "View Applience";
+            this.viewbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.viewbutton.UseVisualStyleBackColor = true;
+            this.viewbutton.Click += new System.EventHandler(this.viewbutton_Click);
+            // 
+            // addtraining_button
+            // 
+            this.addtraining_button.Image = global::newGym.Properties.Resources._1399410268_add;
+            this.addtraining_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addtraining_button.Location = new System.Drawing.Point(23, 50);
+            this.addtraining_button.Name = "addtraining_button";
+            this.addtraining_button.Size = new System.Drawing.Size(106, 23);
+            this.addtraining_button.TabIndex = 1;
+            this.addtraining_button.Text = "Add Training";
+            this.addtraining_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.addtraining_button.UseVisualStyleBackColor = true;
             // 
             // TrainerMenu
             // 
@@ -325,7 +331,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.GroupBox actionsBox;
         private System.Windows.Forms.Button viewbutton;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button addtraining_button;
         private System.Windows.Forms.Button button4;
     }
 }
