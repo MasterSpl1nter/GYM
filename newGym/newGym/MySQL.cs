@@ -25,7 +25,7 @@ namespace newGym
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("Error no: " + ex.Message);
+                //MessageBox.Show("Error no: " + ex.Message);
 
                 return -1;
 
@@ -193,7 +193,7 @@ namespace newGym
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("Error no: " + ex.Message);
+                //MessageBox.Show("Error no: " + ex.Message);
 
                 return ex.Number;
 

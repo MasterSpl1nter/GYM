@@ -48,22 +48,41 @@ namespace newGym
 
         private void AddManagerUser_Click_1(object sender, EventArgs e)
         {
+            int[] a;
+            try
+            {
+                a = Person.ZeroID(Convert.ToInt32(managerId.Text));
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("ID can't be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
+            managerId.Text = "";
+            for (int i = 0; i < 9; i++)
+            {
+                managerId.Text += a[i];
+            }
             List<TextBox> err = new List<TextBox>();
             resetLabelColor(this.Controls);
             if (DepartmentComboBox.SelectedText.Equals("Manager"))
             {
-                if (!(Regex.IsMatch(managerId.Text, "^[0-9]{9}$")) || Manager.isIdExist(Convert.ToInt32(managerId.Text)) == true)//&& managerId.Text.Length==9 
+                if (!Person.ValidateID(managerId.Text) || Manager.isIdExist(Convert.ToInt32(managerId.Text)) == true)//&& managerId.Text.Length==9 
                 {
                     this.idLabel.ForeColor = System.Drawing.Color.Red;
                     err.Add(managerId);
+                    MessageBox.Show("Invalid ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
             }
             else
-                if (!(Regex.IsMatch(managerId.Text, "^[0-9]{9}$")))//&& managerId.Text.Length==9 
+                if (!Person.ValidateID(managerId.Text))//&& managerId.Text.Length==9 
                 {
                     this.idLabel.ForeColor = System.Drawing.Color.Red;
                     err.Add(managerId);
+                    MessageBox.Show("Invalid ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
             
 
@@ -71,7 +90,7 @@ namespace newGym
             checkFields(err);
             if (err.Count > 0)
             {
-                MessageBox.Show("there are some problems in the details\nfix the details in the red fields!");
+                //MessageBox.Show("there are some problems in the details\nfix the details in the red fields!");
                 foreach (TextBox t in err)
                 {
                     t.Text = "";
@@ -87,7 +106,7 @@ namespace newGym
                 if (DepartmentComboBox.SelectedItem.Equals("Manager"))
                 {
                    ((Manager)SingleUser.Instance.get_user()).addUser(Convert.ToInt32(managerId.Text), managerFirstName.Text, managerLastName.Text, managerEmail.Text, userName.Text, password.Text, 4, Convert.ToInt32(MangerSalaryPerHour.Text));
-                    MessageBox.Show("add a new manager success!");
+                    MessageBox.Show("Add new user succeeded!","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 }
                 else 
                 {
@@ -153,38 +172,65 @@ namespace newGym
         {
            
         }
-        public void checkFields(List<TextBox> err)
+        public bool checkFields(List<TextBox> err)
         {
-
+            bool error = false;
+            foreach (Control c in Controls)
+            {
+                if (c is TextBox && c.Text.Length == 0)
+                {
+                    if (c.Visible != false)
+                    {
+                        err.Add((TextBox)c);
+                        error = true;
+                    }
+                }
+            }
+            if (error)
+            {
+                MessageBox.Show("Fields cannot be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
             resetLabelColor(this.Controls);
             if (!(Regex.IsMatch(managerFirstName.Text, "^[a-zA-Z]{1,}$")))
             {
 
                 this.firstNameLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(managerFirstName);
+                MessageBox.Show("First name should contain letters only.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
             if (!(Regex.IsMatch(managerLastName.Text, "^[a-zA-Z]{1,}$")))
             {
                 this.lastNameLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(managerLastName);
+                MessageBox.Show("Last name should contain letters only.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
 
             if (!Regex.IsMatch(managerEmail.Text, "^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,4})$"))
             {
                 this.EmailLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(managerEmail);
+                MessageBox.Show("Invalid email address.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
             if (!(Regex.IsMatch(MangerSalaryPerHour.Text, "^(([1-9]?)[0-9]{1,})$")))
             {
                 this.salaryPerHourLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(MangerSalaryPerHour);
+                MessageBox.Show("Salary should contain numbers only.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
             if (!(Regex.IsMatch(userName.Text, "^[a-z0-9_-]{3,15}$")))
             {
 
                 this.userNameLabel.ForeColor = System.Drawing.Color.Red;
                 err.Add(userName);
+                MessageBox.Show("Username length must be 3-15.\nUsername must only contain letters, numbers, underscores, hyphens.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
+            return true;
             /*
             if (!(Regex.IsMatch(password.Text, "^((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})")))
             {
@@ -247,7 +293,7 @@ namespace newGym
             checkFields(err);
             if (err.Count > 0)
             {
-                MessageBox.Show("there are some problems in the details\nfix the details in the red fields!");
+                //MessageBox.Show("there are some problems in the details\nfix the details in the red fields!");
                 foreach (TextBox t in err)
                 {
                     t.Text = "";
@@ -258,7 +304,7 @@ namespace newGym
                 //Manager m = new Manager(Convert.ToInt32(IdComboBox.SelectedItem.ToString()), managerFirstName.Text, managerLastName.Text, managerEmail.Text, 7, userName.Text, password.Text, Convert.ToInt32(MangerSalaryPerHour.Text));
                 //m.updateUser();
                 ((Manager)SingleUser.Instance.get_user()).updateUser(Convert.ToInt32(IdComboBox.SelectedItem.ToString()), managerFirstName.Text, managerLastName.Text, managerEmail.Text, userName.Text, password.Text, 4, Convert.ToInt32(MangerSalaryPerHour.Text));
-                MessageBox.Show(" update manager success!");
+                MessageBox.Show("Update succeeded!","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
         }
 
