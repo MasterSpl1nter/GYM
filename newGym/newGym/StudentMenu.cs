@@ -207,17 +207,53 @@ namespace newGym
         private void AddStudentToClassButton_Click(object sender, EventArgs e)
         {
 
-            Student.addStudToClass( ClassIDComboBox.Text, SingleUser.Instance.get_user().Id.ToString());
+            DataTable dt = new DataTable();
+            DataTable dt1 = new DataTable();
+            string classid =  ClassIDComboBox.Text;
+            string Studentid = SingleUser.Instance.get_user().Id.ToString();
+
+        MySQL.Query(dt,"select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
+        MySQL.Query(dt1,"select starttime,endtime from classtime WHERE classid=" + classid);
+        DateTime StartB=Convert.ToDateTime(dt.Rows[0]["starttime"]);
+	    DateTime EndB=Convert.ToDateTime(dt.Rows[0]["endtime"]);
+	    for(int i=0;i<dt.Rows.Count;i++){
+        	DateTime StartA=Convert.ToDateTime(dt.Rows[i]["starttime"]);
+            DateTime EndA = Convert.ToDateTime(dt.Rows[i]["endttime"]);
+		    if(StartA<EndB && StartB<EndA){
+
+                MessageBox.Show("unavlailable to add this course");
+                add_course_Click(null, null);
+                return;
+            }
+    	}
+
+
+            Student.addStudToClass( classid , Studentid );
             add_course_Click(null,null);
         }
 
         private void Cancel_course_Click(object sender, EventArgs e)
         {
             makeAllInvisible();
-
             cancelCourse_panel.Visible = true;
+            fillCombo_and_dt_remove_student();
+
+        }
+
+        private void RemoveStudentFromClassButton_Click(object sender, EventArgs e)
+        {
+
+            Student.removeStudentFromClass( SingleUser.Instance.get_user().Id.ToString() , relevantClasses.Text);
+            fillCombo_and_dt_remove_student();
+            
+
+        }
+
+
+        private void fillCombo_and_dt_remove_student() {
 
             relevantClasses.Items.Clear();
+            relevantClasses.Text = "";
             DataTable dt = new DataTable();
             try
             {
@@ -236,32 +272,14 @@ namespace newGym
 
             StudnetClassDataGrid.Columns.Clear();
             StudnetClassDataGrid.DataSource = dt;
-        }
-
-        private void RemoveStudentFromClassButton_Click(object sender, EventArgs e)
-        {
-            Student.removeStudentFromClass( SingleUser.Instance.get_user().Id.ToString() , relevantClasses.Text);
-            Cancel_course_Click(null, null);
-
-
+        
         }
 
       
 
-        /* Nick add to Add class in Secretary and student, this checks if two classes are overlapping with each other.
 
-        MySQL.Query(dt,"select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
-        MySQL.Query(dt1,"select starttime,endtime from classtime WHERE classid=" + classid);
-        DateTime StartB=Convert.ToDateTime(dt.Rows[0]["starttime"])
-	    DateTime EndB=Convert.ToDateTime(dt.Rows[0]["endtime"])
-	    for(int i=0;i<dt.Rows.Count;i++){
-        	DateTime StartA=Convert.ToDateTime(dt.Rows[i]["starttime"])
-		    DateTime EndA=Convert.ToDateTime(dt.Rows[i]["endttime"])
-		    if(StartA<EndB && StartB<EndA){
-			    //BAD: OVERLAP DATES
-		    }
-    	}
-        */
+ 
+    
 
     }
 }
