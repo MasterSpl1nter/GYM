@@ -34,7 +34,6 @@ namespace newGym
             btn.Name = "EditBtn";
             btn.UseColumnTextForButtonValue = true;
             
-            int count=0;
             for (int i = 0; i < arr.Length; i++)
             {
                 //int retval = MySQL.Query(dt, "SELECT id,firstname,lastname,email FROM" +arr[i]+ "where id LIKE " + value);

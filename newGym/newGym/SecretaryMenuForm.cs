@@ -271,7 +271,7 @@ namespace newGym
         private void student_search_SelectedIndexChanged(object sender, EventArgs e)
         {
             string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
-            string Query = "select * from gym.student where id='" + student_search.Text + "' ;";
+            string Query = "select * from gym.student where id='" + EditStudentCombobox.Text + "' ;";
             MySqlConnection conDataBase = new MySqlConnection(constring);
             MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
             MySqlDataReader myReader;
@@ -283,27 +283,19 @@ namespace newGym
 
                 while (myReader.Read())     //adding names to textboxes
                 {
-                    string sId = myReader.GetInt32("id").ToString();        //convert int to string
-                    string sFirstname = myReader.GetString("firstname");
-                    string sLastname = myReader.GetString("lastname");
-                    string sEmail = myReader.GetString("email");
-                    string sUsername = myReader.GetString("username");
-                    string sPassword = myReader.GetString("password");
-                    password = sPassword;
-                    DateTime birthdate = Convert.ToDateTime(myReader.GetString("birthday"));
-                    DateTime startDate = Convert.ToDateTime(myReader.GetString("startdate"));
-                    DateTime EndDate = Convert.ToDateTime(myReader.GetString("enddate"));
-                    DateTime medCert = Convert.ToDateTime(myReader.GetString("medcert"));
-                    id = Convert.ToInt32(sId);
-                    id_box.Text = sId;
-                    firstname_box.Text = sFirstname;
-                    lastname_box.Text = sLastname;
-                    email_box.Text = sEmail;
-                    tb_username.Text = sUsername;
-                    birth_date.Value = birthdate;
-                    start_date.Value = startDate;
-                    end_date.Value = EndDate;
-                    med_cart_date.Value = medCert;
+                    idTextbox.Text = myReader.GetInt32("id").ToString();        //convert int to string
+                    firstNameTextbox.Text = myReader.GetString("firstname");
+                    lastNameTextBox.Text = myReader.GetString("lastname");
+                    emailTextbox.Text = myReader.GetString("email");
+                    usernameTextBox.Text = myReader.GetString("username");
+                    passwordTextBox.Text = myReader.GetString("password");
+
+                    bDayDatepicker.Value = Convert.ToDateTime(myReader.GetString("birthday"));
+                    stratDatepicker.Value = Convert.ToDateTime(myReader.GetString("startdate"));
+                    endDatepicker.Value = Convert.ToDateTime(myReader.GetString("enddate"));
+                    medDatePicker.Value = Convert.ToDateTime(myReader.GetString("medcert"));
+                    
+                    
                 }
             }
             catch (Exception ex)
@@ -321,20 +313,20 @@ namespace newGym
             try
             {
                 // check id validation
-                if (id_box.Text == "")
+                if (idTextbox.Text == "")
                 {
                     MessageBox.Show("Please enter ID");
                     id_label.ForeColor = Color.Red;
                     return;
                 }
-                if (id_box.Text.Length < 9)
+                if (idTextbox.Text.Length < 9)
                 {
                     MessageBox.Show("ID invalid ! Please try again");
                     id_label.ForeColor = Color.Red;
                     return;
                 }
                 //check name of the student
-                if (firstname_box.Text == "")
+                if (firstNameTextbox.Text == "")
                 {
                     MessageBox.Show("Please enter First name");
                     firstName_label.ForeColor = Color.Red;
@@ -342,33 +334,22 @@ namespace newGym
                 }
 
                 //check lastname of the student
-                if (lastname_box.Text == "")
+                if (lastNameTextBox.Text == "")
                 {
                     MessageBox.Show(" Please enter Last name!");
                     lastName_label.ForeColor = Color.Red;
                     return;
                 }
-                //check email valitiy
-                if (email_box.Text != "")
-                {
-                    Regex r = new Regex(@"[\w-]+@([\w-]+\.)+[\w-]+");
-                    if (!r.IsMatch(email_box.Text))
-                    {
-                        MessageBox.Show("Email invalid , Press correct email ", "ERROR", MessageBoxButtons.OK);
-                        email_box.ResetText();
-                        email_box.Focus();
-                        mail_label.ForeColor = Color.Red;
-                        return;
-                    }
-                }
+                
+                
                 // check username
-                if (tb_username.Text == "")
+                if (usernameTextBox.Text == "")
                 {
                     MessageBox.Show("Please enter user name ");
                     return;
                 }
                 //check validaty of dates
-                if (now.Date <= birth_date.Value.Date)
+                if (DateTime.Now <= birth_date.Value.Date)
                 {
                     MessageBox.Show("Birth date invalid , please try again!");
                     birth_label.ForeColor = Color.Red;
@@ -386,23 +367,11 @@ namespace newGym
                     MessageBox.Show(" Medical certificate is not valid medical certificate must be brought immediate");
                 }
 
-
-              
-
-                if (id_box.Text != "" && firstname_box.Text != "" && lastname_box.Text != "" && birth_date.Value.Date.ToString("yyyy-MM-dd") != ""
-                    && start_date.Value.Date.ToString("yyyy-MM-dd") != "" && end_date.Value.Date.ToString("yyyy-MM-dd") != ""
-                    && med_cart_date.Value.Date.ToString("yyyy-MM-dd") != "" && email_box.Text != "")
+                if ( (idTextbox.Text!="" ) && ( firstNameTextbox.Text !="") && (lastNameTextBox.Text!="" )&&( emailTextbox.Text!="") && (usernameTextBox.Text!= "") && (passwordTextBox.Text!="") )
                 {
-                    this.id = Convert.ToInt32(id_box.Text);
-                    this.firstName = firstname_box.Text;
-                    this.LastName = lastname_box.Text;
-                    this.email = email_box.Text;
-                    this.username = tb_username.Text;
-                    string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}','{9}','{10}'", id, firstName,
-                        LastName, email, username,password, permission, birth_date.Value.Date.ToString("yyyy-MM-dd"),
-                        start_date.Value.Date.ToString("yyyy-MM-dd"), end_date.Value.Date.ToString("yyyy-MM-dd"),
-                        med_cart_date.Value.Date.ToString("yyyy-MM-dd"));
-                    Student.Delete(id.ToString());
+
+                    string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}','{9}','{10}'", idTextbox.Text, firstNameTextbox.Text, lastNameTextBox.Text, emailTextbox.Text, usernameTextBox.Text, passwordTextBox.Text , 1, bDayDatepicker.Value.Date.ToString("yyyy-MM-dd"), stratDatepicker.Value.Date.ToString("yyyy-MM-dd"), endDatepicker.Value.Date.ToString("yyyy-MM-dd"), medDatePicker.Value.Date.ToString("yyyy-MM-dd"));
+                    Student.Delete(idTextbox.Text);
                     MySQL.Insert("student", "id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert", insert);
                     MessageBox.Show("Details have been update succesfully ");
                 }
@@ -417,51 +386,6 @@ namespace newGym
                 MessageBox.Show("Error no: " + ex.Message);
             }
 
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
-            string Query = "select * from gym.student where id='" + student_search.Text + "' ;";
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
-            MySqlDataReader myReader;
-
-            try
-            {
-                conDataBase.Open();
-                myReader = cmdDataBase.ExecuteReader();
-
-                while (myReader.Read())     //adding names to textboxes
-                {
-                    string sId = myReader.GetInt32("id").ToString();        //convert int to string
-                    string sFirstname = myReader.GetString("firstname");
-                    string sLastname = myReader.GetString("lastname");
-                    string sEmail = myReader.GetString("email");
-                    string sUsername = myReader.GetString("username");
-                    string sPassword = myReader.GetString("password");
-                    password = sPassword;
-                    DateTime birthdate = Convert.ToDateTime(myReader.GetString("birthday"));
-                    DateTime startDate = Convert.ToDateTime(myReader.GetString("startdate"));
-                    DateTime EndDate = Convert.ToDateTime(myReader.GetString("enddate"));
-                    DateTime medCert = Convert.ToDateTime(myReader.GetString("medcert"));
-                    id = Convert.ToInt32(sId);
-                    id_box.Text = sId;
-                    firstname_box.Text = sFirstname;
-                    lastname_box.Text = sLastname;
-                    email_box.Text = sEmail;
-                    tb_username.Text = sUsername;
-                    birth_date.Value = birthdate;
-                    start_date.Value = startDate;
-                    end_date.Value = EndDate;
-                    med_cart_date.Value = medCert;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
 
         private void resetColors1()
@@ -553,7 +477,6 @@ namespace newGym
             
             MySQL.Query(dt, "select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
             MySQL.Query(dt1, "select starttime,endtime from classtime WHERE classid=" + classid);
-<<<<<<< HEAD
 
             if (dt.Rows.Count == 0 || dt1.Rows.Count == 0)
             {
@@ -620,6 +543,16 @@ namespace newGym
 
             fill_combo_and_dt_remove_Student_from_class();
             MessageBox.Show("The student was removed successfully");
+
+        }
+
+        private void EditStudentPannel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
 
         }
 

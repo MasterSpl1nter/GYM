@@ -12,7 +12,6 @@ namespace newGym
 {
     public partial class TrainerMenu : Form
     {
-        private int count = 0;
         DateTime[] arr;
         DataTable dtmp;
         DataTable dt;

@@ -15,7 +15,6 @@ namespace newGym
 
     public partial class EditStudentBySecrtary : Form
     {
-        Student student;
         int id;
         string firstName;
         string LastName;

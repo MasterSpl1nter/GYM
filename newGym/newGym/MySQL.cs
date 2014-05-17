@@ -25,6 +25,8 @@ namespace newGym
             }
             catch (MySqlException ex)
             {
+                MessageBox.Show("Error no: " + ex.Message);
+
                 return -1;
 
             }
@@ -191,6 +193,8 @@ namespace newGym
             }
             catch (MySqlException ex)
             {
+                MessageBox.Show("Error no: " + ex.Message);
+
                 return ex.Number;
 
             }
@@ -223,11 +227,12 @@ namespace newGym
 
             catch (MySqlException ex)
             {
-                MessageBox.Show("mysql failed");
+                MessageBox.Show("Error no: " + ex.Message);
+
                 return 0;
             }
             catch (InvalidCastException exe) {
-                MessageBox.Show( "cast failed"  );
+                MessageBox.Show("Error type: " + exe.Message);
                 return 0;
             }
             finally
