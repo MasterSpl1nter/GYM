@@ -77,6 +77,22 @@ namespace newGym
             this.medCert = medCert;
         }
 
+        public DateTime getbday()
+        {
+            return this.birthday;
+        }
 
+        public DateTime getStartDate()
+        {
+            return this.startDate;
+        }
+        public DateTime getEndDate()
+        {
+            return this.endDate ;
+        }
+        public DateTime getbMedCert()
+        {
+            return this.medCert ;
+        }
     }
 }

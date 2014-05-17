@@ -73,7 +73,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.edit_by_id = new System.Windows.Forms.Label();
             this.student_search = new System.Windows.Forms.ComboBox();
-            this.EditStudnetPannel = new System.Windows.Forms.Panel();
+            this.EditStudentPannel = new System.Windows.Forms.Panel();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
@@ -108,16 +108,16 @@
             this.ClassID = new System.Windows.Forms.GroupBox();
             this.ClassIDComboBox = new System.Windows.Forms.ComboBox();
             this.StudentID = new System.Windows.Forms.GroupBox();
-            this.StudnetIDComboBox = new System.Windows.Forms.ComboBox();
+            this.StudentIDComboBox = new System.Windows.Forms.ComboBox();
             this.AddStudentToClassButton = new newGym.GButton();
             this.ClassDataGrid = new System.Windows.Forms.DataGridView();
             this.RemoveStudentFromClassPannel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.relevantClasses = new System.Windows.Forms.ComboBox();
             this.StudentIdGroupbox = new System.Windows.Forms.GroupBox();
-            this.StudnetCombo = new System.Windows.Forms.ComboBox();
+            this.StudentCombo = new System.Windows.Forms.ComboBox();
             this.RemoveStudentFromClassButton = new newGym.GButton();
-            this.StudnetClassDataGrid = new System.Windows.Forms.DataGridView();
+            this.StudentClassDataGrid = new System.Windows.Forms.DataGridView();
             this.gGroupBox1 = new newGym.GGroupBox();
             this.addStudentButton = new newGym.GButton();
             this.shiftsButton = new newGym.GButton();
@@ -127,7 +127,7 @@
             this.studentToClassButton = new newGym.GButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.AddStudentPannel.SuspendLayout();
-            this.EditStudnetPannel.SuspendLayout();
+            this.EditStudentPannel.SuspendLayout();
             this.WelcomeGroupbox.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.DeleteStudentPanel.SuspendLayout();
@@ -138,7 +138,7 @@
             this.RemoveStudentFromClassPannel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.StudentIdGroupbox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StudnetClassDataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentClassDataGrid)).BeginInit();
             this.gGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -631,33 +631,33 @@
             this.student_search.TabIndex = 48;
             this.student_search.SelectedIndexChanged += new System.EventHandler(this.student_search_SelectedIndexChanged);
             // 
-            // EditStudnetPannel
+            // EditStudentPannel
             // 
-            this.EditStudnetPannel.Controls.Add(this.textBox6);
-            this.EditStudnetPannel.Controls.Add(this.label10);
-            this.EditStudnetPannel.Controls.Add(this.dateTimePicker5);
-            this.EditStudnetPannel.Controls.Add(this.dateTimePicker6);
-            this.EditStudnetPannel.Controls.Add(this.dateTimePicker7);
-            this.EditStudnetPannel.Controls.Add(this.dateTimePicker8);
-            this.EditStudnetPannel.Controls.Add(this.label11);
-            this.EditStudnetPannel.Controls.Add(this.EditStudApply);
-            this.EditStudnetPannel.Controls.Add(this.label12);
-            this.EditStudnetPannel.Controls.Add(this.label13);
-            this.EditStudnetPannel.Controls.Add(this.label14);
-            this.EditStudnetPannel.Controls.Add(this.label15);
-            this.EditStudnetPannel.Controls.Add(this.label16);
-            this.EditStudnetPannel.Controls.Add(this.label17);
-            this.EditStudnetPannel.Controls.Add(this.label18);
-            this.EditStudnetPannel.Controls.Add(this.textBox7);
-            this.EditStudnetPannel.Controls.Add(this.textBox8);
-            this.EditStudnetPannel.Controls.Add(this.textBox9);
-            this.EditStudnetPannel.Controls.Add(this.textBox10);
-            this.EditStudnetPannel.Controls.Add(this.label19);
-            this.EditStudnetPannel.Controls.Add(this.EditStudentCombobox);
-            this.EditStudnetPannel.Location = new System.Drawing.Point(262, 113);
-            this.EditStudnetPannel.Name = "EditStudnetPannel";
-            this.EditStudnetPannel.Size = new System.Drawing.Size(464, 464);
-            this.EditStudnetPannel.TabIndex = 7;
+            this.EditStudentPannel.Controls.Add(this.textBox6);
+            this.EditStudentPannel.Controls.Add(this.label10);
+            this.EditStudentPannel.Controls.Add(this.dateTimePicker5);
+            this.EditStudentPannel.Controls.Add(this.dateTimePicker6);
+            this.EditStudentPannel.Controls.Add(this.dateTimePicker7);
+            this.EditStudentPannel.Controls.Add(this.dateTimePicker8);
+            this.EditStudentPannel.Controls.Add(this.label11);
+            this.EditStudentPannel.Controls.Add(this.EditStudApply);
+            this.EditStudentPannel.Controls.Add(this.label12);
+            this.EditStudentPannel.Controls.Add(this.label13);
+            this.EditStudentPannel.Controls.Add(this.label14);
+            this.EditStudentPannel.Controls.Add(this.label15);
+            this.EditStudentPannel.Controls.Add(this.label16);
+            this.EditStudentPannel.Controls.Add(this.label17);
+            this.EditStudentPannel.Controls.Add(this.label18);
+            this.EditStudentPannel.Controls.Add(this.textBox7);
+            this.EditStudentPannel.Controls.Add(this.textBox8);
+            this.EditStudentPannel.Controls.Add(this.textBox9);
+            this.EditStudentPannel.Controls.Add(this.textBox10);
+            this.EditStudentPannel.Controls.Add(this.label19);
+            this.EditStudentPannel.Controls.Add(this.EditStudentCombobox);
+            this.EditStudentPannel.Location = new System.Drawing.Point(262, 113);
+            this.EditStudentPannel.Name = "EditStudentPannel";
+            this.EditStudentPannel.Size = new System.Drawing.Size(464, 464);
+            this.EditStudentPannel.TabIndex = 7;
             // 
             // textBox6
             // 
@@ -1006,7 +1006,7 @@
             // 
             // StudentID
             // 
-            this.StudentID.Controls.Add(this.StudnetIDComboBox);
+            this.StudentID.Controls.Add(this.StudentIDComboBox);
             this.StudentID.Location = new System.Drawing.Point(24, 303);
             this.StudentID.Name = "StudentID";
             this.StudentID.Size = new System.Drawing.Size(137, 74);
@@ -1014,13 +1014,13 @@
             this.StudentID.TabStop = false;
             this.StudentID.Text = "StudentID";
             // 
-            // StudnetIDComboBox
+            // StudentIDComboBox
             // 
-            this.StudnetIDComboBox.FormattingEnabled = true;
-            this.StudnetIDComboBox.Location = new System.Drawing.Point(4, 37);
-            this.StudnetIDComboBox.Name = "StudnetIDComboBox";
-            this.StudnetIDComboBox.Size = new System.Drawing.Size(121, 21);
-            this.StudnetIDComboBox.TabIndex = 2;
+            this.StudentIDComboBox.FormattingEnabled = true;
+            this.StudentIDComboBox.Location = new System.Drawing.Point(4, 37);
+            this.StudentIDComboBox.Name = "StudentIDComboBox";
+            this.StudentIDComboBox.Size = new System.Drawing.Size(121, 21);
+            this.StudentIDComboBox.TabIndex = 2;
             // 
             // AddStudentToClassButton
             // 
@@ -1056,7 +1056,7 @@
             this.RemoveStudentFromClassPannel.Controls.Add(this.groupBox1);
             this.RemoveStudentFromClassPannel.Controls.Add(this.StudentIdGroupbox);
             this.RemoveStudentFromClassPannel.Controls.Add(this.RemoveStudentFromClassButton);
-            this.RemoveStudentFromClassPannel.Controls.Add(this.StudnetClassDataGrid);
+            this.RemoveStudentFromClassPannel.Controls.Add(this.StudentClassDataGrid);
             this.RemoveStudentFromClassPannel.Location = new System.Drawing.Point(262, 113);
             this.RemoveStudentFromClassPannel.Name = "RemoveStudentFromClassPannel";
             this.RemoveStudentFromClassPannel.Size = new System.Drawing.Size(464, 464);
@@ -1082,22 +1082,22 @@
             // 
             // StudentIdGroupbox
             // 
-            this.StudentIdGroupbox.Controls.Add(this.StudnetCombo);
+            this.StudentIdGroupbox.Controls.Add(this.StudentCombo);
             this.StudentIdGroupbox.Location = new System.Drawing.Point(33, 33);
             this.StudentIdGroupbox.Name = "StudentIdGroupbox";
             this.StudentIdGroupbox.Size = new System.Drawing.Size(137, 74);
             this.StudentIdGroupbox.TabIndex = 4;
             this.StudentIdGroupbox.TabStop = false;
-            this.StudentIdGroupbox.Text = "Studnet Id";
+            this.StudentIdGroupbox.Text = "Student Id";
             // 
-            // StudnetCombo
+            // StudentCombo
             // 
-            this.StudnetCombo.FormattingEnabled = true;
-            this.StudnetCombo.Location = new System.Drawing.Point(4, 37);
-            this.StudnetCombo.Name = "StudnetCombo";
-            this.StudnetCombo.Size = new System.Drawing.Size(121, 21);
-            this.StudnetCombo.TabIndex = 2;
-            this.StudnetCombo.SelectedIndexChanged += new System.EventHandler(this.StudnetCombo_SelectedIndexChanged);
+            this.StudentCombo.FormattingEnabled = true;
+            this.StudentCombo.Location = new System.Drawing.Point(4, 37);
+            this.StudentCombo.Name = "StudentCombo";
+            this.StudentCombo.Size = new System.Drawing.Size(121, 21);
+            this.StudentCombo.TabIndex = 2;
+            this.StudentCombo.SelectedIndexChanged += new System.EventHandler(this.StudentCombo_SelectedIndexChanged);
             // 
             // RemoveStudentFromClassButton
             // 
@@ -1115,18 +1115,18 @@
             this.RemoveStudentFromClassButton.UseVisualStyleBackColor = false;
             this.RemoveStudentFromClassButton.Click += new System.EventHandler(this.RemoveStudentFromClassButton_Click);
             // 
-            // StudnetClassDataGrid
+            // StudentClassDataGrid
             // 
-            this.StudnetClassDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.StudnetClassDataGrid.EnableHeadersVisualStyles = false;
-            this.StudnetClassDataGrid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.StudnetClassDataGrid.Location = new System.Drawing.Point(200, 15);
-            this.StudnetClassDataGrid.MultiSelect = false;
-            this.StudnetClassDataGrid.Name = "StudnetClassDataGrid";
-            this.StudnetClassDataGrid.ReadOnly = true;
-            this.StudnetClassDataGrid.RowHeadersVisible = false;
-            this.StudnetClassDataGrid.Size = new System.Drawing.Size(234, 426);
-            this.StudnetClassDataGrid.TabIndex = 0;
+            this.StudentClassDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.StudentClassDataGrid.EnableHeadersVisualStyles = false;
+            this.StudentClassDataGrid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.StudentClassDataGrid.Location = new System.Drawing.Point(200, 15);
+            this.StudentClassDataGrid.MultiSelect = false;
+            this.StudentClassDataGrid.Name = "StudentClassDataGrid";
+            this.StudentClassDataGrid.ReadOnly = true;
+            this.StudentClassDataGrid.RowHeadersVisible = false;
+            this.StudentClassDataGrid.Size = new System.Drawing.Size(234, 426);
+            this.StudentClassDataGrid.TabIndex = 0;
             // 
             // gGroupBox1
             // 
@@ -1258,17 +1258,17 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.WelcomeGroupbox);
             this.Controls.Add(this.gGroupBox1);
-            this.Controls.Add(this.RemoveStudentFromClassPannel);
             this.Controls.Add(this.AddStudentToClassPannel);
             this.Controls.Add(this.DeleteStudentPanel);
-            this.Controls.Add(this.EditStudnetPannel);
+            this.Controls.Add(this.EditStudentPannel);
             this.Controls.Add(this.AddStudentPannel);
+            this.Controls.Add(this.RemoveStudentFromClassPannel);
             this.Name = "SecretaryMenu";
             this.Text = "SecretaryMenu";
             this.AddStudentPannel.ResumeLayout(false);
             this.AddStudentPannel.PerformLayout();
-            this.EditStudnetPannel.ResumeLayout(false);
-            this.EditStudnetPannel.PerformLayout();
+            this.EditStudentPannel.ResumeLayout(false);
+            this.EditStudentPannel.PerformLayout();
             this.WelcomeGroupbox.ResumeLayout(false);
             this.WelcomeGroupbox.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -1282,7 +1282,7 @@
             this.RemoveStudentFromClassPannel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.StudentIdGroupbox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.StudnetClassDataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentClassDataGrid)).EndInit();
             this.gGroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1335,7 +1335,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label edit_by_id;
         private System.Windows.Forms.ComboBox student_search;
-        private System.Windows.Forms.Panel EditStudnetPannel;
+        private System.Windows.Forms.Panel EditStudentPannel;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker dateTimePicker5;
@@ -1378,15 +1378,15 @@
         private System.Windows.Forms.GroupBox ClassID;
         private System.Windows.Forms.ComboBox ClassIDComboBox;
         private System.Windows.Forms.GroupBox StudentID;
-        private System.Windows.Forms.ComboBox StudnetIDComboBox;
+        private System.Windows.Forms.ComboBox StudentIDComboBox;
         private GButton AddStudentToClassButton;
         private System.Windows.Forms.Panel RemoveStudentFromClassPannel;
         private System.Windows.Forms.GroupBox StudentIdGroupbox;
-        private System.Windows.Forms.ComboBox StudnetCombo;
+        private System.Windows.Forms.ComboBox StudentCombo;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox relevantClasses;
         private GButton RemoveStudentFromClassButton;
-        private System.Windows.Forms.DataGridView StudnetClassDataGrid;
+        private System.Windows.Forms.DataGridView StudentClassDataGrid;
         private System.Windows.Forms.ComboBox comboBox1;
     }
 }

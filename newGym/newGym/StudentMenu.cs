@@ -14,7 +14,7 @@ namespace newGym
 {
     public partial class StudentMenu : Form
     {
-
+        Student a = (Student)SingleUser.Instance.get_user();
         //int id = SingleUser.Instance.get_user().Id;
         //int permission = 0;
         //DateTime birthday;
@@ -158,13 +158,13 @@ namespace newGym
                 return;
             }
             //Update the DataBase
+            /*
+            string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}','{9}','{10}'", a.Id, firstname_box.Text,
+                        lastname_box.Text, email_box.Text, username_box.Text, password_box.Text, 1, a.getbday().Date.ToString("yyyy-MM-dd"),
+                        a.getStartDate().Date.ToString("yyyy-MM-dd"), a.getEndDate().Date.ToString("yyyy-MM-dd"),
+                        a.getbMedCert().Date.ToString("yyyy-MM-dd"));
 
-            //string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}','{9}','{10}'", id, firstname_box.Text,
-            //            lastname_box.Text, email_box.Text, username_box.Text, password_box.Text, permission, birth_date.Value.Date.ToString("yyyy-MM-dd"),
-            //            start_date.Value.Date.ToString("yyyy-MM-dd"), end_date.Value.Date.ToString("yyyy-MM-dd"),
-            //            med_cart_date.Value.Date.ToString("yyyy-MM-dd"));
-
-
+            */
         }
 
        
@@ -218,7 +218,7 @@ namespace newGym
 	    DateTime EndB=Convert.ToDateTime(dt.Rows[0]["endtime"]);
 	    for(int i=0;i<dt.Rows.Count;i++){
         	DateTime StartA=Convert.ToDateTime(dt.Rows[i]["starttime"]);
-            DateTime EndA = Convert.ToDateTime(dt.Rows[i]["endttime"]);
+            DateTime EndA = Convert.ToDateTime(dt.Rows[i]["endtime"]);
 		    if(StartA<EndB && StartB<EndA){
 
                 MessageBox.Show("unavlailable to add this course");

@@ -36,7 +36,7 @@ namespace newGym
 
         private void makeAllInvisible(){
             AddStudentPannel.Visible = false;
-            EditStudnetPannel.Visible = false;
+            EditStudentPannel.Visible = false;
             DeleteStudentPanel.Visible = false;
             AddStudentToClassPannel.Visible = false;
             RemoveStudentFromClassPannel.Visible = false;
@@ -54,7 +54,7 @@ namespace newGym
         {
             makeAllInvisible();
 
-            EditStudnetPannel.Visible = true;
+            EditStudentPannel.Visible = true;
             fillcombo(EditStudentCombobox);
         }
 
@@ -78,7 +78,7 @@ namespace newGym
             ClassDataGrid.DataSource = dt;
 
 
-            fillcombo(StudnetIDComboBox);
+            fillcombo(StudentIDComboBox);
             fillcombo2(ClassIDComboBox);
         }
 
@@ -86,14 +86,20 @@ namespace newGym
         {
             makeAllInvisible();
             RemoveStudentFromClassPannel.Visible = true;
-            
-            fillcombo(StudnetCombo);
+
+            fill_combo_and_dt_remove_Student_from_class();
+           
+
+        }
+
+        private void fill_combo_and_dt_remove_Student_from_class()
+        {
+            fillcombo(StudentCombo);
 
             DataTable dt = new DataTable();
-            MySQL.Select(dt,"studentclass");
-            StudnetClassDataGrid.Columns.Clear();
-            StudnetClassDataGrid.DataSource = dt;
-
+            MySQL.Select(dt, "studentclass");
+            StudentClassDataGrid.Columns.Clear();
+            StudentClassDataGrid.DataSource = dt;
         }
 
         private void shiftsButton_Click(object sender, EventArgs e)
@@ -260,7 +266,7 @@ namespace newGym
 
         }
 
-        //RELEVANT FOR EDIT STUDNET PANNEL 
+        //RELEVANT FOR EDIT Student PANNEL 
 
         private void student_search_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -483,6 +489,7 @@ namespace newGym
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             Student.Delete(DeleteStudentCombobox.Text);
+            DeleteStudentCombobox.Text = "";
             MessageBox.Show("The student deleted succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             removeStudentButton_Click(null,null);
         }
@@ -513,10 +520,11 @@ namespace newGym
             DataTable dt = new DataTable();
             try
             {
-                MySQL.Select(dt, "class");
+                MySQL.Select(dt, "classtime");
                 foreach (DataRow row in dt.Rows)
                 {
-                    combo.Items.Add(row["id"].ToString());
+                    if(Convert.ToDateTime( row["starttime"].ToString() ) > DateTime.Now  )
+                        combo.Items.Add(row["classid"].ToString());
                 }
             }
 
@@ -533,42 +541,63 @@ namespace newGym
             DataTable dt = new DataTable();
             DataTable dt1 = new DataTable();
             string classid = ClassIDComboBox.Text;
-            string Studentid = StudnetIDComboBox.Text;
+            string Studentid = StudentIDComboBox.Text;
 
-            MySQL.Query(dt, "select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
-            MySQL.Query(dt1, "select starttime,endtime from classtime WHERE classid=" + classid);
-            DateTime StartB = Convert.ToDateTime(dt.Rows[0]["starttime"]);
-            DateTime EndB = Convert.ToDateTime(dt.Rows[0]["endtime"]);
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                DateTime StartA = Convert.ToDateTime(dt.Rows[i]["starttime"]);
-                DateTime EndA = Convert.ToDateTime(dt.Rows[i]["endttime"]);
-                if (StartA < EndB && StartB < EndA)
-                {
 
-                    MessageBox.Show("unavlailable to add this course");
-                    studentToClassButton_Click(null, null);
-                    return;
-                }
+            if(ClassIDComboBox.Text == "" ||  StudentIDComboBox.Text == ""){
+
+                MessageBox.Show("not all fields are filled");
+                return;
             }
 
+            
+            MySQL.Query(dt, "select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
+            MySQL.Query(dt1, "select starttime,endtime from classtime WHERE classid=" + classid);
 
-            Student.addStudToClass(ClassIDComboBox.Text, StudnetIDComboBox.Text);
+            if (dt.Rows.Count == 0 || dt1.Rows.Count == 0)
+            {
+                Student.addStudToClass(ClassIDComboBox.Text, StudentIDComboBox.Text);
+                ClassIDComboBox.Text = StudentIDComboBox.Text = "";
+                studentToClassButton_Click(null, null);
+                MessageBox.Show("The Course was added successfully");
+            }
+            else
+            {
+
+                DateTime StartB = Convert.ToDateTime(dt.Rows[0]["starttime"]);
+                DateTime EndB = Convert.ToDateTime(dt.Rows[0]["endtime"]);
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    DateTime StartA = Convert.ToDateTime(dt.Rows[i]["starttime"]);
+                    DateTime EndA = Convert.ToDateTime(dt.Rows[i]["endtime"]);
+                    if (StartA < EndB && StartB < EndA)
+                    {
+
+                        MessageBox.Show("unavlailable to add this course");
+                        studentToClassButton_Click(null, null);
+                        return;
+                    }
+                }
+
+            }
+            Student.addStudToClass(ClassIDComboBox.Text, StudentIDComboBox.Text);
+            ClassIDComboBox.Text = StudentIDComboBox.Text = "";
             studentToClassButton_Click(null,null);
             MessageBox.Show("The Course was added successfully");
 
         }
 
-        private void StudnetCombo_SelectedIndexChanged(object sender, EventArgs e)
+        private void StudentCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
             relevantClasses.Items.Clear();
+
             DataTable dt = new DataTable();
             try
             {
                 MySQL.Select(dt, "studentclass");
                 foreach (DataRow row in dt.Rows)
                 {
-                    if (row["studentid"].ToString() == StudnetCombo.Text)
+                    if (row["studentid"].ToString() == StudentCombo.Text)
                     {
                         relevantClasses.Items.Add(row["classid"].ToString());
                     }
@@ -584,11 +613,17 @@ namespace newGym
         //handled
         private void RemoveStudentFromClassButton_Click(object sender, EventArgs e)
         {
-            Student.removeStudentFromClass(StudnetCombo.Text, relevantClasses.Text);
-            removeStudentFromClassBotton_Click(null,null);
+            Student.removeStudentFromClass(StudentCombo.Text, relevantClasses.Text);
+
+            StudentCombo.Text = relevantClasses.Text = "";
+
+            fill_combo_and_dt_remove_Student_from_class();
             MessageBox.Show("The student was removed successfully");
 
         }
+
+
+
 
     }
 }
