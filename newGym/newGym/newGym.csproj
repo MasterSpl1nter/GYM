@@ -277,6 +277,12 @@
     </Compile>
     <Compile Include="Secretary.cs" />
     <Compile Include="Student.cs" />
+    <Compile Include="ViewApplience.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewApplience.Designer.cs">
+      <DependentUpon>ViewApplience.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addManager.resx">
       <DependentUpon>addManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -394,6 +400,9 @@
     </Compile>
     <EmbeddedResource Include="RoomAddition.resx">
       <DependentUpon>RoomAddition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewApplience.resx">
+      <DependentUpon>ViewApplience.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

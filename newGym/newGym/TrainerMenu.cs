@@ -194,7 +194,8 @@ namespace newGym
 
         private void viewbutton_Click(object sender, EventArgs e)
         {
-
+            View_Applience vap = new View_Applience();
+            vap.ShowDialog();
         }
 
     }
