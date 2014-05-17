@@ -553,6 +553,7 @@ namespace newGym
             
             MySQL.Query(dt, "select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
             MySQL.Query(dt1, "select starttime,endtime from classtime WHERE classid=" + classid);
+<<<<<<< HEAD
 
             if (dt.Rows.Count == 0 || dt1.Rows.Count == 0)
             {
@@ -573,7 +574,7 @@ namespace newGym
                     if (StartA < EndB && StartB < EndA)
                     {
 
-                        MessageBox.Show("unavlailable to add this course");
+                    MessageBox.Show("You are already joined to a class that takes place at the same time.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         studentToClassButton_Click(null, null);
                         return;
                     }
