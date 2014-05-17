@@ -158,12 +158,11 @@
             // 
             this.groupBox2.Controls.Add(this.button7);
             this.groupBox2.Controls.Add(this.searchTextBox);
-            this.groupBox2.Location = new System.Drawing.Point(207, 12);
+            this.groupBox2.Location = new System.Drawing.Point(12, 13);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(313, 84);
+            this.groupBox2.Size = new System.Drawing.Size(261, 84);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Search";
             // 
             // button7
             // 
@@ -188,12 +187,11 @@
             this.groupBox3.Controls.Add(this.helloLabel);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox3.Location = new System.Drawing.Point(546, 12);
+            this.groupBox3.Location = new System.Drawing.Point(292, 10);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(396, 84);
+            this.groupBox3.Size = new System.Drawing.Size(390, 87);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
             // 
             // helloLabel
             // 
@@ -754,7 +752,7 @@
             // 
             this.button24.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button24.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button24.Location = new System.Drawing.Point(21, 283);
+            this.button24.Location = new System.Drawing.Point(15, 89);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(158, 24);
             this.button24.TabIndex = 2;
@@ -791,7 +789,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 439);
+            this.ClientSize = new System.Drawing.Size(744, 439);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ManagerActions);
             this.Controls.Add(this.tabControl1);

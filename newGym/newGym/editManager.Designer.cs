@@ -40,10 +40,10 @@
             this.managerEmail = new System.Windows.Forms.TextBox();
             this.firstNameLabel = new System.Windows.Forms.Label();
             this.managerLastName = new System.Windows.Forms.TextBox();
-            this.managerId = new System.Windows.Forms.TextBox();
             this.managerFirstName = new System.Windows.Forms.TextBox();
             this.exit_update = new System.Windows.Forms.Button();
             this.update_manger_button = new System.Windows.Forms.Button();
+            this.userId = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // MangerSalaryPerHour
@@ -145,13 +145,6 @@
             this.managerLastName.Size = new System.Drawing.Size(100, 20);
             this.managerLastName.TabIndex = 50;
             // 
-            // managerId
-            // 
-            this.managerId.Location = new System.Drawing.Point(126, 22);
-            this.managerId.Name = "managerId";
-            this.managerId.Size = new System.Drawing.Size(100, 20);
-            this.managerId.TabIndex = 48;
-            // 
             // managerFirstName
             // 
             this.managerFirstName.Location = new System.Drawing.Point(126, 48);
@@ -171,7 +164,7 @@
             this.exit_update.TabIndex = 58;
             this.exit_update.Text = "Clear";
             this.exit_update.UseVisualStyleBackColor = false;
-            this.exit_update.Visible = false;
+            this.exit_update.Click += new System.EventHandler(this.exit_update_Click);
             // 
             // update_manger_button
             // 
@@ -185,13 +178,24 @@
             this.update_manger_button.TabIndex = 57;
             this.update_manger_button.Text = "Update";
             this.update_manger_button.UseVisualStyleBackColor = false;
-            this.update_manger_button.Visible = false;
+            this.update_manger_button.Click += new System.EventHandler(this.update_manger_button_Click);
+            // 
+            // userId
+            // 
+            this.userId.AutoSize = true;
+            this.userId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.userId.Location = new System.Drawing.Point(137, 23);
+            this.userId.Name = "userId";
+            this.userId.Size = new System.Drawing.Size(0, 17);
+            this.userId.TabIndex = 60;
+            this.userId.Click += new System.EventHandler(this.label2_Click);
             // 
             // editManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.userId);
             this.Controls.Add(this.exit_update);
             this.Controls.Add(this.update_manger_button);
             this.Controls.Add(this.MangerSalaryPerHour);
@@ -206,7 +210,6 @@
             this.Controls.Add(this.managerEmail);
             this.Controls.Add(this.firstNameLabel);
             this.Controls.Add(this.managerLastName);
-            this.Controls.Add(this.managerId);
             this.Controls.Add(this.managerFirstName);
             this.Name = "editManager";
             this.Text = "editManager";
@@ -229,9 +232,9 @@
         private System.Windows.Forms.TextBox managerEmail;
         private System.Windows.Forms.Label firstNameLabel;
         private System.Windows.Forms.TextBox managerLastName;
-        private System.Windows.Forms.TextBox managerId;
         private System.Windows.Forms.TextBox managerFirstName;
         private System.Windows.Forms.Button exit_update;
         private System.Windows.Forms.Button update_manger_button;
+        private System.Windows.Forms.Label userId;
     }
 }

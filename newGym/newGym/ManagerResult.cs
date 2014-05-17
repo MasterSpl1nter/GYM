@@ -81,8 +81,9 @@ namespace newGym
 
         private void dataGridResult_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            MessageBox.Show(dataGridResult["id", e.RowIndex].ToString());
-            editManager m = new editManager();
+            
+
+            editManager m = new editManager(dataGridResult.Rows[e.RowIndex].Cells["id"].Value.ToString());
             m.ShowDialog();
         }
         

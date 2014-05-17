@@ -73,6 +73,12 @@ namespace newGym
             string query = "UPDATE `gym`.`manager` SET `firstname`='" + firstname + "', `lastname`='" + lastname + "', `email`='" + email + "', `username`='" + username + "', `password`='" + password + "', `salaryperhour`='" + salaryperhour + "' WHERE `id`='" + Convert.ToInt32(id) + "';";
             newConn.writeToDb(query);
         }
+        public void updateUser(int id, string firstname, string lastname, string email, string username, string password, int permission, int salaryperhour,string table)
+        {
+            DbConnection newConn = new DbConnection("gym", "root", "csharp");
+            string query = "UPDATE gym."+table+ " SET firstname='" + firstname + "', lastname='" + lastname + "', email='" + email + "', username='" + username + "', password='" + password + "', salaryperhour='" + salaryperhour + "' WHERE id='" + Convert.ToInt32(id) + "';";
+            newConn.writeToDb(query);
+        }
         //delete manager by id    
         public static void deleteManagerById(int id)
         {
