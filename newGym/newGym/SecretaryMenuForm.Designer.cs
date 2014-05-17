@@ -658,7 +658,6 @@
             this.EditStudentPannel.Name = "EditStudentPannel";
             this.EditStudentPannel.Size = new System.Drawing.Size(464, 464);
             this.EditStudentPannel.TabIndex = 7;
-            this.EditStudentPannel.Paint += new System.Windows.Forms.PaintEventHandler(this.EditStudentPannel_Paint);
             // 
             // passwordTextBox
             // 
@@ -839,7 +838,6 @@
             this.lastNameTextBox.Name = "lastNameTextBox";
             this.lastNameTextBox.Size = new System.Drawing.Size(130, 20);
             this.lastNameTextBox.TabIndex = 69;
-            this.lastNameTextBox.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // firstNameTextbox
             // 
@@ -938,6 +936,7 @@
             this.DeleteButton.TabIndex = 6;
             this.DeleteButton.Text = "Delete";
             this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // choose_id
             // 

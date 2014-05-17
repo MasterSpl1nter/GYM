@@ -24,7 +24,7 @@ namespace newGym
         string password; 
         int permission = 0;
         DateTime now = DateTime.Now;
-        
+        int ret;
         
 
         public SecretaryMenu()
@@ -413,6 +413,7 @@ namespace newGym
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             Student.Delete(DeleteStudentCombobox.Text);
+           
             DeleteStudentCombobox.Text = "";
             MessageBox.Show("The student deleted succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             removeStudentButton_Click(null,null);
@@ -478,9 +479,9 @@ namespace newGym
             MySQL.Query(dt, "select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
             MySQL.Query(dt1, "select starttime,endtime from classtime WHERE classid=" + classid);
 
-            if (dt.Rows.Count == 0 || dt1.Rows.Count == 0)
+            if ( dt.Rows.Count == 0 || dt1.Rows.Count == 0)
             {
-                Student.addStudToClass(ClassIDComboBox.Text, StudentIDComboBox.Text);
+                ret = Student.addStudToClass(ClassIDComboBox.Text, StudentIDComboBox.Text);
                 ClassIDComboBox.Text = StudentIDComboBox.Text = "";
                 studentToClassButton_Click(null, null);
                 MessageBox.Show("The Course was added successfully");
@@ -504,6 +505,7 @@ namespace newGym
                 }
 
             }
+
             Student.addStudToClass(ClassIDComboBox.Text, StudentIDComboBox.Text);
             ClassIDComboBox.Text = StudentIDComboBox.Text = "";
             studentToClassButton_Click(null,null);
@@ -545,18 +547,6 @@ namespace newGym
             MessageBox.Show("The student was removed successfully");
 
         }
-
-        private void EditStudentPannel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
 
 
     }
