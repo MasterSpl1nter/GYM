@@ -48,7 +48,7 @@
             this.email_box = new System.Windows.Forms.TextBox();
             this.lastname_box = new System.Windows.Forms.TextBox();
             this.firstname_box = new System.Windows.Forms.TextBox();
-            this.Welcome = new System.Windows.Forms.GroupBox();
+            this.WelcomeGroupBox = new System.Windows.Forms.GroupBox();
             this.helloLabel = new System.Windows.Forms.Label();
             this.cancelCourse_panel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -59,11 +59,12 @@
             this.edit_button = new System.Windows.Forms.Button();
             this.add_course = new System.Windows.Forms.Button();
             this.Cancel_course = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.addCourse_panel.SuspendLayout();
             this.ClassID.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClassDataGrid)).BeginInit();
             this.EditDetail_panel.SuspendLayout();
-            this.Welcome.SuspendLayout();
+            this.WelcomeGroupBox.SuspendLayout();
             this.cancelCourse_panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudnetClassDataGrid)).BeginInit();
@@ -288,18 +289,18 @@
             this.firstname_box.Size = new System.Drawing.Size(179, 23);
             this.firstname_box.TabIndex = 50;
             // 
-            // Welcome
+            // WelcomeGroupBox
             // 
-            this.Welcome.BackColor = System.Drawing.Color.Transparent;
-            this.Welcome.Controls.Add(this.helloLabel);
-            this.Welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.Welcome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Welcome.Location = new System.Drawing.Point(252, 12);
-            this.Welcome.Name = "Welcome";
-            this.Welcome.Size = new System.Drawing.Size(520, 60);
-            this.Welcome.TabIndex = 8;
-            this.Welcome.TabStop = false;
-            this.Welcome.Text = "WelcomeGroupBox";
+            this.WelcomeGroupBox.BackColor = System.Drawing.Color.Transparent;
+            this.WelcomeGroupBox.Controls.Add(this.helloLabel);
+            this.WelcomeGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.WelcomeGroupBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.WelcomeGroupBox.Location = new System.Drawing.Point(252, 12);
+            this.WelcomeGroupBox.Name = "WelcomeGroupBox";
+            this.WelcomeGroupBox.Size = new System.Drawing.Size(520, 60);
+            this.WelcomeGroupBox.TabIndex = 8;
+            this.WelcomeGroupBox.TabStop = false;
+            this.WelcomeGroupBox.Text = "Welcome";
             // 
             // helloLabel
             // 
@@ -424,7 +425,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 605);
-            this.Controls.Add(this.Welcome);
+            this.Controls.Add(this.WelcomeGroupBox);
             this.Controls.Add(this.gGroupBox1);
             this.Controls.Add(this.StudnetClassesCalendar);
             this.Controls.Add(this.label1);
@@ -439,8 +440,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ClassDataGrid)).EndInit();
             this.EditDetail_panel.ResumeLayout(false);
             this.EditDetail_panel.PerformLayout();
-            this.Welcome.ResumeLayout(false);
-            this.Welcome.PerformLayout();
+            this.WelcomeGroupBox.ResumeLayout(false);
+            this.WelcomeGroupBox.PerformLayout();
             this.cancelCourse_panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.StudnetClassDataGrid)).EndInit();
@@ -460,7 +461,7 @@
         private System.Windows.Forms.Panel addCourse_panel;
         private System.Windows.Forms.Panel EditDetail_panel;
         private GGroupBox gGroupBox1;
-        private System.Windows.Forms.GroupBox Welcome;
+        private System.Windows.Forms.GroupBox WelcomeGroupBox;
         private System.Windows.Forms.Label helloLabel;
         private System.Windows.Forms.Button editDetail_button;
         private System.Windows.Forms.TextBox username_box;
@@ -483,5 +484,6 @@
         private System.Windows.Forms.ComboBox relevantClasses;
         private GButton RemoveStudentFromClassButton;
         private System.Windows.Forms.DataGridView StudnetClassDataGrid;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

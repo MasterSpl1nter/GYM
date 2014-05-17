@@ -90,9 +90,13 @@ namespace newGym
         {
             return this.endDate ;
         }
-        public DateTime getbMedCert()
+        public DateTime getMedCert()
         {
             return this.medCert ;
+        }
+
+        public string getid() {
+            return this.Id.ToString();
         }
     }
 }
