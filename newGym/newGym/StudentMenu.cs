@@ -26,7 +26,7 @@ namespace newGym
         public StudentMenu()
         {
             InitializeComponent();
-            helloLabel.Text = "Hello, " + SingleUser.Instance.get_user().FirstName + " " + SingleUser.Instance.get_user().LastName;
+            helloLabel.Text = "" + SingleUser.Instance.get_user().FirstName + " " + SingleUser.Instance.get_user().LastName;
             makeAllInvisible();
             InitializeCalendar();
         }
@@ -246,10 +246,7 @@ namespace newGym
 
         }
 
-        private void StudnetClassesCalendar_DateChanged(object sender, DateRangeEventArgs e)
-        {
-
-        }
+      
 
         /* Nick add to Add class in Secretary and student, this checks if two classes are overlapping with each other.
 

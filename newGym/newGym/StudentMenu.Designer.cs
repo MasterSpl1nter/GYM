@@ -48,7 +48,7 @@
             this.email_box = new System.Windows.Forms.TextBox();
             this.lastname_box = new System.Windows.Forms.TextBox();
             this.firstname_box = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.Welcome = new System.Windows.Forms.GroupBox();
             this.helloLabel = new System.Windows.Forms.Label();
             this.cancelCourse_panel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -63,7 +63,7 @@
             this.ClassID.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClassDataGrid)).BeginInit();
             this.EditDetail_panel.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.Welcome.SuspendLayout();
             this.cancelCourse_panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudnetClassDataGrid)).BeginInit();
@@ -72,11 +72,11 @@
             // 
             // StudnetClassesCalendar
             // 
-            this.StudnetClassesCalendar.Location = new System.Drawing.Point(28, 91);
+            this.StudnetClassesCalendar.CalendarDimensions = new System.Drawing.Size(1, 2);
+            this.StudnetClassesCalendar.Location = new System.Drawing.Point(16, 249);
             this.StudnetClassesCalendar.Margin = new System.Windows.Forms.Padding(7);
             this.StudnetClassesCalendar.Name = "StudnetClassesCalendar";
             this.StudnetClassesCalendar.TabIndex = 1;
-            this.StudnetClassesCalendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.StudnetClassesCalendar_DateChanged);
             // 
             // label1
             // 
@@ -92,16 +92,16 @@
             this.addCourse_panel.Controls.Add(this.ClassID);
             this.addCourse_panel.Controls.Add(this.ClassDataGrid);
             this.addCourse_panel.Controls.Add(this.AddStudentToClassButton);
-            this.addCourse_panel.Location = new System.Drawing.Point(320, 91);
+            this.addCourse_panel.Location = new System.Drawing.Point(252, 91);
             this.addCourse_panel.Margin = new System.Windows.Forms.Padding(2);
             this.addCourse_panel.Name = "addCourse_panel";
-            this.addCourse_panel.Size = new System.Drawing.Size(450, 469);
+            this.addCourse_panel.Size = new System.Drawing.Size(518, 469);
             this.addCourse_panel.TabIndex = 1;
             // 
             // ClassID
             // 
             this.ClassID.Controls.Add(this.ClassIDComboBox);
-            this.ClassID.Location = new System.Drawing.Point(22, 343);
+            this.ClassID.Location = new System.Drawing.Point(25, 364);
             this.ClassID.Name = "ClassID";
             this.ClassID.Size = new System.Drawing.Size(150, 67);
             this.ClassID.TabIndex = 8;
@@ -126,7 +126,7 @@
             this.ClassDataGrid.Name = "ClassDataGrid";
             this.ClassDataGrid.ReadOnly = true;
             this.ClassDataGrid.RowHeadersVisible = false;
-            this.ClassDataGrid.Size = new System.Drawing.Size(425, 254);
+            this.ClassDataGrid.Size = new System.Drawing.Size(493, 327);
             this.ClassDataGrid.TabIndex = 6;
             // 
             // AddStudentToClassButton
@@ -137,7 +137,7 @@
             this.AddStudentToClassButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.AddStudentToClassButton.ForeColor = System.Drawing.Color.White;
             this.AddStudentToClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddStudentToClassButton.Location = new System.Drawing.Point(266, 367);
+            this.AddStudentToClassButton.Location = new System.Drawing.Point(216, 386);
             this.AddStudentToClassButton.Name = "AddStudentToClassButton";
             this.AddStudentToClassButton.Size = new System.Drawing.Size(86, 27);
             this.AddStudentToClassButton.TabIndex = 7;
@@ -159,10 +159,10 @@
             this.EditDetail_panel.Controls.Add(this.email_box);
             this.EditDetail_panel.Controls.Add(this.lastname_box);
             this.EditDetail_panel.Controls.Add(this.firstname_box);
-            this.EditDetail_panel.Location = new System.Drawing.Point(320, 91);
+            this.EditDetail_panel.Location = new System.Drawing.Point(252, 91);
             this.EditDetail_panel.Margin = new System.Windows.Forms.Padding(2);
             this.EditDetail_panel.Name = "EditDetail_panel";
-            this.EditDetail_panel.Size = new System.Drawing.Size(450, 469);
+            this.EditDetail_panel.Size = new System.Drawing.Size(518, 469);
             this.EditDetail_panel.TabIndex = 0;
             // 
             // password_box
@@ -288,43 +288,43 @@
             this.firstname_box.Size = new System.Drawing.Size(179, 23);
             this.firstname_box.TabIndex = 50;
             // 
-            // groupBox3
+            // Welcome
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.helloLabel);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.groupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox3.Location = new System.Drawing.Point(385, 12);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(304, 60);
-            this.groupBox3.TabIndex = 8;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.Welcome.BackColor = System.Drawing.Color.Transparent;
+            this.Welcome.Controls.Add(this.helloLabel);
+            this.Welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.Welcome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Welcome.Location = new System.Drawing.Point(252, 12);
+            this.Welcome.Name = "Welcome";
+            this.Welcome.Size = new System.Drawing.Size(520, 60);
+            this.Welcome.TabIndex = 8;
+            this.Welcome.TabStop = false;
+            this.Welcome.Text = "WelcomeGroupBox";
             // 
             // helloLabel
             // 
             this.helloLabel.AutoSize = true;
             this.helloLabel.Location = new System.Drawing.Point(6, 30);
             this.helloLabel.Name = "helloLabel";
-            this.helloLabel.Size = new System.Drawing.Size(55, 17);
+            this.helloLabel.Size = new System.Drawing.Size(220, 17);
             this.helloLabel.TabIndex = 1;
-            this.helloLabel.Text = "Hello, ";
+            this.helloLabel.Text = "WILL BE FILLED IN RUNTIME";
             // 
             // cancelCourse_panel
             // 
             this.cancelCourse_panel.Controls.Add(this.groupBox1);
             this.cancelCourse_panel.Controls.Add(this.RemoveStudentFromClassButton);
             this.cancelCourse_panel.Controls.Add(this.StudnetClassDataGrid);
-            this.cancelCourse_panel.Location = new System.Drawing.Point(320, 91);
+            this.cancelCourse_panel.Location = new System.Drawing.Point(252, 91);
             this.cancelCourse_panel.Margin = new System.Windows.Forms.Padding(2);
             this.cancelCourse_panel.Name = "cancelCourse_panel";
-            this.cancelCourse_panel.Size = new System.Drawing.Size(450, 469);
+            this.cancelCourse_panel.Size = new System.Drawing.Size(518, 469);
             this.cancelCourse_panel.TabIndex = 9;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.relevantClasses);
-            this.groupBox1.Location = new System.Drawing.Point(29, 367);
+            this.groupBox1.Location = new System.Drawing.Point(46, 364);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(155, 75);
             this.groupBox1.TabIndex = 8;
@@ -347,7 +347,7 @@
             this.RemoveStudentFromClassButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.RemoveStudentFromClassButton.ForeColor = System.Drawing.Color.White;
             this.RemoveStudentFromClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RemoveStudentFromClassButton.Location = new System.Drawing.Point(269, 404);
+            this.RemoveStudentFromClassButton.Location = new System.Drawing.Point(240, 386);
             this.RemoveStudentFromClassButton.Name = "RemoveStudentFromClassButton";
             this.RemoveStudentFromClassButton.Size = new System.Drawing.Size(86, 27);
             this.RemoveStudentFromClassButton.TabIndex = 7;
@@ -365,7 +365,7 @@
             this.StudnetClassDataGrid.Name = "StudnetClassDataGrid";
             this.StudnetClassDataGrid.ReadOnly = true;
             this.StudnetClassDataGrid.RowHeadersVisible = false;
-            this.StudnetClassDataGrid.Size = new System.Drawing.Size(416, 316);
+            this.StudnetClassDataGrid.Size = new System.Drawing.Size(493, 316);
             this.StudnetClassDataGrid.TabIndex = 6;
             // 
             // gGroupBox1
@@ -376,9 +376,9 @@
             this.gGroupBox1.Controls.Add(this.Cancel_course);
             this.gGroupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.gGroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.gGroupBox1.Location = new System.Drawing.Point(49, 280);
+            this.gGroupBox1.Location = new System.Drawing.Point(12, 12);
             this.gGroupBox1.Name = "gGroupBox1";
-            this.gGroupBox1.Size = new System.Drawing.Size(156, 221);
+            this.gGroupBox1.Size = new System.Drawing.Size(231, 227);
             this.gGroupBox1.TabIndex = 7;
             this.gGroupBox1.TabStop = false;
             this.gGroupBox1.Text = "Actions";
@@ -424,13 +424,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 605);
-            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.Welcome);
             this.Controls.Add(this.gGroupBox1);
             this.Controls.Add(this.StudnetClassesCalendar);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.EditDetail_panel);
             this.Controls.Add(this.addCourse_panel);
             this.Controls.Add(this.cancelCourse_panel);
-            this.Controls.Add(this.EditDetail_panel);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StudentMenu";
             this.Text = "StudentMenu";
@@ -439,8 +439,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ClassDataGrid)).EndInit();
             this.EditDetail_panel.ResumeLayout(false);
             this.EditDetail_panel.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.Welcome.ResumeLayout(false);
+            this.Welcome.PerformLayout();
             this.cancelCourse_panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.StudnetClassDataGrid)).EndInit();
@@ -460,7 +460,7 @@
         private System.Windows.Forms.Panel addCourse_panel;
         private System.Windows.Forms.Panel EditDetail_panel;
         private GGroupBox gGroupBox1;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox Welcome;
         private System.Windows.Forms.Label helloLabel;
         private System.Windows.Forms.Button editDetail_button;
         private System.Windows.Forms.TextBox username_box;
