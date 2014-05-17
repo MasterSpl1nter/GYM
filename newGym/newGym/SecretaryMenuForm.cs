@@ -73,7 +73,7 @@ namespace newGym
             AddStudentToClassPannel.Visible = true;
             
             DataTable dt = new DataTable();
-            MySQL.Select(dt,"class");
+            MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid");
             ClassDataGrid.Columns.Clear();
             ClassDataGrid.DataSource = dt;
 
@@ -97,7 +97,7 @@ namespace newGym
             fillcombo(StudentCombo);
 
             DataTable dt = new DataTable();
-            MySQL.Select(dt, "studentclass");
+            MySQL.Query(dt, "select student.id,class.name,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid INNER JOIN class ON class.id = studentclass.classid");
             StudentClassDataGrid.Columns.Clear();
             StudentClassDataGrid.DataSource = dt;
         }
