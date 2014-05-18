@@ -197,5 +197,11 @@ namespace newGym
             vap.ShowDialog();
         }
 
+        private void addtraining_button_Click(object sender, EventArgs e)
+        {
+            FormAddTraining adtr = new FormAddTraining();
+            adtr.ShowDialog();
+        }
+
     }
 }

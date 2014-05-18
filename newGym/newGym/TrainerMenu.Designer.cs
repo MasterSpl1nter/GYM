@@ -284,6 +284,7 @@
             this.addtraining_button.Text = "Add Training";
             this.addtraining_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.addtraining_button.UseVisualStyleBackColor = true;
+            this.addtraining_button.Click += new System.EventHandler(this.addtraining_button_Click);
             // 
             // TrainerMenu
             // 
