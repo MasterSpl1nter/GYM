@@ -283,7 +283,6 @@ namespace newGym
 
                 while (myReader.Read())     //adding names to textboxes
                 {
-                    idTextbox.Text = myReader.GetInt32("id").ToString();        //convert int to string
                     firstNameTextbox.Text = myReader.GetString("firstname");
                     lastNameTextBox.Text = myReader.GetString("lastname");
                     emailTextbox.Text = myReader.GetString("email");
@@ -312,19 +311,6 @@ namespace newGym
 
             try
             {
-                // check id validation
-                if (idTextbox.Text == "")
-                {
-                    MessageBox.Show("Please enter ID");
-                    id_label.ForeColor = Color.Red;
-                    return;
-                }
-                if (idTextbox.Text.Length < 9)
-                {
-                    MessageBox.Show("ID invalid ! Please try again");
-                    id_label.ForeColor = Color.Red;
-                    return;
-                }
                 //check name of the student
                 if (firstNameTextbox.Text == "")
                 {
@@ -367,11 +353,11 @@ namespace newGym
                     MessageBox.Show(" Medical certificate is not valid medical certificate must be brought immediate");
                 }
 
-                if ( (idTextbox.Text!="" ) && ( firstNameTextbox.Text !="") && (lastNameTextBox.Text!="" )&&( emailTextbox.Text!="") && (usernameTextBox.Text!= "") && (passwordTextBox.Text!="") )
+                if (( firstNameTextbox.Text !="") && (lastNameTextBox.Text!="" )&&( emailTextbox.Text!="") && (usernameTextBox.Text!= "") && (passwordTextBox.Text!="") )
                 {
 
-                    string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}','{9}','{10}'", idTextbox.Text, firstNameTextbox.Text, lastNameTextBox.Text, emailTextbox.Text, usernameTextBox.Text, passwordTextBox.Text , 1, bDayDatepicker.Value.Date.ToString("yyyy-MM-dd"), stratDatepicker.Value.Date.ToString("yyyy-MM-dd"), endDatepicker.Value.Date.ToString("yyyy-MM-dd"), medDatePicker.Value.Date.ToString("yyyy-MM-dd"));
-                    Student.Delete(idTextbox.Text);
+                    string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}','{9}','{10}'", EditStudentCombobox.SelectedItem.ToString(), firstNameTextbox.Text, lastNameTextBox.Text, emailTextbox.Text, usernameTextBox.Text, passwordTextBox.Text , 1, bDayDatepicker.Value.Date.ToString("yyyy-MM-dd"), stratDatepicker.Value.Date.ToString("yyyy-MM-dd"), endDatepicker.Value.Date.ToString("yyyy-MM-dd"), medDatePicker.Value.Date.ToString("yyyy-MM-dd"));
+                    Student.Delete(EditStudentCombobox.SelectedItem.ToString());
                     MySQL.Insert("student", "id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert", insert);
                     MessageBox.Show("Details have been update succesfully ");
                 }

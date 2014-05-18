@@ -89,11 +89,9 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.emailTextbox = new System.Windows.Forms.TextBox();
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.firstNameTextbox = new System.Windows.Forms.TextBox();
-            this.idTextbox = new System.Windows.Forms.TextBox();
             this.EditStudApply = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.EditStudentCombobox = new System.Windows.Forms.ComboBox();
@@ -284,10 +282,10 @@
             this.enter_button.BackColor = System.Drawing.SystemColors.Highlight;
             this.enter_button.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enter_button.ForeColor = System.Drawing.Color.Navy;
-            this.enter_button.Location = new System.Drawing.Point(172, 383);
+            this.enter_button.Location = new System.Drawing.Point(179, 383);
             this.enter_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.enter_button.Name = "enter_button";
-            this.enter_button.Size = new System.Drawing.Size(154, 33);
+            this.enter_button.Size = new System.Drawing.Size(135, 33);
             this.enter_button.TabIndex = 44;
             this.enter_button.Text = "Accept";
             this.enter_button.UseVisualStyleBackColor = false;
@@ -396,7 +394,7 @@
             // 
             // id_box
             // 
-            this.id_box.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_box.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_box.Location = new System.Drawing.Point(205, 40);
             this.id_box.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.id_box.MaxLength = 9;
@@ -646,11 +644,9 @@
             this.EditStudentPannel.Controls.Add(this.label17);
             this.EditStudentPannel.Controls.Add(this.label18);
             this.EditStudentPannel.Controls.Add(this.label20);
-            this.EditStudentPannel.Controls.Add(this.label21);
             this.EditStudentPannel.Controls.Add(this.emailTextbox);
             this.EditStudentPannel.Controls.Add(this.lastNameTextBox);
             this.EditStudentPannel.Controls.Add(this.firstNameTextbox);
-            this.EditStudentPannel.Controls.Add(this.idTextbox);
             this.EditStudentPannel.Controls.Add(this.EditStudApply);
             this.EditStudentPannel.Controls.Add(this.label19);
             this.EditStudentPannel.Controls.Add(this.EditStudentCombobox);
@@ -809,16 +805,6 @@
             this.label20.TabIndex = 70;
             this.label20.Text = "First Name:";
             // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(184, 78);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(23, 14);
-            this.label21.TabIndex = 67;
-            this.label21.Text = "ID:";
-            // 
             // emailTextbox
             // 
             this.emailTextbox.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -848,17 +834,6 @@
             this.firstNameTextbox.Name = "firstNameTextbox";
             this.firstNameTextbox.Size = new System.Drawing.Size(130, 20);
             this.firstNameTextbox.TabIndex = 68;
-            // 
-            // idTextbox
-            // 
-            this.idTextbox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idTextbox.Location = new System.Drawing.Point(224, 72);
-            this.idTextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.idTextbox.MaxLength = 9;
-            this.idTextbox.Multiline = true;
-            this.idTextbox.Name = "idTextbox";
-            this.idTextbox.Size = new System.Drawing.Size(130, 20);
-            this.idTextbox.TabIndex = 66;
             // 
             // EditStudApply
             // 
@@ -929,10 +904,10 @@
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(170, 112);
+            this.DeleteButton.Location = new System.Drawing.Point(179, 115);
             this.DeleteButton.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(79, 29);
+            this.DeleteButton.Size = new System.Drawing.Size(85, 29);
             this.DeleteButton.TabIndex = 6;
             this.DeleteButton.Text = "Delete";
             this.DeleteButton.UseVisualStyleBackColor = true;
@@ -1241,11 +1216,11 @@
             this.ClientSize = new System.Drawing.Size(749, 595);
             this.Controls.Add(this.WelcomeGroupbox);
             this.Controls.Add(this.gGroupBox1);
+            this.Controls.Add(this.AddStudentPannel);
             this.Controls.Add(this.RemoveStudentFromClassPannel);
             this.Controls.Add(this.AddStudentToClassPannel);
             this.Controls.Add(this.DeleteStudentPanel);
             this.Controls.Add(this.EditStudentPannel);
-            this.Controls.Add(this.AddStudentPannel);
             this.Name = "SecretaryMenu";
             this.Text = "SecretaryMenu";
             this.AddStudentPannel.ResumeLayout(false);
@@ -1363,10 +1338,8 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox emailTextbox;
         private System.Windows.Forms.TextBox lastNameTextBox;
         private System.Windows.Forms.TextBox firstNameTextbox;
-        private System.Windows.Forms.TextBox idTextbox;
     }
 }

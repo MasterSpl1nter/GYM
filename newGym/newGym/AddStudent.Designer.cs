@@ -57,12 +57,12 @@
             // id_box
             // 
             this.id_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id_box.Location = new System.Drawing.Point(151, 33);
+            this.id_box.Location = new System.Drawing.Point(151, 41);
             this.id_box.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.id_box.MaxLength = 9;
             this.id_box.Multiline = true;
             this.id_box.Name = "id_box";
-            this.id_box.Size = new System.Drawing.Size(145, 26);
+            this.id_box.Size = new System.Drawing.Size(145, 18);
             this.id_box.TabIndex = 1;
             this.id_box.TextChanged += new System.EventHandler(this.id_box_TextChanged);
             this.id_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.id_box_KeyPress);
