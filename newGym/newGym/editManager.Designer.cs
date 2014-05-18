@@ -151,6 +151,7 @@
             this.managerFirstName.Name = "managerFirstName";
             this.managerFirstName.Size = new System.Drawing.Size(100, 20);
             this.managerFirstName.TabIndex = 49;
+            this.managerFirstName.TextChanged += new System.EventHandler(this.managerFirstName_TextChanged);
             // 
             // exit_update
             // 

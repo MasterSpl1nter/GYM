@@ -53,7 +53,10 @@ namespace newGym
         {
             return MySQL.Insert(table, "id,firstname,lastname,email,username,password,permission,salaryperhour", insert);
         }
-
+        public int addShift(string table, string insert)
+        {
+            return MySQL.Insert(table, "id,permission,stattime,endtime", insert);
+        }
         public void addUser(int id,string firstname,string lastname,string email,string username,string password,int permission,int salaryperhour)
         {
             DbConnection newConn = new DbConnection("gym", "root", "csharp");

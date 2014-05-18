@@ -160,5 +160,10 @@ namespace newGym
         {
 
         }
+
+        private void managerFirstName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
