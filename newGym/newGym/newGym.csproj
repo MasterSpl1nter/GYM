@@ -102,6 +102,13 @@
     <Compile Include="EditStudentBySecrtary.Designer.cs">
       <DependentUpon>EditStudentBySecrtary.cs</DependentUpon>
     </Compile>
+    <Compile Include="fAddClassExt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddClassExt.Designer.cs">
+      <DependentUpon>fAddClassExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fClass.cs" />
     <Compile Include="fEditClass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -333,6 +340,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditStudentBySecrtary.resx">
       <DependentUpon>EditStudentBySecrtary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddClassExt.resx">
+      <DependentUpon>fAddClassExt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fEditClass.resx">
       <DependentUpon>fEditClass.cs</DependentUpon>
