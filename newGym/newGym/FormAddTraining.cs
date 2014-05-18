@@ -19,8 +19,9 @@ namespace newGym
         public FormAddTraining()
         {
             InitializeComponent();
-            load_table();
             Fillcombo();
+            load_table();
+
         }
         void load_table()
         {
@@ -50,7 +51,7 @@ namespace newGym
         void Fillcombo()
         {
             string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
-            string Query = "select * from gym.training  ;";
+            string Query = "select * from gym.appliance  ;";
             MySqlConnection conDataBase = new MySqlConnection(constring);
             MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
             MySqlDataReader myReader;
@@ -59,12 +60,12 @@ namespace newGym
                 conDataBase.Open();
                 myReader = cmdDataBase.ExecuteReader();
 
-                while (myReader.Read())     //adding names to combobox
+                while (myReader.Read())     //adding  to combobox
                 {
 
-                    string sName = myReader.GetString("id");
+                    string sName = myReader.GetString("name");
                     comboBox1.Items.Add(sName);
-                    comboBox1.DisplayMember = "name";
+
                 }
             }
             catch (Exception ex)
@@ -88,8 +89,55 @@ namespace newGym
 
         private void save_button_Click(object sender, EventArgs e)
         {
+            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
+            string Query = "insert into gym.training (id,name,appliance,sets,repeats) values('" + this.id_txt.Text + "' , '" + this.name_txt.Text + "' , '" + comboBox1.Text + "' , '" + this.sets_txt.Text + "' , '" + this.repeats_txt.Text + "') ;";
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+            MySqlDataReader myReader;
 
 
+            try
+            {
+                conDataBase.Open();
+                myReader = cmdDataBase.ExecuteReader();
+                MessageBox.Show("Training Added");
+
+                this.Close();
+
+
+                while (myReader.Read())
+                {
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
+            //string Query = "select * from gym.training where firstname='" + comboBox1.Text + "' ;";
+            //MySqlConnection conDataBase = new MySqlConnection(constring);
+            //MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+            //MySqlDataReader myReader;
+
+
+            //try
+            //{
+            //    conDataBase.Open();
+            //    myReader = cmdDataBase.ExecuteReader();
+
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
         }
     }
 }
