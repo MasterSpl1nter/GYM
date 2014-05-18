@@ -14,7 +14,6 @@ namespace newGym
 {
     public partial class StudentMenu : Form
     {
-        fClass myclass = new fClass();
         Student a = (Student)SingleUser.Instance.get_user();
         //int id = SingleUser.Instance.get_user().Id;
         //int permission = 0;
@@ -226,6 +225,7 @@ namespace newGym
 
         private void AddStudentToClassButton_Click(object sender, EventArgs e)
         {
+
             DataTable dt = new DataTable();
             DataTable dt1 = new DataTable();
             string classid =  ClassIDComboBox.Text;
@@ -244,7 +244,6 @@ namespace newGym
                 add_course_Click(null, null);
                 return;
             }
-            myclass.Up(int.Parse(classid));
     	}
 
 
@@ -264,7 +263,6 @@ namespace newGym
         {
 
             Student.removeStudentFromClass( SingleUser.Instance.get_user().Id.ToString() , relevantClasses.Text);
-            myclass.Down(int.Parse(relevantClasses.Text));
             fillCombo_and_dt_remove_student();
             
 
