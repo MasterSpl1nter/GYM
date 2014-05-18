@@ -71,7 +71,12 @@ namespace newGym
         {
             makeAllInvisible();
             AddStudentToClassPannel.Visible = true;
+            fill_combo_and_dt_add_Student_to_class();
             
+        }
+
+        private void fill_combo_and_dt_add_Student_to_class()
+        {
             DataTable dt = new DataTable();
             MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid");
             ClassDataGrid.Columns.Clear();
@@ -531,6 +536,11 @@ namespace newGym
 
             fill_combo_and_dt_remove_Student_from_class();
             MessageBox.Show("The student was removed successfully");
+
+        }
+
+        private void WelcomeGroupbox_Enter(object sender, EventArgs e)
+        {
 
         }
 

@@ -276,7 +276,7 @@ namespace newGym
             DataTable dt = new DataTable();
             try
             {
-                //well this is a tought querry , pull from the student class all the classes that trhe student is singed up for and from those grab the name room guideid and id of the class
+                //well this is a tought querry , pull from the student class all the classes that the student is singed up for and from those grab the name room guideid and id of the class
                 MySQL.Query(dt, "SELECT id, name , room , guideid FROM class WHERE (id) IN (SELECT classid FROM studentclass WHERE studentid = " + SingleUser.Instance.get_user().Id.ToString() + ");");
                 foreach (DataRow row in dt.Rows)
                 {
