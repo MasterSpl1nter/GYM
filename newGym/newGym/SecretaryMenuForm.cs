@@ -475,8 +475,8 @@ namespace newGym
             else
             {
 
-                DateTime StartB = Convert.ToDateTime(dt.Rows[0]["starttime"]);
-                DateTime EndB = Convert.ToDateTime(dt.Rows[0]["endtime"]);
+                DateTime StartB = Convert.ToDateTime(dt1.Rows[0]["starttime"]);
+                DateTime EndB = Convert.ToDateTime(dt1.Rows[0]["endtime"]);
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     DateTime StartA = Convert.ToDateTime(dt.Rows[i]["starttime"]);
