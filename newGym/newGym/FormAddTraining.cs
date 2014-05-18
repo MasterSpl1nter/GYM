@@ -15,6 +15,7 @@ namespace newGym
         MySqlCommandBuilder cmdb1;
         MySqlDataAdapter sda;
         DataSet dbdataset;
+        private DataTable dt;
         public FormAddTraining()
         {
             InitializeComponent();
@@ -60,8 +61,10 @@ namespace newGym
 
                 while (myReader.Read())     //adding names to combobox
                 {
-                    string sName = myReader.GetString("name");
+
+                    string sName = myReader.GetString("id");
                     comboBox1.Items.Add(sName);
+                    comboBox1.DisplayMember = "name";
                 }
             }
             catch (Exception ex)
@@ -77,7 +80,7 @@ namespace newGym
                 sda.Update(dbdataset);
                 MessageBox.Show("Information Updated", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -85,32 +88,9 @@ namespace newGym
 
         private void save_button_Click(object sender, EventArgs e)
         {
-            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
-            string Query = "insert into gym.training (id,name,appliance,sets,repeats) values('" + this.id_txt.Text + "' , '" + this.name_txt.Text + "' , '" + this.comboBox1.Text + "' , '" + this.sets_txt.Text + "' , '" + this.repeats_txt.Text + "') ;";
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
-            MySqlDataReader myReader;
-
-          
-                try
-                {
-                    conDataBase.Open();
-                    myReader = cmdDataBase.ExecuteReader();
-                    MessageBox.Show("Training Added");
-
-                    this.Close();
 
 
-                    while (myReader.Read())
-                    {
-
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
         }
     }
+}
 
