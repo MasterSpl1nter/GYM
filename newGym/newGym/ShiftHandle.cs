@@ -38,6 +38,7 @@ namespace newGym
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this.idComboBox.Items.Clear();
             DataTable dt = new DataTable();
             if(this.departmentComboBox.SelectedItem.Equals("Manager") )
             {
@@ -54,7 +55,6 @@ namespace newGym
                 string query = "SELECT id,firstname,lastname FROM trainer ;";
                 MySQL.Query(dt, query);
             }
-            
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 string str=dt.Rows[i]["id"] +" "+ dt.Rows[i]["firstname"] +" "+ dt.Rows[i]["lastname"];
