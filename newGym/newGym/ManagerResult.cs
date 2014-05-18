@@ -60,9 +60,8 @@ namespace newGym
                     //dt1.Columns.
                     //MessageBox.Show(dt.Rows[j].ToString());
                 }
-                
-                
                 //continue
+
             }
             
             
