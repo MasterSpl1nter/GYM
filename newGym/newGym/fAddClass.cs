@@ -89,7 +89,7 @@ namespace newGym
                         else
                         {
 
-                            fClass myclass = new fClass(int.Parse(textBox1.Text), textBox2.Text, int.Parse(comboBox1.Text), int.Parse(comboBox2.Text), 0, int.Parse(comboBox1.Text),
+                            fClass myclass = new fClass(int.Parse(textBox1.Text), textBox2.Text, int.Parse(comboBox1.Text), int.Parse(comboBox2.Text), 0, int.Parse(textBox3.Text),
                                 startClass.ToString("yyyy-MM-dd HH:mm:ss"), endClass.ToString("yyyy-MM-dd HH:mm:ss"));
 
                             if (myclass.SaveData() && myclass.SaveDate())
