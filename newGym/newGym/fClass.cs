@@ -193,17 +193,14 @@ namespace newGym
                             {
                                 sqlStartTime = reader.GetDateTime("starttime");
                                 sqlEndTime = reader.GetDateTime("endtime");
-
+                                // TO-CODE check if time has the same date
                                 if (start.Date.Equals(end.Date))
                                 {
                                     oldStart = new TimeSpan(0, sqlStartTime.Hour, sqlStartTime.Minute, 0);
                                     oldEnd = new TimeSpan(0, sqlEndTime.Hour, sqlEndTime.Minute, 0);
 
-                                   isTimeBetween =  !((newStart <= oldEnd)  &&  (newEnd >= oldStart));
-                                   if (isTimeBetween)
-                                       return true;
+                                   return ((newStart <= oldEnd)  &&  (newEnd >= oldStart));
                                 }
-
                             }
                         }
                     }
