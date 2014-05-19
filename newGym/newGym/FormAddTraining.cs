@@ -15,7 +15,7 @@ namespace newGym
         MySqlCommandBuilder cmdb1;
         MySqlDataAdapter sda;
         DataSet dbdataset;
-        private DataTable dt;
+        private DataTable d;t
         public FormAddTraining()
         {
             InitializeComponent();
@@ -90,7 +90,7 @@ namespace newGym
         private void save_button_Click(object sender, EventArgs e)
         {
             string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
-            string Query = "insert into gym.training (id,name,appliance,sets,repeats) values('" + this.id_txt.Text + "' , '" + this.name_txt.Text + "' , '" + comboBox1.Text + "' , '" + this.sets_txt.Text + "' , '" + this.repeats_txt.Text + "') ;";
+            string Query = "insert into gym.training (id,name,appliance,sets,repeats) values('" + this.id_txt.Text + "' , '" + this.name_txt.Text + "' ,'" + dt.Rows[comboBox1.SelectedIndex]["ID"] + "' , '" + this.sets_txt.Text + "' , '" + this.repeats_txt.Text + "') ;";
             MySqlConnection conDataBase = new MySqlConnection(constring);
             MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
             MySqlDataReader myReader;
@@ -114,6 +114,7 @@ namespace newGym
             {
                 MessageBox.Show(ex.Message);
             }
+            
         }
 
 
