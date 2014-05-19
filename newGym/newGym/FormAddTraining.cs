@@ -54,7 +54,7 @@ namespace newGym
             MySQL.Select(dt, "appliance");
             comboBox1.DataSource = dt;
             comboBox1.DisplayMember = "name";
-            /*
+            
             string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
             string Query = "select * from gym.appliance  ;";
             MySqlConnection conDataBase = new MySqlConnection(constring);
@@ -76,21 +76,9 @@ namespace newGym
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }*/
-        }
-        private void update_button_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                cmdb1 = new MySqlCommandBuilder(sda);
-                sda.Update(dbdataset);
-                MessageBox.Show("Information Updated", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        
 
         private void save_button_Click(object sender, EventArgs e)
         {
@@ -107,7 +95,7 @@ namespace newGym
                 myReader = cmdDataBase.ExecuteReader();
                 MessageBox.Show("Training Added");
 
-                this.Close();
+                
 
 
                 while (myReader.Read())
@@ -126,24 +114,12 @@ namespace newGym
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
-            //string Query = "select * from gym.training where firstname='" + comboBox1.Text + "' ;";
-            //MySqlConnection conDataBase = new MySqlConnection(constring);
-            //MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
-            //MySqlDataReader myReader;
+            
+        }
 
+        private void remove_button_Click(object sender, EventArgs e)
+        {
 
-            //try
-            //{
-            //    conDataBase.Open();
-            //    myReader = cmdDataBase.ExecuteReader();
-
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
         }
     }
 }

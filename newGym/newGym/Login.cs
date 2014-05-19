@@ -68,10 +68,11 @@ namespace newGym
                     p = Factory_DP.PersonFactory("Trainer");
                     if (p.Template(dt, textBox1.Text, textBox2.Text))
                     {
-                        SingleUser.Instance.set_user(p);
-                        TrainerMenu tm = new TrainerMenu((Trainer)p);
-                        tm.ShowDialog();
                         retval = 0;
+                        SingleUser.Instance.set_user(p);
+                        TrainerMenu tm = new TrainerMenu();
+                        tm.ShowDialog();
+                        
                     }
 
                     break;

@@ -42,10 +42,22 @@
             this.save_button = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.update_button = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.delname_txt = new System.Windows.Forms.TextBox();
+            this.delappliance_txt = new System.Windows.Forms.TextBox();
+            this.delsets_txt = new System.Windows.Forms.TextBox();
+            this.delrepeats_txt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.remove_button = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // id_txt
@@ -106,9 +118,9 @@
             this.groupBox1.Controls.Add(this.training_name);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.sets_txt);
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Location = new System.Drawing.Point(13, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(610, 134);
+            this.groupBox1.Size = new System.Drawing.Size(610, 104);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Part of Workout Training";
@@ -153,7 +165,7 @@
             // 
             this.save_button.Image = global::newGym.Properties.Resources._1399410331_document_edit;
             this.save_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.save_button.Location = new System.Drawing.Point(494, 154);
+            this.save_button.Location = new System.Drawing.Point(527, 122);
             this.save_button.Name = "save_button";
             this.save_button.Size = new System.Drawing.Size(96, 23);
             this.save_button.TabIndex = 7;
@@ -164,9 +176,9 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(13, 194);
+            this.groupBox2.Location = new System.Drawing.Point(13, 296);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(610, 182);
+            this.groupBox2.Size = new System.Drawing.Size(610, 118);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Trainings";
@@ -175,29 +187,131 @@
             // 
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(7, 20);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(597, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(604, 99);
             this.dataGridView1.TabIndex = 0;
             // 
-            // update_button
+            // groupBox3
             // 
-            this.update_button.Image = global::newGym.Properties.Resources._1399410331_document_edit;
-            this.update_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.update_button.Location = new System.Drawing.Point(494, 391);
-            this.update_button.Name = "update_button";
-            this.update_button.Size = new System.Drawing.Size(96, 23);
-            this.update_button.TabIndex = 9;
-            this.update_button.Text = "Update";
-            this.update_button.UseVisualStyleBackColor = true;
-            this.update_button.Click += new System.EventHandler(this.update_button_Click);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.delrepeats_txt);
+            this.groupBox3.Controls.Add(this.delsets_txt);
+            this.groupBox3.Controls.Add(this.delappliance_txt);
+            this.groupBox3.Controls.Add(this.delname_txt);
+            this.groupBox3.Controls.Add(this.comboBox2);
+            this.groupBox3.Location = new System.Drawing.Point(16, 153);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(607, 76);
+            this.groupBox3.TabIndex = 9;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Remove Part of Workout";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(30, 43);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(100, 21);
+            this.comboBox2.TabIndex = 0;
+            // 
+            // delname_txt
+            // 
+            this.delname_txt.Location = new System.Drawing.Point(136, 44);
+            this.delname_txt.Name = "delname_txt";
+            this.delname_txt.Size = new System.Drawing.Size(100, 20);
+            this.delname_txt.TabIndex = 1;
+            // 
+            // delappliance_txt
+            // 
+            this.delappliance_txt.Location = new System.Drawing.Point(242, 43);
+            this.delappliance_txt.Name = "delappliance_txt";
+            this.delappliance_txt.Size = new System.Drawing.Size(121, 20);
+            this.delappliance_txt.TabIndex = 2;
+            // 
+            // delsets_txt
+            // 
+            this.delsets_txt.Location = new System.Drawing.Point(369, 43);
+            this.delsets_txt.Name = "delsets_txt";
+            this.delsets_txt.Size = new System.Drawing.Size(100, 20);
+            this.delsets_txt.TabIndex = 3;
+            // 
+            // delrepeats_txt
+            // 
+            this.delrepeats_txt.Location = new System.Drawing.Point(475, 42);
+            this.delrepeats_txt.Name = "delrepeats_txt";
+            this.delrepeats_txt.Size = new System.Drawing.Size(100, 20);
+            this.delrepeats_txt.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(30, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(136, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Training Name";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(243, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Appliance";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(372, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "# of Sets";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(475, 25);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "# of Repeats";
+            // 
+            // remove_button
+            // 
+            this.remove_button.Image = global::newGym.Properties.Resources._1399410901_trash1;
+            this.remove_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.remove_button.Location = new System.Drawing.Point(527, 235);
+            this.remove_button.Name = "remove_button";
+            this.remove_button.Size = new System.Drawing.Size(96, 23);
+            this.remove_button.TabIndex = 10;
+            this.remove_button.Text = "Remove";
+            this.remove_button.UseVisualStyleBackColor = true;
+            this.remove_button.Click += new System.EventHandler(this.remove_button_Click);
             // 
             // FormAddTraining
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(635, 426);
-            this.Controls.Add(this.update_button);
+            this.Controls.Add(this.remove_button);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.save_button);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
@@ -207,6 +321,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -227,6 +343,17 @@
         private System.Windows.Forms.Button save_button;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button update_button;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox delrepeats_txt;
+        private System.Windows.Forms.TextBox delsets_txt;
+        private System.Windows.Forms.TextBox delappliance_txt;
+        private System.Windows.Forms.TextBox delname_txt;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button remove_button;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace newGym
 {
@@ -15,14 +16,27 @@ namespace newGym
         DateTime[] arr;
         DataTable dtmp;
         DataTable dt;
+
         Trainer trainer;
+         public TrainerMenu()
+        {
+            InitializeComponent();
+            loggedLabel.Text = "" + SingleUser.Instance.get_user().FirstName + " " + SingleUser.Instance.get_user().LastName;
+            //makeAllInvisible();
+            Fillcombo();
+            Fillcombo1();
+        }
+
         public TrainerMenu(Trainer trainer)
         {
+            
             this.trainer = trainer;
+            
             dt = new DataTable();
             InitializeComponent();
+            
             timer1.Start();
-            loggedLabel.Text = trainer.UserName;
+            //loggedLabel.Text = trainer.UserName;
             MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.trainerid=22");
             arr = new DateTime[dt.Rows.Count];
             for (int i = 0; i < dt.Rows.Count; i++)
@@ -38,6 +52,66 @@ namespace newGym
                       int index = i;
                       dic.Add(key, index);
                   }*/
+        }
+        public void Fillcombo()
+        {
+            dt = new DataTable();
+            MySQL.Select(dt, "student");
+            comboBox1.DataSource = dt;
+            comboBox1.DisplayMember = "id";
+
+            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
+            string Query = "select * from gym.student  ;";
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+            MySqlDataReader myReader;
+            try
+            {
+                conDataBase.Open();
+                myReader = cmdDataBase.ExecuteReader();
+
+                while (myReader.Read())     //adding  to combobox
+                {
+
+                    string sID = myReader.GetString("id");
+                    comboBox1.Items.Add(sID);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void Fillcombo1()
+        {
+            dt = new DataTable();
+            MySQL.Select(dt, "training");
+            comboBox2.DataSource = dt;
+            comboBox2.DisplayMember = "name";
+
+            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
+            string Query = "select * from gym.training  ;";
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+            MySqlDataReader myReader;
+            try
+            {
+                conDataBase.Open();
+                myReader = cmdDataBase.ExecuteReader();
+
+                while (myReader.Read())     //adding  to combobox
+                {
+
+                    string sName = myReader.GetString("name");
+                    comboBox1.Items.Add(sName);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
@@ -203,5 +277,45 @@ namespace newGym
             adtr.ShowDialog();
         }
 
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void training2student_betton_Click(object sender, EventArgs e)
+        {
+            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
+            string Query = "insert into gym.studenttraining (studentid,trainingid) values('" + comboBox1.Text + "' , '"+  dt.Rows[comboBox2.SelectedIndex]["ID"] + "') ;";
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+            MySqlDataReader myReader;
+
+            
+                try
+                {
+                    conDataBase.Open();
+                    myReader = cmdDataBase.ExecuteReader();
+                    MessageBox.Show("Training Added");
+
+                    this.Close();
+
+
+                    while (myReader.Read())
+                    {
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
     }
-}
+

@@ -49,13 +49,19 @@
             this.dateLabel = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.actionsBox = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.training2student_betton = new System.Windows.Forms.Button();
             this.viewbutton = new System.Windows.Forms.Button();
             this.addtraining_button = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.scheduleBox.SuspendLayout();
             this.searchBox.SuspendLayout();
             this.informationBox.SuspendLayout();
             this.actionsBox.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // monthCalendar1
@@ -241,7 +247,6 @@
             // 
             // actionsBox
             // 
-            this.actionsBox.Controls.Add(this.button4);
             this.actionsBox.Controls.Add(this.viewbutton);
             this.actionsBox.Controls.Add(this.addtraining_button);
             this.actionsBox.Location = new System.Drawing.Point(20, 69);
@@ -251,14 +256,18 @@
             this.actionsBox.TabStop = false;
             this.actionsBox.Text = "Actions";
             // 
-            // button4
+            // training2student_betton
             // 
-            this.button4.Location = new System.Drawing.Point(23, 80);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(106, 23);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.training2student_betton.Image = global::newGym.Properties.Resources._1399410268_add;
+            this.training2student_betton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.training2student_betton.Location = new System.Drawing.Point(23, 153);
+            this.training2student_betton.Name = "training2student_betton";
+            this.training2student_betton.Size = new System.Drawing.Size(106, 34);
+            this.training2student_betton.TabIndex = 2;
+            this.training2student_betton.Text = "Add Training to Student";
+            this.training2student_betton.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.training2student_betton.UseVisualStyleBackColor = true;
+            this.training2student_betton.Click += new System.EventHandler(this.training2student_betton_Click);
             // 
             // viewbutton
             // 
@@ -286,6 +295,56 @@
             this.addtraining_button.UseVisualStyleBackColor = true;
             this.addtraining_button.Click += new System.EventHandler(this.addtraining_button_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.training2student_betton);
+            this.groupBox1.Location = new System.Drawing.Point(20, 201);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(157, 224);
+            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Training to Student";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(6, 57);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(145, 21);
+            this.comboBox1.TabIndex = 3;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(6, 110);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(145, 21);
+            this.comboBox2.TabIndex = 4;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(9, 41);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Student ID";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(9, 94);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 13);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Training";
+            // 
             // TrainerMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,6 +354,7 @@
             this.Controls.Add(this.informationBox);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.scheduleBox);
+            this.Controls.Add(this.groupBox1);
             this.Name = "TrainerMenu";
             this.Text = "TrainerMenu";
             this.Load += new System.EventHandler(this.TrainerMenu_Load);
@@ -305,6 +365,8 @@
             this.informationBox.ResumeLayout(false);
             this.informationBox.PerformLayout();
             this.actionsBox.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -333,6 +395,11 @@
         private System.Windows.Forms.GroupBox actionsBox;
         private System.Windows.Forms.Button viewbutton;
         private System.Windows.Forms.Button addtraining_button;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button training2student_betton;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
