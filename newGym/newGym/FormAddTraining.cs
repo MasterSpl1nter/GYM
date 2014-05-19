@@ -15,7 +15,7 @@ namespace newGym
         MySqlCommandBuilder cmdb1;
         MySqlDataAdapter sda;
         DataSet dbdataset;
-        private DataTable d;t
+        private DataTable dt;
         public FormAddTraining()
         {
             InitializeComponent();
@@ -50,6 +50,11 @@ namespace newGym
         }
         void Fillcombo()
         {
+            dt = new DataTable();
+            MySQL.Select(dt, "appliance");
+            comboBox1.DataSource = dt;
+            comboBox1.DisplayMember = "name";
+            /*
             string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
             string Query = "select * from gym.appliance  ;";
             MySqlConnection conDataBase = new MySqlConnection(constring);
@@ -71,7 +76,7 @@ namespace newGym
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
+            }*/
         }
         private void update_button_Click(object sender, EventArgs e)
         {
