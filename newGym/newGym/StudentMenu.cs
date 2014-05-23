@@ -80,6 +80,7 @@ namespace newGym
             MySqlConnection conDataBase = new MySqlConnection(constring);
             MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
             MySqlDataReader myReader;
+            
             //fill all details
             try
             {
@@ -193,7 +194,6 @@ namespace newGym
             makeAllInvisible();
             addCourse_panel.Visible = true;
 
-
             DataTable dt = new DataTable();
             MySQL.Select(dt, "class");
             ClassDataGrid.Columns.Clear();
@@ -226,6 +226,8 @@ namespace newGym
         private void AddStudentToClassButton_Click(object sender, EventArgs e)
         {
 
+
+
             DataTable dt = new DataTable();
             DataTable dt1 = new DataTable();
             string classid =  ClassIDComboBox.Text;
@@ -233,19 +235,28 @@ namespace newGym
 
         MySQL.Query(dt,"select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
         MySQL.Query(dt1,"select starttime,endtime from classtime WHERE classid=" + classid);
-        DateTime StartB=Convert.ToDateTime(dt1.Rows[0]["starttime"]);
-	    DateTime EndB=Convert.ToDateTime(dt1.Rows[0]["endtime"]);
-	    for(int i=0;i<dt.Rows.Count;i++){
-        	DateTime StartA=Convert.ToDateTime(dt.Rows[i]["starttime"]);
-            DateTime EndA = Convert.ToDateTime(dt.Rows[i]["endtime"]);
-		    if(StartA<EndB && StartB<EndA){
+        if (dt.Rows.Count == 0 || dt1.Rows.Count == 0)
+        {
+           
+            MessageBox.Show("The Course was added successfully");
+        }
+        else
+        {
+            DateTime StartB = Convert.ToDateTime(dt1.Rows[0]["starttime"]);
+            DateTime EndB = Convert.ToDateTime(dt1.Rows[0]["endtime"]);
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                DateTime StartA = Convert.ToDateTime(dt.Rows[i]["starttime"]);
+                DateTime EndA = Convert.ToDateTime(dt.Rows[i]["endtime"]);
+                if (StartA < EndB && StartB < EndA)
+                {
 
-                MessageBox.Show("You are already joined to a class that takes place at the same time.","Error",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                add_course_Click(null, null);
-                return;
+                    MessageBox.Show("You are already joined to a class that takes place at the same time.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    add_course_Click(null, null);
+                    return;
+                }
             }
-    	}
-
+        }
 
             Student.addStudToClass( classid , Studentid );
             add_course_Click(null,null);
@@ -294,7 +305,6 @@ namespace newGym
         
         }
 
-      
 
 
  
