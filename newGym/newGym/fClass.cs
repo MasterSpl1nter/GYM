@@ -124,7 +124,15 @@ namespace newGym
             return false;
         }
 
-
+        public Boolean isRoomOccupied()
+        {
+            int count = 0;
+            count = MySQL.count("SELECT id FROM class WHERE room=" + room);
+            if (count == 0)
+                return true;
+            else
+                return false;
+        }
         public Boolean isTimeBetweenClasses()
         {
             int[] usedId;
@@ -156,7 +164,7 @@ namespace newGym
 
                     }
                     connection.Close();
-                    // call to check if the shedule is free
+                    // call to check if the shedule is not free
                     for (int j = 0; j < size; j++)
                         if (CheckTimes(usedId[j], Convert.ToDateTime(startClass), Convert.ToDateTime(endClass)) == true)
                             return true;
@@ -177,7 +185,7 @@ namespace newGym
             TimeSpan newEnd = new TimeSpan(0, end.Hour, end.Minute, 0);
             TimeSpan oldStart;
             TimeSpan oldEnd;
-            Boolean isTimeBetween;
+            //Boolean isTimeBetween;
             try
             {
                 var connectionString = @"server=localhost;userid=root;password=csharp;database=gym";
@@ -215,15 +223,12 @@ namespace newGym
 
             return false;
         }
-            
 
 
-        public static int incParticipants(string insert, string where)
-        {
-            return MySQL.Update("class", insert, "id=" + where);
-        }
 
-        public void Up(int classID)
+
+
+        public void increase(int classID)
         {
             try
             {
@@ -252,7 +257,7 @@ namespace newGym
             }
         }
 
-        public void Down(int classID)
+        public void decrease(int classID)
         {
             try
             {

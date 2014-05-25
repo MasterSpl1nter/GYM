@@ -128,8 +128,8 @@ namespace newGym
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int customerId = Convert.ToInt32(comboBox1.Text);
-            LoadCapicity(customerId);
+            if (comboBox1.Text != "System.Data.DataRowView")
+                LoadCapicity(int.Parse(comboBox1.Text));
         }
 
         //Load room ID to a combobox
