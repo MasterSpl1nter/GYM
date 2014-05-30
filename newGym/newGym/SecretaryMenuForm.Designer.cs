@@ -123,6 +123,8 @@
             this.removeStudentFromClassBotton = new newGym.GButton();
             this.removeStudentButton = new newGym.GButton();
             this.studentToClassButton = new newGym.GButton();
+            this.ShiftsPannel = new System.Windows.Forms.Panel();
+            this.ShiftsDataGrid = new System.Windows.Forms.DataGridView();
             this.AddStudentPannel.SuspendLayout();
             this.EditStudentPannel.SuspendLayout();
             this.WelcomeGroupbox.SuspendLayout();
@@ -136,6 +138,8 @@
             this.StudentIdGroupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudentClassDataGrid)).BeginInit();
             this.gGroupBox1.SuspendLayout();
+            this.ShiftsPannel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ShiftsDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // AddStudentPannel
@@ -1210,11 +1214,31 @@
             this.studentToClassButton.UseVisualStyleBackColor = false;
             this.studentToClassButton.Click += new System.EventHandler(this.studentToClassButton_Click);
             // 
+            // ShiftsPannel
+            // 
+            this.ShiftsPannel.Controls.Add(this.ShiftsDataGrid);
+            this.ShiftsPannel.Location = new System.Drawing.Point(262, 113);
+            this.ShiftsPannel.Name = "ShiftsPannel";
+            this.ShiftsPannel.Size = new System.Drawing.Size(464, 464);
+            this.ShiftsPannel.TabIndex = 15;
+            // 
+            // ShiftsDataGrid
+            // 
+            this.ShiftsDataGrid.AllowUserToAddRows = false;
+            this.ShiftsDataGrid.AllowUserToDeleteRows = false;
+            this.ShiftsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ShiftsDataGrid.Location = new System.Drawing.Point(0, 0);
+            this.ShiftsDataGrid.Name = "ShiftsDataGrid";
+            this.ShiftsDataGrid.ReadOnly = true;
+            this.ShiftsDataGrid.Size = new System.Drawing.Size(464, 464);
+            this.ShiftsDataGrid.TabIndex = 0;
+            // 
             // SecretaryMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(749, 595);
+            this.Controls.Add(this.ShiftsPannel);
             this.Controls.Add(this.WelcomeGroupbox);
             this.Controls.Add(this.gGroupBox1);
             this.Controls.Add(this.AddStudentPannel);
@@ -1241,6 +1265,8 @@
             this.StudentIdGroupbox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.StudentClassDataGrid)).EndInit();
             this.gGroupBox1.ResumeLayout(false);
+            this.ShiftsPannel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ShiftsDataGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1342,5 +1368,7 @@
         private System.Windows.Forms.TextBox emailTextbox;
         private System.Windows.Forms.TextBox lastNameTextBox;
         private System.Windows.Forms.TextBox firstNameTextbox;
+        private System.Windows.Forms.Panel ShiftsPannel;
+        private System.Windows.Forms.DataGridView ShiftsDataGrid;
     }
 }

@@ -40,6 +40,7 @@ namespace newGym
             DeleteStudentPanel.Visible = false;
             AddStudentToClassPannel.Visible = false;
             RemoveStudentFromClassPannel.Visible = false;
+            ShiftsPannel.Visible = false;
     
         }
 
@@ -109,7 +110,19 @@ namespace newGym
 
         private void shiftsButton_Click(object sender, EventArgs e)
         {
+            makeAllInvisible();
+            ShiftsPannel.Visible = true;
 
+            fill_shitfs_datagrid();
+
+
+        }
+
+        private void fill_shitfs_datagrid()
+        {
+            DataTable dt = new DataTable();
+
+            MySQL.Query(dt , "select from ");
         }
 
         //relevant for ADD STUDENT PANNEL 
