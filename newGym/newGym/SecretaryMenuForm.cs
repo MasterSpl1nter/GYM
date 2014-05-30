@@ -122,7 +122,7 @@ namespace newGym
         {
             DataTable dt = new DataTable();
 
-            MySQL.Query(dt , "select from ");
+            MySQL.Query(dt, "SELECT * FROM gym.workingtime where id=" + ((Secretary)( SingleUser.Instance.get_user())).getid() ) ;
         }
 
         //relevant for ADD STUDENT PANNEL 
@@ -375,7 +375,7 @@ namespace newGym
                 {
 
                     string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}','{9}','{10}'", EditStudentCombobox.SelectedItem.ToString(), firstNameTextbox.Text, lastNameTextBox.Text, emailTextbox.Text, usernameTextBox.Text, passwordTextBox.Text , 1, bDayDatepicker.Value.Date.ToString("yyyy-MM-dd"), stratDatepicker.Value.Date.ToString("yyyy-MM-dd"), endDatepicker.Value.Date.ToString("yyyy-MM-dd"), medDatePicker.Value.Date.ToString("yyyy-MM-dd"));
-                    Student.Delete(EditStudentCombobox.SelectedItem.ToString());
+                    ( ( Secretary ) ( SingleUser.Instance.get_user() ) ).DeleteStudent(EditStudentCombobox.SelectedItem.ToString());
                     MySQL.Insert("student", "id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert", insert);
                     MessageBox.Show("Details have been update succesfully ");
                 }
@@ -416,7 +416,7 @@ namespace newGym
         //handled
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            Student.Delete(DeleteStudentCombobox.Text);
+            ((Student)(SingleUser.Instance.get_user())).Delete(DeleteStudentCombobox.Text);
            
             DeleteStudentCombobox.Text = "";
             MessageBox.Show("The student deleted succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);

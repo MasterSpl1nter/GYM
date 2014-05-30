@@ -28,7 +28,7 @@ namespace newGym
             this.medCert = medCert;
         }
         
-        public static int Delete(string id)
+        public int Delete(string id)
         {
             return MySQL.Delete("student", "id=" + id);
         }

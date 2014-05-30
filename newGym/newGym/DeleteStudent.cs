@@ -16,7 +16,6 @@ namespace newGym
         {
             InitializeComponent();
             fillcombo();
-
         }
         public void fillcombo()
         {
@@ -44,13 +43,9 @@ namespace newGym
         private void button1_Click(object sender, EventArgs e)
         {
             id = delete_comb.Text;
-            Student.Delete(id.ToString());
+            ((Student)SingleUser.Instance.get_user() ).Delete(id);
             MessageBox.Show("The student deleted succesfully","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
-        private void delete_comb_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -216,7 +216,7 @@ namespace newGym
                         LastName, email, username,password, permission, birth_date.Value.Date.ToString("yyyy-MM-dd"),
                         start_date.Value.Date.ToString("yyyy-MM-dd"), end_date.Value.Date.ToString("yyyy-MM-dd"),
                         med_cart_date.Value.Date.ToString("yyyy-MM-dd"));
-                    Student.Delete(id.ToString());
+                    ((Secretary)SingleUser.Instance.get_user()).DeleteStudent(id.ToString());
                     MySQL.Insert("student", "id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert", insert);
                     MessageBox.Show("Details have been update succesfully ");
                 }

@@ -27,6 +27,20 @@ namespace newGym
                     return true;
             return false;
          }
+        public static int addStudToClass(string classId, string studentId)
+        {
+            return MySQL.Insert("studentclass", "studentid,classid", "'" + studentId + "','" + classId + "'");
+        }
+
+        public static int removeStudentFromClass(String idStudent, String idClass)
+        {
+
+            return MySQL.Delete("studentclass", "studentid = " + idStudent + " AND " + "classid = " + idClass);
+        }
+        public int DeleteStudent(string id)
+        {
+            return MySQL.Delete("student", "id=" + id);
+        }
 
         
 
@@ -48,6 +62,9 @@ namespace newGym
         {
             this.salaryPerHour = salary;
 
+        }
+        public string getid() {
+            return this.Id.ToString();
         }
     }
 }

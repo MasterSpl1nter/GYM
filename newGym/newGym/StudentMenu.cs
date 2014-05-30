@@ -168,7 +168,7 @@ namespace newGym
                 string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}','{9}','{10}'",
                     a.getid(), firstname_box.Text, lastname_box.Text, email_box.Text, username_box.Text, password_box.Text, 1, a.getbday().Date.ToString("yyyy-MM-dd"),
                     a.getStartDate().Date.ToString("yyyy-MM-dd"), a.getEndDate().Date.ToString("yyyy-MM-dd"), a.getMedCert().Date.ToString("yyyy-MM-dd"));
-                Student.Delete(a.getid());
+                ((Student)SingleUser.Instance.get_user()).Delete(a.getid());
                 MySQL.Insert("student", "id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert", insert);
                 MessageBox.Show("Details have been update succesfully ");
             }

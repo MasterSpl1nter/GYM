@@ -41,7 +41,6 @@
             this.delete_comb.Name = "delete_comb";
             this.delete_comb.Size = new System.Drawing.Size(154, 24);
             this.delete_comb.TabIndex = 0;
-            this.delete_comb.SelectedIndexChanged += new System.EventHandler(this.delete_comb_SelectedIndexChanged);
             // 
             // choose_id
             // 
