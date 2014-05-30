@@ -30,6 +30,8 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panelShowShift = new System.Windows.Forms.Panel();
+            this.endShiftsDate = new System.Windows.Forms.DateTimePicker();
+            this.startShiftsDate = new System.Windows.Forms.DateTimePicker();
             this.endLabel1 = new System.Windows.Forms.Label();
             this.startLabel1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -37,6 +39,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.addShiftPanel = new System.Windows.Forms.Panel();
+            this.AddEndPicker = new System.Windows.Forms.DateTimePicker();
+            this.AddStartPicker = new System.Windows.Forms.DateTimePicker();
             this.departmentComboBox = new System.Windows.Forms.ComboBox();
             this.ClearShift = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,10 +56,6 @@
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.shiftResults = new System.Windows.Forms.DataGridView();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.AddStartPicker = new System.Windows.Forms.DateTimePicker();
-            this.AddEndPicker = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.panelShowShift.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -77,8 +77,8 @@
             // 
             // panelShowShift
             // 
-            this.panelShowShift.Controls.Add(this.dateTimePicker4);
-            this.panelShowShift.Controls.Add(this.dateTimePicker3);
+            this.panelShowShift.Controls.Add(this.endShiftsDate);
+            this.panelShowShift.Controls.Add(this.startShiftsDate);
             this.panelShowShift.Controls.Add(this.endLabel1);
             this.panelShowShift.Controls.Add(this.startLabel1);
             this.panelShowShift.Controls.Add(this.button3);
@@ -87,6 +87,33 @@
             this.panelShowShift.Size = new System.Drawing.Size(227, 130);
             this.panelShowShift.TabIndex = 7;
             this.panelShowShift.Visible = false;
+            // 
+            // endShiftsDate
+            // 
+            this.endShiftsDate.CalendarFont = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.endShiftsDate.CustomFormat = "yyyy-MM-dd  HH:mm:ss";
+            this.endShiftsDate.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold);
+            this.endShiftsDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.endShiftsDate.Location = new System.Drawing.Point(41, 38);
+            this.endShiftsDate.Name = "endShiftsDate";
+            this.endShiftsDate.Size = new System.Drawing.Size(147, 20);
+            this.endShiftsDate.TabIndex = 24;
+            this.endShiftsDate.TabStop = false;
+            this.endShiftsDate.UseWaitCursor = true;
+            // 
+            // startShiftsDate
+            // 
+            this.startShiftsDate.CalendarFont = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.startShiftsDate.CustomFormat = "yyyy-MM-dd  HH:mm:ss";
+            this.startShiftsDate.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold);
+            this.startShiftsDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.startShiftsDate.Location = new System.Drawing.Point(41, 10);
+            this.startShiftsDate.Name = "startShiftsDate";
+            this.startShiftsDate.Size = new System.Drawing.Size(147, 20);
+            this.startShiftsDate.TabIndex = 23;
+            this.startShiftsDate.TabStop = false;
+            this.startShiftsDate.UseWaitCursor = true;
+            this.startShiftsDate.ValueChanged += new System.EventHandler(this.startShiftsDate_ValueChanged);
             // 
             // endLabel1
             // 
@@ -114,6 +141,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Show";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -167,6 +195,32 @@
             this.addShiftPanel.TabIndex = 16;
             this.addShiftPanel.Visible = false;
             this.addShiftPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // AddEndPicker
+            // 
+            this.AddEndPicker.CalendarFont = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.AddEndPicker.CustomFormat = "yyyy-MM-dd  HH:mm:ss";
+            this.AddEndPicker.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold);
+            this.AddEndPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.AddEndPicker.Location = new System.Drawing.Point(75, 91);
+            this.AddEndPicker.Name = "AddEndPicker";
+            this.AddEndPicker.Size = new System.Drawing.Size(147, 20);
+            this.AddEndPicker.TabIndex = 24;
+            this.AddEndPicker.TabStop = false;
+            this.AddEndPicker.UseWaitCursor = true;
+            // 
+            // AddStartPicker
+            // 
+            this.AddStartPicker.CalendarFont = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.AddStartPicker.CustomFormat = "yyyy-MM-dd  HH:mm:ss";
+            this.AddStartPicker.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold);
+            this.AddStartPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.AddStartPicker.Location = new System.Drawing.Point(75, 63);
+            this.AddStartPicker.Name = "AddStartPicker";
+            this.AddStartPicker.Size = new System.Drawing.Size(147, 20);
+            this.AddStartPicker.TabIndex = 23;
+            this.AddStartPicker.TabStop = false;
+            this.AddStartPicker.UseWaitCursor = true;
             // 
             // departmentComboBox
             // 
@@ -301,58 +355,6 @@
             this.shiftResults.Size = new System.Drawing.Size(487, 250);
             this.shiftResults.TabIndex = 0;
             // 
-            // AddStartPicker
-            // 
-            this.AddStartPicker.CalendarFont = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.AddStartPicker.CustomFormat = "yyyy-MM-dd  HH:mm:ss";
-            this.AddStartPicker.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold);
-            this.AddStartPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.AddStartPicker.Location = new System.Drawing.Point(75, 63);
-            this.AddStartPicker.Name = "AddStartPicker";
-            this.AddStartPicker.Size = new System.Drawing.Size(147, 20);
-            this.AddStartPicker.TabIndex = 23;
-            this.AddStartPicker.TabStop = false;
-            this.AddStartPicker.UseWaitCursor = true;
-            // 
-            // AddEndPicker
-            // 
-            this.AddEndPicker.CalendarFont = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.AddEndPicker.CustomFormat = "yyyy-MM-dd  HH:mm:ss";
-            this.AddEndPicker.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold);
-            this.AddEndPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.AddEndPicker.Location = new System.Drawing.Point(75, 91);
-            this.AddEndPicker.Name = "AddEndPicker";
-            this.AddEndPicker.Size = new System.Drawing.Size(147, 20);
-            this.AddEndPicker.TabIndex = 24;
-            this.AddEndPicker.TabStop = false;
-            this.AddEndPicker.UseWaitCursor = true;
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.CalendarFont = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker3.CustomFormat = "yyyy-MM-dd  HH:mm:ss";
-            this.dateTimePicker3.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(41, 10);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(147, 20);
-            this.dateTimePicker3.TabIndex = 23;
-            this.dateTimePicker3.TabStop = false;
-            this.dateTimePicker3.UseWaitCursor = true;
-            // 
-            // dateTimePicker4
-            // 
-            this.dateTimePicker4.CalendarFont = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker4.CustomFormat = "yyyy-MM-dd  HH:mm:ss";
-            this.dateTimePicker4.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker4.Location = new System.Drawing.Point(41, 38);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(147, 20);
-            this.dateTimePicker4.TabIndex = 24;
-            this.dateTimePicker4.TabStop = false;
-            this.dateTimePicker4.UseWaitCursor = true;
-            // 
             // ShiftHandle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -400,8 +402,8 @@
         private System.Windows.Forms.Panel panelShowShift;
         private System.Windows.Forms.Panel addShiftPanel;
         private System.Windows.Forms.FontDialog fontDialog1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker endShiftsDate;
+        private System.Windows.Forms.DateTimePicker startShiftsDate;
         private System.Windows.Forms.DateTimePicker AddEndPicker;
         private System.Windows.Forms.DateTimePicker AddStartPicker;
     }

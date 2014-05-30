@@ -126,5 +126,35 @@ namespace newGym
 
             return -1;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //string query = "SELECT id,permission,starttime,endtime FROM workingtime UNION select class.guideid,3,starttime,endtime from classtime INNER JOIN class ON class.id=classtime.classid;";
+            string query = "SELECT id,permission,starttime,endtime FROM workingtime where starttime>='" + this.startShiftsDate.Text + "' and endtime<='" + this.endShiftsDate.Text + "' UNION select class.guideid,3,starttime,endtime from classtime INNER JOIN class ON class.id=classtime.classid where starttime>='" + this.startShiftsDate.Text + "' and endtime<='" + this.endShiftsDate.Text + "';";
+            DateTime fromdate1 = Convert.ToDateTime(this.startShiftsDate.Text);
+            DateTime todate1 = Convert.ToDateTime(this.endShiftsDate.Text);               
+                if (fromdate1 <= todate1)
+                {
+                    DataTable dt = new DataTable();
+                    MySQL.Query(dt, query);
+                    this.shiftResults.Visible = true;
+                    this.shiftResults.DataSource = dt;             
+                }
+                else
+                {                    
+                   MessageBox.Show("start Date Must be Less  end Date");
+                }
+        
+            
+                
+            
+           
+        }
+
+        private void startShiftsDate_ValueChanged(object sender, EventArgs e)
+        {
+            this.endShiftsDate.Value = this.startShiftsDate.Value;
+            this.endShiftsDate.Value = this.endShiftsDate.Value.AddDays(1);
+        }
     }
 }

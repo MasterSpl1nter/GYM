@@ -92,7 +92,6 @@
             this.button26 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.classHandleBtn = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
@@ -742,7 +741,6 @@
             this.ManagerActions.Controls.Add(this.button26);
             this.ManagerActions.Controls.Add(this.button25);
             this.ManagerActions.Controls.Add(this.classHandleBtn);
-            this.ManagerActions.Controls.Add(this.button24);
             this.ManagerActions.Controls.Add(this.button23);
             this.ManagerActions.Controls.Add(this.button22);
             this.ManagerActions.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
@@ -770,7 +768,7 @@
             // 
             this.button25.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button25.Location = new System.Drawing.Point(15, 183);
+            this.button25.Location = new System.Drawing.Point(15, 153);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(158, 24);
             this.button25.TabIndex = 4;
@@ -790,18 +788,6 @@
             this.classHandleBtn.Text = "Class Handle";
             this.classHandleBtn.UseVisualStyleBackColor = false;
             this.classHandleBtn.Click += new System.EventHandler(this.classHandleBtn_Click);
-            // 
-            // button24
-            // 
-            this.button24.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button24.Location = new System.Drawing.Point(15, 153);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(158, 24);
-            this.button24.TabIndex = 2;
-            this.button24.Text = "Delete Class";
-            this.button24.UseVisualStyleBackColor = false;
-            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button23
             // 
@@ -933,7 +919,6 @@
         private System.Windows.Forms.GroupBox ManagerActions;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button classHandleBtn;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
