@@ -14,7 +14,7 @@ namespace newGym
 {
     public partial class StudentMenu : Form
     {
-        
+
 
         //initalization
         public StudentMenu()
@@ -29,32 +29,33 @@ namespace newGym
         {
             DataTable dt = new DataTable();
             DateTime[] arr;
-            int i = 0 ;
+            int i = 0;
             try
             {
                 //well this is a tought querry , pull from the student class all the classes that trhe student is singed up for and from those grab the name room guideid and id of the class
-                 int ret  = MySQL.Query(dt, "SELECT classid, starttime , endtime FROM classtime WHERE (classid) IN (SELECT classid FROM studentclass WHERE studentid = " + SingleUser.Instance.get_user().Id.ToString() + ");");
-                 if (ret == 0)
-                 {
-                     MessageBox.Show("the mysql query failed");
-                 }
+                int ret = MySQL.Query(dt, "SELECT classid, starttime , endtime FROM classtime WHERE (classid) IN (SELECT classid FROM studentclass WHERE studentid = " + SingleUser.Instance.get_user().Id.ToString() + ");");
+                if (ret != 0)
+                {
+                    MessageBox.Show("the mysql query failed");
+                    return;
+                }
 
                 arr = new DateTime[dt.Rows.Count];
                 foreach (DataRow row in dt.Rows)
                 {
-              
-                   arr[i] = Convert.ToDateTime(row["starttime"].ToString());
-                   i++;
+
+                    arr[i] = Convert.ToDateTime(row["starttime"].ToString());
+                    i++;
                 }
                 StudnetClassesCalendar.MonthlyBoldedDates = arr;
             }
-            
+
 
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+
         }
 
         private void makeAllInvisible()
@@ -80,7 +81,7 @@ namespace newGym
             MySqlConnection conDataBase = new MySqlConnection(constring);
             MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
             MySqlDataReader myReader;
-            
+
             //fill all details
             try
             {
@@ -97,7 +98,7 @@ namespace newGym
                 //DateTime startDate = Convert.ToDateTime(myReader.GetString("startdate"));
                 //DateTime EndDate = Convert.ToDateTime(myReader.GetString("enddate"));
                 //DateTime medCert = Convert.ToDateTime(myReader.GetString("medcert"));
-            
+
             }
             catch (Exception ex)
             {
@@ -163,17 +164,18 @@ namespace newGym
             if ((firstname_box.Text != "") && (lastname_box.Text != "") && (email_box.Text != "") && (username_box.Text != "") && (password_box.Text != ""))
             {
 
-                Student a = ( Student ) SingleUser.Instance.get_user();
+                Student a = (Student)SingleUser.Instance.get_user();
 
                 string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}','{9}','{10}'",
                     a.getid(), firstname_box.Text, lastname_box.Text, email_box.Text, username_box.Text, password_box.Text, 1, a.getbday().Date.ToString("yyyy-MM-dd"),
                     a.getStartDate().Date.ToString("yyyy-MM-dd"), a.getEndDate().Date.ToString("yyyy-MM-dd"), a.getMedCert().Date.ToString("yyyy-MM-dd"));
                 ((Student)SingleUser.Instance.get_user()).Delete(a.getid());
-                 int ret  = MySQL.Insert("student", "id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert", insert);
-                 if (ret == 0)
-                 {
-                     MessageBox.Show("the mysql query failed");
-                 }
+                int ret = MySQL.Insert("student", "id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert", insert);
+                if (ret != 0)
+                {
+                    MessageBox.Show("the mysql query failed");
+                    return;
+                }
                 MessageBox.Show("Details have been update succesfully ");
             }
             else
@@ -191,7 +193,7 @@ namespace newGym
             */
         }
 
-       
+
         //add course
         private void add_course_Click(object sender, EventArgs e)
         {
@@ -199,11 +201,11 @@ namespace newGym
             addCourse_panel.Visible = true;
 
             DataTable dt = new DataTable();
-             int ret  = MySQL.Select(dt, "class");
-             if (ret == 0)
-             {
-                 MessageBox.Show("the mysql query failed");
-             }
+            int ret = MySQL.Select(dt, "class");
+            if (ret != 0)
+            {
+                MessageBox.Show("the mysql query failed");
+            }
             ClassDataGrid.Columns.Clear();
             ClassDataGrid.DataSource = dt;
 
@@ -233,48 +235,52 @@ namespace newGym
         private void AddStudentToClassButton_Click(object sender, EventArgs e)
         {
 
-
-
             DataTable dt = new DataTable();
             DataTable dt1 = new DataTable();
-            string classid =  ClassIDComboBox.Text;
+            string classid = ClassIDComboBox.Text;
             string Studentid = SingleUser.Instance.get_user().Id.ToString();
-
-         int ret  = MySQL.Query(dt,"select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
-         if (ret == 0)
-         {
-             MessageBox.Show("the mysql query failed");
-         }
-        ret  = MySQL.Query(dt1,"select starttime,endtime from classtime WHERE classid=" + classid);
-        if (ret == 0)
-        {
-            MessageBox.Show("the mysql query failed");
-        }
-        if (dt.Rows.Count == 0 || dt1.Rows.Count == 0)
-        {
-           
-            MessageBox.Show("The Course was added successfully");
-        }
-        else
-        {
-            DateTime StartB = Convert.ToDateTime(dt1.Rows[0]["starttime"]);
-            DateTime EndB = Convert.ToDateTime(dt1.Rows[0]["endtime"]);
-            for (int i = 0; i < dt.Rows.Count; i++)
+            
+            ClassIDComboBox.Text = "";
+            
+            int ret = MySQL.Query(dt, "select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
+            if (ret != 0)
             {
-                DateTime StartA = Convert.ToDateTime(dt.Rows[i]["starttime"]);
-                DateTime EndA = Convert.ToDateTime(dt.Rows[i]["endtime"]);
-                if (StartA < EndB && StartB < EndA)
-                {
-
-                    MessageBox.Show("You are already joined to a class that takes place at the same time.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    add_course_Click(null, null);
-                    return;
-                }
+                MessageBox.Show("the mysql query failed");
+                return;
             }
-        }
+            ret = MySQL.Query(dt1, "select starttime,endtime from classtime WHERE classid=" + classid);
+            if (ret != 0)
+            {
+                MessageBox.Show("the mysql query failed");
+                return;
+            }
+            if (dt.Rows.Count == 0 || dt1.Rows.Count == 0)
+            {
 
-            Student.addStudToClass( classid , Studentid );
-            add_course_Click(null,null);
+                MessageBox.Show("The Course was added successfully");
+            }
+            else
+            {
+                DateTime StartB = Convert.ToDateTime(dt1.Rows[0]["starttime"]);
+                DateTime EndB = Convert.ToDateTime(dt1.Rows[0]["endtime"]);
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    DateTime StartA = Convert.ToDateTime(dt.Rows[i]["starttime"]);
+                    DateTime EndA = Convert.ToDateTime(dt.Rows[i]["endtime"]);
+                    if (StartA < EndB && StartB < EndA)
+                    {
+
+                        MessageBox.Show("You are already joined to a class that takes place at the same time.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        add_course_Click(null, null);
+                        return;
+                    }
+                }
+                ClassIDComboBox.Text = "";
+            }
+
+            ((Student)SingleUser.Instance.get_user()).addStudToClass(classid, ((Student)SingleUser.Instance.get_user()).getid());
+            add_course_Click(null, null);
+
         }
 
         private void Cancel_course_Click(object sender, EventArgs e)
@@ -288,14 +294,21 @@ namespace newGym
         private void RemoveStudentFromClassButton_Click(object sender, EventArgs e)
         {
 
-            Student.removeStudentFromClass( SingleUser.Instance.get_user().Id.ToString() , relevantClasses.Text);
+            int ret = ((Student)( SingleUser.Instance.get_user())).removeStudentFromClass(SingleUser.Instance.get_user().Id.ToString(), relevantClasses.Text);
+            if (ret == 0)
+                MessageBox.Show("you were removed from the course");
+
+            else
+                MessageBox.Show("you weren't removed from the course");
+
             fillCombo_and_dt_remove_student();
-            
+
 
         }
 
 
-        private void fillCombo_and_dt_remove_student() {
+        private void fillCombo_and_dt_remove_student()
+        {
 
             relevantClasses.Items.Clear();
             relevantClasses.Text = "";
@@ -303,11 +316,12 @@ namespace newGym
             try
             {
                 //well this is a tought querry , pull from the student class all the classes that the student is singed up for and from those grab the name room guideid and id of the class
-                 int ret  = MySQL.Query(dt, "SELECT id, name , room , guideid FROM class WHERE (id) IN (SELECT classid FROM studentclass WHERE studentid = " + SingleUser.Instance.get_user().Id.ToString() + ");");
-                 if (ret == 0)
-                 {
-                     MessageBox.Show("the mysql query failed");
-                 }
+                int ret = MySQL.Query(dt, "SELECT id, name , room , guideid FROM class WHERE (id) IN (SELECT classid FROM studentclass WHERE studentid = " + SingleUser.Instance.get_user().Id.ToString() + ");");
+                if (ret != 0)
+                {
+                    MessageBox.Show("the mysql query failed");
+                    return;
+                }
                 foreach (DataRow row in dt.Rows)
                 {
                     relevantClasses.Items.Add(row["id"].ToString());
@@ -321,7 +335,8 @@ namespace newGym
 
             StudnetClassDataGrid.Columns.Clear();
             StudnetClassDataGrid.DataSource = dt;
-        
+            relevantClasses.Text = "";
+
         }
 
         //Exercise 
@@ -330,13 +345,14 @@ namespace newGym
             makeAllInvisible();
             ExercisePannel.Visible = true;
             ExerciseDataGrid.Columns.Clear();
-            
+
             DataTable dt = new DataTable();
-            
-            int ret = MySQL.Query(dt, "select training.name,appliance,sets,repeats from studenttraining join training on studenttraining.trainingid = training.id where studenttraining.studentid = " + SingleUser.Instance.get_user().Id.ToString() + ");");
-            if (ret == 0)
+
+            int ret = MySQL.Query(dt, "select training.name,appliance,sets,repeats from studenttraining join training on studenttraining.trainingid = training.id where studenttraining.studentid = " + SingleUser.Instance.get_user().Id.ToString() + ";");
+            if (ret != 0)
             {
                 MessageBox.Show("the mysql query failed");
+                return;
             }
 
             ExerciseDataGrid.DataSource = dt;
@@ -346,8 +362,8 @@ namespace newGym
 
 
 
- 
-    
+
+
 
     }
 }

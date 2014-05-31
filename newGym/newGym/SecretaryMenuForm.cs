@@ -487,7 +487,7 @@ namespace newGym
 
             if ( dt.Rows.Count == 0 || dt1.Rows.Count == 0)
             {
-                ret = Student.addStudToClass(ClassIDComboBox.Text, StudentIDComboBox.Text);
+                ret = ((Student)( SingleUser.Instance.get_user())).addStudToClass(ClassIDComboBox.Text, StudentIDComboBox.Text);
                 ClassIDComboBox.Text = StudentIDComboBox.Text = "";
                 studentToClassButton_Click(null, null);
                 MessageBox.Show("The Course was added successfully");
@@ -512,7 +512,7 @@ namespace newGym
 
             }
 
-            Student.addStudToClass(ClassIDComboBox.Text, StudentIDComboBox.Text);
+            ((Secretary)( SingleUser.Instance.get_user())).addStudToClass(ClassIDComboBox.Text, StudentIDComboBox.Text);
             ClassIDComboBox.Text = StudentIDComboBox.Text = "";
             studentToClassButton_Click(null,null);
             MessageBox.Show("The Course was added successfully");
@@ -545,7 +545,7 @@ namespace newGym
         //handled
         private void RemoveStudentFromClassButton_Click(object sender, EventArgs e)
         {
-            Student.removeStudentFromClass(StudentCombo.Text, relevantClasses.Text);
+            ((Secretary)( SingleUser.Instance.get_user())).removeStudentFromClass(StudentCombo.Text, relevantClasses.Text);
 
             StudentCombo.Text = relevantClasses.Text = "";
 

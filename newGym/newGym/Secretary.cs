@@ -28,28 +28,19 @@ namespace newGym
                     return true;
             return false;
          }
-        public static int addStudToClass(string classId, string studentId)
-        {
-            int ret = MySQL.Insert("studentclass", "studentid,classid", "'" + studentId + "','" + classId + "'");
+   
 
-            if (ret == 0)
-            {
-                MessageBox.Show("the mysql query failed");
-            }
-            return ret ;
+        public int addStudToClass(string classId, string studentId)
+        {
+            return MySQL.Insert("studentclass", "studentid,classid", "'" + studentId + "','" + classId + "'");
         }
 
-        public static int removeStudentFromClass(String idStudent, String idClass)
+        public int removeStudentFromClass(String idStudent, String idClass)
         {
 
-            int ret =  MySQL.Delete("studentclass", "studentid = " + idStudent + " AND " + "classid = " + idClass);
-
-            if (ret == 0)
-            {
-                MessageBox.Show("the mysql query failed");
-            }
-            return ret;
+            return MySQL.Delete("studentclass", "studentid = " + idStudent + " AND " + "classid = " + idClass);
         }
+
         public int DeleteStudent(string id)
         {
             int ret = MySQL.Delete("student", "id=" + id);

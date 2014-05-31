@@ -39,11 +39,11 @@ namespace newGym
        {
        }
 
-        public static int addStudToClass(string classId , string studentId ){
+        public int addStudToClass(string classId , string studentId ){
            return MySQL.Insert("studentclass", "studentid,classid", "'" + studentId + "','" + classId + "'" );
         }
          
-        public static int removeStudentFromClass ( String idStudent , String idClass) {
+        public int removeStudentFromClass ( String idStudent , String idClass) {
 
             return MySQL.Delete("studentclass" , "studentid = "+idStudent + " AND " + "classid = " + idClass );
         }
