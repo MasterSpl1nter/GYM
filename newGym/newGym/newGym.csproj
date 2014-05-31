@@ -47,6 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aboutme.cs" />
     <Compile Include="AddSecretary.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +139,12 @@
     </Compile>
     <Compile Include="ManagerResult.Designer.cs">
       <DependentUpon>ManagerResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarqueeLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MarqueeLabel.Designer.cs">
+      <DependentUpon>MarqueeLabel.cs</DependentUpon>
     </Compile>
     <Compile Include="SecretaryMenuForm.cs">
       <SubType>Form</SubType>
@@ -308,6 +321,9 @@
     <Compile Include="ViewApplience.Designer.cs">
       <DependentUpon>ViewApplience.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addManager.resx">
       <DependentUpon>addManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -493,6 +509,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1400193459_door_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7911.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

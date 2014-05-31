@@ -38,7 +38,9 @@
             this.label4 = new newGym.GLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.loginButton = new newGym.GButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -130,10 +132,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::newGym.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(42, 1);
+            this.pictureBox1.Image = global::newGym.Properties.Resources._7911;
+            this.pictureBox1.Location = new System.Drawing.Point(56, 10);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(242, 76);
+            this.pictureBox1.Size = new System.Drawing.Size(221, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -154,12 +157,24 @@
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.button2_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::newGym.Properties.Resources._7911;
+            this.pictureBox2.Location = new System.Drawing.Point(56, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(19, 19);
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // Login
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(326, 292);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -173,6 +188,7 @@
             this.Name = "Login";
             this.Text = "SweatStar";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,6 +206,7 @@
         private GLabel label2;
         private GLabel label3;
         private GLabel label4;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

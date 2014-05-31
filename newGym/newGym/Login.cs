@@ -22,6 +22,7 @@ namespace newGym
             textBox2.MaxLength = 20;
             textBox2.PasswordChar = '*';
             comboBox2.SelectedIndex = 0;
+
             //MessageBox.Show("Working Menus: \n1. Guide with password\n2. Trainer with password\n3. Manager with password");
         }
 
@@ -143,5 +144,13 @@ namespace newGym
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            About ab = new About();
+            ab.ShowDialog();
+        }
+
+
     }
 }
