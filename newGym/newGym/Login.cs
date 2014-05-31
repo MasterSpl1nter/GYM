@@ -22,14 +22,13 @@ namespace newGym
             textBox2.MaxLength = 20;
             textBox2.PasswordChar = '*';
             comboBox2.SelectedIndex = 0;
-
-            //MessageBox.Show("Working Menus: \n1. Guide with password\n2. Trainer with password\n3. Manager with password");
         }
 
 
         private void button2_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
+            label3.Text = "";
             int retval = 1;
             Person p;
             switch (comboBox2.SelectedIndex)
@@ -115,8 +114,6 @@ namespace newGym
                 textBox2.ResetText();
                 textBox1.Focus();
                 label3.Text = "ERROR: Incorrect password";
-                //MessageBox.Show("Incorrect password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
             else
             {
@@ -130,16 +127,7 @@ namespace newGym
                 else label3.Text = "ERROR: #" + retval;
             }
         }
-        /*
-        public static void ThreadProc1()
-        {
-            Application.Run(new ManagerMenu());
-            //Application.Run(new Menu(1));
-            //Application.Run(new Form2());
 
-
-        }
-        */
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 

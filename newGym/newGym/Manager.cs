@@ -142,7 +142,7 @@ namespace newGym
         
         protected override bool CheckLogin(DataTable dt, string user, string pass)
         {
-            MessageBox.Show("manager Chek login");
+            //MessageBox.Show("manager Chek login");
             //if the id exist? yes-pop the datatable of this user
             if (MySQL.Query(dt, "SELECT * FROM manager where username='" + user + "'" + " and password='" + pass + "'") == 0)
                 if (dt.Rows.Count == 1)
