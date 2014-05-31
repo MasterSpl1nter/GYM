@@ -116,6 +116,8 @@
             this.RemoveStudentFromClassButton = new newGym.GButton();
             this.StudentClassDataGrid = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ShiftsPannel = new System.Windows.Forms.Panel();
+            this.ShiftsDataGrid = new System.Windows.Forms.DataGridView();
             this.gGroupBox1 = new newGym.GGroupBox();
             this.addStudentButton = new newGym.GButton();
             this.shiftsButton = new newGym.GButton();
@@ -123,8 +125,6 @@
             this.removeStudentFromClassBotton = new newGym.GButton();
             this.removeStudentButton = new newGym.GButton();
             this.studentToClassButton = new newGym.GButton();
-            this.ShiftsPannel = new System.Windows.Forms.Panel();
-            this.ShiftsDataGrid = new System.Windows.Forms.DataGridView();
             this.AddStudentPannel.SuspendLayout();
             this.EditStudentPannel.SuspendLayout();
             this.WelcomeGroupbox.SuspendLayout();
@@ -137,9 +137,9 @@
             this.groupBox1.SuspendLayout();
             this.StudentIdGroupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudentClassDataGrid)).BeginInit();
-            this.gGroupBox1.SuspendLayout();
             this.ShiftsPannel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShiftsDataGrid)).BeginInit();
+            this.gGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // AddStudentPannel
@@ -952,7 +952,7 @@
             // ClassID
             // 
             this.ClassID.Controls.Add(this.ClassIDComboBox);
-            this.ClassID.Location = new System.Drawing.Point(171, 374);
+            this.ClassID.Location = new System.Drawing.Point(33, 128);
             this.ClassID.Name = "ClassID";
             this.ClassID.Size = new System.Drawing.Size(150, 67);
             this.ClassID.TabIndex = 5;
@@ -970,9 +970,9 @@
             // StudentID
             // 
             this.StudentID.Controls.Add(this.StudentIDComboBox);
-            this.StudentID.Location = new System.Drawing.Point(19, 367);
+            this.StudentID.Location = new System.Drawing.Point(33, 36);
             this.StudentID.Name = "StudentID";
-            this.StudentID.Size = new System.Drawing.Size(137, 74);
+            this.StudentID.Size = new System.Drawing.Size(150, 74);
             this.StudentID.TabIndex = 4;
             this.StudentID.TabStop = false;
             this.StudentID.Text = "StudentID";
@@ -982,7 +982,7 @@
             this.StudentIDComboBox.FormattingEnabled = true;
             this.StudentIDComboBox.Location = new System.Drawing.Point(4, 37);
             this.StudentIDComboBox.Name = "StudentIDComboBox";
-            this.StudentIDComboBox.Size = new System.Drawing.Size(121, 21);
+            this.StudentIDComboBox.Size = new System.Drawing.Size(127, 21);
             this.StudentIDComboBox.TabIndex = 2;
             // 
             // AddStudentToClassButton
@@ -993,7 +993,7 @@
             this.AddStudentToClassButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.AddStudentToClassButton.ForeColor = System.Drawing.Color.White;
             this.AddStudentToClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddStudentToClassButton.Location = new System.Drawing.Point(349, 400);
+            this.AddStudentToClassButton.Location = new System.Drawing.Point(40, 240);
             this.AddStudentToClassButton.Name = "AddStudentToClassButton";
             this.AddStudentToClassButton.Size = new System.Drawing.Size(86, 27);
             this.AddStudentToClassButton.TabIndex = 1;
@@ -1006,12 +1006,12 @@
             this.ClassDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ClassDataGrid.EnableHeadersVisualStyles = false;
             this.ClassDataGrid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ClassDataGrid.Location = new System.Drawing.Point(28, 14);
+            this.ClassDataGrid.Location = new System.Drawing.Point(200, 10);
             this.ClassDataGrid.MultiSelect = false;
             this.ClassDataGrid.Name = "ClassDataGrid";
             this.ClassDataGrid.ReadOnly = true;
             this.ClassDataGrid.RowHeadersVisible = false;
-            this.ClassDataGrid.Size = new System.Drawing.Size(759, 341);
+            this.ClassDataGrid.Size = new System.Drawing.Size(640, 431);
             this.ClassDataGrid.TabIndex = 0;
             // 
             // RemoveStudentFromClassPannel
@@ -1098,6 +1098,26 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 3;
+            // 
+            // ShiftsPannel
+            // 
+            this.ShiftsPannel.Controls.Add(this.ShiftsDataGrid);
+            this.ShiftsPannel.Location = new System.Drawing.Point(250, 110);
+            this.ShiftsPannel.Name = "ShiftsPannel";
+            this.ShiftsPannel.Size = new System.Drawing.Size(850, 470);
+            this.ShiftsPannel.TabIndex = 15;
+            // 
+            // ShiftsDataGrid
+            // 
+            this.ShiftsDataGrid.AllowUserToAddRows = false;
+            this.ShiftsDataGrid.AllowUserToDeleteRows = false;
+            this.ShiftsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ShiftsDataGrid.Location = new System.Drawing.Point(10, 10);
+            this.ShiftsDataGrid.Margin = new System.Windows.Forms.Padding(10);
+            this.ShiftsDataGrid.Name = "ShiftsDataGrid";
+            this.ShiftsDataGrid.ReadOnly = true;
+            this.ShiftsDataGrid.Size = new System.Drawing.Size(830, 450);
+            this.ShiftsDataGrid.TabIndex = 0;
             // 
             // gGroupBox1
             // 
@@ -1213,26 +1233,6 @@
             this.studentToClassButton.UseVisualStyleBackColor = false;
             this.studentToClassButton.Click += new System.EventHandler(this.studentToClassButton_Click);
             // 
-            // ShiftsPannel
-            // 
-            this.ShiftsPannel.Controls.Add(this.ShiftsDataGrid);
-            this.ShiftsPannel.Location = new System.Drawing.Point(250, 110);
-            this.ShiftsPannel.Name = "ShiftsPannel";
-            this.ShiftsPannel.Size = new System.Drawing.Size(850, 470);
-            this.ShiftsPannel.TabIndex = 15;
-            // 
-            // ShiftsDataGrid
-            // 
-            this.ShiftsDataGrid.AllowUserToAddRows = false;
-            this.ShiftsDataGrid.AllowUserToDeleteRows = false;
-            this.ShiftsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ShiftsDataGrid.Location = new System.Drawing.Point(10, 10);
-            this.ShiftsDataGrid.Margin = new System.Windows.Forms.Padding(10);
-            this.ShiftsDataGrid.Name = "ShiftsDataGrid";
-            this.ShiftsDataGrid.ReadOnly = true;
-            this.ShiftsDataGrid.Size = new System.Drawing.Size(830, 450);
-            this.ShiftsDataGrid.TabIndex = 0;
-            // 
             // SecretaryMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1240,12 +1240,12 @@
             this.ClientSize = new System.Drawing.Size(1137, 609);
             this.Controls.Add(this.WelcomeGroupbox);
             this.Controls.Add(this.gGroupBox1);
-            this.Controls.Add(this.ShiftsPannel);
-            this.Controls.Add(this.AddStudentPannel);
-            this.Controls.Add(this.RemoveStudentFromClassPannel);
             this.Controls.Add(this.AddStudentToClassPannel);
             this.Controls.Add(this.DeleteStudentPanel);
             this.Controls.Add(this.EditStudentPannel);
+            this.Controls.Add(this.ShiftsPannel);
+            this.Controls.Add(this.AddStudentPannel);
+            this.Controls.Add(this.RemoveStudentFromClassPannel);
             this.Name = "SecretaryMenu";
             this.Text = "SecretaryMenu";
             this.AddStudentPannel.ResumeLayout(false);
@@ -1264,9 +1264,9 @@
             this.groupBox1.ResumeLayout(false);
             this.StudentIdGroupbox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.StudentClassDataGrid)).EndInit();
-            this.gGroupBox1.ResumeLayout(false);
             this.ShiftsPannel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ShiftsDataGrid)).EndInit();
+            this.gGroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

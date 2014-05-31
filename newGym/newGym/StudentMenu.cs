@@ -201,7 +201,7 @@ namespace newGym
             addCourse_panel.Visible = true;
 
             DataTable dt = new DataTable();
-            int ret = MySQL.Select(dt, "class");
+            int ret = MySQL.Select(dt, "class inner join classtime on class.id = classtime.classid");
             if (ret != 0)
             {
                 MessageBox.Show("the mysql query failed");
@@ -219,7 +219,7 @@ namespace newGym
             DataTable dt = new DataTable();
             try
             {
-                MySQL.Select(dt, "class");
+                MySQL.Select(dt, "select class.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid");
                 foreach (DataRow row in dt.Rows)
                 {
                     combo.Items.Add(row["id"].ToString());
@@ -242,7 +242,7 @@ namespace newGym
             
             ClassIDComboBox.Text = "";
             
-            int ret = MySQL.Query(dt, "select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
+            int ret = MySQL.Query(dt, "select class.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
             if (ret != 0)
             {
                 MessageBox.Show("the mysql query failed");
@@ -257,7 +257,6 @@ namespace newGym
             if (dt.Rows.Count == 0 || dt1.Rows.Count == 0)
             {
 
-                MessageBox.Show("The Course was added successfully");
             }
             else
             {
@@ -279,6 +278,8 @@ namespace newGym
             }
 
             ((Student)SingleUser.Instance.get_user()).addStudToClass(classid, ((Student)SingleUser.Instance.get_user()).getid());
+            MessageBox.Show("The Course was added successfully");
+
             add_course_Click(null, null);
 
         }
@@ -316,7 +317,7 @@ namespace newGym
             try
             {
                 //well this is a tought querry , pull from the student class all the classes that the student is singed up for and from those grab the name room guideid and id of the class
-                int ret = MySQL.Query(dt, "SELECT id, name , room , guideid FROM class WHERE (id) IN (SELECT classid FROM studentclass WHERE studentid = " + SingleUser.Instance.get_user().Id.ToString() + ");");
+                int ret = MySQL.Query(dt, "SELECT class.id , class.name , class.room,class.guideid , classtime.starttime,classtime.endtime FROM class inner join classtime inner join studentclass on studentclass.classid = class.id = classtime.classid where studentid =" + SingleUser.Instance.get_user().Id.ToString() + ";");
                 if (ret != 0)
                 {
                     MessageBox.Show("the mysql query failed");
@@ -357,6 +358,11 @@ namespace newGym
 
             ExerciseDataGrid.DataSource = dt;
 
+
+        }
+
+        private void ClassIDComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
 

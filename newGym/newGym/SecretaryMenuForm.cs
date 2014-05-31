@@ -19,13 +19,13 @@ namespace newGym
         int id;
         string firstName;
         string LastName;
-        string email; 
-        string username; 
-        string password; 
+        string email;
+        string username;
+        string password;
         int permission = 0;
         DateTime now = DateTime.Now;
         int ret;
-        
+
 
         public SecretaryMenu()
         {
@@ -34,29 +34,55 @@ namespace newGym
             makeAllInvisible();
         }
 
-        private void makeAllInvisible(){
+        private void makeAllInvisible()
+        {
             AddStudentPannel.Visible = false;
             EditStudentPannel.Visible = false;
             DeleteStudentPanel.Visible = false;
             AddStudentToClassPannel.Visible = false;
             RemoveStudentFromClassPannel.Visible = false;
             ShiftsPannel.Visible = false;
-    
-        }
 
+        }
 
         private void addStudentButton_Click(object sender, EventArgs e)
         {
             makeAllInvisible();
             AddStudentPannel.Visible = true;
+            id_box.Text = "";
+            firstname_box.Text = "";
+            lastname_box.Text = "";
+            email_box.Text = "";
+            tb_username.Text = "";
+            tb_pass.Text = "";
+            birth_date.Value = DateTime.Now;
+            start_date.Value = DateTime.Now;
+            end_date.Value = DateTime.Now;
+            med_cart_date.Value = DateTime.Now;
         }
 
         private void editStudentButton_Click(object sender, EventArgs e)
         {
             makeAllInvisible();
 
+            EditStudentCombobox.Text = "";
+            firstNameTextbox.Text = "";
+            lastNameTextBox.Text = "";
+            emailTextbox.Text = "";
+            usernameTextBox.Text = "";
+            passwordTextBox.Text = "";
+            bDayDatepicker.Text = "";
+            stratDatepicker.Text = "";
+            endDatepicker.Text = "";
+            medDatePicker.Text = "";
+
+
             EditStudentPannel.Visible = true;
             fillcombo(EditStudentCombobox);
+
+
+
+
         }
 
         private void removeStudentButton_Click(object sender, EventArgs e)
@@ -64,7 +90,7 @@ namespace newGym
             makeAllInvisible();
 
             DeleteStudentPanel.Visible = true;
-            
+            DeleteStudentCombobox.Text = "";
             fillcombo(DeleteStudentCombobox);
         }
 
@@ -72,8 +98,11 @@ namespace newGym
         {
             makeAllInvisible();
             AddStudentToClassPannel.Visible = true;
+            ClassIDComboBox.Text = StudentIDComboBox.Text = "";
+            ClassIDComboBox.Items.Clear();
+            StudentIDComboBox.Items.Clear();
             fill_combo_and_dt_add_Student_to_class();
-            
+
         }
 
         private void fill_combo_and_dt_add_Student_to_class()
@@ -92,9 +121,13 @@ namespace newGym
         {
             makeAllInvisible();
             RemoveStudentFromClassPannel.Visible = true;
+            StudentIDComboBox.Text = "";
+            StudentIDComboBox.Items.Clear();
+            ClassIDComboBox.Text = "";
+            ClassIDComboBox.Items.Clear();
 
             fill_combo_and_dt_remove_Student_from_class();
-           
+
 
         }
 
@@ -122,7 +155,7 @@ namespace newGym
         {
             DataTable dt = new DataTable();
 
-            MySQL.Query(dt, "select * from workingtime where id =" + ((Secretary)( SingleUser.Instance.get_user())).getid() +"  and starttime >CURDATE();" ) ;
+            MySQL.Query(dt, "select * from workingtime where id =" + ((Secretary)(SingleUser.Instance.get_user())).getid() + "  and starttime >CURDATE();");
             ShiftsDataGrid.Columns.Clear();
             ShiftsDataGrid.DataSource = dt;
         }
@@ -147,8 +180,6 @@ namespace newGym
 
         private void enter_button_Click(object sender, EventArgs e)
         {
-
-
             DateTime startDate = DateTime.Now;
             resetColors();
 
@@ -313,8 +344,8 @@ namespace newGym
                     stratDatepicker.Value = Convert.ToDateTime(myReader.GetString("startdate"));
                     endDatepicker.Value = Convert.ToDateTime(myReader.GetString("enddate"));
                     medDatePicker.Value = Convert.ToDateTime(myReader.GetString("medcert"));
-                    
-                    
+
+
                 }
             }
             catch (Exception ex)
@@ -325,7 +356,7 @@ namespace newGym
 
         private void EditStudApply_Click(object sender, EventArgs e)
         {
-            
+
             DateTime startDate = DateTime.Now;
             resetColors1();
 
@@ -346,8 +377,8 @@ namespace newGym
                     lastName_label.ForeColor = Color.Red;
                     return;
                 }
-                
-                
+
+
                 // check username
                 if (usernameTextBox.Text == "")
                 {
@@ -363,7 +394,7 @@ namespace newGym
                     return;
                 }
 
-               
+
                 if (med_cart_date.Value.Date > start_date.Value.Date && med_cart_date.Value.Date < end_date.Value.Date)
                 {
                     MessageBox.Show(" Medical certificate is valid but has to update the certificate for the duration of the subscription ");
@@ -373,11 +404,11 @@ namespace newGym
                     MessageBox.Show(" Medical certificate is not valid medical certificate must be brought immediate");
                 }
 
-                if (( firstNameTextbox.Text !="") && (lastNameTextBox.Text!="" )&&( emailTextbox.Text!="") && (usernameTextBox.Text!= "") && (passwordTextBox.Text!="") )
+                if ((firstNameTextbox.Text != "") && (lastNameTextBox.Text != "") && (emailTextbox.Text != "") && (usernameTextBox.Text != "") && (passwordTextBox.Text != ""))
                 {
 
-                    string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}','{9}','{10}'", EditStudentCombobox.SelectedItem.ToString(), firstNameTextbox.Text, lastNameTextBox.Text, emailTextbox.Text, usernameTextBox.Text, passwordTextBox.Text , 1, bDayDatepicker.Value.Date.ToString("yyyy-MM-dd"), stratDatepicker.Value.Date.ToString("yyyy-MM-dd"), endDatepicker.Value.Date.ToString("yyyy-MM-dd"), medDatePicker.Value.Date.ToString("yyyy-MM-dd"));
-                    ( ( Secretary ) ( SingleUser.Instance.get_user() ) ).DeleteStudent(EditStudentCombobox.SelectedItem.ToString());
+                    string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}','{9}','{10}'", EditStudentCombobox.SelectedItem.ToString(), firstNameTextbox.Text, lastNameTextBox.Text, emailTextbox.Text, usernameTextBox.Text, passwordTextBox.Text, 1, bDayDatepicker.Value.Date.ToString("yyyy-MM-dd"), stratDatepicker.Value.Date.ToString("yyyy-MM-dd"), endDatepicker.Value.Date.ToString("yyyy-MM-dd"), medDatePicker.Value.Date.ToString("yyyy-MM-dd"));
+                    ((Secretary)(SingleUser.Instance.get_user())).DeleteStudent(EditStudentCombobox.SelectedItem.ToString());
                     MySQL.Insert("student", "id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert", insert);
                     MessageBox.Show("Details have been update succesfully ");
                 }
@@ -414,15 +445,15 @@ namespace newGym
             const char Delete = (char)8;
             e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != Delete;
         }
-        
+
         //handled
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             ((Student)(SingleUser.Instance.get_user())).Delete(DeleteStudentCombobox.Text);
-           
+
             DeleteStudentCombobox.Text = "";
             MessageBox.Show("The student deleted succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            removeStudentButton_Click(null,null);
+            removeStudentButton_Click(null, null);
         }
 
 
@@ -454,7 +485,7 @@ namespace newGym
                 MySQL.Select(dt, "classtime");
                 foreach (DataRow row in dt.Rows)
                 {
-                    if(Convert.ToDateTime( row["starttime"].ToString() ) > DateTime.Now  )
+                    if (Convert.ToDateTime(row["starttime"].ToString()) > DateTime.Now)
                         combo.Items.Add(row["classid"].ToString());
                 }
             }
@@ -469,28 +500,34 @@ namespace newGym
         private void AddStudentToClassButton_Click(object sender, EventArgs e)
         {
 
+          
+
             DataTable dt = new DataTable();
             DataTable dt1 = new DataTable();
             string classid = ClassIDComboBox.Text;
             string Studentid = StudentIDComboBox.Text;
 
 
-            if(ClassIDComboBox.Text == "" ||  StudentIDComboBox.Text == ""){
+            if (ClassIDComboBox.Text == "" || StudentIDComboBox.Text == "")
+            {
 
                 MessageBox.Show("not all fields are filled");
+                studentToClassButton_Click(null, null);
+
                 return;
             }
 
-            
+
             MySQL.Query(dt, "select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
             MySQL.Query(dt1, "select starttime,endtime from classtime WHERE classid=" + classid);
 
-            if ( dt.Rows.Count == 0 || dt1.Rows.Count == 0)
+            if (dt.Rows.Count == 0 || dt1.Rows.Count == 0)// one of the tables is empty
             {
-                ret = ((Student)( SingleUser.Instance.get_user())).addStudToClass(ClassIDComboBox.Text, StudentIDComboBox.Text);
-                ClassIDComboBox.Text = StudentIDComboBox.Text = "";
+                ret = ((Secretary)(SingleUser.Instance.get_user())).addStudToClass(ClassIDComboBox.Text, StudentIDComboBox.Text);
+                if (ret == 0 )
+                    MessageBox.Show("The Course was added successfully");
                 studentToClassButton_Click(null, null);
-                MessageBox.Show("The Course was added successfully");
+                return;
             }
             else
             {
@@ -503,19 +540,21 @@ namespace newGym
                     DateTime EndA = Convert.ToDateTime(dt.Rows[i]["endtime"]);
                     if (StartA < EndB && StartB < EndA)
                     {
-
-                    MessageBox.Show("You are already joined to a class that takes place at the same time.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("You are already joined to a class that takes place at the same time.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         studentToClassButton_Click(null, null);
                         return;
                     }
                 }
 
             }
+            ret = ((Secretary)(SingleUser.Instance.get_user())).addStudToClass(ClassIDComboBox.Text, StudentIDComboBox.Text);
+            if (ret == 0 )
+                MessageBox.Show("The Course was added successfully");
 
-            ((Secretary)( SingleUser.Instance.get_user())).addStudToClass(ClassIDComboBox.Text, StudentIDComboBox.Text);
-            ClassIDComboBox.Text = StudentIDComboBox.Text = "";
-            studentToClassButton_Click(null,null);
-            MessageBox.Show("The Course was added successfully");
+
+            
+            
+            studentToClassButton_Click(null, null);
 
         }
 
@@ -545,7 +584,7 @@ namespace newGym
         //handled
         private void RemoveStudentFromClassButton_Click(object sender, EventArgs e)
         {
-            ((Secretary)( SingleUser.Instance.get_user())).removeStudentFromClass(StudentCombo.Text, relevantClasses.Text);
+            ((Secretary)(SingleUser.Instance.get_user())).removeStudentFromClass(StudentCombo.Text, relevantClasses.Text);
 
             StudentCombo.Text = relevantClasses.Text = "";
 

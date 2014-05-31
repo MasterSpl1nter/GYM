@@ -61,8 +61,8 @@
             this.edit_button = new System.Windows.Forms.Button();
             this.add_course = new System.Windows.Forms.Button();
             this.Cancel_course = new System.Windows.Forms.Button();
-            this.RemoveStudentFromClassButton = new newGym.GButton();
             this.AddStudentToClassButton = new newGym.GButton();
+            this.RemoveStudentFromClassButton = new newGym.GButton();
             this.addCourse_panel.SuspendLayout();
             this.ClassID.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClassDataGrid)).BeginInit();
@@ -121,6 +121,7 @@
             this.ClassIDComboBox.Name = "ClassIDComboBox";
             this.ClassIDComboBox.Size = new System.Drawing.Size(121, 21);
             this.ClassIDComboBox.TabIndex = 3;
+            this.ClassIDComboBox.SelectedIndexChanged += new System.EventHandler(this.ClassIDComboBox_SelectedIndexChanged);
             // 
             // ClassDataGrid
             // 
@@ -423,6 +424,22 @@
             this.Cancel_course.UseVisualStyleBackColor = true;
             this.Cancel_course.Click += new System.EventHandler(this.Cancel_course_Click);
             // 
+            // AddStudentToClassButton
+            // 
+            this.AddStudentToClassButton.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.AddStudentToClassButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.AddStudentToClassButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AddStudentToClassButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.AddStudentToClassButton.ForeColor = System.Drawing.Color.White;
+            this.AddStudentToClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddStudentToClassButton.Location = new System.Drawing.Point(226, 462);
+            this.AddStudentToClassButton.Name = "AddStudentToClassButton";
+            this.AddStudentToClassButton.Size = new System.Drawing.Size(86, 27);
+            this.AddStudentToClassButton.TabIndex = 7;
+            this.AddStudentToClassButton.Text = "Add";
+            this.AddStudentToClassButton.UseVisualStyleBackColor = false;
+            this.AddStudentToClassButton.Click += new System.EventHandler(this.AddStudentToClassButton_Click);
+            // 
             // RemoveStudentFromClassButton
             // 
             this.RemoveStudentFromClassButton.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -438,22 +455,6 @@
             this.RemoveStudentFromClassButton.Text = "Delete";
             this.RemoveStudentFromClassButton.UseVisualStyleBackColor = false;
             this.RemoveStudentFromClassButton.Click += new System.EventHandler(this.RemoveStudentFromClassButton_Click);
-            // 
-            // AddStudentToClassButton
-            // 
-            this.AddStudentToClassButton.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.AddStudentToClassButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.AddStudentToClassButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.AddStudentToClassButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.AddStudentToClassButton.ForeColor = System.Drawing.Color.White;
-            this.AddStudentToClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddStudentToClassButton.Location = new System.Drawing.Point(226, 456);
-            this.AddStudentToClassButton.Name = "AddStudentToClassButton";
-            this.AddStudentToClassButton.Size = new System.Drawing.Size(86, 27);
-            this.AddStudentToClassButton.TabIndex = 7;
-            this.AddStudentToClassButton.Text = "Add";
-            this.AddStudentToClassButton.UseVisualStyleBackColor = false;
-            this.AddStudentToClassButton.Click += new System.EventHandler(this.AddStudentToClassButton_Click);
             // 
             // StudentMenu
             // 
