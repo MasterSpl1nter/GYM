@@ -12,9 +12,11 @@ namespace newGym
 {
     public partial class FormAddTraining : Form
     {
+        /*
         MySqlCommandBuilder cmdb1;
         MySqlDataAdapter sda;
         DataSet dbdataset;
+         */
         private DataTable dt;
         public FormAddTraining()
         {

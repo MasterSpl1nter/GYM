@@ -323,6 +323,9 @@
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>304, 112</value>
   </data>
+  <data name="textBox3.MaxLength" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
   </data>

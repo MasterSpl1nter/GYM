@@ -63,6 +63,7 @@
             // id_txt
             // 
             this.id_txt.Location = new System.Drawing.Point(33, 69);
+            this.id_txt.MaxLength = 9;
             this.id_txt.Name = "id_txt";
             this.id_txt.Size = new System.Drawing.Size(100, 20);
             this.id_txt.TabIndex = 0;
@@ -70,6 +71,7 @@
             // name_txt
             // 
             this.name_txt.Location = new System.Drawing.Point(139, 70);
+            this.name_txt.MaxLength = 29;
             this.name_txt.Name = "name_txt";
             this.name_txt.Size = new System.Drawing.Size(100, 20);
             this.name_txt.TabIndex = 1;
@@ -77,6 +79,7 @@
             // sets_txt
             // 
             this.sets_txt.Location = new System.Drawing.Point(372, 71);
+            this.sets_txt.MaxLength = 2;
             this.sets_txt.Name = "sets_txt";
             this.sets_txt.Size = new System.Drawing.Size(100, 20);
             this.sets_txt.TabIndex = 2;
@@ -94,6 +97,7 @@
             // repeats_txt
             // 
             this.repeats_txt.Location = new System.Drawing.Point(478, 71);
+            this.repeats_txt.MaxLength = 2;
             this.repeats_txt.Name = "repeats_txt";
             this.repeats_txt.Size = new System.Drawing.Size(100, 20);
             this.repeats_txt.TabIndex = 4;
@@ -261,6 +265,7 @@
             // delrepeats_txt
             // 
             this.delrepeats_txt.Location = new System.Drawing.Point(475, 42);
+            this.delrepeats_txt.MaxLength = 2;
             this.delrepeats_txt.Name = "delrepeats_txt";
             this.delrepeats_txt.Size = new System.Drawing.Size(100, 20);
             this.delrepeats_txt.TabIndex = 4;
@@ -268,6 +273,7 @@
             // delsets_txt
             // 
             this.delsets_txt.Location = new System.Drawing.Point(369, 43);
+            this.delsets_txt.MaxLength = 2;
             this.delsets_txt.Name = "delsets_txt";
             this.delsets_txt.Size = new System.Drawing.Size(100, 20);
             this.delsets_txt.TabIndex = 3;
@@ -275,6 +281,7 @@
             // delappliance_txt
             // 
             this.delappliance_txt.Location = new System.Drawing.Point(242, 43);
+            this.delappliance_txt.MaxLength = 29;
             this.delappliance_txt.Name = "delappliance_txt";
             this.delappliance_txt.Size = new System.Drawing.Size(121, 20);
             this.delappliance_txt.TabIndex = 2;
@@ -282,6 +289,7 @@
             // delname_txt
             // 
             this.delname_txt.Location = new System.Drawing.Point(136, 44);
+            this.delname_txt.MaxLength = 29;
             this.delname_txt.Name = "delname_txt";
             this.delname_txt.Size = new System.Drawing.Size(100, 20);
             this.delname_txt.TabIndex = 1;

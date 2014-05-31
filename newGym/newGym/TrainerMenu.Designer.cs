@@ -162,6 +162,7 @@
             // TrainerSearch
             // 
             this.TrainerSearch.Location = new System.Drawing.Point(70, 78);
+            this.TrainerSearch.MaxLength = 29;
             this.TrainerSearch.Name = "TrainerSearch";
             this.TrainerSearch.Size = new System.Drawing.Size(100, 20);
             this.TrainerSearch.TabIndex = 5;
@@ -169,6 +170,7 @@
             // StudSearch
             // 
             this.StudSearch.Location = new System.Drawing.Point(70, 34);
+            this.StudSearch.MaxLength = 29;
             this.StudSearch.Name = "StudSearch";
             this.StudSearch.Size = new System.Drawing.Size(100, 20);
             this.StudSearch.TabIndex = 4;

@@ -50,6 +50,7 @@
             // MangerSalaryPerHour
             // 
             this.MangerSalaryPerHour.Location = new System.Drawing.Point(126, 126);
+            this.MangerSalaryPerHour.MaxLength = 9;
             this.MangerSalaryPerHour.Name = "MangerSalaryPerHour";
             this.MangerSalaryPerHour.Size = new System.Drawing.Size(100, 20);
             this.MangerSalaryPerHour.TabIndex = 52;
@@ -94,6 +95,7 @@
             // password
             // 
             this.password.Location = new System.Drawing.Point(126, 178);
+            this.password.MaxLength = 29;
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(100, 20);
             this.password.TabIndex = 54;
@@ -110,6 +112,7 @@
             // userName
             // 
             this.userName.Location = new System.Drawing.Point(126, 152);
+            this.userName.MaxLength = 29;
             this.userName.Name = "userName";
             this.userName.Size = new System.Drawing.Size(100, 20);
             this.userName.TabIndex = 53;
@@ -126,6 +129,7 @@
             // managerEmail
             // 
             this.managerEmail.Location = new System.Drawing.Point(126, 100);
+            this.managerEmail.MaxLength = 39;
             this.managerEmail.Name = "managerEmail";
             this.managerEmail.Size = new System.Drawing.Size(100, 20);
             this.managerEmail.TabIndex = 51;
@@ -142,6 +146,7 @@
             // managerLastName
             // 
             this.managerLastName.Location = new System.Drawing.Point(126, 74);
+            this.managerLastName.MaxLength = 29;
             this.managerLastName.Name = "managerLastName";
             this.managerLastName.Size = new System.Drawing.Size(100, 20);
             this.managerLastName.TabIndex = 50;
@@ -149,6 +154,7 @@
             // managerFirstName
             // 
             this.managerFirstName.Location = new System.Drawing.Point(126, 48);
+            this.managerFirstName.MaxLength = 29;
             this.managerFirstName.Name = "managerFirstName";
             this.managerFirstName.Size = new System.Drawing.Size(100, 20);
             this.managerFirstName.TabIndex = 49;

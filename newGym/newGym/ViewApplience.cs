@@ -18,12 +18,13 @@ namespace newGym
 
     public partial class View_Applience : Form
     {
+        /*
         private string server;
         private string database;
         private string uid;
         private string password;
         private MySqlConnection connection;
-
+        */
         public View_Applience()
         {
             InitializeComponent();
