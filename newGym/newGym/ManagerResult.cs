@@ -81,8 +81,9 @@ namespace newGym
         {
             
 
-            editManager m = new editManager(dataGridResult.Rows[e.RowIndex].Cells["id"].Value.ToString());
+            editManager m = new editManager(dataGridResult.Rows[e.RowIndex].Cells["id"].Value.ToString(),this);
             m.ShowDialog();
+            
         }
         
 

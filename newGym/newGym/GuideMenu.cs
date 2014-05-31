@@ -11,6 +11,7 @@ using System.Collections;
 
 namespace newGym
 {
+
     public partial class GuideMenu : Form
     {
         private int count = 0;

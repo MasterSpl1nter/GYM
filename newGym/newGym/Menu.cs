@@ -16,13 +16,14 @@ namespace newGym
         DateTime[] arr;
         DataTable dtmp;
         DataTable dt;
+
         public ManagerMenu(Manager m)
         {
             
             dt = new DataTable();
             InitializeComponent();
-            
-            MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid WHERE class.guideid=22");
+            //UpdateCalendar();
+            MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid ");
             arr = new DateTime[dt.Rows.Count];
             for (int i = 0; i < dt.Rows.Count; i++)
             {
@@ -42,6 +43,7 @@ namespace newGym
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
+            /*
             dtmp = new DataTable();
             dtmp.Clear();
             dtmp.Columns.Add("id",typeof(int));
@@ -77,7 +79,7 @@ namespace newGym
                 tothourLabel.Text = "";
                 hScrollBar1.Visible = false;
             }
-                /*
+                
             comboBox1.DataSource = dt;
             comboBox1.DisplayMember = "id";
             //idLabel.Text = dt.Rows[i]["id"].ToString();
@@ -306,6 +308,63 @@ namespace newGym
         {
             new ShiftHandle().ShowDialog();
         }
+
+        private void monthCalendar1_DateChanged_1(object sender, DateRangeEventArgs e)
+        {
+            dtmp = new DataTable();
+            dtmp.Clear();
+            dtmp.Columns.Add("id", typeof(int));
+            dtmp.Columns.Add("name", typeof(string));
+            dtmp.Columns.Add("room", typeof(string));
+            dtmp.Columns.Add("starttime", typeof(DateTime));
+            dtmp.Columns.Add("endtime", typeof(DateTime));
+            foreach (DataRow dr in dt.Rows)
+            {
+
+                if (dr["starttime"].ToString().Contains(monthCalendar1.SelectionStart.ToShortDateString()))
+                {
+                    dtmp.Rows.Add(dr.ItemArray);
+                }
+            }
+            if (dtmp.Rows.Count == 1)
+            {
+                Updateitems(0);
+                hScrollBar1.Visible = false;
+            }
+            if (dtmp.Rows.Count > 1)
+            {
+                Updateitems(0);
+                hScrollBar1.Visible = true;
+            }
+            else if (dtmp.Rows.Count == 0)
+            {
+                idLabel.Text = "";
+                nameLabel.Text = "";
+                ParticiLabel.Text = "";
+                roomNumLabel.Text = "";
+                starttimeLabel.Text = "";
+                endtimeLabel.Text = "";
+                tothourLabel.Text = "";
+                paymentLabel.Text = "";
+                hScrollBar1.Visible = false;
+            }
+        }
+        /*
+        private void UpdateCalendar()
+        {
+            DataTable dt = new DataTable();
+            MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid ");
+            arr = new List<DateTime>();
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                if (Convert.ToDateTime(dt.Rows[i]["starttime"].ToString()).Month == DateTime.Now.Month)
+                {
+                    arr.Add(Convert.ToDateTime(dt.Rows[i]["starttime"]));
+                }
+            }
+            this.monthCalendar1.MonthlyBoldedDates = (DateTime[])arr.ToArray();
+        }
+        */
 
 
     }

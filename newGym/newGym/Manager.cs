@@ -91,6 +91,21 @@ namespace newGym
             newConn.writeToDb(query);
 
         }
+        public void deleteUser(int id, string table)
+        {
+            DbConnection newConn = new DbConnection("gym", "root", "csharp");
+            string query = "DELETE FROM gym."+table+ " WHERE id='" + id + "';";
+            int retval=newConn.writeToDb(query);
+            if (retval != 1)
+            {
+                MessageBox.Show("delete Failed Error:" + retval);
+            }
+            else
+                MessageBox.Show("delete success!");
+                
+
+            
+        }
         //update user by id
         public bool updateUserById(int id)
         {

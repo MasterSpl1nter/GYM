@@ -63,14 +63,16 @@ namespace newGym
             }
         }
 
-        public void writeToDb(string query)//for UPDATE,DELETE INSERT
+        public int writeToDb(string query)//for UPDATE,DELETE INSERT
         {
+            int retval=0;
             if (this.OpenConnection() == true)
             {
                 MySqlCommand myCmd = new MySqlCommand(query, this.connection);
-                myCmd.ExecuteNonQuery();
+                retval =myCmd.ExecuteNonQuery();
                 this.CloseConnection();
             }
+            return retval;
         }
 
         public bool Selectdt(string query, DataTable dt)

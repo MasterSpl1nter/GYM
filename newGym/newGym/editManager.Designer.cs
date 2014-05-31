@@ -44,6 +44,7 @@
             this.exit_update = new System.Windows.Forms.Button();
             this.update_manger_button = new System.Windows.Forms.Button();
             this.userId = new System.Windows.Forms.Label();
+            this.removeUser = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // MangerSalaryPerHour
@@ -159,7 +160,7 @@
             this.exit_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.exit_update.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.exit_update.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exit_update.Location = new System.Drawing.Point(174, 210);
+            this.exit_update.Location = new System.Drawing.Point(199, 210);
             this.exit_update.Name = "exit_update";
             this.exit_update.Size = new System.Drawing.Size(73, 29);
             this.exit_update.TabIndex = 58;
@@ -173,7 +174,7 @@
             this.update_manger_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.update_manger_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.update_manger_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.update_manger_button.Location = new System.Drawing.Point(67, 210);
+            this.update_manger_button.Location = new System.Drawing.Point(16, 210);
             this.update_manger_button.Name = "update_manger_button";
             this.update_manger_button.Size = new System.Drawing.Size(104, 29);
             this.update_manger_button.TabIndex = 57;
@@ -191,11 +192,26 @@
             this.userId.TabIndex = 60;
             this.userId.Click += new System.EventHandler(this.label2_Click);
             // 
+            // removeUser
+            // 
+            this.removeUser.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.removeUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.removeUser.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.removeUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.removeUser.Location = new System.Drawing.Point(123, 210);
+            this.removeUser.Name = "removeUser";
+            this.removeUser.Size = new System.Drawing.Size(73, 29);
+            this.removeUser.TabIndex = 61;
+            this.removeUser.Text = "remove";
+            this.removeUser.UseVisualStyleBackColor = false;
+            this.removeUser.Click += new System.EventHandler(this.removeUser_Click);
+            // 
             // editManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.removeUser);
             this.Controls.Add(this.userId);
             this.Controls.Add(this.exit_update);
             this.Controls.Add(this.update_manger_button);
@@ -237,5 +253,6 @@
         private System.Windows.Forms.Button exit_update;
         private System.Windows.Forms.Button update_manger_button;
         private System.Windows.Forms.Label userId;
+        private System.Windows.Forms.Button removeUser;
     }
 }

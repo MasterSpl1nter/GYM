@@ -14,11 +14,14 @@ namespace newGym
     {
         string perm;
         string table;
-        public editManager(String id)
+        string[] arr = { "manager", "guide", "trainer", "student", "worker" };
+        ManagerResult m;
+        public editManager(String id,ManagerResult m)
         {
             InitializeComponent();
+            //connection to the previous form
+            this.m = m;
             
-            string []arr= {"manager","guide","trainer","student","worker"};
             
             int retval=-1;
             DataTable dt = new DataTable();
@@ -164,6 +167,32 @@ namespace newGym
         private void managerFirstName_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void removeUser_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                // user clicked yes
+            
+                for (int i = 0; i < arr.Length; i++)
+                {
+                  DataTable dt = new DataTable();
+                   int retval = MySQL.Query(dt, "SELECT * FROM " + arr[i] + " where id=" + this.userId.Text);
+                   if (dt.Rows.Count == 1)
+                    {
+                       ((Manager)SingleUser.Instance.get_user()).deleteUser(Convert.ToInt32(this.userId.Text), arr[i]);
+                        break;
+                    }  
+                }
+                this.Close();
+                m.Close();
+                
+            }
+            else
+            {
+                // user clicked no
+            }
         }
     }
 }
