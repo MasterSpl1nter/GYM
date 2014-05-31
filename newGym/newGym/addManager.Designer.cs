@@ -43,9 +43,7 @@
             this.managerLastName = new System.Windows.Forms.TextBox();
             this.managerId = new System.Windows.Forms.TextBox();
             this.managerFirstName = new System.Windows.Forms.TextBox();
-            this.IdComboBox = new System.Windows.Forms.ComboBox();
             this.exit_update = new System.Windows.Forms.Button();
-            this.update_manger_button = new System.Windows.Forms.Button();
             this.DepartmentComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -185,16 +183,6 @@
             this.managerFirstName.Size = new System.Drawing.Size(100, 20);
             this.managerFirstName.TabIndex = 34;
             // 
-            // IdComboBox
-            // 
-            this.IdComboBox.FormattingEnabled = true;
-            this.IdComboBox.Location = new System.Drawing.Point(154, 48);
-            this.IdComboBox.Name = "IdComboBox";
-            this.IdComboBox.Size = new System.Drawing.Size(100, 21);
-            this.IdComboBox.TabIndex = 42;
-            this.IdComboBox.Visible = false;
-            this.IdComboBox.SelectedIndexChanged += new System.EventHandler(this.IdComboBox_SelectedIndexChanged);
-            // 
             // exit_update
             // 
             this.exit_update.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -209,21 +197,6 @@
             this.exit_update.UseVisualStyleBackColor = false;
             this.exit_update.Visible = false;
             this.exit_update.Click += new System.EventHandler(this.exit_update_Click);
-            // 
-            // update_manger_button
-            // 
-            this.update_manger_button.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.update_manger_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.update_manger_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.update_manger_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.update_manger_button.Location = new System.Drawing.Point(32, 230);
-            this.update_manger_button.Name = "update_manger_button";
-            this.update_manger_button.Size = new System.Drawing.Size(104, 29);
-            this.update_manger_button.TabIndex = 43;
-            this.update_manger_button.Text = "Update";
-            this.update_manger_button.UseVisualStyleBackColor = false;
-            this.update_manger_button.Visible = false;
-            this.update_manger_button.Click += new System.EventHandler(this.update_manger_button_Click_1);
             // 
             // DepartmentComboBox
             // 
@@ -259,8 +232,6 @@
             this.Controls.Add(this.DepartmentComboBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.exit_update);
-            this.Controls.Add(this.update_manger_button);
-            this.Controls.Add(this.IdComboBox);
             this.Controls.Add(this.MangerSalaryPerHour);
             this.Controls.Add(this.idLabel);
             this.Controls.Add(this.salaryPerHourLabel);
@@ -299,10 +270,8 @@
 	        private System.Windows.Forms.Label firstNameLabel;
 	        private System.Windows.Forms.TextBox managerLastName;
 	        private System.Windows.Forms.TextBox managerId;
-	        private System.Windows.Forms.TextBox managerFirstName;
-	        private System.Windows.Forms.ComboBox IdComboBox;
-	        private System.Windows.Forms.Button exit_update;
-            private System.Windows.Forms.Button update_manger_button;
+            private System.Windows.Forms.TextBox managerFirstName;
+            private System.Windows.Forms.Button exit_update;
             private System.Windows.Forms.ComboBox DepartmentComboBox;
             private System.Windows.Forms.Label label1;
 	    }

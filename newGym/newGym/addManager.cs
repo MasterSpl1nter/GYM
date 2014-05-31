@@ -14,18 +14,19 @@ namespace newGym
     {
         //private int opp;
         
-        public addManager(int opp)
+        public addManager(/*int opp*/)
         {
             InitializeComponent();
-            if (opp == 0)
-            {
-                this.IdComboBox.Visible = false;
+           // if (opp == 0)
+            //{
+                //this.IdComboBox.Visible = false;
                 this.managerId.Visible = true;
                 this.exit_update.Visible = true;
                 this.DepartmentComboBox.Visible = true;
                 this.label1.Visible = true;
                 this.DepartmentComboBox.SelectedIndex = 0;
-            }
+            //}
+            /*
             if (opp == 1)
             {
                 this.label1.Visible = false;
@@ -43,7 +44,7 @@ namespace newGym
                 {
                     this.IdComboBox.Items.Add(r["id"].ToString());
                 }
-            }
+            }*/
         }
 
         private void AddManagerUser_Click_1(object sender, EventArgs e)
@@ -66,7 +67,7 @@ namespace newGym
             }
             List<TextBox> err = new List<TextBox>();
             resetLabelColor(this.Controls);
-            if (DepartmentComboBox.SelectedText.Equals("Manager"))
+           /* if (DepartmentComboBox.SelectedText.Equals("Manager"))
             {
                 if (!Person.ValidateID(managerId.Text) || Manager.isIdExist(Convert.ToInt32(managerId.Text)) == true)//&& managerId.Text.Length==9 
                 {
@@ -76,7 +77,7 @@ namespace newGym
                     return;
                 }
             }
-            else
+            else*/
                 if (!Person.ValidateID(managerId.Text))//&& managerId.Text.Length==9 
                 {
                     this.idLabel.ForeColor = System.Drawing.Color.Red;
@@ -103,20 +104,20 @@ namespace newGym
                 //public void addUser(int id,string firstname,string lastname,string email,string username,string password,string permission,int salaryperhour)
                 //((Manager)user.get_user()).addUser(Convert.ToInt32(managerId.Text), managerFirstName.Text, managerLastName.Text, managerEmail.Text, userName.Text, password.Text, 4,Convert.ToInt32(MangerSalaryPerHour.Text) );
                 
-                if (DepartmentComboBox.SelectedItem.Equals("Manager"))
-                {
-                   ((Manager)SingleUser.Instance.get_user()).addUser(Convert.ToInt32(managerId.Text), managerFirstName.Text, managerLastName.Text, managerEmail.Text, userName.Text, password.Text, 4, Convert.ToInt32(MangerSalaryPerHour.Text));
-                    MessageBox.Show("Add new user succeeded!","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                }
-                else 
-                {
+                //if (DepartmentComboBox.SelectedItem.Equals("Manager"))
+                //{
+                  // ((Manager)SingleUser.Instance.get_user()).addUser(Convert.ToInt32(managerId.Text), managerFirstName.Text, managerLastName.Text, managerEmail.Text, userName.Text, password.Text, 4, Convert.ToInt32(MangerSalaryPerHour.Text));
+                   // MessageBox.Show("Add new user succeeded!","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
+               // }
+                //else 
+                //{
                     int perm=getPerm();
                     string Table = DepartmentComboBox.SelectedItem.ToString().ToLower();
                     string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},{7}", managerId.Text, managerFirstName.Text, managerLastName.Text, managerEmail.Text, userName.Text, password.Text, perm, MangerSalaryPerHour.Text);
                     int retval = ((Manager)SingleUser.Instance.get_user()).Add(Table, insert);
                     checkMessage(retval);
 
-                }
+              //  }
                 
                 
             }
@@ -126,7 +127,7 @@ namespace newGym
             if (DepartmentComboBox.SelectedItem.Equals("Trainer")) return 2;
             if (DepartmentComboBox.SelectedItem.Equals("Guide")) return 3;
             if (DepartmentComboBox.SelectedItem.Equals("Worker")) return 1;
-
+            if (DepartmentComboBox.SelectedItem.Equals("Manager")) return 4;
             return -1;
         }
         private void checkMessage(int retval)
@@ -264,7 +265,7 @@ namespace newGym
                     l.ForeColor = SystemColors.ControlText; ;
             }
         }
-
+        /*
         private void IdComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             int selectedIndex = IdComboBox.SelectedIndex;
@@ -285,7 +286,8 @@ namespace newGym
             this.userName.Text = dt.Rows[0]["username"].ToString();
             this.password.Text = dt.Rows[0]["password"].ToString();
         }
-
+        */
+        /*
         private void update_manger_button_Click_1(object sender, EventArgs e)
         {
             List<TextBox> err = new List<TextBox>();
@@ -307,7 +309,7 @@ namespace newGym
                 MessageBox.Show("Update succeeded!","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
         }
-
+        */
         private void label1_Click(object sender, EventArgs e)
         {
 

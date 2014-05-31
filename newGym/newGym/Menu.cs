@@ -116,134 +116,14 @@ namespace newGym
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            addManager addM = new addManager(0);
-            addM.ShowDialog();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //Application.Run(new GuideForm(0));
-            GuideForm g = new GuideForm(0);
-            g.ShowDialog();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            GuideForm g = new GuideForm(1);
-            g.ShowDialog();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            GuideForm g = new GuideForm(2);
-            g.ShowDialog();
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            AddSecretary s = new AddSecretary();
-            s.ShowDialog();
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-            AddStudent asa = new AddStudent();
-            asa.ShowDialog();
-        }
-
-        private void button17_Click(object sender, EventArgs e)
-        {
-            Room.addRoom();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            addManager editM = new addManager(1);
-            editM.ShowDialog();
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            FormAddTrainer addT = new FormAddTrainer();
-            addT.ShowDialog();
-
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            FormEditTrainer editT = new FormEditTrainer();
-            editT.ShowDialog();
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            FormRemoveTrainer removeT = new FormRemoveTrainer();
-            removeT.ShowDialog();
-        }
-
-        private void button18_Click(object sender, EventArgs e)
-        {
-            //Application.Run(new ManuApplince());
-            ManuApplince MP = new ManuApplince();
-            MP.ShowDialog();
-        }
-
-        private void button19_Click(object sender, EventArgs e)
-        {
-            fAddClass AddClass = new fAddClass();
-            AddClass.ShowDialog();
-        }
-
-        private void button20_Click(object sender, EventArgs e)
-        {
-            /// Class EDIT ...///
-            fEditClass editClass = new fEditClass();
-            editClass.ShowDialog();
-        }
-
-        private void button21_Click(object sender, EventArgs e)
-        {
-            //delete//
-            fDelClass DelClass = new fDelClass();
-            DelClass.ShowDialog();
-        }
-
         private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            deleteManager d = new deleteManager();
-            d.ShowDialog();
-        }
+        
 
-        private void button12_Click(object sender, EventArgs e)
-        {
-            EditSecretary es = new EditSecretary();
-            es.ShowDialog();
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-            DelSecretary ds = new DelSecretary();
-            ds.ShowDialog();
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-            EditStudentBySecrtary es = new EditStudentBySecrtary();
-            es.ShowDialog();
-        }
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-            DeleteStudent ds = new DeleteStudent();
-            ds.ShowDialog();
-        }
+        
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -257,7 +137,7 @@ namespace newGym
 
         private void button22_Click(object sender, EventArgs e)
         {
-            addManager addM = new addManager(0);
+            addManager addM = new addManager();
             addM.ShowDialog();
         }
 
