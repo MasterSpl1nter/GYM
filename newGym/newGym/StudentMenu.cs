@@ -349,7 +349,8 @@ namespace newGym
 
             DataTable dt = new DataTable();
 
-            int ret = MySQL.Query(dt, "select training.name,appliance,sets,repeats from studenttraining join training on studenttraining.trainingid = training.id where studenttraining.studentid = " + SingleUser.Instance.get_user().Id.ToString() + ";");
+            int ret = MySQL.Query(dt, "select training.name AS 'Training name',appliance.name AS Appliance,sets AS Sets,repeats AS Repeats from studenttraining join training on studenttraining.trainingid = training.id join appliance on appliance.id=training.appliance where studenttraining.studentid= " + SingleUser.Instance.get_user().Id.ToString() + ";");
+
             if (ret != 0)
             {
                 MessageBox.Show("the mysql query failed");
