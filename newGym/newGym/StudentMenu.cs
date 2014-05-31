@@ -14,13 +14,7 @@ namespace newGym
 {
     public partial class StudentMenu : Form
     {
-        Student a = (Student)SingleUser.Instance.get_user();
-        //int id = SingleUser.Instance.get_user().Id;
-        //int permission = 0;
-        //DateTime birthday;
-        //DateTime startdate;
-        //DateTime enddate;
-        //DateTime medcert;
+        
 
         //initalization
         public StudentMenu()
@@ -39,7 +33,12 @@ namespace newGym
             try
             {
                 //well this is a tought querry , pull from the student class all the classes that trhe student is singed up for and from those grab the name room guideid and id of the class
-                MySQL.Query(dt, "SELECT classid, starttime , endtime FROM classtime WHERE (classid) IN (SELECT classid FROM studentclass WHERE studentid = " + SingleUser.Instance.get_user().Id.ToString() + ");");
+                 int ret  = MySQL.Query(dt, "SELECT classid, starttime , endtime FROM classtime WHERE (classid) IN (SELECT classid FROM studentclass WHERE studentid = " + SingleUser.Instance.get_user().Id.ToString() + ");");
+                 if (ret == 0)
+                 {
+                     MessageBox.Show("the mysql query failed");
+                 }
+
                 arr = new DateTime[dt.Rows.Count];
                 foreach (DataRow row in dt.Rows)
                 {
@@ -63,6 +62,7 @@ namespace newGym
             EditDetail_panel.Visible = false;
             addCourse_panel.Visible = false;
             cancelCourse_panel.Visible = false;
+            ExercisePannel.Visible = false;
         }
 
 
@@ -169,7 +169,11 @@ namespace newGym
                     a.getid(), firstname_box.Text, lastname_box.Text, email_box.Text, username_box.Text, password_box.Text, 1, a.getbday().Date.ToString("yyyy-MM-dd"),
                     a.getStartDate().Date.ToString("yyyy-MM-dd"), a.getEndDate().Date.ToString("yyyy-MM-dd"), a.getMedCert().Date.ToString("yyyy-MM-dd"));
                 ((Student)SingleUser.Instance.get_user()).Delete(a.getid());
-                MySQL.Insert("student", "id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert", insert);
+                 int ret  = MySQL.Insert("student", "id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert", insert);
+                 if (ret == 0)
+                 {
+                     MessageBox.Show("the mysql query failed");
+                 }
                 MessageBox.Show("Details have been update succesfully ");
             }
             else
@@ -195,14 +199,17 @@ namespace newGym
             addCourse_panel.Visible = true;
 
             DataTable dt = new DataTable();
-            MySQL.Select(dt, "class");
+             int ret  = MySQL.Select(dt, "class");
+             if (ret == 0)
+             {
+                 MessageBox.Show("the mysql query failed");
+             }
             ClassDataGrid.Columns.Clear();
             ClassDataGrid.DataSource = dt;
 
             fillcombo2(ClassIDComboBox);
 
         }
-
 
         public void fillcombo2(ComboBox combo)
         {
@@ -233,8 +240,16 @@ namespace newGym
             string classid =  ClassIDComboBox.Text;
             string Studentid = SingleUser.Instance.get_user().Id.ToString();
 
-        MySQL.Query(dt,"select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
-        MySQL.Query(dt1,"select starttime,endtime from classtime WHERE classid=" + classid);
+         int ret  = MySQL.Query(dt,"select student.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
+         if (ret == 0)
+         {
+             MessageBox.Show("the mysql query failed");
+         }
+        ret  = MySQL.Query(dt1,"select starttime,endtime from classtime WHERE classid=" + classid);
+        if (ret == 0)
+        {
+            MessageBox.Show("the mysql query failed");
+        }
         if (dt.Rows.Count == 0 || dt1.Rows.Count == 0)
         {
            
@@ -288,7 +303,11 @@ namespace newGym
             try
             {
                 //well this is a tought querry , pull from the student class all the classes that the student is singed up for and from those grab the name room guideid and id of the class
-                MySQL.Query(dt, "SELECT id, name , room , guideid FROM class WHERE (id) IN (SELECT classid FROM studentclass WHERE studentid = " + SingleUser.Instance.get_user().Id.ToString() + ");");
+                 int ret  = MySQL.Query(dt, "SELECT id, name , room , guideid FROM class WHERE (id) IN (SELECT classid FROM studentclass WHERE studentid = " + SingleUser.Instance.get_user().Id.ToString() + ");");
+                 if (ret == 0)
+                 {
+                     MessageBox.Show("the mysql query failed");
+                 }
                 foreach (DataRow row in dt.Rows)
                 {
                     relevantClasses.Items.Add(row["id"].ToString());
@@ -303,6 +322,26 @@ namespace newGym
             StudnetClassDataGrid.Columns.Clear();
             StudnetClassDataGrid.DataSource = dt;
         
+        }
+
+        //Exercise 
+        private void ExerciseButton_Click(object sender, EventArgs e)
+        {
+            makeAllInvisible();
+            ExercisePannel.Visible = true;
+            ExerciseDataGrid.Columns.Clear();
+            
+            DataTable dt = new DataTable();
+            
+            int ret = MySQL.Query(dt, "select training.name,appliance,sets,repeats from studenttraining join training on studenttraining.trainingid = training.id where studenttraining.studentid = " + SingleUser.Instance.get_user().Id.ToString() + ");");
+            if (ret == 0)
+            {
+                MessageBox.Show("the mysql query failed");
+            }
+
+            ExerciseDataGrid.DataSource = dt;
+
+
         }
 
 

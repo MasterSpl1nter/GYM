@@ -122,7 +122,9 @@ namespace newGym
         {
             DataTable dt = new DataTable();
 
-            MySQL.Query(dt, "SELECT * FROM gym.workingtime where id=" + ((Secretary)( SingleUser.Instance.get_user())).getid() ) ;
+            MySQL.Query(dt, "select * from workingtime where id =" + ((Secretary)( SingleUser.Instance.get_user())).getid() +"  and starttime >CURDATE();" ) ;
+            ShiftsDataGrid.Columns.Clear();
+            ShiftsDataGrid.DataSource = dt;
         }
 
         //relevant for ADD STUDENT PANNEL 
@@ -551,12 +553,6 @@ namespace newGym
             MessageBox.Show("The student was removed successfully");
 
         }
-
-        private void WelcomeGroupbox_Enter(object sender, EventArgs e)
-        {
-
-        }
-
 
     }
 }

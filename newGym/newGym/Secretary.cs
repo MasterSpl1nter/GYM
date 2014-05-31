@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace newGym
 {
@@ -29,17 +30,35 @@ namespace newGym
          }
         public static int addStudToClass(string classId, string studentId)
         {
-            return MySQL.Insert("studentclass", "studentid,classid", "'" + studentId + "','" + classId + "'");
+            int ret = MySQL.Insert("studentclass", "studentid,classid", "'" + studentId + "','" + classId + "'");
+
+            if (ret == 0)
+            {
+                MessageBox.Show("the mysql query failed");
+            }
+            return ret ;
         }
 
         public static int removeStudentFromClass(String idStudent, String idClass)
         {
 
-            return MySQL.Delete("studentclass", "studentid = " + idStudent + " AND " + "classid = " + idClass);
+            int ret =  MySQL.Delete("studentclass", "studentid = " + idStudent + " AND " + "classid = " + idClass);
+
+            if (ret == 0)
+            {
+                MessageBox.Show("the mysql query failed");
+            }
+            return ret;
         }
         public int DeleteStudent(string id)
         {
-            return MySQL.Delete("student", "id=" + id);
+            int ret = MySQL.Delete("student", "id=" + id);
+
+            if (ret == 0)
+            {
+                MessageBox.Show("the mysql query failed");
+            }
+            return ret;
         }
 
         

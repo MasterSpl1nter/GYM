@@ -34,7 +34,6 @@
             this.ClassID = new System.Windows.Forms.GroupBox();
             this.ClassIDComboBox = new System.Windows.Forms.ComboBox();
             this.ClassDataGrid = new System.Windows.Forms.DataGridView();
-            this.AddStudentToClassButton = new newGym.GButton();
             this.EditDetail_panel = new System.Windows.Forms.Panel();
             this.password_box = new System.Windows.Forms.TextBox();
             this.password_label = new System.Windows.Forms.Label();
@@ -51,15 +50,19 @@
             this.cancelCourse_panel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.relevantClasses = new System.Windows.Forms.ComboBox();
-            this.RemoveStudentFromClassButton = new newGym.GButton();
             this.StudnetClassDataGrid = new System.Windows.Forms.DataGridView();
             this.WelcomeGroupBox = new System.Windows.Forms.GroupBox();
             this.helloLabel = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.ExercisePannel = new System.Windows.Forms.Panel();
+            this.ExerciseDataGrid = new System.Windows.Forms.DataGridView();
             this.gGroupBox1 = new newGym.GGroupBox();
+            this.ExerciseButton = new System.Windows.Forms.Button();
             this.edit_button = new System.Windows.Forms.Button();
             this.add_course = new System.Windows.Forms.Button();
             this.Cancel_course = new System.Windows.Forms.Button();
+            this.AddStudentToClassButton = new newGym.GButton();
+            this.RemoveStudentFromClassButton = new newGym.GButton();
             this.addCourse_panel.SuspendLayout();
             this.ClassID.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClassDataGrid)).BeginInit();
@@ -68,13 +71,15 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudnetClassDataGrid)).BeginInit();
             this.WelcomeGroupBox.SuspendLayout();
+            this.ExercisePannel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ExerciseDataGrid)).BeginInit();
             this.gGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // StudnetClassesCalendar
             // 
             this.StudnetClassesCalendar.CalendarDimensions = new System.Drawing.Size(1, 2);
-            this.StudnetClassesCalendar.Location = new System.Drawing.Point(16, 249);
+            this.StudnetClassesCalendar.Location = new System.Drawing.Point(12, 298);
             this.StudnetClassesCalendar.Margin = new System.Windows.Forms.Padding(7);
             this.StudnetClassesCalendar.Name = "StudnetClassesCalendar";
             this.StudnetClassesCalendar.TabIndex = 1;
@@ -93,10 +98,10 @@
             this.addCourse_panel.Controls.Add(this.ClassID);
             this.addCourse_panel.Controls.Add(this.ClassDataGrid);
             this.addCourse_panel.Controls.Add(this.AddStudentToClassButton);
-            this.addCourse_panel.Location = new System.Drawing.Point(252, 77);
+            this.addCourse_panel.Location = new System.Drawing.Point(250, 80);
             this.addCourse_panel.Margin = new System.Windows.Forms.Padding(2);
             this.addCourse_panel.Name = "addCourse_panel";
-            this.addCourse_panel.Size = new System.Drawing.Size(1036, 694);
+            this.addCourse_panel.Size = new System.Drawing.Size(850, 520);
             this.addCourse_panel.TabIndex = 1;
             // 
             // ClassID
@@ -130,22 +135,6 @@
             this.ClassDataGrid.Size = new System.Drawing.Size(1013, 540);
             this.ClassDataGrid.TabIndex = 6;
             // 
-            // AddStudentToClassButton
-            // 
-            this.AddStudentToClassButton.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.AddStudentToClassButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.AddStudentToClassButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.AddStudentToClassButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.AddStudentToClassButton.ForeColor = System.Drawing.Color.White;
-            this.AddStudentToClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddStudentToClassButton.Location = new System.Drawing.Point(226, 585);
-            this.AddStudentToClassButton.Name = "AddStudentToClassButton";
-            this.AddStudentToClassButton.Size = new System.Drawing.Size(86, 27);
-            this.AddStudentToClassButton.TabIndex = 7;
-            this.AddStudentToClassButton.Text = "Add";
-            this.AddStudentToClassButton.UseVisualStyleBackColor = false;
-            this.AddStudentToClassButton.Click += new System.EventHandler(this.AddStudentToClassButton_Click);
-            // 
             // EditDetail_panel
             // 
             this.EditDetail_panel.Controls.Add(this.password_box);
@@ -160,10 +149,10 @@
             this.EditDetail_panel.Controls.Add(this.email_box);
             this.EditDetail_panel.Controls.Add(this.lastname_box);
             this.EditDetail_panel.Controls.Add(this.firstname_box);
-            this.EditDetail_panel.Location = new System.Drawing.Point(252, 77);
+            this.EditDetail_panel.Location = new System.Drawing.Point(250, 80);
             this.EditDetail_panel.Margin = new System.Windows.Forms.Padding(2);
             this.EditDetail_panel.Name = "EditDetail_panel";
-            this.EditDetail_panel.Size = new System.Drawing.Size(1036, 694);
+            this.EditDetail_panel.Size = new System.Drawing.Size(850, 520);
             this.EditDetail_panel.TabIndex = 0;
             // 
             // password_box
@@ -294,10 +283,10 @@
             this.cancelCourse_panel.Controls.Add(this.groupBox1);
             this.cancelCourse_panel.Controls.Add(this.RemoveStudentFromClassButton);
             this.cancelCourse_panel.Controls.Add(this.StudnetClassDataGrid);
-            this.cancelCourse_panel.Location = new System.Drawing.Point(252, 77);
+            this.cancelCourse_panel.Location = new System.Drawing.Point(250, 80);
             this.cancelCourse_panel.Margin = new System.Windows.Forms.Padding(2);
             this.cancelCourse_panel.Name = "cancelCourse_panel";
-            this.cancelCourse_panel.Size = new System.Drawing.Size(1036, 694);
+            this.cancelCourse_panel.Size = new System.Drawing.Size(850, 520);
             this.cancelCourse_panel.TabIndex = 9;
             // 
             // groupBox1
@@ -317,22 +306,6 @@
             this.relevantClasses.Name = "relevantClasses";
             this.relevantClasses.Size = new System.Drawing.Size(142, 21);
             this.relevantClasses.TabIndex = 3;
-            // 
-            // RemoveStudentFromClassButton
-            // 
-            this.RemoveStudentFromClassButton.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.RemoveStudentFromClassButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.RemoveStudentFromClassButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.RemoveStudentFromClassButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.RemoveStudentFromClassButton.ForeColor = System.Drawing.Color.White;
-            this.RemoveStudentFromClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RemoveStudentFromClassButton.Location = new System.Drawing.Point(226, 607);
-            this.RemoveStudentFromClassButton.Name = "RemoveStudentFromClassButton";
-            this.RemoveStudentFromClassButton.Size = new System.Drawing.Size(86, 27);
-            this.RemoveStudentFromClassButton.TabIndex = 7;
-            this.RemoveStudentFromClassButton.Text = "Delete";
-            this.RemoveStudentFromClassButton.UseVisualStyleBackColor = false;
-            this.RemoveStudentFromClassButton.Click += new System.EventHandler(this.RemoveStudentFromClassButton_Click);
             // 
             // StudnetClassDataGrid
             // 
@@ -369,9 +342,27 @@
             this.helloLabel.TabIndex = 1;
             this.helloLabel.Text = "WILL BE FILLED IN RUNTIME";
             // 
+            // ExercisePannel
+            // 
+            this.ExercisePannel.Controls.Add(this.ExerciseDataGrid);
+            this.ExercisePannel.Location = new System.Drawing.Point(250, 80);
+            this.ExercisePannel.Name = "ExercisePannel";
+            this.ExercisePannel.Size = new System.Drawing.Size(850, 520);
+            this.ExercisePannel.TabIndex = 10;
+            // 
+            // ExerciseDataGrid
+            // 
+            this.ExerciseDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ExerciseDataGrid.Location = new System.Drawing.Point(10, 10);
+            this.ExerciseDataGrid.Margin = new System.Windows.Forms.Padding(10);
+            this.ExerciseDataGrid.Name = "ExerciseDataGrid";
+            this.ExerciseDataGrid.Size = new System.Drawing.Size(830, 500);
+            this.ExerciseDataGrid.TabIndex = 0;
+            // 
             // gGroupBox1
             // 
             this.gGroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gGroupBox1.Controls.Add(this.ExerciseButton);
             this.gGroupBox1.Controls.Add(this.edit_button);
             this.gGroupBox1.Controls.Add(this.add_course);
             this.gGroupBox1.Controls.Add(this.Cancel_course);
@@ -379,10 +370,22 @@
             this.gGroupBox1.ForeColor = System.Drawing.Color.Black;
             this.gGroupBox1.Location = new System.Drawing.Point(12, 12);
             this.gGroupBox1.Name = "gGroupBox1";
-            this.gGroupBox1.Size = new System.Drawing.Size(231, 227);
+            this.gGroupBox1.Size = new System.Drawing.Size(231, 276);
             this.gGroupBox1.TabIndex = 7;
             this.gGroupBox1.TabStop = false;
             this.gGroupBox1.Text = "Actions";
+            // 
+            // ExerciseButton
+            // 
+            this.ExerciseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.ExerciseButton.Location = new System.Drawing.Point(18, 210);
+            this.ExerciseButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ExerciseButton.Name = "ExerciseButton";
+            this.ExerciseButton.Size = new System.Drawing.Size(118, 38);
+            this.ExerciseButton.TabIndex = 6;
+            this.ExerciseButton.Text = "Exercise";
+            this.ExerciseButton.UseVisualStyleBackColor = true;
+            this.ExerciseButton.Click += new System.EventHandler(this.ExerciseButton_Click);
             // 
             // edit_button
             // 
@@ -420,11 +423,44 @@
             this.Cancel_course.UseVisualStyleBackColor = true;
             this.Cancel_course.Click += new System.EventHandler(this.Cancel_course_Click);
             // 
+            // AddStudentToClassButton
+            // 
+            this.AddStudentToClassButton.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.AddStudentToClassButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.AddStudentToClassButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AddStudentToClassButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.AddStudentToClassButton.ForeColor = System.Drawing.Color.White;
+            this.AddStudentToClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddStudentToClassButton.Location = new System.Drawing.Point(226, 585);
+            this.AddStudentToClassButton.Name = "AddStudentToClassButton";
+            this.AddStudentToClassButton.Size = new System.Drawing.Size(86, 27);
+            this.AddStudentToClassButton.TabIndex = 7;
+            this.AddStudentToClassButton.Text = "Add";
+            this.AddStudentToClassButton.UseVisualStyleBackColor = false;
+            this.AddStudentToClassButton.Click += new System.EventHandler(this.AddStudentToClassButton_Click);
+            // 
+            // RemoveStudentFromClassButton
+            // 
+            this.RemoveStudentFromClassButton.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.RemoveStudentFromClassButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.RemoveStudentFromClassButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.RemoveStudentFromClassButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.RemoveStudentFromClassButton.ForeColor = System.Drawing.Color.White;
+            this.RemoveStudentFromClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RemoveStudentFromClassButton.Location = new System.Drawing.Point(226, 607);
+            this.RemoveStudentFromClassButton.Name = "RemoveStudentFromClassButton";
+            this.RemoveStudentFromClassButton.Size = new System.Drawing.Size(86, 27);
+            this.RemoveStudentFromClassButton.TabIndex = 7;
+            this.RemoveStudentFromClassButton.Text = "Delete";
+            this.RemoveStudentFromClassButton.UseVisualStyleBackColor = false;
+            this.RemoveStudentFromClassButton.Click += new System.EventHandler(this.RemoveStudentFromClassButton_Click);
+            // 
             // StudentMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1299, 782);
+            this.ClientSize = new System.Drawing.Size(1168, 634);
+            this.Controls.Add(this.ExercisePannel);
             this.Controls.Add(this.WelcomeGroupBox);
             this.Controls.Add(this.gGroupBox1);
             this.Controls.Add(this.StudnetClassesCalendar);
@@ -445,6 +481,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.StudnetClassDataGrid)).EndInit();
             this.WelcomeGroupBox.ResumeLayout(false);
             this.WelcomeGroupBox.PerformLayout();
+            this.ExercisePannel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ExerciseDataGrid)).EndInit();
             this.gGroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -485,5 +523,8 @@
         private GButton RemoveStudentFromClassButton;
         private System.Windows.Forms.DataGridView StudnetClassDataGrid;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Panel ExercisePannel;
+        private System.Windows.Forms.DataGridView ExerciseDataGrid;
+        private System.Windows.Forms.Button ExerciseButton;
     }
 }
