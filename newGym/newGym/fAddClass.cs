@@ -43,12 +43,13 @@ namespace newGym
             dt = new DataTable();
             dtt = new DataTable();
             gidLabel.Visible = true;
-            comboBox2.Visible = true;
+            gidLabel.Text = this.id.ToString();
+            comboBox2.Visible = false;
             monthCalendar1.MaxSelectionCount = 1;
             UpdateCalendar();
             button5.Visible = false;
             LoadRoomId();
-            LoadGuideId();
+            //LoadGuideId();
             if ( comboBox1.Items.Count > 0)
             comboBox1.SelectedIndex = comboBox1.Items.Count -1 ;
         }
@@ -89,7 +90,7 @@ namespace newGym
                         else
                         {
 
-                            fClass myclass = new fClass(int.Parse(textBox1.Text), textBox2.Text, int.Parse(comboBox1.Text), int.Parse(comboBox2.Text), 0, int.Parse(textBox3.Text),
+                            fClass myclass = new fClass(int.Parse(textBox1.Text), textBox2.Text, int.Parse(comboBox1.Text), id==-1 ? int.Parse(comboBox2.Text) : id, 0, int.Parse(textBox3.Text),
                                 startClass.ToString("yyyy-MM-dd HH:mm:ss"), endClass.ToString("yyyy-MM-dd HH:mm:ss"));
 
                             if (myclass.SaveData() && myclass.SaveDate())

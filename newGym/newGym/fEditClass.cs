@@ -33,8 +33,13 @@ namespace newGym
         public fEditClass(int id)
         {
             this.id = id;
+
+           
             this.Controls.Add(textBox5);
             InitializeComponent();
+            comboBox3.Visible = false;
+            gidLabel.Visible = true;
+            gidLabel.Text = id.ToString();
             LoadActivityId();
             monthCalendar1.MaxSelectionCount = 1;
             textBox5.Click += new EventHandler(textBox5_Click);
@@ -68,7 +73,7 @@ namespace newGym
             try
             {
                 id = int.Parse(arr[i]);
-                LoadGuideId();
+                if(id==-1) LoadGuideId();
                 LoadRoomId();
                 MySQL.Query(dt, "SELECT class.name, class.room, class.guideid, class.capacity FROM class WHERE id=" + id);
                 name = dt.Rows[0]["name"].ToString();
@@ -77,6 +82,7 @@ namespace newGym
                 MySQL.Query(dt2, "SELECT studentclass.studentid FROM studentclass WHERE classid=" + id);
                 textBox4.Text = dt2.Rows.Count.ToString();     
                 guideid = int.Parse(dt.Rows[0]["guideid"].ToString());
+                if(id==-1)
                 comboBox3.SelectedIndex = comboBox3.FindString(guideid.ToString());
                 roomid = int.Parse(dt.Rows[0]["room"].ToString());
                 comboBox2.SelectedIndex = comboBox2.FindString(roomid.ToString());
@@ -236,7 +242,7 @@ namespace newGym
             {
                 new_name = textBox1.Text;
                 new_roomid = int.Parse(comboBox2.Text);
-                new_guideid = int.Parse(comboBox3.Text);
+                new_guideid = id==-1 ? int.Parse(comboBox3.Text) : id;
                 new_capacity = int.Parse(textBox2.Text);
 
                 if (valueChanged || new_name != name || new_roomid != roomid || new_guideid != guideid)

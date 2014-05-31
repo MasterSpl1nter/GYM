@@ -69,6 +69,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.gidLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.gGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -142,6 +143,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(77, 92);
+            this.textBox1.MaxLength = 10;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 7;
@@ -486,12 +488,22 @@
             this.label17.TabIndex = 50;
             this.label17.Text = "To:";
             // 
+            // gidLabel
+            // 
+            this.gidLabel.AutoSize = true;
+            this.gidLabel.Location = new System.Drawing.Point(84, 160);
+            this.gidLabel.Name = "gidLabel";
+            this.gidLabel.Size = new System.Drawing.Size(0, 13);
+            this.gidLabel.TabIndex = 55;
+            this.gidLabel.Visible = false;
+            // 
             // fEditClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(528, 507);
+            this.Controls.Add(this.gidLabel);
             this.Controls.Add(this.gGroupBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBox3);
@@ -570,5 +582,6 @@
         private GGroupBox gGroupBox1;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label gidLabel;
     }
 }

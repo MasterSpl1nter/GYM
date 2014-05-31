@@ -107,8 +107,8 @@ namespace newGym
             ParticiLabel.Text = studentsnum.ToString();
             roomNumLabel.Text = dtmp.Rows[i]["room"].ToString();
             starttimeLabel.Text = dtmp.Rows[i]["starttime"].ToString().Split(' ')[1];
-            endtimeLabel.Text = dtmp.Rows[i]["endttime"].ToString().Split(' ')[1];
-            tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dtmp.Rows[i]["endttime"]) - Convert.ToDateTime(dtmp.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
+            endtimeLabel.Text = dtmp.Rows[i]["endtime"].ToString().Split(' ')[1];
+            tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dtmp.Rows[i]["endtime"]) - Convert.ToDateTime(dtmp.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
