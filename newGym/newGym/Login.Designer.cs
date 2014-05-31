@@ -37,7 +37,7 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label4 = new newGym.GLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new newGym.GButton();
+            this.loginButton = new newGym.GButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,22 +137,22 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // button2
+            // loginButton
             // 
-            this.button2.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::newGym.Properties.Resources._1400193459_door_in;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(120, 217);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 27);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "   Login";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.loginButton.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.loginButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.loginButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.loginButton.ForeColor = System.Drawing.Color.White;
+            this.loginButton.Image = global::newGym.Properties.Resources._1400193459_door_in;
+            this.loginButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.loginButton.Location = new System.Drawing.Point(120, 217);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(86, 27);
+            this.loginButton.TabIndex = 6;
+            this.loginButton.Text = "   Login";
+            this.loginButton.UseVisualStyleBackColor = false;
+            this.loginButton.Click += new System.EventHandler(this.button2_Click);
             // 
             // Login
             // 
@@ -164,7 +164,7 @@
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.loginButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -185,7 +185,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private GButton button2;
+        private GButton loginButton;
         private GLabel label1;
         private GLabel label2;
         private GLabel label3;

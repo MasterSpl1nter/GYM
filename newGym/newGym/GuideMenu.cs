@@ -144,7 +144,7 @@ namespace newGym
             UpdateCalendar();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void search_Click(object sender, EventArgs e)
         {
             if (StudSearch.Text.Length > 0 && GuideSearch.Text.Length > 0)
             {
@@ -228,7 +228,7 @@ namespace newGym
             gs.ShowDialog();
         }
 
-        private void gButton2_Click(object sender, EventArgs e)
+        private void shifts_Click(object sender, EventArgs e)
         {
             GuideShifts gsi = new GuideShifts();
             gsi.ShowDialog();

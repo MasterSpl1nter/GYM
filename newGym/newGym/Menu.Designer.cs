@@ -33,7 +33,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
+            this.search = new System.Windows.Forms.Button();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.helloLabel = new System.Windows.Forms.Label();
@@ -158,7 +158,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button7);
+            this.groupBox2.Controls.Add(this.search);
             this.groupBox2.Controls.Add(this.searchTextBox);
             this.groupBox2.Location = new System.Drawing.Point(12, 13);
             this.groupBox2.Name = "groupBox2";
@@ -166,15 +166,15 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             // 
-            // button7
+            // search
             // 
-            this.button7.Location = new System.Drawing.Point(174, 35);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "search";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.search.Location = new System.Drawing.Point(174, 35);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(75, 23);
+            this.search.TabIndex = 3;
+            this.search.Text = "search";
+            this.search.UseVisualStyleBackColor = true;
+            this.search.Click += new System.EventHandler(this.search_Click);
             // 
             // searchTextBox
             // 
@@ -862,7 +862,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button search;
         private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label helloLabel;

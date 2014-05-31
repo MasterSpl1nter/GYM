@@ -37,7 +37,7 @@
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.nextClassTimer = new System.Windows.Forms.Label();
-            this.gButton2 = new newGym.GButton();
+            this.shifts = new newGym.GButton();
             this.gButton1 = new newGym.GButton();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -64,7 +64,7 @@
             this.StudSearch = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new newGym.GButton();
+            this.search = new newGym.GButton();
             this.label6 = new System.Windows.Forms.Label();
             this.loggedLabel = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -161,7 +161,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.nextClassTimer);
-            this.groupBox1.Controls.Add(this.gButton2);
+            this.groupBox1.Controls.Add(this.shifts);
             this.groupBox1.Controls.Add(this.gButton1);
             this.groupBox1.Controls.Add(this.hScrollBar1);
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
@@ -186,22 +186,22 @@
             this.nextClassTimer.Size = new System.Drawing.Size(0, 20);
             this.nextClassTimer.TabIndex = 24;
             // 
-            // gButton2
+            // shifts
             // 
-            this.gButton2.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.gButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.gButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.gButton2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.gButton2.ForeColor = System.Drawing.Color.White;
-            this.gButton2.Image = global::newGym.Properties.Resources._1400176769_applications_engineering;
-            this.gButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.gButton2.Location = new System.Drawing.Point(22, 180);
-            this.gButton2.Name = "gButton2";
-            this.gButton2.Size = new System.Drawing.Size(111, 23);
-            this.gButton2.TabIndex = 23;
-            this.gButton2.Text = "   My Shifts";
-            this.gButton2.UseVisualStyleBackColor = true;
-            this.gButton2.Click += new System.EventHandler(this.gButton2_Click);
+            this.shifts.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.shifts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.shifts.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.shifts.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.shifts.ForeColor = System.Drawing.Color.White;
+            this.shifts.Image = global::newGym.Properties.Resources._1400176769_applications_engineering;
+            this.shifts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.shifts.Location = new System.Drawing.Point(22, 180);
+            this.shifts.Name = "shifts";
+            this.shifts.Size = new System.Drawing.Size(111, 23);
+            this.shifts.TabIndex = 23;
+            this.shifts.Text = "   My Shifts";
+            this.shifts.UseVisualStyleBackColor = true;
+            this.shifts.Click += new System.EventHandler(this.shifts_Click);
             // 
             // gButton1
             // 
@@ -405,7 +405,7 @@
             this.groupBox2.Controls.Add(this.StudSearch);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.search);
             this.groupBox2.Location = new System.Drawing.Point(183, 68);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(301, 127);
@@ -467,22 +467,22 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Student:";
             // 
-            // button1
+            // search
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::newGym.Properties.Resources._1399410141_folder_search;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(195, 81);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 34);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "   Search";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.search.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.search.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.search.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.search.ForeColor = System.Drawing.Color.White;
+            this.search.Image = global::newGym.Properties.Resources._1399410141_folder_search;
+            this.search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.search.Location = new System.Drawing.Point(195, 81);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(75, 34);
+            this.search.TabIndex = 0;
+            this.search.Text = "   Search";
+            this.search.UseVisualStyleBackColor = true;
+            this.search.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -590,9 +590,9 @@
         private GButton button13;
         private GButton button14;
         private GButton button15;
-        private GButton button1;
+        private GButton search;
         private GButton gButton1;
-        private GButton gButton2;
+        private GButton shifts;
         private System.Windows.Forms.Label nextClassTimer;
     }
 }
