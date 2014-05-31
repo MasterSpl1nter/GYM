@@ -116,6 +116,7 @@
             // 
             // ClassIDComboBox
             // 
+            this.ClassIDComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ClassIDComboBox.FormattingEnabled = true;
             this.ClassIDComboBox.Location = new System.Drawing.Point(7, 30);
             this.ClassIDComboBox.Name = "ClassIDComboBox";
@@ -302,6 +303,7 @@
             // 
             // relevantClasses
             // 
+            this.relevantClasses.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.relevantClasses.FormattingEnabled = true;
             this.relevantClasses.Location = new System.Drawing.Point(8, 26);
             this.relevantClasses.Name = "relevantClasses";

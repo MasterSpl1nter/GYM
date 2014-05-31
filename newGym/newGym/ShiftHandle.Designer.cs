@@ -224,6 +224,7 @@
             // 
             // departmentComboBox
             // 
+            this.departmentComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.departmentComboBox.FormattingEnabled = true;
             this.departmentComboBox.Items.AddRange(new object[] {
             "Manager",
@@ -284,6 +285,7 @@
             // 
             // idComboBox
             // 
+            this.idComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.idComboBox.FormattingEnabled = true;
             this.idComboBox.Location = new System.Drawing.Point(75, 35);
             this.idComboBox.Name = "idComboBox";

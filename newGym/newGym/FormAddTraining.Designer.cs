@@ -43,16 +43,16 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.delname_txt = new System.Windows.Forms.TextBox();
-            this.delappliance_txt = new System.Windows.Forms.TextBox();
-            this.delsets_txt = new System.Windows.Forms.TextBox();
-            this.delrepeats_txt = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.delrepeats_txt = new System.Windows.Forms.TextBox();
+            this.delsets_txt = new System.Windows.Forms.TextBox();
+            this.delappliance_txt = new System.Windows.Forms.TextBox();
+            this.delname_txt = new System.Windows.Forms.TextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.remove_button = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -83,6 +83,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(245, 69);
             this.comboBox1.Name = "comboBox1";
@@ -212,68 +213,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Remove Part of Workout";
             // 
-            // comboBox2
+            // label5
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(30, 43);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
-            this.comboBox2.TabIndex = 0;
-            // 
-            // delname_txt
-            // 
-            this.delname_txt.Location = new System.Drawing.Point(136, 44);
-            this.delname_txt.Name = "delname_txt";
-            this.delname_txt.Size = new System.Drawing.Size(100, 20);
-            this.delname_txt.TabIndex = 1;
-            // 
-            // delappliance_txt
-            // 
-            this.delappliance_txt.Location = new System.Drawing.Point(242, 43);
-            this.delappliance_txt.Name = "delappliance_txt";
-            this.delappliance_txt.Size = new System.Drawing.Size(121, 20);
-            this.delappliance_txt.TabIndex = 2;
-            // 
-            // delsets_txt
-            // 
-            this.delsets_txt.Location = new System.Drawing.Point(369, 43);
-            this.delsets_txt.Name = "delsets_txt";
-            this.delsets_txt.Size = new System.Drawing.Size(100, 20);
-            this.delsets_txt.TabIndex = 3;
-            // 
-            // delrepeats_txt
-            // 
-            this.delrepeats_txt.Location = new System.Drawing.Point(475, 42);
-            this.delrepeats_txt.Name = "delrepeats_txt";
-            this.delrepeats_txt.Size = new System.Drawing.Size(100, 20);
-            this.delrepeats_txt.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "ID";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(136, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Training Name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(243, 25);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Appliance";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(475, 25);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "# of Repeats";
             // 
             // label4
             // 
@@ -284,14 +231,69 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "# of Sets";
             // 
-            // label5
+            // label3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(475, 25);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "# of Repeats";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(243, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Appliance";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(136, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Training Name";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(30, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "ID";
+            // 
+            // delrepeats_txt
+            // 
+            this.delrepeats_txt.Location = new System.Drawing.Point(475, 42);
+            this.delrepeats_txt.Name = "delrepeats_txt";
+            this.delrepeats_txt.Size = new System.Drawing.Size(100, 20);
+            this.delrepeats_txt.TabIndex = 4;
+            // 
+            // delsets_txt
+            // 
+            this.delsets_txt.Location = new System.Drawing.Point(369, 43);
+            this.delsets_txt.Name = "delsets_txt";
+            this.delsets_txt.Size = new System.Drawing.Size(100, 20);
+            this.delsets_txt.TabIndex = 3;
+            // 
+            // delappliance_txt
+            // 
+            this.delappliance_txt.Location = new System.Drawing.Point(242, 43);
+            this.delappliance_txt.Name = "delappliance_txt";
+            this.delappliance_txt.Size = new System.Drawing.Size(121, 20);
+            this.delappliance_txt.TabIndex = 2;
+            // 
+            // delname_txt
+            // 
+            this.delname_txt.Location = new System.Drawing.Point(136, 44);
+            this.delname_txt.Name = "delname_txt";
+            this.delname_txt.Size = new System.Drawing.Size(100, 20);
+            this.delname_txt.TabIndex = 1;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(30, 43);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(100, 21);
+            this.comboBox2.TabIndex = 0;
             // 
             // remove_button
             // 

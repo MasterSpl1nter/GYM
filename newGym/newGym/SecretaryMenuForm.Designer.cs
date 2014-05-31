@@ -866,6 +866,7 @@
             // 
             // EditStudentCombobox
             // 
+            this.EditStudentCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.EditStudentCombobox.FormattingEnabled = true;
             this.EditStudentCombobox.Location = new System.Drawing.Point(365, 39);
             this.EditStudentCombobox.Margin = new System.Windows.Forms.Padding(2);
@@ -931,6 +932,7 @@
             // 
             // DeleteStudentCombobox
             // 
+            this.DeleteStudentCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.DeleteStudentCombobox.FormattingEnabled = true;
             this.DeleteStudentCombobox.Location = new System.Drawing.Point(359, 150);
             this.DeleteStudentCombobox.Margin = new System.Windows.Forms.Padding(2);
@@ -961,6 +963,7 @@
             // 
             // ClassIDComboBox
             // 
+            this.ClassIDComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ClassIDComboBox.FormattingEnabled = true;
             this.ClassIDComboBox.Location = new System.Drawing.Point(7, 30);
             this.ClassIDComboBox.Name = "ClassIDComboBox";
@@ -979,6 +982,7 @@
             // 
             // StudentIDComboBox
             // 
+            this.StudentIDComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.StudentIDComboBox.FormattingEnabled = true;
             this.StudentIDComboBox.Location = new System.Drawing.Point(4, 37);
             this.StudentIDComboBox.Name = "StudentIDComboBox";
@@ -1037,6 +1041,7 @@
             // 
             // relevantClasses
             // 
+            this.relevantClasses.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.relevantClasses.FormattingEnabled = true;
             this.relevantClasses.Location = new System.Drawing.Point(7, 30);
             this.relevantClasses.Name = "relevantClasses";
@@ -1055,6 +1060,7 @@
             // 
             // StudentCombo
             // 
+            this.StudentCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.StudentCombo.FormattingEnabled = true;
             this.StudentCombo.Location = new System.Drawing.Point(4, 37);
             this.StudentCombo.Name = "StudentCombo";
@@ -1093,6 +1099,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(7, 30);
             this.comboBox1.Name = "comboBox1";
