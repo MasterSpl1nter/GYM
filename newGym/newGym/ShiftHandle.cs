@@ -60,6 +60,10 @@ namespace newGym
                 string str=dt.Rows[i]["id"] +" "+ dt.Rows[i]["firstname"] +" "+ dt.Rows[i]["lastname"];
                 this.idComboBox.Items.Add(str);
             }
+            if (idComboBox.Items.Count > 0)
+            {
+                idComboBox.SelectedItem = idComboBox.Items[0];
+            }
             
         }
 

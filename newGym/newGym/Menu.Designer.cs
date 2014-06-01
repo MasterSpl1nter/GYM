@@ -59,7 +59,7 @@
             this.button25 = new System.Windows.Forms.Button();
             this.classHandleBtn = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.addWorkerBtn = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -340,7 +340,7 @@
             this.ManagerActions.Controls.Add(this.button25);
             this.ManagerActions.Controls.Add(this.classHandleBtn);
             this.ManagerActions.Controls.Add(this.button23);
-            this.ManagerActions.Controls.Add(this.button22);
+            this.ManagerActions.Controls.Add(this.addWorkerBtn);
             this.ManagerActions.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.ManagerActions.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ManagerActions.Location = new System.Drawing.Point(12, 119);
@@ -399,18 +399,18 @@
             this.button23.UseVisualStyleBackColor = false;
             this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
-            // button22
+            // addWorkerBtn
             // 
-            this.button22.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button22.Location = new System.Drawing.Point(15, 28);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(158, 26);
-            this.button22.TabIndex = 0;
-            this.button22.Text = "Add Worker";
-            this.button22.UseVisualStyleBackColor = false;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
+            this.addWorkerBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.addWorkerBtn.FlatAppearance.BorderSize = 0;
+            this.addWorkerBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.addWorkerBtn.Location = new System.Drawing.Point(15, 28);
+            this.addWorkerBtn.Name = "addWorkerBtn";
+            this.addWorkerBtn.Size = new System.Drawing.Size(158, 26);
+            this.addWorkerBtn.TabIndex = 0;
+            this.addWorkerBtn.Text = "Add Worker";
+            this.addWorkerBtn.UseVisualStyleBackColor = false;
+            this.addWorkerBtn.Click += new System.EventHandler(this.addWorkerBtn_Click);
             // 
             // ManagerMenu
             // 
@@ -467,7 +467,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox ManagerActions;
         private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button addWorkerBtn;
         private System.Windows.Forms.Button classHandleBtn;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;

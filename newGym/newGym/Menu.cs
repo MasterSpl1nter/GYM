@@ -135,7 +135,7 @@ namespace newGym
             asa.ShowDialog();
         }
 
-        private void button22_Click(object sender, EventArgs e)
+        private void addWorkerBtn_Click(object sender, EventArgs e)
         {
             addManager addM = new addManager();
             addM.ShowDialog();
