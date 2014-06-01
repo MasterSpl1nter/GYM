@@ -22,7 +22,7 @@ namespace newGym
             //connection to the previous form
             this.m = m;
             this.perm = perm;
-            
+            MessageBox.Show(perm);
             int retval=-1;
             DataTable dt = new DataTable();
             for (int i = 0; i < arr.Length; i++)
@@ -170,10 +170,41 @@ namespace newGym
 
         private void removeUser_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                // user clicked yes
             
+            
+                // user clicked yes
+                if(this.perm.Equals("2"))//trainer
+                {
+                    if (MessageBox.Show("Are you sure?\n Warning:delete Trainer will delete all the trainers", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        
+
+                        string query = "delete from gym.studenttraining where trainingid='" + Convert.ToInt32(this.userId.Text) + "' ;";
+                        DbConnection newConn = new DbConnection("gym", "root", "csharp");
+                        newConn.writeToDb(query);
+                        ((Manager)SingleUser.Instance.get_user()).deleteUser(Convert.ToInt32(this.userId.Text), "trainer");
+                    }
+                    else 
+                    { 
+
+                    }
+                }
+                if (this.perm.Equals("3"))//guide
+                {
+                    if (MessageBox.Show("Are you sure?\n Warning:delete Trainer will delete all the trainers", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                       // MySQL.Delete("classtime", "classid=" + classId);
+                        //MySQL.Delete("studentclass", "classid=" + classId);
+                        //string query = "delete from gym.studenttraining where trainingid='" + Convert.ToInt32(this.userId.Text) + "' ;";
+                        //DbConnection newConn = new DbConnection("gym", "root", "csharp");
+                        //newConn.writeToDb(query);
+                        //((Manager)SingleUser.Instance.get_user()).deleteUser(Convert.ToInt32(this.userId.Text), "guide");
+                    }
+                    else
+                    {
+
+                    }
+                }
                 for (int i = 0; i < arr.Length; i++)
                 {
                   DataTable dt = new DataTable();
@@ -187,11 +218,8 @@ namespace newGym
                 this.Close();
                 m.Close();
                 
-            }
-            else
-            {
-                // user clicked no
-            }
+            
+            
         }
     }
 }
