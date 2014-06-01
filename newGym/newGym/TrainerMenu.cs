@@ -23,8 +23,7 @@ namespace newGym
             InitializeComponent();
             loggedLabel.Text = "" + SingleUser.Instance.get_user().FirstName + " " + SingleUser.Instance.get_user().LastName;
             //makeAllInvisible();
-            Fillcombo();
-            Fillcombo1();
+            
         }
 
         public TrainerMenu(Trainer trainer)
@@ -53,66 +52,7 @@ namespace newGym
                       dic.Add(key, index);
                   }*/
         }
-        public void Fillcombo()
-        {
-            dt = new DataTable();
-            MySQL.Select(dt, "student");
-            comboBox1.DataSource = dt;
-            comboBox1.DisplayMember = "id";
-
-            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
-            string Query = "select * from gym.student  ;";
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
-            MySqlDataReader myReader;
-            try
-            {
-                conDataBase.Open();
-                myReader = cmdDataBase.ExecuteReader();
-
-                while (myReader.Read())     //adding  to combobox
-                {
-
-                    string sID = myReader.GetString("id");
-                    comboBox1.Items.Add(sID);
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        public void Fillcombo1()
-        {
-            dt = new DataTable();
-            MySQL.Select(dt, "training");
-            comboBox2.DataSource = dt;
-            comboBox2.DisplayMember = "name";
-
-            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
-            string Query = "select * from gym.training  ;";
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
-            MySqlDataReader myReader;
-            try
-            {
-                conDataBase.Open();
-                myReader = cmdDataBase.ExecuteReader();
-
-                while (myReader.Read())     //adding  to combobox
-                {
-
-                    string sName = myReader.GetString("name");
-                    comboBox1.Items.Add(sName);
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+        
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
@@ -287,34 +227,13 @@ namespace newGym
             
         }
 
-        private void training2student_betton_Click(object sender, EventArgs e)
+      
+
+        private void training_to_student_button_Click(object sender, EventArgs e)
         {
-            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
-            string Query = "insert into gym.studenttraining (studentid,trainingid) values('" + comboBox1.Text + "' , '"+  dt.Rows[comboBox2.SelectedIndex]["ID"] + "') ;";
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
-            MySqlDataReader myReader;
-
-            
-                try
-                {
-                    conDataBase.Open();
-                    myReader = cmdDataBase.ExecuteReader();
-                    MessageBox.Show("Training Added");
-
-                    this.Close();
-
-
-                    while (myReader.Read())
-                    {
-
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
+            TrainingToStudent tts = new TrainingToStudent();
+            tts.ShowDialog();
+        }
         }
 
     }

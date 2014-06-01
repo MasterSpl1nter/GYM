@@ -22,8 +22,32 @@ namespace newGym
         {
             InitializeComponent();
             Fillcombo();
+            Fillcombo1();
             load_table();
 
+        }
+        void Fillcombo1()
+        {
+            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
+            string Query = "select * from gym.training  ;";
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+            MySqlDataReader myReader;
+            try
+            {
+                conDataBase.Open();
+                myReader = cmdDataBase.ExecuteReader();
+
+                while (myReader.Read())     //adding names to combobox
+                {
+                    string sName = myReader.GetString("id");
+                    comboBox2.Items.Add(sName);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         void load_table()
         {
@@ -79,35 +103,73 @@ namespace newGym
             {
                 MessageBox.Show(ex.Message);
             }
+           
         }
         
 
         private void save_button_Click(object sender, EventArgs e)
         {
-            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
-            string Query = "insert into gym.training (id,name,appliance,sets,repeats) values('" + this.id_txt.Text + "' , '" + this.name_txt.Text + "' ,'" + dt.Rows[comboBox1.SelectedIndex]["ID"] + "' , '" + this.sets_txt.Text + "' , '" + this.repeats_txt.Text + "') ;";
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
-            MySqlDataReader myReader;
+            bool err = false;
+        //======
 
-
-            try
-            {
-                conDataBase.Open();
-                myReader = cmdDataBase.ExecuteReader();
-                MessageBox.Show("Training Added");
-
+            if (id_txt.Text.Length == 0)
+            { 
+                MessageBox.Show("ID invalid, Pleas try again", "ERROR", MessageBoxButtons.OK);
                 
-
-
-                while (myReader.Read())
-                {
-
-                }
+                err = true;
+                return;
             }
-            catch (Exception ex)
+            if (sets_txt.Text.Length == 0)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Empty sets, Pleas try again", "ERROR", MessageBoxButtons.OK);
+
+                err = true;
+                return;
+            }
+            if (name_txt.Text.Length == 0)
+            {
+                MessageBox.Show("Empty name, Pleas try again", "ERROR", MessageBoxButtons.OK);
+
+                err = true;
+                return;
+            }
+
+            if (repeats_txt.Text.Length == 0)
+            {
+                MessageBox.Show("Empty repeats, Pleas try again", "ERROR", MessageBoxButtons.OK);
+
+                err = true;
+                return;
+            }
+
+            if (err == false)
+            {
+                string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
+                string Query = "insert into gym.training (id,name,appliance,sets,repeats) values('" + this.id_txt.Text + "' , '" + this.name_txt.Text + "' ,'" + dt.Rows[comboBox1.SelectedIndex]["ID"] + "' , '" + this.sets_txt.Text + "' , '" + this.repeats_txt.Text + "') ;";
+                MySqlConnection conDataBase = new MySqlConnection(constring);
+                MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+                MySqlDataReader myReader;
+
+
+                try
+                {
+                    conDataBase.Open();
+                    myReader = cmdDataBase.ExecuteReader();
+                    
+                    MessageBox.Show("Training Added");
+                    load_table();
+
+
+
+                    while (myReader.Read())
+                    {
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
             
         }
@@ -121,8 +183,103 @@ namespace newGym
 
         private void remove_button_Click(object sender, EventArgs e)
         {
+            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
+            string Query = "delete from gym.training where id='" + this.comboBox2.Text + "' ;";
+            
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            
+            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+            
+            MySqlDataReader myReader;
+            try
+            {
+                conDataBase.Open();
+                myReader = cmdDataBase.ExecuteReader();
+                
+                MessageBox.Show("Training Deleted");
+                load_table();
+                
+
+
+                while (myReader.Read())
+                {
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
+            string Query = "select * from gym.training where id='" + comboBox2.Text + "' ;";
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+            MySqlDataReader myReader;
+
+
+            try
+            {
+                conDataBase.Open();
+                myReader = cmdDataBase.ExecuteReader();
+
+                while (myReader.Read())     //adding names to textboxes
+                {
+                    string sID = myReader.GetString("id").ToString();
+                    string sName = myReader.GetString("name");
+                    string sAppliance = myReader.GetString("appliance").ToString();  
+                    string sSets = myReader.GetString("sets").ToString();
+                    string sRepeats = myReader.GetString("repeats").ToString();
+                    
+                    delid_txt.Text = sID;
+                    delname_txt.Text = sName;
+                    delappliance_txt.Text = sAppliance;
+                    delsets_txt.Text = sSets;
+                    delrepeats_txt.Text = sRepeats;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void id_txt_TextChanged(object sender, EventArgs e)
+        {
 
         }
+
+        private void id_txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar < '0' || e.KeyChar > '9') && e.KeyChar != (char)Keys.Back)       //check if its numbers only and incude backspace key
+            {
+                MessageBox.Show("Enter Numbers Only");
+                e.KeyChar = (char)0;
+            }
+        }
+
+        private void sets_txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar < '0' || e.KeyChar > '9') && e.KeyChar != (char)Keys.Back)       //check if its numbers only and incude backspace key
+            {
+                MessageBox.Show("Enter Numbers Only");
+                e.KeyChar = (char)0;
+            }
+        }
+
+        private void repeats_txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar < '0' || e.KeyChar > '9') && e.KeyChar != (char)Keys.Back)       //check if its numbers only and incude backspace key
+            {
+                MessageBox.Show("Enter Numbers Only");
+                e.KeyChar = (char)0;
+            }
+        }
+
+        
     }
 }
 

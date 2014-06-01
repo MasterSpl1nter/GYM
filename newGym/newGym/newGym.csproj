@@ -315,6 +315,12 @@
     </Compile>
     <Compile Include="Secretary.cs" />
     <Compile Include="Student.cs" />
+    <Compile Include="TrainingToStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainingToStudent.Designer.cs">
+      <DependentUpon>TrainingToStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewApplience.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -454,6 +460,9 @@
     </Compile>
     <EmbeddedResource Include="RoomAddition.resx">
       <DependentUpon>RoomAddition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainingToStudent.resx">
+      <DependentUpon>TrainingToStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewApplience.resx">
       <DependentUpon>ViewApplience.cs</DependentUpon>
