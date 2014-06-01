@@ -193,7 +193,13 @@ namespace newGym
                 {
                     if (MessageBox.Show("Are you sure?\n Warning:delete Trainer will delete all the trainers", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                       // MySQL.Delete("classtime", "classid=" + classId);
+                        DataTable dt = new DataTable();
+                        /*
+delete from studentclass where classid in ( select class.id from class wstudentclasshere guideid = IDDD);
+delete from classtime where classid in( select class.id from class where guideid = IDDD);
+delete from class where guideid = IDDD;
+delete from guide where id = iddd;                 */
+                        
                         //MySQL.Delete("studentclass", "classid=" + classId);
                         //string query = "delete from gym.studenttraining where trainingid='" + Convert.ToInt32(this.userId.Text) + "' ;";
                         //DbConnection newConn = new DbConnection("gym", "root", "csharp");
