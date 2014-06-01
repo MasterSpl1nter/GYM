@@ -186,7 +186,6 @@ namespace newGym
         }
 
 
-
         private void id_box_KeyPress(object sender, KeyPressEventArgs e)
         {
             const char Delete = (char)8;
@@ -214,11 +213,5 @@ namespace newGym
                 }
             }
         }
-
-        private void id_box_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

@@ -139,7 +139,6 @@
             this.radioName.TabIndex = 7;
             this.radioName.Text = "By name";
             this.radioName.UseVisualStyleBackColor = true;
-            this.radioName.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioID
             // 
@@ -205,7 +204,6 @@
             this.label6.Size = new System.Drawing.Size(71, 13);
             this.label6.TabIndex = 15;
             this.label6.Text = "Logged in as:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // loggedLabel
             // 
@@ -226,7 +224,6 @@
             this.informationBox.TabIndex = 17;
             this.informationBox.TabStop = false;
             this.informationBox.Text = "Information";
-            this.informationBox.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // dateLabel
             // 
@@ -303,7 +300,6 @@
             this.Controls.Add(this.scheduleBox);
             this.Name = "TrainerMenu";
             this.Text = "TrainerMenu";
-            this.Load += new System.EventHandler(this.TrainerMenu_Load);
             this.scheduleBox.ResumeLayout(false);
             this.scheduleBox.PerformLayout();
             this.searchBox.ResumeLayout(false);

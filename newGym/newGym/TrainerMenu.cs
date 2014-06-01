@@ -180,30 +180,13 @@ namespace newGym
             }
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TrainerMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void timer1_Tick(object sender, EventArgs e)
         {
             dateLabel.Text = DateTime.Now.ToString();
         }
 
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void viewbutton_Click(object sender, EventArgs e)
         {
@@ -215,16 +198,6 @@ namespace newGym
         {
             FormAddTraining adtr = new FormAddTraining();
             adtr.ShowDialog();
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
         }
 
       

@@ -115,7 +115,6 @@
             this.helloLabel.Size = new System.Drawing.Size(55, 17);
             this.helloLabel.TabIndex = 1;
             this.helloLabel.Text = "Hello, ";
-            this.helloLabel.Click += new System.EventHandler(this.label3_Click);
             // 
             // groupBox1
             // 
@@ -135,7 +134,6 @@
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Class schedule";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // hScrollBar1
             // 
@@ -423,7 +421,6 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "ManagerMenu";
             this.Text = "managerMenu";
-            this.Load += new System.EventHandler(this.ManagerMenu_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);

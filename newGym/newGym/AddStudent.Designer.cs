@@ -64,7 +64,6 @@
             this.id_box.Name = "id_box";
             this.id_box.Size = new System.Drawing.Size(145, 18);
             this.id_box.TabIndex = 1;
-            this.id_box.TextChanged += new System.EventHandler(this.id_box_TextChanged);
             this.id_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.id_box_KeyPress);
             // 
             // id_label

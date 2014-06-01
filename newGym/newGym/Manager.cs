@@ -38,7 +38,13 @@ namespace newGym
             this.Password = password;
             this.salaryPerHour = salaryPerHour;
         }
-        
+
+        public override void popMenu()
+        {
+            Form menu = new ManagerMenu();
+            menu.ShowDialog();
+        }
+
         //set and get
         public int SalaryPerHour { get { return salaryPerHour; } set { salaryPerHour = value; } }
         //add user

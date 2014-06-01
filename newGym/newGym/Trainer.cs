@@ -20,7 +20,11 @@ namespace newGym
         {
             this.salary = salary;
         }
-        
+        public override void popMenu()
+        {
+            Form menu = new TrainerMenu();
+            menu.ShowDialog();
+        }
         
         protected override bool CheckLogin(DataTable dt, string user, string pass)
         {

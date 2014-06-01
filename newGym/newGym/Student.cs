@@ -33,6 +33,11 @@ namespace newGym
             return MySQL.Delete("student", "id=" + id);
         }
 
+        public override void popMenu() {
+            Form menu =  new StudentMenu();
+            menu.ShowDialog();
+        }
+
       
 
        protected override void setSalary(int salary)

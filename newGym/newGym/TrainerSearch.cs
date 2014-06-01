@@ -19,8 +19,7 @@ namespace newGym
             dataGridView1.DataSource = dt;
             dataGridView1.CellClick+=dataGridView1_CellClick;
         }
-        private void dataGridView1_CellClick(object sender,
-    DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
                 MessageBox.Show(dt.Rows[e.RowIndex]["id"].ToString());
 

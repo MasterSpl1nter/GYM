@@ -37,14 +37,13 @@ namespace newGym
                     //to pop the singelton user - ((Manager)SingleUser.Instance.get_user())
                     p = Factory_DP.PersonFactory("Student");//new for specific user
                     //func template -check login and update data for Person
-                   
+
                     if (p.Template(dt, textBox1.Text, textBox2.Text))
-                    
                     {
                         retval = 0;
                         SingleUser.Instance.set_user(p); //add user to singelton 
-                        StudentMenu ma = new StudentMenu();
-                        ma.ShowDialog();
+                        ((Student)SingleUser.Instance.get_user()).popMenu();
+
                     }
 
                     break;
@@ -58,8 +57,8 @@ namespace newGym
                     {
                         retval = 0;
                         SingleUser.Instance.set_user(p); //add user to singelton 
-                        SecretaryMenu ma = new SecretaryMenu();
-                        ma.ShowDialog();
+                        ((Secretary)SingleUser.Instance.get_user()).popMenu();
+
                     }
 
                     break;
@@ -70,25 +69,25 @@ namespace newGym
                     {
                         retval = 0;
                         SingleUser.Instance.set_user(p);
-                        TrainerMenu tm = new TrainerMenu();
-                        tm.ShowDialog();
-                        
+                        ((Trainer)SingleUser.Instance.get_user()).popMenu();
+
+
                     }
 
                     break;
                 case 3:
                     //to pop the singelton user - ((Guide)SingleUser.Instance.get_user())
-                     p = Factory_DP.PersonFactory("Guide");
-                     if ( p.Template(dt, textBox1.Text, textBox2.Text ))
-                     {
-                         retval = 0;
-                         SingleUser.Instance.set_user(p);
-                         GuideMenu gm = new GuideMenu();
-                         gm.ShowDialog();
-                     }
-                      
+                    p = Factory_DP.PersonFactory("Guide");
+                    if (p.Template(dt, textBox1.Text, textBox2.Text))
+                    {
+                        retval = 0;
+                        SingleUser.Instance.set_user(p);
+                        ((Guide)SingleUser.Instance.get_user()).popMenu();
+
+                    }
+
                     break;
-                    
+
                 case 4:
                     //to pop the singelton user - ((Manager)SingleUser.Instance.get_user())
                     p = Factory_DP.PersonFactory("Manager");//new for specific user
@@ -97,12 +96,10 @@ namespace newGym
                     {
                         retval = 0;
                         SingleUser.Instance.set_user(p); //add user to singelton 
-                        ManagerMenu ma = new ManagerMenu(((Manager)p));
-                        ma.ShowDialog();
-                       
+                        ((Manager)SingleUser.Instance.get_user()).popMenu();
                     }
 
-                   break;
+                    break;
 
             }
             if (retval == 0)

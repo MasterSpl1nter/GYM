@@ -23,6 +23,12 @@ namespace newGym
         }
         public int salary { get; set; }
 
+        public override void popMenu()
+        {
+            Form menu = new GuideMenu();
+            menu.ShowDialog();
+        }
+
         protected override bool CheckLogin(DataTable dt,string user,string pass)
         {
             if (MySQL.Query(dt,"SELECT * FROM guide where username='" + user + "'" + " and password='" + pass + "'") == 0)

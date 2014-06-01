@@ -66,12 +66,6 @@
     <Compile Include="AddStudent.Designer.cs">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="addUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addUser.Designer.cs">
-      <DependentUpon>addUser.cs</DependentUpon>
-    </Compile>
     <Compile Include="Applince.cs" />
     <Compile Include="ClassHandele.cs">
       <SubType>Form</SubType>
@@ -341,9 +335,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="addUser.resx">
-      <DependentUpon>addUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClassHandele.resx">
       <DependentUpon>ClassHandele.cs</DependentUpon>

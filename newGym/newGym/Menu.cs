@@ -12,14 +12,14 @@ namespace newGym
 {
     public partial class ManagerMenu : Form
     {
-         private int count = 0;
+        private int count = 0;
         DateTime[] arr;
         DataTable dtmp;
         DataTable dt;
 
-        public ManagerMenu(Manager m)
+        public ManagerMenu()
         {
-            
+
             dt = new DataTable();
             InitializeComponent();
             //UpdateCalendar();
@@ -38,6 +38,8 @@ namespace newGym
                       int index = i;
                       dic.Add(key, index);
                   }*/
+
+            Manager m = (Manager)SingleUser.Instance.get_user();
             helloLabel.Text = "Hello," + m.FirstName + " " + m.LastName;
         }
 
@@ -89,15 +91,16 @@ namespace newGym
             starttimeLabel.Text = dt.Rows[i]["starttime"].ToString().Split(' ')[1];
             endtimeLabel.Text = dt.Rows[i]["endtime"].ToString().Split(' ')[1];
             tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dt.Rows[i]["endtime"]) - Convert.ToDateTime(dt.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
-   //   */  }
+   //   */
+        }
 
         private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
-               // MessageBox.Show(count.ToString());
+            // MessageBox.Show(count.ToString());
             hScrollBar1.LargeChange = 99;
-                int i = count % dtmp.Rows.Count;
-                Updateitems(i);
-                count++;
+            int i = count % dtmp.Rows.Count;
+            Updateitems(i);
+            count++;
         }
         private void Updateitems(int i)
         {
@@ -111,24 +114,6 @@ namespace newGym
             tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dtmp.Rows[i]["endtime"]) - Convert.ToDateTime(dtmp.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
-        
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
         private void button23_Click(object sender, EventArgs e)
         {
             AddStudent asa = new AddStudent();
@@ -141,25 +126,6 @@ namespace newGym
             addM.ShowDialog();
         }
 
-        private void groupBox4_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ManagerMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void groupBox4_Enter_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void search_Click(object sender, EventArgs e)
         {
@@ -252,4 +218,4 @@ namespace newGym
 
 
     }
-    }
+}

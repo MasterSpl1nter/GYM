@@ -91,6 +91,8 @@ namespace newGym
         protected abstract void setSalary(int salary); 
         
         protected abstract bool CheckLogin(DataTable dt, string user, string pass);          //Template DP
+
+        public abstract void popMenu();
         
         public int Id{ get { return id; } set { id = value; }  }
         public string FirstName{ get { return firstName; } set { firstName = value; }  }

@@ -28,7 +28,11 @@ namespace newGym
                     return true;
             return false;
          }
-   
+
+        public override void popMenu() {
+            Form menu =  new SecretaryMenu();
+            menu.ShowDialog();
+        }
 
         public int addStudToClass(string classId, string studentId)
         {
