@@ -354,7 +354,7 @@
             // 
             this.button26.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button26.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button26.Location = new System.Drawing.Point(15, 123);
+            this.button26.Location = new System.Drawing.Point(15, 89);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(158, 24);
             this.button26.TabIndex = 5;
@@ -366,7 +366,7 @@
             // 
             this.button25.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button25.Location = new System.Drawing.Point(15, 153);
+            this.button25.Location = new System.Drawing.Point(15, 119);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(158, 24);
             this.button25.TabIndex = 4;
@@ -379,7 +379,7 @@
             this.classHandleBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.classHandleBtn.FlatAppearance.BorderSize = 0;
             this.classHandleBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.classHandleBtn.Location = new System.Drawing.Point(15, 89);
+            this.classHandleBtn.Location = new System.Drawing.Point(15, 152);
             this.classHandleBtn.Name = "classHandleBtn";
             this.classHandleBtn.Size = new System.Drawing.Size(158, 26);
             this.classHandleBtn.TabIndex = 3;

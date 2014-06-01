@@ -116,7 +116,7 @@ namespace newGym
                     string insert = String.Format("{0},'{1}','{2}','{3}','{4}','{5}',{6},{7}", managerId.Text, managerFirstName.Text, managerLastName.Text, managerEmail.Text, userName.Text, password.Text, perm, MangerSalaryPerHour.Text);
                     int retval = ((Manager)SingleUser.Instance.get_user()).Add(Table, insert);
                     checkMessage(retval);
-
+                    this.Close();
               //  }
                 
                 
