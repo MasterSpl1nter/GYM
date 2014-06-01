@@ -70,6 +70,7 @@
             this.button13 = new newGym.GButton();
             this.button14 = new newGym.GButton();
             this.button15 = new newGym.GButton();
+            this.gButton2 = new newGym.GButton();
             this.groupBox5.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -93,9 +94,10 @@
             this.flowLayoutPanel5.Controls.Add(this.button13);
             this.flowLayoutPanel5.Controls.Add(this.button14);
             this.flowLayoutPanel5.Controls.Add(this.button15);
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(16, 19);
+            this.flowLayoutPanel5.Controls.Add(this.gButton2);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(16, 13);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(125, 89);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(125, 114);
             this.flowLayoutPanel5.TabIndex = 5;
             // 
             // monthCalendar1
@@ -528,6 +530,24 @@
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
+            // gButton2
+            // 
+            this.gButton2.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.gButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.gButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.gButton2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.gButton2.ForeColor = System.Drawing.Color.White;
+            this.gButton2.Image = global::newGym.Properties.Resources.Eye16;
+            this.gButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.gButton2.Location = new System.Drawing.Point(3, 90);
+            this.gButton2.Name = "gButton2";
+            this.gButton2.Size = new System.Drawing.Size(111, 23);
+            this.gButton2.TabIndex = 4;
+            this.gButton2.Text = "  View Class";
+            this.gButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.gButton2.UseVisualStyleBackColor = true;
+            this.gButton2.Click += new System.EventHandler(this.gButton2_Click);
+            // 
             // GuideMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -598,5 +618,6 @@
         private GButton gButton1;
         private GButton shifts;
         private System.Windows.Forms.Label nextClassTimer;
+        private GButton gButton2;
     }
 }

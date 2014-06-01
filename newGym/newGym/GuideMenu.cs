@@ -268,6 +268,12 @@ namespace newGym
             
         }
 
+        private void gButton2_Click(object sender, EventArgs e)
+        {
+            ViewClass vc = new ViewClass();
+            vc.ShowDialog();
+        }
+
 
 
 
