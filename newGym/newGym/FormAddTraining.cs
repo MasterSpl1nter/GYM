@@ -95,7 +95,7 @@ namespace newGym
                 {
 
                     string sName = myReader.GetString("name");
-                    comboBox1.Items.Add(sName);
+                   // comboBox1.Items.Add(sName);
 
                 }
             }
@@ -184,17 +184,25 @@ namespace newGym
         private void remove_button_Click(object sender, EventArgs e)
         {
             string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
+
             string Query = "delete from gym.training where id='" + this.comboBox2.Text + "' ;";
-            
             MySqlConnection conDataBase = new MySqlConnection(constring);
-            
             MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+/// new  ============
+            string Query1 = "delete from gym.studenttraining where trainingid='" + this.comboBox2.Text + "' ;";
+            MySqlConnection conDataBase1 = new MySqlConnection(constring);
+            MySqlCommand cmdDataBase1 = new MySqlCommand(Query1, conDataBase1);
+// ============
+            
             
             MySqlDataReader myReader;
             try
             {
                 conDataBase.Open();
+
                 myReader = cmdDataBase.ExecuteReader();
+                conDataBase1.Open();
+                myReader = cmdDataBase1.ExecuteReader();
                 
                 MessageBox.Show("Training Deleted");
                 load_table();

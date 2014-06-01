@@ -42,7 +42,7 @@ namespace newGym
                 {
 
                     string sID = myReader.GetString("id");
-                    comboBox1.Items.Add(sID);
+                  //  comboBox1.Items.Add(sID);
 
                 }
             }
@@ -72,7 +72,7 @@ namespace newGym
                 {
 
                     string sName = myReader.GetString("name");
-                    comboBox1.Items.Add(sName);
+                   // comboBox1.Items.Add(sName);
 
                 }
             }
@@ -96,17 +96,17 @@ namespace newGym
                 myReader = cmdDataBase.ExecuteReader();
                 MessageBox.Show("Training Added");
 
-                this.Close();
-
+       
 
                 while (myReader.Read())
                 {
 
                 }
             }
-            catch (Exception ex)
+            catch (MySqlException ex)
             {
-                MessageBox.Show(ex.Message);
+                if(ex.Number == 1062)
+                    MessageBox.Show("Student allready has this training.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
