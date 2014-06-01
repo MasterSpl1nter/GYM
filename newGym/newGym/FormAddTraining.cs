@@ -80,7 +80,7 @@ namespace newGym
             MySQL.Select(dt, "appliance");
             comboBox1.DataSource = dt;
             comboBox1.DisplayMember = "name";
-            
+
             string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
             string Query = "select * from gym.appliance  ;";
             MySqlConnection conDataBase = new MySqlConnection(constring);
@@ -95,7 +95,7 @@ namespace newGym
                 {
 
                     string sName = myReader.GetString("name");
-                   // comboBox1.Items.Add(sName);
+                    // comboBox1.Items.Add(sName);
 
                 }
             }
@@ -103,19 +103,19 @@ namespace newGym
             {
                 MessageBox.Show(ex.Message);
             }
-           
+
         }
-        
+
 
         private void save_button_Click(object sender, EventArgs e)
         {
             bool err = false;
-        //======
+            //======
 
             if (id_txt.Text.Length == 0)
-            { 
+            {
                 MessageBox.Show("ID invalid, Pleas try again", "ERROR", MessageBoxButtons.OK);
-                
+
                 err = true;
                 return;
             }
@@ -155,7 +155,7 @@ namespace newGym
                 {
                     conDataBase.Open();
                     myReader = cmdDataBase.ExecuteReader();
-                    
+
                     MessageBox.Show("Training Added");
                     load_table();
 
@@ -171,53 +171,64 @@ namespace newGym
                     MessageBox.Show(ex.Message);
                 }
             }
-            
+
         }
 
 
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void remove_button_Click(object sender, EventArgs e)
         {
-            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
 
-            string Query = "delete from gym.training where id='" + this.comboBox2.Text + "' ;";
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
-/// new  ============
-            string Query1 = "delete from gym.studenttraining where trainingid='" + this.comboBox2.Text + "' ;";
-            MySqlConnection conDataBase1 = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase1 = new MySqlCommand(Query1, conDataBase1);
-// ============
-            
-            
-            MySqlDataReader myReader;
-            try
+            bool err = false;
+            if (comboBox2.Text.Length == 0)
             {
-                conDataBase.Open();
+                MessageBox.Show("Please chose id to delete", "ERROR", MessageBoxButtons.OK);
 
-                myReader = cmdDataBase.ExecuteReader();
-                conDataBase1.Open();
-                myReader = cmdDataBase1.ExecuteReader();
-                
-                MessageBox.Show("Training Deleted");
-                load_table();
-                
-
-
-                while (myReader.Read())
+                err = true;
+                return;
+            }
+            else
+                if (err == false)
                 {
+                    string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
 
+                    string Query1 = "delete from gym.studenttraining where trainingid='" + this.comboBox2.Text + "' ;";
+                    MySqlConnection conDataBase1 = new MySqlConnection(constring);
+                    MySqlCommand cmdDataBase1 = new MySqlCommand(Query1, conDataBase1);                                                                   //dunno how to make them work together
+
+                    string Query = "delete from gym.training where id='" + this.comboBox2.Text + "' ;";
+                    MySqlConnection conDataBase = new MySqlConnection(constring);
+                    MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+
+                    MySqlDataReader myReader;
+                    try
+                    {
+
+                        conDataBase1.Open();
+                        myReader = cmdDataBase1.ExecuteReader();
+                        conDataBase.Open();
+                        myReader = cmdDataBase.ExecuteReader();
+
+                        MessageBox.Show("Training Deleted");
+                        load_table();
+
+
+
+                        while (myReader.Read())
+                        {
+
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -238,10 +249,10 @@ namespace newGym
                 {
                     string sID = myReader.GetString("id").ToString();
                     string sName = myReader.GetString("name");
-                    string sAppliance = myReader.GetString("appliance").ToString();  
+                    string sAppliance = myReader.GetString("appliance").ToString();
                     string sSets = myReader.GetString("sets").ToString();
                     string sRepeats = myReader.GetString("repeats").ToString();
-                    
+
                     delid_txt.Text = sID;
                     delname_txt.Text = sName;
                     delappliance_txt.Text = sAppliance;
@@ -287,7 +298,7 @@ namespace newGym
             }
         }
 
-        
+
     }
 }
 

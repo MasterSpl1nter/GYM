@@ -42,7 +42,7 @@ namespace newGym
                 {
 
                     string sID = myReader.GetString("id");
-                  //  comboBox1.Items.Add(sID);
+                    //  comboBox1.Items.Add(sID);
 
                 }
             }
@@ -72,7 +72,7 @@ namespace newGym
                 {
 
                     string sName = myReader.GetString("name");
-                   // comboBox1.Items.Add(sName);
+                    // comboBox1.Items.Add(sName);
 
                 }
             }
@@ -83,31 +83,51 @@ namespace newGym
         }
         private void training2student_betton_Click(object sender, EventArgs e)
         {
-            string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
-            string Query = "insert into gym.studenttraining (studentid,trainingid) values('" + comboBox1.Text + "' , '" + dt.Rows[comboBox2.SelectedIndex]["ID"] + "') ;";
-            MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
-            MySqlDataReader myReader;
-
-
-            try
+            bool err = false;
+            if (comboBox1.Text.Length == 0)
             {
-                conDataBase.Open();
-                myReader = cmdDataBase.ExecuteReader();
-                MessageBox.Show("Training Added");
+                MessageBox.Show("Please chose student id", "ERROR", MessageBoxButtons.OK);
 
-       
-
-                while (myReader.Read())
+                err = true;
+                return;
+            }
+            else
+                if (comboBox2.Text.Length == 0)
                 {
+                    MessageBox.Show("Please chose training id", "ERROR", MessageBoxButtons.OK);
 
+                    err = true;
+                    return;
                 }
-            }
-            catch (MySqlException ex)
-            {
-                if(ex.Number == 1062)
-                    MessageBox.Show("Student allready has this training.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                else
+                    if (err == false)
+                    {
+                        string constring = "datasource=localhost; port=3306; username=root; password=csharp;";
+                        string Query = "insert into gym.studenttraining (studentid,trainingid) values('" + comboBox1.Text + "' , '" + dt.Rows[comboBox2.SelectedIndex]["ID"] + "') ;";
+                        MySqlConnection conDataBase = new MySqlConnection(constring);
+                        MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+                        MySqlDataReader myReader;
+
+
+                        try
+                        {
+                            conDataBase.Open();
+                            myReader = cmdDataBase.ExecuteReader();
+                            MessageBox.Show("Training Added");
+
+
+
+                            while (myReader.Read())
+                            {
+
+                            }
+                        }
+                        catch (MySqlException ex)
+                        {
+                            if (ex.Number == 1062)
+                                MessageBox.Show("Student allready has this training.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -128,12 +148,12 @@ namespace newGym
                 {
                     string sName = myReader.GetString("firstname");
                     string sLastname = myReader.GetString("lastname");
-                    
+
 
                     name_txt.Text = sName;
                     lastname_txt.Text = sLastname;
                 }
-                
+
             }
             catch (Exception ex)
             {
@@ -162,12 +182,12 @@ namespace newGym
 
                 while (myReader.Read())     //adding names to textboxes
                 {
-                    
+
                     string sAppliance = myReader.GetString("appliance").ToString();
                     string sSets = myReader.GetString("sets").ToString();
                     string sRepeats = myReader.GetString("repeats").ToString();
 
-                    
+
                     appliance_txt.Text = sAppliance;
                     sets_txt.Text = sSets;
                     repeats_txt.Text = sRepeats;
@@ -177,7 +197,7 @@ namespace newGym
             {
                 MessageBox.Show(ex.Message);
             }
-        
+
         }
     }
 }
