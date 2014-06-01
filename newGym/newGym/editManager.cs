@@ -33,9 +33,7 @@ namespace newGym
                     break;
                 }
             }
-
-           // if (retval==0)
-            //{
+            
                 this.userId.Text = dt.Rows[0]["id"].ToString();
                 this.managerFirstName.Text = dt.Rows[0]["firstname"].ToString();
                 this.managerLastName.Text = dt.Rows[0]["lastname"].ToString();
@@ -44,7 +42,8 @@ namespace newGym
                 this.userName.Text = dt.Rows[0]["username"].ToString();
                 this.password.Text = dt.Rows[0]["password"].ToString();
                 this.perm = dt.Rows[0]["permission"].ToString();
-            //}
+          
+        
         }
 
         private void update_manger_button_Click(object sender, EventArgs e)

@@ -51,22 +51,25 @@ namespace newGym
                 }
                 for (int j = 0; j < dt.Rows.Count; j++)
                 {
-                    //dt.Merge(dt1);
+                    
                     dt1.Rows.Add(dt.Rows[j]["id"], dt.Rows[j]["firstname"], dt.Rows[j]["lastname"], dt.Rows[j]["email"], dt.Rows[j]["permission"]);
-                    //dt1.Rows[count]["id"] = dt.Rows[j]["id"];
-                    //dt1.Rows[count]["firstname"] = dt.Rows[j]["firstname"];
-                    //dt1.Rows[count]["lastname"] = dt.Rows[j]["lastname"];
-                    //dt1.Rows[count++]["email"] = dt.Rows[j]["email"];
-                    //dt1.Columns.
-                    //MessageBox.Show(dt.Rows[j].ToString());
+                    
                 }
                 //continue
 
             }
+
+            if (dt1.Rows.Count > 0)
+            {
+                this.dataGridResult.DataSource = dt1;
+                dataGridResult.Columns.Add(btn);
+            }
+            else
+            {
+                MessageBox.Show("No Results");
+                
+            }
             
-            
-            this.dataGridResult.DataSource = dt1;
-            dataGridResult.Columns.Add(btn);
 
         }
         private string GetTypeByPerm(string perm)
@@ -78,9 +81,7 @@ namespace newGym
         }
 
         private void dataGridResult_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-
+        {            
             editManager m = new editManager(dataGridResult.Rows[e.RowIndex].Cells["id"].Value.ToString(),this);
             m.ShowDialog();
             

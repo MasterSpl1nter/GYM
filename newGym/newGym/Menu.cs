@@ -164,7 +164,11 @@ namespace newGym
         private void search_Click(object sender, EventArgs e)
         {
             if (this.searchTextBox.Text.Equals("")) return;
-            new ManagerResult(this.searchTextBox.Text).ShowDialog();
+            else
+            {
+                ManagerResult m = new ManagerResult(this.searchTextBox.Text);
+                m.ShowDialog();
+            }
         }
 
 
