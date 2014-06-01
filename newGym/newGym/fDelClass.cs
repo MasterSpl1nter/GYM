@@ -13,7 +13,8 @@ namespace newGym
 {
     public partial class fDelClass : Form
     {
-        private int id = -1;
+        private DataTable dt;
+        private int classId = -1;
         public fDelClass()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace newGym
         }
         public fDelClass(int id)
         {
-            this.id = id;
+            this.classId = id;
             InitializeComponent();
             LoadActivityId();
         }
@@ -33,22 +34,22 @@ namespace newGym
             using (var connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                if (id == -1)
+                if (classId == -1)
                     query = "SELECT Id , Name FROM class";
-                else if (id == -2)
+                else if (classId == -2)
                     query = "SELECT Id , Name,guideid FROM class";
                 else
                     query = "SELECT Id , Name FROM class WHERE `guideid`=?Id";
 
                 using (var command = new MySqlCommand(query, connection))
                 {
-                    if (id != -1)
-                        command.Parameters.AddWithValue("?id", id);
+                    if (classId != -1)
+                        command.Parameters.AddWithValue("?id", classId);
                     using (var reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {
-                            if (id == -2)
+                            if (classId == -2)
                                 comboBox1.Items.Add(new TableItem(reader.GetString("Id") + " - " + reader.GetString("Name"),"GuideID " + reader.GetString("guideid")));
                             else
                                 comboBox1.Items.Add(new TableItem(reader.GetString("Id"), reader.GetString("Name")));
@@ -60,59 +61,117 @@ namespace newGym
             }
         }
 
-        private Boolean DelbyID(int Id)
+        public void deleteAll()     // removes added class id without schedules
         {
-
-            try
-            {
-
-                var connectionString = @"server=localhost;userid=root;password=csharp;database=gym";
-                using (var connection = new MySqlConnection(connectionString))
-                {
-                    connection.Open();
-                    var query = "DELETE FROM `gym`.`class` WHERE `id`=?Id";
-
-                    var cmd = new MySqlCommand(query, connection);
-                    cmd.Parameters.AddWithValue("?id", Id);
-                        
-                        cmd.ExecuteNonQuery();
-                    
-                    connection.Close();
-
-                }
-            }
-
-            catch (MySql.Data.MySqlClient.MySqlException ex)
-            {
-                MessageBox.Show("Error " + ex.Number + "has accurred: " + ex.Message,
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
-
-            return true;
-
+            if (classId == -1 || classId == null)           
+                MessageBox.Show("Wrong id");
+            
+            DelbyID();            
+               delScedules();               
+                    delStudentsFromClass();
         }
 
+        private Boolean DelbyID()
+        {
+            if (this.classId != -1)
+            {
+                try
+                {
+
+                    var connectionString = @"server=localhost;userid=root;password=csharp;database=gym";
+                    using (var connection = new MySqlConnection(connectionString))
+                    {
+                        connection.Open();
+                        var query = "DELETE FROM `gym`.`class` WHERE `id`=?classId";
+
+                        var cmd = new MySqlCommand(query, connection);
+                        cmd.Parameters.AddWithValue("?classId", classId);
+
+                        cmd.ExecuteNonQuery();
+
+                        connection.Close();
+
+                    }
+                }
+
+
+                catch (MySql.Data.MySqlClient.MySqlException ex)
+                {
+                    MessageBox.Show("Error " + ex.Number + "has accurred: " + ex.Message,
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+                return true;
+
+            }
+             MessageBox.Show("Not id was sent","Error");
+            return false;
+        }
+        private Boolean delStudentsFromClass()
+        {
+            if (this.classId != -1)
+            {
+                dt = new DataTable();
+                try
+                {
+                    MySQL.Delete("studentclass", "classid=" + classId);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error has accurred: " + ex.Message,
+                      "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+                return true;
+            }
+            MessageBox.Show("Not id was sent", "Error");
+            return false;
+        }
+
+          private  Boolean delScedules()
+          {
+              if (this.classId != -1)
+              {
+                  dt = new DataTable();
+                  try
+                  {
+                      MySQL.Delete("classtime", "classid=" + classId);
+                  }
+                  catch (Exception ex)
+                  {
+                      MessageBox.Show("Error has accurred: " + ex.Message,
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                      return false;
+                  }
+                  return true;
+              }
+              MessageBox.Show("Not id was sent", "Error");
+              return false;
+            }
 
         private void button1_Click(object sender, EventArgs e)
         {
-         
-            int num;
             string mycombotxt = comboBox1.Text;
             string[] Id = mycombotxt.Split(' ');    //take id from combobox
-            bool result = Int32.TryParse(Id[0], out num);
+            bool result = Int32.TryParse(Id[0], out this.classId);      // give THIS.classId a value
             try
             {
                 if (result)
                 {
-                    if (DelbyID(num))
+                    if (DelbyID())
                     {
-                        MessageBox.Show("הפעולה בוצעה");
-                        comboBox1.Items.Clear();
-                        LoadActivityId();
+                        if (delScedules())
+                        {
+                            if (delStudentsFromClass())
+                            {
+                                MessageBox.Show("The item was removed", "Finished",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                comboBox1.Items.Clear();
+                                LoadActivityId();
+                            }
+                        }
                     }
                     else
-                        MessageBox.Show("הפעולה לא בוצעה");
+                        MessageBox.Show("The item was not removed");
                 }
             }
 
@@ -127,7 +186,14 @@ namespace newGym
         {
             this.Close();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("All schedules will be removed", "Are you sure?", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+        }
     }
+
+
 }
 
 class TableItem     // make combobox show 2 colums

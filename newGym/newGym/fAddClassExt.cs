@@ -13,6 +13,7 @@ namespace newGym
     {
         private TimeSpan starttime;
         private TimeSpan endtime;
+        private Boolean windowClosed, thisClose;
         public faddclassexp()
         {
             InitializeComponent();
@@ -76,7 +77,10 @@ namespace newGym
                             MessageBox.Show("Error has accrued:" + f.Message, "Error", MessageBoxButtons.OK);
                         }
                         finally
-                        { this.Close(); }
+                        {
+                            this.thisClose = true;
+                            this.Close();
+                        }
                     }
             
 
@@ -97,6 +101,28 @@ namespace newGym
             return this.endtime;
         }
 
+        public Boolean windowExited()
+        {
+            return this.windowClosed;
+        }
 
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            DialogResult dr;
+            if (e.CloseReason == CloseReason.WindowsShutDown)
+                return;
+            if (e.CloseReason == CloseReason.UserClosing && !this.thisClose)
+            {
+                dr = MessageBox.Show("Time will be lost", "Are you sure?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (dr == DialogResult.OK)
+                {
+                    windowClosed = true;
+                    return;
+                }
+                windowClosed = false;
+                e.Cancel = true;
+            }
+        }
     }
 }

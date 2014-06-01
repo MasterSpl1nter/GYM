@@ -64,8 +64,10 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -94,6 +96,7 @@
             // 
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -108,6 +111,7 @@
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.comboBox1.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
@@ -130,6 +134,7 @@
             resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // gidLabel
             // 
@@ -173,7 +178,7 @@
             // 
             // starttimeLabel
             // 
-            this.starttimeLabel.BackColor = System.Drawing.SystemColors.Window;
+            this.starttimeLabel.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.starttimeLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.starttimeLabel, "starttimeLabel");
             this.starttimeLabel.Name = "starttimeLabel";
@@ -190,6 +195,7 @@
             // 
             // endtimeLabel
             // 
+            this.endtimeLabel.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.endtimeLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.endtimeLabel, "endtimeLabel");
             this.endtimeLabel.Name = "endtimeLabel";
@@ -279,26 +285,32 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // groupBox1
             // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.groupBox1.Controls.Add(this.tableLayoutPanel1);
+            this.groupBox1.Controls.Add(this.hScrollBar1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Name = "label6";
             // 
             // fAddClass
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.endtimeLabel);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.starttimeLabel);
-            this.Controls.Add(this.hScrollBar1);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label8);
@@ -319,6 +331,8 @@
             this.Load += new System.EventHandler(this.fAddClass_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,6 +375,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -69,7 +69,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.gidLabel = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.gGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -86,7 +86,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 355);
+            this.button1.Location = new System.Drawing.Point(11, 394);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -96,7 +96,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(93, 355);
+            this.button2.Location = new System.Drawing.Point(92, 394);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
@@ -143,7 +143,6 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(77, 92);
-            this.textBox1.MaxLength = 10;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 7;
@@ -151,7 +150,6 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(375, 125);
-            this.textBox2.MaxLength = 3;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(40, 20);
             this.textBox2.TabIndex = 8;
@@ -160,7 +158,6 @@
             // 
             this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(250, 125);
-            this.textBox4.MaxLength = 3;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(42, 20);
             this.textBox4.TabIndex = 10;
@@ -334,7 +331,7 @@
             // 
             this.endtimeLabel.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.endtimeLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.endtimeLabel.Location = new System.Drawing.Point(382, 369);
+            this.endtimeLabel.Location = new System.Drawing.Point(379, 368);
             this.endtimeLabel.Name = "endtimeLabel";
             this.endtimeLabel.Size = new System.Drawing.Size(54, 13);
             this.endtimeLabel.TabIndex = 36;
@@ -363,7 +360,7 @@
             // 
             this.starttimeLabel.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.starttimeLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.starttimeLabel.Location = new System.Drawing.Point(269, 369);
+            this.starttimeLabel.Location = new System.Drawing.Point(277, 369);
             this.starttimeLabel.Name = "starttimeLabel";
             this.starttimeLabel.Size = new System.Drawing.Size(54, 13);
             this.starttimeLabel.TabIndex = 33;
@@ -378,7 +375,6 @@
             // 
             // comboBox2
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(77, 120);
             this.comboBox2.Name = "comboBox2";
@@ -388,7 +384,6 @@
             // 
             // comboBox3
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(77, 153);
             this.comboBox3.Name = "comboBox3";
@@ -416,7 +411,7 @@
             this.gGroupBox1.Controls.Add(this.label17);
             this.gGroupBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gGroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.gGroupBox1.Location = new System.Drawing.Point(236, 394);
+            this.gGroupBox1.Location = new System.Drawing.Point(238, 394);
             this.gGroupBox1.Name = "gGroupBox1";
             this.gGroupBox1.Size = new System.Drawing.Size(246, 86);
             this.gGroupBox1.TabIndex = 54;
@@ -492,14 +487,16 @@
             this.label17.TabIndex = 50;
             this.label17.Text = "To:";
             // 
-            // gidLabel
+            // checkBox1
             // 
-            this.gidLabel.AutoSize = true;
-            this.gidLabel.Location = new System.Drawing.Point(84, 160);
-            this.gidLabel.Name = "gidLabel";
-            this.gidLabel.Size = new System.Drawing.Size(0, 13);
-            this.gidLabel.TabIndex = 55;
-            this.gidLabel.Visible = false;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(34, 337);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(143, 17);
+            this.checkBox1.TabIndex = 55;
+            this.checkBox1.Text = "Keep the same schedule";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // fEditClass
             // 
@@ -507,7 +504,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(528, 507);
-            this.Controls.Add(this.gidLabel);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.gGroupBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBox3);
@@ -586,6 +583,6 @@
         private GGroupBox gGroupBox1;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label gidLabel;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

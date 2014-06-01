@@ -18,7 +18,7 @@ namespace newGym
         private DateTime startClass,endClass;
         private Boolean timeSelected = false;
         private Boolean dateSelected = false;
-        private Boolean allowNewSchedule = false;
+        Boolean idTaken = false;
         DateTime classDate;
         private int count = 0;
         DataTable dtmp;
@@ -33,8 +33,9 @@ namespace newGym
             dt = new DataTable();
             dtt = new DataTable();
             monthCalendar1.MaxSelectionCount = 1;
-            button5.Visible = false;
             UpdateCalendar();
+            if (comboBox1.Items.Count > 0)
+                comboBox1.SelectedIndex = comboBox1.Items.Count - 1;
         }
         public fAddClass(int id)
         {
@@ -44,12 +45,10 @@ namespace newGym
             dtt = new DataTable();
             gidLabel.Visible = true;
             gidLabel.Text = this.id.ToString();
-            comboBox2.Visible = false;
+            if (id != -1) comboBox2.Visible = false; else LoadGuideId();
             monthCalendar1.MaxSelectionCount = 1;
             UpdateCalendar();
-            button5.Visible = false;
             LoadRoomId();
-            //LoadGuideId();
             if ( comboBox1.Items.Count > 0)
             comboBox1.SelectedIndex = comboBox1.Items.Count -1 ;
         }
@@ -65,7 +64,7 @@ namespace newGym
                     startClass = new DateTime(classDate.Year, classDate.Month, classDate.Day, starttime.Hours, starttime.Minutes, 0);
                     endClass = new DateTime(classDate.Year, classDate.Month, classDate.Day, endtime.Hours, endtime.Minutes, 0);
 
-                    if (result)
+                    if (result && !idTaken)
                     {
                         if (textBox1.Text == "" || textBox2.Text == "")
                         {
@@ -90,23 +89,32 @@ namespace newGym
                         else
                         {
 
-                            fClass myclass = new fClass(int.Parse(textBox1.Text), textBox2.Text, int.Parse(comboBox1.Text), id==-1 ? int.Parse(comboBox2.Text) : id, 0, int.Parse(textBox3.Text),
+                            fClass myclass = new fClass(int.Parse(textBox1.Text), textBox2.Text, int.Parse(comboBox1.Text), id == -1 ? int.Parse(comboBox2.Text) : id, 0, int.Parse(textBox3.Text),
                                 startClass.ToString("yyyy-MM-dd HH:mm:ss"), endClass.ToString("yyyy-MM-dd HH:mm:ss"));
 
                             if (myclass.SaveData() && myclass.SaveDate())
                             {
-                                MessageBox.Show("The class was add successfully, Now you can add another Schedule");
-                                allowNewSchedule = true;
-                                button5.Visible = true;
-                                button1.Visible = false;
+                                MessageBox.Show("The class was add successfully");
                                 dateSelected = false;
                                 timeSelected = false;
-                                textBox1.ReadOnly = true;
-                                textBox2.ReadOnly = true;
-                                UpdateCalendar();
+                                /*
+                                textBox1.Clear();
+                                textBox2.Clear();
+                                textBox3.Clear();
+                                if (comboBox1.Items.Count > 0)
+                                    comboBox1.SelectedIndex = comboBox1.Items.Count - 1;
+                                if (comboBox2.Items.Count > 0)
+                                    comboBox2.SelectedIndex = comboBox2.Items.Count - 1;
+                                */
+                                return;
                             }
                             else
+                            {
+                                //delete the added class
+                                fDelClass mydelete = new fDelClass(int.Parse(textBox1.Text));
+                                mydelete.deleteAll();
                                 MessageBox.Show("Schedule not saved");
+                            }
                             return;
                         }
                     }
@@ -177,7 +185,7 @@ namespace newGym
         {
             MySQL.Query(dt, "SELECT class.id,class.name,class.room,classtime.starttime,classtime.endtime FROM class INNER JOIN classtime ON class.id=classtime.classid");
             arr = new List<DateTime>();
-            for (int i = 0; i < dt.Rows.Count; i++)
+            for (int i = 0, j = 0; i < dt.Rows.Count; i++)
             {
                 if (Convert.ToDateTime(dt.Rows[i]["starttime"].ToString()).Month == DateTime.Now.Month)
                 {
@@ -206,12 +214,12 @@ namespace newGym
             }
             if (dtmp.Rows.Count == 1)
             {
-                Updateitems(0);
+                Updateitems();
                 hScrollBar1.Visible = false;
             }
             if (dtmp.Rows.Count > 1)
             {
-                Updateitems(0);
+                Updateitems();
                 hScrollBar1.Visible = true;
             }
             else if (dtmp.Rows.Count == 0)
@@ -227,17 +235,37 @@ namespace newGym
             }
         }
 
-           private void Updateitems(int i)
+           private void Updateitems(int k = 0)
         {
-            idLabel.Text = dtmp.Rows[i]["id"].ToString();
-            int studentsnum = MySQL.count("SELECT COUNT(studentid) FROM studentclass where classid=" + idLabel.Text);
-            nameLabel.Text = dtmp.Rows[i]["name"].ToString();
-            ParticiLabel.Text = studentsnum.ToString();
-            roomNumLabel.Text = dtmp.Rows[i]["room"].ToString();
-            starttimeLabel.Text = dtmp.Rows[i]["starttime"].ToString().Split(' ')[1];
-            endtimeLabel.Text = dtmp.Rows[i]["endtime"].ToString().Split(' ')[1];
-            tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dtmp.Rows[i]["endtime"]) - Convert.ToDateTime(dtmp.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
-        }
+            if (k != 0)
+            for (int i=0 ; i < dtmp.Rows.Count; i++)
+            {
+                    idLabel.Text = dtmp.Rows[i]["id"].ToString();
+                    int studentsnum = MySQL.count("SELECT COUNT(studentid) FROM studentclass where classid=" + idLabel.Text);
+                    nameLabel.Text = dtmp.Rows[i]["name"].ToString();
+                    ParticiLabel.Text = studentsnum.ToString();
+                    roomNumLabel.Text = dtmp.Rows[i]["room"].ToString();
+                    DateTime obj1 = Convert.ToDateTime(dtmp.Rows[i]["starttime"]);
+                    starttimeLabel.Text = obj1.ToString("HH:mm:ss");
+                    DateTime obj2 = Convert.ToDateTime(dtmp.Rows[i]["starttime"]);
+                    endtimeLabel.Text = obj2.ToString("HH:mm:ss");
+                    tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dtmp.Rows[i]["endtime"]) - Convert.ToDateTime(dtmp.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
+            }
+            else
+            {
+                int i = k;
+                   idLabel.Text = dtmp.Rows[i]["id"].ToString();
+                    int studentsnum = MySQL.count("SELECT COUNT(studentid) FROM studentclass where classid=" + idLabel.Text);
+                    nameLabel.Text = dtmp.Rows[i]["name"].ToString();
+                    ParticiLabel.Text = studentsnum.ToString();
+                    roomNumLabel.Text = dtmp.Rows[i]["room"].ToString();
+                    DateTime obj1 = Convert.ToDateTime(dtmp.Rows[i]["starttime"]);
+                    starttimeLabel.Text = obj1.ToString("HH:mm:ss");
+                    DateTime obj2 = Convert.ToDateTime(dtmp.Rows[i]["starttime"]);
+                    endtimeLabel.Text = obj2.ToString("HH:mm:ss");
+                    tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dtmp.Rows[i]["endtime"]) - Convert.ToDateTime(dtmp.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
+            }
+    }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -280,64 +308,49 @@ namespace newGym
                     endtime = exp.getEndTime();
                 if (exp.getStartTime().TotalMinutes != 0)
                     starttime = exp.getStartTime();
-                timeSelected = true;
+                if (exp.windowExited())
+                     timeSelected = false;
+                else
+                     timeSelected = true;
             }
             else
             {
                 MessageBox.Show("Please first pick a date");
-                timeSelected = false;
+                timeSelected = false; 
             }
         }
 
-        private void button5_Click(object sender, EventArgs e) //        addNewSchedule
-        {
-            
-            if (allowNewSchedule)
-            {
+       
 
-                if (dateSelected && timeSelected)
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text != "")
+            try
+            {
+                int id = int.Parse(textBox1.Text);
+                int count = MySQL.count("SELECT COUNT(id) FROM class where id=" + id);
+                if (count > 0)
                 {
-                    try
-                    {
-                        startClass = new DateTime(classDate.Year, classDate.Month, classDate.Day, starttime.Hours, starttime.Minutes, 0);
-                        endClass = new DateTime(classDate.Year, classDate.Month, classDate.Day, endtime.Hours, endtime.Minutes, 0);
-                        fClass myclass = new fClass(int.Parse(textBox1.Text), " ",int.Parse(comboBox1.Text) , 0, 0, 0, startClass.ToString("yyyy-MM-dd HH:mm:ss"), endClass.ToString("yyyy-MM-dd HH:mm:ss"));
-                        if (myclass.SaveDate())
-                        {
-                            MessageBox.Show("Schedule added");
-                            dateSelected = false;
-                            timeSelected = false;
-                            UpdateCalendar();
-                            return;
-                        }
-                        else
-                        {
-                            MessageBox.Show("Schedule not added, Please try again", "Error", MessageBoxButtons.OK);
-                            dateSelected = false;
-                            timeSelected = false;
-                            return;
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        throw new Exception(ex.Message);
-                    }        
+                    label6.Visible = true;
+                    idTaken = true;
                 }
                 else
-                    if (!dateSelected)
-                        MessageBox.Show("Date for class was not selected");
-                if (!timeSelected)
-                    MessageBox.Show("Time for class was not selected");
+                {
+                    label6.Visible = false;
+                    idTaken = false;
+                }
+                
+
+
             }
+            catch (Exception ex)
+            { throw new Exception(ex.Message); }
+            else
+                label6.Visible = false;
         }
 
-
-
-
-
-
-
-
+   
 
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -389,6 +402,13 @@ namespace newGym
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+       
 
       
     }
