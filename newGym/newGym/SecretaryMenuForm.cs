@@ -356,7 +356,6 @@ namespace newGym
 
         private void EditStudApply_Click(object sender, EventArgs e)
         {
-
             DateTime startDate = DateTime.Now;
             resetColors1();
 
