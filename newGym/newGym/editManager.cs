@@ -16,12 +16,12 @@ namespace newGym
         string table;
         string[] arr = { "manager", "guide", "trainer", "student", "worker" };
         ManagerResult m;
-        public editManager(String id,ManagerResult m)
+        public editManager(String id,ManagerResult m,string perm)
         {
             InitializeComponent();
             //connection to the previous form
             this.m = m;
-            
+            this.perm = perm;
             
             int retval=-1;
             DataTable dt = new DataTable();

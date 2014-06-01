@@ -34,9 +34,12 @@
             // 
             // dataGridResult
             // 
+            this.dataGridResult.AllowUserToAddRows = false;
+            this.dataGridResult.AllowUserToOrderColumns = true;
             this.dataGridResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridResult.Location = new System.Drawing.Point(12, 12);
             this.dataGridResult.Name = "dataGridResult";
+            this.dataGridResult.ReadOnly = true;
             this.dataGridResult.Size = new System.Drawing.Size(667, 211);
             this.dataGridResult.TabIndex = 0;
             this.dataGridResult.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridResult_CellContentClick);
