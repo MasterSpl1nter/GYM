@@ -530,7 +530,6 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "fEditClass";
             this.Text = "fEditClass";
-            this.Load += new System.EventHandler(this.fEditClass_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.gGroupBox1.ResumeLayout(false);

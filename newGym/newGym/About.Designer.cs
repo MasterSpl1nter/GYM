@@ -55,7 +55,7 @@
             this.marqueeLabel1.AutoSize = true;
             this.marqueeLabel1.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.marqueeLabel1.ForeColor = System.Drawing.Color.Red;
-            this.marqueeLabel1.Location = new System.Drawing.Point(75, 9);
+            this.marqueeLabel1.Location = new System.Drawing.Point(70, 9);
             this.marqueeLabel1.Name = "marqueeLabel1";
             this.marqueeLabel1.Size = new System.Drawing.Size(367, 43);
             this.marqueeLabel1.TabIndex = 7;

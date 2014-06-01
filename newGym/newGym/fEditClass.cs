@@ -148,10 +148,6 @@ namespace newGym
             count++;  
         }
 
-        private void fEditClass_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void UpdateCalendar(int id)
         {
