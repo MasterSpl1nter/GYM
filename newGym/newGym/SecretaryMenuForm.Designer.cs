@@ -28,95 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AddStudentPannel = new GPanel();
+            this.AddStudentPannel = new newGym.GPanel();
             this.tb_repeatPass = new System.Windows.Forms.TextBox();
             this.tb_pass = new System.Windows.Forms.TextBox();
             this.tb_username = new System.Windows.Forms.TextBox();
-            this.verPassWorod_label = new GLabel();
-            this.passWord_label = new GLabel();
-            this.userName_label = new GLabel();
+            this.verPassWorod_label = new newGym.GLabel();
+            this.passWord_label = new newGym.GLabel();
+            this.userName_label = new newGym.GLabel();
             this.start_date = new System.Windows.Forms.DateTimePicker();
             this.med_cart_date = new System.Windows.Forms.DateTimePicker();
             this.end_date = new System.Windows.Forms.DateTimePicker();
             this.birth_date = new System.Windows.Forms.DateTimePicker();
-            this.mail_label = new GLabel();
-            this.add_button = new GButton();
-            this.medcart_lable = new GLabel();
-            this.end_date_label = new GLabel();
-            this.start_date_label = new GLabel();
-            this.birth_label = new GLabel();
-            this.lastName_label = new GLabel();
-            this.firstName_label = new GLabel();
-            this.id_label = new GLabel();
+            this.mail_label = new newGym.GLabel();
+            this.add_button = new newGym.GButton();
+            this.medcart_lable = new newGym.GLabel();
+            this.end_date_label = new newGym.GLabel();
+            this.start_date_label = new newGym.GLabel();
+            this.birth_label = new newGym.GLabel();
+            this.lastName_label = new newGym.GLabel();
+            this.firstName_label = new newGym.GLabel();
+            this.id_label = new newGym.GLabel();
             this.email_box = new System.Windows.Forms.TextBox();
             this.lastname_box = new System.Windows.Forms.TextBox();
             this.firstname_box = new System.Windows.Forms.TextBox();
             this.id_box = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new GLabel();
+            this.label1 = new newGym.GLabel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new GLabel();
-            this.button1 = new GButton();
-            this.label3 = new GLabel();
-            this.label4 = new GLabel();
-            this.label5 = new GLabel();
-            this.label6 = new GLabel();
-            this.label7 = new GLabel();
-            this.label8 = new GLabel();
-            this.label9 = new GLabel();
+            this.label2 = new newGym.GLabel();
+            this.button1 = new newGym.GButton();
+            this.label3 = new newGym.GLabel();
+            this.label4 = new newGym.GLabel();
+            this.label5 = new newGym.GLabel();
+            this.label6 = new newGym.GLabel();
+            this.label7 = new newGym.GLabel();
+            this.label8 = new newGym.GLabel();
+            this.label9 = new newGym.GLabel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.edit_by_id = new GLabel();
+            this.edit_by_id = new newGym.GLabel();
             this.student_search = new System.Windows.Forms.ComboBox();
-            this.EditStudentPannel = new GPanel();
+            this.EditStudentPannel = new newGym.GPanel();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
-            this.label11 = new GLabel();
-            this.label12 = new GLabel();
+            this.label11 = new newGym.GLabel();
+            this.label12 = new newGym.GLabel();
             this.stratDatepicker = new System.Windows.Forms.DateTimePicker();
             this.medDatePicker = new System.Windows.Forms.DateTimePicker();
             this.endDatepicker = new System.Windows.Forms.DateTimePicker();
             this.bDayDatepicker = new System.Windows.Forms.DateTimePicker();
-            this.label13 = new GLabel();
-            this.label14 = new GLabel();
-            this.label15 = new GLabel();
-            this.label16 = new GLabel();
-            this.label17 = new GLabel();
-            this.label18 = new GLabel();
-            this.label20 = new GLabel();
+            this.label13 = new newGym.GLabel();
+            this.label14 = new newGym.GLabel();
+            this.label15 = new newGym.GLabel();
+            this.label16 = new newGym.GLabel();
+            this.label17 = new newGym.GLabel();
+            this.label18 = new newGym.GLabel();
+            this.label20 = new newGym.GLabel();
             this.emailTextbox = new System.Windows.Forms.TextBox();
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.firstNameTextbox = new System.Windows.Forms.TextBox();
-            this.EditStudApply = new GButton();
-            this.label19 = new GLabel();
+            this.EditStudApply = new newGym.GButton();
+            this.label19 = new newGym.GLabel();
             this.EditStudentCombobox = new System.Windows.Forms.ComboBox();
-            this.WelcomeGroupbox = new GGroupBox();
-            this.helloLabel = new GLabel();
-            this.DeleteStudentPanel = new GPanel();
-            this.DeleteButton = new GButton();
-            this.choose_id = new GLabel();
+            this.WelcomeGroupbox = new newGym.GGroupBox();
+            this.helloLabel = new newGym.GLabel();
+            this.DeleteStudentPanel = new newGym.GPanel();
+            this.DeleteButton = new newGym.GButton();
+            this.choose_id = new newGym.GLabel();
             this.DeleteStudentCombobox = new System.Windows.Forms.ComboBox();
-            this.AddStudentToClassPannel = new GPanel();
-            this.ClassID = new GGroupBox();
+            this.AddStudentToClassPannel = new newGym.GPanel();
+            this.ClassID = new newGym.GGroupBox();
             this.ClassIDComboBox = new System.Windows.Forms.ComboBox();
-            this.StudentID = new GGroupBox();
+            this.StudentID = new newGym.GGroupBox();
             this.StudentIDComboBox = new System.Windows.Forms.ComboBox();
             this.AddStudentToClassButton = new newGym.GButton();
             this.ClassDataGrid = new System.Windows.Forms.DataGridView();
-            this.RemoveStudentFromClassPannel = new GPanel();
-            this.groupBox1 = new GGroupBox();
+            this.RemoveStudentFromClassPannel = new newGym.GPanel();
+            this.groupBox1 = new newGym.GGroupBox();
             this.relevantClasses = new System.Windows.Forms.ComboBox();
-            this.StudentIdGroupbox = new GGroupBox();
+            this.StudentIdGroupbox = new newGym.GGroupBox();
             this.StudentCombo = new System.Windows.Forms.ComboBox();
             this.RemoveStudentFromClassButton = new newGym.GButton();
             this.StudentClassDataGrid = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.ShiftsPannel = new GPanel();
+            this.ShiftsPannel = new newGym.GPanel();
             this.ShiftsDataGrid = new System.Windows.Forms.DataGridView();
             this.gGroupBox1 = new newGym.GGroupBox();
             this.addStudentButton = new newGym.GButton();
@@ -144,6 +144,7 @@
             // 
             // AddStudentPannel
             // 
+            this.AddStudentPannel.BackColor = System.Drawing.Color.Transparent;
             this.AddStudentPannel.Controls.Add(this.tb_repeatPass);
             this.AddStudentPannel.Controls.Add(this.tb_pass);
             this.AddStudentPannel.Controls.Add(this.tb_username);
@@ -202,6 +203,7 @@
             // verPassWorod_label
             // 
             this.verPassWorod_label.AutoSize = true;
+            this.verPassWorod_label.BackColor = System.Drawing.Color.Transparent;
             this.verPassWorod_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.verPassWorod_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.verPassWorod_label.Location = new System.Drawing.Point(268, 204);
@@ -213,6 +215,7 @@
             // passWord_label
             // 
             this.passWord_label.AutoSize = true;
+            this.passWord_label.BackColor = System.Drawing.Color.Transparent;
             this.passWord_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passWord_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.passWord_label.Location = new System.Drawing.Point(291, 174);
@@ -224,7 +227,9 @@
             // userName_label
             // 
             this.userName_label.AutoSize = true;
+            this.userName_label.BackColor = System.Drawing.Color.Transparent;
             this.userName_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userName_label.ForeColor = System.Drawing.Color.Black;
             this.userName_label.Location = new System.Drawing.Point(284, 147);
             this.userName_label.Name = "userName_label";
             this.userName_label.Size = new System.Drawing.Size(69, 14);
@@ -274,7 +279,9 @@
             // mail_label
             // 
             this.mail_label.AutoSize = true;
+            this.mail_label.BackColor = System.Drawing.Color.Transparent;
             this.mail_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mail_label.ForeColor = System.Drawing.Color.Black;
             this.mail_label.Location = new System.Drawing.Point(315, 121);
             this.mail_label.Name = "mail_label";
             this.mail_label.Size = new System.Drawing.Size(38, 14);
@@ -288,6 +295,7 @@
             this.add_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.add_button.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_button.ForeColor = System.Drawing.Color.White;
+            this.add_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.add_button.Location = new System.Drawing.Point(365, 377);
             this.add_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.add_button.Name = "add_button";
@@ -300,7 +308,9 @@
             // medcart_lable
             // 
             this.medcart_lable.AutoSize = true;
+            this.medcart_lable.BackColor = System.Drawing.Color.Transparent;
             this.medcart_lable.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medcart_lable.ForeColor = System.Drawing.Color.Black;
             this.medcart_lable.Location = new System.Drawing.Point(241, 339);
             this.medcart_lable.Name = "medcart_lable";
             this.medcart_lable.Size = new System.Drawing.Size(108, 14);
@@ -310,6 +320,7 @@
             // end_date_label
             // 
             this.end_date_label.AutoSize = true;
+            this.end_date_label.BackColor = System.Drawing.Color.Transparent;
             this.end_date_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.end_date_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.end_date_label.Location = new System.Drawing.Point(271, 308);
@@ -321,7 +332,9 @@
             // start_date_label
             // 
             this.start_date_label.AutoSize = true;
+            this.start_date_label.BackColor = System.Drawing.Color.Transparent;
             this.start_date_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.start_date_label.ForeColor = System.Drawing.Color.Black;
             this.start_date_label.Location = new System.Drawing.Point(264, 276);
             this.start_date_label.Name = "start_date_label";
             this.start_date_label.Size = new System.Drawing.Size(89, 14);
@@ -331,7 +344,9 @@
             // birth_label
             // 
             this.birth_label.AutoSize = true;
+            this.birth_label.BackColor = System.Drawing.Color.Transparent;
             this.birth_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.birth_label.ForeColor = System.Drawing.Color.Black;
             this.birth_label.Location = new System.Drawing.Point(284, 244);
             this.birth_label.Name = "birth_label";
             this.birth_label.Size = new System.Drawing.Size(65, 14);
@@ -341,7 +356,9 @@
             // lastName_label
             // 
             this.lastName_label.AutoSize = true;
+            this.lastName_label.BackColor = System.Drawing.Color.Transparent;
             this.lastName_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastName_label.ForeColor = System.Drawing.Color.Black;
             this.lastName_label.Location = new System.Drawing.Point(287, 93);
             this.lastName_label.Name = "lastName_label";
             this.lastName_label.Size = new System.Drawing.Size(67, 14);
@@ -351,7 +368,9 @@
             // firstName_label
             // 
             this.firstName_label.AutoSize = true;
+            this.firstName_label.BackColor = System.Drawing.Color.Transparent;
             this.firstName_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstName_label.ForeColor = System.Drawing.Color.Black;
             this.firstName_label.Location = new System.Drawing.Point(286, 65);
             this.firstName_label.Name = "firstName_label";
             this.firstName_label.Size = new System.Drawing.Size(68, 14);
@@ -361,7 +380,9 @@
             // id_label
             // 
             this.id_label.AutoSize = true;
+            this.id_label.BackColor = System.Drawing.Color.Transparent;
             this.id_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_label.ForeColor = System.Drawing.Color.Black;
             this.id_label.Location = new System.Drawing.Point(331, 41);
             this.id_label.Name = "id_label";
             this.id_label.Size = new System.Drawing.Size(23, 14);
@@ -421,7 +442,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(130, 232);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
@@ -472,7 +495,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(158, 196);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -483,8 +508,11 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Navy;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(214, 434);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
@@ -496,7 +524,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(68, 383);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -507,6 +537,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(118, 345);
@@ -519,7 +550,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(111, 307);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
@@ -530,7 +563,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(132, 274);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
@@ -541,7 +576,9 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(128, 160);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
@@ -552,7 +589,9 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(126, 131);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
@@ -563,7 +602,9 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(168, 102);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
@@ -615,7 +656,9 @@
             // edit_by_id
             // 
             this.edit_by_id.AutoSize = true;
+            this.edit_by_id.BackColor = System.Drawing.Color.Transparent;
             this.edit_by_id.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.edit_by_id.ForeColor = System.Drawing.Color.Black;
             this.edit_by_id.Location = new System.Drawing.Point(114, 62);
             this.edit_by_id.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.edit_by_id.Name = "edit_by_id";
@@ -635,6 +678,7 @@
             // 
             // EditStudentPannel
             // 
+            this.EditStudentPannel.BackColor = System.Drawing.Color.Transparent;
             this.EditStudentPannel.Controls.Add(this.passwordTextBox);
             this.EditStudentPannel.Controls.Add(this.usernameTextBox);
             this.EditStudentPannel.Controls.Add(this.label11);
@@ -683,6 +727,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label11.Location = new System.Drawing.Point(286, 209);
@@ -694,7 +739,9 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(278, 181);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(69, 14);
@@ -744,7 +791,9 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(309, 155);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(38, 14);
@@ -754,7 +803,9 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(251, 339);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(108, 14);
@@ -764,6 +815,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label15.Location = new System.Drawing.Point(276, 308);
@@ -775,7 +827,9 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(269, 278);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(89, 14);
@@ -785,7 +839,9 @@
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
             this.label17.Location = new System.Drawing.Point(289, 246);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(65, 14);
@@ -795,7 +851,9 @@
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(281, 127);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(67, 14);
@@ -805,7 +863,9 @@
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
             this.label20.Location = new System.Drawing.Point(280, 99);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(68, 14);
@@ -849,6 +909,7 @@
             this.EditStudApply.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.EditStudApply.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditStudApply.ForeColor = System.Drawing.Color.White;
+            this.EditStudApply.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EditStudApply.Location = new System.Drawing.Point(379, 382);
             this.EditStudApply.Margin = new System.Windows.Forms.Padding(2);
             this.EditStudApply.Name = "EditStudApply";
@@ -861,7 +922,9 @@
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.Location = new System.Drawing.Point(277, 40);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
@@ -896,14 +959,18 @@
             // helloLabel
             // 
             this.helloLabel.AutoSize = true;
+            this.helloLabel.BackColor = System.Drawing.Color.Transparent;
+            this.helloLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.helloLabel.ForeColor = System.Drawing.Color.Black;
             this.helloLabel.Location = new System.Drawing.Point(13, 35);
             this.helloLabel.Name = "helloLabel";
-            this.helloLabel.Size = new System.Drawing.Size(126, 17);
+            this.helloLabel.Size = new System.Drawing.Size(107, 16);
             this.helloLabel.TabIndex = 1;
             this.helloLabel.Text = "WILL BE FILLED";
             // 
             // DeleteStudentPanel
             // 
+            this.DeleteStudentPanel.BackColor = System.Drawing.Color.Transparent;
             this.DeleteStudentPanel.Controls.Add(this.DeleteButton);
             this.DeleteStudentPanel.Controls.Add(this.choose_id);
             this.DeleteStudentPanel.Controls.Add(this.DeleteStudentCombobox);
@@ -919,6 +986,7 @@
             this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.DeleteButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.DeleteButton.ForeColor = System.Drawing.Color.White;
+            this.DeleteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.DeleteButton.Location = new System.Drawing.Point(379, 198);
             this.DeleteButton.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteButton.Name = "DeleteButton";
@@ -931,6 +999,7 @@
             // choose_id
             // 
             this.choose_id.AutoSize = true;
+            this.choose_id.BackColor = System.Drawing.Color.Transparent;
             this.choose_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.choose_id.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.choose_id.Location = new System.Drawing.Point(283, 150);
@@ -952,6 +1021,7 @@
             // 
             // AddStudentToClassPannel
             // 
+            this.AddStudentToClassPannel.BackColor = System.Drawing.Color.Transparent;
             this.AddStudentToClassPannel.Controls.Add(this.ClassID);
             this.AddStudentToClassPannel.Controls.Add(this.StudentID);
             this.AddStudentToClassPannel.Controls.Add(this.AddStudentToClassButton);
@@ -963,7 +1033,10 @@
             // 
             // ClassID
             // 
+            this.ClassID.BackColor = System.Drawing.Color.Transparent;
             this.ClassID.Controls.Add(this.ClassIDComboBox);
+            this.ClassID.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.ClassID.ForeColor = System.Drawing.Color.Black;
             this.ClassID.Location = new System.Drawing.Point(33, 128);
             this.ClassID.Name = "ClassID";
             this.ClassID.Size = new System.Drawing.Size(150, 67);
@@ -977,12 +1050,15 @@
             this.ClassIDComboBox.FormattingEnabled = true;
             this.ClassIDComboBox.Location = new System.Drawing.Point(7, 30);
             this.ClassIDComboBox.Name = "ClassIDComboBox";
-            this.ClassIDComboBox.Size = new System.Drawing.Size(121, 21);
+            this.ClassIDComboBox.Size = new System.Drawing.Size(121, 24);
             this.ClassIDComboBox.TabIndex = 3;
             // 
             // StudentID
             // 
+            this.StudentID.BackColor = System.Drawing.Color.Transparent;
             this.StudentID.Controls.Add(this.StudentIDComboBox);
+            this.StudentID.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.StudentID.ForeColor = System.Drawing.Color.Black;
             this.StudentID.Location = new System.Drawing.Point(33, 36);
             this.StudentID.Name = "StudentID";
             this.StudentID.Size = new System.Drawing.Size(150, 74);
@@ -996,7 +1072,7 @@
             this.StudentIDComboBox.FormattingEnabled = true;
             this.StudentIDComboBox.Location = new System.Drawing.Point(4, 37);
             this.StudentIDComboBox.Name = "StudentIDComboBox";
-            this.StudentIDComboBox.Size = new System.Drawing.Size(127, 21);
+            this.StudentIDComboBox.Size = new System.Drawing.Size(127, 24);
             this.StudentIDComboBox.TabIndex = 2;
             // 
             // AddStudentToClassButton
@@ -1030,6 +1106,7 @@
             // 
             // RemoveStudentFromClassPannel
             // 
+            this.RemoveStudentFromClassPannel.BackColor = System.Drawing.Color.Transparent;
             this.RemoveStudentFromClassPannel.Controls.Add(this.groupBox1);
             this.RemoveStudentFromClassPannel.Controls.Add(this.StudentIdGroupbox);
             this.RemoveStudentFromClassPannel.Controls.Add(this.RemoveStudentFromClassButton);
@@ -1041,7 +1118,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.relevantClasses);
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(28, 132);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(155, 75);
@@ -1055,12 +1135,15 @@
             this.relevantClasses.FormattingEnabled = true;
             this.relevantClasses.Location = new System.Drawing.Point(7, 30);
             this.relevantClasses.Name = "relevantClasses";
-            this.relevantClasses.Size = new System.Drawing.Size(142, 21);
+            this.relevantClasses.Size = new System.Drawing.Size(142, 24);
             this.relevantClasses.TabIndex = 3;
             // 
             // StudentIdGroupbox
             // 
+            this.StudentIdGroupbox.BackColor = System.Drawing.Color.Transparent;
             this.StudentIdGroupbox.Controls.Add(this.StudentCombo);
+            this.StudentIdGroupbox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.StudentIdGroupbox.ForeColor = System.Drawing.Color.Black;
             this.StudentIdGroupbox.Location = new System.Drawing.Point(28, 33);
             this.StudentIdGroupbox.Name = "StudentIdGroupbox";
             this.StudentIdGroupbox.Size = new System.Drawing.Size(155, 74);
@@ -1074,7 +1157,7 @@
             this.StudentCombo.FormattingEnabled = true;
             this.StudentCombo.Location = new System.Drawing.Point(9, 32);
             this.StudentCombo.Name = "StudentCombo";
-            this.StudentCombo.Size = new System.Drawing.Size(140, 21);
+            this.StudentCombo.Size = new System.Drawing.Size(140, 24);
             this.StudentCombo.TabIndex = 2;
             this.StudentCombo.SelectedIndexChanged += new System.EventHandler(this.StudentCombo_SelectedIndexChanged);
             // 
@@ -1118,6 +1201,7 @@
             // 
             // ShiftsPannel
             // 
+            this.ShiftsPannel.BackColor = System.Drawing.Color.Transparent;
             this.ShiftsPannel.Controls.Add(this.ShiftsDataGrid);
             this.ShiftsPannel.Location = new System.Drawing.Point(250, 110);
             this.ShiftsPannel.Name = "ShiftsPannel";
@@ -1161,6 +1245,7 @@
             this.addStudentButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addStudentButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.addStudentButton.ForeColor = System.Drawing.Color.White;
+            this.addStudentButton.Image = global::newGym.Properties.Resources._1399410268_add;
             this.addStudentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addStudentButton.Location = new System.Drawing.Point(16, 39);
             this.addStudentButton.Name = "addStudentButton";
@@ -1177,6 +1262,7 @@
             this.shiftsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.shiftsButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.shiftsButton.ForeColor = System.Drawing.Color.White;
+            this.shiftsButton.Image = global::newGym.Properties.Resources._1400176769_applications_engineering;
             this.shiftsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.shiftsButton.Location = new System.Drawing.Point(16, 315);
             this.shiftsButton.Name = "shiftsButton";
@@ -1193,6 +1279,7 @@
             this.editStudentButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.editStudentButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.editStudentButton.ForeColor = System.Drawing.Color.White;
+            this.editStudentButton.Image = global::newGym.Properties.Resources._1399410331_document_edit;
             this.editStudentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.editStudentButton.Location = new System.Drawing.Point(16, 93);
             this.editStudentButton.Name = "editStudentButton";
@@ -1209,6 +1296,7 @@
             this.removeStudentFromClassBotton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.removeStudentFromClassBotton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.removeStudentFromClassBotton.ForeColor = System.Drawing.Color.White;
+            this.removeStudentFromClassBotton.Image = global::newGym.Properties.Resources._1399410438_Delete;
             this.removeStudentFromClassBotton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.removeStudentFromClassBotton.Location = new System.Drawing.Point(16, 257);
             this.removeStudentFromClassBotton.Name = "removeStudentFromClassBotton";
@@ -1225,6 +1313,7 @@
             this.removeStudentButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.removeStudentButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.removeStudentButton.ForeColor = System.Drawing.Color.White;
+            this.removeStudentButton.Image = global::newGym.Properties.Resources._1399410901_trash;
             this.removeStudentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.removeStudentButton.Location = new System.Drawing.Point(16, 150);
             this.removeStudentButton.Name = "removeStudentButton";
@@ -1241,6 +1330,7 @@
             this.studentToClassButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.studentToClassButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.studentToClassButton.ForeColor = System.Drawing.Color.White;
+            this.studentToClassButton.Image = global::newGym.Properties.Resources._1399410268_add;
             this.studentToClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.studentToClassButton.Location = new System.Drawing.Point(16, 202);
             this.studentToClassButton.Name = "studentToClassButton";

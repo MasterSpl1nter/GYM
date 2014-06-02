@@ -42,7 +42,7 @@ namespace newGym
             Manager m = (Manager)SingleUser.Instance.get_user();
             helloLabel.Text = "Hello," + m.FirstName + " " + m.LastName;
         }
-
+        /*
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
             dtmp = new DataTable();
@@ -103,7 +103,7 @@ namespace newGym
             endtimeLabel.Text = dtmp.Rows[i]["endtime"].ToString().Split(' ')[1];
             tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dtmp.Rows[i]["endtime"]) - Convert.ToDateTime(dtmp.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
         }
-
+        */
         private void button23_Click(object sender, EventArgs e)
         {
             AddStudent asa = new AddStudent();
@@ -148,7 +148,7 @@ namespace newGym
         {
             new ShiftHandle().ShowDialog();
         }
-
+        /*
         private void monthCalendar1_DateChanged_1(object sender, DateRangeEventArgs e)
         {
             dtmp = new DataTable();
