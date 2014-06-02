@@ -108,7 +108,8 @@ namespace newGym
             }
             else
                 MessageBox.Show("delete success!");
-                
+
+            MySQL.Query(dt, "set SQL_SAFE_UPDATES = 0;  delete from studentclass where classid in ( select class.id from class where class.guideid = 1);                                            delete from classtime where classid in ( select class.id from class where class.guideid = 1);                                            delete from class where guideid = 1;                                            delete from guide where id = 1;                ");
 
             
         }

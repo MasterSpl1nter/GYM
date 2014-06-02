@@ -179,9 +179,10 @@ namespace newGym
                     {
                         
 
-                        string query = "delete from gym.studenttraining where trainingid='" + Convert.ToInt32(this.userId.Text) + "' ;";
+                        /*string query = "delete from gym.studenttraining where trainingid='" + Convert.ToInt32(this.userId.Text) + "' ;";
                         DbConnection newConn = new DbConnection("gym", "root", "csharp");
-                        newConn.writeToDb(query);
+                        newConn.writeToDb(query);*/
+
                         ((Manager)SingleUser.Instance.get_user()).deleteUser(Convert.ToInt32(this.userId.Text), "trainer");
                     }
                     else 
@@ -193,18 +194,10 @@ namespace newGym
                 {
                     if (MessageBox.Show("Are you sure?\n Warning:delete Trainer will delete all the trainers", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        DataTable dt = new DataTable();
-                        /*
-delete from studentclass where classid in ( select class.id from class wstudentclasshere guideid = IDDD);
-delete from classtime where classid in( select class.id from class where guideid = IDDD);
-delete from class where guideid = IDDD;
-delete from guide where id = iddd;                 */
+                        ((Manager)SingleUser.Instance.get_user()).deleteUser(Convert.ToInt32(this.userId.Text), "guide"); ;
+
+
                         
-                        //MySQL.Delete("studentclass", "classid=" + classId);
-                        //string query = "delete from gym.studenttraining where trainingid='" + Convert.ToInt32(this.userId.Text) + "' ;";
-                        //DbConnection newConn = new DbConnection("gym", "root", "csharp");
-                        //newConn.writeToDb(query);
-                        //((Manager)SingleUser.Instance.get_user()).deleteUser(Convert.ToInt32(this.userId.Text), "guide");
                     }
                     else
                     {
