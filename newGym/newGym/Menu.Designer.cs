@@ -429,7 +429,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button search;
+        private GButton search;
         private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label helloLabel;
@@ -455,10 +455,10 @@
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox ManagerActions;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button addWorkerBtn;
-        private System.Windows.Forms.Button classHandleBtn;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
+        private GButton button23;
+        private GButton addWorkerBtn;
+        private GButton classHandleBtn;
+        private GButton button25;
+        private GButton button26;
     }
 }

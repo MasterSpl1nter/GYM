@@ -248,7 +248,7 @@
         private System.Windows.Forms.TextBox id_textBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox id_comboBox1;
-        private System.Windows.Forms.Button Edit_button;
+        private GButton Edit_button;
         private System.Windows.Forms.TextBox password_textBox;
         private System.Windows.Forms.Label password_label;
     }

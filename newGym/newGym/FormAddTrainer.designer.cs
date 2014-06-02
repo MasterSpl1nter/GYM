@@ -233,8 +233,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button save_butten;
-        private System.Windows.Forms.Button clear_all_button;
+        private GButton save_butten;
+        private GButton clear_all_button;
         private System.Windows.Forms.Label email_verification;
         private System.Windows.Forms.Label lable8;
         private System.Windows.Forms.TextBox salar_txt;

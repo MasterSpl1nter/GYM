@@ -83,7 +83,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button enter_button;
+        private GButton enter_button;
         private System.Windows.Forms.ComboBox id_comboBox1;
         private System.Windows.Forms.Label id_label;
     }

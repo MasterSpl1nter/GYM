@@ -129,7 +129,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private GButton button1;
         private System.Windows.Forms.NumericUpDown NUM_cap;
         private System.Windows.Forms.NumericUpDown NUM_area;
         private System.Windows.Forms.TextBox TB_name;

@@ -364,7 +364,7 @@
         private System.Windows.Forms.Label sets;
         private System.Windows.Forms.Label appliance;
         private System.Windows.Forms.Label training_name;
-        private System.Windows.Forms.Button save_button;
+        private GButton save_button;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -378,7 +378,7 @@
         private System.Windows.Forms.TextBox delappliance_txt;
         private System.Windows.Forms.TextBox delname_txt;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button remove_button;
+        private GButton remove_button;
         private System.Windows.Forms.TextBox delid_txt;
     }
 }

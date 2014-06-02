@@ -1302,7 +1302,7 @@
         private System.Windows.Forms.DateTimePicker end_date;
         private System.Windows.Forms.DateTimePicker birth_date;
         private System.Windows.Forms.Label mail_label;
-        private System.Windows.Forms.Button add_button;
+        private GButton add_button;
         private System.Windows.Forms.Label medcart_lable;
         private System.Windows.Forms.Label end_date_label;
         private System.Windows.Forms.Label start_date_label;
@@ -1321,7 +1321,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.DateTimePicker dateTimePicker4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private GButton button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -1336,7 +1336,7 @@
         private System.Windows.Forms.Label edit_by_id;
         private System.Windows.Forms.ComboBox student_search;
         private System.Windows.Forms.Panel EditStudentPannel;
-        private System.Windows.Forms.Button EditStudApply;
+        private GButton EditStudApply;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.ComboBox EditStudentCombobox;
         private GButton addStudentButton;
@@ -1349,7 +1349,7 @@
         private System.Windows.Forms.GroupBox WelcomeGroupbox;
         private System.Windows.Forms.Label helloLabel;
         private System.Windows.Forms.Panel DeleteStudentPanel;
-        private System.Windows.Forms.Button DeleteButton;
+        private GButton DeleteButton;
         private System.Windows.Forms.Label choose_id;
         private System.Windows.Forms.ComboBox DeleteStudentCombobox;
         private System.Windows.Forms.Panel AddStudentToClassPannel;

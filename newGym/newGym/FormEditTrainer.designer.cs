@@ -243,7 +243,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button edit_button;
+        private GButton edit_button;
         private System.Windows.Forms.Label id;
         private System.Windows.Forms.Label firstname;
         private System.Windows.Forms.Label lastname;
@@ -257,7 +257,7 @@
         private System.Windows.Forms.TextBox username_txt;
         private System.Windows.Forms.TextBox password_txt;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button clear_all_button;
+        private GButton clear_all_button;
         private System.Windows.Forms.Label email_verification;
         private System.Windows.Forms.TextBox salar_txt;
         private System.Windows.Forms.Label label2;

@@ -312,7 +312,7 @@
         private System.Windows.Forms.DateTimePicker end_date;
         private System.Windows.Forms.DateTimePicker birth_date;
         private System.Windows.Forms.Label mail_label;
-        private System.Windows.Forms.Button enter_button;
+        private GButton enter_button;
         private System.Windows.Forms.Label medcart_lable;
         private System.Windows.Forms.Label end_date_label;
         private System.Windows.Forms.Label start_date_label;

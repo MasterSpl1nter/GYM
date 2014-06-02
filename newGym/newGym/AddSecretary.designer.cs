@@ -165,7 +165,7 @@
         private System.Windows.Forms.TextBox firstname_textBox;
         private System.Windows.Forms.TextBox email_textBox;
         private System.Windows.Forms.TextBox lastname_textBox;
-        private System.Windows.Forms.Button enter_button;
+        private GButton enter_button;
         private System.Windows.Forms.Label username_label;
         private System.Windows.Forms.Label password_label;
         private System.Windows.Forms.TextBox username_textBox;

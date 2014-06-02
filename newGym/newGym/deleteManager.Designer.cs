@@ -80,6 +80,6 @@
 
         private System.Windows.Forms.ComboBox deleteComboBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button deleteManageById;
+        private GButton deleteManageById;
     }
 }

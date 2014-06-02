@@ -90,7 +90,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button delete_butten;
+        private GButton delete_butten;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
     }

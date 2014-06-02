@@ -494,17 +494,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Button edit_button;
+        private GButton edit_button;
         private System.Windows.Forms.MonthCalendar StudnetClassesCalendar;
-        private System.Windows.Forms.Button add_course;
+        private GButton add_course;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Cancel_course;
+        private GButton Cancel_course;
         private System.Windows.Forms.Panel addCourse_panel;
         private System.Windows.Forms.Panel EditDetail_panel;
         private GGroupBox gGroupBox1;
         private System.Windows.Forms.GroupBox WelcomeGroupBox;
         private System.Windows.Forms.Label helloLabel;
-        private System.Windows.Forms.Button editDetail_button;
+        private GButton editDetail_button;
         private System.Windows.Forms.TextBox username_box;
         private System.Windows.Forms.Label userName_label;
         private System.Windows.Forms.Label mail_label;
@@ -528,6 +528,6 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Panel ExercisePannel;
         private System.Windows.Forms.DataGridView ExerciseDataGrid;
-        private System.Windows.Forms.Button ExerciseButton;
+        private GButton ExerciseButton;
     }
 }

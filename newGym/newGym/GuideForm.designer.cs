@@ -277,7 +277,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button AddGuideButton;
+        private GButton AddGuideButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -290,13 +290,13 @@
         private System.Windows.Forms.TextBox passText;
         private System.Windows.Forms.TextBox salaryText;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button2;
+        private GButton button2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox idText;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button EditGuideButton;
-        private System.Windows.Forms.Button DeleteGuideButton;
+        private GButton EditGuideButton;
+        private GButton DeleteGuideButton;
     }
 }
 

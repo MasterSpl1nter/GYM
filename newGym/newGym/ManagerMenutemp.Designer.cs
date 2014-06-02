@@ -386,7 +386,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button AddManagerUser;
+        private GButton AddManagerUser;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.TextBox userName;
         private System.Windows.Forms.TextBox managerEmail;
@@ -402,20 +402,20 @@
         private System.Windows.Forms.TextBox MangerSalaryPerHour;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel addMangerPanel;
-        private System.Windows.Forms.Button deleteManager_mainPanel;
-        private System.Windows.Forms.Button updateManager_mainPanel;
-        private System.Windows.Forms.Button AddManager_mainPanel;
+        private GButton deleteManager_mainPanel;
+        private GButton updateManager_mainPanel;
+        private GButton AddManager_mainPanel;
         private System.Windows.Forms.Panel ManagerActions;
         private System.Windows.Forms.Panel DeleteManagerPanel;
         private System.Windows.Forms.TextBox deleteId;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button deleteManageById;
-        private System.Windows.Forms.Button update_manger_button;
+        private GButton deleteManageById;
+        private GButton update_manger_button;
         private System.Windows.Forms.Panel updateId_panel;
         private System.Windows.Forms.TextBox updateId_textBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button editbyId_button;
-        private System.Windows.Forms.Button exit_update;
+        private GButton editbyId_button;
+        private GButton exit_update;
     }
 }
 

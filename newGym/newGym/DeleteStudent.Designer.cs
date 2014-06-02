@@ -98,6 +98,6 @@
         private System.Windows.Forms.ComboBox delete_comb;
         private System.Windows.Forms.Label choose_id;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private GButton button1;
     }
 }

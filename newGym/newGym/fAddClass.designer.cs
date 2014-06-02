@@ -340,7 +340,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private GButton button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -350,7 +350,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
+        private GButton button2;
         private System.Windows.Forms.Label gidLabel;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label8;
@@ -373,8 +373,8 @@
         private System.Windows.Forms.Label tothourLabel;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private GButton button3;
+        private GButton button4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
     }

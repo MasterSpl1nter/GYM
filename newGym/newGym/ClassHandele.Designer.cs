@@ -88,8 +88,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private GButton button22;
+        private GButton button1;
+        private GButton button2;
     }
 }

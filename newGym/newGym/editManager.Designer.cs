@@ -256,9 +256,9 @@
         private System.Windows.Forms.Label firstNameLabel;
         private System.Windows.Forms.TextBox managerLastName;
         private System.Windows.Forms.TextBox managerFirstName;
-        private System.Windows.Forms.Button exit_update;
-        private System.Windows.Forms.Button update_manger_button;
+        private GButton exit_update;
+        private GButton update_manger_button;
         private System.Windows.Forms.Label userId;
-        private System.Windows.Forms.Button removeUser;
+        private GButton removeUser;
     }
 }

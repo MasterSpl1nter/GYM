@@ -255,7 +255,7 @@
             private System.Windows.Forms.Label idLabel;
 	        private System.Windows.Forms.Label salaryPerHourLabel;
 	        private System.Windows.Forms.Label passwordLabel;
-	        private System.Windows.Forms.Button AddManagerUser;
+	        private GButton AddManagerUser;
 	        private System.Windows.Forms.Label userNameLabel;
 	        private System.Windows.Forms.TextBox password;
 	        private System.Windows.Forms.Label EmailLabel;
@@ -266,7 +266,7 @@
 	        private System.Windows.Forms.TextBox managerLastName;
 	        private System.Windows.Forms.TextBox managerId;
             private System.Windows.Forms.TextBox managerFirstName;
-            private System.Windows.Forms.Button exit_update;
+            private GButton exit_update;
             private System.Windows.Forms.ComboBox DepartmentComboBox;
             private System.Windows.Forms.Label label1;
 	    }
