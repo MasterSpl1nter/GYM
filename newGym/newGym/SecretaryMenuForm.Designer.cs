@@ -40,7 +40,7 @@
             this.end_date = new System.Windows.Forms.DateTimePicker();
             this.birth_date = new System.Windows.Forms.DateTimePicker();
             this.mail_label = new System.Windows.Forms.Label();
-            this.add_button = new GButton();
+            this.add_button = new newGym.GButton();
             this.medcart_lable = new System.Windows.Forms.Label();
             this.end_date_label = new System.Windows.Forms.Label();
             this.start_date_label = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new GButton();
+            this.button1 = new newGym.GButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -92,13 +92,13 @@
             this.emailTextbox = new System.Windows.Forms.TextBox();
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.firstNameTextbox = new System.Windows.Forms.TextBox();
-            this.EditStudApply = new GButton();
+            this.EditStudApply = new newGym.GButton();
             this.label19 = new System.Windows.Forms.Label();
             this.EditStudentCombobox = new System.Windows.Forms.ComboBox();
             this.WelcomeGroupbox = new System.Windows.Forms.GroupBox();
             this.helloLabel = new System.Windows.Forms.Label();
             this.DeleteStudentPanel = new System.Windows.Forms.Panel();
-            this.DeleteButton = new GButton();
+            this.DeleteButton = new newGym.GButton();
             this.choose_id = new System.Windows.Forms.Label();
             this.DeleteStudentCombobox = new System.Windows.Forms.ComboBox();
             this.AddStudentToClassPannel = new System.Windows.Forms.Panel();
@@ -288,6 +288,7 @@
             this.add_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.add_button.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_button.ForeColor = System.Drawing.Color.White;
+            this.add_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.add_button.Location = new System.Drawing.Point(365, 377);
             this.add_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.add_button.Name = "add_button";
@@ -483,8 +484,11 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Navy;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(214, 434);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
@@ -849,6 +853,7 @@
             this.EditStudApply.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.EditStudApply.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditStudApply.ForeColor = System.Drawing.Color.White;
+            this.EditStudApply.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EditStudApply.Location = new System.Drawing.Point(379, 382);
             this.EditStudApply.Margin = new System.Windows.Forms.Padding(2);
             this.EditStudApply.Name = "EditStudApply";
@@ -919,6 +924,7 @@
             this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.DeleteButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.DeleteButton.ForeColor = System.Drawing.Color.White;
+            this.DeleteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.DeleteButton.Location = new System.Drawing.Point(379, 198);
             this.DeleteButton.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteButton.Name = "DeleteButton";
@@ -1257,12 +1263,12 @@
             this.ClientSize = new System.Drawing.Size(1137, 609);
             this.Controls.Add(this.WelcomeGroupbox);
             this.Controls.Add(this.gGroupBox1);
+            this.Controls.Add(this.EditStudentPannel);
+            this.Controls.Add(this.ShiftsPannel);
             this.Controls.Add(this.AddStudentPannel);
             this.Controls.Add(this.RemoveStudentFromClassPannel);
             this.Controls.Add(this.AddStudentToClassPannel);
             this.Controls.Add(this.DeleteStudentPanel);
-            this.Controls.Add(this.EditStudentPannel);
-            this.Controls.Add(this.ShiftsPannel);
             this.Name = "SecretaryMenu";
             this.Text = "SecretaryMenu";
             this.AddStudentPannel.ResumeLayout(false);
