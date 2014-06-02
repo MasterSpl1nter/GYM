@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAddClass));
-            this.button1 = new newGym.GButton();
             this.label1 = new newGym.GLabel();
             this.label2 = new newGym.GLabel();
             this.label3 = new newGym.GLabel();
@@ -66,18 +65,11 @@
             this.button4 = new newGym.GButton();
             this.groupBox1 = new newGym.GGroupBox();
             this.label6 = new newGym.GLabel();
+            this.button1 = new newGym.GButton();
+            this.gButton1 = new newGym.GButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -351,10 +343,28 @@
             this.label6.ForeColor = System.Drawing.Color.Red;
             this.label6.Name = "label6";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // gButton1
+            // 
+            this.gButton1.BackColor = System.Drawing.Color.LightSkyBlue;
+            resources.ApplyResources(this.gButton1, "gButton1");
+            this.gButton1.ForeColor = System.Drawing.Color.White;
+            this.gButton1.Name = "gButton1";
+            this.gButton1.UseVisualStyleBackColor = true;
+            this.gButton1.Click += new System.EventHandler(this.gButton1_Click);
+            // 
             // fAddClass
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.gButton1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
@@ -392,7 +402,6 @@
 
         #endregion
 
-        private GButton button1;
         private GLabel label1;
         private GLabel label2;
         private GLabel label3;
@@ -429,5 +438,7 @@
         private GButton button4;
         private GGroupBox groupBox1;
         private GLabel label6;
+        private GButton button1;
+        private GButton gButton1;
     }
 }

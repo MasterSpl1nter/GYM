@@ -28,6 +28,8 @@ namespace newGym
         public fAddClass()
         {
             InitializeComponent();
+            //this.button1.Location = new System.Drawing.Point(37, 371);
+            
             LoadRoomId();
             LoadGuideId();
             dt = new DataTable();
@@ -406,6 +408,90 @@ namespace newGym
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void gButton1_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                int num;
+                bool result = Int32.TryParse(textBox1.Text, out num);
+
+                if (dateSelected && timeSelected)
+                {
+                    startClass = new DateTime(classDate.Year, classDate.Month, classDate.Day, starttime.Hours, starttime.Minutes, 0);
+                    endClass = new DateTime(classDate.Year, classDate.Month, classDate.Day, endtime.Hours, endtime.Minutes, 0);
+
+                    if (result && !idTaken)
+                    {
+                        if (textBox1.Text == "" || textBox2.Text == "")
+                        {
+                            MessageBox.Show("Not all details field.");
+                            return;
+                        }
+
+                        if ((endClass.DayOfWeek == DayOfWeek.Saturday) ||
+                             ((endClass.DayOfWeek < DayOfWeek.Friday && endClass.DayOfWeek >= DayOfWeek.Sunday) && !(endClass.Hour < 23 && endClass.Hour > 7)) ||
+                                  (endClass.DayOfWeek == DayOfWeek.Friday && !(endClass.Hour < 14 && endClass.Hour > 7)))
+                        {
+                            MessageBox.Show("Gym Opening Hours:\n. Sunday to Thursday: 07:00am - 23:00pm.\n Friday: 07:00am - 14:00pm.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            return;
+                        }
+                        var sub = startClass.Subtract(endClass);
+
+                        if (sub.TotalHours > 0)
+                        {
+                            MessageBox.Show("Invalid Start/End date.");
+                            return;
+                        }
+                        else
+                        {
+
+                            fClass myclass = new fClass(int.Parse(textBox1.Text), textBox2.Text, int.Parse(comboBox1.Text), id == -1 ? int.Parse(comboBox2.Text) : id, 0, int.Parse(textBox3.Text),
+                                startClass.ToString("yyyy-MM-dd HH:mm:ss"), endClass.ToString("yyyy-MM-dd HH:mm:ss"));
+
+                            if (myclass.SaveData() && myclass.SaveDate())
+                            {
+                                MessageBox.Show("The class was add successfully");
+                                dateSelected = false;
+                                timeSelected = false;
+                                /*
+                                textBox1.Clear();
+                                textBox2.Clear();
+                                textBox3.Clear();
+                                if (comboBox1.Items.Count > 0)
+                                    comboBox1.SelectedIndex = comboBox1.Items.Count - 1;
+                                if (comboBox2.Items.Count > 0)
+                                    comboBox2.SelectedIndex = comboBox2.Items.Count - 1;
+                                */
+                                return;
+                            }
+                            else
+                            {
+                                //delete the added class
+                                fDelClass mydelete = new fDelClass(int.Parse(textBox1.Text));
+                                mydelete.deleteAll();
+                                MessageBox.Show("Schedule not saved");
+                            }
+                            return;
+                        }
+                    }
+                    else
+                        MessageBox.Show("Error occourd, please try again");
+                }///if(a&b)
+
+                else
+                    if (!dateSelected)
+                        MessageBox.Show("Date for class was not selected");
+                if (!timeSelected)
+                    MessageBox.Show("Time for class was not selected");
+            }//#try
+
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
 
