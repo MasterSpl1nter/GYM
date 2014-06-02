@@ -189,8 +189,8 @@
             // 
             // hScrollBar1
             // 
-            this.hScrollBar1.LargeChange = 50;
             resources.ApplyResources(this.hScrollBar1, "hScrollBar1");
+            this.hScrollBar1.LargeChange = 50;
             this.hScrollBar1.Name = "hScrollBar1";
             this.hScrollBar1.SmallChange = 10;
             this.hScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar1_Scroll);
@@ -337,8 +337,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.tableLayoutPanel1);
             this.groupBox1.Controls.Add(this.hScrollBar1);
+            this.groupBox1.Controls.Add(this.tableLayoutPanel1);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Name = "groupBox1";
@@ -355,6 +355,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
@@ -378,7 +379,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
             this.Name = "fAddClass";
             this.Load += new System.EventHandler(this.fAddClass_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
