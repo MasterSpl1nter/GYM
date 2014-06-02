@@ -41,7 +41,7 @@
             this.enter_button.Margin = new System.Windows.Forms.Padding(4);
             this.enter_button.Name = "enter_button";
             this.enter_button.Size = new System.Drawing.Size(79, 32);
-            this.enter_button.TabIndex = 14;
+            this.enter_button.TabIndex = 2;
             this.enter_button.Text = "Delete";
             this.enter_button.UseVisualStyleBackColor = true;
             this.enter_button.Click += new System.EventHandler(this.enter_button_Click);
@@ -52,7 +52,7 @@
             this.id_comboBox1.Location = new System.Drawing.Point(147, 44);
             this.id_comboBox1.Name = "id_comboBox1";
             this.id_comboBox1.Size = new System.Drawing.Size(171, 21);
-            this.id_comboBox1.TabIndex = 13;
+            this.id_comboBox1.TabIndex = 1;
             // 
             // id_label
             // 

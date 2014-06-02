@@ -41,7 +41,7 @@
             this.button22.Location = new System.Drawing.Point(34, 103);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(158, 26);
-            this.button22.TabIndex = 1;
+            this.button22.TabIndex = 2;
             this.button22.Text = "Edit Class";
             this.button22.UseVisualStyleBackColor = false;
             this.button22.Click += new System.EventHandler(this.button22_Click);
@@ -54,7 +54,7 @@
             this.button1.Location = new System.Drawing.Point(34, 58);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 26);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 1;
             this.button1.Text = "Add Class";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);

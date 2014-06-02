@@ -180,9 +180,9 @@
             this.update_manger_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.update_manger_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.update_manger_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.update_manger_button.Location = new System.Drawing.Point(16, 210);
+            this.update_manger_button.Location = new System.Drawing.Point(43, 210);
             this.update_manger_button.Name = "update_manger_button";
-            this.update_manger_button.Size = new System.Drawing.Size(104, 29);
+            this.update_manger_button.Size = new System.Drawing.Size(74, 29);
             this.update_manger_button.TabIndex = 57;
             this.update_manger_button.Text = "Update";
             this.update_manger_button.UseVisualStyleBackColor = false;
@@ -208,7 +208,7 @@
             this.removeUser.Name = "removeUser";
             this.removeUser.Size = new System.Drawing.Size(73, 29);
             this.removeUser.TabIndex = 61;
-            this.removeUser.Text = "remove";
+            this.removeUser.Text = "Remove";
             this.removeUser.UseVisualStyleBackColor = false;
             this.removeUser.Click += new System.EventHandler(this.removeUser_Click);
             // 

@@ -54,7 +54,7 @@
             this.MangerSalaryPerHour.MaxLength = 9;
             this.MangerSalaryPerHour.Name = "MangerSalaryPerHour";
             this.MangerSalaryPerHour.Size = new System.Drawing.Size(100, 20);
-            this.MangerSalaryPerHour.TabIndex = 37;
+            this.MangerSalaryPerHour.TabIndex = 6;
             // 
             // idLabel
             // 
@@ -93,7 +93,7 @@
             this.AddManagerUser.Location = new System.Drawing.Point(50, 230);
             this.AddManagerUser.Name = "AddManagerUser";
             this.AddManagerUser.Size = new System.Drawing.Size(81, 29);
-            this.AddManagerUser.TabIndex = 40;
+            this.AddManagerUser.TabIndex = 9;
             this.AddManagerUser.Text = "ADD";
             this.AddManagerUser.UseVisualStyleBackColor = false;
             this.AddManagerUser.Click += new System.EventHandler(this.AddManagerUser_Click_1);
@@ -113,7 +113,7 @@
             this.password.MaxLength = 29;
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(100, 20);
-            this.password.TabIndex = 39;
+            this.password.TabIndex = 8;
             // 
             // EmailLabel
             // 
@@ -130,7 +130,7 @@
             this.userName.MaxLength = 29;
             this.userName.Name = "userName";
             this.userName.Size = new System.Drawing.Size(100, 20);
-            this.userName.TabIndex = 38;
+            this.userName.TabIndex = 7;
             // 
             // lastNameLabel
             // 
@@ -147,7 +147,7 @@
             this.managerEmail.MaxLength = 29;
             this.managerEmail.Name = "managerEmail";
             this.managerEmail.Size = new System.Drawing.Size(100, 20);
-            this.managerEmail.TabIndex = 36;
+            this.managerEmail.TabIndex = 5;
             // 
             // firstNameLabel
             // 
@@ -164,7 +164,7 @@
             this.managerLastName.MaxLength = 29;
             this.managerLastName.Name = "managerLastName";
             this.managerLastName.Size = new System.Drawing.Size(100, 20);
-            this.managerLastName.TabIndex = 35;
+            this.managerLastName.TabIndex = 4;
             // 
             // managerId
             // 
@@ -172,7 +172,7 @@
             this.managerId.MaxLength = 9;
             this.managerId.Name = "managerId";
             this.managerId.Size = new System.Drawing.Size(100, 20);
-            this.managerId.TabIndex = 33;
+            this.managerId.TabIndex = 2;
             // 
             // managerFirstName
             // 
@@ -181,7 +181,7 @@
             this.managerFirstName.MaxLength = 29;
             this.managerFirstName.Name = "managerFirstName";
             this.managerFirstName.Size = new System.Drawing.Size(100, 20);
-            this.managerFirstName.TabIndex = 34;
+            this.managerFirstName.TabIndex = 3;
             // 
             // exit_update
             // 
@@ -192,7 +192,7 @@
             this.exit_update.Location = new System.Drawing.Point(137, 230);
             this.exit_update.Name = "exit_update";
             this.exit_update.Size = new System.Drawing.Size(73, 29);
-            this.exit_update.TabIndex = 44;
+            this.exit_update.TabIndex = 10;
             this.exit_update.Text = "Clear";
             this.exit_update.UseVisualStyleBackColor = false;
             this.exit_update.Visible = false;
@@ -210,7 +210,7 @@
             this.DepartmentComboBox.Location = new System.Drawing.Point(82, 21);
             this.DepartmentComboBox.Name = "DepartmentComboBox";
             this.DepartmentComboBox.Size = new System.Drawing.Size(100, 21);
-            this.DepartmentComboBox.TabIndex = 47;
+            this.DepartmentComboBox.TabIndex = 1;
             this.DepartmentComboBox.Visible = false;
             this.DepartmentComboBox.SelectedIndexChanged += new System.EventHandler(this.DepartmentComboBox_SelectedIndexChanged);
             // 

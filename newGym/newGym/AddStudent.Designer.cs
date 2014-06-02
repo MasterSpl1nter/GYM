@@ -170,7 +170,7 @@
             this.birth_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.birth_date.Name = "birth_date";
             this.birth_date.Size = new System.Drawing.Size(130, 19);
-            this.birth_date.TabIndex = 5;
+            this.birth_date.TabIndex = 8;
             // 
             // end_date
             // 
@@ -180,7 +180,7 @@
             this.end_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.end_date.Name = "end_date";
             this.end_date.Size = new System.Drawing.Size(130, 19);
-            this.end_date.TabIndex = 7;
+            this.end_date.TabIndex = 10;
             // 
             // med_cart_date
             // 
@@ -190,7 +190,7 @@
             this.med_cart_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.med_cart_date.Name = "med_cart_date";
             this.med_cart_date.Size = new System.Drawing.Size(130, 19);
-            this.med_cart_date.TabIndex = 8;
+            this.med_cart_date.TabIndex = 11;
             // 
             // start_date
             // 
@@ -200,7 +200,7 @@
             this.start_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.start_date.Name = "start_date";
             this.start_date.Size = new System.Drawing.Size(130, 19);
-            this.start_date.TabIndex = 6;
+            this.start_date.TabIndex = 9;
             // 
             // firstname_box
             // 
@@ -243,7 +243,7 @@
             this.tb_repeatPass.MaxLength = 29;
             this.tb_repeatPass.Name = "tb_repeatPass";
             this.tb_repeatPass.Size = new System.Drawing.Size(145, 19);
-            this.tb_repeatPass.TabIndex = 11;
+            this.tb_repeatPass.TabIndex = 7;
             // 
             // tb_pass
             // 
@@ -253,7 +253,7 @@
             this.tb_pass.MaxLength = 29;
             this.tb_pass.Name = "tb_pass";
             this.tb_pass.Size = new System.Drawing.Size(145, 19);
-            this.tb_pass.TabIndex = 10;
+            this.tb_pass.TabIndex = 6;
             // 
             // tb_username
             // 
@@ -263,7 +263,7 @@
             this.tb_username.MaxLength = 29;
             this.tb_username.Name = "tb_username";
             this.tb_username.Size = new System.Drawing.Size(146, 19);
-            this.tb_username.TabIndex = 9;
+            this.tb_username.TabIndex = 5;
             // 
             // verPassWorod_label
             // 
@@ -307,7 +307,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 33);
-            this.button1.TabIndex = 27;
+            this.button1.TabIndex = 13;
             this.button1.Text = "Clear";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);

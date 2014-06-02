@@ -24,7 +24,7 @@ namespace newGym
             randomGen = new Random();
             names = (KnownColor[])Enum.GetValues(typeof(KnownColor));
             arr = new aboutme[8];
-            string[] coders = { "Guy Gelber", "Matan Ramazker", "Vadim Mar", "Nick Yeshayev", "Arthur", "Itzik Ben Zaken", "Yossi", "Michael Gershberg" };
+            string[] coders = { "Guy Gelber", "Matan Ramazker", "Vadim Mar", "Nick Yeshayev", "Arthur", "Itzik Ben Zaken", "Yossi Elashvili", "Michael Gershberg" };
             for (int i = 0,y=70; i < 8; i++)
             {
                 arr[i] = new aboutme(coders[i],randomGen,y,names);
@@ -58,6 +58,11 @@ namespace newGym
                     arr[i].setSize();
                 }
             }
+        }
+
+        private void About_Load(object sender, EventArgs e)
+        {
+
         }
 
 
