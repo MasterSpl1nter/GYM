@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class About : GForm
+    public partial class About : Form
     {
         KnownColor[] names;
         Random randomGen;
