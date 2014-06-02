@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class RoomAddition : Form
+    public partial class RoomAddition : GForm
     {
         public RoomAddition()
         {

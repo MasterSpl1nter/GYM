@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class fAddClass : Form
+    public partial class fAddClass : GForm
     {
         private TimeSpan starttime;
         private TimeSpan endtime;

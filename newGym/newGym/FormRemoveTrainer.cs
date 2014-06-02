@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace newGym
 {
-    public partial class FormRemoveTrainer : Form
+    public partial class FormRemoveTrainer : GForm
     {
         public FormRemoveTrainer()
         {

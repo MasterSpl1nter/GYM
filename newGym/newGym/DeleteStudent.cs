@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class DeleteStudent : Form
+    public partial class DeleteStudent : GForm
     {
         string id;
         public DeleteStudent()

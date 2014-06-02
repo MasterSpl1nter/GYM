@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 
 namespace newGym
 {
-    public partial class FormEditTrainer : Form
+    public partial class FormEditTrainer : GForm
     {
         public FormEditTrainer()
         {

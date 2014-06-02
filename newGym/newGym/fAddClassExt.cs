@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class faddclassexp : Form
+    public partial class faddclassexp : GForm
     {
         private TimeSpan starttime;
         private TimeSpan endtime;

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class fEditClass : Form
+    public partial class fEditClass : GForm
     {
         private int guideid = -1,count=0;
         private int roomid, classid,capacity;

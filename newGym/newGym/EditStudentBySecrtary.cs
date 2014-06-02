@@ -13,7 +13,7 @@ namespace newGym
 {
     
 
-    public partial class EditStudentBySecrtary : Form
+    public partial class EditStudentBySecrtary : GForm
     {
         int id;
         string firstName;

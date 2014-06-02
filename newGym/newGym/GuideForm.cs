@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class GuideForm : Form
+    public partial class GuideForm : GForm
     {
         private int op;
         private DataTable dt;

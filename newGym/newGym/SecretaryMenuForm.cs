@@ -12,7 +12,7 @@ using MySql.Data.MySqlClient;
 
 namespace newGym
 {
-    public partial class SecretaryMenu : Form
+    public partial class SecretaryMenu : GForm
     {
 
 

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class FormAddTrainer : Form
+    public partial class FormAddTrainer : GForm
     {
         public FormAddTrainer()
         {

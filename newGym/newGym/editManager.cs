@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 
 namespace newGym
 {
-    public partial class editManager : Form
+    public partial class editManager : GForm
     {
         string perm;
         string table;

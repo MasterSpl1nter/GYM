@@ -16,7 +16,7 @@ namespace newGym
 
 
 
-    public partial class View_Applience : Form
+    public partial class View_Applience : GForm
     {
         /*
         private string server;

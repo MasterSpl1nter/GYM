@@ -13,7 +13,7 @@ using MySql.Data.MySqlClient;
 
 namespace newGym
 {
-    public partial class EditSecretary : Form
+    public partial class EditSecretary : GForm
     {
         //string password;
         int perm = 1;

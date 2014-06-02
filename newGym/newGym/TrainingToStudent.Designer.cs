@@ -32,18 +32,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.training2student_betton = new GButton();
+            this.training2student_betton = new newGym.GButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.name_txt = new System.Windows.Forms.TextBox();
-            this.lastname_txt = new System.Windows.Forms.TextBox();
-            this.sets_txt = new System.Windows.Forms.TextBox();
-            this.repeats_txt = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.appliance_txt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.appliance_txt = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.repeats_txt = new System.Windows.Forms.TextBox();
+            this.sets_txt = new System.Windows.Forms.TextBox();
+            this.lastname_txt = new System.Windows.Forms.TextBox();
+            this.name_txt = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,14 +87,18 @@
             // 
             // training2student_betton
             // 
+            this.training2student_betton.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.training2student_betton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.training2student_betton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.training2student_betton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.training2student_betton.ForeColor = System.Drawing.Color.White;
             this.training2student_betton.Image = global::newGym.Properties.Resources._1399410268_add;
             this.training2student_betton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.training2student_betton.Location = new System.Drawing.Point(162, 147);
+            this.training2student_betton.Location = new System.Drawing.Point(187, 157);
             this.training2student_betton.Name = "training2student_betton";
-            this.training2student_betton.Size = new System.Drawing.Size(142, 26);
+            this.training2student_betton.Size = new System.Drawing.Size(96, 26);
             this.training2student_betton.TabIndex = 7;
-            this.training2student_betton.Text = "Add Training to Student";
-            this.training2student_betton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.training2student_betton.Text = " Add";
             this.training2student_betton.UseVisualStyleBackColor = true;
             this.training2student_betton.Click += new System.EventHandler(this.training2student_betton_Click);
             // 
@@ -122,61 +126,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add to Student";
             // 
-            // name_txt
+            // label6
             // 
-            this.name_txt.Location = new System.Drawing.Point(158, 46);
-            this.name_txt.Name = "name_txt";
-            this.name_txt.Size = new System.Drawing.Size(100, 20);
-            this.name_txt.TabIndex = 12;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(159, 70);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 13);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Appliance";
             // 
-            // lastname_txt
+            // appliance_txt
             // 
-            this.lastname_txt.Location = new System.Drawing.Point(265, 45);
-            this.lastname_txt.Name = "lastname_txt";
-            this.lastname_txt.Size = new System.Drawing.Size(100, 20);
-            this.lastname_txt.TabIndex = 13;
-            // 
-            // sets_txt
-            // 
-            this.sets_txt.Location = new System.Drawing.Point(264, 87);
-            this.sets_txt.Name = "sets_txt";
-            this.sets_txt.Size = new System.Drawing.Size(100, 20);
-            this.sets_txt.TabIndex = 14;
-            this.sets_txt.TextChanged += new System.EventHandler(this.sets_txt_TextChanged);
-            // 
-            // repeats_txt
-            // 
-            this.repeats_txt.Location = new System.Drawing.Point(370, 87);
-            this.repeats_txt.Name = "repeats_txt";
-            this.repeats_txt.Size = new System.Drawing.Size(100, 20);
-            this.repeats_txt.TabIndex = 15;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(155, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Name";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(265, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Lastname";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(266, 70);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 13);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Sets";
+            this.appliance_txt.Location = new System.Drawing.Point(158, 86);
+            this.appliance_txt.Name = "appliance_txt";
+            this.appliance_txt.Size = new System.Drawing.Size(100, 20);
+            this.appliance_txt.TabIndex = 21;
             // 
             // label4
             // 
@@ -187,21 +151,61 @@
             this.label4.TabIndex = 20;
             this.label4.Text = "Repeats";
             // 
-            // appliance_txt
+            // label3
             // 
-            this.appliance_txt.Location = new System.Drawing.Point(158, 86);
-            this.appliance_txt.Name = "appliance_txt";
-            this.appliance_txt.Size = new System.Drawing.Size(100, 20);
-            this.appliance_txt.TabIndex = 21;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(266, 70);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(28, 13);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Sets";
             // 
-            // label6
+            // label2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(159, 70);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 13);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Appliance";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(265, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Lastname";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(155, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Name";
+            // 
+            // repeats_txt
+            // 
+            this.repeats_txt.Location = new System.Drawing.Point(370, 87);
+            this.repeats_txt.Name = "repeats_txt";
+            this.repeats_txt.Size = new System.Drawing.Size(100, 20);
+            this.repeats_txt.TabIndex = 15;
+            // 
+            // sets_txt
+            // 
+            this.sets_txt.Location = new System.Drawing.Point(264, 87);
+            this.sets_txt.Name = "sets_txt";
+            this.sets_txt.Size = new System.Drawing.Size(100, 20);
+            this.sets_txt.TabIndex = 14;
+            this.sets_txt.TextChanged += new System.EventHandler(this.sets_txt_TextChanged);
+            // 
+            // lastname_txt
+            // 
+            this.lastname_txt.Location = new System.Drawing.Point(265, 45);
+            this.lastname_txt.Name = "lastname_txt";
+            this.lastname_txt.Size = new System.Drawing.Size(100, 20);
+            this.lastname_txt.TabIndex = 13;
+            // 
+            // name_txt
+            // 
+            this.name_txt.Location = new System.Drawing.Point(158, 46);
+            this.name_txt.Name = "name_txt";
+            this.name_txt.Size = new System.Drawing.Size(100, 20);
+            this.name_txt.TabIndex = 12;
             // 
             // TrainingToStudent
             // 

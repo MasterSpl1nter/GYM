@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class ShiftHandle : Form
+    public partial class ShiftHandle : GForm
     {
         public ShiftHandle()
         {

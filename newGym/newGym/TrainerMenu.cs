@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace newGym
 {
-    public partial class TrainerMenu : Form
+    public partial class TrainerMenu : GForm
     {
         DateTime[] arr;
         DataTable dtmp;

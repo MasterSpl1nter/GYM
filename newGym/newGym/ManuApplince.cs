@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class ManuApplince : Form
+    public partial class ManuApplince : GForm
     {
         public ManuApplince()
         {

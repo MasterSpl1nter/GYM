@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 
 namespace newGym
 {
-    public partial class FormAddTraining : Form
+    public partial class FormAddTraining : GForm
     {
         /*
         MySqlCommandBuilder cmdb1;

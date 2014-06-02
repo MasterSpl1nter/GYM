@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label1 = new newGym.GLabel();
             this.label2 = new newGym.GLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -175,6 +176,7 @@
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(326, 292);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label4);
@@ -187,6 +189,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "Login";
             this.Text = "SweetStar";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

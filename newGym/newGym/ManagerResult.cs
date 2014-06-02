@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Text.RegularExpressions;               
 namespace newGym
 {
-    public partial class ManagerResult : Form
+    public partial class ManagerResult : GForm
     {
         
         public ManagerResult(string value)

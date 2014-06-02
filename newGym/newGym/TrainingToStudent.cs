@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 
 namespace newGym
 {
-    public partial class TrainingToStudent : Form
+    public partial class TrainingToStudent : GForm
     {
         //DataTable dtmp;
         DataTable dt;

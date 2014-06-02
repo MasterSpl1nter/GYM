@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class GuideSearch : Form
+    public partial class GuideSearch : GForm
     {
         DataTable dt;
         int classid;

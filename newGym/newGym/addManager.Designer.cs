@@ -32,7 +32,7 @@
             this.idLabel = new System.Windows.Forms.Label();
             this.salaryPerHourLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
-            this.AddManagerUser = new GButton();
+            this.AddManagerUser = new newGym.GButton();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.password = new System.Windows.Forms.TextBox();
             this.EmailLabel = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@
             this.managerLastName = new System.Windows.Forms.TextBox();
             this.managerId = new System.Windows.Forms.TextBox();
             this.managerFirstName = new System.Windows.Forms.TextBox();
-            this.exit_update = new GButton();
+            this.exit_update = new newGym.GButton();
             this.DepartmentComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -86,11 +86,13 @@
             // 
             // AddManagerUser
             // 
-           // this.AddManagerUser.BackColor = System.Drawing.SystemColors.HotTrack;
-          //  this.AddManagerUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-          //  this.AddManagerUser.FlatStyle = System.Windows.Forms.FlatStyle.System;
-          //  this.AddManagerUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AddManagerUser.Location = new System.Drawing.Point(50, 230);
+            this.AddManagerUser.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.AddManagerUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.AddManagerUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AddManagerUser.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.AddManagerUser.ForeColor = System.Drawing.Color.White;
+            this.AddManagerUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddManagerUser.Location = new System.Drawing.Point(39, 238);
             this.AddManagerUser.Name = "AddManagerUser";
             this.AddManagerUser.Size = new System.Drawing.Size(81, 29);
             this.AddManagerUser.TabIndex = 9;
@@ -185,8 +187,13 @@
             // 
             // exit_update
             // 
-
-            this.exit_update.Location = new System.Drawing.Point(137, 230);
+            this.exit_update.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.exit_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exit_update.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.exit_update.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.exit_update.ForeColor = System.Drawing.Color.White;
+            this.exit_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.exit_update.Location = new System.Drawing.Point(126, 238);
             this.exit_update.Name = "exit_update";
             this.exit_update.Size = new System.Drawing.Size(73, 29);
             this.exit_update.TabIndex = 10;

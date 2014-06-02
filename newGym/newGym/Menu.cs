@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class ManagerMenu : Form
+    public partial class ManagerMenu : GForm
     {
         private int count = 0;
         DateTime[] arr;

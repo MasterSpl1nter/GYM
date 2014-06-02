@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class ClassHandele : Form
+    public partial class ClassHandele : GForm
     {
         public ClassHandele()
         {

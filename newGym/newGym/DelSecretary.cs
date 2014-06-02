@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 
 namespace newGym
 {
-    public partial class DelSecretary : Form
+    public partial class DelSecretary : GForm
     {
         string id;
         public DelSecretary()

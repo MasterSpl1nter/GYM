@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 
 namespace newGym
 {
-    public partial class addManager : Form
+    public partial class addManager : GForm
     {
         //private int opp;
         

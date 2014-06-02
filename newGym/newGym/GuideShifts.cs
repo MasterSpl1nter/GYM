@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class GuideShifts : Form
+    public partial class GuideShifts : GForm
     { 
         DataTable dt;
         public GuideShifts()

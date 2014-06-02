@@ -14,6 +14,7 @@ namespace newGym
         public GForm()
         {
             InitializeComponent();
+            CenterToScreen();
         }
     }
 }

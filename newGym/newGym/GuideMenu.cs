@@ -12,7 +12,7 @@ using System.Collections;
 namespace newGym
 {
 
-    public partial class GuideMenu : Form
+    public partial class GuideMenu : GForm
     {
         private int count = 0;
         List<DateTime> arr;

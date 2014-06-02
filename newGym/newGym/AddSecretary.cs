@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class AddSecretary : Form
+    public partial class AddSecretary : GForm
     {
         int id;
         string firstname;
