@@ -37,7 +37,7 @@
             this.firstname_textBox = new System.Windows.Forms.TextBox();
             this.email_textBox = new System.Windows.Forms.TextBox();
             this.lastname_textBox = new System.Windows.Forms.TextBox();
-            this.enter_button = new System.Windows.Forms.Button();
+            this.enter_button = new GButton();
             this.username_label = new System.Windows.Forms.Label();
             this.password_label = new System.Windows.Forms.Label();
             this.username_textBox = new System.Windows.Forms.TextBox();

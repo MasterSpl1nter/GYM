@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button1 = new GButton();
             this.NUM_cap = new System.Windows.Forms.NumericUpDown();
             this.NUM_area = new System.Windows.Forms.NumericUpDown();
             this.TB_name = new System.Windows.Forms.TextBox();

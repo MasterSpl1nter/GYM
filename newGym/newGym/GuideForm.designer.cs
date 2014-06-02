@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AddGuideButton = new System.Windows.Forms.Button();
+            this.AddGuideButton = new GButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,12 +41,12 @@
             this.passText = new System.Windows.Forms.TextBox();
             this.salaryText = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button2 = new GButton();
             this.label6 = new System.Windows.Forms.Label();
             this.idText = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.DeleteGuideButton = new System.Windows.Forms.Button();
-            this.EditGuideButton = new System.Windows.Forms.Button();
+            this.DeleteGuideButton = new GButton();
+            this.EditGuideButton = new GButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();

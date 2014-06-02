@@ -37,7 +37,7 @@
             this.EditDetail_panel = new System.Windows.Forms.Panel();
             this.password_box = new System.Windows.Forms.TextBox();
             this.password_label = new System.Windows.Forms.Label();
-            this.editDetail_button = new System.Windows.Forms.Button();
+            this.editDetail_button = new GButton();
             this.username_box = new System.Windows.Forms.TextBox();
             this.userName_label = new System.Windows.Forms.Label();
             this.mail_label = new System.Windows.Forms.Label();
@@ -57,10 +57,10 @@
             this.ExercisePannel = new System.Windows.Forms.Panel();
             this.ExerciseDataGrid = new System.Windows.Forms.DataGridView();
             this.gGroupBox1 = new newGym.GGroupBox();
-            this.ExerciseButton = new System.Windows.Forms.Button();
-            this.edit_button = new System.Windows.Forms.Button();
-            this.add_course = new System.Windows.Forms.Button();
-            this.Cancel_course = new System.Windows.Forms.Button();
+            this.ExerciseButton = new GButton();
+            this.edit_button = new GButton();
+            this.add_course = new GButton();
+            this.Cancel_course = new GButton();
             this.AddStudentToClassButton = new newGym.GButton();
             this.RemoveStudentFromClassButton = new newGym.GButton();
             this.addCourse_panel.SuspendLayout();

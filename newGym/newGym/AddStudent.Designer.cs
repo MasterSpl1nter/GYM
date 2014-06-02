@@ -36,7 +36,7 @@
             this.start_date_label = new System.Windows.Forms.Label();
             this.end_date_label = new System.Windows.Forms.Label();
             this.medcart_lable = new System.Windows.Forms.Label();
-            this.enter_button = new System.Windows.Forms.Button();
+            this.enter_button = new GButton();
             this.mail_label = new System.Windows.Forms.Label();
             this.birth_date = new System.Windows.Forms.DateTimePicker();
             this.end_date = new System.Windows.Forms.DateTimePicker();
@@ -51,7 +51,7 @@
             this.verPassWorod_label = new System.Windows.Forms.Label();
             this.passWord_label = new System.Windows.Forms.Label();
             this.userName_label = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button1 = new GButton();
             this.SuspendLayout();
             // 
             // id_box

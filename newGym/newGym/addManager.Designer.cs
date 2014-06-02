@@ -32,7 +32,7 @@
             this.idLabel = new System.Windows.Forms.Label();
             this.salaryPerHourLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
-            this.AddManagerUser = new System.Windows.Forms.Button();
+            this.AddManagerUser = new GButton();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.password = new System.Windows.Forms.TextBox();
             this.EmailLabel = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@
             this.managerLastName = new System.Windows.Forms.TextBox();
             this.managerId = new System.Windows.Forms.TextBox();
             this.managerFirstName = new System.Windows.Forms.TextBox();
-            this.exit_update = new System.Windows.Forms.Button();
+            this.exit_update = new GButton();
             this.DepartmentComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -185,10 +185,7 @@
             // 
             // exit_update
             // 
-            this.exit_update.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.exit_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.exit_update.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.exit_update.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+
             this.exit_update.Location = new System.Drawing.Point(137, 230);
             this.exit_update.Name = "exit_update";
             this.exit_update.Size = new System.Drawing.Size(73, 29);
@@ -226,8 +223,6 @@
             // 
             // addManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(232, 299);
             this.Controls.Add(this.DepartmentComboBox);
             this.Controls.Add(this.label1);

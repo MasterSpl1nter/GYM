@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AddManagerUser = new System.Windows.Forms.Button();
+            this.AddManagerUser = new GButton();
             this.password = new System.Windows.Forms.TextBox();
             this.userName = new System.Windows.Forms.TextBox();
             this.managerEmail = new System.Windows.Forms.TextBox();
@@ -44,20 +44,20 @@
             this.MangerSalaryPerHour = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.addMangerPanel = new System.Windows.Forms.Panel();
-            this.exit_update = new System.Windows.Forms.Button();
-            this.update_manger_button = new System.Windows.Forms.Button();
-            this.deleteManager_mainPanel = new System.Windows.Forms.Button();
-            this.updateManager_mainPanel = new System.Windows.Forms.Button();
-            this.AddManager_mainPanel = new System.Windows.Forms.Button();
+            this.exit_update = new GButton();
+            this.update_manger_button = new GButton();
+            this.deleteManager_mainPanel = new GButton();
+            this.updateManager_mainPanel = new GButton();
+            this.AddManager_mainPanel = new GButton();
             this.ManagerActions = new System.Windows.Forms.Panel();
             this.DeleteManagerPanel = new System.Windows.Forms.Panel();
             this.deleteId = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.deleteManageById = new System.Windows.Forms.Button();
+            this.deleteManageById = new GButton();
             this.updateId_panel = new System.Windows.Forms.Panel();
             this.updateId_textBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.editbyId_button = new System.Windows.Forms.Button();
+            this.editbyId_button = new GButton();
             this.addMangerPanel.SuspendLayout();
             this.ManagerActions.SuspendLayout();
             this.DeleteManagerPanel.SuspendLayout();

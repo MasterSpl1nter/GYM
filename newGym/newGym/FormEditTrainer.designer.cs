@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.edit_button = new System.Windows.Forms.Button();
+            this.edit_button = new GButton();
             this.id = new System.Windows.Forms.Label();
             this.firstname = new System.Windows.Forms.Label();
             this.lastname = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@
             this.username_txt = new System.Windows.Forms.TextBox();
             this.password_txt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.clear_all_button = new System.Windows.Forms.Button();
+            this.clear_all_button = new GButton();
             this.email_verification = new System.Windows.Forms.Label();
             this.salar_txt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();

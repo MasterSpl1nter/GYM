@@ -37,7 +37,7 @@
             this.end_date = new System.Windows.Forms.DateTimePicker();
             this.birth_date = new System.Windows.Forms.DateTimePicker();
             this.mail_label = new System.Windows.Forms.Label();
-            this.enter_button = new System.Windows.Forms.Button();
+            this.enter_button = new GButton();
             this.medcart_lable = new System.Windows.Forms.Label();
             this.end_date_label = new System.Windows.Forms.Label();
             this.start_date_label = new System.Windows.Forms.Label();

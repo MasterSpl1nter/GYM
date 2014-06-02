@@ -30,8 +30,8 @@
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new GButton();
+            this.button2 = new GButton();
             this.SuspendLayout();
             // 
             // comboBox1

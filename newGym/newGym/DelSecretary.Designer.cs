@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.enter_button = new System.Windows.Forms.Button();
+            this.enter_button = new GButton();
             this.id_comboBox1 = new System.Windows.Forms.ComboBox();
             this.id_label = new System.Windows.Forms.Label();
             this.SuspendLayout();

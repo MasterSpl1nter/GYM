@@ -39,7 +39,7 @@
             this.sets = new System.Windows.Forms.Label();
             this.appliance = new System.Windows.Forms.Label();
             this.training_name = new System.Windows.Forms.Label();
-            this.save_button = new System.Windows.Forms.Button();
+            this.save_button = new GButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -53,7 +53,7 @@
             this.delappliance_txt = new System.Windows.Forms.TextBox();
             this.delname_txt = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.remove_button = new System.Windows.Forms.Button();
+            this.remove_button = new GButton();
             this.delid_txt = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();

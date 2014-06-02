@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.search = new System.Windows.Forms.Button();
+            this.search = new GButton();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.helloLabel = new System.Windows.Forms.Label();
@@ -55,11 +55,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.ManagerActions = new System.Windows.Forms.GroupBox();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.classHandleBtn = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.addWorkerBtn = new System.Windows.Forms.Button();
+            this.button26 = new GButton();
+            this.button25 = new GButton();
+            this.classHandleBtn = new GButton();
+            this.button23 = new GButton();
+            this.addWorkerBtn = new GButton();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -333,7 +333,6 @@
             // 
             // ManagerActions
             // 
-            this.ManagerActions.BackColor = System.Drawing.Color.Transparent;
             this.ManagerActions.Controls.Add(this.button26);
             this.ManagerActions.Controls.Add(this.button25);
             this.ManagerActions.Controls.Add(this.classHandleBtn);
@@ -350,8 +349,7 @@
             // 
             // button26
             // 
-            this.button26.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            
             this.button26.Location = new System.Drawing.Point(15, 89);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(158, 24);
@@ -362,8 +360,7 @@
             // 
             // button25
             // 
-            this.button25.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            
             this.button25.Location = new System.Drawing.Point(15, 119);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(158, 24);
@@ -374,9 +371,7 @@
             // 
             // classHandleBtn
             // 
-            this.classHandleBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.classHandleBtn.FlatAppearance.BorderSize = 0;
-            this.classHandleBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            
             this.classHandleBtn.Location = new System.Drawing.Point(15, 152);
             this.classHandleBtn.Name = "classHandleBtn";
             this.classHandleBtn.Size = new System.Drawing.Size(158, 26);
@@ -387,8 +382,7 @@
             // 
             // button23
             // 
-            this.button23.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.System;
+      
             this.button23.Location = new System.Drawing.Point(15, 59);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(158, 24);
@@ -399,9 +393,7 @@
             // 
             // addWorkerBtn
             // 
-            this.addWorkerBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.addWorkerBtn.FlatAppearance.BorderSize = 0;
-            this.addWorkerBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+    
             this.addWorkerBtn.Location = new System.Drawing.Point(15, 28);
             this.addWorkerBtn.Name = "addWorkerBtn";
             this.addWorkerBtn.Size = new System.Drawing.Size(158, 26);

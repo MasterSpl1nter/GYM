@@ -40,8 +40,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.save_butten = new System.Windows.Forms.Button();
-            this.clear_all_button = new System.Windows.Forms.Button();
+            this.save_butten = new GButton();
+            this.clear_all_button = new GButton();
             this.email_verification = new System.Windows.Forms.Label();
             this.lable8 = new System.Windows.Forms.Label();
             this.salar_txt = new System.Windows.Forms.TextBox();

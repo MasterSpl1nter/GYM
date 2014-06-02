@@ -41,7 +41,7 @@
             this.id_textBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.id_comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Edit_button = new System.Windows.Forms.Button();
+            this.Edit_button = new GButton();
             this.password_textBox = new System.Windows.Forms.TextBox();
             this.password_label = new System.Windows.Forms.Label();
             this.SuspendLayout();

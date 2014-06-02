@@ -30,7 +30,7 @@
         {
             this.deleteComboBox = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.deleteManageById = new System.Windows.Forms.Button();
+            this.deleteManageById = new GButton();
             this.SuspendLayout();
             // 
             // deleteComboBox

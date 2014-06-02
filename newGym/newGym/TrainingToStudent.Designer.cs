@@ -32,7 +32,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.training2student_betton = new System.Windows.Forms.Button();
+            this.training2student_betton = new GButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.name_txt = new System.Windows.Forms.TextBox();
             this.lastname_txt = new System.Windows.Forms.TextBox();

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button22 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button22 = new GButton();
+            this.button1 = new GButton();
+            this.button2 = new GButton();
             this.SuspendLayout();
             // 
             // button22

@@ -40,7 +40,7 @@
             this.end_date = new System.Windows.Forms.DateTimePicker();
             this.birth_date = new System.Windows.Forms.DateTimePicker();
             this.mail_label = new System.Windows.Forms.Label();
-            this.add_button = new System.Windows.Forms.Button();
+            this.add_button = new GButton();
             this.medcart_lable = new System.Windows.Forms.Label();
             this.end_date_label = new System.Windows.Forms.Label();
             this.start_date_label = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button1 = new GButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -92,13 +92,13 @@
             this.emailTextbox = new System.Windows.Forms.TextBox();
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.firstNameTextbox = new System.Windows.Forms.TextBox();
-            this.EditStudApply = new System.Windows.Forms.Button();
+            this.EditStudApply = new GButton();
             this.label19 = new System.Windows.Forms.Label();
             this.EditStudentCombobox = new System.Windows.Forms.ComboBox();
             this.WelcomeGroupbox = new System.Windows.Forms.GroupBox();
             this.helloLabel = new System.Windows.Forms.Label();
             this.DeleteStudentPanel = new System.Windows.Forms.Panel();
-            this.DeleteButton = new System.Windows.Forms.Button();
+            this.DeleteButton = new GButton();
             this.choose_id = new System.Windows.Forms.Label();
             this.DeleteStudentCombobox = new System.Windows.Forms.ComboBox();
             this.AddStudentToClassPannel = new System.Windows.Forms.Panel();

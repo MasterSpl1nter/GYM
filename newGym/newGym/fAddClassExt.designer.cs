@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.okbutton = new System.Windows.Forms.Button();
+            this.okbutton = new GButton();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();

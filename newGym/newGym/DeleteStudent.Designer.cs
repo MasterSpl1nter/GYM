@@ -31,7 +31,7 @@
             this.delete_comb = new System.Windows.Forms.ComboBox();
             this.choose_id = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button1 = new GButton();
             this.SuspendLayout();
             // 
             // delete_comb

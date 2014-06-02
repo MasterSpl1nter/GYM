@@ -41,10 +41,10 @@
             this.firstNameLabel = new System.Windows.Forms.Label();
             this.managerLastName = new System.Windows.Forms.TextBox();
             this.managerFirstName = new System.Windows.Forms.TextBox();
-            this.exit_update = new System.Windows.Forms.Button();
-            this.update_manger_button = new System.Windows.Forms.Button();
+            this.exit_update = new GButton();
+            this.update_manger_button = new GButton();
             this.userId = new System.Windows.Forms.Label();
-            this.removeUser = new System.Windows.Forms.Button();
+            this.removeUser = new GButton();
             this.SuspendLayout();
             // 
             // MangerSalaryPerHour
