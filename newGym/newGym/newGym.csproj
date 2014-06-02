@@ -516,6 +516,15 @@
   <ItemGroup>
     <None Include="Resources\Eye16.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bod_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bod_71.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bod_72.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

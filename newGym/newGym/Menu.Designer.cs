@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.search = new GButton();
+            this.search = new newGym.GButton();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.helloLabel = new System.Windows.Forms.Label();
@@ -55,11 +55,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.ManagerActions = new System.Windows.Forms.GroupBox();
-            this.button26 = new GButton();
-            this.button25 = new GButton();
-            this.classHandleBtn = new GButton();
-            this.button23 = new GButton();
-            this.addWorkerBtn = new GButton();
+            this.button26 = new newGym.GButton();
+            this.button25 = new newGym.GButton();
+            this.classHandleBtn = new newGym.GButton();
+            this.button23 = new newGym.GButton();
+            this.addWorkerBtn = new newGym.GButton();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -69,6 +69,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.search);
             this.groupBox2.Controls.Add(this.searchTextBox);
             this.groupBox2.Location = new System.Drawing.Point(218, 15);
@@ -79,6 +80,12 @@
             // 
             // search
             // 
+            this.search.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.search.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.search.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.search.ForeColor = System.Drawing.Color.White;
+            this.search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.search.Location = new System.Drawing.Point(174, 35);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(75, 23);
@@ -333,6 +340,7 @@
             // 
             // ManagerActions
             // 
+            this.ManagerActions.BackColor = System.Drawing.Color.Transparent;
             this.ManagerActions.Controls.Add(this.button26);
             this.ManagerActions.Controls.Add(this.button25);
             this.ManagerActions.Controls.Add(this.classHandleBtn);
@@ -349,7 +357,12 @@
             // 
             // button26
             // 
-            
+            this.button26.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button26.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button26.ForeColor = System.Drawing.Color.White;
+            this.button26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button26.Location = new System.Drawing.Point(15, 89);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(158, 24);
@@ -360,7 +373,12 @@
             // 
             // button25
             // 
-            
+            this.button25.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button25.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button25.ForeColor = System.Drawing.Color.White;
+            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button25.Location = new System.Drawing.Point(15, 119);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(158, 24);
@@ -371,7 +389,12 @@
             // 
             // classHandleBtn
             // 
-            
+            this.classHandleBtn.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.classHandleBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.classHandleBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.classHandleBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.classHandleBtn.ForeColor = System.Drawing.Color.White;
+            this.classHandleBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.classHandleBtn.Location = new System.Drawing.Point(15, 152);
             this.classHandleBtn.Name = "classHandleBtn";
             this.classHandleBtn.Size = new System.Drawing.Size(158, 26);
@@ -382,7 +405,12 @@
             // 
             // button23
             // 
-      
+            this.button23.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button23.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button23.ForeColor = System.Drawing.Color.White;
+            this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button23.Location = new System.Drawing.Point(15, 59);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(158, 24);
@@ -393,7 +421,12 @@
             // 
             // addWorkerBtn
             // 
-    
+            this.addWorkerBtn.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.addWorkerBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.addWorkerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addWorkerBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.addWorkerBtn.ForeColor = System.Drawing.Color.White;
+            this.addWorkerBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addWorkerBtn.Location = new System.Drawing.Point(15, 28);
             this.addWorkerBtn.Name = "addWorkerBtn";
             this.addWorkerBtn.Size = new System.Drawing.Size(158, 26);
