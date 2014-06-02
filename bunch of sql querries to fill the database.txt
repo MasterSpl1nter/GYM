@@ -1,0 +1,107 @@
+INSERT INTO `gym`.`appliance` (`id`, `name`, `manufacturer`, `room`, `adddate`) VALUES ('1', 'For-hand', 'thecno-gym', '1', now());
+INSERT INTO `gym`.`appliance` (`id`, `name`, `manufacturer`, `room`, `adddate`) VALUES ('2', 'Back-hand', 'thecno-gym', '1', now());
+INSERT INTO `gym`.`appliance` (`id`, `name`, `manufacturer`, `room`, `adddate`) VALUES ('3', 'chest-push', 'thecno-gym', '1', now());
+INSERT INTO `gym`.`appliance` (`id`, `name`, `manufacturer`, `room`, `adddate`) VALUES ('4', 'Treadmill', 'thecno-gym', '2', now());
+INSERT INTO `gym`.`appliance` (`id`, `name`, `manufacturer`, `room`, `adddate`) VALUES ('5', 'Bicycle ', 'thecno-gym', '2', now());
+INSERT INTO `gym`.`appliance` (`id`, `name`, `manufacturer`, `room`, `adddate`) VALUES ('6', 'Upper back', 'thecno-gym', '1', now());
+INSERT INTO `gym`.`appliance` (`id`, `name`, `manufacturer`, `room`, `adddate`) VALUES ('7', 'Down back', 'thecno-gym', '1', now());
+INSERT INTO `gym`.`appliance` (`id`, `name`, `manufacturer`, `room`, `adddate`) VALUES ('8', 'Abdominal Workout-1', 'thecno-gym', '1', now());
+INSERT INTO `gym`.`appliance` (`id`, `name`, `manufacturer`, `room`, `adddate`) VALUES ('9', 'Abdominal Workout-2', 'thecno-gym', '1', now());
+INSERT INTO `gym`.`appliance` (`id`, `name`, `manufacturer`, `room`, `adddate`) VALUES ('10', 'Legs Workout-1', 'thecno-gym', '1', now());
+INSERT INTO `gym`.`appliance` (`id`, `name`, `manufacturer`, `room`, `adddate`) VALUES ('11', 'Legs Workout-2', 'thecno-gym', '1', now());
+
+INSERT INTO `gym`.`room` (`id`, `name`, `capacity`, `area`) VALUES ('1', 'Training', '50', '300');
+
+INSERT INTO `gym`.`room` (`id`, `name`, `capacity`, `area`) VALUES ('2', 'Running', '40', '150');
+
+INSERT INTO `gym`.`room` (`id`, `name`, `capacity`, `area`) VALUES ('3', 'spining', '30', '100');
+
+INSERT INTO `gym`.`room` (`id`, `name`, `capacity`, `area`) VALUES ('4', 'Pilatis', '30', '80');
+
+INSERT INTO `gym`.`room` (`id`, `name`, `capacity`, `area`) VALUES ('5', 'Saona', '20', '50');
+
+
+INSERT INTO `gym`.`guide` (`id`, `firstname`, `lastname`, `email`, `username`, `password`, `permission`, `salaryperhour`) VALUES ('321024473', 'nick', 'yshaev', 'nick@gamil.com', 'nick', '123456', '3', '120');
+
+INSERT INTO `gym`.`guide` (`id`, `firstname`, `lastname`, `email`, `username`, `password`, `permission`, `salaryperhour`) VALUES ('201438371', 'itzik', 'ben-zaken', 'itzik@gmail.com', 'itzik', '111111', '3', '200');
+
+INSERT INTO `gym`.`guide` (`id`, `firstname`, `lastname`, `email`, `username`, `password`, `permission`, `salaryperhour`) VALUES ('043445600', 'moshe', 'pakado', 'moshe@gmail.com', 'moshe', '222222', '3', '150');
+
+INSERT INTO `gym`.`manager` (`id`, `firstname`, `lastname`, `email`, `username`, `password`, `permission`, `salaryperhour`) VALUES ('310765052', 'yosi', 'elachvili', 'yosi@gmail.com', 'yosi', '333333', '4', '80');
+
+
+INSERT INTO student(id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert) VALUES (66472937,'yosi','cohen','cohen@gmail.com','cohen','444444',0,'1990-06-14','2014-06-02','2015-12-02','2015-04-16');
+INSERT INTO student(id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert) VALUES (66131426,'moshe','uzan','moshe@gmail.com','moshe','444444',0,'1990-06-14','2014-06-02','2015-12-02','2015-04-16');
+INSERT INTO student(id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert) VALUES (31931835,'roni','tomer','tomer@gmail.com','roni','444444',0,'1990-06-14','2014-06-02','2015-12-02','2015-04-16');
+INSERT INTO student(id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert) VALUES (38777819,'itzik','ysheve','itzik@gmail.com','itzik23','444444',0,'1990-06-14','2014-06-02','2015-12-02','2015-04-16');
+INSERT INTO student(id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert) VALUES (15872872,'nick','ben-zaken','nick@gmail.com','nick1','444444',0,'1990-06-14','2014-06-02','2015-12-02','2015-04-16');
+INSERT INTO student(id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert) VALUES (37080439,'efi','omer','efi@gmail.com','efi123','444444',0,'1990-06-14','2014-06-02','2015-12-02','2015-04-16');
+INSERT INTO student(id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert) VALUES (32437212,'yoval','moshel','yoval@gmail.com','yoval','444444',0,'1990-06-14','2014-06-02','2015-12-02','2015-04-16');
+INSERT INTO student(id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert) VALUES (53396867,'yohai','arfi','yohai@gmail.com','yohai','444444',0,'1990-06-14','2014-06-02','2015-12-02','2015-04-16');
+INSERT INTO student(id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert) VALUES (35898857,'adir','hemo','adir@gmail.com','adir','444444',0,'1990-06-14','2014-06-02','2015-12-02','2015-04-16');
+INSERT INTO student(id,firstname,lastname,email,username,password,permission,birthday,startdate,enddate,medcert) VALUES (40188682,'eliran','elachvili','eliran@gmail.com','eliran','444444',0,'1990-06-14','2014-06-02','2015-12-02','2015-04-16');
+
+INSERT INTO `gym`.`worker` (`id`, `firstname`, `lastname`, `email`, `username`, `password`, `permission`, `salaryperhour`) VALUES ('60632494', 'anna', 'sopov', 'anna@gamil.com', 'anna', '444444', '1', '76');
+
+INSERT INTO `gym`.`worker` (`id`, `firstname`, `lastname`, `email`, `username`, `password`, `permission`, `salaryperhour`) VALUES ('316822733', 'mali', 'liapkin', 'mali@gmail.com', 'mali', '444444', '1', '80');
+
+
+INSERT INTO `gym`.`workingtime` (`id`, `permission`, `starttime`, `endtime`) VALUES ('316822733', '1', '2014-06-04 12:51:36', '2014-06-04 17:51:36' );
+
+INSERT INTO `gym`.`class` (`id`, `name`, `room`, `guideid`, `capacity`, `area`) VALUES ('1', 'pilatis', '3', '321024473', '30', '200');
+
+INSERT INTO `gym`.`class` (`id`, `name`, `room`, `guideid`, `capacity`, `area`) VALUES ('2', 'running', '2', '201438371', '30', '150');
+
+
+INSERT INTO `gym`.`training` (`id`, `name`, `appliance`, `sets`, `repeats`) VALUES ('22', 'run', 'Treadmill', '1', '1');
+
+
+
+
+INSERT INTO `gym`.`studentclass` (`studentid`, `classid`) VALUES ('66472927', '1');
+
+INSERT INTO `gym`.`studentclass` (`studentid`, `classid`) VALUES ('66472927', '2');
+
+
+INSERT INTO `gym`.`classtime` (`classid`, `starttime`, `endtime`) VALUES ('1', '2014-06-04 12:51:36', '2014-06-04 17:51:36');
+
+INSERT INTO `gym`.`classtime` (`classid`, `starttime`, `endtime`) VALUES ('2', '2014-06-14 12:51:36', '2014-06-14 12:56:36');
+
+
+
+INSERT INTO `gym`.`trainer` (`id`, `firstname`, `lastname`, `email`, `username`, `password`, `permission`, `salaryperhour`) VALUES ('300737095', 'odi', 'azran', 'odi@gmail.com', 'odi', '999999', '2', '85');
+
+INSERT INTO `gym`.`trainer` (`id`, `firstname`, `lastname`, `email`, `username`, `password`, `permission`, `salaryperhour`) VALUES ('317178549', 'david', 'yonatan', 'david@gmail.com', 'david', '999999', '2', '85');
+
+INSERT INTO `gym`.`trainer` (`id`, `firstname`, `lastname`, `email`, `username`, `password`, `permission`, `salaryperhour`) VALUES ('324485598', 'kobi', 'haim', 'kobi', 'kobi', '999999', '2', '85');
+
+
+INSERT INTO `gym`.`studentclass` (`studentid`, `classid`) VALUES ('38777819', '2');
+
+INSERT INTO `gym`.`studentclass` (`studentid`, `classid`) VALUES ('37080439', '2');
+
+INSERT INTO `gym`.`studentclass` (`studentid`, `classid`) VALUES ('53396867', '1');
+
+INSERT INTO `gym`.`studentclass` (`studentid`, `classid`) VALUES ('53396867', '2');
+
+INSERT INTO `gym`.`studentclass` (`studentid`, `classid`) VALUES ('35898857', '1');
+
+INSERT INTO `gym`.`studentclass` (`studentid`, `classid`) VALUES ('35898857', '2');
+
+INSERT INTO `gym`.`studenttraining` (`studentid`, `trainingid`) VALUES ('35723196', '22');
+
+INSERT INTO `gym`.`studenttraining` (`studentid`, `trainingid`) VALUES ('66472927', '22');
+
+INSERT INTO `gym`.`studenttraining` (`studentid`, `trainingid`) VALUES ('35723196', '33');
+
+INSERT INTO `gym`.`studenttraining` (`studentid`, `trainingid`) VALUES ('66472927', '33');
+
+INSERT INTO `gym`.`studenttraining` (`studentid`, `trainingid`) VALUES ('66472927', '44');
+
+
+INSERT INTO `gym`.`training` (`id`, `name`, `appliance`, `sets`, `repeats`) VALUES ('22', 'run', '4', '1', '1');
+INSERT INTO `gym`.`training` (`id`, `name`, `appliance`, `sets`, `repeats`) VALUES ('33', 'back', '7', '4', '10');
+INSERT INTO `gym`.`training` (`id`, `name`, `appliance`, `sets`, `repeats`) VALUES ('44', 'back', '8', '4', '10');
+
+
+
