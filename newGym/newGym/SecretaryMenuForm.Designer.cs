@@ -301,7 +301,6 @@
             this.add_button.Name = "add_button";
             this.add_button.Size = new System.Drawing.Size(104, 33);
             this.add_button.TabIndex = 44;
-            this.add_button.Text = "Accept";
             this.add_button.UseVisualStyleBackColor = false;
             this.add_button.Click += new System.EventHandler(this.enter_button_Click);
             // 
