@@ -101,7 +101,7 @@
             this.remove_button.ForeColor = System.Drawing.Color.White;
             this.remove_button.Image = global::newGym.Properties.Resources._1399410901_trash1;
             this.remove_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.remove_button.Location = new System.Drawing.Point(479, 95);
+            this.remove_button.Location = new System.Drawing.Point(479, 97);
             this.remove_button.Name = "remove_button";
             this.remove_button.Size = new System.Drawing.Size(96, 23);
             this.remove_button.TabIndex = 10;
@@ -113,11 +113,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label5.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(475, 52);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 16);
+            this.label5.Size = new System.Drawing.Size(71, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "# of Repeats";
             // 
@@ -125,11 +125,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label4.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(372, 51);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 16);
+            this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "# of Sets";
             // 
@@ -137,11 +137,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label3.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(243, 52);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 16);
+            this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Appliance";
             // 
@@ -149,11 +149,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label2.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(136, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 16);
+            this.label2.Size = new System.Drawing.Size(75, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Training Name";
             // 
@@ -161,11 +161,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(27, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 16);
+            this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "ID";
             // 
@@ -238,11 +238,11 @@
             // 
             this.id_label.AutoSize = true;
             this.id_label.BackColor = System.Drawing.Color.Transparent;
-            this.id_label.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.id_label.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.id_label.ForeColor = System.Drawing.Color.Black;
-            this.id_label.Location = new System.Drawing.Point(30, 11);
+            this.id_label.Location = new System.Drawing.Point(30, 13);
             this.id_label.Name = "id_label";
-            this.id_label.Size = new System.Drawing.Size(20, 16);
+            this.id_label.Size = new System.Drawing.Size(18, 13);
             this.id_label.TabIndex = 5;
             this.id_label.Text = "ID";
             // 
@@ -250,11 +250,11 @@
             // 
             this.repeats.AutoSize = true;
             this.repeats.BackColor = System.Drawing.Color.Transparent;
-            this.repeats.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.repeats.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.repeats.ForeColor = System.Drawing.Color.Black;
             this.repeats.Location = new System.Drawing.Point(479, 13);
             this.repeats.Name = "repeats";
-            this.repeats.Size = new System.Drawing.Size(81, 16);
+            this.repeats.Size = new System.Drawing.Size(71, 13);
             this.repeats.TabIndex = 6;
             this.repeats.Text = "# of Repeats";
             // 
@@ -267,7 +267,7 @@
             this.save_button.ForeColor = System.Drawing.Color.White;
             this.save_button.Image = global::newGym.Properties.Resources._1399410268_add;
             this.save_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.save_button.Location = new System.Drawing.Point(482, 58);
+            this.save_button.Location = new System.Drawing.Point(482, 60);
             this.save_button.Name = "save_button";
             this.save_button.Size = new System.Drawing.Size(96, 23);
             this.save_button.TabIndex = 7;
@@ -297,11 +297,11 @@
             // 
             this.sets.AutoSize = true;
             this.sets.BackColor = System.Drawing.Color.Transparent;
-            this.sets.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.sets.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.sets.ForeColor = System.Drawing.Color.Black;
             this.sets.Location = new System.Drawing.Point(369, 13);
             this.sets.Name = "sets";
-            this.sets.Size = new System.Drawing.Size(60, 16);
+            this.sets.Size = new System.Drawing.Size(52, 13);
             this.sets.TabIndex = 5;
             this.sets.Text = "# of Sets";
             // 
@@ -309,11 +309,11 @@
             // 
             this.appliance.AutoSize = true;
             this.appliance.BackColor = System.Drawing.Color.Transparent;
-            this.appliance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.appliance.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.appliance.ForeColor = System.Drawing.Color.Black;
             this.appliance.Location = new System.Drawing.Point(246, 11);
             this.appliance.Name = "appliance";
-            this.appliance.Size = new System.Drawing.Size(65, 16);
+            this.appliance.Size = new System.Drawing.Size(53, 13);
             this.appliance.TabIndex = 1;
             this.appliance.Text = "Appliance";
             // 
@@ -330,11 +330,11 @@
             // 
             this.training_name.AutoSize = true;
             this.training_name.BackColor = System.Drawing.Color.Transparent;
-            this.training_name.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.training_name.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.training_name.ForeColor = System.Drawing.Color.Black;
             this.training_name.Location = new System.Drawing.Point(139, 13);
             this.training_name.Name = "training_name";
-            this.training_name.Size = new System.Drawing.Size(91, 16);
+            this.training_name.Size = new System.Drawing.Size(75, 13);
             this.training_name.TabIndex = 0;
             this.training_name.Text = "Training Name";
             // 
