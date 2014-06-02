@@ -45,14 +45,13 @@ namespace newGym
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
-            /*
             dtmp = new DataTable();
             dtmp.Clear();
-            dtmp.Columns.Add("id",typeof(int));
-            dtmp.Columns.Add("name",typeof(string));
+            dtmp.Columns.Add("id", typeof(int));
+            dtmp.Columns.Add("name", typeof(string));
             dtmp.Columns.Add("room", typeof(string));
             dtmp.Columns.Add("starttime", typeof(DateTime));
-            dtmp.Columns.Add("endttime", typeof(DateTime));
+            dtmp.Columns.Add("endtime", typeof(DateTime));
             foreach (DataRow dr in dt.Rows)
             {
 
@@ -61,16 +60,17 @@ namespace newGym
                     dtmp.Rows.Add(dr.ItemArray);
                 }
             }
-            if (dtmp.Rows.Count==1){
-            Updateitems(0);
-            hScrollBar1.Visible = false;
+            if (dtmp.Rows.Count == 1)
+            {
+                Updateitems(0);
+                hScrollBar1.Visible = false;
             }
             if (dtmp.Rows.Count > 1)
             {
                 Updateitems(0);
                 hScrollBar1.Visible = true;
             }
-            else if(dtmp.Rows.Count == 0)
+            else if (dtmp.Rows.Count == 0)
             {
                 idLabel.Text = "";
                 nameLabel.Text = "";
@@ -79,19 +79,9 @@ namespace newGym
                 starttimeLabel.Text = "";
                 endtimeLabel.Text = "";
                 tothourLabel.Text = "";
+                paymentLabel.Text = "";
                 hScrollBar1.Visible = false;
             }
-                
-            comboBox1.DataSource = dt;
-            comboBox1.DisplayMember = "id";
-            //idLabel.Text = dt.Rows[i]["id"].ToString();
-            nameLabel.Text = dt.Rows[i]["name"].ToString();
-            //ParticiLabel.Text = dt.Rows[i][].ToString();
-            roomNumLabel.Text = dt.Rows[i]["room"].ToString();
-            starttimeLabel.Text = dt.Rows[i]["starttime"].ToString().Split(' ')[1];
-            endtimeLabel.Text = dt.Rows[i]["endtime"].ToString().Split(' ')[1];
-            tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dt.Rows[i]["endtime"]) - Convert.ToDateTime(dt.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
-   //   */
         }
 
         private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
