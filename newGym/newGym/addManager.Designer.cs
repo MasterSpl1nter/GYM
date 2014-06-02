@@ -86,10 +86,10 @@
             // 
             // AddManagerUser
             // 
-            this.AddManagerUser.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.AddManagerUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.AddManagerUser.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.AddManagerUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+           // this.AddManagerUser.BackColor = System.Drawing.SystemColors.HotTrack;
+          //  this.AddManagerUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+          //  this.AddManagerUser.FlatStyle = System.Windows.Forms.FlatStyle.System;
+          //  this.AddManagerUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AddManagerUser.Location = new System.Drawing.Point(50, 230);
             this.AddManagerUser.Name = "AddManagerUser";
             this.AddManagerUser.Size = new System.Drawing.Size(81, 29);

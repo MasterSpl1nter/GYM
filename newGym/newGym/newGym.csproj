@@ -277,12 +277,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManagerMenutemp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManagerMenutemp.Designer.cs">
-      <DependentUpon>ManagerMenutemp.cs</DependentUpon>
-    </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="ManuApplince.cs">
       <SubType>Form</SubType>
@@ -435,9 +429,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ManagerMenutemp.resx">
-      <DependentUpon>ManagerMenutemp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManuApplince.resx">
       <DependentUpon>ManuApplince.cs</DependentUpon>

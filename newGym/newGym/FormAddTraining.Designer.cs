@@ -36,13 +36,15 @@
             this.id_label = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.repeats = new System.Windows.Forms.Label();
+            this.save_button = new newGym.GButton();
             this.sets = new System.Windows.Forms.Label();
             this.appliance = new System.Windows.Forms.Label();
             this.training_name = new System.Windows.Forms.Label();
-            this.save_button = new GButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.delid_txt = new System.Windows.Forms.TextBox();
+            this.remove_button = new newGym.GButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,8 +55,6 @@
             this.delappliance_txt = new System.Windows.Forms.TextBox();
             this.delname_txt = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.remove_button = new GButton();
-            this.delid_txt = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -145,6 +145,23 @@
             this.repeats.TabIndex = 6;
             this.repeats.Text = "# of Repeats";
             // 
+            // save_button
+            // 
+            this.save_button.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.save_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.save_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.save_button.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.save_button.ForeColor = System.Drawing.Color.White;
+            this.save_button.Image = global::newGym.Properties.Resources._1399410268_add;
+            this.save_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.save_button.Location = new System.Drawing.Point(482, 58);
+            this.save_button.Name = "save_button";
+            this.save_button.Size = new System.Drawing.Size(96, 23);
+            this.save_button.TabIndex = 7;
+            this.save_button.Text = "  Save";
+            this.save_button.UseVisualStyleBackColor = true;
+            this.save_button.Click += new System.EventHandler(this.save_button_Click);
+            // 
             // sets
             // 
             this.sets.AutoSize = true;
@@ -171,18 +188,6 @@
             this.training_name.Size = new System.Drawing.Size(76, 13);
             this.training_name.TabIndex = 0;
             this.training_name.Text = "Training Name";
-            // 
-            // save_button
-            // 
-            this.save_button.Image = global::newGym.Properties.Resources._1399410268_add;
-            this.save_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.save_button.Location = new System.Drawing.Point(482, 58);
-            this.save_button.Name = "save_button";
-            this.save_button.Size = new System.Drawing.Size(96, 23);
-            this.save_button.TabIndex = 7;
-            this.save_button.Text = "Save";
-            this.save_button.UseVisualStyleBackColor = true;
-            this.save_button.Click += new System.EventHandler(this.save_button_Click);
             // 
             // groupBox2
             // 
@@ -224,6 +229,30 @@
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Remove Part of Workout";
+            // 
+            // delid_txt
+            // 
+            this.delid_txt.Location = new System.Drawing.Point(30, 70);
+            this.delid_txt.Name = "delid_txt";
+            this.delid_txt.Size = new System.Drawing.Size(100, 20);
+            this.delid_txt.TabIndex = 12;
+            // 
+            // remove_button
+            // 
+            this.remove_button.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.remove_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.remove_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.remove_button.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.remove_button.ForeColor = System.Drawing.Color.White;
+            this.remove_button.Image = global::newGym.Properties.Resources._1399410901_trash1;
+            this.remove_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.remove_button.Location = new System.Drawing.Point(479, 95);
+            this.remove_button.Name = "remove_button";
+            this.remove_button.Size = new System.Drawing.Size(96, 23);
+            this.remove_button.TabIndex = 10;
+            this.remove_button.Text = "  Remove";
+            this.remove_button.UseVisualStyleBackColor = true;
+            this.remove_button.Click += new System.EventHandler(this.remove_button_Click);
             // 
             // label5
             // 
@@ -311,25 +340,6 @@
             this.comboBox2.Size = new System.Drawing.Size(100, 21);
             this.comboBox2.TabIndex = 0;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
-            // remove_button
-            // 
-            this.remove_button.Image = global::newGym.Properties.Resources._1399410901_trash1;
-            this.remove_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.remove_button.Location = new System.Drawing.Point(479, 95);
-            this.remove_button.Name = "remove_button";
-            this.remove_button.Size = new System.Drawing.Size(96, 23);
-            this.remove_button.TabIndex = 10;
-            this.remove_button.Text = "Remove";
-            this.remove_button.UseVisualStyleBackColor = true;
-            this.remove_button.Click += new System.EventHandler(this.remove_button_Click);
-            // 
-            // delid_txt
-            // 
-            this.delid_txt.Location = new System.Drawing.Point(30, 70);
-            this.delid_txt.Name = "delid_txt";
-            this.delid_txt.Size = new System.Drawing.Size(100, 20);
-            this.delid_txt.TabIndex = 12;
             // 
             // FormAddTraining
             // 

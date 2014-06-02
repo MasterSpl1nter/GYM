@@ -42,16 +42,16 @@
             this.StudSearch = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new GButton();
+            this.button1 = new newGym.GButton();
             this.label6 = new System.Windows.Forms.Label();
             this.loggedLabel = new System.Windows.Forms.Label();
             this.informationBox = new System.Windows.Forms.GroupBox();
             this.dateLabel = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.actionsBox = new System.Windows.Forms.GroupBox();
-            this.training_to_student_button = new GButton();
-            this.viewbutton = new GButton();
-            this.addtraining_button = new GButton();
+            this.training_to_student_button = new newGym.GButton();
+            this.viewbutton = new newGym.GButton();
+            this.addtraining_button = new newGym.GButton();
             this.scheduleBox.SuspendLayout();
             this.searchBox.SuspendLayout();
             this.informationBox.SuspendLayout();
@@ -188,6 +188,12 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(195, 81);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 34);
@@ -252,40 +258,54 @@
             // 
             // training_to_student_button
             // 
+            this.training_to_student_button.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.training_to_student_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.training_to_student_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.training_to_student_button.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.training_to_student_button.ForeColor = System.Drawing.Color.White;
             this.training_to_student_button.Image = global::newGym.Properties.Resources._1399410268_add;
             this.training_to_student_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.training_to_student_button.Location = new System.Drawing.Point(23, 79);
+            this.training_to_student_button.Location = new System.Drawing.Point(23, 83);
             this.training_to_student_button.Name = "training_to_student_button";
-            this.training_to_student_button.Size = new System.Drawing.Size(106, 35);
+            this.training_to_student_button.Size = new System.Drawing.Size(106, 23);
             this.training_to_student_button.TabIndex = 2;
-            this.training_to_student_button.Text = "Add Training to Student";
-            this.training_to_student_button.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.training_to_student_button.Text = "Student training";
+            this.training_to_student_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.training_to_student_button.UseVisualStyleBackColor = true;
             this.training_to_student_button.Click += new System.EventHandler(this.training_to_student_button_Click);
             // 
             // viewbutton
             // 
+            this.viewbutton.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.viewbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.viewbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.viewbutton.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.viewbutton.ForeColor = System.Drawing.Color.White;
             this.viewbutton.Image = global::newGym.Properties.Resources._1399410141_folder_search;
             this.viewbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.viewbutton.Location = new System.Drawing.Point(23, 21);
+            this.viewbutton.Location = new System.Drawing.Point(23, 25);
             this.viewbutton.Name = "viewbutton";
             this.viewbutton.Size = new System.Drawing.Size(106, 23);
             this.viewbutton.TabIndex = 0;
-            this.viewbutton.Text = "View Applience";
+            this.viewbutton.Text = "View Appliance";
             this.viewbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.viewbutton.UseVisualStyleBackColor = true;
             this.viewbutton.Click += new System.EventHandler(this.viewbutton_Click);
             // 
             // addtraining_button
             // 
+            this.addtraining_button.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.addtraining_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.addtraining_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addtraining_button.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.addtraining_button.ForeColor = System.Drawing.Color.White;
             this.addtraining_button.Image = global::newGym.Properties.Resources._1399410268_add;
             this.addtraining_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addtraining_button.Location = new System.Drawing.Point(23, 50);
+            this.addtraining_button.Location = new System.Drawing.Point(23, 54);
             this.addtraining_button.Name = "addtraining_button";
             this.addtraining_button.Size = new System.Drawing.Size(106, 23);
             this.addtraining_button.TabIndex = 1;
             this.addtraining_button.Text = "Add Training";
-            this.addtraining_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.addtraining_button.UseVisualStyleBackColor = true;
             this.addtraining_button.Click += new System.EventHandler(this.addtraining_button_Click);
             // 
@@ -324,7 +344,7 @@
         private System.Windows.Forms.TextBox StudSearch;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private GButton button1;
         private System.Windows.Forms.RadioButton radioName;
         private System.Windows.Forms.RadioButton radioID;
         private System.Windows.Forms.Label label6;
@@ -333,8 +353,8 @@
         private System.Windows.Forms.Label dateLabel;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.GroupBox actionsBox;
-        private System.Windows.Forms.Button viewbutton;
-        private System.Windows.Forms.Button addtraining_button;
-        private System.Windows.Forms.Button training_to_student_button;
+        private GButton viewbutton;
+        private GButton addtraining_button;
+        private GButton training_to_student_button;
     }
 }

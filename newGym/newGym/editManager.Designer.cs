@@ -162,10 +162,10 @@
             // 
             // exit_update
             // 
-            this.exit_update.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.exit_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.exit_update.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.exit_update.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+           // this.exit_update.BackColor = System.Drawing.SystemColors.HotTrack;
+            //this.exit_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+           // this.exit_update.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            //this.exit_update.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.exit_update.Location = new System.Drawing.Point(199, 210);
             this.exit_update.Name = "exit_update";
             this.exit_update.Size = new System.Drawing.Size(73, 29);
@@ -176,10 +176,10 @@
             // 
             // update_manger_button
             // 
-            this.update_manger_button.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.update_manger_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.update_manger_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.update_manger_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            //this.update_manger_button.BackColor = System.Drawing.SystemColors.HotTrack;
+           // this.update_manger_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+           // this.update_manger_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
+          //  this.update_manger_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.update_manger_button.Location = new System.Drawing.Point(43, 210);
             this.update_manger_button.Name = "update_manger_button";
             this.update_manger_button.Size = new System.Drawing.Size(74, 29);
@@ -200,10 +200,10 @@
             // 
             // removeUser
             // 
-            this.removeUser.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.removeUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.removeUser.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.removeUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            //this.removeUser.BackColor = System.Drawing.SystemColors.HotTrack;
+            //this.removeUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+           // this.removeUser.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            //this.removeUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.removeUser.Location = new System.Drawing.Point(123, 210);
             this.removeUser.Name = "removeUser";
             this.removeUser.Size = new System.Drawing.Size(73, 29);

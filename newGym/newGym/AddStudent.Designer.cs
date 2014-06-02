@@ -139,10 +139,10 @@
             // 
             // enter_button
             // 
-            this.enter_button.BackColor = System.Drawing.SystemColors.Highlight;
-            this.enter_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.enter_button.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.enter_button.ForeColor = System.Drawing.Color.Navy;
+           // this.enter_button.BackColor = System.Drawing.SystemColors.Highlight;
+         //   this.enter_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
+         //   this.enter_button.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+          //  this.enter_button.ForeColor = System.Drawing.Color.Navy;
             this.enter_button.Location = new System.Drawing.Point(118, 382);
             this.enter_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.enter_button.Name = "enter_button";
@@ -299,10 +299,10 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Navy;
+            //this.button1.BackColor = System.Drawing.SystemColors.Highlight;
+           // this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+          ///  this.button1.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //this.button1.ForeColor = System.Drawing.Color.Navy;
             this.button1.Location = new System.Drawing.Point(206, 382);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";

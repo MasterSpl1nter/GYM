@@ -37,7 +37,7 @@
             this.end_date = new System.Windows.Forms.DateTimePicker();
             this.birth_date = new System.Windows.Forms.DateTimePicker();
             this.mail_label = new System.Windows.Forms.Label();
-            this.enter_button = new GButton();
+            this.enter_button = new newGym.GButton();
             this.medcart_lable = new System.Windows.Forms.Label();
             this.end_date_label = new System.Windows.Forms.Label();
             this.start_date_label = new System.Windows.Forms.Label();
@@ -54,9 +54,10 @@
             // student_search
             // 
             this.student_search.FormattingEnabled = true;
-            this.student_search.Location = new System.Drawing.Point(218, 36);
+            this.student_search.Location = new System.Drawing.Point(164, 29);
+            this.student_search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.student_search.Name = "student_search";
-            this.student_search.Size = new System.Drawing.Size(176, 24);
+            this.student_search.Size = new System.Drawing.Size(133, 21);
             this.student_search.TabIndex = 0;
             this.student_search.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -64,9 +65,10 @@
             // 
             this.edit_by_id.AutoSize = true;
             this.edit_by_id.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.edit_by_id.Location = new System.Drawing.Point(107, 35);
+            this.edit_by_id.Location = new System.Drawing.Point(80, 28);
+            this.edit_by_id.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.edit_by_id.Name = "edit_by_id";
-            this.edit_by_id.Size = new System.Drawing.Size(100, 22);
+            this.edit_by_id.Size = new System.Drawing.Size(79, 19);
             this.edit_by_id.TabIndex = 1;
             this.edit_by_id.Text = "Choose ID:";
             this.edit_by_id.Click += new System.EventHandler(this.edit_by_id_Click);
@@ -74,19 +76,20 @@
             // tb_username
             // 
             this.tb_username.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_username.Location = new System.Drawing.Point(216, 244);
-            this.tb_username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_username.Location = new System.Drawing.Point(162, 198);
+            this.tb_username.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_username.Name = "tb_username";
-            this.tb_username.Size = new System.Drawing.Size(178, 26);
+            this.tb_username.Size = new System.Drawing.Size(134, 22);
             this.tb_username.TabIndex = 39;
             // 
             // userName_label
             // 
             this.userName_label.AutoSize = true;
             this.userName_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userName_label.Location = new System.Drawing.Point(128, 244);
+            this.userName_label.Location = new System.Drawing.Point(96, 198);
+            this.userName_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.userName_label.Name = "userName_label";
-            this.userName_label.Size = new System.Drawing.Size(85, 18);
+            this.userName_label.Size = new System.Drawing.Size(69, 14);
             this.userName_label.TabIndex = 47;
             this.userName_label.Text = "User name:";
             // 
@@ -94,63 +97,67 @@
             // 
             this.start_date.CalendarFont = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.start_date.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.start_date.Location = new System.Drawing.Point(216, 336);
-            this.start_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.start_date.Location = new System.Drawing.Point(162, 273);
+            this.start_date.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.start_date.Name = "start_date";
-            this.start_date.Size = new System.Drawing.Size(219, 26);
+            this.start_date.Size = new System.Drawing.Size(165, 22);
             this.start_date.TabIndex = 35;
             // 
             // med_cart_date
             // 
             this.med_cart_date.CalendarFont = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.med_cart_date.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.med_cart_date.Location = new System.Drawing.Point(218, 423);
-            this.med_cart_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.med_cart_date.Location = new System.Drawing.Point(164, 344);
+            this.med_cart_date.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.med_cart_date.Name = "med_cart_date";
-            this.med_cart_date.Size = new System.Drawing.Size(217, 26);
+            this.med_cart_date.Size = new System.Drawing.Size(164, 22);
             this.med_cart_date.TabIndex = 37;
             // 
             // end_date
             // 
             this.end_date.CalendarFont = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.end_date.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.end_date.Location = new System.Drawing.Point(218, 377);
-            this.end_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.end_date.Location = new System.Drawing.Point(164, 306);
+            this.end_date.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.end_date.Name = "end_date";
-            this.end_date.Size = new System.Drawing.Size(217, 26);
+            this.end_date.Size = new System.Drawing.Size(164, 22);
             this.end_date.TabIndex = 36;
             // 
             // birth_date
             // 
             this.birth_date.CalendarFont = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.birth_date.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.birth_date.Location = new System.Drawing.Point(218, 296);
-            this.birth_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.birth_date.Location = new System.Drawing.Point(164, 240);
+            this.birth_date.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.birth_date.Name = "birth_date";
-            this.birth_date.Size = new System.Drawing.Size(217, 26);
+            this.birth_date.Size = new System.Drawing.Size(164, 22);
             this.birth_date.TabIndex = 33;
             // 
             // mail_label
             // 
             this.mail_label.AutoSize = true;
             this.mail_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mail_label.Location = new System.Drawing.Point(165, 200);
+            this.mail_label.Location = new System.Drawing.Point(124, 162);
+            this.mail_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mail_label.Name = "mail_label";
-            this.mail_label.Size = new System.Drawing.Size(46, 18);
+            this.mail_label.Size = new System.Drawing.Size(38, 14);
             this.mail_label.TabIndex = 46;
             this.mail_label.Text = "Email:";
             // 
             // enter_button
             // 
             this.enter_button.BackColor = System.Drawing.SystemColors.Highlight;
-            this.enter_button.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.enter_button.ForeColor = System.Drawing.Color.Navy;
-            this.enter_button.Location = new System.Drawing.Point(240, 492);
-            this.enter_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.enter_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.enter_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.enter_button.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enter_button.ForeColor = System.Drawing.Color.AliceBlue;
+            this.enter_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.enter_button.Location = new System.Drawing.Point(180, 400);
+            this.enter_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.enter_button.Name = "enter_button";
-            this.enter_button.Size = new System.Drawing.Size(154, 33);
+            this.enter_button.Size = new System.Drawing.Size(116, 27);
             this.enter_button.TabIndex = 44;
-            this.enter_button.Text = "edit";
+            this.enter_button.Text = "Edit";
             this.enter_button.UseVisualStyleBackColor = false;
             this.enter_button.Click += new System.EventHandler(this.enter_button_Click);
             // 
@@ -158,9 +165,10 @@
             // 
             this.medcart_lable.AutoSize = true;
             this.medcart_lable.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medcart_lable.Location = new System.Drawing.Point(46, 429);
+            this.medcart_lable.Location = new System.Drawing.Point(34, 349);
+            this.medcart_lable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.medcart_lable.Name = "medcart_lable";
-            this.medcart_lable.Size = new System.Drawing.Size(161, 18);
+            this.medcart_lable.Size = new System.Drawing.Size(136, 14);
             this.medcart_lable.TabIndex = 45;
             this.medcart_lable.Text = "valid medical certificate:";
             // 
@@ -169,9 +177,10 @@
             this.end_date_label.AutoSize = true;
             this.end_date_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.end_date_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.end_date_label.Location = new System.Drawing.Point(112, 383);
+            this.end_date_label.Location = new System.Drawing.Point(84, 311);
+            this.end_date_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.end_date_label.Name = "end_date_label";
-            this.end_date_label.Size = new System.Drawing.Size(95, 18);
+            this.end_date_label.Size = new System.Drawing.Size(82, 14);
             this.end_date_label.TabIndex = 42;
             this.end_date_label.Text = "End contract:";
             // 
@@ -179,9 +188,10 @@
             // 
             this.start_date_label.AutoSize = true;
             this.start_date_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.start_date_label.Location = new System.Drawing.Point(103, 336);
+            this.start_date_label.Location = new System.Drawing.Point(77, 273);
+            this.start_date_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.start_date_label.Name = "start_date_label";
-            this.start_date_label.Size = new System.Drawing.Size(104, 18);
+            this.start_date_label.Size = new System.Drawing.Size(89, 14);
             this.start_date_label.TabIndex = 40;
             this.start_date_label.Text = "Start Contract:";
             // 
@@ -189,9 +199,10 @@
             // 
             this.birth_label.AutoSize = true;
             this.birth_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.birth_label.Location = new System.Drawing.Point(131, 296);
+            this.birth_label.Location = new System.Drawing.Point(98, 240);
+            this.birth_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.birth_label.Name = "birth_label";
-            this.birth_label.Size = new System.Drawing.Size(76, 18);
+            this.birth_label.Size = new System.Drawing.Size(65, 14);
             this.birth_label.TabIndex = 38;
             this.birth_label.Text = "Birth date:";
             // 
@@ -199,9 +210,10 @@
             // 
             this.lastName_label.AutoSize = true;
             this.lastName_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastName_label.Location = new System.Drawing.Point(125, 155);
+            this.lastName_label.Location = new System.Drawing.Point(94, 126);
+            this.lastName_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lastName_label.Name = "lastName_label";
-            this.lastName_label.Size = new System.Drawing.Size(82, 18);
+            this.lastName_label.Size = new System.Drawing.Size(67, 14);
             this.lastName_label.TabIndex = 34;
             this.lastName_label.Text = "Last name:";
             // 
@@ -209,9 +221,10 @@
             // 
             this.firstName_label.AutoSize = true;
             this.firstName_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstName_label.Location = new System.Drawing.Point(123, 119);
+            this.firstName_label.Location = new System.Drawing.Point(92, 97);
+            this.firstName_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.firstName_label.Name = "firstName_label";
-            this.firstName_label.Size = new System.Drawing.Size(84, 18);
+            this.firstName_label.Size = new System.Drawing.Size(68, 14);
             this.firstName_label.TabIndex = 31;
             this.firstName_label.Text = "First Name:";
             // 
@@ -219,59 +232,60 @@
             // 
             this.id_label.AutoSize = true;
             this.id_label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id_label.Location = new System.Drawing.Point(178, 84);
+            this.id_label.Location = new System.Drawing.Point(134, 68);
+            this.id_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.id_label.Name = "id_label";
-            this.id_label.Size = new System.Drawing.Size(29, 18);
+            this.id_label.Size = new System.Drawing.Size(23, 14);
             this.id_label.TabIndex = 28;
             this.id_label.Text = "ID:";
             // 
             // email_box
             // 
             this.email_box.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email_box.Location = new System.Drawing.Point(218, 192);
-            this.email_box.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.email_box.Location = new System.Drawing.Point(164, 156);
+            this.email_box.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.email_box.Multiline = true;
             this.email_box.Name = "email_box";
-            this.email_box.Size = new System.Drawing.Size(176, 28);
+            this.email_box.Size = new System.Drawing.Size(133, 24);
             this.email_box.TabIndex = 32;
             // 
             // lastname_box
             // 
             this.lastname_box.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastname_box.Location = new System.Drawing.Point(218, 145);
-            this.lastname_box.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lastname_box.Location = new System.Drawing.Point(164, 118);
+            this.lastname_box.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.lastname_box.Multiline = true;
             this.lastname_box.Name = "lastname_box";
-            this.lastname_box.Size = new System.Drawing.Size(176, 28);
+            this.lastname_box.Size = new System.Drawing.Size(133, 24);
             this.lastname_box.TabIndex = 30;
             // 
             // firstname_box
             // 
             this.firstname_box.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstname_box.Location = new System.Drawing.Point(218, 110);
-            this.firstname_box.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.firstname_box.Location = new System.Drawing.Point(164, 89);
+            this.firstname_box.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.firstname_box.Multiline = true;
             this.firstname_box.Name = "firstname_box";
-            this.firstname_box.Size = new System.Drawing.Size(176, 27);
+            this.firstname_box.Size = new System.Drawing.Size(133, 23);
             this.firstname_box.TabIndex = 29;
             // 
             // id_box
             // 
             this.id_box.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id_box.Location = new System.Drawing.Point(218, 76);
-            this.id_box.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.id_box.Location = new System.Drawing.Point(164, 62);
+            this.id_box.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.id_box.MaxLength = 9;
             this.id_box.Multiline = true;
             this.id_box.Name = "id_box";
-            this.id_box.Size = new System.Drawing.Size(176, 26);
+            this.id_box.Size = new System.Drawing.Size(133, 22);
             this.id_box.TabIndex = 27;
             this.id_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.id_box_KeyPress);
             // 
             // EditStudentBySecrtary
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 561);
+            this.ClientSize = new System.Drawing.Size(450, 456);
             this.Controls.Add(this.tb_username);
             this.Controls.Add(this.userName_label);
             this.Controls.Add(this.start_date);
@@ -293,6 +307,7 @@
             this.Controls.Add(this.id_box);
             this.Controls.Add(this.edit_by_id);
             this.Controls.Add(this.student_search);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EditStudentBySecrtary";
             this.Text = "EditStudentBySecrtary";
             this.Load += new System.EventHandler(this.EditStudentBySecrtary_Load);
