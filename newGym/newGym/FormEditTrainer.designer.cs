@@ -30,23 +30,23 @@
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.edit_button = new GButton();
-            this.id = new System.Windows.Forms.Label();
-            this.firstname = new System.Windows.Forms.Label();
-            this.lastname = new System.Windows.Forms.Label();
-            this.email = new System.Windows.Forms.Label();
-            this.username = new System.Windows.Forms.Label();
-            this.pasword = new System.Windows.Forms.Label();
+            this.id = new GLabel();
+            this.firstname = new GLabel();
+            this.lastname = new GLabel();
+            this.email = new GLabel();
+            this.username = new GLabel();
+            this.pasword = new GLabel();
             this.id_txt = new System.Windows.Forms.TextBox();
             this.firstname_txt = new System.Windows.Forms.TextBox();
             this.lastname_txt = new System.Windows.Forms.TextBox();
             this.email_txt = new System.Windows.Forms.TextBox();
             this.username_txt = new System.Windows.Forms.TextBox();
             this.password_txt = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label1 = new GLabel();
             this.clear_all_button = new GButton();
-            this.email_verification = new System.Windows.Forms.Label();
+            this.email_verification = new GLabel();
             this.salar_txt = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label2 = new GLabel();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -244,23 +244,23 @@
 
         private System.Windows.Forms.ComboBox comboBox1;
         private GButton edit_button;
-        private System.Windows.Forms.Label id;
-        private System.Windows.Forms.Label firstname;
-        private System.Windows.Forms.Label lastname;
-        private System.Windows.Forms.Label email;
-        private System.Windows.Forms.Label username;
-        private System.Windows.Forms.Label pasword;
+        private GLabel id;
+        private GLabel firstname;
+        private GLabel lastname;
+        private GLabel email;
+        private GLabel username;
+        private GLabel pasword;
         private System.Windows.Forms.TextBox id_txt;
         private System.Windows.Forms.TextBox firstname_txt;
         private System.Windows.Forms.TextBox lastname_txt;
         private System.Windows.Forms.TextBox email_txt;
         private System.Windows.Forms.TextBox username_txt;
         private System.Windows.Forms.TextBox password_txt;
-        private System.Windows.Forms.Label label1;
+        private GLabel label1;
         private GButton clear_all_button;
-        private System.Windows.Forms.Label email_verification;
+        private GLabel email_verification;
         private System.Windows.Forms.TextBox salar_txt;
-        private System.Windows.Forms.Label label2;
+        private GLabel label2;
 
     }
 }

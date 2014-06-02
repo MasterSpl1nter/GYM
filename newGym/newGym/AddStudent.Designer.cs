@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.id_box = new System.Windows.Forms.TextBox();
-            this.id_label = new System.Windows.Forms.Label();
-            this.firstName_label = new System.Windows.Forms.Label();
-            this.lastName_label = new System.Windows.Forms.Label();
-            this.birth_label = new System.Windows.Forms.Label();
-            this.start_date_label = new System.Windows.Forms.Label();
-            this.end_date_label = new System.Windows.Forms.Label();
-            this.medcart_lable = new System.Windows.Forms.Label();
+            this.id_label = new GLabel();
+            this.firstName_label = new GLabel();
+            this.lastName_label = new GLabel();
+            this.birth_label = new GLabel();
+            this.start_date_label = new GLabel();
+            this.end_date_label = new GLabel();
+            this.medcart_lable = new GLabel();
             this.enter_button = new GButton();
-            this.mail_label = new System.Windows.Forms.Label();
+            this.mail_label = new GLabel();
             this.birth_date = new System.Windows.Forms.DateTimePicker();
             this.end_date = new System.Windows.Forms.DateTimePicker();
             this.med_cart_date = new System.Windows.Forms.DateTimePicker();
@@ -48,9 +48,9 @@
             this.tb_repeatPass = new System.Windows.Forms.TextBox();
             this.tb_pass = new System.Windows.Forms.TextBox();
             this.tb_username = new System.Windows.Forms.TextBox();
-            this.verPassWorod_label = new System.Windows.Forms.Label();
-            this.passWord_label = new System.Windows.Forms.Label();
-            this.userName_label = new System.Windows.Forms.Label();
+            this.verPassWorod_label = new GLabel();
+            this.passWord_label = new GLabel();
+            this.userName_label = new GLabel();
             this.button1 = new GButton();
             this.SuspendLayout();
             // 
@@ -356,15 +356,15 @@
         #endregion
 
         private System.Windows.Forms.TextBox id_box;
-        private System.Windows.Forms.Label id_label;
-        private System.Windows.Forms.Label firstName_label;
-        private System.Windows.Forms.Label lastName_label;
-        private System.Windows.Forms.Label birth_label;
-        private System.Windows.Forms.Label start_date_label;
-        private System.Windows.Forms.Label end_date_label;
-        private System.Windows.Forms.Label medcart_lable;
+        private GLabel id_label;
+        private GLabel firstName_label;
+        private GLabel lastName_label;
+        private GLabel birth_label;
+        private GLabel start_date_label;
+        private GLabel end_date_label;
+        private GLabel medcart_lable;
         private GButton enter_button;
-        private System.Windows.Forms.Label mail_label;
+        private GLabel mail_label;
         private System.Windows.Forms.DateTimePicker birth_date;
         private System.Windows.Forms.DateTimePicker end_date;
         private System.Windows.Forms.DateTimePicker med_cart_date;
@@ -375,9 +375,9 @@
         private System.Windows.Forms.TextBox tb_repeatPass;
         private System.Windows.Forms.TextBox tb_pass;
         private System.Windows.Forms.TextBox tb_username;
-        private System.Windows.Forms.Label verPassWorod_label;
-        private System.Windows.Forms.Label passWord_label;
-        private System.Windows.Forms.Label userName_label;
+        private GLabel verPassWorod_label;
+        private GLabel passWord_label;
+        private GLabel userName_label;
         private GButton button1;
     }
 }

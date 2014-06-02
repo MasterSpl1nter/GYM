@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
+            this.label1 = new GLabel();
             this.marqueeLabel1 = new newGym.MarqueeLabel();
             this.SuspendLayout();
             // 
@@ -85,6 +85,6 @@
 
         private System.Windows.Forms.Timer timer1;
         private MarqueeLabel marqueeLabel1;
-        private System.Windows.Forms.Label label1;
+        private GLabel label1;
     }
 }

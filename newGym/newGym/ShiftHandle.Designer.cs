@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panelShowShift = new System.Windows.Forms.Panel();
+            this.groupBox1 = new GGroupBox();
+            this.panelShowShift = new GPanel();
             this.endShiftsDate = new System.Windows.Forms.DateTimePicker();
             this.startShiftsDate = new System.Windows.Forms.DateTimePicker();
-            this.endLabel1 = new System.Windows.Forms.Label();
-            this.startLabel1 = new System.Windows.Forms.Label();
+            this.endLabel1 = new GLabel();
+            this.startLabel1 = new GLabel();
             this.button3 = new GButton();
             this.button2 = new GButton();
             this.button1 = new GButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.addShiftPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new GPanel();
+            this.addShiftPanel = new GPanel();
             this.AddEndPicker = new System.Windows.Forms.DateTimePicker();
             this.AddStartPicker = new System.Windows.Forms.DateTimePicker();
             this.departmentComboBox = new System.Windows.Forms.ComboBox();
             this.ClearShift = new GButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new GLabel();
+            this.label3 = new GLabel();
             this.AddShift = new GButton();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label5 = new GLabel();
             this.idComboBox = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new GLabel();
+            this.label8 = new GLabel();
+            this.label7 = new GLabel();
             this.button6 = new GButton();
             this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
@@ -380,29 +380,29 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label endLabel1;
-        private System.Windows.Forms.Label startLabel1;
+        private GGroupBox groupBox1;
+        private GLabel endLabel1;
+        private GLabel startLabel1;
         private GButton button3;
         private GButton button2;
         private GButton button1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private GPanel panel1;
+        private GLabel label8;
+        private GLabel label7;
         private GButton ClearShift;
         private GButton button6;
         private GButton AddShift;
         private System.Windows.Forms.DateTimePicker dateTimePicker6;
-        private System.Windows.Forms.Label label6;
+        private GLabel label6;
         private System.Windows.Forms.DateTimePicker dateTimePicker5;
         private System.Windows.Forms.ComboBox idComboBox;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private GLabel label5;
+        private GLabel label3;
+        private GLabel label4;
         private System.Windows.Forms.ComboBox departmentComboBox;
         private System.Windows.Forms.DataGridView shiftResults;
-        private System.Windows.Forms.Panel panelShowShift;
-        private System.Windows.Forms.Panel addShiftPanel;
+        private GPanel panelShowShift;
+        private GPanel addShiftPanel;
         private System.Windows.Forms.FontDialog fontDialog1;
         private System.Windows.Forms.DateTimePicker endShiftsDate;
         private System.Windows.Forms.DateTimePicker startShiftsDate;

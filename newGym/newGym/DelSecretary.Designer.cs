@@ -30,7 +30,7 @@
         {
             this.enter_button = new GButton();
             this.id_comboBox1 = new System.Windows.Forms.ComboBox();
-            this.id_label = new System.Windows.Forms.Label();
+            this.id_label = new GLabel();
             this.SuspendLayout();
             // 
             // enter_button
@@ -85,6 +85,6 @@
 
         private GButton enter_button;
         private System.Windows.Forms.ComboBox id_comboBox1;
-        private System.Windows.Forms.Label id_label;
+        private GLabel id_label;
     }
 }

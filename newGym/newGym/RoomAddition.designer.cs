@@ -34,9 +34,9 @@
             this.NUM_area = new System.Windows.Forms.NumericUpDown();
             this.TB_name = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.RoomName_Label = new System.Windows.Forms.Label();
-            this.StudentCap_label = new System.Windows.Forms.Label();
-            this.Area_label = new System.Windows.Forms.Label();
+            this.RoomName_Label = new GLabel();
+            this.StudentCap_label = new GLabel();
+            this.Area_label = new GLabel();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_cap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_area)).BeginInit();
             this.SuspendLayout();
@@ -140,8 +140,8 @@
         private System.Windows.Forms.NumericUpDown NUM_area;
         private System.Windows.Forms.TextBox TB_name;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Label RoomName_Label;
-        private System.Windows.Forms.Label StudentCap_label;
-        private System.Windows.Forms.Label Area_label;
+        private GLabel RoomName_Label;
+        private GLabel StudentCap_label;
+        private GLabel Area_label;
     }
 }

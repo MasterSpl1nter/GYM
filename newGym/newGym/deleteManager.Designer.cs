@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.deleteComboBox = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label8 = new GLabel();
             this.deleteManageById = new GButton();
             this.SuspendLayout();
             // 
@@ -79,7 +79,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox deleteComboBox;
-        private System.Windows.Forms.Label label8;
+        private GLabel label8;
         private GButton deleteManageById;
     }
 }

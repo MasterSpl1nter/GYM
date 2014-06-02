@@ -1,6 +1,6 @@
 ﻿namespace newGym
 {
-    partial class GLabel
+    partial class GPanel
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,13 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // GLabel
-            // 
-            this.BackColor = System.Drawing.Color.Transparent;
-            this.ResumeLayout(false);
-
+            components = new System.ComponentModel.Container();
+//            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         }
 
         #endregion

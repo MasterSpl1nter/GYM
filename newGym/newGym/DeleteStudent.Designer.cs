@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.delete_comb = new System.Windows.Forms.ComboBox();
-            this.choose_id = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.choose_id = new GLabel();
+            this.label2 = new GLabel();
             this.button1 = new GButton();
             this.SuspendLayout();
             // 
@@ -96,8 +96,8 @@
         #endregion
 
         private System.Windows.Forms.ComboBox delete_comb;
-        private System.Windows.Forms.Label choose_id;
-        private System.Windows.Forms.Label label2;
+        private GLabel choose_id;
+        private GLabel label2;
         private GButton button1;
     }
 }

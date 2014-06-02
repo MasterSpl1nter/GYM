@@ -30,8 +30,8 @@
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.delete_butten = new GButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new GLabel();
+            this.label7 = new GLabel();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -91,7 +91,7 @@
 
         private System.Windows.Forms.ComboBox comboBox1;
         private GButton delete_butten;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
+        private GLabel label1;
+        private GLabel label7;
     }
 }

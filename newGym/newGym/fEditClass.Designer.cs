@@ -29,46 +29,46 @@
         private void InitializeComponent()
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new GButton();
-            this.button2 = new GButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new newGym.GButton();
+            this.button2 = new newGym.GButton();
+            this.label1 = new newGym.GLabel();
+            this.label2 = new newGym.GLabel();
+            this.label3 = new newGym.GLabel();
+            this.label4 = new newGym.GLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new newGym.GLabel();
+            this.label6 = new newGym.GLabel();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.tothourLabel = new System.Windows.Forms.Label();
-            this.paymentLabel = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.roomNumLabel = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.ParticiLabel = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.nameLabel = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.idLabel = new System.Windows.Forms.Label();
+            this.label10 = new newGym.GLabel();
+            this.tothourLabel = new newGym.GLabel();
+            this.paymentLabel = new newGym.GLabel();
+            this.label11 = new newGym.GLabel();
+            this.roomNumLabel = new newGym.GLabel();
+            this.label12 = new newGym.GLabel();
+            this.ParticiLabel = new newGym.GLabel();
+            this.label13 = new newGym.GLabel();
+            this.nameLabel = new newGym.GLabel();
+            this.label15 = new newGym.GLabel();
+            this.idLabel = new newGym.GLabel();
             this.endtimeLabel = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new newGym.GLabel();
+            this.label14 = new newGym.GLabel();
             this.starttimeLabel = new System.Windows.Forms.TextBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label7 = new newGym.GLabel();
             this.gGroupBox1 = new newGym.GGroupBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label9 = new newGym.GLabel();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new newGym.GLabel();
+            this.label17 = new newGym.GLabel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.gGroupBox1.SuspendLayout();
@@ -86,6 +86,12 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(11, 394);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -96,6 +102,12 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(92, 394);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
@@ -107,36 +119,48 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(32, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.Size = new System.Drawing.Size(20, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "ID";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(32, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(42, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(32, 125);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(42, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Room";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(183, 128);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 13);
+            this.label4.Size = new System.Drawing.Size(77, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Participants";
             // 
@@ -149,7 +173,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(375, 125);
+            this.textBox2.Location = new System.Drawing.Point(397, 125);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(40, 20);
             this.textBox2.TabIndex = 8;
@@ -157,7 +181,7 @@
             // textBox4
             // 
             this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(250, 125);
+            this.textBox4.Location = new System.Drawing.Point(258, 125);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(42, 20);
             this.textBox4.TabIndex = 10;
@@ -165,9 +189,12 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(298, 128);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(307, 128);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 13);
+            this.label5.Size = new System.Drawing.Size(88, 16);
             this.label5.TabIndex = 11;
             this.label5.Text = "Max Capacity";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -175,9 +202,12 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(32, 161);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 13);
+            this.label6.Size = new System.Drawing.Size(58, 16);
             this.label6.TabIndex = 12;
             this.label6.Text = "Guide ID";
             // 
@@ -196,6 +226,7 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.92453F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.07547F));
@@ -219,112 +250,145 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(158, 120);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(191, 120);
             this.tableLayoutPanel1.TabIndex = 28;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label10.Location = new System.Drawing.Point(3, 100);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 13);
+            this.label10.Size = new System.Drawing.Size(68, 16);
             this.label10.TabIndex = 22;
             this.label10.Text = "Total time:";
             // 
             // tothourLabel
             // 
             this.tothourLabel.AutoSize = true;
+            this.tothourLabel.BackColor = System.Drawing.Color.Transparent;
+            this.tothourLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.tothourLabel.ForeColor = System.Drawing.Color.Black;
             this.tothourLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tothourLabel.Location = new System.Drawing.Point(110, 100);
+            this.tothourLabel.Location = new System.Drawing.Point(132, 100);
             this.tothourLabel.Name = "tothourLabel";
-            this.tothourLabel.Size = new System.Drawing.Size(0, 13);
+            this.tothourLabel.Size = new System.Drawing.Size(0, 16);
             this.tothourLabel.TabIndex = 26;
             // 
             // paymentLabel
             // 
             this.paymentLabel.AutoSize = true;
+            this.paymentLabel.BackColor = System.Drawing.Color.Transparent;
+            this.paymentLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.paymentLabel.ForeColor = System.Drawing.Color.Black;
             this.paymentLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.paymentLabel.Location = new System.Drawing.Point(110, 80);
+            this.paymentLabel.Location = new System.Drawing.Point(132, 80);
             this.paymentLabel.Name = "paymentLabel";
-            this.paymentLabel.Size = new System.Drawing.Size(0, 13);
+            this.paymentLabel.Size = new System.Drawing.Size(0, 16);
             this.paymentLabel.TabIndex = 25;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label11.Location = new System.Drawing.Point(3, 60);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 13);
+            this.label11.Size = new System.Drawing.Size(57, 16);
             this.label11.TabIndex = 20;
             this.label11.Text = "Room #:";
             // 
             // roomNumLabel
             // 
             this.roomNumLabel.AutoSize = true;
+            this.roomNumLabel.BackColor = System.Drawing.Color.Transparent;
+            this.roomNumLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.roomNumLabel.ForeColor = System.Drawing.Color.Black;
             this.roomNumLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.roomNumLabel.Location = new System.Drawing.Point(110, 60);
+            this.roomNumLabel.Location = new System.Drawing.Point(132, 60);
             this.roomNumLabel.Name = "roomNumLabel";
-            this.roomNumLabel.Size = new System.Drawing.Size(0, 13);
+            this.roomNumLabel.Size = new System.Drawing.Size(0, 16);
             this.roomNumLabel.TabIndex = 24;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label12.Location = new System.Drawing.Point(3, 40);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(101, 13);
+            this.label12.Size = new System.Drawing.Size(79, 20);
             this.label12.TabIndex = 19;
             this.label12.Text = "Num of participants:";
             // 
             // ParticiLabel
             // 
             this.ParticiLabel.AutoSize = true;
+            this.ParticiLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ParticiLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.ParticiLabel.ForeColor = System.Drawing.Color.Black;
             this.ParticiLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ParticiLabel.Location = new System.Drawing.Point(110, 40);
+            this.ParticiLabel.Location = new System.Drawing.Point(132, 40);
             this.ParticiLabel.Name = "ParticiLabel";
-            this.ParticiLabel.Size = new System.Drawing.Size(0, 13);
+            this.ParticiLabel.Size = new System.Drawing.Size(0, 16);
             this.ParticiLabel.TabIndex = 23;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label13.Location = new System.Drawing.Point(3, 20);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 13);
+            this.label13.Size = new System.Drawing.Size(81, 16);
             this.label13.TabIndex = 17;
             this.label13.Text = "Class name:";
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
+            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.nameLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.nameLabel.ForeColor = System.Drawing.Color.Black;
             this.nameLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nameLabel.Location = new System.Drawing.Point(110, 20);
+            this.nameLabel.Location = new System.Drawing.Point(132, 20);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(0, 13);
+            this.nameLabel.Size = new System.Drawing.Size(0, 16);
             this.nameLabel.TabIndex = 18;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label15.Location = new System.Drawing.Point(3, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(49, 13);
+            this.label15.Size = new System.Drawing.Size(61, 16);
             this.label15.TabIndex = 27;
             this.label15.Text = "Class ID:";
             // 
             // idLabel
             // 
             this.idLabel.AutoSize = true;
+            this.idLabel.BackColor = System.Drawing.Color.Transparent;
+            this.idLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.idLabel.ForeColor = System.Drawing.Color.Black;
             this.idLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.idLabel.Location = new System.Drawing.Point(110, 0);
+            this.idLabel.Location = new System.Drawing.Point(132, 0);
             this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(0, 13);
+            this.idLabel.Size = new System.Drawing.Size(0, 16);
             this.idLabel.TabIndex = 28;
             // 
             // endtimeLabel
@@ -339,20 +403,26 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label16.Location = new System.Drawing.Point(350, 369);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(23, 13);
+            this.label16.Size = new System.Drawing.Size(25, 16);
             this.label16.TabIndex = 35;
             this.label16.Text = "To:";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label14.Location = new System.Drawing.Point(238, 369);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(33, 13);
+            this.label14.Size = new System.Drawing.Size(42, 16);
             this.label14.TabIndex = 34;
             this.label14.Text = "From:";
             // 
@@ -393,9 +463,12 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(238, 178);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(129, 13);
+            this.label7.Size = new System.Drawing.Size(157, 16);
             this.label7.TabIndex = 41;
             this.label7.Text = "Select Specific Schedule:";
             // 
@@ -452,9 +525,12 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(13, 29);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 15);
+            this.label9.Size = new System.Drawing.Size(39, 16);
             this.label9.TabIndex = 47;
             this.label9.Text = "Date:";
             // 
@@ -470,20 +546,26 @@
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label18.Location = new System.Drawing.Point(11, 57);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(39, 15);
+            this.label18.Size = new System.Drawing.Size(42, 16);
             this.label18.TabIndex = 49;
             this.label18.Text = "From:";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
             this.label17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label17.Location = new System.Drawing.Point(136, 56);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(23, 15);
+            this.label17.Size = new System.Drawing.Size(25, 16);
             this.label17.TabIndex = 50;
             this.label17.Text = "To:";
             // 
@@ -544,41 +626,41 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private GButton button1;
         private GButton button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private GLabel label1;
+        private GLabel label2;
+        private GLabel label3;
+        private GLabel label4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private GLabel label5;
+        private GLabel label6;
         private System.Windows.Forms.HScrollBar hScrollBar1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label tothourLabel;
-        private System.Windows.Forms.Label paymentLabel;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label roomNumLabel;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label ParticiLabel;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label nameLabel;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label idLabel;
+        private GLabel label10;
+        private GLabel tothourLabel;
+        private GLabel paymentLabel;
+        private GLabel label11;
+        private GLabel roomNumLabel;
+        private GLabel label12;
+        private GLabel ParticiLabel;
+        private GLabel label13;
+        private GLabel nameLabel;
+        private GLabel label15;
+        private GLabel idLabel;
         private System.Windows.Forms.TextBox endtimeLabel;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label14;
+        private GLabel label16;
+        private GLabel label14;
         private System.Windows.Forms.TextBox starttimeLabel;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label7;
+        private GLabel label7;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label9;
+        private GLabel label9;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
+        private GLabel label17;
+        private GLabel label18;
         private GGroupBox gGroupBox1;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;

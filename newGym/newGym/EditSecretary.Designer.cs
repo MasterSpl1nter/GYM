@@ -32,18 +32,18 @@
             this.email_textBox = new System.Windows.Forms.TextBox();
             this.firstname_textBox = new System.Windows.Forms.TextBox();
             this.username_textBox = new System.Windows.Forms.TextBox();
-            this.email_label = new System.Windows.Forms.Label();
-            this.lastname_label = new System.Windows.Forms.Label();
-            this.name_label = new System.Windows.Forms.Label();
-            this.username_label = new System.Windows.Forms.Label();
-            this.id_label = new System.Windows.Forms.Label();
-            this.instruction_label = new System.Windows.Forms.Label();
+            this.email_label = new GLabel();
+            this.lastname_label = new GLabel();
+            this.name_label = new GLabel();
+            this.username_label = new GLabel();
+            this.id_label = new GLabel();
+            this.instruction_label = new GLabel();
             this.id_textBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label1 = new GLabel();
             this.id_comboBox1 = new System.Windows.Forms.ComboBox();
             this.Edit_button = new GButton();
             this.password_textBox = new System.Windows.Forms.TextBox();
-            this.password_label = new System.Windows.Forms.Label();
+            this.password_label = new GLabel();
             this.SuspendLayout();
             // 
             // lastname_textBox
@@ -239,17 +239,17 @@
         private System.Windows.Forms.TextBox email_textBox;
         private System.Windows.Forms.TextBox firstname_textBox;
         private System.Windows.Forms.TextBox username_textBox;
-        private System.Windows.Forms.Label email_label;
-        private System.Windows.Forms.Label lastname_label;
-        private System.Windows.Forms.Label name_label;
-        private System.Windows.Forms.Label username_label;
-        private System.Windows.Forms.Label id_label;
-        private System.Windows.Forms.Label instruction_label;
+        private GLabel email_label;
+        private GLabel lastname_label;
+        private GLabel name_label;
+        private GLabel username_label;
+        private GLabel id_label;
+        private GLabel instruction_label;
         private System.Windows.Forms.TextBox id_textBox;
-        private System.Windows.Forms.Label label1;
+        private GLabel label1;
         private System.Windows.Forms.ComboBox id_comboBox1;
         private GButton Edit_button;
         private System.Windows.Forms.TextBox password_textBox;
-        private System.Windows.Forms.Label password_label;
+        private GLabel password_label;
     }
 }

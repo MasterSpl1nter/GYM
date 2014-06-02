@@ -32,10 +32,10 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new GLabel();
+            this.label2 = new GLabel();
+            this.label3 = new GLabel();
+            this.label4 = new GLabel();
             this.button1 = new GButton();
             this.SuspendLayout();
             // 
@@ -141,10 +141,10 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private GLabel label1;
+        private GLabel label2;
+        private GLabel label3;
+        private GLabel label4;
         private GButton button1;
     }
 }

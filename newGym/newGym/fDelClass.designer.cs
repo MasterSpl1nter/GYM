@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label1 = new GLabel();
             this.button1 = new GButton();
             this.button2 = new GButton();
             this.SuspendLayout();
@@ -93,7 +93,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
+        private GLabel label1;
         private GButton button1;
         private GButton button2;
     }

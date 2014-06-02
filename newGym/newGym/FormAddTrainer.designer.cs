@@ -34,16 +34,16 @@
             this.email_txt = new System.Windows.Forms.TextBox();
             this.username_txt = new System.Windows.Forms.TextBox();
             this.password_txt = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new GLabel();
+            this.label2 = new GLabel();
+            this.label3 = new GLabel();
+            this.label4 = new GLabel();
+            this.label5 = new GLabel();
+            this.label6 = new GLabel();
             this.save_butten = new GButton();
             this.clear_all_button = new GButton();
-            this.email_verification = new System.Windows.Forms.Label();
-            this.lable8 = new System.Windows.Forms.Label();
+            this.email_verification = new GLabel();
+            this.lable8 = new GLabel();
             this.salar_txt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -227,16 +227,16 @@
         private System.Windows.Forms.TextBox email_txt;
         private System.Windows.Forms.TextBox username_txt;
         private System.Windows.Forms.TextBox password_txt;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private GLabel label1;
+        private GLabel label2;
+        private GLabel label3;
+        private GLabel label4;
+        private GLabel label5;
+        private GLabel label6;
         private GButton save_butten;
         private GButton clear_all_button;
-        private System.Windows.Forms.Label email_verification;
-        private System.Windows.Forms.Label lable8;
+        private GLabel email_verification;
+        private GLabel lable8;
         private System.Windows.Forms.TextBox salar_txt;
     }
 }

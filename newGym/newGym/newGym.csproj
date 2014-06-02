@@ -122,6 +122,12 @@
     <Compile Include="FormAddTraining.Designer.cs">
       <DependentUpon>FormAddTraining.cs</DependentUpon>
     </Compile>
+    <Compile Include="GPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GPanel.Designer.cs">
+      <DependentUpon>GPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuideShifts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -362,6 +368,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddTraining.resx">
       <DependentUpon>FormAddTraining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLabel.resx">
+      <DependentUpon>GLabel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuideShifts.resx">
       <DependentUpon>GuideShifts.cs</DependentUpon>

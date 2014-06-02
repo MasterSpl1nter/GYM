@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddSecretary));
-            this.id_label = new System.Windows.Forms.Label();
-            this.name_label = new System.Windows.Forms.Label();
-            this.lastname_label = new System.Windows.Forms.Label();
-            this.email_label = new System.Windows.Forms.Label();
+            this.id_label = new GLabel();
+            this.name_label = new GLabel();
+            this.lastname_label = new GLabel();
+            this.email_label = new GLabel();
             this.id_textBox = new System.Windows.Forms.TextBox();
             this.firstname_textBox = new System.Windows.Forms.TextBox();
             this.email_textBox = new System.Windows.Forms.TextBox();
             this.lastname_textBox = new System.Windows.Forms.TextBox();
             this.enter_button = new GButton();
-            this.username_label = new System.Windows.Forms.Label();
-            this.password_label = new System.Windows.Forms.Label();
+            this.username_label = new GLabel();
+            this.password_label = new GLabel();
             this.username_textBox = new System.Windows.Forms.TextBox();
             this.password_textBox = new System.Windows.Forms.TextBox();
-            this.verify_label = new System.Windows.Forms.Label();
+            this.verify_label = new GLabel();
             this.verify_textBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -157,20 +157,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Label id_label;
-        private System.Windows.Forms.Label name_label;
-        private System.Windows.Forms.Label lastname_label;
-        private System.Windows.Forms.Label email_label;
+        private GLabel id_label;
+        private GLabel name_label;
+        private GLabel lastname_label;
+        private GLabel email_label;
         private System.Windows.Forms.TextBox id_textBox;
         private System.Windows.Forms.TextBox firstname_textBox;
         private System.Windows.Forms.TextBox email_textBox;
         private System.Windows.Forms.TextBox lastname_textBox;
         private GButton enter_button;
-        private System.Windows.Forms.Label username_label;
-        private System.Windows.Forms.Label password_label;
+        private GLabel username_label;
+        private GLabel password_label;
         private System.Windows.Forms.TextBox username_textBox;
         private System.Windows.Forms.TextBox password_textBox;
-        private System.Windows.Forms.Label verify_label;
+        private GLabel verify_label;
         private System.Windows.Forms.TextBox verify_textBox;
     }
 }

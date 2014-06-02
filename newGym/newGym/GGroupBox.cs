@@ -15,7 +15,7 @@ namespace newGym
         {
             InitializeComponent();
             this.BackColor = System.Drawing.Color.Transparent;
-            this.ForeColor = System.Drawing.Color.White;
+            this.ForeColor = System.Drawing.Color.Black;
             this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
         }
     }

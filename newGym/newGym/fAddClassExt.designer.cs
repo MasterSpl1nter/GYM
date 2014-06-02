@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.okbutton = new GButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label1 = new GLabel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label2 = new GLabel();
             this.SuspendLayout();
             // 
             // okbutton
@@ -99,9 +99,9 @@
         #endregion
 
         private GButton okbutton;
-        private System.Windows.Forms.Label label1;
+        private GLabel label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label2;
+        private GLabel label2;
     }
 }

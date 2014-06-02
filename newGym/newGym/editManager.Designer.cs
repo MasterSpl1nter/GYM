@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.MangerSalaryPerHour = new System.Windows.Forms.TextBox();
-            this.idLabel = new System.Windows.Forms.Label();
-            this.salaryPerHourLabel = new System.Windows.Forms.Label();
-            this.passwordLabel = new System.Windows.Forms.Label();
-            this.userNameLabel = new System.Windows.Forms.Label();
+            this.idLabel = new GLabel();
+            this.salaryPerHourLabel = new GLabel();
+            this.passwordLabel = new GLabel();
+            this.userNameLabel = new GLabel();
             this.password = new System.Windows.Forms.TextBox();
-            this.EmailLabel = new System.Windows.Forms.Label();
+            this.EmailLabel = new GLabel();
             this.userName = new System.Windows.Forms.TextBox();
-            this.lastNameLabel = new System.Windows.Forms.Label();
+            this.lastNameLabel = new GLabel();
             this.managerEmail = new System.Windows.Forms.TextBox();
-            this.firstNameLabel = new System.Windows.Forms.Label();
+            this.firstNameLabel = new GLabel();
             this.managerLastName = new System.Windows.Forms.TextBox();
             this.managerFirstName = new System.Windows.Forms.TextBox();
             this.exit_update = new GButton();
             this.update_manger_button = new GButton();
-            this.userId = new System.Windows.Forms.Label();
+            this.userId = new GLabel();
             this.removeUser = new GButton();
             this.SuspendLayout();
             // 
@@ -244,21 +244,21 @@
         #endregion
 
         private System.Windows.Forms.TextBox MangerSalaryPerHour;
-        private System.Windows.Forms.Label idLabel;
-        private System.Windows.Forms.Label salaryPerHourLabel;
-        private System.Windows.Forms.Label passwordLabel;
-        private System.Windows.Forms.Label userNameLabel;
+        private GLabel idLabel;
+        private GLabel salaryPerHourLabel;
+        private GLabel passwordLabel;
+        private GLabel userNameLabel;
         private System.Windows.Forms.TextBox password;
-        private System.Windows.Forms.Label EmailLabel;
+        private GLabel EmailLabel;
         private System.Windows.Forms.TextBox userName;
-        private System.Windows.Forms.Label lastNameLabel;
+        private GLabel lastNameLabel;
         private System.Windows.Forms.TextBox managerEmail;
-        private System.Windows.Forms.Label firstNameLabel;
+        private GLabel firstNameLabel;
         private System.Windows.Forms.TextBox managerLastName;
         private System.Windows.Forms.TextBox managerFirstName;
         private GButton exit_update;
         private GButton update_manger_button;
-        private System.Windows.Forms.Label userId;
+        private GLabel userId;
         private GButton removeUser;
     }
 }

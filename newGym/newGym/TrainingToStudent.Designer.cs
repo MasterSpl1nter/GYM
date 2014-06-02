@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new GLabel();
+            this.label5 = new GLabel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.training2student_betton = new newGym.GButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.groupBox1 = new GGroupBox();
+            this.label6 = new GLabel();
             this.appliance_txt = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new GLabel();
+            this.label3 = new GLabel();
+            this.label2 = new GLabel();
+            this.label1 = new GLabel();
             this.repeats_txt = new System.Windows.Forms.TextBox();
             this.sets_txt = new System.Windows.Forms.TextBox();
             this.lastname_txt = new System.Windows.Forms.TextBox();
@@ -223,18 +223,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
+        private GLabel label7;
+        private GLabel label5;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private GButton training2student_betton;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label6;
+        private GGroupBox groupBox1;
+        private GLabel label6;
         private System.Windows.Forms.TextBox appliance_txt;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private GLabel label4;
+        private GLabel label3;
+        private GLabel label2;
+        private GLabel label1;
         private System.Windows.Forms.TextBox repeats_txt;
         private System.Windows.Forms.TextBox sets_txt;
         private System.Windows.Forms.TextBox lastname_txt;

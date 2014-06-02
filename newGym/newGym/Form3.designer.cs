@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button1 = new GButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label1 = new GLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -77,7 +77,7 @@
         #endregion
 
         private GButton button1;
-        private System.Windows.Forms.Label label1;
+        private GLabel label1;
         private System.Windows.Forms.TextBox textBox1;
     }
 }
