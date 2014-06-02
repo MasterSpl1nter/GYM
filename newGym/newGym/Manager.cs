@@ -93,26 +93,44 @@ namespace newGym
         {
             DbConnection newConn = new DbConnection("gym", "root", "csharp");
             string query = "DELETE FROM gym.manager WHERE id='" + id + "';";
-            MessageBox.Show("--->public override bool deleteUserById(int id)");
+           // MessageBox.Show("--->public override bool deleteUserById(int id)");
             newConn.writeToDb(query);
 
         }
         public void deleteUser(int id, string table)
         {
-            DbConnection newConn = new DbConnection("gym", "root", "csharp");
-            string query = "DELETE FROM gym."+table+ " WHERE id='" + id + "';";
-            int retval=newConn.writeToDb(query);
-            if (retval != 1)
+            int ret=1;
+            if (table == "guide")
             {
-                MessageBox.Show("delete Failed Error:" + retval);
+                if (MessageBox.Show("Warining:delete will remove all data that refer to this" + "id", "Continue", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    DataTable dt = new DataTable();
+                    ret = MySQL.Query(dt, "set SQL_SAFE_UPDATES = 0;  delete from studentclass where classid in ( select class.id from class where class.guideid = " + id.ToString() + ");                                            delete from classtime where classid in ( select class.id from class where class.guideid = " + id.ToString() + ");                                            delete from class where guideid = " + id.ToString() + ";                                            delete from guide where id = " + id.ToString() + ";                ");
+                }
+                else
+                    ret = 1;
             }
             else
+            {
+                DataTable dt = new DataTable();
+                string query = "DELETE FROM gym." + table + " WHERE id='" + id + "';";
+                ret= MySQL.Query(dt, query);
+            }
+            /*
+            DbConnection newConn = new DbConnection("gym", "root", "csharp");
+            string query = "DELETE FROM gym." + table + " WHERE id='" + id + "';";
+            int retval=newConn.writeToDb(query);
+            */
+            if (ret != 1)
+                MessageBox.Show("delete Failed Error:" + ret);
+            else
                 MessageBox.Show("delete success!");
-
-            MySQL.Query(dt, "set SQL_SAFE_UPDATES = 0;  delete from studentclass where classid in ( select class.id from class where class.guideid = 1);                                            delete from classtime where classid in ( select class.id from class where class.guideid = 1);                                            delete from class where guideid = 1;                                            delete from guide where id = 1;                ");
+            
+           
 
             
         }
+        
         //update user by id
         public bool updateUserById(int id)
         {
