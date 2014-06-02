@@ -44,9 +44,11 @@
             // 
             // View_Applience
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(759, 441);
             this.Controls.Add(this.dataGridView2);
             this.Name = "View_Applience";
+            this.Text = "View Applience";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
