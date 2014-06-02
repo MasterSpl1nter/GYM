@@ -283,13 +283,15 @@
             // 
             // add_button
             // 
-            this.add_button.BackColor = System.Drawing.SystemColors.Highlight;
-            this.add_button.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_button.ForeColor = System.Drawing.Color.Navy;
-            this.add_button.Location = new System.Drawing.Point(334, 377);
+            this.add_button.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.add_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.add_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.add_button.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_button.ForeColor = System.Drawing.Color.White;
+            this.add_button.Location = new System.Drawing.Point(365, 377);
             this.add_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.add_button.Name = "add_button";
-            this.add_button.Size = new System.Drawing.Size(135, 33);
+            this.add_button.Size = new System.Drawing.Size(104, 33);
             this.add_button.TabIndex = 44;
             this.add_button.Text = "Accept";
             this.add_button.UseVisualStyleBackColor = false;
@@ -842,9 +844,11 @@
             // 
             // EditStudApply
             // 
-            this.EditStudApply.BackColor = System.Drawing.SystemColors.Highlight;
-            this.EditStudApply.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditStudApply.ForeColor = System.Drawing.Color.Navy;
+            this.EditStudApply.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.EditStudApply.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.EditStudApply.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.EditStudApply.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditStudApply.ForeColor = System.Drawing.Color.White;
             this.EditStudApply.Location = new System.Drawing.Point(379, 382);
             this.EditStudApply.Margin = new System.Windows.Forms.Padding(2);
             this.EditStudApply.Name = "EditStudApply";
@@ -910,13 +914,18 @@
             // 
             // DeleteButton
             // 
+            this.DeleteButton.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.DeleteButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.DeleteButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.DeleteButton.ForeColor = System.Drawing.Color.White;
             this.DeleteButton.Location = new System.Drawing.Point(379, 198);
             this.DeleteButton.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(85, 29);
             this.DeleteButton.TabIndex = 6;
             this.DeleteButton.Text = "Delete";
-            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.UseVisualStyleBackColor = false;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // choose_id
@@ -1153,9 +1162,9 @@
             this.addStudentButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.addStudentButton.ForeColor = System.Drawing.Color.White;
             this.addStudentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addStudentButton.Location = new System.Drawing.Point(16, 35);
+            this.addStudentButton.Location = new System.Drawing.Point(16, 39);
             this.addStudentButton.Name = "addStudentButton";
-            this.addStudentButton.Size = new System.Drawing.Size(190, 27);
+            this.addStudentButton.Size = new System.Drawing.Size(210, 27);
             this.addStudentButton.TabIndex = 0;
             this.addStudentButton.Text = "Add Student";
             this.addStudentButton.UseVisualStyleBackColor = false;
@@ -1171,7 +1180,7 @@
             this.shiftsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.shiftsButton.Location = new System.Drawing.Point(16, 315);
             this.shiftsButton.Name = "shiftsButton";
-            this.shiftsButton.Size = new System.Drawing.Size(190, 27);
+            this.shiftsButton.Size = new System.Drawing.Size(210, 27);
             this.shiftsButton.TabIndex = 5;
             this.shiftsButton.Text = "Monthly Shifts";
             this.shiftsButton.UseVisualStyleBackColor = false;
@@ -1187,7 +1196,7 @@
             this.editStudentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.editStudentButton.Location = new System.Drawing.Point(16, 93);
             this.editStudentButton.Name = "editStudentButton";
-            this.editStudentButton.Size = new System.Drawing.Size(190, 27);
+            this.editStudentButton.Size = new System.Drawing.Size(210, 27);
             this.editStudentButton.TabIndex = 4;
             this.editStudentButton.Text = "Edit Student";
             this.editStudentButton.UseVisualStyleBackColor = false;
@@ -1203,7 +1212,7 @@
             this.removeStudentFromClassBotton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.removeStudentFromClassBotton.Location = new System.Drawing.Point(16, 257);
             this.removeStudentFromClassBotton.Name = "removeStudentFromClassBotton";
-            this.removeStudentFromClassBotton.Size = new System.Drawing.Size(190, 27);
+            this.removeStudentFromClassBotton.Size = new System.Drawing.Size(210, 27);
             this.removeStudentFromClassBotton.TabIndex = 2;
             this.removeStudentFromClassBotton.Text = "Remove Student From Class";
             this.removeStudentFromClassBotton.UseVisualStyleBackColor = false;
@@ -1219,7 +1228,7 @@
             this.removeStudentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.removeStudentButton.Location = new System.Drawing.Point(16, 150);
             this.removeStudentButton.Name = "removeStudentButton";
-            this.removeStudentButton.Size = new System.Drawing.Size(190, 27);
+            this.removeStudentButton.Size = new System.Drawing.Size(210, 27);
             this.removeStudentButton.TabIndex = 3;
             this.removeStudentButton.Text = "Remove Student ";
             this.removeStudentButton.UseVisualStyleBackColor = false;
@@ -1235,7 +1244,7 @@
             this.studentToClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.studentToClassButton.Location = new System.Drawing.Point(16, 202);
             this.studentToClassButton.Name = "studentToClassButton";
-            this.studentToClassButton.Size = new System.Drawing.Size(190, 27);
+            this.studentToClassButton.Size = new System.Drawing.Size(210, 27);
             this.studentToClassButton.TabIndex = 1;
             this.studentToClassButton.Text = "Add Student to Class";
             this.studentToClassButton.UseVisualStyleBackColor = false;
