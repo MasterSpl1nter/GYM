@@ -29,46 +29,46 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.groupBox5 = new GGroupBox();
+            this.groupBox5 = new newGym.GGroupBox();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.button13 = new newGym.GButton();
             this.button14 = new newGym.GButton();
             this.button15 = new newGym.GButton();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.groupBox1 = new GGroupBox();
-            this.nextClassTimer = new GLabel();
+            this.groupBox1 = new newGym.GGroupBox();
+            this.nextClassTimer = new newGym.GLabel();
             this.shifts = new newGym.GButton();
             this.gButton1 = new newGym.GButton();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label10 = new GLabel();
-            this.tothourLabel = new GLabel();
-            this.label9 = new GLabel();
-            this.paymentLabel = new GLabel();
-            this.label8 = new GLabel();
-            this.roomNumLabel = new GLabel();
-            this.label7 = new GLabel();
-            this.ParticiLabel = new GLabel();
-            this.label5 = new GLabel();
-            this.nameLabel = new GLabel();
-            this.label15 = new GLabel();
-            this.idLabel = new GLabel();
-            this.endtimeLabel = new GLabel();
-            this.starttimeLabel = new GLabel();
-            this.label2 = new GLabel();
-            this.label1 = new GLabel();
-            this.groupBox2 = new GGroupBox();
+            this.label10 = new newGym.GLabel();
+            this.tothourLabel = new newGym.GLabel();
+            this.label9 = new newGym.GLabel();
+            this.paymentLabel = new newGym.GLabel();
+            this.label8 = new newGym.GLabel();
+            this.roomNumLabel = new newGym.GLabel();
+            this.label7 = new newGym.GLabel();
+            this.ParticiLabel = new newGym.GLabel();
+            this.label5 = new newGym.GLabel();
+            this.nameLabel = new newGym.GLabel();
+            this.label15 = new newGym.GLabel();
+            this.idLabel = new newGym.GLabel();
+            this.endtimeLabel = new newGym.GLabel();
+            this.starttimeLabel = new newGym.GLabel();
+            this.label2 = new newGym.GLabel();
+            this.label1 = new newGym.GLabel();
+            this.groupBox2 = new newGym.GGroupBox();
             this.radioName = new System.Windows.Forms.RadioButton();
             this.radioID = new System.Windows.Forms.RadioButton();
             this.GuideSearch = new System.Windows.Forms.TextBox();
             this.StudSearch = new System.Windows.Forms.TextBox();
-            this.label4 = new GLabel();
-            this.label3 = new GLabel();
+            this.label4 = new newGym.GLabel();
+            this.label3 = new newGym.GLabel();
             this.search = new newGym.GButton();
-            this.label6 = new GLabel();
-            this.loggedLabel = new GLabel();
-            this.groupBox3 = new GGroupBox();
-            this.dateLabel = new GLabel();
+            this.label6 = new newGym.GLabel();
+            this.loggedLabel = new newGym.GLabel();
+            this.groupBox3 = new newGym.GGroupBox();
+            this.dateLabel = new newGym.GLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox5.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
@@ -80,7 +80,10 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.BackColor = System.Drawing.Color.Transparent;
             this.groupBox5.Controls.Add(this.flowLayoutPanel5);
+            this.groupBox5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.groupBox5.ForeColor = System.Drawing.Color.Black;
             this.groupBox5.Location = new System.Drawing.Point(20, 68);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(147, 127);
@@ -160,6 +163,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.nextClassTimer);
             this.groupBox1.Controls.Add(this.shifts);
             this.groupBox1.Controls.Add(this.gButton1);
@@ -170,6 +174,8 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.monthCalendar1);
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(20, 207);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(464, 243);
@@ -180,7 +186,9 @@
             // nextClassTimer
             // 
             this.nextClassTimer.AutoSize = true;
+            this.nextClassTimer.BackColor = System.Drawing.Color.Transparent;
             this.nextClassTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.nextClassTimer.ForeColor = System.Drawing.Color.Black;
             this.nextClassTimer.Location = new System.Drawing.Point(175, 210);
             this.nextClassTimer.Name = "nextClassTimer";
             this.nextClassTimer.Size = new System.Drawing.Size(0, 20);
@@ -264,141 +272,190 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(3, 100);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 13);
+            this.label10.Size = new System.Drawing.Size(68, 16);
             this.label10.TabIndex = 22;
             this.label10.Text = "Total time:";
             // 
             // tothourLabel
             // 
             this.tothourLabel.AutoSize = true;
-            this.tothourLabel.Location = new System.Drawing.Point(110, 100);
+            this.tothourLabel.BackColor = System.Drawing.Color.Transparent;
+            this.tothourLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.tothourLabel.ForeColor = System.Drawing.Color.Black;
+            this.tothourLabel.Location = new System.Drawing.Point(133, 100);
             this.tothourLabel.Name = "tothourLabel";
-            this.tothourLabel.Size = new System.Drawing.Size(0, 13);
+            this.tothourLabel.Size = new System.Drawing.Size(0, 16);
             this.tothourLabel.TabIndex = 26;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(3, 80);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 13);
+            this.label9.Size = new System.Drawing.Size(64, 16);
             this.label9.TabIndex = 21;
             this.label9.Text = "Payment:";
             // 
             // paymentLabel
             // 
             this.paymentLabel.AutoSize = true;
-            this.paymentLabel.Location = new System.Drawing.Point(110, 80);
+            this.paymentLabel.BackColor = System.Drawing.Color.Transparent;
+            this.paymentLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.paymentLabel.ForeColor = System.Drawing.Color.Black;
+            this.paymentLabel.Location = new System.Drawing.Point(133, 80);
             this.paymentLabel.Name = "paymentLabel";
-            this.paymentLabel.Size = new System.Drawing.Size(0, 13);
+            this.paymentLabel.Size = new System.Drawing.Size(0, 16);
             this.paymentLabel.TabIndex = 25;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(3, 60);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 13);
+            this.label8.Size = new System.Drawing.Size(57, 16);
             this.label8.TabIndex = 20;
             this.label8.Text = "Room #:";
             // 
             // roomNumLabel
             // 
             this.roomNumLabel.AutoSize = true;
-            this.roomNumLabel.Location = new System.Drawing.Point(110, 60);
+            this.roomNumLabel.BackColor = System.Drawing.Color.Transparent;
+            this.roomNumLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.roomNumLabel.ForeColor = System.Drawing.Color.Black;
+            this.roomNumLabel.Location = new System.Drawing.Point(133, 60);
             this.roomNumLabel.Name = "roomNumLabel";
-            this.roomNumLabel.Size = new System.Drawing.Size(0, 13);
+            this.roomNumLabel.Size = new System.Drawing.Size(0, 16);
             this.roomNumLabel.TabIndex = 24;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(3, 40);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 13);
+            this.label7.Size = new System.Drawing.Size(124, 16);
             this.label7.TabIndex = 19;
             this.label7.Text = "Num of participants:";
             // 
             // ParticiLabel
             // 
             this.ParticiLabel.AutoSize = true;
-            this.ParticiLabel.Location = new System.Drawing.Point(110, 40);
+            this.ParticiLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ParticiLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.ParticiLabel.ForeColor = System.Drawing.Color.Black;
+            this.ParticiLabel.Location = new System.Drawing.Point(133, 40);
             this.ParticiLabel.Name = "ParticiLabel";
-            this.ParticiLabel.Size = new System.Drawing.Size(0, 13);
+            this.ParticiLabel.Size = new System.Drawing.Size(0, 16);
             this.ParticiLabel.TabIndex = 23;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(3, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 13);
+            this.label5.Size = new System.Drawing.Size(81, 16);
             this.label5.TabIndex = 17;
             this.label5.Text = "Class name:";
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(110, 20);
+            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.nameLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.nameLabel.ForeColor = System.Drawing.Color.Black;
+            this.nameLabel.Location = new System.Drawing.Point(133, 20);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(0, 13);
+            this.nameLabel.Size = new System.Drawing.Size(0, 16);
             this.nameLabel.TabIndex = 18;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(3, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(49, 13);
+            this.label15.Size = new System.Drawing.Size(61, 16);
             this.label15.TabIndex = 27;
             this.label15.Text = "Class ID:";
             // 
             // idLabel
             // 
             this.idLabel.AutoSize = true;
-            this.idLabel.Location = new System.Drawing.Point(110, 0);
+            this.idLabel.BackColor = System.Drawing.Color.Transparent;
+            this.idLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.idLabel.ForeColor = System.Drawing.Color.Black;
+            this.idLabel.Location = new System.Drawing.Point(133, 0);
             this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(0, 13);
+            this.idLabel.Size = new System.Drawing.Size(0, 16);
             this.idLabel.TabIndex = 28;
             // 
             // endtimeLabel
             // 
             this.endtimeLabel.AutoSize = true;
+            this.endtimeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.endtimeLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.endtimeLabel.ForeColor = System.Drawing.Color.Black;
             this.endtimeLabel.Location = new System.Drawing.Point(393, 187);
             this.endtimeLabel.Name = "endtimeLabel";
-            this.endtimeLabel.Size = new System.Drawing.Size(0, 13);
+            this.endtimeLabel.Size = new System.Drawing.Size(0, 16);
             this.endtimeLabel.TabIndex = 16;
             // 
             // starttimeLabel
             // 
             this.starttimeLabel.AutoSize = true;
+            this.starttimeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.starttimeLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.starttimeLabel.ForeColor = System.Drawing.Color.Black;
             this.starttimeLabel.Location = new System.Drawing.Point(230, 187);
             this.starttimeLabel.Name = "starttimeLabel";
-            this.starttimeLabel.Size = new System.Drawing.Size(0, 13);
+            this.starttimeLabel.Size = new System.Drawing.Size(0, 16);
             this.starttimeLabel.TabIndex = 15;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(367, 187);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 13);
+            this.label2.Size = new System.Drawing.Size(25, 16);
             this.label2.TabIndex = 14;
             this.label2.Text = "To:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(191, 187);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 13);
+            this.label1.Size = new System.Drawing.Size(42, 16);
             this.label1.TabIndex = 13;
             this.label1.Text = "From:";
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.radioName);
             this.groupBox2.Controls.Add(this.radioID);
             this.groupBox2.Controls.Add(this.GuideSearch);
@@ -406,6 +463,8 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.search);
+            this.groupBox2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(183, 68);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(301, 127);
@@ -418,7 +477,7 @@
             this.radioName.AutoSize = true;
             this.radioName.Location = new System.Drawing.Point(204, 54);
             this.radioName.Name = "radioName";
-            this.radioName.Size = new System.Drawing.Size(66, 17);
+            this.radioName.Size = new System.Drawing.Size(82, 20);
             this.radioName.TabIndex = 7;
             this.radioName.Text = "By name";
             this.radioName.UseVisualStyleBackColor = true;
@@ -429,7 +488,7 @@
             this.radioID.Checked = true;
             this.radioID.Location = new System.Drawing.Point(204, 30);
             this.radioID.Name = "radioID";
-            this.radioID.Size = new System.Drawing.Size(51, 17);
+            this.radioID.Size = new System.Drawing.Size(59, 20);
             this.radioID.TabIndex = 6;
             this.radioID.TabStop = true;
             this.radioID.Text = "By ID";
@@ -440,7 +499,7 @@
             this.GuideSearch.Location = new System.Drawing.Point(70, 78);
             this.GuideSearch.MaxLength = 29;
             this.GuideSearch.Name = "GuideSearch";
-            this.GuideSearch.Size = new System.Drawing.Size(100, 20);
+            this.GuideSearch.Size = new System.Drawing.Size(100, 22);
             this.GuideSearch.TabIndex = 5;
             // 
             // StudSearch
@@ -448,24 +507,30 @@
             this.StudSearch.Location = new System.Drawing.Point(70, 34);
             this.StudSearch.MaxLength = 29;
             this.StudSearch.Name = "StudSearch";
-            this.StudSearch.Size = new System.Drawing.Size(100, 20);
+            this.StudSearch.Size = new System.Drawing.Size(100, 22);
             this.StudSearch.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(16, 81);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.Size = new System.Drawing.Size(46, 16);
             this.label4.TabIndex = 2;
             this.label4.Text = "Guide:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(7, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.Size = new System.Drawing.Size(57, 16);
             this.label3.TabIndex = 1;
             this.label3.Text = "Student:";
             // 
@@ -489,25 +554,34 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(6, 23);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 13);
+            this.label6.Size = new System.Drawing.Size(86, 16);
             this.label6.TabIndex = 15;
             this.label6.Text = "Logged in as:";
             // 
             // loggedLabel
             // 
             this.loggedLabel.AutoSize = true;
-            this.loggedLabel.Location = new System.Drawing.Point(83, 23);
+            this.loggedLabel.BackColor = System.Drawing.Color.Transparent;
+            this.loggedLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.loggedLabel.ForeColor = System.Drawing.Color.Black;
+            this.loggedLabel.Location = new System.Drawing.Point(96, 23);
             this.loggedLabel.Name = "loggedLabel";
-            this.loggedLabel.Size = new System.Drawing.Size(0, 13);
+            this.loggedLabel.Size = new System.Drawing.Size(0, 16);
             this.loggedLabel.TabIndex = 16;
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.dateLabel);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.loggedLabel);
+            this.groupBox3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.groupBox3.ForeColor = System.Drawing.Color.Black;
             this.groupBox3.Location = new System.Drawing.Point(20, 12);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(464, 50);
@@ -518,9 +592,12 @@
             // dateLabel
             // 
             this.dateLabel.AutoSize = true;
+            this.dateLabel.BackColor = System.Drawing.Color.Transparent;
+            this.dateLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.dateLabel.ForeColor = System.Drawing.Color.Black;
             this.dateLabel.Location = new System.Drawing.Point(346, 23);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(0, 13);
+            this.dateLabel.Size = new System.Drawing.Size(0, 16);
             this.dateLabel.TabIndex = 17;
             // 
             // timer1
@@ -537,8 +614,6 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox5);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
             this.Name = "GuideMenu";
             this.Text = "GuideMenu";
             this.groupBox5.ResumeLayout(false);

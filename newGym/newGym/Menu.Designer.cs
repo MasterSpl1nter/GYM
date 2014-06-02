@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox2 = new newGym.GGroupBox();
             this.search = new newGym.GButton();
             this.searchTextBox = new System.Windows.Forms.TextBox();
@@ -43,6 +44,7 @@
             this.classHandleBtn = new newGym.GButton();
             this.button23 = new newGym.GButton();
             this.addWorkerBtn = new newGym.GButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -103,11 +105,11 @@
             // 
             this.helloLabel.AutoSize = true;
             this.helloLabel.BackColor = System.Drawing.Color.Transparent;
-            this.helloLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.helloLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.helloLabel.ForeColor = System.Drawing.Color.Black;
             this.helloLabel.Location = new System.Drawing.Point(6, 16);
             this.helloLabel.Name = "helloLabel";
-            this.helloLabel.Size = new System.Drawing.Size(45, 16);
+            this.helloLabel.Size = new System.Drawing.Size(56, 19);
             this.helloLabel.TabIndex = 1;
             this.helloLabel.Text = "Hello, ";
             // 
@@ -257,6 +259,10 @@
             this.addWorkerBtn.UseVisualStyleBackColor = false;
             this.addWorkerBtn.Click += new System.EventHandler(this.addWorkerBtn_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            // 
             // ManagerMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,5 +302,6 @@
         private GButton classHandleBtn;
         private GButton button25;
         private GButton button26;
+        private System.Windows.Forms.Timer timer1;
     }
 }

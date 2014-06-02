@@ -104,6 +104,8 @@ namespace newGym
             tothourLabel.Text = DateTime.Parse(((Convert.ToDateTime(dtmp.Rows[i]["endtime"]) - Convert.ToDateTime(dtmp.Rows[i]["starttime"]))).ToString()).ToString("HH:mm");
         }
         */
+
+        
         private void button23_Click(object sender, EventArgs e)
         {
             AddStudent asa = new AddStudent();
