@@ -1248,12 +1248,12 @@
             this.ClientSize = new System.Drawing.Size(1137, 609);
             this.Controls.Add(this.WelcomeGroupbox);
             this.Controls.Add(this.gGroupBox1);
-            this.Controls.Add(this.EditStudentPannel);
-            this.Controls.Add(this.ShiftsPannel);
             this.Controls.Add(this.AddStudentPannel);
             this.Controls.Add(this.RemoveStudentFromClassPannel);
             this.Controls.Add(this.AddStudentToClassPannel);
             this.Controls.Add(this.DeleteStudentPanel);
+            this.Controls.Add(this.EditStudentPannel);
+            this.Controls.Add(this.ShiftsPannel);
             this.Name = "SecretaryMenu";
             this.Text = "SecretaryMenu";
             this.AddStudentPannel.ResumeLayout(false);

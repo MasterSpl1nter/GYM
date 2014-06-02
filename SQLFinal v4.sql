@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `gym`.`student` (
   UNIQUE INDEX `username_UNIQUE` (`username` ASC))
 ENGINE = InnoDB;
 
-
+student
 -- -----------------------------------------------------
 -- Table `gym`.`worker`
 -- -----------------------------------------------------
