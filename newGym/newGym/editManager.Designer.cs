@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.MangerSalaryPerHour = new System.Windows.Forms.TextBox();
-            this.idLabel = new GLabel();
-            this.salaryPerHourLabel = new GLabel();
-            this.passwordLabel = new GLabel();
-            this.userNameLabel = new GLabel();
+            this.idLabel = new newGym.GLabel();
+            this.salaryPerHourLabel = new newGym.GLabel();
+            this.passwordLabel = new newGym.GLabel();
+            this.userNameLabel = new newGym.GLabel();
             this.password = new System.Windows.Forms.TextBox();
-            this.EmailLabel = new GLabel();
+            this.EmailLabel = new newGym.GLabel();
             this.userName = new System.Windows.Forms.TextBox();
-            this.lastNameLabel = new GLabel();
+            this.lastNameLabel = new newGym.GLabel();
             this.managerEmail = new System.Windows.Forms.TextBox();
-            this.firstNameLabel = new GLabel();
+            this.firstNameLabel = new newGym.GLabel();
             this.managerLastName = new System.Windows.Forms.TextBox();
             this.managerFirstName = new System.Windows.Forms.TextBox();
-            this.exit_update = new GButton();
-            this.update_manger_button = new GButton();
-            this.userId = new GLabel();
-            this.removeUser = new GButton();
+            this.exit_update = new newGym.GButton();
+            this.update_manger_button = new newGym.GButton();
+            this.userId = new newGym.GLabel();
+            this.removeUser = new newGym.GButton();
             this.SuspendLayout();
             // 
             // MangerSalaryPerHour
@@ -58,8 +58,10 @@
             // idLabel
             // 
             this.idLabel.AutoSize = true;
+            this.idLabel.BackColor = System.Drawing.Color.Transparent;
             this.idLabel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.idLabel.Location = new System.Drawing.Point(98, 25);
+            this.idLabel.ForeColor = System.Drawing.Color.Black;
+            this.idLabel.Location = new System.Drawing.Point(88, 25);
             this.idLabel.Name = "idLabel";
             this.idLabel.Size = new System.Drawing.Size(22, 13);
             this.idLabel.TabIndex = 42;
@@ -68,27 +70,36 @@
             // salaryPerHourLabel
             // 
             this.salaryPerHourLabel.AutoSize = true;
-            this.salaryPerHourLabel.Location = new System.Drawing.Point(69, 129);
+            this.salaryPerHourLabel.BackColor = System.Drawing.Color.Transparent;
+            this.salaryPerHourLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.salaryPerHourLabel.ForeColor = System.Drawing.Color.Black;
+            this.salaryPerHourLabel.Location = new System.Drawing.Point(59, 129);
             this.salaryPerHourLabel.Name = "salaryPerHourLabel";
-            this.salaryPerHourLabel.Size = new System.Drawing.Size(51, 13);
+            this.salaryPerHourLabel.Size = new System.Drawing.Size(64, 16);
             this.salaryPerHourLabel.TabIndex = 55;
             this.salaryPerHourLabel.Text = "Payment:";
             // 
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(64, 181);
+            this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.passwordLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.passwordLabel.ForeColor = System.Drawing.Color.Black;
+            this.passwordLabel.Location = new System.Drawing.Point(54, 181);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(56, 13);
+            this.passwordLabel.Size = new System.Drawing.Size(69, 16);
             this.passwordLabel.TabIndex = 43;
             this.passwordLabel.Text = "Password:";
             // 
             // userNameLabel
             // 
             this.userNameLabel.AutoSize = true;
-            this.userNameLabel.Location = new System.Drawing.Point(59, 155);
+            this.userNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.userNameLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.userNameLabel.ForeColor = System.Drawing.Color.Black;
+            this.userNameLabel.Location = new System.Drawing.Point(49, 155);
             this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Size = new System.Drawing.Size(61, 13);
+            this.userNameLabel.Size = new System.Drawing.Size(75, 16);
             this.userNameLabel.TabIndex = 44;
             this.userNameLabel.Text = "User name:";
             // 
@@ -103,9 +114,12 @@
             // EmailLabel
             // 
             this.EmailLabel.AutoSize = true;
-            this.EmailLabel.Location = new System.Drawing.Point(85, 103);
+            this.EmailLabel.BackColor = System.Drawing.Color.Transparent;
+            this.EmailLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.EmailLabel.ForeColor = System.Drawing.Color.Black;
+            this.EmailLabel.Location = new System.Drawing.Point(75, 103);
             this.EmailLabel.Name = "EmailLabel";
-            this.EmailLabel.Size = new System.Drawing.Size(35, 13);
+            this.EmailLabel.Size = new System.Drawing.Size(45, 16);
             this.EmailLabel.TabIndex = 45;
             this.EmailLabel.Text = "Email:";
             // 
@@ -120,9 +134,12 @@
             // lastNameLabel
             // 
             this.lastNameLabel.AutoSize = true;
-            this.lastNameLabel.Location = new System.Drawing.Point(61, 77);
+            this.lastNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.lastNameLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.lastNameLabel.ForeColor = System.Drawing.Color.Black;
+            this.lastNameLabel.Location = new System.Drawing.Point(51, 77);
             this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(59, 13);
+            this.lastNameLabel.Size = new System.Drawing.Size(73, 16);
             this.lastNameLabel.TabIndex = 46;
             this.lastNameLabel.Text = "Last name:";
             // 
@@ -137,9 +154,12 @@
             // firstNameLabel
             // 
             this.firstNameLabel.AutoSize = true;
-            this.firstNameLabel.Location = new System.Drawing.Point(62, 51);
+            this.firstNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.firstNameLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.firstNameLabel.ForeColor = System.Drawing.Color.Black;
+            this.firstNameLabel.Location = new System.Drawing.Point(52, 51);
             this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(58, 13);
+            this.firstNameLabel.Size = new System.Drawing.Size(74, 16);
             this.firstNameLabel.TabIndex = 47;
             this.firstNameLabel.Text = "First name:";
             // 
@@ -162,10 +182,12 @@
             // 
             // exit_update
             // 
-           // this.exit_update.BackColor = System.Drawing.SystemColors.HotTrack;
-            //this.exit_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-           // this.exit_update.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            //this.exit_update.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.exit_update.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.exit_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exit_update.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.exit_update.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.exit_update.ForeColor = System.Drawing.Color.White;
+            this.exit_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.exit_update.Location = new System.Drawing.Point(199, 210);
             this.exit_update.Name = "exit_update";
             this.exit_update.Size = new System.Drawing.Size(73, 29);
@@ -176,11 +198,13 @@
             // 
             // update_manger_button
             // 
-            //this.update_manger_button.BackColor = System.Drawing.SystemColors.HotTrack;
-           // this.update_manger_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-           // this.update_manger_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
-          //  this.update_manger_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.update_manger_button.Location = new System.Drawing.Point(43, 210);
+            this.update_manger_button.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.update_manger_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.update_manger_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.update_manger_button.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.update_manger_button.ForeColor = System.Drawing.Color.White;
+            this.update_manger_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.update_manger_button.Location = new System.Drawing.Point(33, 210);
             this.update_manger_button.Name = "update_manger_button";
             this.update_manger_button.Size = new System.Drawing.Size(74, 29);
             this.update_manger_button.TabIndex = 57;
@@ -191,7 +215,9 @@
             // userId
             // 
             this.userId.AutoSize = true;
+            this.userId.BackColor = System.Drawing.Color.Transparent;
             this.userId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.userId.ForeColor = System.Drawing.Color.Black;
             this.userId.Location = new System.Drawing.Point(137, 23);
             this.userId.Name = "userId";
             this.userId.Size = new System.Drawing.Size(0, 17);
@@ -200,11 +226,13 @@
             // 
             // removeUser
             // 
-            //this.removeUser.BackColor = System.Drawing.SystemColors.HotTrack;
-            //this.removeUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-           // this.removeUser.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            //this.removeUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.removeUser.Location = new System.Drawing.Point(123, 210);
+            this.removeUser.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.removeUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.removeUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.removeUser.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.removeUser.ForeColor = System.Drawing.Color.White;
+            this.removeUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.removeUser.Location = new System.Drawing.Point(113, 210);
             this.removeUser.Name = "removeUser";
             this.removeUser.Size = new System.Drawing.Size(73, 29);
             this.removeUser.TabIndex = 61;
