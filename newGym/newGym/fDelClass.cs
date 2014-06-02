@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class fDelClass : GForm
+    public partial class fDelClass : Form
     {
         private DataTable dt;
         private int classId = -1;
@@ -34,12 +34,8 @@ namespace newGym
             using (var connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                if (classId == -1)
-                    query = "SELECT Id , Name FROM class";
-                else if (classId == -2)
-                    query = "SELECT Id , Name,guideid FROM class";
-                else
-                    query = "SELECT Id , Name FROM class WHERE `guideid`=?Id";
+                query = "SELECT Id , Name FROM class";
+
 
                 using (var command = new MySqlCommand(query, connection))
                 {
@@ -49,11 +45,7 @@ namespace newGym
                     {
                         while (reader.Read())
                         {
-                            if (classId == -2)
-                                comboBox1.Items.Add(new TableItem(reader.GetString("Id") + " - " + reader.GetString("Name"),"GuideID " + reader.GetString("guideid")));
-                            else
-                                comboBox1.Items.Add(new TableItem(reader.GetString("Id"), reader.GetString("Name")));
-
+                            comboBox1.Items.Add(new TableItem(reader.GetString("Id"), reader.GetString("Name")));
                         }
                     }
                     connection.Close();
@@ -63,12 +55,12 @@ namespace newGym
 
         public void deleteAll()     // removes added class id without schedules
         {
-            if (classId == -1 || classId == null)           
+            if (classId == -1)
                 MessageBox.Show("Wrong id");
-            
-            DelbyID();            
-               delScedules();               
-                    delStudentsFromClass();
+
+            DelbyID();
+            delScedules();
+            delStudentsFromClass();
         }
 
         private Boolean DelbyID()
@@ -104,7 +96,7 @@ namespace newGym
                 return true;
 
             }
-             MessageBox.Show("Not id was sent","Error");
+            MessageBox.Show("Not id was sent", "Error");
             return false;
         }
         private Boolean delStudentsFromClass()
@@ -128,26 +120,26 @@ namespace newGym
             return false;
         }
 
-          private  Boolean delScedules()
-          {
-              if (this.classId != -1)
-              {
-                  dt = new DataTable();
-                  try
-                  {
-                      MySQL.Delete("classtime", "classid=" + classId);
-                  }
-                  catch (Exception ex)
-                  {
-                      MessageBox.Show("Error has accurred: " + ex.Message,
-                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                      return false;
-                  }
-                  return true;
-              }
-              MessageBox.Show("Not id was sent", "Error");
-              return false;
+        private Boolean delScedules()
+        {
+            if (this.classId != -1)
+            {
+                dt = new DataTable();
+                try
+                {
+                    MySQL.Delete("classtime", "classid=" + classId);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error has accurred: " + ex.Message,
+                      "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+                return true;
             }
+            MessageBox.Show("Not id was sent", "Error");
+            return false;
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -164,7 +156,7 @@ namespace newGym
                         {
                             if (delStudentsFromClass())
                             {
-                                MessageBox.Show("The item was removed", "Finished",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MessageBox.Show("The item was removed", "Finished", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 comboBox1.Items.Clear();
                                 LoadActivityId();
                             }
@@ -175,7 +167,7 @@ namespace newGym
                 }
             }
 
-             catch (Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -189,7 +181,6 @@ namespace newGym
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show("All schedules will be removed", "Are you sure?", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }
     }
 

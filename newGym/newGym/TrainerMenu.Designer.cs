@@ -30,25 +30,25 @@
         {
             this.components = new System.ComponentModel.Container();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.scheduleBox = new GGroupBox();
-            this.endtimeLabel = new GLabel();
-            this.starttimeLabel = new GLabel();
-            this.label2 = new GLabel();
-            this.label1 = new GLabel();
-            this.searchBox = new GGroupBox();
+            this.scheduleBox = new newGym.GGroupBox();
+            this.endtimeLabel = new newGym.GLabel();
+            this.starttimeLabel = new newGym.GLabel();
+            this.label2 = new newGym.GLabel();
+            this.label1 = new newGym.GLabel();
+            this.searchBox = new newGym.GGroupBox();
             this.radioName = new System.Windows.Forms.RadioButton();
             this.radioID = new System.Windows.Forms.RadioButton();
             this.TrainerSearch = new System.Windows.Forms.TextBox();
             this.StudSearch = new System.Windows.Forms.TextBox();
-            this.label4 = new GLabel();
-            this.label3 = new GLabel();
+            this.label4 = new newGym.GLabel();
+            this.label3 = new newGym.GLabel();
             this.button1 = new newGym.GButton();
-            this.label6 = new GLabel();
-            this.loggedLabel = new GLabel();
-            this.informationBox = new GGroupBox();
-            this.dateLabel = new GLabel();
+            this.label6 = new newGym.GLabel();
+            this.loggedLabel = new newGym.GLabel();
+            this.informationBox = new newGym.GGroupBox();
+            this.dateLabel = new newGym.GLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.actionsBox = new GGroupBox();
+            this.actionsBox = new newGym.GGroupBox();
             this.training_to_student_button = new newGym.GButton();
             this.viewbutton = new newGym.GButton();
             this.addtraining_button = new newGym.GButton();
@@ -64,58 +64,75 @@
             this.monthCalendar1.MaxSelectionCount = 1;
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 12;
+            this.monthCalendar1.Visible = false;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // scheduleBox
             // 
+            this.scheduleBox.BackColor = System.Drawing.Color.Transparent;
             this.scheduleBox.Controls.Add(this.endtimeLabel);
             this.scheduleBox.Controls.Add(this.starttimeLabel);
             this.scheduleBox.Controls.Add(this.label2);
             this.scheduleBox.Controls.Add(this.label1);
             this.scheduleBox.Controls.Add(this.monthCalendar1);
+            this.scheduleBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.scheduleBox.ForeColor = System.Drawing.Color.Black;
             this.scheduleBox.Location = new System.Drawing.Point(183, 201);
             this.scheduleBox.Name = "scheduleBox";
             this.scheduleBox.Size = new System.Drawing.Size(301, 224);
             this.scheduleBox.TabIndex = 13;
             this.scheduleBox.TabStop = false;
-            this.scheduleBox.Text = "Schedule";
+            this.scheduleBox.Visible = false;
             // 
             // endtimeLabel
             // 
             this.endtimeLabel.AutoSize = true;
+            this.endtimeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.endtimeLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.endtimeLabel.ForeColor = System.Drawing.Color.Black;
             this.endtimeLabel.Location = new System.Drawing.Point(225, 187);
             this.endtimeLabel.Name = "endtimeLabel";
-            this.endtimeLabel.Size = new System.Drawing.Size(0, 13);
+            this.endtimeLabel.Size = new System.Drawing.Size(0, 16);
             this.endtimeLabel.TabIndex = 16;
             // 
             // starttimeLabel
             // 
             this.starttimeLabel.AutoSize = true;
+            this.starttimeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.starttimeLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.starttimeLabel.ForeColor = System.Drawing.Color.Black;
             this.starttimeLabel.Location = new System.Drawing.Point(62, 187);
             this.starttimeLabel.Name = "starttimeLabel";
-            this.starttimeLabel.Size = new System.Drawing.Size(0, 13);
+            this.starttimeLabel.Size = new System.Drawing.Size(0, 16);
             this.starttimeLabel.TabIndex = 15;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(199, 187);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 13);
+            this.label2.Size = new System.Drawing.Size(25, 16);
             this.label2.TabIndex = 14;
             this.label2.Text = "To:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(23, 187);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 13);
+            this.label1.Size = new System.Drawing.Size(42, 16);
             this.label1.TabIndex = 13;
             this.label1.Text = "From:";
             // 
             // searchBox
             // 
+            this.searchBox.BackColor = System.Drawing.Color.Transparent;
             this.searchBox.Controls.Add(this.radioName);
             this.searchBox.Controls.Add(this.radioID);
             this.searchBox.Controls.Add(this.TrainerSearch);
@@ -123,6 +140,8 @@
             this.searchBox.Controls.Add(this.label4);
             this.searchBox.Controls.Add(this.label3);
             this.searchBox.Controls.Add(this.button1);
+            this.searchBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.searchBox.ForeColor = System.Drawing.Color.Black;
             this.searchBox.Location = new System.Drawing.Point(183, 68);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(301, 127);
@@ -135,7 +154,7 @@
             this.radioName.AutoSize = true;
             this.radioName.Location = new System.Drawing.Point(204, 54);
             this.radioName.Name = "radioName";
-            this.radioName.Size = new System.Drawing.Size(66, 17);
+            this.radioName.Size = new System.Drawing.Size(82, 20);
             this.radioName.TabIndex = 7;
             this.radioName.Text = "By name";
             this.radioName.UseVisualStyleBackColor = true;
@@ -146,7 +165,7 @@
             this.radioID.Checked = true;
             this.radioID.Location = new System.Drawing.Point(204, 30);
             this.radioID.Name = "radioID";
-            this.radioID.Size = new System.Drawing.Size(51, 17);
+            this.radioID.Size = new System.Drawing.Size(59, 20);
             this.radioID.TabIndex = 6;
             this.radioID.TabStop = true;
             this.radioID.Text = "By ID";
@@ -157,7 +176,7 @@
             this.TrainerSearch.Location = new System.Drawing.Point(70, 78);
             this.TrainerSearch.MaxLength = 29;
             this.TrainerSearch.Name = "TrainerSearch";
-            this.TrainerSearch.Size = new System.Drawing.Size(100, 20);
+            this.TrainerSearch.Size = new System.Drawing.Size(100, 22);
             this.TrainerSearch.TabIndex = 5;
             // 
             // StudSearch
@@ -165,24 +184,30 @@
             this.StudSearch.Location = new System.Drawing.Point(70, 34);
             this.StudSearch.MaxLength = 29;
             this.StudSearch.Name = "StudSearch";
-            this.StudSearch.Size = new System.Drawing.Size(100, 20);
+            this.StudSearch.Size = new System.Drawing.Size(100, 22);
             this.StudSearch.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(16, 81);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.Size = new System.Drawing.Size(51, 16);
             this.label4.TabIndex = 2;
             this.label4.Text = "Trainer:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(7, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.Size = new System.Drawing.Size(57, 16);
             this.label3.TabIndex = 1;
             this.label3.Text = "Student:";
             // 
@@ -205,25 +230,34 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(6, 23);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 13);
+            this.label6.Size = new System.Drawing.Size(86, 16);
             this.label6.TabIndex = 15;
             this.label6.Text = "Logged in as:";
             // 
             // loggedLabel
             // 
             this.loggedLabel.AutoSize = true;
+            this.loggedLabel.BackColor = System.Drawing.Color.Transparent;
+            this.loggedLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.loggedLabel.ForeColor = System.Drawing.Color.Black;
             this.loggedLabel.Location = new System.Drawing.Point(83, 23);
             this.loggedLabel.Name = "loggedLabel";
-            this.loggedLabel.Size = new System.Drawing.Size(0, 13);
+            this.loggedLabel.Size = new System.Drawing.Size(0, 16);
             this.loggedLabel.TabIndex = 16;
             // 
             // informationBox
             // 
+            this.informationBox.BackColor = System.Drawing.Color.Transparent;
             this.informationBox.Controls.Add(this.dateLabel);
             this.informationBox.Controls.Add(this.label6);
             this.informationBox.Controls.Add(this.loggedLabel);
+            this.informationBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.informationBox.ForeColor = System.Drawing.Color.Black;
             this.informationBox.Location = new System.Drawing.Point(20, 12);
             this.informationBox.Name = "informationBox";
             this.informationBox.Size = new System.Drawing.Size(464, 50);
@@ -234,9 +268,12 @@
             // dateLabel
             // 
             this.dateLabel.AutoSize = true;
+            this.dateLabel.BackColor = System.Drawing.Color.Transparent;
+            this.dateLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.dateLabel.ForeColor = System.Drawing.Color.Black;
             this.dateLabel.Location = new System.Drawing.Point(346, 23);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(0, 13);
+            this.dateLabel.Size = new System.Drawing.Size(0, 16);
             this.dateLabel.TabIndex = 17;
             // 
             // timer1
@@ -246,9 +283,12 @@
             // 
             // actionsBox
             // 
+            this.actionsBox.BackColor = System.Drawing.Color.Transparent;
             this.actionsBox.Controls.Add(this.training_to_student_button);
             this.actionsBox.Controls.Add(this.viewbutton);
             this.actionsBox.Controls.Add(this.addtraining_button);
+            this.actionsBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.actionsBox.ForeColor = System.Drawing.Color.Black;
             this.actionsBox.Location = new System.Drawing.Point(20, 69);
             this.actionsBox.Name = "actionsBox";
             this.actionsBox.Size = new System.Drawing.Size(157, 126);
@@ -313,7 +353,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(505, 436);
+            this.ClientSize = new System.Drawing.Size(505, 210);
             this.Controls.Add(this.actionsBox);
             this.Controls.Add(this.informationBox);
             this.Controls.Add(this.searchBox);

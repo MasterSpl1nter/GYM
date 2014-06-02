@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 
 namespace newGym
 {
-    public partial class TrainingToStudent : GForm
+    public partial class TrainingToStudent : Form
     {
         //DataTable dtmp;
         DataTable dt;
@@ -20,6 +20,8 @@ namespace newGym
             InitializeComponent();
             Fillcombo();
             Fillcombo1();
+            if (comboBox1.Items.Count > 0)
+                comboBox1.SelectedIndex = comboBox1.Items.Count - 1;
         }
         public void Fillcombo()
         {

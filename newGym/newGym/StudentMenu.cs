@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 
 namespace newGym
 {
-    public partial class StudentMenu : GForm
+    public partial class StudentMenu : Form
     {
 
 
@@ -239,9 +239,9 @@ namespace newGym
             DataTable dt1 = new DataTable();
             string classid = ClassIDComboBox.Text;
             string Studentid = SingleUser.Instance.get_user().Id.ToString();
-            
+
             ClassIDComboBox.Text = "";
-            
+
             int ret = MySQL.Query(dt, "select class.id,classtime.starttime,classtime.endtime from student INNER JOIN studentclass on student.id=studentclass.studentid INNER JOIN classtime ON studentclass.classid=classtime.classid WHERE student.id=" + Studentid);
             if (ret != 0)
             {
@@ -295,7 +295,7 @@ namespace newGym
         private void RemoveStudentFromClassButton_Click(object sender, EventArgs e)
         {
 
-            int ret = ((Student)( SingleUser.Instance.get_user())).removeStudentFromClass(SingleUser.Instance.get_user().Id.ToString(), relevantClasses.Text);
+            int ret = ((Student)(SingleUser.Instance.get_user())).removeStudentFromClass(SingleUser.Instance.get_user().Id.ToString(), relevantClasses.Text);
             if (ret == 0)
                 MessageBox.Show("you were removed from the course");
 
