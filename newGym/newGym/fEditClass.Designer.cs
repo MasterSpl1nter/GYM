@@ -66,7 +66,6 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new newGym.GLabel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label18 = new newGym.GLabel();
             this.label17 = new newGym.GLabel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -134,11 +133,12 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(32, 92);
+            this.label2.Location = new System.Drawing.Point(16, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Name";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -146,7 +146,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(32, 125);
+            this.label3.Location = new System.Drawing.Point(16, 128);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 16);
             this.label3.TabIndex = 5;
@@ -177,6 +177,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(40, 20);
             this.textBox2.TabIndex = 8;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox4
             // 
@@ -205,7 +206,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(32, 161);
+            this.label6.Location = new System.Drawing.Point(16, 158);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 16);
             this.label6.TabIndex = 12;
@@ -479,7 +480,6 @@
             this.gGroupBox1.Controls.Add(this.textBox5);
             this.gGroupBox1.Controls.Add(this.dateTimePicker1);
             this.gGroupBox1.Controls.Add(this.label9);
-            this.gGroupBox1.Controls.Add(this.textBox3);
             this.gGroupBox1.Controls.Add(this.label18);
             this.gGroupBox1.Controls.Add(this.label17);
             this.gGroupBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -495,10 +495,11 @@
             // 
             this.textBox6.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(165, 57);
+            this.textBox6.Location = new System.Drawing.Point(159, 58);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(54, 14);
             this.textBox6.TabIndex = 53;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox5
             // 
@@ -533,15 +534,6 @@
             this.label9.Size = new System.Drawing.Size(39, 16);
             this.label9.TabIndex = 47;
             this.label9.Text = "Date:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(159, 54);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(54, 14);
-            this.textBox3.TabIndex = 51;
             // 
             // label18
             // 
@@ -658,7 +650,6 @@
         private GLabel label7;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private GLabel label9;
-        private System.Windows.Forms.TextBox textBox3;
         private GLabel label17;
         private GLabel label18;
         private GGroupBox gGroupBox1;

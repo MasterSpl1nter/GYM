@@ -29,50 +29,52 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAddClass));
-            this.button1 = new GButton();
-            this.label1 = new GLabel();
-            this.label2 = new GLabel();
-            this.label3 = new GLabel();
+            this.button1 = new newGym.GButton();
+            this.label1 = new newGym.GLabel();
+            this.label2 = new newGym.GLabel();
+            this.label3 = new newGym.GLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new GLabel();
+            this.label5 = new newGym.GLabel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new GLabel();
-            this.button2 = new GButton();
-            this.gidLabel = new GLabel();
+            this.label4 = new newGym.GLabel();
+            this.button2 = new newGym.GButton();
+            this.gidLabel = new newGym.GLabel();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label8 = new GLabel();
+            this.label8 = new newGym.GLabel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.starttimeLabel = new System.Windows.Forms.TextBox();
-            this.label14 = new GLabel();
-            this.label16 = new GLabel();
+            this.label14 = new newGym.GLabel();
+            this.label16 = new newGym.GLabel();
             this.endtimeLabel = new System.Windows.Forms.TextBox();
-            this.idLabel = new GLabel();
-            this.label15 = new GLabel();
-            this.nameLabel = new GLabel();
-            this.label13 = new GLabel();
-            this.ParticiLabel = new GLabel();
-            this.label12 = new GLabel();
-            this.roomNumLabel = new GLabel();
-            this.label11 = new GLabel();
-            this.paymentLabel = new GLabel();
-            this.tothourLabel = new GLabel();
-            this.label10 = new GLabel();
+            this.idLabel = new newGym.GLabel();
+            this.label15 = new newGym.GLabel();
+            this.nameLabel = new newGym.GLabel();
+            this.label13 = new newGym.GLabel();
+            this.ParticiLabel = new newGym.GLabel();
+            this.label12 = new newGym.GLabel();
+            this.roomNumLabel = new newGym.GLabel();
+            this.label11 = new newGym.GLabel();
+            this.paymentLabel = new newGym.GLabel();
+            this.tothourLabel = new newGym.GLabel();
+            this.label10 = new newGym.GLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button3 = new GButton();
-            this.button4 = new GButton();
-            this.groupBox1 = new GGroupBox();
-            this.label6 = new GLabel();
+            this.button3 = new newGym.GButton();
+            this.button4 = new newGym.GButton();
+            this.groupBox1 = new newGym.GGroupBox();
+            this.label6 = new newGym.GLabel();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
             resources.ApplyResources(this.button1, "button1");
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -80,16 +82,22 @@
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Name = "label1";
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Name = "label2";
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Name = "label3";
             // 
             // textBox1
@@ -106,6 +114,8 @@
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Name = "label5";
             // 
             // comboBox1
@@ -126,12 +136,16 @@
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Name = "label4";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.LightSkyBlue;
             resources.ApplyResources(this.button2, "button2");
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -139,6 +153,8 @@
             // gidLabel
             // 
             resources.ApplyResources(this.gidLabel, "gidLabel");
+            this.gidLabel.BackColor = System.Drawing.Color.Transparent;
+            this.gidLabel.ForeColor = System.Drawing.Color.Black;
             this.gidLabel.Name = "gidLabel";
             // 
             // textBox4
@@ -151,6 +167,8 @@
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Name = "label8";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
@@ -164,6 +182,7 @@
             // 
             // monthCalendar1
             // 
+            this.monthCalendar1.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.monthCalendar1, "monthCalendar1");
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
@@ -186,11 +205,15 @@
             // label14
             // 
             resources.ApplyResources(this.label14, "label14");
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Name = "label14";
             // 
             // label16
             // 
             resources.ApplyResources(this.label16, "label16");
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Name = "label16";
             // 
             // endtimeLabel
@@ -203,56 +226,78 @@
             // idLabel
             // 
             resources.ApplyResources(this.idLabel, "idLabel");
+            this.idLabel.BackColor = System.Drawing.Color.Transparent;
+            this.idLabel.ForeColor = System.Drawing.Color.Black;
             this.idLabel.Name = "idLabel";
             // 
             // label15
             // 
             resources.ApplyResources(this.label15, "label15");
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Name = "label15";
             // 
             // nameLabel
             // 
             resources.ApplyResources(this.nameLabel, "nameLabel");
+            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.nameLabel.ForeColor = System.Drawing.Color.Black;
             this.nameLabel.Name = "nameLabel";
             // 
             // label13
             // 
             resources.ApplyResources(this.label13, "label13");
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Name = "label13";
             // 
             // ParticiLabel
             // 
             resources.ApplyResources(this.ParticiLabel, "ParticiLabel");
+            this.ParticiLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ParticiLabel.ForeColor = System.Drawing.Color.Black;
             this.ParticiLabel.Name = "ParticiLabel";
             // 
             // label12
             // 
             resources.ApplyResources(this.label12, "label12");
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Name = "label12";
             // 
             // roomNumLabel
             // 
             resources.ApplyResources(this.roomNumLabel, "roomNumLabel");
+            this.roomNumLabel.BackColor = System.Drawing.Color.Transparent;
+            this.roomNumLabel.ForeColor = System.Drawing.Color.Black;
             this.roomNumLabel.Name = "roomNumLabel";
             // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Name = "label11";
             // 
             // paymentLabel
             // 
             resources.ApplyResources(this.paymentLabel, "paymentLabel");
+            this.paymentLabel.BackColor = System.Drawing.Color.Transparent;
+            this.paymentLabel.ForeColor = System.Drawing.Color.Black;
             this.paymentLabel.Name = "paymentLabel";
             // 
             // tothourLabel
             // 
             resources.ApplyResources(this.tothourLabel, "tothourLabel");
+            this.tothourLabel.BackColor = System.Drawing.Color.Transparent;
+            this.tothourLabel.ForeColor = System.Drawing.Color.Black;
             this.tothourLabel.Name = "tothourLabel";
             // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Name = "label10";
             // 
             // tableLayoutPanel1
@@ -273,29 +318,36 @@
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.LightSkyBlue;
             resources.ApplyResources(this.button3, "button3");
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.LightSkyBlue;
             resources.ApplyResources(this.button4, "button4");
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
             this.groupBox1.Controls.Add(this.hScrollBar1);
             resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.ForeColor = System.Drawing.Color.Red;
             this.label6.Name = "label6";
             // 
