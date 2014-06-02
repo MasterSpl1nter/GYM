@@ -22,18 +22,18 @@ namespace newGym
             //connection to the previous form
             this.m = m;
             this.perm = perm;
-            MessageBox.Show(perm);
+            //MessageBox.Show(perm);
             int retval = -1;
             DataTable dt = new DataTable();
-            for (int i = 0; i < arr.Length; i++)
-            {
-                retval = MySQL.Query(dt, "SELECT * FROM " + arr[i] + " where id=" + id);
-                if (dt.Rows.Count == 1)
-                {
-                    this.table = arr[i];
-                    break;
-                }
-            }
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            retval = MySQL.Query(dt, "SELECT * FROM " + getPerm() + " where id=" + id);
+             //   if (dt.Rows.Count == 1 &&dt.Rows[0]["permission"].ToString().Equals(this.perm))
+               // {
+                 //   this.table = arr[i];
+                  //  break;
+               // }
+           // }
 
             this.userId.Text = dt.Rows[0]["id"].ToString();
             this.managerFirstName.Text = dt.Rows[0]["firstname"].ToString();

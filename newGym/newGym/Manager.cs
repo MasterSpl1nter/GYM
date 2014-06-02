@@ -102,7 +102,7 @@ namespace newGym
             int ret=1;
             if (table == "guide")
             {
-                if (MessageBox.Show("Warining:delete will remove all data that refer to this" + "id", "Continue", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Warining:delete will remove all data that refer to this " + id, "Continue", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     DataTable dt = new DataTable();
                     ret = MySQL.Query(dt, "set SQL_SAFE_UPDATES = 0;  delete from studentclass where classid in ( select class.id from class where class.guideid = " + id.ToString() + ");                                            delete from classtime where classid in ( select class.id from class where class.guideid = " + id.ToString() + ");                                            delete from class where guideid = " + id.ToString() + ";                                            delete from guide where id = " + id.ToString() + ";                ");

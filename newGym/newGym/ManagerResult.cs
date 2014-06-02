@@ -82,9 +82,13 @@ namespace newGym
 
         private void dataGridResult_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
-            editManager m = new editManager(dataGridResult.Rows[e.RowIndex].Cells["id"].Value.ToString(), this, dataGridResult.Rows[e.RowIndex].Cells["permission"].Value.ToString());
-            m.ShowDialog();
+            if (dataGridResult.CurrentCell.ColumnIndex.ToString().Equals("0"))
+            {
+                editManager m = new editManager(dataGridResult.Rows[e.RowIndex].Cells["id"].Value.ToString(), this, dataGridResult.Rows[e.RowIndex].Cells["permission"].Value.ToString());
+                m.ShowDialog();
+            }
+             //   MessageBox.Show(dataGridResult.CurrentCell.ColumnIndex.ToString());
+            
             
         }
         

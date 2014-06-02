@@ -35,7 +35,7 @@
             // dataGridResult
             // 
             this.dataGridResult.AllowUserToAddRows = false;
-            this.dataGridResult.AllowUserToOrderColumns = true;
+            this.dataGridResult.AllowUserToDeleteRows = false;
             this.dataGridResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridResult.Location = new System.Drawing.Point(12, 12);
             this.dataGridResult.Name = "dataGridResult";
