@@ -72,11 +72,11 @@
             // 
             this.salaryPerHourLabel.AutoSize = true;
             this.salaryPerHourLabel.BackColor = System.Drawing.Color.Transparent;
-            this.salaryPerHourLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.salaryPerHourLabel.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.salaryPerHourLabel.ForeColor = System.Drawing.Color.Black;
             this.salaryPerHourLabel.Location = new System.Drawing.Point(25, 155);
             this.salaryPerHourLabel.Name = "salaryPerHourLabel";
-            this.salaryPerHourLabel.Size = new System.Drawing.Size(64, 16);
+            this.salaryPerHourLabel.Size = new System.Drawing.Size(53, 13);
             this.salaryPerHourLabel.TabIndex = 41;
             this.salaryPerHourLabel.Text = "Payment:";
             // 
@@ -84,11 +84,11 @@
             // 
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.passwordLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.passwordLabel.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.passwordLabel.ForeColor = System.Drawing.Color.Black;
             this.passwordLabel.Location = new System.Drawing.Point(20, 207);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(69, 16);
+            this.passwordLabel.Size = new System.Drawing.Size(57, 13);
             this.passwordLabel.TabIndex = 28;
             this.passwordLabel.Text = "Password:";
             // 
@@ -99,6 +99,7 @@
             this.AddManagerUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.AddManagerUser.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.AddManagerUser.ForeColor = System.Drawing.Color.White;
+            this.AddManagerUser.Image = global::newGym.Properties.Resources._1399410268_add;
             this.AddManagerUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddManagerUser.Location = new System.Drawing.Point(39, 238);
             this.AddManagerUser.Name = "AddManagerUser";
@@ -112,11 +113,11 @@
             // 
             this.userNameLabel.AutoSize = true;
             this.userNameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.userNameLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.userNameLabel.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.userNameLabel.ForeColor = System.Drawing.Color.Black;
             this.userNameLabel.Location = new System.Drawing.Point(15, 181);
             this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Size = new System.Drawing.Size(75, 16);
+            this.userNameLabel.Size = new System.Drawing.Size(62, 13);
             this.userNameLabel.TabIndex = 29;
             this.userNameLabel.Text = "User name:";
             // 
@@ -132,11 +133,11 @@
             // 
             this.EmailLabel.AutoSize = true;
             this.EmailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.EmailLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.EmailLabel.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.EmailLabel.ForeColor = System.Drawing.Color.Black;
             this.EmailLabel.Location = new System.Drawing.Point(41, 129);
             this.EmailLabel.Name = "EmailLabel";
-            this.EmailLabel.Size = new System.Drawing.Size(45, 16);
+            this.EmailLabel.Size = new System.Drawing.Size(35, 13);
             this.EmailLabel.TabIndex = 30;
             this.EmailLabel.Text = "Email:";
             // 
@@ -152,11 +153,11 @@
             // 
             this.lastNameLabel.AutoSize = true;
             this.lastNameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.lastNameLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.lastNameLabel.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.lastNameLabel.ForeColor = System.Drawing.Color.Black;
             this.lastNameLabel.Location = new System.Drawing.Point(17, 103);
             this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(73, 16);
+            this.lastNameLabel.Size = new System.Drawing.Size(60, 13);
             this.lastNameLabel.TabIndex = 31;
             this.lastNameLabel.Text = "Last name:";
             // 
@@ -172,11 +173,11 @@
             // 
             this.firstNameLabel.AutoSize = true;
             this.firstNameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.firstNameLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.firstNameLabel.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.firstNameLabel.ForeColor = System.Drawing.Color.Black;
             this.firstNameLabel.Location = new System.Drawing.Point(18, 77);
             this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(74, 16);
+            this.firstNameLabel.Size = new System.Drawing.Size(61, 13);
             this.firstNameLabel.TabIndex = 32;
             this.firstNameLabel.Text = "First name:";
             // 

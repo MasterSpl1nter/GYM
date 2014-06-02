@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace newGym
 {
-    public partial class fDelClass : Form
+    public partial class fDelClass : GForm
     {
         private DataTable dt;
         private int classId = -1;
