@@ -49,7 +49,7 @@ namespace newGym
         {
             int ret = MySQL.Delete("student", "id=" + id);
 
-            if (ret == 0)
+            if (ret != 0)
             {
                 MessageBox.Show("the mysql query failed");
             }

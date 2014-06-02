@@ -448,7 +448,7 @@ namespace newGym
         //handled
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            ((Student)(SingleUser.Instance.get_user())).Delete(DeleteStudentCombobox.Text);
+            ((Secretary)(SingleUser.Instance.get_user())).DeleteStudent(DeleteStudentCombobox.Text);
 
             DeleteStudentCombobox.Text = "";
             MessageBox.Show("The student deleted succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
