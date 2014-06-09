@@ -54,58 +54,41 @@ namespace newGym
             //if bool ==true dt has the data of the user
             if (check)
             {
-                /*
-                   int id = Convert.ToInt32(dt.Rows[0]["id"]);
-                   string firstName = dt.Rows[0]["firstname"].ToString();
-                   string lastName = dt.Rows[0]["lastname"].ToString();
-                   string email = dt.Rows[0]["email"].ToString();
-                   int permission = Convert.ToInt32(dt.Rows[0]["permission"]);
-                   string userName = dt.Rows[0]["username"].ToString();
-                   string password = dt.Rows[0]["password"].ToString();
-                   int salary = Convert.ToInt32(dt.Rows[0]["salaryperhour"]);
-                 */
-                   this.id = Convert.ToInt32(dt.Rows[0]["id"]);
-                 
-                   this.firstName = dt.Rows[0]["firstname"].ToString();
-                   this.lastName = dt.Rows[0]["lastname"].ToString();
-                   this.email = dt.Rows[0]["email"].ToString();
-                   this.permission = Convert.ToInt32(dt.Rows[0]["permission"]);
-                   this.userName = dt.Rows[0]["username"].ToString();
-                   this.password = dt.Rows[0]["password"].ToString();
-                   if (!(this is Student))// is is like instance of 
-                       setSalary(Convert.ToInt32(dt.Rows[0]["salaryperhour"]));// so if it is not student apply the set salary else
-                   else {// this is student 
-                       ((Student)this).setbday(Convert.ToDateTime(dt.Rows[0]["birthday"].ToString()));
-                       ((Student)this).setbMedCert(Convert.ToDateTime(dt.Rows[0]["medcert"].ToString()));
-                       ((Student)this).setStartDate(Convert.ToDateTime(dt.Rows[0]["startdate"].ToString()));
-                       ((Student)this).setEndDate(Convert.ToDateTime(dt.Rows[0]["enddate"].ToString()));
-                   }
-                //makeInstance(id, firstName, lastName, email, permission, userName, password, salary);
-                
+                this.id = Convert.ToInt32(dt.Rows[0]["id"]);
+
+                this.firstName = dt.Rows[0]["firstname"].ToString();
+                this.lastName = dt.Rows[0]["lastname"].ToString();
+                this.email = dt.Rows[0]["email"].ToString();
+                this.permission = Convert.ToInt32(dt.Rows[0]["permission"]);
+                this.userName = dt.Rows[0]["username"].ToString();
+                this.password = dt.Rows[0]["password"].ToString();
+
+                init_salary_or_dates(dt);
+
                 return true;
             }
 
             else return false;
         }
 
-        protected abstract void setSalary(int salary); 
-        
+        protected abstract void setSalary(int salary);
+
         protected abstract bool CheckLogin(DataTable dt, string user, string pass);          //Template DP
 
         public abstract void popMenu();
-        
-        public int Id{ get { return id; } set { id = value; }  }
-        public string FirstName{ get { return firstName; } set { firstName = value; }  }
+
+        public int Id { get { return id; } set { id = value; } }
+        public string FirstName { get { return firstName; } set { firstName = value; } }
         //get/set func for last name
         public string LastName { get { return lastName; } set { lastName = value; } }
-        
+
         //get/set func for address
-        public string Email  { get { return email; }set { email = value; }  }
+        public string Email { get { return email; } set { email = value; } }
         //get/set func for userName
-        public string UserName{ get { return userName; }set { userName = value; } }
+        public string UserName { get { return userName; } set { userName = value; } }
         //get/set func for password
-        public string Password {get { return password; }set { password = value; }}
-        public int Permission { get { return permission; }set { permission = value; } }
+        public string Password { get { return password; } set { password = value; } }
+        public int Permission { get { return permission; } set { permission = value; } }
         ///////////////////////////////////////////////////////////////////////
         public static int[] ZeroID(int id)
         {
@@ -139,6 +122,21 @@ namespace newGym
             }
             return false;
         }
+
+
+        public void init_salary_or_dates(DataTable dt)
+        {
+            if (!(this is Student))// is is like instance of 
+                setSalary(Convert.ToInt32(dt.Rows[0]["salaryperhour"]));// so if it is not student apply the set salary else
+            else
+            {// this is student 
+                ((Student)this).setbday(Convert.ToDateTime(dt.Rows[0]["birthday"].ToString()));
+                ((Student)this).setbMedCert(Convert.ToDateTime(dt.Rows[0]["medcert"].ToString()));
+                ((Student)this).setStartDate(Convert.ToDateTime(dt.Rows[0]["startdate"].ToString()));
+                ((Student)this).setEndDate(Convert.ToDateTime(dt.Rows[0]["enddate"].ToString()));
+            }
+
+        }
     }
 
-    }
+}
