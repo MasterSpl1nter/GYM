@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new GLabel();
+            this.label1 = new newGym.GLabel();
             this.marqueeLabel1 = new newGym.MarqueeLabel();
             this.SuspendLayout();
             // 
@@ -43,9 +43,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(26, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(451, 13);
+            this.label1.Size = new System.Drawing.Size(600, 16);
             this.label1.TabIndex = 8;
             this.label1.Text = "---------------------------------------------------------------------------------" +
     "-------------------------------------------------------------------";
@@ -57,7 +59,7 @@
             this.marqueeLabel1.ForeColor = System.Drawing.Color.Red;
             this.marqueeLabel1.Location = new System.Drawing.Point(70, 9);
             this.marqueeLabel1.Name = "marqueeLabel1";
-            this.marqueeLabel1.Size = new System.Drawing.Size(367, 43);
+            this.marqueeLabel1.Size = new System.Drawing.Size(365, 43);
             this.marqueeLabel1.TabIndex = 7;
             this.marqueeLabel1.Text = "Sweet Star Made By";
             this.marqueeLabel1.UseCompatibleTextRendering = true;
@@ -67,11 +69,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = null;
             this.ClientSize = new System.Drawing.Size(499, 261);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.marqueeLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MaximizeBox = false;
             this.Name = "About";
             this.Text = "About";
             this.TopMost = true;
