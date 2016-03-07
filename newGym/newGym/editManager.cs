@@ -39,10 +39,7 @@ namespace newGym
             this.managerFirstName.Text = dt.Rows[0]["firstname"].ToString();
             this.managerLastName.Text = dt.Rows[0]["lastname"].ToString();
             this.managerEmail.Text = dt.Rows[0]["email"].ToString();
-            if(getPerm().Equals("student")==false )
-            {
-                this.MangerSalaryPerHour.Text = dt.Rows[0]["salaryperhour"].ToString();
-            }
+            this.MangerSalaryPerHour.Text = dt.Rows[0]["salaryperhour"].ToString();
             this.userName.Text = dt.Rows[0]["username"].ToString();
             this.password.Text = dt.Rows[0]["password"].ToString();
             this.perm = dt.Rows[0]["permission"].ToString();
@@ -66,11 +63,8 @@ namespace newGym
             }
             else
             {
-                if (getPerm().Equals("student")==false)
-                {
-                    ((Manager)SingleUser.Instance.get_user()).updateUser(Convert.ToInt32(userId.Text), managerFirstName.Text, managerLastName.Text, managerEmail.Text, userName.Text, password.Text, Convert.ToInt32(this.perm), Convert.ToInt32(MangerSalaryPerHour.Text), this.table);
-                    MessageBox.Show("Update " + this.table + " succeeded!");
-                }
+                ((Manager)SingleUser.Instance.get_user()).updateUser(Convert.ToInt32(userId.Text), managerFirstName.Text, managerLastName.Text, managerEmail.Text, userName.Text, password.Text, Convert.ToInt32(this.perm), Convert.ToInt32(MangerSalaryPerHour.Text), this.table);
+                MessageBox.Show("Update " + this.table + " succeeded!");
             }
         }
 
